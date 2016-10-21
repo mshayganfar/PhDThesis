@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  20 OCT 2016 22:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  20 OCT 2016 23:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -475,51 +475,36 @@ Chapter 1.
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--174
-
- []
+LaTeX Warning: Reference `conceptual-constructs' on page 2 undefined on input l
+ine 178.
 
 [2]
-
-LaTeX Warning: Reference `conceptual-constructs' on page 3 undefined on input l
-ine 191.
-
-[3]
 Chapter 2.
-[4
+[3
 
 ]
 Overfull \vbox (32.0097pt too high) has occurred while \output is active []
 
 
-[5]
+[4]
 Chapter 3.
-[6
+[5
 
 ]
 Chapter 4.
-[7
+[6
 
 ]
 Chapter 5.
-[8
+[7
 
 ]
 Chapter 6.
 ! Use of \@icentercr doesn't match its definition.
 <argument> \def 
                 
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -529,7 +514,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Argument of \ttl@assign@d has an extra }.
 <inserted text> 
                 \par 
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -543,7 +528,7 @@ Runaway argument?
 ! Paragraph ended before \ttl@assign@d was complete.
 <to be read again> 
                    \par 
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -552,7 +537,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Use of \let doesn't match its definition.
 <to be read again> ...T IT.}\par \let \reserved@d 
                                                   = *\def \let \def \let *\p...
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -562,7 +547,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Missing { inserted.
 \MakeUppercase  ... {\uppercase {#1}}\reserved@a }
                                                   
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 Where was the left brace? You said something like `\def\a}',
 which I'm going to interpret as `\def\a{}'.
@@ -570,7 +555,7 @@ which I'm going to interpret as `\def\a{}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.306 ...llaboration \\ Using Emotional-Awareness}
+l.283 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -578,19 +563,19 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[9
+[8
 
-] [10]
+] [9]
 Chapter 7.
-[11
+[10
 
 ] (./document.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [12
+) [11
 
-] [13
+] [12
 
 ] (./document.aux)
 
@@ -600,21 +585,21 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  6199 strings out of 493304
  87634 string characters out of 6139871
- 173978 words of memory out of 5000000
+ 173977 words of memory out of 5000000
  9507 multiletter control sequences out of 15000+600000
  11416 words of font info for 42 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,5n,43p,1011b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,5n,43p,1011b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (22 pages, 94943 bytes).
+Output written on document.pdf (21 pages, 94530 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
