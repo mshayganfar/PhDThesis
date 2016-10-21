@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Tue Aug 09 22:43:43 PDT 2016
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=document.tex
+outputFile=Shayganfar-PhdDissertation.pdf
+langSpell=en
+markDer=true
+srcDir=

@@ -1,0 +1,343 @@
+\documentclass[12pt]{report}
+
+\usepackage[titletoc]{appendix}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage[explicit]{titlesec}
+\usepackage{tocloft}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[english]{babel}
+
+\usepackage{subcaption}
+\usepackage{subfig}
+
+\usepackage{url}
+
+\renewcommand{\familydefault}{\rmdefault}
+\renewcommand\cftchapaftersnum{.}
+\renewcommand\cftchapdotsep{\cftdotsep}
+
+\setlength{\textheight}{8.63in}
+\setlength{\textwidth}{5.9in}
+\setlength{\topmargin}{-0.2in}
+\setlength{\oddsidemargin}{0.3in}
+\setlength{\evensidemargin}{0.3in}
+\setlength{\headsep}{0.0in}
+
+\titleformat{\chapter}[block]
+  {\Large\filcenter\bfseries}{\MakeUppercase{Chapter \thechapter}\\}{0em}{\MakeUppercase{#1}}
+  
+\titleformat{\section}[block]
+  {\large\bfseries}{\thesection}{0.5em}{#1}
+  
+\titleformat{\subsection}[block]
+  {\normalsize\bfseries}{\thesubsection}{0.5em}{#1}
+  
+
+\newcommand{\signature}{\rule{3in}{1.2pt}}
+\newcommand{\thesistitle}{Affective Motivational Collaboration Theory}
+\newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
+
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+
+\linespread{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\large\textbf{\thesistitle}\\[0.5em]
+
+\large\textnormal{by}\\
+\large\textnormal{Mahni Shayganfar - mshayganfar@wpi.edu}\\[0.5em]
+
+\large\textnormal{A PhD Dissertation}\\[0.5em]
+
+\large\textnormal{Presented at}\\[0.5em]
+\large\textsc{WORCESTER POLYTECHNIC INSTITUTE}\\[0.5em]
+\large\textnormal{in partial fulfillment of the requirements for the}\\[0.5em]
+\large\textnormal{DOCTOR OF PHILOSOPHY}\\[0.5em]
+\large\textnormal{in}\\
+\large\textnormal{Computer Science}\\
+\large\textnormal{November 2016}\\[0.75em]
+\end{center}
+
+\noindent\large\textsc{Approved}\\[0.5em]
+\Large\textnormal{\signature}\\
+\normalsize\textnormal{Professor Charles Rich, Thesis Advisor}\\[0.5em]
+\Large\textnormal{\signature}\\
+\normalsize\textnormal{Professor Candace L. Sidner, Thesis Co-Advisor}\\[0.5em]
+\Large\textnormal{\signature}\\
+\normalsize\textnormal{Professor John E. Laird, Thesis Committee
+Member}\\[0.5em] \Large\textnormal{\signature}\\
+\normalsize\textnormal{Professor Stacy Marsella, Thesis Committee Member}
+\end{titlepage}
+
+\thispagestyle{empty}
+\vspace*{\fill}
+  \begin{center}
+    \textcopyright \hspace{0.5em} Copyright by Mahni Shayganfar 2016
+
+    All Rights Reserved
+  \end{center}
+\vspace*{\fill}
+\newpage
+
+\pagenumbering{roman}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Abstract Here!
+
+\pagebreak
+
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+Acknowledgments Here!
+
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\listoffigures
+\pagebreak
+
+\listoftables
+\pagebreak
+
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+%\pagebreak
+
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Motivation}
+
+\section{Thesis Statement and Scope}
+
+\section{Contributions}
+
+Throughout this work we aim to show how a robot can leverage emotion-driven
+processes using appraisal algorithms to improve collaboration with humans. As
+such, in this thesis work, we introduce a novel framework, called Affective
+Motivational Collaboration (AMC) framework, which allows a robotic agent to
+collaborate with humans incooperating the underlying emotion-driven processes
+and the expressed emotion of human collaborator. Such a framework is built
+based on computational models of collaboration and appraisal allowing for
+task-driven interaction with robots or other agents. The theoretical foundation,
+computational models and algorithms as well as the overall framework, and the
+end-to-end evaluation of the framwork make the following contributions:
+
+\begin{enumerate}
+  \item \textbf{Developing new computational models and algorithms for
+  \textit{Affective Motivational Collaboration Theory}; specifically for the}:
+  
+  \begin{enumerate}
+  	\item \textbf{appraisal of internal and external events during
+  	collaboration}
+
+  	I will create computational models and algorithms to compute the value of
+  	appraisal variables in a dyadic collaboration. Applying cognitive appraisal
+  	theory in the collaboration context is novel. Other models of the appraisal
+  	theory have not paid attention to the dynamics of the collaborators' mental
+  	states and behaviors.
+
+    \item \textbf{functions of emotions during collaboration}
+
+  	I will develop new algorithms for the various functions of emotions
+  	specifically in the context of collaboration. Existing models and
+  	implementations of emotions focus only on how emotions regulate and control
+  	internal processes and sometimes behaviors. In my work, I also investigate
+  	the details of how emotions result in collaborators' mental states. This in
+  	turn sheds light on the dynamics of collaborators' mental states and how
+  	appraisal of the self and the environment contributes to these functions.
+
+	\item \textbf{motivation-based belief and intention formation}
+  
+  	I will create a motivation mechanism that employs appraisal processes to
+  	dynamically form new beliefs and intentions related to the collaboration
+  	structure. This mechanism will help the agent overcome impasses during
+  	collaboration. Existing cognitive models do not include an account of the
+  	influence of motivation on collaborative behaviors.\\ \\ \\
+  
+  \end{enumerate}
+
+  \item \textbf{Developing and implementing a computational model based on
+  \textit{Affective Motivational Collaboration Theory}:}
+
+  My computational model will implement the key algorithms related to
+  \textit{Affective Motivational Collaboration Theory} as well as minimal
+  implementation of other processes which are required for validation of the
+  model but are not part of my thesis contributions. The emphasis of the model
+  is on underlying cognitive processes embracing collaboration and appraisal
+  concepts, rather than the Perception and the Action mechanisms.
+
+  \item \textbf{Validating \textit{Affective Motivational Collaboration
+  Theory:}}
+
+  I have identified eight key social characteristics (see Section
+  \ref{conceptual-constructs}) which occur during the course of a collaboration.
+  I will validate how the various functions of emotions give rise to these
+  characteristics during collaboration. Specifically, I will first incrementally
+  validate one or more of the computational components in my model starting with
+  appraisal. Finally, I will conduct an end-to-end system evaluation with human
+  subjects and a simulated robot.
+  
+\end{enumerate}
+
+\begin{enumerate}
+  \item \textbf{Contribution 1} 
+
+  \item \textbf{Contribution 2} 
+
+  \item \textbf{Contribution 3}
+
+  \item \textbf{Contributions 4}
+\end{enumerate}
+
+\chapter{Background and Related Work}
+\label{ch:background}
+
+\section{Computational Collaboration Theories}
+
+\subsection{Shared-Plans Theory}
+
+\subsection{Joint-Intentions Theory}
+
+\subsection{Hybird Theories}
+
+\subsection{Similarities and Differences}
+
+\subsection{Applications of Collaboration Theories}
+
+\section{Affective Computing}
+
+\subsection{Affect and Emotions}
+
+\subsection{Functions of Emotions}
+
+\subsection{Motivation and Theory of Mind}
+
+\section{Computational Models of Emotions}
+
+\subsection{Appraisal Theory}
+
+\subsection{Other Computational Models}
+
+\subsection{Similarities and Differences}
+
+\subsection{Applications in Autonomous Agents and Robots}
+
+\chapter{Affective Motivational Collaboration Theory}
+\label{ch:amct}
+
+\section{Introduction}
+
+\subsection{Scenario}
+
+\subsection{Example of a Collaborative Interaction}
+
+\section{Design and Architecture}
+
+\subsection{Mechanisms}
+
+\subsection{Functions of Emotions}
+
+\subsection{Mental States}
+
+\subsection{Attributes of Mental States}
+
+\chapter{Computational Framework}
+\label{ch:framework}
+
+\section{System Overview}
+
+\section{Components of the Architecture}
+
+\subsection{Mental States}
+
+\subsection{Collaboration}
+
+\subsection{Appraisal}
+
+\subsection{Coping}
+
+\subsection{Motivation}
+
+\subsection{Theory of Mind}
+
+\subsection{Perception}
+
+\subsection{Action}
+
+\chapter{Appraisal Processes in Collaboration Context}
+\label{ch:appraisals}
+
+\section{Introduction}
+
+\section{Appraisal and Collaboration}
+
+\section{Appraisal Algorithms}
+
+\subsection{Relevance}
+
+\subsection{Desirability}
+
+\subsection{Expectedness}
+
+\subsection{Controllability}
+
+\section{Methodology [This chapter will contain the crowdsourding study.]}
+
+\section{Results and Evaluation}
+
+\chapter{Improving Human-Robot Collaboration \\ Using Emotional-Awareness}
+\label{ch:awareness}
+
+\section{Introduction}
+
+\section{Collaborative Behaviors and Emotional-Awareness}
+
+\subsection{Goal Postponement}
+
+\subsection{Goal Management}
+
+\subsection{Task Delegation}
+
+\section{Methodology}
+
+\section{Results and Evaluation}
+
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+\section{Discussion}
+
+\section{Future Work}
+
+\pagebreak
+
+\bibliographystyle{abbrv}
+\bibliography{phd2016-toris}
+
+
+\begin{appendices}
+\chapter*{Appendix A}
+\label{apdx:constraints}
+\addcontentsline{toc}{chapter}{A}
+
+\end{appendices}
+
+\end{document}
