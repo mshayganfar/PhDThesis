@@ -4,62 +4,62 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}Thesis Statement and Scope}{1}
-\contentsline {section}{\numberline {1.3}Contributions}{1}
-\contentsline {chapter}{\numberline {2}Background and Related Work}{4}
-\contentsline {section}{\numberline {2.1}Computational Collaboration Theories}{5}
-\contentsline {subsection}{\numberline {2.1.1}Shared-Plans Theory}{5}
-\contentsline {subsection}{\numberline {2.1.2}Joint-Intentions Theory}{5}
-\contentsline {subsection}{\numberline {2.1.3}Hybird Theories}{5}
-\contentsline {subsection}{\numberline {2.1.4}Similarities and Differences}{5}
-\contentsline {subsection}{\numberline {2.1.5}Applications of Collaboration Theories}{5}
-\contentsline {section}{\numberline {2.2}Affective Computing}{5}
-\contentsline {subsection}{\numberline {2.2.1}Affect and Emotions}{5}
-\contentsline {subsection}{\numberline {2.2.2}Functions of Emotions}{5}
-\contentsline {subsection}{\numberline {2.2.3}Motivation and Theory of Mind}{5}
-\contentsline {section}{\numberline {2.3}Computational Models of Emotions}{5}
-\contentsline {subsection}{\numberline {2.3.1}Appraisal Theory}{5}
-\contentsline {subsection}{\numberline {2.3.2}Other Computational Models}{5}
-\contentsline {subsection}{\numberline {2.3.3}Similarities and Differences}{5}
-\contentsline {subsection}{\numberline {2.3.4}Applications in Autonomous Agents and Robots}{5}
-\contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{6}
-\contentsline {section}{\numberline {3.1}Introduction}{6}
-\contentsline {subsection}{\numberline {3.1.1}Scenario}{6}
-\contentsline {subsection}{\numberline {3.1.2}Example of a Collaborative Interaction}{6}
-\contentsline {section}{\numberline {3.2}Design and Architecture}{6}
-\contentsline {subsection}{\numberline {3.2.1}Mechanisms}{6}
-\contentsline {subsection}{\numberline {3.2.2}Functions of Emotions}{6}
-\contentsline {subsection}{\numberline {3.2.3}Mental States}{6}
-\contentsline {subsection}{\numberline {3.2.4}Attributes of Mental States}{6}
-\contentsline {chapter}{\numberline {4}Appraisal Processes in Collaboration Context}{7}
-\contentsline {section}{\numberline {4.1}Introduction}{7}
-\contentsline {section}{\numberline {4.2}Appraisal and Collaboration}{7}
-\contentsline {section}{\numberline {4.3}Appraisal Algorithms}{7}
-\contentsline {subsection}{\numberline {4.3.1}Relevance}{7}
-\contentsline {subsection}{\numberline {4.3.2}Desirability}{7}
-\contentsline {subsection}{\numberline {4.3.3}Expectedness}{7}
-\contentsline {subsection}{\numberline {4.3.4}Controllability}{7}
-\contentsline {section}{\numberline {4.4}Methodology [This chapter will contain the crowdsourding study.]}{7}
-\contentsline {section}{\numberline {4.5}Results and Evaluation}{7}
-\contentsline {chapter}{\numberline {5}Computational Framework}{8}
-\contentsline {section}{\numberline {5.1}System Overview}{8}
-\contentsline {section}{\numberline {5.2}Components of the Architecture}{8}
-\contentsline {subsection}{\numberline {5.2.1}Mental States}{8}
-\contentsline {subsection}{\numberline {5.2.2}Collaboration}{8}
-\contentsline {subsection}{\numberline {5.2.3}Appraisal}{8}
-\contentsline {subsection}{\numberline {5.2.4}Coping}{8}
-\contentsline {subsection}{\numberline {5.2.5}Motivation}{8}
-\contentsline {subsection}{\numberline {5.2.6}Theory of Mind}{8}
-\contentsline {subsection}{\numberline {5.2.7}Perception}{8}
-\contentsline {subsection}{\numberline {5.2.8}Action}{8}
-\contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration \\ Using Emotional-Awareness}{9}
-\contentsline {section}{\numberline {6.1}Introduction}{10}
-\contentsline {section}{\numberline {6.2}Collaborative Behaviors and Emotional-Awareness}{10}
-\contentsline {subsection}{\numberline {6.2.1}Goal Postponement}{10}
-\contentsline {subsection}{\numberline {6.2.2}Goal Management}{10}
-\contentsline {subsection}{\numberline {6.2.3}Task Delegation}{10}
-\contentsline {section}{\numberline {6.3}Methodology}{10}
-\contentsline {section}{\numberline {6.4}Results and Evaluation}{10}
-\contentsline {chapter}{\numberline {7}Conclusion}{11}
-\contentsline {section}{\numberline {7.1}Discussion}{11}
-\contentsline {section}{\numberline {7.2}Future Work}{11}
-\contentsline {chapter}{Appendix A}{13}
+\contentsline {section}{\numberline {1.3}Contributions}{2}
+\contentsline {chapter}{\numberline {2}Background and Related Work}{5}
+\contentsline {section}{\numberline {2.1}Computational Collaboration Theories}{6}
+\contentsline {subsection}{\numberline {2.1.1}Shared-Plans Theory}{6}
+\contentsline {subsection}{\numberline {2.1.2}Joint-Intentions Theory}{6}
+\contentsline {subsection}{\numberline {2.1.3}Hybird Theories}{6}
+\contentsline {subsection}{\numberline {2.1.4}Similarities and Differences}{6}
+\contentsline {subsection}{\numberline {2.1.5}Applications of Collaboration Theories}{6}
+\contentsline {section}{\numberline {2.2}Affective Computing}{6}
+\contentsline {subsection}{\numberline {2.2.1}Affect and Emotions}{6}
+\contentsline {subsection}{\numberline {2.2.2}Functions of Emotions}{6}
+\contentsline {subsection}{\numberline {2.2.3}Motivation and Theory of Mind}{6}
+\contentsline {section}{\numberline {2.3}Computational Models of Emotions}{6}
+\contentsline {subsection}{\numberline {2.3.1}Appraisal Theory}{6}
+\contentsline {subsection}{\numberline {2.3.2}Other Computational Models}{6}
+\contentsline {subsection}{\numberline {2.3.3}Similarities and Differences}{6}
+\contentsline {subsection}{\numberline {2.3.4}Applications in Autonomous Agents and Robots}{6}
+\contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{7}
+\contentsline {section}{\numberline {3.1}Introduction}{7}
+\contentsline {subsection}{\numberline {3.1.1}Scenario}{7}
+\contentsline {subsection}{\numberline {3.1.2}Example of a Collaborative Interaction}{7}
+\contentsline {section}{\numberline {3.2}Design and Architecture}{7}
+\contentsline {subsection}{\numberline {3.2.1}Mechanisms}{7}
+\contentsline {subsection}{\numberline {3.2.2}Functions of Emotions}{7}
+\contentsline {subsection}{\numberline {3.2.3}Mental States}{7}
+\contentsline {subsection}{\numberline {3.2.4}Attributes of Mental States}{7}
+\contentsline {chapter}{\numberline {4}Appraisal Processes in Collaboration Context}{8}
+\contentsline {section}{\numberline {4.1}Introduction}{8}
+\contentsline {section}{\numberline {4.2}Appraisal and Collaboration}{8}
+\contentsline {section}{\numberline {4.3}Appraisal Algorithms}{8}
+\contentsline {subsection}{\numberline {4.3.1}Relevance}{8}
+\contentsline {subsection}{\numberline {4.3.2}Desirability}{8}
+\contentsline {subsection}{\numberline {4.3.3}Expectedness}{8}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{8}
+\contentsline {section}{\numberline {4.4}Methodology [This chapter will contain the crowdsourding study.]}{8}
+\contentsline {section}{\numberline {4.5}Results and Evaluation}{8}
+\contentsline {chapter}{\numberline {5}Computational Framework}{9}
+\contentsline {section}{\numberline {5.1}System Overview}{9}
+\contentsline {section}{\numberline {5.2}Components of the Architecture}{9}
+\contentsline {subsection}{\numberline {5.2.1}Mental States}{9}
+\contentsline {subsection}{\numberline {5.2.2}Collaboration}{9}
+\contentsline {subsection}{\numberline {5.2.3}Appraisal}{9}
+\contentsline {subsection}{\numberline {5.2.4}Coping}{9}
+\contentsline {subsection}{\numberline {5.2.5}Motivation}{9}
+\contentsline {subsection}{\numberline {5.2.6}Theory of Mind}{9}
+\contentsline {subsection}{\numberline {5.2.7}Perception}{9}
+\contentsline {subsection}{\numberline {5.2.8}Action}{9}
+\contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration \\ Using Emotional-Awareness}{10}
+\contentsline {section}{\numberline {6.1}Introduction}{11}
+\contentsline {section}{\numberline {6.2}Collaborative Behaviors and Emotional-Awareness}{11}
+\contentsline {subsection}{\numberline {6.2.1}Goal Postponement}{11}
+\contentsline {subsection}{\numberline {6.2.2}Goal Management}{11}
+\contentsline {subsection}{\numberline {6.2.3}Task Delegation}{11}
+\contentsline {section}{\numberline {6.3}Methodology}{11}
+\contentsline {section}{\numberline {6.4}Results and Evaluation}{11}
+\contentsline {chapter}{\numberline {7}Conclusion}{12}
+\contentsline {section}{\numberline {7.1}Discussion}{12}
+\contentsline {section}{\numberline {7.2}Future Work}{12}
+\contentsline {chapter}{Appendix A}{14}

@@ -2,52 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: abbrv.bst
-I couldn't open database file phd2016-toris.bib
----line 49 of file document.aux
- : \bibdata{phd2016-toris
- :                       }
-I'm skipping whatever remains of this command
-I found no \citation commands---while reading file document.aux
-I found no database files---while reading file document.aux
-You've used 0 entries,
+Database file #1: mshayganfar.bib
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            497 strings with 3718 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            531 strings with 4456 characters,
+and the built_in function-call counts, 1583 in all, are:
+= -- 151
+> -- 63
+< -- 1
++ -- 27
+- -- 19
+* -- 98
+:= -- 268
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 5
+duplicate$ -- 70
+empty$ -- 136
+format.name$ -- 19
+if$ -- 339
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 5
+missing$ -- 7
+newline$ -- 28
+num.names$ -- 12
+pop$ -- 29
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 18
 quote$ -- 0
-skip$ -- 1
+skip$ -- 45
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 90
+swap$ -- 14
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 16
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There were 3 error messages)
+while$ -- 16
+width$ -- 6
+write$ -- 57

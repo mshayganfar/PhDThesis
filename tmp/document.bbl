@@ -1,3 +1,29 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{dancy:actR-physiology-affect}
+C.~L. Dancy.
+\newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
+\newblock {\em Biologically Inspired Cognitive Architectures}, 6:40--45, 2013.
+
+\bibitem{grosz:plans-discourse}
+B.~J. Grosz and C.~L. Sidner.
+\newblock Plans for discourse.
+\newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
+  Intentions in Communication}, pages 417--444. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{anderson:act-r}
+C.~L. John Robert~Anderson.
+\newblock {\em The Atomic Components of Thought}.
+\newblock Lawrence Erlbaum Associates, 1998.
+
+\bibitem{laird:soar}
+J.~Laird.
+\newblock {\em The Soar Cognitive Architecture}.
+\newblock MIT Press, 2012.
+
+\bibitem{marinier:behavior-emotion}
+R.~P. {Marinier III}, J.~E. Laird, and R.~L. Lewis.
+\newblock A computational unification of cognitive behavior and emotion.
+\newblock {\em Cognitive System Research}, 10(1):48--69, March 2009.
 
 \end{thebibliography}
