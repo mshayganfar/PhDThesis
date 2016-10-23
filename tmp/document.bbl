@@ -1,9 +1,35 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bratman:intentions-plans}
+M.~E. Bratman.
+\newblock {\em Intention, Plans, and Practical Reason}.
+\newblock Cambridge, Mass.: Harvard University Press, 1987.
+
+\bibitem{breazeal:humanoid-robots}
+C.~Breazeal, A.~Brooks, J.~Gray, G.~Hoffman, C.~Kidd, H.~Lee, J.~Lieberman,
+  A.~Lockerd, and D.~Mulanda.
+\newblock Humanoid robots as cooperative partners for people.
+\newblock {\em Journal of Humanoid Robots}, 1(2):1--34, 2004.
+
+\bibitem{cohen:teamwork}
+P.~Cohen and H.~J. Levesque.
+\newblock {\em Teamwork}.
+\newblock SRI International, 1991.
 
 \bibitem{dancy:actR-physiology-affect}
 C.~L. Dancy.
 \newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
 \newblock {\em Biologically Inspired Cognitive Architectures}, 6:40--45, 2013.
+
+\bibitem{grosz:planning-acting}
+B.~J. Grosz, L.~Hunsberger, and S.~Kraus.
+\newblock Planning and acting together.
+\newblock {\em {AI} Magazine}, 20(4):23--34, 1999.
+
+\bibitem{grosz:collaboration}
+B.~J. Grosz and S.~Kraus.
+\newblock Collaborative plans for complex group action.
+\newblock {\em Artificial Intelligence}, 86(2):269--357, 1996.
 
 \bibitem{grosz:plans-discourse}
 B.~J. Grosz and C.~L. Sidner.
@@ -21,9 +47,33 @@ J.~Laird.
 \newblock {\em The Soar Cognitive Architecture}.
 \newblock MIT Press, 2012.
 
+\bibitem{Litman:discourse-commonsense}
+D.~J. Litman and J.~F. Allen.
+\newblock Discourse processing and commonsense plans.
+\newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
+  Intentions in Communication}, pages 365--388. MIT Press, Cambridge, MA, 1990.
+
 \bibitem{marinier:behavior-emotion}
 R.~P. {Marinier III}, J.~E. Laird, and R.~L. Lewis.
 \newblock A computational unification of cognitive behavior and emotion.
 \newblock {\em Cognitive System Research}, 10(1):48--69, March 2009.
+
+\bibitem{montreuil:planning-robot-activity}
+V.~Montreuil, A.~Clodic, M.~Ransan, and R.~Alami.
+\newblock Planning human centered robot activities.
+\newblock In {\em Proceedings of the {IEEE} International Conference on
+  Systems, Man and Cybernetics}, pages 2618--2623, 2007.
+
+\bibitem{sidner:enagagement-robot}
+C.~L. Sidner and M.~Dzikovska.
+\newblock A first experiment in engagement for human-robot interaction in
+  hosting activities.
+\newblock In {\em Advances in Natural Multimodal Dialogue Systems}, volume~30
+  of {\em Cognitive Technologies}, pages 55--76. Springer Netherlands, 2005.
+
+\bibitem{yen:cast}
+J.~Yen, J.~Yin, T.~R. Ioerger, M.~S. Miller, D.~Xu, and R.~A. Volz.
+\newblock Cast: Collaborative agents for simulating teamwork.
+\newblock In {\em Proceedings of IJCAI’2001}, pages 1135--1142, 2001.
 
 \end{thebibliography}
