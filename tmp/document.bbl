@@ -58,11 +58,21 @@ R.~P. {Marinier III}, J.~E. Laird, and R.~L. Lewis.
 \newblock A computational unification of cognitive behavior and emotion.
 \newblock {\em Cognitive System Research}, 10(1):48--69, March 2009.
 
+\bibitem{marsella:ema-process-model}
+S.~C. Marsella and J.~Gratch.
+\newblock {EMA}: A process model of appraisal dynamics.
+\newblock {\em Cognitive Systems Research}, 10(1):70--90, March 2009.
+
 \bibitem{montreuil:planning-robot-activity}
 V.~Montreuil, A.~Clodic, M.~Ransan, and R.~Alami.
 \newblock Planning human centered robot activities.
 \newblock In {\em Proceedings of the {IEEE} International Conference on
   Systems, Man and Cybernetics}, pages 2618--2623, 2007.
+
+\bibitem{scherer:appraisal-processes}
+K.~R. Scherer, A.~Schorr, and T.~Johnstone.
+\newblock {\em Appraisal Processes in Emotion: Theory, Methods, Research}.
+\newblock Oxford University Press, 2001.
 
 \bibitem{sidner:enagagement-robot}
 C.~L. Sidner and M.~Dzikovska.

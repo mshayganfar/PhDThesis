@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  23 OCT 2016 00:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  24 OCT 2016 20:57
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -474,32 +474,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Chapter 1.
 [1
 
-] [2] [3] [4] [5]
+] [2] [3] [4] <figure/collaborative-robot.png, id=50, 361.35pt x 240.9pt>
+File: figure/collaborative-robot.png Graphic file (type png)
+
+<use figure/collaborative-robot.png>
+Package pdftex.def Info: figure/collaborative-robot.png used on input line 262.
+
+(pdftex.def)             Requested size: 422.7778pt x 281.85185pt.
+ [5 <./figure/collaborative-robot.png (PNG copy)>] [6]
 Chapter 2.
-[6
+[7
 
 ]
 Overfull \vbox (32.0097pt too high) has occurred while \output is active []
 
 
-[7]
+[8]
 Chapter 3.
-[8
-
-]
-Chapter 4.
 [9
 
 ]
-Chapter 5.
+Chapter 4.
 [10
+
+]
+Chapter 5.
+[11
 
 ]
 Chapter 6.
 ! Use of \@icentercr doesn't match its definition.
 <argument> \def 
                 
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -509,7 +516,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Argument of \ttl@assign@d has an extra }.
 <inserted text> 
                 \par 
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -523,7 +530,7 @@ Runaway argument?
 ! Paragraph ended before \ttl@assign@d was complete.
 <to be read again> 
                    \par 
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -532,7 +539,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Use of \let doesn't match its definition.
 <to be read again> ...T IT.}\par \let \reserved@d 
                                                   = *\def \let \def \let *\p...
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -542,7 +549,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Missing { inserted.
 \MakeUppercase  ... {\uppercase {#1}}\reserved@a }
                                                   
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 Where was the left brace? You said something like `\def\a}',
 which I'm going to interpret as `\def\a{}'.
@@ -550,7 +557,7 @@ which I'm going to interpret as `\def\a{}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.382 ...llaboration \\ Using Emotional-Awareness}
+l.395 ...llaboration \\ Using Emotional-Awareness}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -558,29 +565,29 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[11
+[12
 
-] [12]
+] [13]
 Chapter 7.
-[13
+[14
 
-] (./document.bbl [14
+] (./document.bbl [15
 
 ]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
-) [15] [16
+) [16] [17
 
 ] (./document.aux) ) 
 Here is how much of TeX's memory you used:
- 6217 strings out of 493304
- 87990 string characters out of 6139871
- 174994 words of memory out of 5000000
- 9525 multiletter control sequences out of 15000+600000
+ 6232 strings out of 493304
+ 88315 string characters out of 6139871
+ 175015 words of memory out of 5000000
+ 9537 multiletter control sequences out of 15000+600000
  11416 words of font info for 42 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,5n,43p,1011b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,43p,1011b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
 xti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10
@@ -588,10 +595,10 @@ xti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (25 pages, 118189 bytes).
+Output written on document.pdf (26 pages, 2227339 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
