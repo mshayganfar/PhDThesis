@@ -53,34 +53,28 @@
 \contentsline {subsection}{\numberline {5.2.8}Action}{11}
 \contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration Using Emotional-Awareness}{12}
 \contentsline {section}{\numberline {6.1}Introduction}{12}
-\contentsline {section}{\numberline {6.2}Collaborative Behaviors and Emotional-Awareness}{12}
-\contentsline {subsection}{\numberline {6.2.1}Goal Postponement}{12}
-\contentsline {subsection}{\numberline {6.2.2}Goal Management}{12}
-\contentsline {subsection}{\numberline {6.2.3}Task Delegation}{12}
-\contentsline {section}{\numberline {6.3}Methodology}{12}
-\contentsline {section}{\numberline {6.4}Results and Evaluation}{12}
-\contentsline {section}{\numberline {6.5}Experimental Scenario}{12}
-\contentsline {subsection}{\numberline {6.5.1}The Robot}{13}
-\contentsline {subsection}{\numberline {6.5.2}Interaction Paradigms}{14}
-\contentsline {subsection}{\numberline {6.5.3}Environment and Tasks}{15}
-\contentsline {section}{\numberline {6.6}Evaluation}{16}
-\contentsline {subsection}{\numberline {6.6.1}Hypothesis}{16}
-\contentsline {subsection}{\numberline {6.6.2}Procedure}{17}
-\contentsline {subsection}{\numberline {6.6.3}Measurements}{18}
-\contentsline {subsection}{\numberline {6.6.4}Participants}{19}
-\contentsline {section}{\numberline {6.7}Results}{20}
-\contentsline {subsection}{\numberline {6.7.1}7-Point Likert Scale Survey Results}{20}
+\contentsline {section}{\numberline {6.2}Experimental Scenario}{13}
+\contentsline {subsection}{\numberline {6.2.1}The Robot}{14}
+\contentsline {subsection}{\numberline {6.2.2}Interaction Paradigms}{14}
+\contentsline {subsection}{\numberline {6.2.3}Environment and Tasks}{16}
+\contentsline {section}{\numberline {6.3}Evaluation}{16}
+\contentsline {subsection}{\numberline {6.3.1}Hypothesis}{16}
+\contentsline {subsection}{\numberline {6.3.2}Procedure}{18}
+\contentsline {subsection}{\numberline {6.3.3}Measurements}{19}
+\contentsline {subsection}{\numberline {6.3.4}Participants}{19}
+\contentsline {section}{\numberline {6.4}Results}{19}
+\contentsline {subsection}{\numberline {6.4.1}7-Point Likert Scale Survey Results}{20}
 \contentsline {subsubsection}{Likability of the Robot}{22}
-\contentsline {subsubsection}{Human Trust in the Robot}{22}
+\contentsline {subsubsection}{Human Trust in the Robot}{23}
 \contentsline {subsubsection}{Perception of the Robot's Performance}{23}
-\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{23}
-\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{23}
+\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{24}
+\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{24}
 \contentsline {subsubsection}{Human's Feeling about the Collaboration}{24}
-\contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{24}
-\contentsline {subsection}{\numberline {6.7.2}Results from the Open-Ended Questionnaire}{25}
-\contentsline {subsection}{\numberline {6.7.3}Impact of Demographics}{27}
-\contentsline {section}{\numberline {6.8}Discussion}{28}
-\contentsline {section}{\numberline {6.9}Conclusions}{29}
+\contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{25}
+\contentsline {subsection}{\numberline {6.4.2}Results from the Open-Ended Questionnaire}{25}
+\contentsline {subsection}{\numberline {6.4.3}Impact of Demographics}{27}
+\contentsline {section}{\numberline {6.5}Discussion}{28}
+\contentsline {section}{\numberline {6.6}Conclusions}{29}
 \contentsline {chapter}{\numberline {7}Conclusion}{30}
 \contentsline {section}{\numberline {7.1}Discussion}{30}
 \contentsline {section}{\numberline {7.2}Future Work}{30}

@@ -11,6 +11,11 @@ C.~Breazeal, A.~Brooks, J.~Gray, G.~Hoffman, C.~Kidd, H.~Lee, J.~Lieberman,
 \newblock Humanoid robots as cooperative partners for people.
 \newblock {\em Journal of Humanoid Robots}, 1(2):1--34, 2004.
 
+\bibitem{breazeal:sociable-interactive-robots}
+C.~Breazeal, A.~Takanishi, and T.~Kobayashi.
+\newblock {\em Social Robots that Interact with People}, pages 1349--1369.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
 \bibitem{cohen:teamwork}
 P.~Cohen and H.~J. Levesque.
 \newblock {\em Teamwork}.

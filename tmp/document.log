@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  25 OCT 2016 21:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  26 OCT 2016 22:34
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -517,83 +517,83 @@ Chapter 6.
 File: figure/gameBoard.pdf Graphic file (type pdf)
 
 <use figure/gameBoard.pdf>
-Package pdftex.def Info: figure/gameBoard.pdf used on input line 429.
+Package pdftex.def Info: figure/gameBoard.pdf used on input line 430.
 (pdftex.def)             Requested size: 426.39255pt x 245.30954pt.
 
 
-LaTeX Warning: Reference `fig:framework' on page 13 undefined on input line 443
+LaTeX Warning: Reference `fig:framework' on page 13 undefined on input line 444
 .
 
 [13 <./figure/gameBoard.pdf>]
 
-LaTeX Warning: Reference `fig:taskModel' on page 14 undefined on input line 457
+LaTeX Warning: Reference `fig:taskModel' on page 14 undefined on input line 458
 .
 
 
-LaTeX Warning: Reference `sec:theory' on page 14 undefined on input line 473.
+LaTeX Warning: Reference `sec:theory' on page 14 undefined on input line 474.
 
 [14] [15]
 
-LaTeX Warning: Reference `fig:taskModel' on page 16 undefined on input line 516
+LaTeX Warning: Reference `fig:taskModel' on page 16 undefined on input line 517
 .
 
 [16] <figure/environment.png, id=106, 361.35pt x 240.9pt>
 File: figure/environment.png Graphic file (type png)
 
 <use figure/environment.png>
-Package pdftex.def Info: figure/environment.png used on input line 556.
+Package pdftex.def Info: figure/environment.png used on input line 557.
 (pdftex.def)             Requested size: 426.39255pt x 284.2632pt.
  [17 <./figure/environment.png (PNG copy)>]
 [18] <figure/14Questions.pdf, id=113, 505.69298pt x 216.9551pt>
 File: figure/14Questions.pdf Graphic file (type pdf)
 
 <use figure/14Questions.pdf>
-Package pdftex.def Info: figure/14Questions.pdf used on input line 622.
+Package pdftex.def Info: figure/14Questions.pdf used on input line 623.
 (pdftex.def)             Requested size: 426.39255pt x 182.9329pt.
 
 <figure/table1-croped.pdf, id=114, 678.535pt x 306.14375pt>
 File: figure/table1-croped.pdf Graphic file (type pdf)
 
 <use figure/table1-croped.pdf>
-Package pdftex.def Info: figure/table1-croped.pdf used on input line 632.
+Package pdftex.def Info: figure/table1-croped.pdf used on input line 633.
 (pdftex.def)             Requested size: 426.39255pt x 192.38107pt.
 
 <figure/table2-croped.pdf, id=115, 678.535pt x 143.53625pt>
 File: figure/table2-croped.pdf Graphic file (type pdf)
 
 <use figure/table2-croped.pdf>
-Package pdftex.def Info: figure/table2-croped.pdf used on input line 640.
+Package pdftex.def Info: figure/table2-croped.pdf used on input line 641.
 (pdftex.def)             Requested size: 426.39255pt x 90.19833pt.
 
 <figure/AgeComparison1.pdf, id=116, 505.96063pt x 180.70023pt>
 File: figure/AgeComparison1.pdf Graphic file (type pdf)
 
 <use figure/AgeComparison1.pdf>
-Package pdftex.def Info: figure/AgeComparison1.pdf used on input line 649.
+Package pdftex.def Info: figure/AgeComparison1.pdf used on input line 650.
 (pdftex.def)             Requested size: 426.39255pt x 152.28896pt.
 
 <figure/AgeComparison2.pdf, id=117, 505.96063pt x 216.84027pt>
 File: figure/AgeComparison2.pdf Graphic file (type pdf)
 
 <use figure/AgeComparison2.pdf>
-Package pdftex.def Info: figure/AgeComparison2.pdf used on input line 655.
+Package pdftex.def Info: figure/AgeComparison2.pdf used on input line 656.
 (pdftex.def)             Requested size: 426.39255pt x 182.74677pt.
- [19 <./figure/14Questions.pdf>] [20 <./figure/table1-croped.pdf> <./figure/tab
-le2-croped.pdf
+ [19] [20 <./figure/14Questions.pdf>] [21 <./figure/table1-croped.pdf> <./figur
+e/table2-croped.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figure/table2-croped.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] [21 <./figure/AgeComparison1.pdf> <./figure/AgeComparison2.pdf
+>] [22 <./figure/AgeComparison1.pdf> <./figure/AgeComparison2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figure/AgeComparison2.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
->] [22] [23] [24] [25] [26] [27]
-Overfull \hbox (7.73073pt too wide) in paragraph at lines 907--918
+>] [23] [24] [25] [26] [27] [28]
+Overfull \hbox (7.73073pt too wide) in paragraph at lines 908--919
 [][]\OT1/cmr/m/n/12 Finally, the emotion-aware robot de-vel-oped a stronger sen
 se of part-ner-ship through
  []
 
-[28] [29]
+[29]
 Chapter 7.
 [30
 
@@ -614,10 +614,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6295 strings out of 493304
- 89682 string characters out of 6139871
- 175265 words of memory out of 5000000
- 9592 multiletter control sequences out of 15000+600000
+ 6296 strings out of 493304
+ 89720 string characters out of 6139871
+ 175270 words of memory out of 5000000
+ 9593 multiletter control sequences out of 15000+600000
  11715 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,6n,40p,1011b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -629,7 +629,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive
 dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (43 pages, 4537859 bytes).
+Output written on document.pdf (43 pages, 4538395 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams
