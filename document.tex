@@ -411,6 +411,66 @@ collaboration. We examined how emotional-awareness impacts different aspects of
 humans' preferences by comparing the results from our participants collaborating
 with an emotion-aware and an emotion-ignorant robot.
 
+\section{Collaborative Behaviors and Emotional-Awareness}
+
+\subsection{Goal Postponement}
+
+\subsection{Goal Management}
+
+\subsection{Task Delegation}
+
+\section{Implementation}
+The implementation of this user-study included three separated parts. The first
+part incorporated the Affective Motivational Collaboration Framework consisting
+of all Mental Processes (see left-side of Figure \ref{fig:framework}) as we
+described in Chapter \ref{ch:framework}. The second part was implemented to
+receive action commands from the framework and forward them to the robot to
+control joints and actuators (see right-side of Figure \ref{fig:framework}).
+Finally, a wizard was the third part of this setting. The wizard did not do
+anything but informing the robot/framework whether the current performed task by
+either of the robot or the participant was achieved successfully. The act of the
+wizard was completely invisible for the participants, and the wizard had not
+impact on robot's decision other than providing tasks' failure or success.
+
+\begin{figure*}[tbh]
+  \centering
+  \includegraphics[width=\textwidth]{figure/framework-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Computational framework based on
+  [title suppressed for anonymity] theory (arrows indicate primary influences
+  between mechanisms and data flow).}}
+  \label{fig:framework}
+  \vspace*{-5mm}
+\end{figure*}
+
+\subsection{Framework}
+\label{sec:theory}
+The framework includes all the mechanisms depicted as mental processes in Figure
+\ref{fig:framework} along with the mental states. The mental
+states shown in Figure \ref{fig:framework} comprise the knowledge base required
+for all of the mechanisms in the overall model. The details about these mental
+processes and mental states are described in Chapters \ref{ch:amct} and
+\ref{ch:framework}. In this user-study, the Collaboration mechanism uses a
+hierarchy of goals associated with tasks in a hierarchical task network
+structure depicted in Figure \ref{fig:collaboration_structure}.
+
+\begin{figure*}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/collaborationStructure.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Collaboration structure used as the
+  task model.}}
+  \label{fig:collaboration_structure}
+  \vspace*{-5mm}
+\end{figure*}
+
+\subsection{Robot Controller}
+The robot controller is comprised of two major components: 1) ROS-bridge and 2)
+joint controller (see Figure \ref{fig:framework}).
+ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
+functionality for non-ROS programs which enables us to send action commands from
+our framework (implemented in JAVA) to the robot's joint controller. The joint
+controller receives action commands and translates them into actual joint and
+actuator commands and sends them to the robot.
+
 \section{Experimental Scenario}
 
 Our scenario was based on a table top turn-taking game that we designed to
