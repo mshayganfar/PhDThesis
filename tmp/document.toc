@@ -71,18 +71,18 @@
 \contentsline {subsection}{\numberline {6.5.4}Participants}{21}
 \contentsline {section}{\numberline {6.6}Results}{21}
 \contentsline {subsection}{\numberline {6.6.1}7-Point Likert Scale Survey Results}{23}
-\contentsline {subsubsection}{Likability of the Robot}{25}
-\contentsline {subsubsection}{Human Trust in the Robot}{26}
+\contentsline {subsubsection}{Likability of the Robot}{24}
+\contentsline {subsubsection}{Human Trust in the Robot}{25}
 \contentsline {subsubsection}{Perception of the Robot's Performance}{26}
 \contentsline {subsubsection}{Robot's Understanding of Human Emotions}{27}
 \contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{27}
-\contentsline {subsubsection}{Human's Feeling about the Collaboration}{27}
+\contentsline {subsubsection}{Human's Feeling about the Collaboration}{28}
 \contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{28}
-\contentsline {subsection}{\numberline {6.6.2}Results from the Open-Ended Questionnaire}{28}
-\contentsline {subsection}{\numberline {6.6.3}Impact of Demographics}{30}
+\contentsline {subsection}{\numberline {6.6.2}Results from the Open-Ended Questionnaire}{29}
+\contentsline {subsection}{\numberline {6.6.3}Impact of Demographics}{31}
 \contentsline {section}{\numberline {6.7}Discussion}{31}
 \contentsline {section}{\numberline {6.8}Conclusions}{32}
-\contentsline {chapter}{\numberline {7}Conclusion}{33}
-\contentsline {section}{\numberline {7.1}Discussion}{33}
-\contentsline {section}{\numberline {7.2}Future Work}{33}
-\contentsline {chapter}{Appendix A}{36}
+\contentsline {chapter}{\numberline {7}Conclusion}{34}
+\contentsline {section}{\numberline {7.1}Discussion}{34}
+\contentsline {section}{\numberline {7.2}Future Work}{34}
+\contentsline {chapter}{Appendix A}{37}
