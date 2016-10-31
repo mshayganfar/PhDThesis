@@ -18,6 +18,8 @@
 
 \usepackage{url}
 
+\usepackage{rotating}
+
 \renewcommand{\familydefault}{\rmdefault}
 \renewcommand\cftchapaftersnum{.}
 \renewcommand\cftchapdotsep{\cftdotsep}
@@ -678,15 +680,14 @@ emotion. The order of these two trials were randomly assigned to each
 participant. In general we used emotion-ignorant robot first in 16 experiments,
 and emotion-aware robot first in 17 experiments.
 
-\begin{figure*}[tbh]
+\begin{sidewaysfigure}
 \centering
-\includegraphics[width=1\textwidth]{figure/14Questions.pdf}
-\caption{Results of the Likert scale surveys for 14 selected questions. The
-p-value for the difference between the means for each question is <0.001,
-except for Q11, which is 0.008.}
+\includegraphics[width=1\textwidth]{figure/31questions.png}
+\caption{Results of the Likert scale surveys for 31 questions. The p-value for
+the difference between the means for each question is <0.001, except for Q????,
+which is 0.008.}
 \label{fig:14Questions}
-\vspace*{-5mm}
-\end{figure*}
+\end{sidewaysfigure}
 
 \begin{figure*}[tbh]
 \centering
@@ -707,14 +708,8 @@ according to their groups.}
 
 \begin{figure*}[tbh]
 \centering
-\includegraphics[width=1\textwidth]{figure/AgeComparison1.pdf}
-\caption{Impact of age on results of Likert scale Questions 1-7}
-\end{figure*}
-
-\begin{figure*}[tbh]
-\centering
-\includegraphics[width=1\textwidth]{figure/AgeComparison2.pdf}
-\caption{Impact of age on results of Likert scale Questions 8-14}
+\includegraphics[width=1\textwidth]{figure/AgeComparison1_2.pdf}
+\caption{Impact of age on results of Likert scale Questions 1-16}
 \end{figure*}
 
 \vspace*{-3mm}
@@ -744,6 +739,12 @@ are chosen as representative of their respective groups of questions, and their
 results do not necessarily represent the highest levels of statistical
 significance.
 
+\begin{figure*}[tbh]
+\centering
+\includegraphics[width=1\textwidth]{figure/AgeComparison3_4.pdf}
+\caption{Impact of age on results of Likert scale Questions 17-31}
+\end{figure*}
+
 The results were analyzed using a two-tailed paired t-test to analyze the
 difference of means between the emotion ignorant and the emotion-aware
 condition. Refer to Figure \ref{fig:14Questions} for the results. As mentioned
@@ -752,7 +753,6 @@ either the emotion-ignorant or the emotion-aware run first; analysis of the
 results revealed no statistically significant difference or consistent pattern
 based on which run the participant completed first.
 
-\vspace*{-3mm}
 \subsubsection{Likability of the Robot}
 \label{sec:Likability}
 Questions 1 and 2 addressed the likability of the robot. As shown in Figure
