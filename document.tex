@@ -370,6 +370,183 @@ contributions:
 \section{Methodology [This chapter will contain the crowdsourding study.]}
 
 \section{Results and Evaluation}
+\label{sec:results-evaluation}
+\vspace*{-3mm}
+We conducted a user study to test our hypothesis that humans and our algorithms
+will provide similar answers to questions related to different factors used
+to compute four appraisal variables: relevance, desirability, expectedness, and
+controllability. We conducted a between-subject user study using an online
+crowdsourcing website -- CrowdFlower\footnote{http://www.crowdflower.com}. We
+had a questionnaire for each appraisal variable. There were 12 questions
+(including 2 test questions) in the controllability and expectedness
+questionnaires, 14 questions (including 2 test questions) in the desirability
+questionnaire, and 22 questions (including 3 test questions) in the relevance
+questionnaire. Each subject group originally had 40 subjects. We limited the
+subject pools to those with the highest confidence level on the crowdsourcing
+website in the United States, Britain, and Australia. Test questions were
+included to check the sanity of the answers. We eliminated subjects providing
+wrong answers to our sanity questions, and subjects with answering times less
+than 2 minutes. The final number of accepted subjects in each group is provided
+in Table \ref{tbl:statistics}.
+
+\begin{table}[htbp]
+\vspace*{-3mm}
+\centering
+\caption{Evaluation Results}
+\begin{tabular}{|c|c|c|c|c|} \hline
+appraisal variables & \# of subjects & mean & stdev & \textit{p}-value\\ \hline 
+Relevance &  29 & 0.713 & 0.107 & $<$0.001\\ \hline
+Desirability & 35 & 0.778 & 0.150 & $<$0.001\\ \hline 
+Expectedness & 33 & 0.785 & 0.120 & $<$0.001\\ \hline 
+Controllability & 33 & 0.743 & 0.158 & $<$0.001\\ \hline
+\end{tabular}
+\label{tbl:statistics}
+\vspace*{-3mm}
+\end{table}
+
+To minimize the background knowledge necessary for our test subjects, we used a
+simple domestic example of preparing a peanut butter and jelly sandwich, and a
+hard boiled egg sandwich for a hiking trip. We provided textual and graphical
+instructions for both questionnaires; Fig. \ref{fig:taskModel} shows the
+corresponding task model. The instructions presented a sequence of hypothetical
+collaborative tasks to be carried out by the test subject and an imaginary
+friend, Mary, in order to accomplish their goal of preparing two sandwiches. We
+also provided a simple definition and an example of each appraisal variable. The
+collaboration structure and the instructions were the same for both
+questionnaires. The questions introduced specific situations related to the
+shared plan, which included blocked tasks and failure or achievement of a shared
+goal. Each question provided three answers which were counterbalanced in the
+questionnaire. We provided an option like C in all questions (see Fig.
+\ref{fig:qs1}), because we did not want to force subjects to choose between two
+options when they did not have a good reason. There were two questions designed
+based on each factor that we use in our algorithms (see Section
+\ref{sec:appraisal}). The questions were randomly placed in the questionnaire.
+Fig. \ref{fig:qs1} shows an example question from the relevance questionnaire
+which was designed to test whether human subjects perceive saliency as a factor
+in relevance. The input for our algorithms was the task model depicted in Fig.
+\ref{fig:taskModel}.
+
+\begin{figure*}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/taskModel-croped.pdf}
+  \caption{Collaboration Task Model for the Evaluation.}
+  \label{fig:taskModel}
+  \vspace*{-5mm}
+\end{figure*}
+
+Average results and standard deviation of the fractions of subjects' answers
+agreeing with our algorithms output for both questionnaires are presented in
+Table \ref{tbl:statistics}. Each question had 3 answers. Therefore, a random
+distribution would result in 33\% agreement with our algorithms' output.
+However, the average ratio indicating similarity between human subjects
+decisions and the output of our algorithms is significantly higher than 33\%.
+The total number of subjects' answers similar to the \textit{relevance}
+algorithm (n=29) averaged 71.3\% (s=10.7\%), the \textit{desirability}
+algorithm (n=35) averaged 77.8\% (s=15.0\%), the \textit{expectedness}
+algorithm (n=33) averaged 78.5\% (s=12.0\%), and the \textit{controllability}
+algorithm (n=33) averaged 74.3\% (s=15.8\%). It is worth noting that the human
+subjects agreed 100\% on some questions, while on some other questions there
+was a much lower level of agreement. Our results indicate that people largely
+performed as our hypothesis predicted. The \textit{p}-values obtained based on a
+one-tailed z-test (see Table \ref{tbl:statistics}) show the probability of human
+subjects' answers being generated from a random set. The very small
+\textit{p}-values indicate that the data set is not random; in fact, the high
+percentage of similarity confirms our hypothesis and shows that the algorithms
+can help us to model appraisal in a collaboration.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Expectedness Question.}}
+  \label{fig:qs1}
+  \vspace{-5mm}
+\end{figure}
+
+Each question was designed based on different factors that we use in our
+algorithms (see Section \ref{sec:appraisal}). Here, we present four example
+questions from the expectedness, controllability, desirability, and relevance
+questionnaires, and describe how each question relates to a specific factor
+within the corresponding algorithm. The input for our algorithms was the task
+model depicted in Fig. \ref{fig:taskModel}.
+
+Fig. \ref{fig:qs1} shows the example question from the expectedness
+questionnaire. In this example, with respect to Algorithm
+\ref{alg:expectedness} (line 6), option A is more expected because the task
+related to this option provides the next available task in the focus stack (see
+the task model in Fig. \ref{fig:taskModel}). Although the task in option B is
+part of the existing task model, it is considered as unexpected by our
+algorithm, since it is not live in the plan. We provided option C to determine
+whether the human subjects will similarly differentiate between these two
+options. This question was presented to the human subjects to determine whether
+their decision for the expectedness of this event is similar to the output of
+the expectedness algorithm. For this question, the human decision was 97\%
+similar to the algorithm's output. Average results for the expectedness
+questionnaire are presented in Table \ref{tbl:statistics}.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample2-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Controllability Question.}}
+  \label{fig:qs2}
+  \vspace{-5mm}
+\end{figure}
+
+Fig. \ref{fig:qs2} shows an example question from the controllability
+questionnaire. The algorithm's output is option B, and is determined by
+Algorithm \ref{alg:controllability} (line 3), similarly to the expectedness
+example above. In this example, option B is more controllable than option A,
+because the self over total ratio of the responsibility of the predecessors of
+the given task (see \textit{Autonomy} in Section \ref{sec:controllability}) is
+higher than the ratio in option A; i.e., self is responsible to spread peanut
+butter on one slice of bread and strawberry jam on another slice of bread. In
+this question, the humans decision was 90\% in agreement with the algorithm's
+output.
+
+Fig. \ref{fig:qs3} shows an example question from the desirability
+questionnaire. The output based on the Algorithm \ref{alg:desirability}
+(line 14) is option C, since in both option A and option B, the focus goal
+has been achieved successfully. Therefore, in this example, both options A and B
+are desirable. The humans' decision was 77\% in agreement with the algorithm's
+output in this question.
+
+\begin{figure}[tbh]
+  \vspace{-4mm}
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample3-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Desirability Question.}}
+  \label{fig:qs3}
+  \vspace{-5mm}
+\end{figure}
+
+In the example shown in Fig. \ref{fig:qs4}, with respect to Algorithm
+\ref{alg:relevance}, option A is relevant because of Mary's perceived negative
+emotion (see Equation \ref{eqn:utility}). Although option B is relevant (since
+it achieves the next goal in the shared plan), 83\% of subjects consider it as
+less relevant than option A; we believe this is due to the effect of Mary's
+perceived negative emotion which also generates a higher utility value in our
+relevance algorithm. Another question also tested belief saliency. However, the
+options provided only related to the shared plan (i.e., no human emotions in the
+options). In this case 87\% of subjects chose the option that accomplished the
+next goal in the shared plan. Interestingly, when confronted with a negative
+emotion from their collaborator, human subjects deviated from the shared plan
+and found their collaborator's emotion more relevant than the original plan. It
+is noteworthy that in both the absence and the presence of emotions the human
+subjects chose the more salient option with respect to our definition of
+saliency, which was not referenced or provided in the questionnaire.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample4-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Relevance Question.}}
+  \label{fig:qs4}
+  \vspace{-5mm}
+\end{figure}
+
+Furthermore, as we mentioned earlier, there were two questions related to each
+factor in our algorithms. Because each question was asking about a specific
+factor, we were able to perform a sensitivity analysis, similar to the saliency
+example presented above. We observed similar results for other factors for all
+four variables.
 
 \chapter{Computational Framework}
 \label{ch:framework}
