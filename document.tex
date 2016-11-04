@@ -367,43 +367,34 @@ contributions:
 
 \subsection{Controllability}
 
-\section{Methodology [This chapter will contain the crowdsourding study.]}
+\section{Experimental Scenario}
 
-\section{Results and Evaluation}
-\label{sec:results-evaluation}
-\vspace*{-3mm}
+\subsection{Tasks}
+
+\section{Evaluation}
+
+\subsection{Hypothesis}
 We conducted a user study to test our hypothesis that humans and our algorithms
 will provide similar answers to questions related to different factors used
 to compute four appraisal variables: relevance, desirability, expectedness, and
-controllability. We conducted a between-subject user study using an online
-crowdsourcing website -- CrowdFlower\footnote{http://www.crowdflower.com}. We
-had a questionnaire for each appraisal variable. There were 12 questions
-(including 2 test questions) in the controllability and expectedness
-questionnaires, 14 questions (including 2 test questions) in the desirability
-questionnaire, and 22 questions (including 3 test questions) in the relevance
-questionnaire. Each subject group originally had 40 subjects. We limited the
-subject pools to those with the highest confidence level on the crowdsourcing
-website in the United States, Britain, and Australia. Test questions were
-included to check the sanity of the answers. We eliminated subjects providing
-wrong answers to our sanity questions, and subjects with answering times less
-than 2 minutes. The final number of accepted subjects in each group is provided
-in Table \ref{tbl:statistics}.
+controllability.
 
-\begin{table}[htbp]
-\vspace*{-3mm}
-\centering
-\caption{Evaluation Results}
-\begin{tabular}{|c|c|c|c|c|} \hline
-appraisal variables & \# of subjects & mean & stdev & \textit{p}-value\\ \hline 
-Relevance &  29 & 0.713 & 0.107 & $<$0.001\\ \hline
-Desirability & 35 & 0.778 & 0.150 & $<$0.001\\ \hline 
-Expectedness & 33 & 0.785 & 0.120 & $<$0.001\\ \hline 
-Controllability & 33 & 0.743 & 0.158 & $<$0.001\\ \hline
-\end{tabular}
-\label{tbl:statistics}
-\vspace*{-3mm}
-\end{table}
+\begin{figure*}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/taskModel-croped.pdf}
+  \caption{Collaboration Task Model for the Evaluation.}
+  \label{fig:taskModel}
+  \vspace*{-5mm}
+\end{figure*}
 
+\subsection{Procedure}
+ We conducted a between-subject user study using an online crowdsourcing website
+ -- CrowdFlower\footnote{http://www.crowdflower.com}. We had a questionnaire for
+ each appraisal variable. There were 12 questions (including 2 test questions)
+ in the controllability and expectedness questionnaires, 14 questions (including
+ 2 test questions) in the desirability questionnaire, and 22 questions
+ (including 3 test questions) in the relevance questionnaire.
+ 
 To minimize the background knowledge necessary for our test subjects, we used a
 simple domestic example of preparing a peanut butter and jelly sandwich, and a
 hard boiled egg sandwich for a hiking trip. We provided textual and graphical
@@ -426,33 +417,13 @@ which was designed to test whether human subjects perceive saliency as a factor
 in relevance. The input for our algorithms was the task model depicted in Fig.
 \ref{fig:taskModel}.
 
-\begin{figure*}[tbh]
-  \centering
-  \includegraphics[width=1\textwidth]{figure/taskModel-croped.pdf}
-  \caption{Collaboration Task Model for the Evaluation.}
-  \label{fig:taskModel}
-  \vspace*{-5mm}
-\end{figure*}
-
-Average results and standard deviation of the fractions of subjects' answers
-agreeing with our algorithms output for both questionnaires are presented in
-Table \ref{tbl:statistics}. Each question had 3 answers. Therefore, a random
-distribution would result in 33\% agreement with our algorithms' output.
-However, the average ratio indicating similarity between human subjects
-decisions and the output of our algorithms is significantly higher than 33\%.
-The total number of subjects' answers similar to the \textit{relevance}
-algorithm (n=29) averaged 71.3\% (s=10.7\%), the \textit{desirability}
-algorithm (n=35) averaged 77.8\% (s=15.0\%), the \textit{expectedness}
-algorithm (n=33) averaged 78.5\% (s=12.0\%), and the \textit{controllability}
-algorithm (n=33) averaged 74.3\% (s=15.8\%). It is worth noting that the human
-subjects agreed 100\% on some questions, while on some other questions there
-was a much lower level of agreement. Our results indicate that people largely
-performed as our hypothesis predicted. The \textit{p}-values obtained based on a
-one-tailed z-test (see Table \ref{tbl:statistics}) show the probability of human
-subjects' answers being generated from a random set. The very small
-\textit{p}-values indicate that the data set is not random; in fact, the high
-percentage of similarity confirms our hypothesis and shows that the algorithms
-can help us to model appraisal in a collaboration.
+\subsection{Measurement}
+Each question was designed based on different factors that we use in our
+algorithms (see Section \ref{sec:appraisal}). Here, we present four example
+questions from the expectedness, controllability, desirability, and relevance
+questionnaires, and describe how each question relates to a specific factor
+within the corresponding algorithm. The input for our algorithms was the task
+model depicted in Fig. \ref{fig:taskModel}.
 
 \begin{figure}[tbh]
   \centering
@@ -461,13 +432,6 @@ can help us to model appraisal in a collaboration.
   \label{fig:qs1}
   \vspace{-5mm}
 \end{figure}
-
-Each question was designed based on different factors that we use in our
-algorithms (see Section \ref{sec:appraisal}). Here, we present four example
-questions from the expectedness, controllability, desirability, and relevance
-questionnaires, and describe how each question relates to a specific factor
-within the corresponding algorithm. The input for our algorithms was the task
-model depicted in Fig. \ref{fig:taskModel}.
 
 Fig. \ref{fig:qs1} shows the example question from the expectedness
 questionnaire. In this example, with respect to Algorithm
@@ -547,6 +511,70 @@ factor in our algorithms. Because each question was asking about a specific
 factor, we were able to perform a sensitivity analysis, similar to the saliency
 example presented above. We observed similar results for other factors for all
 four variables.
+
+\subsection{Participants}
+Each subject group originally had 40 subjects. We limited the subject pools to
+those with the highest confidence level on the crowdsourcing website in the
+United States, Britain, and Australia. Test questions were included to check the
+sanity of the answers. We eliminated subjects providing wrong answers to our
+sanity questions, and subjects with answering times less than 2 minutes. The
+final number of accepted subjects in each group is provided in Table
+\ref{tbl:statistics}.
+
+\begin{table}[htbp]
+\vspace*{-3mm}
+\centering
+\caption{Evaluation Results}
+\begin{tabular}{|c|c|c|c|c|} \hline
+appraisal variables & \# of subjects & mean & stdev & \textit{p}-value\\ \hline 
+Relevance &  29 & 0.713 & 0.107 & $<$0.001\\ \hline
+Desirability & 35 & 0.778 & 0.150 & $<$0.001\\ \hline 
+Expectedness & 33 & 0.785 & 0.120 & $<$0.001\\ \hline 
+Controllability & 33 & 0.743 & 0.158 & $<$0.001\\ \hline
+\end{tabular}
+\label{tbl:statistics}
+\vspace*{-3mm}
+\end{table}
+
+\section{Results}
+\label{sec:results-crowdsourcing}
+Average results and standard deviation of the fractions of subjects' answers
+agreeing with our algorithms output for both questionnaires are presented in
+Table \ref{tbl:statistics}. Each question had 3 answers. Therefore, a random
+distribution would result in 33\% agreement with our algorithms' output.
+However, the average ratio indicating similarity between human subjects
+decisions and the output of our algorithms is significantly higher than 33\%.
+The total number of subjects' answers similar to the \textit{relevance}
+algorithm (n=29) averaged 71.3\% (s=10.7\%), the \textit{desirability}
+algorithm (n=35) averaged 77.8\% (s=15.0\%), the \textit{expectedness}
+algorithm (n=33) averaged 78.5\% (s=12.0\%), and the \textit{controllability}
+algorithm (n=33) averaged 74.3\% (s=15.8\%). It is worth noting that the human
+subjects agreed 100\% on some questions, while on some other questions there
+was a much lower level of agreement. Our results indicate that people largely
+performed as our hypothesis predicted. The \textit{p}-values obtained based on a
+one-tailed z-test (see Table \ref{tbl:statistics}) show the probability of human
+subjects' answers being generated from a random set. The very small
+\textit{p}-values indicate that the data set is not random; in fact, the high
+percentage of similarity confirms our hypothesis and shows that the algorithms
+can help us to model appraisal in a collaboration.
+
+\subsection{Controllability}
+\label{sec:controllability-crowdsourcing}
+
+\subsection{Desirability}
+\label{sec:desirability-crowdsourcing}
+
+\subsection{Expectedness}
+\label{sec:expectedness-crowdsourcing}
+
+\subsection{Relevance}
+\label{sec:relevance-crowdsourcing}
+
+\section{Discussion}
+\label{sec:discussion-crowdsourcing}
+
+\section{Conclusions}
+\label{sec:conclusions-crowdsourcing}
 
 \chapter{Computational Framework}
 \label{ch:framework}
