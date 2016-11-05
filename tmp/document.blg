@@ -3,46 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: abbrv.bst
 Database file #1: mshayganfar.bib
+Warning--I didn't find a database entry for "shayganfar:relevance-controllability"
 Warning--can't use both author and editor fields in breazeal:sociable-interactive-robots
-You've used 17 entries,
+Warning--empty title in shayganfar:appraisal-short
+Warning--empty booktitle in shayganfar:appraisal-short
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            605 strings with 6562 characters,
-and the built_in function-call counts, 6466 in all, are:
-= -- 625
-> -- 304
-< -- 7
-+ -- 121
-- -- 100
-* -- 440
-:= -- 1036
-add.period$ -- 54
-call.type$ -- 17
-change.case$ -- 92
+            643 strings with 7550 characters,
+and the built_in function-call counts, 8729 in all, are:
+= -- 841
+> -- 397
+< -- 10
++ -- 159
+- -- 129
+* -- 582
+:= -- 1403
+add.period$ -- 76
+call.type$ -- 24
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 271
-empty$ -- 513
-format.name$ -- 100
-if$ -- 1400
+cite$ -- 27
+duplicate$ -- 373
+empty$ -- 712
+format.name$ -- 129
+if$ -- 1892
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 23
-newline$ -- 88
-num.names$ -- 38
-pop$ -- 121
+int.to.str$ -- 24
+missing$ -- 32
+newline$ -- 122
+num.names$ -- 54
+pop$ -- 170
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 108
 quote$ -- 0
-skip$ -- 195
+skip$ -- 260
 stack$ -- 0
-substring$ -- 390
-swap$ -- 80
-text.length$ -- 7
+substring$ -- 511
+swap$ -- 103
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 1
-while$ -- 60
-width$ -- 19
-write$ -- 191
-(There was 1 warning)
+type$ -- 80
+warning$ -- 3
+while$ -- 83
+width$ -- 26
+write$ -- 265
+(There were 4 warnings)

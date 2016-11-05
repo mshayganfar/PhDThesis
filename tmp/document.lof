@@ -4,33 +4,35 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Collaboration Task Model for the Evaluation.\relax }}{12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces {\fontsize {9}{9}\selectfont Example Expectedness Question.}\relax }}{13}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces {\fontsize {9}{9}\selectfont Example Controllability Question.}\relax }}{14}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces {\fontsize {9}{9}\selectfont Example Desirability Question.}\relax }}{15}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces {\fontsize {9}{9}\selectfont Example Relevance Question.}\relax }}{15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces {\fontsize {9}{9}\selectfont Using Collaboration structure in Appraisal (mechanisms in our framework).}\relax }}{12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces {\fontsize {9}{9}\selectfont Collaboration structure (shared plan).}\relax }}{13}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Collaboration Task Model for the Evaluation.\relax }}{26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces {\fontsize {9}{9}\selectfont Example Expectedness Question.}\relax }}{28}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces {\fontsize {9}{9}\selectfont Example Controllability Question.}\relax }}{28}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces {\fontsize {9}{9}\selectfont Example Desirability Question.}\relax }}{29}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces {\fontsize {9}{9}\selectfont Example Relevance Question.}\relax }}{30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces {\fontsize {9}{9}\selectfont Computational framework based on [title suppressed for anonymity] theory (arrows indicate primary influences between mechanisms and data flow).}\relax }}{20}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces {\fontsize {9}{9}\selectfont Collaboration structure used as the task model.}\relax }}{21}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{22}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The GUI's look during the robot's turn.\relax }}{23}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The GUI's look during the human's turn.\relax }}{24}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces {\fontsize {9}{9}\selectfont Experimental setup.}\relax }}{27}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{30}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{30}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{31}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{31}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{32}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{32}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{33}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces The 31 Likert scale questions organized according to their groups.\relax }}{42}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Open-ended questionnaire questions and results. (\fontsize {10pt}{12pt}\selectfont {*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)}\relax }}{43}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{43}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of human's emotinos.\relax }}{44}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{44}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Impact of age on results of Likert scale questions related to likability.\relax }}{45}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Impact of age on results of Likert scale questions related to performance.\relax }}{45}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{46}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Impact of age on results of Likert scale questions related to trust.\relax }}{46}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces {\fontsize {9}{9}\selectfont Computational framework based on [title suppressed for anonymity] theory (arrows indicate primary influences between mechanisms and data flow).}\relax }}{34}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces {\fontsize {9}{9}\selectfont Collaboration structure used as the task model.}\relax }}{35}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{36}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The GUI's look during the robot's turn.\relax }}{37}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The GUI's look during the human's turn.\relax }}{38}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces {\fontsize {9}{9}\selectfont Experimental setup.}\relax }}{41}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{44}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{44}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{45}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{45}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{46}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{46}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Results of the Likert scale surveys for 31 questions. The p-value for the difference between the means for each question is <0.001, except for Q????, which is 0.008.\relax }}{47}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces The 31 Likert scale questions organized according to their groups.\relax }}{56}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Open-ended questionnaire questions and results. (\fontsize {10pt}{12pt}\selectfont {*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)}\relax }}{57}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{57}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of human's emotinos.\relax }}{58}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{58}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Impact of age on results of Likert scale questions related to likability.\relax }}{59}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Impact of age on results of Likert scale questions related to performance.\relax }}{59}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{60}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Impact of age on results of Likert scale questions related to trust.\relax }}{60}
 \addvspace {10\p@ }

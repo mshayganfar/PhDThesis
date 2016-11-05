@@ -26,6 +26,16 @@ C.~L. Dancy.
 \newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
 \newblock {\em Biologically Inspired Cognitive Architectures}, 6:40--45, 2013.
 
+\bibitem{goffman:self-presentation}
+E.~Goffman.
+\newblock {\em The Presentation of Self in Everyday Life}.
+\newblock Anchor, 1959.
+
+\bibitem{gratch:domain-independent}
+J.~Gratch and S.~C. Marsella.
+\newblock A domain-independent framework for modeling emotion.
+\newblock {\em Cognitive Systems Research}, 5(4):269--306, 2004.
+
 \bibitem{grosz:planning-acting}
 B.~J. Grosz, L.~Hunsberger, and S.~Kraus.
 \newblock Planning and acting together.
@@ -52,11 +62,25 @@ J.~Laird.
 \newblock {\em The Soar Cognitive Architecture}.
 \newblock MIT Press, 2012.
 
+\bibitem{rich:focused-unfocused-users}
+N.~Lesh, C.~Rich, and C.~L. Sidner.
+\newblock Collaborating with focused and unfocused users under imperfect
+  communication.
+\newblock In M.~Bauer, P.~J. Gmytrasiewicz, and J.~Vassileva, editors, {\em
+  User Modeling 2001}, volume 2109, pages 64--73. Springer Berlin Heidelberg,
+  2001.
+
 \bibitem{Litman:discourse-commonsense}
 D.~J. Litman and J.~F. Allen.
 \newblock Discourse processing and commonsense plans.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 365--388. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{parkinson:emotion-social-interaction}
+C.~Marinetti, P.~Moore, P.~Lucas, and B.~Parkinson.
+\newblock Emotions in social interactions: Unfolding emotional experience.
+\newblock In {\em Emotion-Oriented Systems, Cognitive Technologies}, pages
+  31--46. Springer Berlin Heidelberg, 2011.
 
 \bibitem{marinier:behavior-emotion}
 R.~P. {Marinier III}, J.~E. Laird, and R.~L. Lewis.
@@ -74,6 +98,11 @@ V.~Montreuil, A.~Clodic, M.~Ransan, and R.~Alami.
 \newblock In {\em Proceedings of the {IEEE} International Conference on
   Systems, Man and Cybernetics}, pages 2618--2623, 2007.
 
+\bibitem{planalp:communicating-emotion}
+S.~Planalp.
+\newblock {\em Communicating Emotion: Social, Moral, and Cultural Processes}.
+\newblock Cambridge University Press, 1999.
+
 \bibitem{scherer:appraisal-processes}
 K.~R. Scherer, A.~Schorr, and T.~Johnstone.
 \newblock {\em Appraisal Processes in Emotion: Theory, Methods, Research}.
@@ -85,6 +114,15 @@ C.~L. Sidner and M.~Dzikovska.
   hosting activities.
 \newblock In {\em Advances in Natural Multimodal Dialogue Systems}, volume~30
   of {\em Cognitive Technologies}, pages 55--76. Springer Netherlands, 2005.
+
+\bibitem{shayganfar:appraisal-short}
+{Suppressed for Anonymity}.
+\newblock 2016.
+
+\bibitem{hooft:sharing-emotions}
+S.~van Hooft.
+\newblock Scheler on sharing emotions.
+\newblock {\em Philosophy Today}, 38(1):18--28, 1994.
 
 \bibitem{yen:cast}
 J.~Yen, J.~Yin, T.~R. Ioerger, M.~S. Miller, D.~Xu, and R.~A. Volz.
