@@ -3,13 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: abbrv.bst
 Database file #1: mshayganfar.bib
-Warning--I didn't find a database entry for "shayganfar:relevance-controllability"
 Warning--can't use both author and editor fields in breazeal:sociable-interactive-robots
 Warning--empty title in shayganfar:appraisal-short
 Warning--empty booktitle in shayganfar:appraisal-short
 You've used 24 entries,
             2118 wiz_defined-function locations,
-            643 strings with 7550 characters,
+            642 strings with 7514 characters,
 and the built_in function-call counts, 8729 in all, are:
 = -- 841
 > -- 397
@@ -48,4 +47,4 @@ warning$ -- 3
 while$ -- 83
 width$ -- 26
 write$ -- 265
-(There were 4 warnings)
+(There were 3 warnings)

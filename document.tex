@@ -361,65 +361,39 @@ contributions:
 \subsection{Functions of Emotions}
 
 \subsection{Mental States}
+\label{sec:mental-states}
 
 \subsection{Attributes of Mental States}
 
 \chapter{Appraisal Processes in Collaboration Context}
 \label{ch:appraisals}
 
+\vspace*{-2mm}
 \section{Introduction}
-Current computational theories used for human-robot collaboration specify the
-structure of collaborative activities, but are weak on the underlying processes
-that generate and maintain these structures. We argue that emotions are crucial
-to these underlying processes and we have developed a new computational theory,
-called Affective Motivational Collaboration Theory, that combines emotion-based
-processes, such as appraisal and coping, with collaboration processes, such as
-planning, in a single unified framework. This work is implemented as part of a
-larger effort to build robots capable of generating and recognizing emotions in
-order to be better collaborators. We have investigated the mutual influences of
-affective and collaborative processes in a cognitive theory to support
-interaction between humans and robots or virtual agents. We build primarily on
-the \textit{cognitive appraisal} theory of emotions and the \textit{SharedPlans}
-theory of collaboration to investigate the structure, fundamental processes and
-functions of emotions in a collaboration. We have developed new algorithms for
-appraisal processes as part of a new overall computational model. We have
-evaluated our implemented appraisal algorithms by conducting an online user
-study.
+\vspace*{-3mm}
+In this chapter, we focus on the specific problem of appraising the
+\textit{Relevance} (since other appraisals are only computed for relevant
+events), \textit{Desirability} (since it discriminates facilitating and
+inhibitory events towards the collaboration progress), \textit{Expectedness}
+(since it underlies a collaborative robot's attention), and
+\textit{Controllability} (since it is associated with the agent's coping
+ability) of events within a collaborative interaction. Our contribution is to
+ground general appraisal concepts in the specific context and structure of
+collaboration.
 
-Although existing collaboration theories explain the important elements of a
-collaboration structure, the underlying processes required to dynamically
-create, use, and maintain the elements of this structure are largely
-unexplained. For instance, a general mechanism has yet to be developed that
-allows an agent to effectively integrate the influence of its collaborator's
-perceived or anticipated emotions into its own cognitive mechanisms to prevent
-shared task failures while maintaining collaborative behavior. Therefore, a
-process view of collaboration must include certain key elements. It should
-inherently involve social interactions since all collaborations occur between
-social agents, and it should essentially constitute a means of modifying the
-content of social interaction as the collaboration unfolds. The underlying
-processes of emotions possess these two properties, and social functions of
-emotions explain some aspects of the underlying processes in collaboration.
-This work is implemented as part of a larger effort to build robots capable of
-generating and recognizing emotions in order to be better collaborators.
-
-There is also a communicative aspect of emotions. For instance, emotions are
-often intended to convey information to others \cite{goffman:self-presentation}.
-Emotions are also involved in verbal behaviors. For instance, an utterance can
-include both content and relational meaning. An emotion might appear to be
-elicited by the content of the utterance, but in fact be an individual's
-response to the relational meaning \cite{planalp:communicating-emotion}. The
-interpretation of these relational meanings are handled by the appraisal of
-events. Appraisal processes give us a way to view emotion as social
-\cite{hooft:sharing-emotions}. Meaning is created by an individual's social
-experiences in the social world, and individuals communicate these meanings
-through utterances. Consequently, the meaning of these utterances and the
-emotional communication change the dynamic of social interactions. A successful
-and effective emotional communication necessitates ongoing reciprocal
-adjustments between interactants that can happen based on interpretation of each
-other's behaviors \cite{parkinson:emotion-social-interaction}. This adjustment
-procedure requires a baseline and an assessment procedure. While the components
-of the collaboration structure, e.g., shared plan, provide the baseline,
-emotion-related processes (e.g., appraisal) provide the assessment procedure.
+There are several appraisal models (e.g., EMA \cite{marsella:ema-process-model})
+contributing in different applications such as social sciences, virtual agents,
+and robotics. However, none of these models have focused on the appraisal
+processes during collaboration. We believe appraisal plays a key role in
+collaboration due to its regulatory and evaluative nature. Also, collaboration
+induces some changes to appraisal processes due to its unique nature. For
+instance, although the appraisal models mostly use utility to compute the
+relevance of an event, we have found new cognitive components involved in
+determining utility because of the influence of the collaboration. These
+components, such as the recurrence of a belief by the human collaborator or the
+influence of the human collaborator's perceived emotion on the robot's decisions
+emphasize the fact that collaboration requires different procedures in appraisal
+processes.
 
 \section{Appraisal and Collaboration}
 In this section, we focus on a small part of a larger framework based on our
@@ -535,21 +509,16 @@ corresponding to time \textit{t}, and $g_t$ is a given goal at time \textit{t}.
 
 \section{Appraisal Processes}
 \label{sec:appraisal}
-We consider four appraisal variables to be the most important appraisal
-variables in a collaboration context, i.e., \textit{Relevance} (since other
-appraisals are only computed for relevant events), \textit{Desirability}
-(since it discriminates facilitating and inhibitory events towards the
-collaboration progress), \textit{Expectedness} (since it underlies a
-collaborative robot's attention), and \textit{Controllability} (since it is
-associated with the agent's coping ability)
-\cite{shayganfar:relevance-controllability}. There are other appraisal variables
-introduced in psychological \cite{scherer:appraisal-processes} and computational
-literature \cite{gratch:domain-independent}. We believe most of these variables
-can be straightforwardly added to our appraisal mechanism later. All of the
-algorithms in this section use mental states of the robot (discussed in Section
-\ref{sec:mental-states}) which are formed based on the collaboration structure.
-These algorithms use the corresponding recognized goal of the most recent event
-at each turn.
+As we mentioned earlier, We consider four appraisal variables to be the most
+important appraisal variables in a collaboration context, i.e., Relevance,
+Desirability, Expectedness, and Controllability. There are other appraisal
+variables introduced in psychological \cite{scherer:appraisal-processes} and
+computational literature \cite{gratch:domain-independent}. We believe most of
+these variables can be straightforwardly added to our appraisal mechanism
+whenever they are required. All of the algorithms in this section use mental
+states of the robot (discussed in Section \ref{sec:mental-states}) which are
+formed based on the collaboration structure. These algorithms use the
+corresponding recognized goal of the most recent event at each turn.
 
 \subsection{Relevance}
 Relevance is an important appraisal variable since the other appraisal variables
@@ -1124,7 +1093,7 @@ overall controllability value of the event.\\
 
 In summary, the output of these four appraisal processes serves as critical
 input for the other mechanisms of the Affective Motivational Collaboration
-Framework, shown in Fig. \ref{fig:cpm}. By providing adequate interpretation
+Framework, shown in Chapter \ref{ch:amct}. By providing adequate interpretation
 of events in the collaborative environment, the appraisal mechanism enables the
 robot to carry out proper collaborative behaviors.
 
@@ -1339,6 +1308,60 @@ can help us to model appraisal in a collaboration.
 
 \chapter{Computational Framework}
 \label{ch:framework}
+
+\section{Introduction}
+Current computational theories used for human-robot collaboration specify the
+structure of collaborative activities, but are weak on the underlying processes
+that generate and maintain these structures. We argue that emotions are crucial
+to these underlying processes and we have developed a new computational theory,
+called Affective Motivational Collaboration Theory, that combines emotion-based
+processes, such as appraisal and coping, with collaboration processes, such as
+planning, in a single unified framework. This work is implemented as part of a
+larger effort to build robots capable of generating and recognizing emotions in
+order to be better collaborators. We have investigated the mutual influences of
+affective and collaborative processes in a cognitive theory to support
+interaction between humans and robots or virtual agents. We build primarily on
+the \textit{cognitive appraisal} theory of emotions and the \textit{SharedPlans}
+theory of collaboration to investigate the structure, fundamental processes and
+functions of emotions in a collaboration. We have developed new algorithms for
+appraisal processes as part of a new overall computational model. We have
+evaluated our implemented appraisal algorithms by conducting an online user
+study.
+
+Although existing collaboration theories explain the important elements of a
+collaboration structure, the underlying processes required to dynamically
+create, use, and maintain the elements of this structure are largely
+unexplained. For instance, a general mechanism has yet to be developed that
+allows an agent to effectively integrate the influence of its collaborator's
+perceived or anticipated emotions into its own cognitive mechanisms to prevent
+shared task failures while maintaining collaborative behavior. Therefore, a
+process view of collaboration must include certain key elements. It should
+inherently involve social interactions since all collaborations occur between
+social agents, and it should essentially constitute a means of modifying the
+content of social interaction as the collaboration unfolds. The underlying
+processes of emotions possess these two properties, and social functions of
+emotions explain some aspects of the underlying processes in collaboration.
+This work is implemented as part of a larger effort to build robots capable of
+generating and recognizing emotions in order to be better collaborators.
+
+There is also a communicative aspect of emotions. For instance, emotions are
+often intended to convey information to others \cite{goffman:self-presentation}.
+Emotions are also involved in verbal behaviors. For instance, an utterance can
+include both content and relational meaning. An emotion might appear to be
+elicited by the content of the utterance, but in fact be an individual's
+response to the relational meaning \cite{planalp:communicating-emotion}. The
+interpretation of these relational meanings are handled by the appraisal of
+events. Appraisal processes give us a way to view emotion as social
+\cite{hooft:sharing-emotions}. Meaning is created by an individual's social
+experiences in the social world, and individuals communicate these meanings
+through utterances. Consequently, the meaning of these utterances and the
+emotional communication change the dynamic of social interactions. A successful
+and effective emotional communication necessitates ongoing reciprocal
+adjustments between interactants that can happen based on interpretation of each
+other's behaviors \cite{parkinson:emotion-social-interaction}. This adjustment
+procedure requires a baseline and an assessment procedure. While the components
+of the collaboration structure, e.g., shared plan, provide the baseline,
+emotion-related processes (e.g., appraisal) provide the assessment procedure.
 
 \section{System Overview}
 
@@ -1994,11 +2017,11 @@ any identifiable pattern based on gender or personality.
 
 \begin{figure*}[tbh]
 \centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Collaboration.png}
+\includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
 \vspace*{-5mm}
 \caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to human's feeling about collaboration.}
-\label{fig:age-collaboration}
+scale questions related to likability.}
+\label{fig:age-likability}
 \end{figure*}
 
 Age did reveal an interesting pattern. We divided the participants into two
@@ -2015,29 +2038,10 @@ the seven questions that broke this pattern were 7, 9, 11, 12, 18, 19 and 22.
 
 \begin{figure*}[!h]
 \centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Emotions.png}
-\vspace*{-5mm}
+\includegraphics[width=0.9\textwidth]{figure/Age-Trust.png}
 \caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to robot's understanding of human's emotions.}
-\label{fig:age-emotions}
-\end{figure*}
-
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Goals.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to robot's understanding of goals.}
-\label{fig:age-goals}
-\vspace*{10mm}
-\end{figure*}
-
-\begin{figure*}[!h]
-\centering
-\vspace*{15mm}
-\includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to likability.}
-\label{fig:age-likability}
+scale questions related to trust.}
+\label{fig:age-trust}
 \end{figure*}
 
 \begin{figure*}[!h]
@@ -2051,19 +2055,37 @@ scale questions related to performance.}
 
 \begin{figure*}[!h]
 \centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Satisfaction.png}
+\includegraphics[width=0.9\textwidth]{figure/Age-Emotions.png}
 \caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to satisfaction with collaborative partner.}
-\label{fig:age-satisfaction}
+scale questions related to robot's understanding of human's emotions.}
+\label{fig:age-emotions}
+\vspace*{15mm}
+\end{figure*}
+
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=0.9\textwidth]{figure/Age-Goals.png}
+\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
+scale questions related to robot's understanding of goals.}
+\label{fig:age-goals}
 \vspace*{10mm}
 \end{figure*}
 
 \begin{figure*}[!h]
 \centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Trust.png}
+\includegraphics[width=0.9\textwidth]{figure/Age-Collaboration.png}
 \caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to trust.}
-\label{fig:age-trust}
+scale questions related to human's feeling about collaboration.}
+\label{fig:age-collaboration}
+\vspace*{15mm}
+\end{figure*}
+
+\begin{figure*}[!h]
+\centering
+\includegraphics[width=0.9\textwidth]{figure/Age-Satisfaction.png}
+\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
+scale questions related to satisfaction with collaborative partner.}
+\label{fig:age-satisfaction}
 \end{figure*}
 
 \section{Discussion}
