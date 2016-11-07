@@ -66,36 +66,31 @@
 \contentsline {subsection}{\numberline {5.2.8}Action}{32}
 \contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration Using Emotional-Awareness}{33}
 \contentsline {section}{\numberline {6.1}Introduction}{33}
-\contentsline {section}{\numberline {6.2}Collaborative Behaviors and Emotional-Awareness}{34}
-\contentsline {subsection}{\numberline {6.2.1}Goal Postponement}{34}
-\contentsline {subsection}{\numberline {6.2.2}Goal Management}{34}
-\contentsline {subsection}{\numberline {6.2.3}Task Delegation}{34}
-\contentsline {section}{\numberline {6.3}Implementation}{34}
-\contentsline {subsection}{\numberline {6.3.1}Framework}{35}
-\contentsline {subsection}{\numberline {6.3.2}Robot Controller}{35}
-\contentsline {section}{\numberline {6.4}Experimental Scenario}{36}
-\contentsline {subsection}{\numberline {6.4.1}The Robot}{37}
-\contentsline {subsection}{\numberline {6.4.2}Interaction Paradigms}{38}
-\contentsline {subsection}{\numberline {6.4.3}Environment and Tasks}{40}
-\contentsline {section}{\numberline {6.5}Evaluation}{40}
-\contentsline {subsection}{\numberline {6.5.1}Hypothesis}{40}
-\contentsline {subsection}{\numberline {6.5.2}Procedure}{42}
-\contentsline {subsection}{\numberline {6.5.3}Measurements}{43}
-\contentsline {subsection}{\numberline {6.5.4}Participants}{43}
-\contentsline {section}{\numberline {6.6}Results}{43}
-\contentsline {subsection}{\numberline {6.6.1}7-Point Likert Scale Survey Results}{47}
-\contentsline {subsubsection}{Likability of the Robot}{48}
-\contentsline {subsubsection}{Human Trust in the Robot}{48}
-\contentsline {subsubsection}{Perception of the Robot's Performance}{49}
-\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{49}
-\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{49}
-\contentsline {subsubsection}{Human's Feeling about the Collaboration}{50}
+\contentsline {section}{\numberline {6.2}Implementation}{34}
+\contentsline {subsection}{\numberline {6.2.1}Framework}{34}
+\contentsline {subsection}{\numberline {6.2.2}Robot Controller}{35}
+\contentsline {section}{\numberline {6.3}Experimental Scenario}{35}
+\contentsline {subsection}{\numberline {6.3.1}The Robot}{36}
+\contentsline {subsection}{\numberline {6.3.2}Interaction Paradigms}{37}
+\contentsline {subsection}{\numberline {6.3.3}Environment and Tasks}{39}
+\contentsline {section}{\numberline {6.4}Evaluation}{39}
+\contentsline {subsection}{\numberline {6.4.1}Hypothesis}{39}
+\contentsline {subsection}{\numberline {6.4.2}Procedure}{41}
+\contentsline {subsection}{\numberline {6.4.3}Measurements}{42}
+\contentsline {subsection}{\numberline {6.4.4}Participants}{42}
+\contentsline {section}{\numberline {6.5}Results}{42}
+\contentsline {subsection}{\numberline {6.5.1}7-Point Likert Scale Survey Results}{43}
+\contentsline {subsubsection}{Likability of the Robot}{44}
+\contentsline {subsubsection}{Human Trust in the Robot}{45}
+\contentsline {subsubsection}{Perception of the Robot's Performance}{46}
+\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{47}
+\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{47}
+\contentsline {subsubsection}{Human's Feeling about the Collaboration}{49}
 \contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{50}
-\contentsline {subsection}{\numberline {6.6.2}Results from the Open-Ended Questionnaire}{51}
-\contentsline {subsection}{\numberline {6.6.3}Impact of Demographics}{53}
-\contentsline {section}{\numberline {6.7}Discussion}{54}
-\contentsline {section}{\numberline {6.8}Conclusions}{55}
-\contentsline {chapter}{\numberline {7}Conclusion}{61}
-\contentsline {section}{\numberline {7.1}Discussion}{61}
-\contentsline {section}{\numberline {7.2}Future Work}{61}
-\contentsline {chapter}{Appendix A}{65}
+\contentsline {subsection}{\numberline {6.5.2}Results from the Open-Ended Questionnaire}{51}
+\contentsline {subsection}{\numberline {6.5.3}Impact of Demographics}{53}
+\contentsline {section}{\numberline {6.6}Discussion}{57}
+\contentsline {chapter}{\numberline {7}Conclusion}{59}
+\contentsline {section}{\numberline {7.1}Discussion}{59}
+\contentsline {section}{\numberline {7.2}Future Work}{59}
+\contentsline {chapter}{Appendix A}{63}
