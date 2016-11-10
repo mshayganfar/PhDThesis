@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  6 NOV 2016 20:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  9 NOV 2016 22:25
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1084--1093
 File: figure/taskModel-croped.pdf Graphic file (type pdf)
 
 <use figure/taskModel-croped.pdf>
-Package pdftex.def Info: figure/taskModel-croped.pdf used on input line 1114.
+Package pdftex.def Info: figure/taskModel-croped.pdf used on input line 1122.
 (pdftex.def)             Requested size: 426.39255pt x 140.84155pt.
  [25 <./figure/taskModel-croped.pdf>]
 <figure/question-sample-croped.pdf, id=196, 303.1325pt x 95.35625pt>
@@ -968,7 +968,7 @@ File: figure/question-sample-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample-croped.pdf>
 Package pdftex.def Info: figure/question-sample-croped.pdf used on input line 1
-160.
+165.
 (pdftex.def)             Requested size: 362.43626pt x 114.01369pt.
  [26]
 <figure/question-sample2-croped.pdf, id=200, 308.15125pt x 105.39375pt>
@@ -976,7 +976,7 @@ File: figure/question-sample2-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample2-croped.pdf>
 Package pdftex.def Info: figure/question-sample2-croped.pdf used on input line 
-1182.
+1187.
 (pdftex.def)             Requested size: 362.43626pt x 123.96953pt.
  [27 <./figure/question-sample-croped.pdf> <./figure/question-sample2-croped.pd
 f
@@ -988,7 +988,7 @@ File: figure/question-sample3-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample3-croped.pdf>
 Package pdftex.def Info: figure/question-sample3-croped.pdf used on input line 
-1209.
+1214.
 (pdftex.def)             Requested size: 362.43626pt x 142.81714pt.
 
 <figure/question-sample4-croped.pdf, id=238, 303.1325pt x 97.36375pt>
@@ -996,7 +996,7 @@ File: figure/question-sample4-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample4-croped.pdf>
 Package pdftex.def Info: figure/question-sample4-croped.pdf used on input line 
-1233.
+1238.
 (pdftex.def)             Requested size: 362.43626pt x 116.41397pt.
  [28 <./figure/question-sample3-croped.pdf>] [29 <./figure/question-sample4-cro
 ped.pdf>] [30]
@@ -1011,7 +1011,7 @@ Chapter 6.
 File: figure/framework-croped.pdf Graphic file (type pdf)
 
 <use figure/framework-croped.pdf>
-Package pdftex.def Info: figure/framework-croped.pdf used on input line 1428.
+Package pdftex.def Info: figure/framework-croped.pdf used on input line 1433.
 (pdftex.def)             Requested size: 426.39255pt x 172.5156pt.
  [35 <./figure/framework-croped.pdf>]
 <figure/collaborationStructure.pdf, id=318, 727.71875pt x 258.9675pt>
@@ -1019,28 +1019,28 @@ File: figure/collaborationStructure.pdf Graphic file (type pdf)
 
 <use figure/collaborationStructure.pdf>
 Package pdftex.def Info: figure/collaborationStructure.pdf used on input line 1
-448.
+453.
 (pdftex.def)             Requested size: 426.39255pt x 151.74232pt.
  [36 <./figure/collaborationStructure.pdf>] <figure/gameBoard.pdf, id=339, 1838
 .87pt x 1057.9525pt>
 File: figure/gameBoard.pdf Graphic file (type pdf)
 
 <use figure/gameBoard.pdf>
-Package pdftex.def Info: figure/gameBoard.pdf used on input line 1479.
+Package pdftex.def Info: figure/gameBoard.pdf used on input line 1484.
 (pdftex.def)             Requested size: 426.39255pt x 245.30954pt.
  [37 <./figure/gameBoard.pdf>]
 <figure/robot-turn-gui.png, id=357, 1225.57875pt x 996.72375pt>
 File: figure/robot-turn-gui.png Graphic file (type png)
 
 <use figure/robot-turn-gui.png>
-Package pdftex.def Info: figure/robot-turn-gui.png used on input line 1505.
+Package pdftex.def Info: figure/robot-turn-gui.png used on input line 1510.
 (pdftex.def)             Requested size: 202.5358pt x 164.71086pt.
 
 <figure/human-turn-gui.png, id=358, 1229.59375pt x 1001.7425pt>
 File: figure/human-turn-gui.png Graphic file (type png)
 
 <use figure/human-turn-gui.png>
-Package pdftex.def Info: figure/human-turn-gui.png used on input line 1510.
+Package pdftex.def Info: figure/human-turn-gui.png used on input line 1515.
 (pdftex.def)             Requested size: 202.5358pt x 165.00523pt.
  [38 <./figure/robot-turn-gui.png (PNG copy)> <./figure/human-turn-gui.png (PNG
  copy)>] [39] [40]
@@ -1048,21 +1048,21 @@ Package pdftex.def Info: figure/human-turn-gui.png used on input line 1510.
 File: figure/environment.png Graphic file (type png)
 
 <use figure/environment.png>
-Package pdftex.def Info: figure/environment.png used on input line 1625.
+Package pdftex.def Info: figure/environment.png used on input line 1630.
 (pdftex.def)             Requested size: 383.75069pt x 255.8343pt.
  [41 <./figure/environment.png (PNG copy)>]
 [42] [43] <figure/table1-croped.pdf, id=379, 497.86pt x 649.42625pt>
 File: figure/table1-croped.pdf Graphic file (type pdf)
 
 <use figure/table1-croped.pdf>
-Package pdftex.def Info: figure/table1-croped.pdf used on input line 1697.
+Package pdftex.def Info: figure/table1-croped.pdf used on input line 1702.
 (pdftex.def)             Requested size: 345.3769pt x 450.53241pt.
  [44 <./figure/table1-croped.pdf>]
 <figure/Overall-Likability.png, id=400, 650.43pt x 365.86688pt>
 File: figure/Overall-Likability.png Graphic file (type png)
 
 <use figure/Overall-Likability.png>
-Package pdftex.def Info: figure/Overall-Likability.png used on input line 1729.
+Package pdftex.def Info: figure/Overall-Likability.png used on input line 1734.
 
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
  [45 <./figure/Overall-Likability.png (PNG copy)>] <figure/Overall-Trust.png, i
@@ -1070,14 +1070,14 @@ d=404, 650.43pt x 365.86688pt>
 File: figure/Overall-Trust.png Graphic file (type png)
 
 <use figure/Overall-Trust.png>
-Package pdftex.def Info: figure/Overall-Trust.png used on input line 1767.
+Package pdftex.def Info: figure/Overall-Trust.png used on input line 1772.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
 <figure/Overall-Performance.png, id=405, 650.43pt x 365.86688pt>
 File: figure/Overall-Performance.png Graphic file (type png)
 
 <use figure/Overall-Performance.png>
-Package pdftex.def Info: figure/Overall-Performance.png used on input line 1778
+Package pdftex.def Info: figure/Overall-Performance.png used on input line 1783
 .
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
  [46 <./figure/Overall-Trust.png (PNG copy)>] [47 <./figure/Overall-Performance
@@ -1086,14 +1086,14 @@ Package pdftex.def Info: figure/Overall-Performance.png used on input line 1778
 File: figure/Overall-Emotions.png Graphic file (type png)
 
 <use figure/Overall-Emotions.png>
-Package pdftex.def Info: figure/Overall-Emotions.png used on input line 1824.
+Package pdftex.def Info: figure/Overall-Emotions.png used on input line 1829.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
  [48 <./figure/Overall-Emotions.png (PNG copy)>] <figure/Overall-Goals.png, id=
 416, 650.43pt x 365.86688pt>
 File: figure/Overall-Goals.png Graphic file (type png)
 
 <use figure/Overall-Goals.png>
-Package pdftex.def Info: figure/Overall-Goals.png used on input line 1857.
+Package pdftex.def Info: figure/Overall-Goals.png used on input line 1862.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
 <figure/Overall-Collaboration.png, id=417, 650.43pt x 365.86688pt>
@@ -1101,7 +1101,7 @@ File: figure/Overall-Collaboration.png Graphic file (type png)
 
 <use figure/Overall-Collaboration.png>
 Package pdftex.def Info: figure/Overall-Collaboration.png used on input line 18
-67.
+72.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
  [49 <./figure/Overall-Goals.png (PNG copy)>] [50 <./figure/Overall-Collaborati
 on.png (PNG copy)>]
@@ -1109,36 +1109,36 @@ on.png (PNG copy)>]
 File: figure/Overall-Satisfaction.png Graphic file (type png)
 
 <use figure/Overall-Satisfaction.png>
-Package pdftex.def Info: figure/Overall-Satisfaction.png used on input line 191
-6.
+Package pdftex.def Info: figure/Overall-Satisfaction.png used on input line 192
+1.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
  [51 <./figure/Overall-Satisfaction.png (PNG copy)>] <figure/table2-croped.pdf,
  id=429, 678.535pt x 204.765pt>
 File: figure/table2-croped.pdf Graphic file (type pdf)
 
 <use figure/table2-croped.pdf>
-Package pdftex.def Info: figure/table2-croped.pdf used on input line 1937.
+Package pdftex.def Info: figure/table2-croped.pdf used on input line 1942.
 (pdftex.def)             Requested size: 426.39255pt x 128.67455pt.
  [52 <./figure/table2-croped.pdf>] [53]
 <figure/Age-Likability.png, id=463, 650.43pt x 365.86688pt>
 File: figure/Age-Likability.png Graphic file (type png)
 
 <use figure/Age-Likability.png>
-Package pdftex.def Info: figure/Age-Likability.png used on input line 2020.
+Package pdftex.def Info: figure/Age-Likability.png used on input line 2025.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
  [54]
 <figure/Age-Trust.png, id=467, 650.43pt x 365.86688pt>
 File: figure/Age-Trust.png Graphic file (type png)
 
 <use figure/Age-Trust.png>
-Package pdftex.def Info: figure/Age-Trust.png used on input line 2041.
+Package pdftex.def Info: figure/Age-Trust.png used on input line 2046.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 <figure/Age-Performance.png, id=468, 650.43pt x 365.86688pt>
 File: figure/Age-Performance.png Graphic file (type png)
 
 <use figure/Age-Performance.png>
-Package pdftex.def Info: figure/Age-Performance.png used on input line 2049.
+Package pdftex.def Info: figure/Age-Performance.png used on input line 2054.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
@@ -1148,7 +1148,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figure/Age-Emotions.png Graphic file (type png)
 
 <use figure/Age-Emotions.png>
-Package pdftex.def Info: figure/Age-Emotions.png used on input line 2058.
+Package pdftex.def Info: figure/Age-Emotions.png used on input line 2063.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
@@ -1158,7 +1158,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figure/Age-Goals.png Graphic file (type png)
 
 <use figure/Age-Goals.png>
-Package pdftex.def Info: figure/Age-Goals.png used on input line 2067.
+Package pdftex.def Info: figure/Age-Goals.png used on input line 2072.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
@@ -1168,7 +1168,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figure/Age-Collaboration.png Graphic file (type png)
 
 <use figure/Age-Collaboration.png>
-Package pdftex.def Info: figure/Age-Collaboration.png used on input line 2076.
+Package pdftex.def Info: figure/Age-Collaboration.png used on input line 2081.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
@@ -1178,7 +1178,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: figure/Age-Satisfaction.png Graphic file (type png)
 
 <use figure/Age-Satisfaction.png>
-Package pdftex.def Info: figure/Age-Satisfaction.png used on input line 2085.
+Package pdftex.def Info: figure/Age-Satisfaction.png used on input line 2090.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
@@ -1196,7 +1196,7 @@ LaTeX Warning: Text page 57 contains only floats.
 
 [57 <./figure/Age-Goals.png (PNG copy)> <./figure/Age-Collaboration.png (PNG co
 py)>] [58 <./figure/Age-Satisfaction.png (PNG copy)>]
-Overfull \hbox (7.73073pt too wide) in paragraph at lines 2114--2125
+Overfull \hbox (7.73073pt too wide) in paragraph at lines 2119--2130
 [][]\OT1/cmr/m/n/12 Finally, the emotion-aware robot de-vel-oped a stronger sen
 se of part-ner-ship through
  []
@@ -1242,7 +1242,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (76 pages, 5554571 bytes).
+Output written on document.pdf (76 pages, 5554799 bytes).
 PDF statistics:
  563 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams
