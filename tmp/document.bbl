@@ -26,6 +26,13 @@ C.~L. Dancy.
 \newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
 \newblock {\em Biologically Inspired Cognitive Architectures}, 6:40--45, 2013.
 
+\bibitem{gratch:reverse-appraisal}
+C.~M. de~Melo, J.~Gratch, P.~Carnevale, and S.~J. Read.
+\newblock Reverse appraisal: The importance of appraisals for the effect of
+  emotion displays on people's decision-making in social dilemma.
+\newblock In {\em Proceedings of the 34th Annual Meeting of the Cognitive
+  Science Society ({CogSci})}, 2012.
+
 \bibitem{goffman:self-presentation}
 E.~Goffman.
 \newblock {\em The Presentation of Self in Everyday Life}.
@@ -107,6 +114,13 @@ S.~Planalp.
 K.~R. Scherer, A.~Schorr, and T.~Johnstone.
 \newblock {\em Appraisal Processes in Emotion: Theory, Methods, Research}.
 \newblock Oxford University Press, 2001.
+
+\bibitem{scheutz:architectural-action-selection}
+M.~Scheutz and V.~Andronache.
+\newblock Architectural mechanisms for dynamic changes of behavior selection
+  strategies in behavior-based systems.
+\newblock {\em {IEEE} Transactions on Systems, Man, and Cybernetics, Part {B}},
+  34(6):2377--2395, 2004.
 
 \bibitem{sidner:enagagement-robot}
 C.~L. Sidner and M.~Dzikovska.
