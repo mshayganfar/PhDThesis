@@ -1348,16 +1348,26 @@ to evaluate the human's perception of the robot's behavior as a result of the
 goal management process.
 
 \section{Coping Mechanism and Strategies}
-As discussed earlier, we have used Coping mechanism to determine how the agent
-would respond to the events using our framework. We have implemented a set of
-coping strategies that can be triggered based on different conditions. All of
-these coping strategies are known in the literature. Some of our coping
-strategies, i.e., \textit{planning}, \textit{active coping} and \textit{seeking
-social support for instrumental reasons} are categorized as problem-focused and
-some others, i.e., \textit{acceptance}, \textit{mental disengagement},
-\textit{shifting responsibility}, and \textit{wishful thinking} are categorized
-as emotion-focused startegies as described in \cite{gratch:domain-independent}
-(see Figure \ref{fig:coping_strategies}).
+We have implemented Coping mechanism to determine how the agent would respond to
+the events using our framework. Our Coping mechanism includes a set of coping
+strategies that can be triggered based on different conditions (see Figure
+\ref{fig:coping_strategies}). All of these coping strategies are known in the
+literature. Some of our coping strategies, i.e., \textit{planning},
+\textit{active coping} and \textit{seeking social support for instrumental
+reasons}, are categorized as problem-focused and some others, i.e.,
+\textit{acceptance}, \textit{mental disengagement}, \textit{shifting
+responsibility}, and \textit{wishful thinking}, are categorized as
+emotion-focused startegies as described in \cite{gratch:domain-independent}.
+
+There are three components involved as the activation criteria for each coping
+strategy. The first criterion is the conjunction of emotion valances for the
+self and the other collaborator (see Emotion Valance column in Figure
+\ref{fig:coping_strategies}). For instance, if the valance of the other
+collaborator's emotion is \textit{negative} \textbf{and} the valance of the
+robot's emotion is also \textit{negative}, the active coping, acceptance, and
+mental disengagement coping strategies are going to be the coping strategy
+candidates to become activated if the other activation criteria exist for any of
+them.
 
 \begin{sidewaysfigure}
   \centering
