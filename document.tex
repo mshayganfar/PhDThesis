@@ -447,23 +447,15 @@ influence of the human collaborator's perceived emotion on the robot's decisions
 emphasize the fact that collaboration requires different procedures in appraisal
 processes.
 
+\vspace*{-5mm}
 \section{Appraisal and Collaboration}
-In this section, we focus on a small part of a larger framework based on our
-Affective Motivational Collaboration Theory. We describe the methods which
-retrieve information about the collaboration structure, and are used to compute
-the values of appraisal variables. Then, we introduce our algorithms implemented
-to compute the value of four appraisal variables depicted in Figure
-\ref{fig:appraisal-collaboration}.
+\vspace*{-4mm}
+The collaboration and Appraisal mechanisms have reciprocal influence on each
+other. In this section, we focus on information about collaboration structure
+which will be incorporated in appraisal processes in Section
+\ref{sec:appraisal}. We describe the methods which retrieve information about
+the collaboration structure.
 
-\begin{figure}[tbh]
-  \centering
-  \includegraphics[width=0.8\textwidth]{figure/appraisal-collaboration-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Using Collaboration structure in
-  Appraisal (mechanisms in our framework).}}
-  \label{fig:appraisal-collaboration}
-\end{figure}
-
-\section{Collaboration}
 The Collaboration mechanism constructs a hierarchy of goals associated with
 tasks in the form of a hierarchical task network (see Figure \ref{fig:cs}), and
 also manages and maintains the constraints and other required details of the
@@ -474,17 +466,18 @@ successful). Collaboration also keeps track of the focus of attention, which
 determines the salient objects, properties and relations at each point, and
 shifts the focus of attention during the interaction.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/collaborationStructure-small-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Collaboration structure (shared plan).}}
+  \caption{{\fontsize{10}{10}\selectfont Collaboration structure (shared
+  plan).}}
   \label{fig:cs}
 \end{figure}
 
-Here, we briefly describe the methods which retrieve information about the
-collaboration structure, and are used in our algorithms to compute the values of
-appraisal variables. In these methods, $\varepsilon_t$ is the event
-corresponding to time \textit{t}, and $g_t$ is a given goal at time \textit{t}.
+Here, we describe the methods which retrieve information about the collaboration
+structure, and are used in our algorithms to compute the values of appraisal
+variables. In these methods, $\varepsilon_t$ is the event corresponding to time
+\textit{t}, and $g_t$ is a given goal at time \textit{t}.
 
 \begin{itemize}
   \setlength\itemsep{1mm}
@@ -571,6 +564,14 @@ whenever they are required. All of the algorithms in this section use mental
 states of the robot (discussed in Section \ref{sec:mental-states}) which are
 formed based on the collaboration structure. These algorithms use the
 corresponding recognized goal of the most recent event at each turn.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figure/appraisal-collaboration-croped.pdf}
+  \caption{{\fontsize{10}{10}\selectfont Using Collaboration structure in
+  Appraisal (mechanisms in our framework).}}
+  \label{fig:appraisal-collaboration}
+\end{figure}
 
 \subsection{Relevance}
 Relevance is an important appraisal variable since the other appraisal variables
@@ -1345,6 +1346,34 @@ affective appraisal into the collaboration mechanism in our framework. A similar
 situation is used in our conducted user study (see Chapter \ref{ch:awareness})
 to evaluate the human's perception of the robot's behavior as a result of the
 goal management process.
+
+\section{Coping Mechanism and Strategies}
+As discussed earlier, we have used Coping mechanism to determine how the agent
+would respond to the events using our framework. We have implemented a set of
+coping strategies that can be triggered based on different conditions. All of
+these coping strategies are known in the literature. Some of our coping
+strategies, i.e., \textit{planning}, \textit{active coping} and \textit{seeking
+social support for instrumental reasons} are categorized as problem-focused and
+some others, i.e., \textit{acceptance}, \textit{mental disengagement},
+\textit{shifting responsibility}, and \textit{wishful thinking} are categorized
+as emotion-focused startegies as described in \cite{gratch:domain-independent}
+(see Figure \ref{fig:coping_strategies}).
+
+\begin{sidewaysfigure}
+  \centering
+  \includegraphics[width=1\textwidth]{figure/coping_algorithms_short_croped.pdf}
+  \caption{Conditions for selecting coping strategies}
+  \label{fig:coping_strategies}
+\end{sidewaysfigure}
+
+\section{Emotion Instances}
+
+\begin{sidewaysfigure}
+  \centering
+  \includegraphics[width=1\textwidth]{figure/emotion_elicitation_croped.pdf}
+  \caption{Conditions for selecting emotion instances}
+  \label{fig:emotion_elicitation}
+\end{sidewaysfigure}
 
 \section{Experimental Scenario}
 To minimize the background knowledge necessary for our test subjects, we used a

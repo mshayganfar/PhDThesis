@@ -33,67 +33,68 @@
 \contentsline {chapter}{\numberline {4}Appraisal Processes in Collaboration Context}{12}
 \contentsline {section}{\numberline {4.1}Introduction}{12}
 \contentsline {section}{\numberline {4.2}Appraisal and Collaboration}{13}
-\contentsline {section}{\numberline {4.3}Collaboration}{13}
-\contentsline {section}{\numberline {4.4}Appraisal Processes}{16}
-\contentsline {subsection}{\numberline {4.4.1}Relevance}{16}
-\contentsline {subsection}{\numberline {4.4.2}Desirability}{20}
-\contentsline {subsection}{\numberline {4.4.3}Expectedness}{22}
-\contentsline {subsection}{\numberline {4.4.4}Controllability}{23}
-\contentsline {section}{\numberline {4.5}Goal Management}{26}
-\contentsline {section}{\numberline {4.6}Experimental Scenario}{32}
-\contentsline {subsection}{\numberline {4.6.1}Tasks}{32}
-\contentsline {section}{\numberline {4.7}Evaluation}{32}
-\contentsline {subsection}{\numberline {4.7.1}Hypothesis}{32}
-\contentsline {subsection}{\numberline {4.7.2}Procedure}{32}
-\contentsline {subsection}{\numberline {4.7.3}Measurement}{34}
-\contentsline {subsection}{\numberline {4.7.4}Participants}{36}
-\contentsline {section}{\numberline {4.8}Results}{37}
-\contentsline {subsection}{\numberline {4.8.1}Controllability}{38}
-\contentsline {subsection}{\numberline {4.8.2}Desirability}{38}
-\contentsline {subsection}{\numberline {4.8.3}Expectedness}{38}
-\contentsline {subsection}{\numberline {4.8.4}Relevance}{38}
-\contentsline {section}{\numberline {4.9}Discussion}{38}
-\contentsline {section}{\numberline {4.10}Conclusions}{38}
-\contentsline {chapter}{\numberline {5}Computational Framework}{39}
-\contentsline {section}{\numberline {5.1}Introduction}{39}
-\contentsline {section}{\numberline {5.2}System Overview}{39}
-\contentsline {section}{\numberline {5.3}Using Appraisal in Collaboration}{39}
-\contentsline {section}{\numberline {5.4}Components of the Architecture}{39}
-\contentsline {subsection}{\numberline {5.4.1}Mental States}{39}
-\contentsline {subsection}{\numberline {5.4.2}Collaboration}{39}
-\contentsline {subsection}{\numberline {5.4.3}Appraisal}{39}
-\contentsline {subsection}{\numberline {5.4.4}Coping}{39}
-\contentsline {subsection}{\numberline {5.4.5}Motivation}{39}
-\contentsline {subsection}{\numberline {5.4.6}Theory of Mind}{39}
-\contentsline {subsection}{\numberline {5.4.7}Perception}{39}
-\contentsline {subsection}{\numberline {5.4.8}Action}{39}
-\contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration Using Emotional-Awareness}{40}
-\contentsline {section}{\numberline {6.1}Introduction}{40}
-\contentsline {section}{\numberline {6.2}Implementation}{41}
-\contentsline {subsection}{\numberline {6.2.1}Framework}{41}
-\contentsline {subsection}{\numberline {6.2.2}Robot Controller}{42}
-\contentsline {section}{\numberline {6.3}Experimental Scenario}{42}
-\contentsline {subsection}{\numberline {6.3.1}The Robot}{43}
-\contentsline {subsection}{\numberline {6.3.2}Interaction Paradigms}{44}
-\contentsline {subsection}{\numberline {6.3.3}Environment and Tasks}{46}
-\contentsline {section}{\numberline {6.4}Evaluation}{46}
-\contentsline {subsection}{\numberline {6.4.1}Hypothesis}{46}
-\contentsline {subsection}{\numberline {6.4.2}Procedure}{48}
-\contentsline {subsection}{\numberline {6.4.3}Measurements}{49}
-\contentsline {subsection}{\numberline {6.4.4}Participants}{49}
-\contentsline {section}{\numberline {6.5}Results}{49}
-\contentsline {subsection}{\numberline {6.5.1}7-Point Likert Scale Survey Results}{50}
-\contentsline {subsubsection}{Likability of the Robot}{51}
-\contentsline {subsubsection}{Human Trust in the Robot}{52}
-\contentsline {subsubsection}{Perception of the Robot's Performance}{53}
-\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{54}
-\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{54}
-\contentsline {subsubsection}{Human's Feeling about the Collaboration}{56}
-\contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{57}
-\contentsline {subsection}{\numberline {6.5.2}Results from the Open-Ended Questionnaire}{58}
-\contentsline {subsection}{\numberline {6.5.3}Impact of Demographics}{60}
-\contentsline {section}{\numberline {6.6}Discussion}{64}
-\contentsline {chapter}{\numberline {7}Conclusion}{66}
-\contentsline {section}{\numberline {7.1}Discussion}{66}
-\contentsline {section}{\numberline {7.2}Future Work}{66}
-\contentsline {chapter}{Appendix A}{70}
+\contentsline {section}{\numberline {4.3}Appraisal Processes}{15}
+\contentsline {subsection}{\numberline {4.3.1}Relevance}{16}
+\contentsline {subsection}{\numberline {4.3.2}Desirability}{20}
+\contentsline {subsection}{\numberline {4.3.3}Expectedness}{22}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{23}
+\contentsline {section}{\numberline {4.4}Goal Management}{26}
+\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{32}
+\contentsline {section}{\numberline {4.6}Emotion Instances}{32}
+\contentsline {section}{\numberline {4.7}Experimental Scenario}{32}
+\contentsline {subsection}{\numberline {4.7.1}Tasks}{32}
+\contentsline {section}{\numberline {4.8}Evaluation}{35}
+\contentsline {subsection}{\numberline {4.8.1}Hypothesis}{35}
+\contentsline {subsection}{\numberline {4.8.2}Procedure}{35}
+\contentsline {subsection}{\numberline {4.8.3}Measurement}{36}
+\contentsline {subsection}{\numberline {4.8.4}Participants}{39}
+\contentsline {section}{\numberline {4.9}Results}{39}
+\contentsline {subsection}{\numberline {4.9.1}Controllability}{40}
+\contentsline {subsection}{\numberline {4.9.2}Desirability}{40}
+\contentsline {subsection}{\numberline {4.9.3}Expectedness}{40}
+\contentsline {subsection}{\numberline {4.9.4}Relevance}{40}
+\contentsline {section}{\numberline {4.10}Discussion}{40}
+\contentsline {section}{\numberline {4.11}Conclusions}{40}
+\contentsline {chapter}{\numberline {5}Computational Framework}{41}
+\contentsline {section}{\numberline {5.1}Introduction}{41}
+\contentsline {section}{\numberline {5.2}System Overview}{41}
+\contentsline {section}{\numberline {5.3}Using Appraisal in Collaboration}{41}
+\contentsline {section}{\numberline {5.4}Components of the Architecture}{41}
+\contentsline {subsection}{\numberline {5.4.1}Mental States}{41}
+\contentsline {subsection}{\numberline {5.4.2}Collaboration}{41}
+\contentsline {subsection}{\numberline {5.4.3}Appraisal}{41}
+\contentsline {subsection}{\numberline {5.4.4}Coping}{41}
+\contentsline {subsection}{\numberline {5.4.5}Motivation}{41}
+\contentsline {subsection}{\numberline {5.4.6}Theory of Mind}{41}
+\contentsline {subsection}{\numberline {5.4.7}Perception}{41}
+\contentsline {subsection}{\numberline {5.4.8}Action}{41}
+\contentsline {chapter}{\numberline {6}Improving Human-Robot Collaboration Using Emotional-Awareness}{42}
+\contentsline {section}{\numberline {6.1}Introduction}{42}
+\contentsline {section}{\numberline {6.2}Implementation}{43}
+\contentsline {subsection}{\numberline {6.2.1}Framework}{43}
+\contentsline {subsection}{\numberline {6.2.2}Robot Controller}{44}
+\contentsline {section}{\numberline {6.3}Experimental Scenario}{44}
+\contentsline {subsection}{\numberline {6.3.1}The Robot}{45}
+\contentsline {subsection}{\numberline {6.3.2}Interaction Paradigms}{46}
+\contentsline {subsection}{\numberline {6.3.3}Environment and Tasks}{48}
+\contentsline {section}{\numberline {6.4}Evaluation}{48}
+\contentsline {subsection}{\numberline {6.4.1}Hypothesis}{48}
+\contentsline {subsection}{\numberline {6.4.2}Procedure}{50}
+\contentsline {subsection}{\numberline {6.4.3}Measurements}{51}
+\contentsline {subsection}{\numberline {6.4.4}Participants}{51}
+\contentsline {section}{\numberline {6.5}Results}{51}
+\contentsline {subsection}{\numberline {6.5.1}7-Point Likert Scale Survey Results}{52}
+\contentsline {subsubsection}{Likability of the Robot}{53}
+\contentsline {subsubsection}{Human Trust in the Robot}{54}
+\contentsline {subsubsection}{Perception of the Robot's Performance}{55}
+\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{56}
+\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{56}
+\contentsline {subsubsection}{Human's Feeling about the Collaboration}{58}
+\contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{59}
+\contentsline {subsection}{\numberline {6.5.2}Results from the Open-Ended Questionnaire}{60}
+\contentsline {subsection}{\numberline {6.5.3}Impact of Demographics}{62}
+\contentsline {section}{\numberline {6.6}Discussion}{66}
+\contentsline {chapter}{\numberline {7}Conclusion}{68}
+\contentsline {section}{\numberline {7.1}Discussion}{68}
+\contentsline {section}{\numberline {7.2}Future Work}{68}
+\contentsline {chapter}{Appendix A}{72}
