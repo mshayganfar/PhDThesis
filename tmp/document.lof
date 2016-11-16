@@ -9,33 +9,34 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces {\fontsize {10}{10}\selectfont Using Appraisals' outcome to influence Collaboration structure (mechanisms in our framework).}\relax }}{28}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces {\fontsize {10}{10}\selectfont Astronaut-robot collaboration structure (shared plan).}\relax }}{29}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Conditions for selecting coping strategies\relax }}{33}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Conditions for selecting emotion instances\relax }}{35}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Collaboration Task Model for the Evaluation.\relax }}{36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces {\fontsize {9}{9}\selectfont Example Expectedness Question.}\relax }}{37}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces {\fontsize {9}{9}\selectfont Example Controllability Question.}\relax }}{38}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces {\fontsize {9}{9}\selectfont Example Desirability Question.}\relax }}{38}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces {\fontsize {9}{9}\selectfont Example Relevance Question.}\relax }}{39}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Appraisal values.\relax }}{34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Conditions for selecting emotion instances\relax }}{36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Collaboration Task Model for the Evaluation.\relax }}{37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces {\fontsize {9}{9}\selectfont Example Expectedness Question.}\relax }}{38}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces {\fontsize {9}{9}\selectfont Example Controllability Question.}\relax }}{39}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces {\fontsize {9}{9}\selectfont Example Desirability Question.}\relax }}{39}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces {\fontsize {9}{9}\selectfont Example Relevance Question.}\relax }}{40}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces \fontsize {10}{10}\selectfont Computational framework based on Affective Motivational Collaboration theory (arrows indicate primary influences between mechanisms and data flow).\relax }}{44}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces {\fontsize {10}{10}\selectfont Collaboration structure used as the task model.}\relax }}{45}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \fontsize {10}{10}\selectfont The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{46}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \fontsize {10}{10}\selectfont The Graphical User Interface (GUI) used during interaction.\relax }}{47}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces \fontsize {10}{10}\selectfont Experimental setup.\relax }}{50}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces \fontsize {10pt}{10pt}\selectfont The 31 Likert scale questions organized according to their groups.\relax }}{53}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for Likability questions. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{54}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to trust. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{55}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the robot's performance. The p-value for the difference between the means for questions 10, 11 and 12 are 0.001, 0.063 and $\ll $0.001, respectively.\relax }}{56}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for the questions related to the robot's understanding of human emotions. The p-value for the difference between the means is $\ll $0.001 for all of the questions except Question 14, for which the p-value is 0.003.\relax }}{57}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the robot's understanding of goals. The p-value for the difference between the means for all questions is $\ll $0.001, except Question 19, for which the p-value is 0.006.\relax }}{58}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the human's feeling about the collaboration. The p-value for the difference between the means is $\ll $0.001 for questions 22, 25, 26, and 28. The p-value for Questions 23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.\relax }}{59}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to satisfaction with collaborative partner. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{60}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Open-ended questionnaire questions and results. (*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)\relax }}{61}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to likability.\relax }}{64}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to trust.\relax }}{64}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to performance.\relax }}{65}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to robot's understanding of human's emotions.\relax }}{65}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{66}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{66}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{67}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \fontsize {10}{10}\selectfont Computational framework based on Affective Motivational Collaboration theory (arrows indicate primary influences between mechanisms and data flow).\relax }}{45}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces {\fontsize {10}{10}\selectfont Collaboration structure used as the task model.}\relax }}{46}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \fontsize {10}{10}\selectfont The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{47}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \fontsize {10}{10}\selectfont The Graphical User Interface (GUI) used during interaction.\relax }}{48}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \fontsize {10}{10}\selectfont Experimental setup.\relax }}{51}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \fontsize {10pt}{10pt}\selectfont The 31 Likert scale questions organized according to their groups.\relax }}{54}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for Likability questions. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{55}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to trust. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{56}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the robot's performance. The p-value for the difference between the means for questions 10, 11 and 12 are 0.001, 0.063 and $\ll $0.001, respectively.\relax }}{57}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for the questions related to the robot's understanding of human emotions. The p-value for the difference between the means is $\ll $0.001 for all of the questions except Question 14, for which the p-value is 0.003.\relax }}{58}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the robot's understanding of goals. The p-value for the difference between the means for all questions is $\ll $0.001, except Question 19, for which the p-value is 0.006.\relax }}{59}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to the human's feeling about the collaboration. The p-value for the difference between the means is $\ll $0.001 for questions 22, 25, 26, and 28. The p-value for Questions 23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.\relax }}{60}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces \fontsize {10}{10}\selectfont Results of the Likert scale survey for questions related to satisfaction with collaborative partner. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{61}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Open-ended questionnaire questions and results. (*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)\relax }}{62}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to likability.\relax }}{65}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to trust.\relax }}{65}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to performance.\relax }}{66}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to robot's understanding of human's emotions.\relax }}{66}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{67}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{67}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces \fontsize {10pt}{10pt}\selectfont Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{68}
 \addvspace {10\p@ }

@@ -1390,6 +1390,45 @@ Figure \ref{fig:coping_strategies}).
 \end{sidewaysfigure}
 
 \section{Emotion Instances}
+We have also implemented 10 different emotion instances that can be elicited by
+the agent or anticipated from the human during collaboration in our framework
+(see Figure \ref{fig:emotion_elicitation}). These emotion instances have
+meanings in social context and more specifically in collaboration. There are two
+components involved in selecting a particular emotion: appraisal variables and
+collaboration context. 
+
+We use the outcome of the four appraisal processes discussed in section
+\ref{sec:appraisal} to determine the potential emotion instance to be elicited
+(if the agent wants to express an emotion), or to anticipate a potential emotion
+from human collaborator (if the human response is anticipated). The outcome of
+appraisal processes can be one of the values presented in Figure
+\ref{fig:appraisal_values} with respect to the corresponding process.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/apraisal_values_croped.pdf}
+  \caption{Appraisal values.}
+  \label{fig:appraisal_values}
+\end{figure}
+
+We also use the collaboration context as our second determinant of selecting a
+particular emotion. We define the collaboration context based on: \textit{goal
+achievement}, \textit{goal failure}, \textit{proposal of a goal},
+\textit{acceptance of the proposed goal}, and \textit{rejection of the proposed
+goal}. All of these situations can occur by either of the collaborators, i.e.,
+agent or human (see Figure \ref{fig:emotion_elicitation}). There is only one
+exception and it is when the desirability value is neutral the associated
+emotion to the event is always neutral without considering the collaboration
+context and the values of other appraisal variables.
+
+As an example, if the agent finds an event \textit{uncontrollable},
+\textit{unexpected}, \textit{undesirable} and \textit{relevant} as the result of
+human's proposal of a new goal to the agent (in agent's turn), the elicited
+emotion instance will be \textit{worry} which can be expressed by the agent to
+indicate the agent's concern. Similarly, the agent will anticipate
+\textit{worry} for the human if the same appraisal values are computed while for
+instance the agent rejects human's proposal of the new goal (in human's turn).
+
 
 \begin{sidewaysfigure}
   \centering
