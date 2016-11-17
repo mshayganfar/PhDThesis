@@ -1365,24 +1365,32 @@ In our Coping mechanism, there are three components involved as the activation
 criteria for each coping strategy. The first criterion is the conjunction of
 emotion valances of the self and the other collaborator (see Emotion Valance
 column in Figure \ref{fig:coping_strategies}). For instance, if the valance of
-the other collaborator's emotion is \textit{negative} \textbf{and} the valance
-of the robot's emotion is also \textit{negative}, the active coping, the
+the human collaborator's emotion is \textit{negative} \textbf{and} the valance
+of the agent's emotion is also \textit{negative}, the active coping, the
 acceptance, and the mental disengagement coping strategies are the coping
-strategy candidates that are going to become activated if the other activation
-criteria also exist for any of them. The secons criterion represent the need to
-cope with an event in a certain way. The values of our three different motives
-(i.e., \textit{satisfaction}, \textit{achievement}, and \textit{external}) are
-involved in the decision of whether there is a need for a particular coping
-strategy to become activated. We use conjunction of satisfaction motive's
-value with the disjunction of achievement and external motives. For instance, if
-we have highly negative values for all three motives for the candidate coping
-strategies in our previous example, the acceptance strategy will be selected as
-the strategy with highest need. However, the ability to cope with an event as
-the third criterion impacts the decide of whether the selected coping startegy
-can be activated. The controllability of an event indicates whether the agent
-is able to cope with the given event. In this example, if the agent finds the
-event uncontrollable, the acceptance coping strategy becomes activated (see
-Figure \ref{fig:coping_strategies}).
+strategy candidates that have potential to become activated if the other
+activation criteria also exist for any of them. For example, if the human
+collaborator is frustrated and the agent's elicited emotion is guilt, the three
+above mentioned coping strategies become potential candidate to be selected as
+the agent's active coping strategy. The second criterion is the need for the
+agent to cope with an event. The values of our three different motives (i.e.,
+\textit{satisfaction}, \textit{achievement}, and \textit{external}) are involved
+in the decision of whether there is a need for a particular coping strategy to
+become activated. We use conjunction of satisfaction motive's value with the
+disjunction of achievement and external motives. For instance, if we have highly
+negative values for all three motives for the potential candidates of coping
+strategies based on the example we mentioned above, the acceptance coping
+strategy will be selected as the strategy with the highest need for the agent.
+For example, this kind of condition can occur when the agent fails doing its own
+task and pursuing the current goal (negative satisfaction motive), and can not
+find another goal to overcome the impasse (negative achievement motive). The
+details about how the motive values are computed is presented in Section
+\ref{sec:motivation_mechanism}. Finally, the ability to cope with an event as
+the third criterion impacts the decision of whether the selected coping startegy
+can be activated. The controllability of an event represents whether the agent
+is able to control the situation occurring with the given event. In our
+example, if the agent finds the event uncontrollable, the acceptance coping
+strategy becomes activated (see Figure \ref{fig:coping_strategies}).
 
 \begin{sidewaysfigure}
   \centering
@@ -1394,6 +1402,7 @@ Figure \ref{fig:coping_strategies}).
 \section{Other Mechanisms in our Architecture}
 
 \subsection{Motivation}
+\label{sec:motivation_mechanism}
 
 \subsection{Theory of Mind}
 The Theory of Mind mechanism uses the same collaboration structure and functions
@@ -1577,6 +1586,13 @@ their decision for the expectedness of this event is similar to the output of
 the expectedness algorithm. For this question, the human decision was 97\%
 similar to the algorithm's output. 
 
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/expectedness_result_croped.pdf}
+  \caption{Expectedness results.}
+  \label{fig:expectedness_result}
+\end{figure}
+
 Results for the expectedness questionnaire are presented in Table XXX (Refer to
 Expectedness summary table). As shown in this table, there is strong evidence
 that the results are not random; in fact, for questions 1-6 and 9-10, human
@@ -1608,6 +1624,13 @@ butter on one slice of bread and strawberry jam on another slice of bread. In
 this question, the humans decision was 90\% in agreement with the algorithm's
 output.
 
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/controllability_result_croped.pdf}
+  \caption{Controllability results.}
+  \label{fig:controllability_result}
+\end{figure}
+
 Results for the controllability questionnaire are presented in Table XXX
 (insert controllability summary table). As shown in the table, the p-value is
 <0.01 for each of the ten questions. The two questions with the lowest human
@@ -1632,9 +1655,9 @@ output in this question.
 
 \begin{figure}[tbh]
   \centering
-  \includegraphics[width=0.85\textwidth]{figure/question-sample3-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Desirability Question.}}
-  \label{fig:qs3}
+  \includegraphics[width=1\textwidth]{figure/desirability_result_croped.pdf}
+  \caption{Desirability results.}
+  \label{fig:desirability_result}
 \end{figure}
 
 The results of the desirability questionnaire are presented in Table XXX
@@ -1646,6 +1669,13 @@ alternate. When the algorithm's output chose option C (i.e. rating two
 situations as equally desirable), the human participants only showed 46\%-77\%
 agreement. This may indicated that a higher level of granularity is required in
 the algorithm when evaluating options with similar levels of desirability. 
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample3-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Desirability Question.}}
+  \label{fig:qs3}
+\end{figure}
 
 \subsection{Relevance}
 \label{sec:relevance-crowdsourcing}
@@ -1664,6 +1694,13 @@ and found their collaborator's emotion more relevant than the original plan. It
 is noteworthy that in both the absence and the presence of emotions the
 participants chose the more salient option with respect to our definition of
 saliency, which was not referenced or provided in the questionnaire.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/relevance_result_croped.pdf}
+  \caption{Relevance results.}
+  \label{fig:relevance_result}
+\end{figure}
 
 The complete summary of results for the relevance questionnaire is provided in
 Table XXX (Insert summary table for relevance). As shown in the table, all
