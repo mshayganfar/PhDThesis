@@ -417,7 +417,7 @@ emotion-related processes (e.g., appraisal) provide the assessment procedure.
 
 \subsection{Attributes of Mental States}
 
-\chapter{Appraisal Processes in Collaboration Context}
+\chapter{Computational Framework}
 \label{ch:appraisals}
 
 \vspace*{-2mm}
@@ -448,13 +448,14 @@ emphasize the fact that collaboration requires different procedures in appraisal
 processes.
 
 \vspace*{-5mm}
-\section{Appraisal and Collaboration}
+\section{Collaboration Mechanism}
 \vspace*{-4mm}
 The collaboration and Appraisal mechanisms have reciprocal influence on each
 other. In this section, we focus on information about collaboration structure
 which will be incorporated in appraisal processes in Section
-\ref{sec:appraisal}. We describe the methods which retrieve information about
-the collaboration structure.
+\ref{sec:appraisal}. We describe some of the methods in our Collaboration
+mechanism which are used to retrieve information about the collaboration
+structure.
 
 The Collaboration mechanism constructs a hierarchy of goals associated with
 tasks in the form of a hierarchical task network (see Figure \ref{fig:cs}), and
@@ -468,10 +469,11 @@ shifts the focus of attention during the interaction.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=1\textwidth]{figure/collaborationStructure-small-croped.pdf}
+  \includegraphics[width=0.97\textwidth]{figure/collaborationStructure-small-croped.pdf}
   \caption{{\fontsize{10}{10}\selectfont Collaboration structure (shared
   plan).}}
   \label{fig:cs}
+  \vspace*{-5mm}
 \end{figure}
 
 Here, we describe the methods which retrieve information about the collaboration
@@ -552,9 +554,9 @@ variables. In these methods, $\varepsilon_t$ is the event corresponding to time
   primitive goal of ``Prepare Measurement Tool''.
 \end{itemize}
 
-\section{Appraisal Processes}
+\section{Appraisal Mechanism and Underlying Processes}
 \label{sec:appraisal}
-As we mentioned earlier, We consider four appraisal variables to be the most
+As we mentioned earlier, we consider four appraisal variables to be the most
 important appraisal variables in a collaboration context, i.e., Relevance,
 Desirability, Expectedness, and Controllability. There are other appraisal
 variables introduced in psychological \cite{scherer:appraisal-processes} and
@@ -562,14 +564,15 @@ computational literature \cite{gratch:domain-independent}. We believe most of
 these variables can be straightforwardly added to our appraisal mechanism
 whenever they are required. All of the algorithms in this section use mental
 states of the robot (discussed in Section \ref{sec:mental-states}) which are
-formed based on the collaboration structure. These algorithms use the
-corresponding recognized goal of the most recent event at each turn.
+formed based on the collaboration structure (Figure
+\ref{fig:appraisal-collaboration}). These algorithms use the corresponding
+recognized goal of the most recent event at each turn.
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.8\textwidth]{figure/appraisal-collaboration-croped.pdf}
-  \caption{{\fontsize{10}{10}\selectfont Using Collaboration structure in
-  Appraisal (mechanisms in our framework).}}
+  \caption{Using Collaboration structure in Appraisal (mechanisms in our
+  framework).}
   \label{fig:appraisal-collaboration}
 \end{figure}
 
@@ -1188,8 +1191,8 @@ example is provided our conducted user study exaplained in Chapter
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.8\textwidth]{figure/goal_management_croped.pdf}
-  \caption{{\fontsize{10}{10}\selectfont Using Appraisals' outcome to influence
-  Collaboration structure (mechanisms in our framework).}}
+  \caption{Using Appraisals' outcome to influence Collaboration structure
+  (mechanisms in our framework).}
   \label{fig:appraisal-on-collaboration}
 \end{figure}
 
@@ -1198,8 +1201,7 @@ astronaut-robot collaboration example. We introduce the goal management process
 based on a cost function including the influence of affective appraisal and
 reverse appraisal processes. Goal management is a crucial part of our
 investigation of the reciprocal influence of appraisal on a collaboration
-structure (see Fig. \ref{fig:appraisal-on-collaboration}).
-\vspace*{3mm}
+structure (see Figure \ref{fig:appraisal-on-collaboration}).
 
 As we mentioned earlier, we use four appraisal variables including: relevance,
 desirability, expectedness and controllability. The outcome of each appraisal
@@ -1224,8 +1226,8 @@ collaboration environment.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/goal_management_collaboration_structure-croped.pdf}
-  \caption{{\fontsize{10}{10}\selectfont Astronaut-robot collaboration structure
-  (shared plan).}}
+  \caption{Cost values indicated by tuples with (second number) and without
+  (first number) the influence of emotions.}
   \label{fig:task-model-astronaut}
 \end{figure}
 
@@ -1389,13 +1391,27 @@ Figure \ref{fig:coping_strategies}).
   \label{fig:coping_strategies}
 \end{sidewaysfigure}
 
+\section{Other Mechanisms in our Architecture}
+
+\subsection{Motivation}
+
+\subsection{Theory of Mind}
+The Theory of Mind mechanism uses the same collaboration structure and functions
+as well as appraisal processes to form anticipated beliefs about human's mental
+and emotional states. The agent uses the collaboration structure during the
+human's turn to compute appraisal values with respect to the human's current
+goal in the shared goal structure. The outcome of this appraisal forms beliefs
+about anticipated mental and emotional state of the human collaborator.
+
+\subsection{Perception and Action}
+
 \section{Emotion Instances}
 We have also implemented 10 different emotion instances that can be elicited by
 the agent or anticipated from the human during collaboration in our framework
 (see Figure \ref{fig:emotion_elicitation}). These emotion instances have
 meanings in social context and more specifically in collaboration. There are two
 components involved in selecting a particular emotion: appraisal variables and
-collaboration context. 
+collaboration context.
 
 We use the outcome of the four appraisal processes discussed in section
 \ref{sec:appraisal} to determine the potential emotion instance to be elicited
@@ -1438,18 +1454,23 @@ instance the agent rejects human's proposal of the new goal (in human's turn).
 \end{sidewaysfigure}
 
 \section{Experimental Scenario}
-To minimize the background knowledge necessary for our test subjects, we used a
-simple domestic example of preparing a peanut butter and jelly sandwich, and a
-hard boiled egg sandwich for a hiking trip.
-
-\subsection{Tasks}
-Participants were asked to carry out a sequence of hypothetical collaborative
-tasks between them and an imaginary friend, Mary, in order to accomplish their
-goal of preparing two sandwiches. All the tasks were simple and did not require
-the participants to solve a particular problem rather accomplish something as
-they do in their day to day life.
-
-\section{Evaluation}
+We developed an experimental scenario to in which participants were asked to
+carry out a sequence of hypothetical collaborative tasks between themselves and
+an imaginary friend, Mary, in order to accomplish their shared goal. To minimize
+the background knowledge necessary for our test subjects, we used a simple
+domestic example of preparing a peanut butter and jelly sandwich, and a hard
+boiled egg sandwich for a hiking trip. The tasks did not require the
+participants to solve problems; rather, the tasks were part of simple daily
+activities that should be familiar to all participants. 
+% 
+% \subsection{Tasks}
+% Participants were asked to carry out a sequence of hypothetical collaborative
+% tasks between them and an imaginary friend, Mary, in order to accomplish their
+% goal of preparing two sandwiches. All the tasks were simple and did not require
+% the participants to solve a particular problem rather accomplish something as
+% they do in their day to day life.
+% 
+% \section{Evaluation}
 
 \subsection{Hypothesis}
 We conducted this user study to test our hypothesis that humans and our
@@ -1472,41 +1493,78 @@ expectedness, and controllability.
  2 test questions) in the desirability questionnaire, and 22 questions
  (including 3 test questions) in the relevance questionnaire.
  
-We provided textual and graphical instructions for both questionnaires; Figure
-\ref{fig:taskModel} shows the corresponding task model. The instructions
-presented a sequence of hypothetical collaborative tasks to be carried out by
-the test subject and an imaginary friend in order to accomplish their
-goal of preparing two sandwiches. We also provided a simple definition and an
-example of each appraisal variable. The collaboration structure and the
-instructions were the same for both questionnaires. The questions introduced
-specific situations related to the shared plan, which included blocked tasks and
-failure or achievement of a shared goal. Each question provided three answers
-which were counterbalanced in the questionnaire. We provided an option like C in
-all questions (see Figure \ref{fig:qs1}), because we did not want to force
-participants to choose between two options when they did not have a good reason.
-There were two questions designed based on each factor that we use in our
-algorithms (see Section \ref{sec:appraisal}). The questions were randomly placed
-in the questionnaire. Figure \ref{fig:qs1} shows an example question from the
-relevance questionnaire which was designed to test whether participants perceive
-saliency as a factor in relevance. The input for our algorithms was the task
-model depicted in Figure \ref{fig:taskModel}.
+We provided textual and graphical instructions for all questionnaires; Figure
+\ref{fig:taskModel} shows the corresponding task model. The instructions,
+provided in Figure XXX, presented a sequence of hypothetical collaborative tasks
+to be carried out by the test subject and an imaginary friend, Mary, in order to
+accomplish their goal of preparing two sandwiches. We also provided a simple
+definition and an example of each appraisal variable. The collaboration
+structure and the instructions were the same for all questionnaires. The
+questions introduced specific situations related to the shared plan, which
+included blocked tasks and failure or achievement of a shared goal. Each
+question provided three answers which were counterbalanced in the questionnaire.
+We provided an option like C in all questions (see Figure \ref{fig:qs1}),
+because we did not want to force participants to choose between two options when
+they did not have a good reason. There were two questions designed based on each
+factor that we use in our algorithms (see Section \ref{sec:appraisal}). The
+questions were randomly placed in the questionnaire. Figure \ref{fig:qs1} shows
+an example question from the relevance questionnaire which was designed to test
+whether participants perceive saliency as a factor in relevance. The input for
+our algorithms was the task model depicted in Figure \ref{fig:taskModel}.
 
-\subsection{Measurement}
-Each question was designed based on different factors that we use in our
-algorithms (see Section \ref{sec:appraisal}). Here, we present four example
-questions from the expectedness, controllability, desirability, and relevance
-questionnaires, and describe how each question relates to a specific factor
-within the corresponding algorithm. The input for our algorithms was the task
-model depicted in Figure \ref{fig:taskModel}.
+\subsection{Participants}
+Each participant group originally had 40 participants. We limited the
+participant pools to those with the highest confidence level on the
+crowdsourcing website in the United States, Britain, and Australia. Test
+questions were included to check the sanity of the answers. We eliminated
+participants providing wrong answers to our sanity questions, and participants with
+answering times less than 2 minutes. The final number of accepted participants
+in each group is provided in Table \ref{tbl:statistics}.
 
-\begin{figure}[tbh]
-  \centering
-  \includegraphics[width=0.85\textwidth]{figure/question-sample-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Expectedness Question.}}
-  \label{fig:qs1}
-\end{figure}
+\begin{table}[htbp]
+\centering
+\caption{Number of Participants}
+\begin{tabular}{|c|c|c|c|c|} \hline
+appraisal variables & \# of participants\\ \hline 
+Relevance &  29\\ \hline
+Desirability & 35\\ \hline 
+Expectedness & 33\\ \hline 
+Controllability & 33\\ \hline
+\end{tabular}
+\label{tbl:statistics}
+\end{table}
 
-Figure \ref{fig:qs1} shows the example question from the expectedness
+% \begin{table}[htbp]
+% \vspace*{-3mm}
+% \centering
+% \caption{Number of Participants}
+% \begin{tabular}{|c|c|c|c|c|} \hline
+% appraisal variables & \# of participants & mean & stdev & \textit{p}-value\\ \hline 
+% Relevance &  29 & 0.713 & 0.107 & $<$0.001\\ \hline
+% Desirability & 35 & 0.778 & 0.150 & $<$0.001\\ \hline 
+% Expectedness & 33 & 0.785 & 0.120 & $<$0.001\\ \hline 
+% Controllability & 33 & 0.743 & 0.158 & $<$0.001\\ \hline
+% \end{tabular}
+% \label{tbl:statistics}
+% \vspace*{-3mm}
+% \end{table}
+% 
+
+\section{Results}
+\label{sec:results-crowdsourcing}
+Each question in our questionnaires was designed based on different factors that
+we use in our algorithms (see Section \ref{sec:appraisal}).  For each of the
+four questionnaires we provide an example question, and describe how each
+question relates to a specific factor within the corresponding algorithm. The
+input for our algorithms was the task model depicted in Figure
+\ref{fig:taskModel}. The complete list of questions is provided in the Appendix.
+Additionally, we provide the p-value for each question, using a binomial
+distribution, with a probability of success of 0.33, which is the probability of
+selecting the right answer if the participant is simply guessing.
+
+\subsection{Expectedness}
+\label{sec:expectedness-crowdsourcing}
+Figure \ref{fig:qs1} shows an example question from the expectedness
 questionnaire. In this example, with respect to Algorithm
 \ref{alg:expectedness} (line 6), option A is more expected because the task
 related to this option provides the next available task in the focus stack (see
@@ -1517,16 +1575,28 @@ whether the participants will similarly differentiate between these two
 options. This question was presented to the participants to determine whether
 their decision for the expectedness of this event is similar to the output of
 the expectedness algorithm. For this question, the human decision was 97\%
-similar to the algorithm's output. Average results for the expectedness
-questionnaire are presented in Table \ref{tbl:statistics}.
+similar to the algorithm's output. 
+
+Results for the expectedness questionnaire are presented in Table XXX (Refer to
+Expectedness summary table). As shown in this table, there is strong evidence
+that the results are not random; in fact, for questions 1-6 and 9-10, human
+participants showed between 67 and 100 \% agreement with our algorithms, with
+p-values of <<0.001 when compared with a random population. Questions 7 and 8
+were the only two questions that did not show a statistically significant
+p-value. It should be noted that these questions are comparing equally expected
+or equally unexpected situations, none of which our algorithms would consider
+most-expected or most-unexpected. 
+
 
 \begin{figure}[tbh]
   \centering
-  \includegraphics[width=0.85\textwidth]{figure/question-sample2-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Controllability Question.}}
-  \label{fig:qs2}
+  \includegraphics[width=0.85\textwidth]{figure/question-sample-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Expectedness Question.}}
+  \label{fig:qs1}
 \end{figure}
 
+\subsection{Controllability}
+\label{sec:controllability-crowdsourcing}
 Figure \ref{fig:qs2} shows an example question from the controllability
 questionnaire. The algorithm's output is option B, and is determined by
 Algorithm \ref{alg:controllability} (line 3), similarly to the expectedness
@@ -1538,6 +1608,21 @@ butter on one slice of bread and strawberry jam on another slice of bread. In
 this question, the humans decision was 90\% in agreement with the algorithm's
 output.
 
+Results for the controllability questionnaire are presented in Table XXX
+(insert controllability summary table). As shown in the table, the p-value is
+<0.01 for each of the ten questions. The two questions with the lowest human
+agreement with the algorithms both relate to autonomy of the participants with
+52\% and 55\%. 
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figure/question-sample2-croped.pdf}
+  \caption{{\fontsize{9}{9}\selectfont Example Controllability Question.}}
+  \label{fig:qs2}
+\end{figure}
+
+\subsection{Desirability}
+\label{sec:desirability-crowdsourcing}
 Figure \ref{fig:qs3} shows an example question from the desirability
 questionnaire. The output based on the Algorithm \ref{alg:desirability}
 (line 14) is option C, since in both option A and option B, the focus goal
@@ -1552,6 +1637,18 @@ output in this question.
   \label{fig:qs3}
 \end{figure}
 
+The results of the desirability questionnaire are presented in Table XXX
+(insert desirability summary table). As shown in the results table, the p-value
+is less than 0.05 for all of the desirability questions. However, an interesting
+trend is that human participants had a level of agreement of 83\%-100\% when the
+algorithm's output selected one alternate as more desirable than another
+alternate. When the algorithm's output chose option C (i.e. rating two
+situations as equally desirable), the human participants only showed 46\%-77\%
+agreement. This may indicated that a higher level of granularity is required in
+the algorithm when evaluating options with similar levels of desirability. 
+
+\subsection{Relevance}
+\label{sec:relevance-crowdsourcing}
 In the example shown in Figure \ref{fig:qs4}, with respect to Algorithm
 \ref{alg:relevance}, option A is relevant because of Mary's perceived negative
 emotion (see Equation \ref{eqn:utility}). Although option B is relevant (since
@@ -1568,6 +1665,18 @@ is noteworthy that in both the absence and the presence of emotions the
 participants chose the more salient option with respect to our definition of
 saliency, which was not referenced or provided in the questionnaire.
 
+The complete summary of results for the relevance questionnaire is provided in
+Table XXX (Insert summary table for relevance). As shown in the table, all
+questions show 59\%-100\% agreement with our algorithms and statistically
+significant p-values except for questions 2, 18 and 19. Question 2 addresses
+belief strength. Questions 18 and 19 address motive insistence and goal
+proximity, respectively; both of these questions present situations in which
+participants must choose whether an intense emotional circumstance, or adherence
+to the collaboration plan is more relevant (refer to the questionnaire
+provided in the Appendix). Our algorithms choose that the strong emotional
+circumstance will be more relevant; however, human participants generally
+selected adherence to the collaboration plan to be more relevant. 
+
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample4-croped.pdf}
@@ -1575,102 +1684,22 @@ saliency, which was not referenced or provided in the questionnaire.
   \label{fig:qs4}
 \end{figure}
 
-Furthermore, as we mentioned earlier, there were two questions related to each
-factor in our algorithms. Because each question was asking about a specific
-factor, we were able to perform a sensitivity analysis, similar to the saliency
-example presented above. We observed similar results for other factors for all
-four variables.
-
-\subsection{Participants}
-Each participant group originally had 40 participants. We limited the
-participant pools to those with the highest confidence level on the
-crowdsourcing website in the United States, Britain, and Australia. Test
-questions were included to check the sanity of the answers. We eliminated
-participants providing wrong answers to our sanity questions, and participants with
-answering times less than 2 minutes. The final number of accepted participants
-in each group is provided in Table \ref{tbl:statistics}.
-
-\begin{table}[htbp]
-\vspace*{-3mm}
-\centering
-\caption{Evaluation Results}
-\begin{tabular}{|c|c|c|c|c|} \hline
-appraisal variables & \# of participants & mean & stdev & \textit{p}-value\\ \hline 
-Relevance &  29 & 0.713 & 0.107 & $<$0.001\\ \hline
-Desirability & 35 & 0.778 & 0.150 & $<$0.001\\ \hline 
-Expectedness & 33 & 0.785 & 0.120 & $<$0.001\\ \hline 
-Controllability & 33 & 0.743 & 0.158 & $<$0.001\\ \hline
-\end{tabular}
-\label{tbl:statistics}
-\vspace*{-3mm}
-\end{table}
-
-\section{Results}
-\label{sec:results-crowdsourcing}
-Average results and standard deviation of the fractions of participants' answers
-agreeing with our algorithms output for both questionnaires are presented in
-Table \ref{tbl:statistics}. Each question had 3 answers. Therefore, a random
-distribution would result in 33\% agreement with our algorithms' output.
-However, the average ratio indicating similarity between participants
-decisions and the output of our algorithms is significantly higher than 33\%.
-The total number of participants' answers similar to the \textit{relevance}
-algorithm (n=29) averaged 71.3\% (s=10.7\%), the \textit{desirability}
-algorithm (n=35) averaged 77.8\% (s=15.0\%), the \textit{expectedness}
-algorithm (n=33) averaged 78.5\% (s=12.0\%), and the \textit{controllability}
-algorithm (n=33) averaged 74.3\% (s=15.8\%). It is worth noting that the human
-participants agreed 100\% on some questions, while on some other questions there
-was a much lower level of agreement. Our results indicate that people largely
-performed as our hypothesis predicted. The \textit{p}-values obtained based on a
-one-tailed z-test (see Table \ref{tbl:statistics}) show the probability of human
-participants' answers being generated from a random set. The very small
-\textit{p}-values indicate that the data set is not random; in fact, the high
-percentage of similarity confirms our hypothesis and shows that the algorithms
-can help us to model appraisal in a collaboration.
-
-\subsection{Controllability}
-\label{sec:controllability-crowdsourcing}
-
-\subsection{Desirability}
-\label{sec:desirability-crowdsourcing}
-
-\subsection{Expectedness}
-\label{sec:expectedness-crowdsourcing}
-
-\subsection{Relevance}
-\label{sec:relevance-crowdsourcing}
-
 \section{Discussion}
 \label{sec:discussion-crowdsourcing}
+As shown in the results tables in sections \ref{sec:expectedness-crowdsourcing}
+through \ref{sec:relevance-crowdsourcing}, the human participants agreed 100\%
+on some questions, while on some other questions there was a much lower level of
+agreement. Our results indicate that people largely performed as our hypothesis
+predicted. The \textit{p}-values obtained based on a binomial distribution show
+the probability of human participants' answers being generated from a random
+set. The very small \textit{p}-values indicate that the data set is not random;
+in fact, the high percentage of similarity confirms our hypothesis and shows
+that the algorithms can help us to model appraisal in a collaboration. The very
+low level of agreement on a handful of questions may indicate algorithm
+components that require further refinement before implementation. 
 
 \section{Conclusions}
 \label{sec:conclusions-crowdsourcing}
-
-\chapter{Computational Framework}
-\label{ch:framework}
-
-\section{Introduction}
-
-\section{System Overview}
-
-\section{Using Appraisal in Collaboration}
-
-\section{Components of the Architecture}
-
-\subsection{Mental States}
-
-\subsection{Collaboration}
-
-\subsection{Appraisal}
-
-\subsection{Coping}
-
-\subsection{Motivation}
-
-\subsection{Theory of Mind}
-
-\subsection{Perception}
-
-\subsection{Action}
 
 \chapter{Improving Human-Robot Collaboration Using Emotional-Awareness}
 \label{ch:awareness}
