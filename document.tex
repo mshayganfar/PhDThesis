@@ -1499,7 +1499,7 @@ strategy becomes activated (see Figure \ref{fig:coping_strategies}).
   \label{fig:coping_strategies}
 \end{sidewaysfigure}
 
-\section{Other Mechanisms in our Architecture}
+\section{Other Mechanisms in Our Framework}
 
 \subsection{Motivation}
 \label{sec:motivation_mechanism}
@@ -1509,8 +1509,26 @@ The Theory of Mind mechanism uses the same collaboration structure and functions
 as well as appraisal processes to form anticipated beliefs about human's mental
 and emotional states. The agent uses the collaboration structure during the
 human's turn to compute appraisal values with respect to the human's current
-goal in the shared goal structure. The outcome of this appraisal forms beliefs
-about anticipated mental and emotional state of the human collaborator.
+emotional state and the current goal in the shared goal structure. The outcome
+of the reverse appraisal forms beliefs about anticipated mental and emotional
+state of the human collaborator.
+
+We use the same \textit{relevance}, \textit{expectedness} and
+\textit{controllability} algorithms for the reverse appraisal as those
+algorithms we described in Section \ref{sec:appraisal}. In these three
+algorithms the Theory of Mind mechanism substitutes the required goal and its
+corresponding constraints and information with human's goal and its
+corresponding information which is provided to the agent within the shared plan
+structure. In other words, since our agent knows about the human goals (as part
+of the shared plan), it can apply the human goals to the same algorithms during
+the human's turn of the collaboration. However, only for the reverse appraisal
+of \textit{desirability} we chose to simply use the valance value of the human's
+perceived emotion and interpret negative, neutral and positive valance values as
+undesirable, neutral and desirable values respectively. In this way, our agent
+could directly infer whether the occurrence of the current event and its
+corresponding goal is desirable for the human. The outcome of all of these
+processes is a vector of reverse appraisal values that could be used by other
+mechanisms in our framework.
 
 \subsection{Perception and Action}
 As described in Chapter \ref{ch:amct} the Perception and Action mechanisms are
