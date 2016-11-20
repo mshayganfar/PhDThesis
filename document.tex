@@ -1513,6 +1513,25 @@ goal in the shared goal structure. The outcome of this appraisal forms beliefs
 about anticipated mental and emotional state of the human collaborator.
 
 \subsection{Perception and Action}
+As described in Chapter \ref{ch:amct} the Perception and Action mechanisms are
+not part of our theoretical work. Therefore, we only implemented these
+mechanisms the extent to which they could help us to run and test our framework.
+The Perception mechanism only redirects the input values from the system's users
+to the framework. For instance, in our conducted user study described in Chapter
+\ref{ch:awareness}, the Perception mechanism only receives the valance of
+human's emotion from the input and provides it to the framework. On the other
+hand, the Action mechanism executes some functions based on the intentions
+formed and provided by the Coping mechanism described in this section. We group
+all these functions into three categories in our framework. First group of
+functions includes all the functions capable of executing some actions with
+respect to the domain. Second category includes all the functions involved in
+revealing the agent's utterances by writing on the screen or conveying through
+the agent's voice and text to speech systems. The last category includes all the
+function to express the agent's emotion. The emotions can be expressed through
+colors, emoticons, voice and text. For example, in the user study described i
+Chapter \ref{ch:awareness}, we expressed the agent's emotions by using
+emoticons and utterances through the text on the screen as well as the agent's
+voice.
 
 \section{Emotion Instances}
 We have also implemented 10 different emotion instances that can be elicited by
@@ -1553,7 +1572,6 @@ emotion instance will be \textit{worry} which can be expressed by the agent to
 indicate the agent's concern. Similarly, the agent will anticipate
 \textit{worry} for the human if the same appraisal values are computed while for
 instance the agent rejects human's proposal of the new goal (in human's turn).
-
 
 \begin{sidewaysfigure}
   \centering

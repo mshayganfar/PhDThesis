@@ -52,16 +52,16 @@
 \contentsline {subsection}{\numberline {4.6.3}Perception and Action}{38}
 \contentsline {section}{\numberline {4.7}Emotion Instances}{38}
 \contentsline {section}{\numberline {4.8}Experimental Scenario}{39}
-\contentsline {subsection}{\numberline {4.8.1}Hypothesis}{39}
-\contentsline {subsection}{\numberline {4.8.2}Procedure}{39}
+\contentsline {subsection}{\numberline {4.8.1}Hypothesis}{41}
+\contentsline {subsection}{\numberline {4.8.2}Procedure}{41}
 \contentsline {subsection}{\numberline {4.8.3}Participants}{42}
-\contentsline {section}{\numberline {4.9}Results}{42}
-\contentsline {subsection}{\numberline {4.9.1}Expectedness}{42}
+\contentsline {section}{\numberline {4.9}Results}{43}
+\contentsline {subsection}{\numberline {4.9.1}Expectedness}{43}
 \contentsline {subsection}{\numberline {4.9.2}Controllability}{44}
-\contentsline {subsection}{\numberline {4.9.3}Desirability}{44}
-\contentsline {subsection}{\numberline {4.9.4}Relevance}{46}
-\contentsline {section}{\numberline {4.10}Discussion}{47}
-\contentsline {section}{\numberline {4.11}Conclusions}{48}
+\contentsline {subsection}{\numberline {4.9.3}Desirability}{46}
+\contentsline {subsection}{\numberline {4.9.4}Relevance}{47}
+\contentsline {section}{\numberline {4.10}Discussion}{49}
+\contentsline {section}{\numberline {4.11}Conclusions}{49}
 \contentsline {chapter}{\numberline {5}Improving Human-Robot Collaboration Using Emotional-Awareness}{50}
 \contentsline {section}{\numberline {5.1}Introduction}{50}
 \contentsline {section}{\numberline {5.2}Implementation}{51}
