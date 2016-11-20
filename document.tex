@@ -1359,7 +1359,58 @@ literature. Some of our coping strategies, i.e., \textit{planning},
 reasons}, are categorized as problem-focused and some others, i.e.,
 \textit{acceptance}, \textit{mental disengagement}, \textit{shifting
 responsibility}, and \textit{wishful thinking}, are categorized as
-emotion-focused startegies as described in \cite{gratch:domain-independent}.
+emotion-focused startegies as described in \cite{gratch:domain-independent}. We
+selected these seven coping strategies since they let our agent to demonstrate
+distinct behaviors with respect to the output of other mechanisms in our
+framework. The behaviors and underlying processes associated with these coping
+strategies are described as follows.
+
+\subsubsection{Planning}
+The \textit{planning} coping strategy works based on the shared plan and the
+task structure introduced as an input to our framework. The task structure
+includes the hierarchy and ordering of the tasks, the required inputs of
+each task as well as the preconditions and postconditions of individual tasks.
+We use this task structure to create our shared plan which includes the
+primitive and non-primitive goals that our agent and its colaborator want to
+achieve throughout their collaboration. Therefore, our agent executes actions
+related to its own goals based on this shared plan, and uses the same shared
+plan to associate goals and their status to the human collaborator. To achieve
+a goal the agent requires to execute an action, and to execute an action the
+agent needs to have the right intention. In our framework, whenever this coping
+strategy is activated the Coping mechanism provides the selected intention to
+the Action mechanism. The Action mechanism executes an action based on the given
+intention to achieve the corresponding goal in the shared plan.
+
+\subsubsection{Active Coping}
+The \textit{active} coping strategy can provide one or all of three different
+intentions with respect to whether this coping strategy is activated and the
+required conditions are provided. First, this coping strategy can provide an
+intention to \textit{acknowledge} human's emotions. For instance, if the human
+expresses an emotion with negative valance, the agent can acknowledge human's
+negative emotion accordingly. Second, active coping strategy can provide an
+intention to \textit{respond} to human if human asks a question. Currently, in
+our framework, the agent can respond to the human if human asks the agent:
+a) what input is required to achieve a goal, b) how to do a task to achieve a
+goal, c) the agent to achieve a goal, d) who is responsible to ahcieve a given
+goal. In all of these cases the agent is able to provide a positive or a
+negative answer. For instance, if the human asks the agent to achieve a goal,
+the active coping strategy forms an intention to either accept the human's
+proposal (if achieving the given goal is controllable for the agent), or reject
+the human's proposal (if it is not controllable for the agent). Third, the
+active coping strategy can also form an intention to \textit{delegate} a task to
+the human collaborator. The intention for task delegation can be formed if the
+agent fails to achieve its own goal, and the human's perceived emotion is not
+negative. As mentioned earlier, any or all of these intentions can be formed if
+active coping is selected. The agent acts accordingly by passing these
+intentions to the Action mechanism. For instance, if the human is frustrated
+about failure of using a tool to perform its own task and asks the agent
+whether the agent can provide its own tool, the active coping strategy forms a
+new intention to acknowledge human's frustration and responds to the human by
+providing the right tool (input) to use and fulfill the task. In this example,
+there will be no new intention to delegate a new goal to human since the agent
+perceives the human's negative emotion.
+
+\subsubsection{Seeking Social Support for Instrumental Reasons}
 
 In our Coping mechanism, there are three components involved as the activation
 criteria for each coping strategy. The first criterion is the conjunction of
@@ -1712,7 +1763,7 @@ participants must choose whether an intense emotional circumstance, or adherence
 to the collaboration plan is more relevant (refer to the questionnaire
 provided in the Appendix). Our algorithms choose that the strong emotional
 circumstance will be more relevant; however, human participants generally
-selected adherence to the collaboration plan to be more relevant. 
+selected adherence to the collaboration plan to be more relevant.
 
 \begin{figure}[tbh]
   \centering
