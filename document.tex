@@ -1154,6 +1154,7 @@ of events in the collaborative environment, the appraisal mechanism enables the
 robot to carry out proper collaborative behaviors.
 
 \section{Goal Management}
+\label{sec:goal-management}
 
 A collaborative robot needs to be able to regulate and manage shared goals
 during collaboration. Emotion has a crucial influence on this goal management
@@ -1357,13 +1358,13 @@ strategies that can be triggered based on different conditions (see Figure
 literature. Some of our coping strategies, i.e., \textit{planning},
 \textit{active coping} and \textit{seeking social support for instrumental
 reasons}, are categorized as problem-focused and some others, i.e.,
-\textit{acceptance}, \textit{mental disengagement}, \textit{shifting
-responsibility}, and \textit{wishful thinking}, are categorized as
-emotion-focused startegies as described in \cite{gratch:domain-independent}. We
-selected these seven coping strategies since they let our agent to demonstrate
-distinct behaviors with respect to the output of other mechanisms in our
-framework. The behaviors and underlying processes associated with these coping
-strategies are described as follows.
+\textit{acceptance}, \textit{mental disengagement}, and \textit{shifting
+responsibility}, are categorized as emotion-focused startegies as described in
+\cite{gratch:domain-independent}. We selected these six coping strategies
+since they let our agent to demonstrate distinct behaviors with respect to the
+output of the appraisal mechanism and the agent's mental state in our framework.
+The behaviors and underlying processes associated with these coping strategies
+are described as follows.
 
 \subsubsection{Planning}
 The \textit{planning} coping strategy works based on the shared plan and the
@@ -1382,35 +1383,83 @@ the Action mechanism. The Action mechanism executes an action based on the given
 intention to achieve the corresponding goal in the shared plan.
 
 \subsubsection{Active Coping}
-The \textit{active} coping strategy can provide one or all of three different
-intentions with respect to whether this coping strategy is activated and the
-required conditions are provided. First, this coping strategy can provide an
-intention to \textit{acknowledge} human's emotions. For instance, if the human
-expresses an emotion with negative valance, the agent can acknowledge human's
-negative emotion accordingly. Second, active coping strategy can provide an
-intention to \textit{respond} to human if human asks a question. Currently, in
-our framework, the agent can respond to the human if human asks the agent:
+The \textit{active} coping strategy can provide one or all of the three
+different intentions with respect to whether this coping strategy is activated
+and the required conditions are provided. First, this coping strategy can
+provide an intention to \textit{acknowledge} human's emotions. For instance, if
+the human expresses an emotion with negative valance, the agent can acknowledge
+human's negative emotion accordingly. Second, active coping strategy can provide
+an intention to \textit{respond} to human if human asks a question. Currently,
+in our framework, the agent can respond to the human if human asks the agent:
 a) what input is required to achieve a goal, b) how to do a task to achieve a
-goal, c) the agent to achieve a goal, d) who is responsible to ahcieve a given
-goal. In all of these cases the agent is able to provide a positive or a
-negative answer. For instance, if the human asks the agent to achieve a goal,
-the active coping strategy forms an intention to either accept the human's
-proposal (if achieving the given goal is controllable for the agent), or reject
-the human's proposal (if it is not controllable for the agent). Third, the
-active coping strategy can also form an intention to \textit{delegate} a task to
-the human collaborator. The intention for task delegation can be formed if the
-agent fails to achieve its own goal, and the human's perceived emotion is not
-negative. As mentioned earlier, any or all of these intentions can be formed if
-active coping is selected. The agent acts accordingly by passing these
-intentions to the Action mechanism. For instance, if the human is frustrated
-about failure of using a tool to perform its own task and asks the agent
-whether the agent can provide its own tool, the active coping strategy forms a
-new intention to acknowledge human's frustration and responds to the human by
-providing the right tool (input) to use and fulfill the task. In this example,
-there will be no new intention to delegate a new goal to human since the agent
-perceives the human's negative emotion.
+goal, c) to achieve a goal, d) who is responsible to ahcieve a given goal. In
+all of these cases the agent is able to provide a positive or a negative answer.
+For instance, if the human asks the agent to achieve a goal, the active coping
+strategy forms an intention to either accept the human's proposal (if achieving
+the given goal is controllable for the agent), or reject the human's proposal
+(if it is not controllable for the agent). Third, the active coping strategy can
+also form an intention to \textit{delegate} a task to the human collaborator.
+The intention for task delegation can be formed if the agent fails to achieve
+its own goal, and the human's perceived emotion is not negative. As mentioned
+earlier, any or all of these intentions can be formed if active coping is
+selected. The agent acts accordingly by passing these intentions to the Action
+mechanism. For instance, if the human is frustrated about failure of using a
+tool to perform its own task and asks the agent whether the agent can provide
+its own tool, the active coping strategy forms a new intention to acknowledge
+human's frustration and responds to the human by providing the right tool
+(input) to use and fulfill the task. In this example, there will be no new
+intention to delegate a new goal to human since the agent perceives the human's
+negative emotion.
 
 \subsubsection{Seeking Social Support for Instrumental Reasons}
+The \textit{seeking social support for instrumental reasons} strategy forms new
+intentions for the agent whenever the agent needs human's help and needs to ask
+questions from the human collaborator to make a progress in collaboration. The
+questions that our agent can ask are the resiprocal of those questions that the
+human can ask and the agent can provide an acceptance or a rejection answer as
+we mentioned above. Therefore, our agent can ask a) what input is required to
+achieve a goal, b) how to do a task to achieve a goal, c) the human to achieve a
+goal, d) who is responsible to ahcieve a given goal. Reciprocally, again, the
+agent expects the human collaborator to accept or reject the agent's proposals.
+In our framework, whenever this strategy is activated the agent consider's
+human's perceived emotion. For instance, if the human is worried about the
+outcome of a task failure, the agent does not form an intention to ask questions
+about any of the above cases and consequently prevents asking for more help.
+
+\subsubsection{Acceptance}
+The \textit{acceptance} coping strategy forms an intention to drop the
+intention of pursuing a goal. In our framework, if this strategy becomes
+activated, the intention to pursue the current goal will be dropped. The
+acceptance strategy also forms an intention to inform the human collaborator
+about the agent's decision on not pursuing the current goal.
+
+\subsubsection{Mental Disengagement}
+The \textit{mental disengagement} coping strategy forms new intention to lower
+the negative emotional charge associated with a goal in the event of a failure
+or an impasse. We use our goal management algorithm (see section
+\ref{sec:goal-management}) as the underlying process used as the result of
+selecting this strategy to dissociate the collaboration process and subsequently
+disengage the collaborator from a negative event (e.g., failure of achieving a
+goal). This disengagement helps the agent to lower the utility of an
+unsuccessful goal achievement attempt and focus on other achievable goals with
+respect to their costs to facilitate progress of collaboration. In our
+framework, this coping strategy forms an intention to run the goal management
+process. As the result of mental disengagement activation, the mechanism also
+forms another intention to inform the human about the outcome of the goal
+management process, i.e., whether the agent proposes switching to pursue
+another goal with lower cost, or there is not much the agent can do since there
+is no more goal with lower cost to pursue. The process and example of choosing
+another goal with lower cost are shown in section \ref{sec:goal-management}.
+
+\subsubsection{Shifting Responsibility}
+The \textit{shifting responsibility} strategy forms new intention to shift the
+blame from the agent to another entity. In our framework, we use this strategy
+to mitigate the influence of negative events causing negative emotions in the
+agent or the human collaborator. For instance, if this strategy becomes
+activated as a result of a failure, a new intention will be formed to blame the
+third person who provided the input (if the task needed a tool as an input) or
+the other collaborator. It can also form an intention to give the credit to the
+human collaborator to mitigate human's negative emotions.
 
 In our Coping mechanism, there are three components involved as the activation
 criteria for each coping strategy. The first criterion is the conjunction of
