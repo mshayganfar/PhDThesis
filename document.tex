@@ -1535,14 +1535,22 @@ satisfaction drives, called delta of satisfaction drive value, $\delta_{sat}$.
 As shown in equation \ref{eqn:satisfaction_motive}, we use the $\delta_{sat}$
 value in all three functions to compute the overall satisfaciton motive's value
 $\mathcal{M}_{sat}$. We also use three different functions with respect to the
-valence value of the the human collaborator's perceived emotion.
+valence value of the the human collaborator's perceived emotion. Our
+satisfaction motive's model has three user defined parameters $\mathcal{S}_{sat}
+\in [0, 1.5]$, i.e. strength of motive, $\mathcal{B}^\mathcal{L}$ where
+$\mathcal{B}$ is the base parameter of the function in $(1,\infty)$ and
+$\mathcal{L}$ is the exponential parameter of the same function in $(0,
+\infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
+\textit{unsatisfiability} value. In our framework, we set the
+$\mathcal{S}_{sat}$ value to 1.5, the $\mathcal{B}$ to 3.0, and the
+$\mathcal{L}$ to 2.0.
 
 \begin{equation}
     \mathcal{M}_{sat}(\varepsilon_t)= 
     \begin{dcases}
-       arctan (1.5 \times \delta_{sat}) & valence = 0 \\
-       3^{2 \times (\delta_{sat}-1)}    & valence > 0 \\
-       -3^{-2 \times (\delta_{sat}+1)}  & valence < 0
+       arctan (\mathcal{S}_{sat} \times \delta_{sat})      & valence = 0 \\
+       \mathcal{B}^{\mathcal{L} \times (\delta_{sat}-1)}   & valence > 0 \\
+       -\mathcal{B}^{-\mathcal{L} \times (\delta_{sat}+1)} & valence < 0
     \end{dcases}
     \label{eqn:satisfaction_motive}
 \end{equation}
@@ -1574,31 +1582,88 @@ collaboration. According to the literature, e.g.
 \cite{merrick:acheievement-affiliation-power}, the achievement motive is based
 on the estimation of success probability and the difficulty of achieving a goal.
 In our framweork, we compute the probability of success as the multiplication of
-\textit{controllability} and \textit{expectedness} values. Intutively, the more
-controllable and expected the events are, the probability of successful
+\textit{controllability} and \textit{expectedness} appraisal values. Intutively,
+the more controllable and expected the events are, the probability of successful
 achievement of their related goal is higher. 
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/achievement_motive_functions.png}
-  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
-  valence = positive, green: valence = negative). The x-axis indicates the
-  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
-  magnitude of satisfaction motive in [-1, +1].}
+  \caption{Two functions of achievement motive (blue: valence = +1, red:
+  valence = 0, green: valence = -1, orange: valence = close to zero from
+  negative side). The x-axis indicates the success probability value of
+  achieving a goal which is in [0, +1], and the y-axis indicates the magnitude
+  of acheivement motive in [-1, +1].}
   \label{fig:achievement-motive-functions}
 \end{figure}
 
+In our framework we use two sigmoid-based functions to compute the achievement
+motive's value. These functions values change based on the probability of
+success and valence of the human collaborator's emotion. We use the Equation
+\ref{eqn:achievement-motive-valence-positive} when the perceived emotion of the
+human has positive or zero valence value, and we use the Equation
+\ref{eqn:achievement-motive-valence-negative} when the perceived emotion
+of the human's has a negative valence value. As shown in Figure
+\ref{fig:achievement-motive-functions}, when the value of the valence changes
+between 0 and +1, the output of $\mathcal{M^{+}}_{ach}$ function changes between
+the red and the blue lines respectively. Conversely, when the value of the
+valence changes between -1 and a small negative number (close to zero), the
+output of $\mathcal{M^{-}}_{ach}$ function changes between the green and the
+orange lines.
+
+\begin{equation}
+\mathcal{M^{+}}_{ach}(\varepsilon_t)=
+\frac{2.0}{1+e^{(2.0-valence)\times(1.05-p(success))}}
+- \frac{1.0}{1+e^{(12.0-valence)\times(1.2-p(success))}}
+\label{eqn:achievement-motive-valence-positive}
+\end{equation}
+
+\begin{equation}
+\mathcal{M^{-}}_{ach}(\varepsilon_t)=
+\frac{1.0}{1+e^{(0.5+valence)\times(1.05)-p(success)}}
+- \frac{1.0}{1+e^{(12.0+valence)\times(p(success)-1.02)}}
+\label{eqn:achievement-motive-valence-negative}
+\end{equation}
+
+By intuition, as the probability of success increases the agent is more
+motivated to achieve a goal and this motive gets higher value when the human's
+emotion is positive or at least meutral. The human's negative emotions cause
+lower values of achievement motive since taking care of and acknowledging the
+human's negative emotion should have higher priority for a collaborative agent
+than achieving a goal.
+
 \subsection{External Motive}
+The external motive drives the agent's need to achieve a proposed goal by the
+human collaborator during the collaboration. In our framweork, the external
+motive is also based on the estimation of success probability and the difficulty
+of achieving a goal, but this goal is proposed by the human collaborator. The
+probability of success for the external motive is computed the same way as the
+achievement motive's probability of success, i.e. the multiplication of
+\textit{controllability} and \textit{expectedness} appraisal values.
+
+The only differnce is that we use Equations
+\ref{eqn:achievement-motive-valence-positive} and
+\ref{eqn:achievement-motive-valence-negative} in reverse order for the external
+motive; i.e. we use the Equation \ref{eqn:achievement-motive-valence-negative}
+when the valence of human's perceived emotion is positive, and the Equation
+\ref{eqn:achievement-motive-valence-positive} when the valence of the human's
+perceived emotion is negative or zero.
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/external_motive_functions.png}
-  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
-  valence = positive, green: valence = negative). The x-axis indicates the
-  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
-  magnitude of satisfaction motive in [-1, +1].}
+  \caption{Two functions of external motive (blue: valence = -1, red:
+  valence = 0, green: valence = +1, orange: valence = close to zero from
+  negative side). The x-axis indicates the success probability value of
+  achieving a proposed goal which is in [0, +1], and the y-axis indicates the
+  magnitude of acheivement motive in [-1, +1].}
   \label{fig:external-motive-functions}
 \end{figure}
+
+Intuitively, when the human proposes a new goal while expressing a negative
+emotion the agent should be more motivated to acknowledge human's proposal and
+prusue the propose goal to mitigate human's negative emotion and maintain the
+collaboration.
 
 \section{Theory of Mind}
 The Theory of Mind mechanism uses the same collaboration structure and functions
