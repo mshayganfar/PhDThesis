@@ -1351,6 +1351,7 @@ to evaluate the human's perception of the robot's behavior as a result of the
 goal management process.
 
 \section{Coping Mechanism and Strategies}
+\label{sec:coping-mechanism}
 We have implemented Coping mechanism to determine how the agent would respond to
 the events using our framework. Our Coping mechanism includes a set of coping
 strategies that can be triggered based on different conditions (see Figure
@@ -1366,7 +1367,7 @@ output of the appraisal mechanism and the agent's mental state in our framework.
 The behaviors and underlying processes associated with these coping strategies
 are described as follows.
 
-\subsubsection{Planning}
+\subsection{Planning}
 The \textit{planning} coping strategy works based on the shared plan and the
 task structure introduced as an input to our framework. The task structure
 includes the hierarchy and ordering of the tasks, the required inputs of
@@ -1382,7 +1383,7 @@ strategy is activated the Coping mechanism provides the selected intention to
 the Action mechanism. The Action mechanism executes an action based on the given
 intention to achieve the corresponding goal in the shared plan.
 
-\subsubsection{Active Coping}
+\subsection{Active Coping}
 The \textit{active} coping strategy can provide one or all of the three
 different intentions with respect to whether this coping strategy is activated
 and the required conditions are provided. First, this coping strategy can
@@ -1411,7 +1412,7 @@ human's frustration and responds to the human by providing the right tool
 intention to delegate a new goal to human since the agent perceives the human's
 negative emotion.
 
-\subsubsection{Seeking Social Support for Instrumental Reasons}
+\subsection{Seeking Social Support for Instrumental Reasons}
 The \textit{seeking social support for instrumental reasons} strategy forms new
 intentions for the agent whenever the agent needs human's help and needs to ask
 questions from the human collaborator to make a progress in collaboration. The
@@ -1426,14 +1427,14 @@ human's perceived emotion. For instance, if the human is worried about the
 outcome of a task failure, the agent does not form an intention to ask questions
 about any of the above cases and consequently prevents asking for more help.
 
-\subsubsection{Acceptance}
+\subsection{Acceptance}
 The \textit{acceptance} coping strategy forms an intention to drop the
 intention of pursuing a goal. In our framework, if this strategy becomes
 activated, the intention to pursue the current goal will be dropped. The
 acceptance strategy also forms an intention to inform the human collaborator
 about the agent's decision on not pursuing the current goal.
 
-\subsubsection{Mental Disengagement}
+\subsection{Mental Disengagement}
 The \textit{mental disengagement} coping strategy forms new intention to lower
 the negative emotional charge associated with a goal in the event of a failure
 or an impasse. We use our goal management algorithm (see section
@@ -1451,7 +1452,7 @@ another goal with lower cost, or there is not much the agent can do since there
 is no more goal with lower cost to pursue. The process and example of choosing
 another goal with lower cost are shown in section \ref{sec:goal-management}.
 
-\subsubsection{Shifting Responsibility}
+\subsection{Shifting Responsibility}
 The \textit{shifting responsibility} strategy forms new intention to shift the
 blame from the agent to another entity. In our framework, we use this strategy
 to mitigate the influence of negative events causing negative emotions in the
@@ -1460,6 +1461,8 @@ activated as a result of a failure, a new intention will be formed to blame the
 third person who provided the input (if the task needed a tool as an input) or
 the other collaborator. It can also form an intention to give the credit to the
 human collaborator to mitigate human's negative emotions.
+
+\subsection{Activation of Coping Strategies}
 
 In our Coping mechanism, there are three components involved as the activation
 criteria for each coping strategy. The first criterion is the conjunction of
@@ -1499,12 +1502,105 @@ strategy becomes activated (see Figure \ref{fig:coping_strategies}).
   \label{fig:coping_strategies}
 \end{sidewaysfigure}
 
-\section{Other Mechanisms in Our Framework}
-
-\subsection{Motivation}
+\section{Motivation mechanism}
 \label{sec:motivation_mechanism}
+As we discussed in Chapters \ref{ch:background} and \ref{ch:amct}, motives are
+goal-driven emotion-regulated constructs indicating an urge related to their
+goal. There are several motives in psychological and computational literatues
+as we reviewed in Chapter \ref{ch:background}. However, none of these
+computational models have particularly focused on application of motive in
+collaboration context. In our framework, we have implemented three computational
+models of motives for \textit{satisfaction}, \textit{achievement}, and
+\textit{external} motives. We use the values of these three motives in other
+mechanisms including the Coping mechanism as we described in Section
+\ref{sec:coping-mechanism} and shown in Figure \ref{fig:coping_strategies}.
 
-\subsection{Theory of Mind}
+\subsection{Satisfaction Motive}
+The satisfaction motive indicates the satisfaction level of collaboration for
+the agent and its human collaborator. The satisfaction motive process maintains
+the value of \textit{satisfaction drive} throughout the collaboration. The
+satisfaction drive is the quantitative weighted accumulation of desirability
+values between -1 and +1 over time. For instance, if the desirability values of
+the agent's appraisal over three consecutive turns are \{0.75, 0, -25\}, and
+their corresponding weights are \{0.25, 0.5, 1.0\}, the satisfaction drive value
+will be (0.25)(0.75) + (0.5)(0) + (1.0)(-25) which is -0.0625. Notice that
+the latest desirability values get higher weights. Intuitively, it is because
+older desirable events have less influence on overall desirability and
+consequently the satisfaction level of the collaboration. The same process
+computes the satisfaction drive values for the agent and the human collaborator.
+Only the sources of desirability values are different, i.e., appraisal for the
+agent and reverse appraisal for the human collaborator. Then, the satisfaction
+motive process computes the difference between the current and the previous
+satisfaction drives, called delta of satisfaction drive value, $\delta_{sat}$.
+As shown in equation \ref{eqn:satisfaction_motive}, we use the $\delta_{sat}$
+value in all three functions to compute the overall satisfaciton motive's value
+$\mathcal{M}_{sat}$. We also use three different functions with respect to the
+valence value of the the human collaborator's perceived emotion.
+
+\begin{equation}
+    \mathcal{M}_{sat}(\varepsilon_t)= 
+    \begin{dcases}
+       arctan (1.5 \times \delta_{sat}) & valence = 0 \\
+       3^{2 \times (\delta_{sat}-1)}    & valence > 0 \\
+       -3^{-2 \times (\delta_{sat}+1)}  & valence < 0
+    \end{dcases}
+    \label{eqn:satisfaction_motive}
+\end{equation}
+
+Intuitively, if the human collaborator does not express any emotion, the
+satisfaction motive's value can vary between -1 and +1 (blue cruve in Figure
+\ref{fig:satisfaction-motive-functions}). However, if the agent perceives
+positive emotion, there will be no negative satisfaction value since the other
+collaborator is in positive state of mind (red cruve in Figure
+\ref{fig:satisfaction-motive-functions}), and in contrast, if the agent
+perceives negative emotion, the satisfaction motive value only changes between
+-1 and 0 (green cruve in Figure \ref{fig:satisfaction-motive-functions}) with
+respect to how satisfied the agent is according to the status of its own goals
+during collaboration.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/satisfaction_motive_functions.png}
+  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
+  valence = positive, green: valence = negative). The x-axis indicates the
+  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
+  magnitude of satisfaction motive in [-1, +1].}
+  \label{fig:satisfaction-motive-functions}
+\end{figure}
+
+\subsection{Achievement Motive}
+The achievement motive drives the agent's need to achieve a goal during the
+collaboration. According to the literature, e.g.
+\cite{merrick:acheievement-affiliation-power}, the achievement motive is based
+on the estimation of success probability and the difficulty of achieving a goal.
+In our framweork, we compute the probability of success as the multiplication of
+\textit{controllability} and \textit{expectedness} values. Intutively, the more
+controllable and expected the events are, the probability of successful
+achievement of their related goal is higher. 
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/achievement_motive_functions.png}
+  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
+  valence = positive, green: valence = negative). The x-axis indicates the
+  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
+  magnitude of satisfaction motive in [-1, +1].}
+  \label{fig:achievement-motive-functions}
+\end{figure}
+
+\subsection{External Motive}
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/external_motive_functions.png}
+  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
+  valence = positive, green: valence = negative). The x-axis indicates the
+  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
+  magnitude of satisfaction motive in [-1, +1].}
+  \label{fig:external-motive-functions}
+\end{figure}
+
+\section{Theory of Mind}
 The Theory of Mind mechanism uses the same collaboration structure and functions
 as well as appraisal processes to form anticipated beliefs about human's mental
 and emotional states. The agent uses the collaboration structure during the
@@ -1530,7 +1626,7 @@ corresponding goal is desirable for the human. The outcome of all of these
 processes is a vector of reverse appraisal values that could be used by other
 mechanisms in our framework.
 
-\subsection{Perception and Action}
+\section{Perception and Action}
 As described in Chapter \ref{ch:amct} the Perception and Action mechanisms are
 not part of our theoretical work. Therefore, we only implemented these
 mechanisms the extent to which they could help us to run and test our framework.

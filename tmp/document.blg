@@ -6,45 +6,45 @@ Database file #1: mshayganfar.bib
 Warning--can't use both author and editor fields in breazeal:sociable-interactive-robots
 Warning--empty title in shayganfar:appraisal-short
 Warning--empty booktitle in shayganfar:appraisal-short
-You've used 26 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            652 strings with 8077 characters,
-and the built_in function-call counts, 9414 in all, are:
-= -- 905
-> -- 433
+            659 strings with 8274 characters,
+and the built_in function-call counts, 9729 in all, are:
+= -- 938
+> -- 446
 < -- 10
-+ -- 173
-- -- 141
-* -- 632
-:= -- 1517
-add.period$ -- 82
-call.type$ -- 26
-change.case$ -- 135
++ -- 178
+- -- 145
+* -- 656
+:= -- 1570
+add.period$ -- 85
+call.type$ -- 27
+change.case$ -- 140
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 398
-empty$ -- 769
-format.name$ -- 141
-if$ -- 2033
+cite$ -- 30
+duplicate$ -- 409
+empty$ -- 794
+format.name$ -- 145
+if$ -- 2097
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 34
-newline$ -- 132
-num.names$ -- 58
-pop$ -- 184
+int.to.str$ -- 27
+missing$ -- 35
+newline$ -- 137
+num.names$ -- 60
+pop$ -- 187
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 122
 quote$ -- 0
-skip$ -- 275
+skip$ -- 283
 stack$ -- 0
-substring$ -- 552
-swap$ -- 106
+substring$ -- 576
+swap$ -- 107
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 92
 warning$ -- 3
-while$ -- 89
-width$ -- 28
-write$ -- 286
+while$ -- 93
+width$ -- 29
+write$ -- 297
 (There were 3 warnings)
