@@ -423,16 +423,6 @@ emotion-related processes (e.g., appraisal) provide the assessment procedure.
 \vspace*{-2mm}
 \section{Introduction}
 \vspace*{-3mm}
-In this chapter, we focus on the specific problem of appraising the
-\textit{Relevance} (since other appraisals are only computed for relevant
-events), \textit{Desirability} (since it discriminates facilitating and
-inhibitory events towards the collaboration progress), \textit{Expectedness}
-(since it underlies a collaborative robot's attention), and
-\textit{Controllability} (since it is associated with the agent's coping
-ability) of events within a collaborative interaction. Our contribution is to
-ground general appraisal concepts in the specific context and structure of
-collaboration.
-
 There are several appraisal models (e.g., EMA \cite{marsella:ema-process-model})
 contributing in different applications such as social sciences, virtual agents,
 and robotics. However, none of these models have focused on the appraisal
@@ -445,14 +435,24 @@ determining utility because of the influence of the collaboration. These
 components, such as the recurrence of a belief by the human collaborator or the
 influence of the human collaborator's perceived emotion on the robot's decisions
 emphasize the fact that collaboration requires different procedures in appraisal
-processes.
+processes. One of our contributions is to ground general appraisal concepts in
+the specific context and structure of collaboration.
+
+Furthermore, we believe collaboration and appraisal have reciprocal influences
+on each other. In this chapter, we also talk about the influence of appraisal on
+collaboration through the goal management process. Also, we discuss our coping
+mechanism and strategies within the collaboration context. Then, we provide our
+computational model of three different motives used in our framework. We also
+briefly discuss other mechanisms in our framework. Finally, we present a
+crowd-sourcing user-study and the results, which we conducted to validate the
+components of our appraisal processes. 
 
 \vspace*{-5mm}
 \section{Collaboration Mechanism}
 \vspace*{-4mm}
-The collaboration and Appraisal mechanisms have reciprocal influence on each
-other. In this section, we focus on information about collaboration structure
-which will be incorporated in appraisal processes in Section
+The Collaboration and Appraisal mechanisms have reciprocal influences on each
+other. In this section, we focus on information about the collaboration
+structure which will be incorporated in appraisal processes in Section
 \ref{sec:appraisal}. We describe some of the methods in our Collaboration
 mechanism which are used to retrieve information about the collaboration
 structure.
@@ -490,7 +490,7 @@ variables. In these methods, $\varepsilon_t$ is the event corresponding to time
   primitive action can only directly contribute to one parent goal. The method
   returns \textit{ambiguous} if it does not recognize a goal in the
   plan\footnote{Ambiguity introduces some extra complexities which are beyond
-  scope of this paper.}.
+  scope of this thesis.}.
   
   \item \textit{getGoalStatus($g_t$)} returns whether $g_t$'s status is
   \textsc{achieved, failed, blocked, inapplicable, pending,} or \textsc{in
@@ -556,9 +556,13 @@ variables. In these methods, $\varepsilon_t$ is the event corresponding to time
 
 \section{Appraisal Mechanism and Underlying Processes}
 \label{sec:appraisal}
-As we mentioned earlier, we consider four appraisal variables to be the most
-important appraisal variables in a collaboration context, i.e., Relevance,
-Desirability, Expectedness, and Controllability. There are other appraisal
+In this section, we focus on the specific problem of appraising the
+\textit{Relevance} (since other appraisals are only computed for relevant
+events), \textit{Desirability} (since it discriminates facilitating and
+inhibitory events towards the collaboration progress), \textit{Expectedness}
+(since it underlies a collaborative robot's attention), and
+\textit{Controllability} (since it is associated with the agent's coping
+ability) of events within a collaborative interaction. There are other appraisal
 variables introduced in psychological \cite{scherer:appraisal-processes} and
 computational literature \cite{gratch:domain-independent}. We believe most of
 these variables can be straightforwardly added to our appraisal mechanism
@@ -654,9 +658,9 @@ belief-related part of the utility:
   will not be salient.
   \item \textit{Persistence (P)}: The recurrence of a belief over time (turns)
   increases the persistence of the belief. Beliefs occurring only once have the
-  lowest value of persistence. For instance, if the Astronaut keeps saying that
-  she can not find the measurement tool to check the connector, Robot could  
-  pursue a new goal outside of the shared plan to acknowledge Astronaut's
+  lowest value of persistence. For instance, if the Astronaut repeatedly says
+  that she can not find the measurement tool to check the connector, the Robot
+  could pursue a new goal outside of the shared plan to acknowledge Astronaut's
   concern.
 \end{itemize}
 
@@ -687,7 +691,7 @@ We provide the utility function ($\mathcal{U}$) in Equation \ref{eqn:utility}.
 This function uses: saliency (\textit{S}) and persistence (\textit{P}) of the
 belief related to the recognized goal, the recognized goal's status
 ($\upsilon$), and the aggregation of belief and motive attributes ($\Psi$)
-according to Equation \ref{eqn:power}.
+according to Equation \ref{eqn:utility}.
 
 \begin{equation}
     \mathcal{U}(\varepsilon_t)= 
@@ -709,7 +713,7 @@ of beliefs and motives using their attributes. Hence, the $\Psi$ value impacts
 the saliency value of beliefs exponentially, helping to differentiate between
 beliefs.
 
-In equation \ref{eqn:power}, the subscript \textit{k} refers to the
+In equation \ref{eqn:exponent}, the subscript \textit{k} refers to the
 \textit{known} goal-related factors (\textsc{satisfied} or
 \textsc{unsatisfied}); whereas the subscript \textit{all} includes both
 \textit{known} and \textit{unknown} goal-related factors. In this equation, both
@@ -721,7 +725,7 @@ value.
     \Psi = \frac{\alpha_{_k} + \beta_{_k} + \lambda_{_k} +
     \mu_{_k}}{\alpha_{_{all}} + \beta_{_{all}} + \lambda_{_{all}} +
     \mu_{_{all}}} + \eta + \gamma
-    \label{eqn:power}
+    \label{eqn:exponent}
 \end{equation}
 
 \begin{center} 
@@ -983,10 +987,10 @@ In Algorithm \ref{alg:controllability}, we partially compute the controllability
 of an event based on the above four factors. We use weighted averaging of these
 factors to determine their impact on the controllability of an event (line 9).
 The value of all these weights are set to \textit{1.0} for the purpose of
-simplicity at this stage (\textbf{$\Call{getWeights}{}$}). We will adjust these
-weights after further investigating the influence of these factors, and
-implementing other mechanisms in the overall architecture. We believe that the
-human's perceived emotion also impacts the controllability of an event
+simplicity (\textbf{$\Call{getWeights}{}$}). These weights can be adjusted after
+further investigating the influence of these factors, and implementing other
+mechanisms in the overall architecture. We believe that the human's perceived
+emotion also impacts the controllability of an event
 (\textbf{$\Call{getEmotionValence}{}$}). The ($-1.0 \leq \mathcal{V}_{e_h} \leq
 1.0$) is the valence value of the human's perceived emotion. Positive emotions,
 e.g., happiness, possess positive values, and negative emotions, e.g., anger,
@@ -1030,8 +1034,7 @@ These internal motives will lead the collaborators to acquire new intentions
 when required. If the robot's mental state possesses only an internal motive
 supporting the recognized goal, we consider a maximum agency value denoted as
 $\mathcal{M}$ in Algorithm \ref{alg:controllability} (i.e., $\mathcal{M}=1.0$);
-otherwise we consider the minimum agency value (i.e., $\mathcal{M}=0.0$). Note
-that the process of forming new internal motives is beyond scope of this paper.
+otherwise we consider the minimum agency value (i.e., $\mathcal{M}=0.0$). 
 
 % \renewcommand\thealgorithm{4\alph{algorithm}}
 % \setcounter{algorithm}{1}
@@ -1167,8 +1170,8 @@ collaborative environment.
 Goals represent an important part of the context during collaboration. However,
 not all goals are appropriate to pursue at the moment, depending on conditions.
 In fact, it can be destructive for a collaboration to pursue a good goal in a
-wrong context. Therefore, a collaborative robot must be able to manage shared
-goals during collaboration. The goal management process provides a critical
+poor context. Therefore, a collaborative robot must be able to manage shared
+goals during collaboration. The goal management process has a critical
 influence on a collaborative robot's behavior by maintaining or shifting the
 focus of attention to an appropriate goal based on the collaboration status.
 
@@ -1185,8 +1188,8 @@ manage the shared goals in order to prevent failure of the collaboration. By
 using reverse appraisal \cite{gratch:reverse-appraisal} of the astronaut's
 emotion and its own appraisal of individual goals, the robot is able to
 successfully shift the focus of attention from the blocked goal (eliciting worry
-in the astronaut) to an appropriate one to maintain the collaboration. Similar
-example is provided our conducted user study exaplained in Chapter
+in the astronaut) to an appropriate one to maintain the collaboration. A similar
+example is provided our conducted user study, which is explained in Chapter
 \ref{ch:awareness}.
 
 \begin{figure}[t]
@@ -1208,8 +1211,8 @@ As we mentioned earlier, we use four appraisal variables including: relevance,
 desirability, expectedness and controllability. The outcome of each appraisal
 process is a specific value for the corresponding appraisal variable. The vector
 containing these appraisal variables can be mapped to a particular emotion
-instance at each point in time when requied. Moreover, the functions of emotions
-in a social setting, i.e., goal management, and the meaning of the
+instance at each point in time when requied. Moreover, the functions of
+emotions, such as goal management, in a social setting and the meaning of the
 collaborator's perceived emotion in collaboration context are also important.
 
 A collaboration structure provides a hierarchy and constraints of the shared
@@ -1256,7 +1259,9 @@ $S(g)$ (see equations \ref{eqn:proximity} to \ref{eqn:specificity}).
 \label{eqn:cost}
 \end{equation}
 
-\noindent For simplicity, we assume equal values for the weights: $\omega_i$=1.
+\noindent For simplicity in this example, we assume equal values for the
+weights:
+$\omega_i$=1.
 
 \begin{equation}
 \Gamma=-C[(R_r+1)D_r + \alpha(R_h+1)D_h]
@@ -1352,20 +1357,19 @@ goal management process.
 
 \section{Coping Mechanism and Strategies}
 \label{sec:coping-mechanism}
-We have implemented Coping mechanism to determine how the agent would respond to
-the events using our framework. Our Coping mechanism includes a set of coping
-strategies that can be triggered based on different conditions (see Figure
-\ref{fig:coping_strategies}). All of these coping strategies are known in the
-literature. Some of our coping strategies, i.e., \textit{planning},
+We have implemented the Coping mechanism to determine how the agent would 
+respond to events using our framework. Our Coping mechanism includes a set of
+coping strategies that can be triggered based on different conditions (see
+Figure \ref{fig:coping_strategies}). All of these coping strategies are known
+in the literature. Some of our coping strategies, i.e., \textit{planning},
 \textit{active coping} and \textit{seeking social support for instrumental
-reasons}, are categorized as problem-focused and some others, i.e.,
+reasons}, are categorized as problem-focused and others, i.e.,
 \textit{acceptance}, \textit{mental disengagement}, and \textit{shifting
 responsibility}, are categorized as emotion-focused startegies as described in
-\cite{gratch:domain-independent}. We selected these six coping strategies
-since they let our agent to demonstrate distinct behaviors with respect to the
-output of the appraisal mechanism and the agent's mental state in our framework.
-The behaviors and underlying processes associated with these coping strategies
-are described as follows.
+\cite{gratch:domain-independent}. We selected these six coping strategies since
+they let our agent demonstrate distinct behaviors with respect to the output of
+the appraisal mechanism and the agent's mental state in our framework. The
+behaviors and underlying processes associated with these coping strategies are described as follows.
 
 \subsection{Planning}
 The \textit{planning} coping strategy works based on the shared plan and the
@@ -1373,66 +1377,67 @@ task structure introduced as an input to our framework. The task structure
 includes the hierarchy and ordering of the tasks, the required inputs of
 each task as well as the preconditions and postconditions of individual tasks.
 We use this task structure to create our shared plan which includes the
-primitive and non-primitive goals that our agent and its colaborator want to
+primitive and non-primitive goals that our agent and its collaborator want to
 achieve throughout their collaboration. Therefore, our agent executes actions
 related to its own goals based on this shared plan, and uses the same shared
-plan to associate goals and their status to the human collaborator. To achieve
-a goal the agent requires to execute an action, and to execute an action the
+plan to associate goals and their status with the human collaborator. To achieve
+a goal the agent is required to execute an action, and to execute an action the
 agent needs to have the right intention. In our framework, whenever this coping
 strategy is activated the Coping mechanism provides the selected intention to
 the Action mechanism. The Action mechanism executes an action based on the given
 intention to achieve the corresponding goal in the shared plan.
 
 \subsection{Active Coping}
-The \textit{active} coping strategy can provide one or all of the three
-different intentions with respect to whether this coping strategy is activated
-and the required conditions are provided. First, this coping strategy can
-provide an intention to \textit{acknowledge} human's emotions. For instance, if
-the human expresses an emotion with negative valance, the agent can acknowledge
-human's negative emotion accordingly. Second, active coping strategy can provide
-an intention to \textit{respond} to human if human asks a question. Currently,
-in our framework, the agent can respond to the human if human asks the agent:
-a) what input is required to achieve a goal, b) how to do a task to achieve a
-goal, c) to achieve a goal, d) who is responsible to ahcieve a given goal. In
-all of these cases the agent is able to provide a positive or a negative answer.
-For instance, if the human asks the agent to achieve a goal, the active coping
-strategy forms an intention to either accept the human's proposal (if achieving
-the given goal is controllable for the agent), or reject the human's proposal
-(if it is not controllable for the agent). Third, the active coping strategy can
-also form an intention to \textit{delegate} a task to the human collaborator.
-The intention for task delegation can be formed if the agent fails to achieve
-its own goal, and the human's perceived emotion is not negative. As mentioned
-earlier, any or all of these intentions can be formed if active coping is
-selected. The agent acts accordingly by passing these intentions to the Action
-mechanism. For instance, if the human is frustrated about failure of using a
-tool to perform its own task and asks the agent whether the agent can provide
-its own tool, the active coping strategy forms a new intention to acknowledge
+The \textit{active} coping strategy can provide one or all of the following
+three different intentions with respect to whether this coping strategy is
+activated and the required conditions are provided. Firstly, this coping
+strategy can provide an intention to \textit{acknowledge} the human's emotions.
+For instance, if the human expresses an emotion with negative valence, the agent
+can acknowledge human's negative emotion accordingly. Secondly, the active
+coping strategy can provide an intention to \textit{respond} to the human if
+the human asks a question. Currently, in our framework, the agent can respond to
+the human if the human asks the agent: a) what input is required to achieve a
+goal, b) how to do a task to achieve a goal, c) to achieve a goal, d) who is
+responsible to achieve a given goal. For instance, if the human asks the agent
+to achieve a goal, the active coping strategy forms an intention to either
+accept the human's proposal (if achieving the given goal is controllable for the
+agent), or reject the human's proposal (if it is not controllable for the
+agent). Thirdly, the active coping strategy can form an intention to
+\textit{delegate} a task to the human collaborator. The intention for task
+delegation can be formed if the agent fails to achieve its own goal, and the
+human's perceived emotion is not negative. As mentioned earlier, any or all of
+these intentions can be formed if active coping is selected. The agent acts
+accordingly by passing these intentions to the Action mechanism. For instance,
+if the human is frustrated about a failure that occurred when using a tool to
+perform its own task and asks the agent whether the agent can provide its own
+tool, the active coping strategy forms a new intention to acknowledge the
 human's frustration and responds to the human by providing the right tool
 (input) to use and fulfill the task. In this example, there will be no new
-intention to delegate a new goal to human since the agent perceives the human's
-negative emotion.
+intention to delegate a new goal to the human since the agent perceives the
+human's negative emotion.
 
 \subsection{Seeking Social Support for Instrumental Reasons}
 The \textit{seeking social support for instrumental reasons} strategy forms new
-intentions for the agent whenever the agent needs human's help and needs to ask
-questions from the human collaborator to make a progress in collaboration. The
-questions that our agent can ask are the resiprocal of those questions that the
-human can ask and the agent can provide an acceptance or a rejection answer as
-we mentioned above. Therefore, our agent can ask a) what input is required to
-achieve a goal, b) how to do a task to achieve a goal, c) the human to achieve a
-goal, d) who is responsible to ahcieve a given goal. Reciprocally, again, the
-agent expects the human collaborator to accept or reject the agent's proposals.
-In our framework, whenever this strategy is activated the agent consider's
-human's perceived emotion. For instance, if the human is worried about the
-outcome of a task failure, the agent does not form an intention to ask questions
-about any of the above cases and consequently prevents asking for more help.
+intentions for the agent whenever the agent needs the human's help and needs to
+ask questions from the human collaborator to make progress in collaboration. The
+questions that our agent can ask are the reciprocal of those questions that the
+human can ask and the human can respond as we mentioned above. Therefore, our
+agent can ask a) what input is required to achieve a goal, b) how to do a task
+to achieve a goal, c) the human to achieve a goal, d) who is responsible to
+ahcieve a given goal. Reciprocally, again, the agent expects the human
+collaborator to accept or reject the agent's proposals. In our framework,
+whenever this strategy is activated the agent consider's human's perceived
+emotion. For instance, if the human is worried about the outcome of a task
+failure, the agent does not form an intention to ask questions about any of the
+above cases and consequently prevents asking for more help.
 
 \subsection{Acceptance}
 The \textit{acceptance} coping strategy forms an intention to drop the
 intention of pursuing a goal. In our framework, if this strategy becomes
-activated, the intention to pursue the current goal will be dropped. The
-acceptance strategy also forms an intention to inform the human collaborator
-about the agent's decision on not pursuing the current goal.
+activated, the intention to pursue the current goal will be dropped; see Figure
+\ref{fig:coping_strategies}. The acceptance strategy also forms an intention to
+inform the human collaborator about the agent's decision on not pursuing the
+current goal.
 
 \subsection{Mental Disengagement}
 The \textit{mental disengagement} coping strategy forms new intention to lower
@@ -1440,17 +1445,17 @@ the negative emotional charge associated with a goal in the event of a failure
 or an impasse. We use our goal management algorithm (see section
 \ref{sec:goal-management}) as the underlying process used as the result of
 selecting this strategy to dissociate the collaboration process and subsequently
-disengage the collaborator from a negative event (e.g., failure of achieving a
+disengage the collaborator from a negative event (e.g., failure to achieve a
 goal). This disengagement helps the agent to lower the utility of an
 unsuccessful goal achievement attempt and focus on other achievable goals with
 respect to their costs to facilitate progress of collaboration. In our
 framework, this coping strategy forms an intention to run the goal management
 process. As the result of mental disengagement activation, the mechanism also
 forms another intention to inform the human about the outcome of the goal
-management process, i.e., whether the agent proposes switching to pursue
-another goal with lower cost, or there is not much the agent can do since there
-is no more goal with lower cost to pursue. The process and example of choosing
-another goal with lower cost are shown in section \ref{sec:goal-management}.
+management process, i.e., whether the agent proposes switching to pursue another
+goal with lower cost, or if there is not much the agent can do since there is no
+other goal with a lower cost to pursue. The process and example of choosing
+another goal with a lower cost are shown in section \ref{sec:goal-management}.
 
 \subsection{Shifting Responsibility}
 The \textit{shifting responsibility} strategy forms new intention to shift the
@@ -1466,15 +1471,15 @@ human collaborator to mitigate human's negative emotions.
 
 In our Coping mechanism, there are three components involved as the activation
 criteria for each coping strategy. The first criterion is the conjunction of
-emotion valances of the self and the other collaborator (see Emotion Valance
-column in Figure \ref{fig:coping_strategies}). For instance, if the valance of
-the human collaborator's emotion is \textit{negative} \textbf{and} the valance
+emotion valences of the self and the other collaborator (see Emotion Valence
+column in Figure \ref{fig:coping_strategies}). For instance, if the valence of
+the human collaborator's emotion is \textit{negative} \textbf{and} the valence
 of the agent's emotion is also \textit{negative}, the active coping, the
 acceptance, and the mental disengagement coping strategies are the coping
 strategy candidates that have potential to become activated if the other
 activation criteria also exist for any of them. For example, if the human
 collaborator is frustrated and the agent's elicited emotion is guilt, the three
-above mentioned coping strategies become potential candidate to be selected as
+above mentioned coping strategies become potential candidates to be selected as
 the agent's active coping strategy. The second criterion is the need for the
 agent to cope with an event. The values of our three different motives (i.e.,
 \textit{satisfaction}, \textit{achievement}, and \textit{external}) are involved
@@ -1488,11 +1493,11 @@ For example, this kind of condition can occur when the agent fails doing its own
 task and pursuing the current goal (negative satisfaction motive), and can not
 find another goal to overcome the impasse (negative achievement motive). The
 details about how the motive values are computed is presented in Section
-\ref{sec:motivation_mechanism}. Finally, the ability to cope with an event as
-the third criterion impacts the decision of whether the selected coping startegy
-can be activated. The controllability of an event represents whether the agent
-is able to control the situation occurring with the given event. In our
-example, if the agent finds the event uncontrollable, the acceptance coping
+\ref{sec:motivation_mechanism}. Finally, the ability to cope with an event is
+the third criterion that impacts the decision of whether the selected coping
+startegy can be activated. The controllability of an event represents whether
+the agent is able to control the situation occurring with the given event. In
+our example, if the agent finds the event uncontrollable, the acceptance coping
 strategy becomes activated (see Figure \ref{fig:coping_strategies}).
 
 \begin{sidewaysfigure}
@@ -1502,28 +1507,28 @@ strategy becomes activated (see Figure \ref{fig:coping_strategies}).
   \label{fig:coping_strategies}
 \end{sidewaysfigure}
 
-\section{Motivation mechanism}
+\section{Motivation Mechanism}
 \label{sec:motivation_mechanism}
 As we discussed in Chapters \ref{ch:background} and \ref{ch:amct}, motives are
 goal-driven emotion-regulated constructs indicating an urge related to their
 goal. There are several motives in psychological and computational literatues
 as we reviewed in Chapter \ref{ch:background}. However, none of these
-computational models have particularly focused on application of motive in
-collaboration context. In our framework, we have implemented three computational
-models of motives for \textit{satisfaction}, \textit{achievement}, and
-\textit{external} motives. We use the values of these three motives in other
+computational models have particularly focused on the application of motives in
+the collaboration context. In our framework, we have implemented three
+computational models of motives for \textit{satisfaction}, \textit{achievement},
+and \textit{external} motives. We use the values of these three motives in other
 mechanisms including the Coping mechanism as we described in Section
-\ref{sec:coping-mechanism} and shown in Figure \ref{fig:coping_strategies}.
+\ref{sec:coping-mechanism} and show in Figure \ref{fig:coping_strategies}.
 
 \subsection{Satisfaction Motive}
-The satisfaction motive indicates the satisfaction level of collaboration for
-the agent and its human collaborator. The satisfaction motive process maintains
+The satisfaction motive indicates the satisfaction level with the collaboration
+for the agent and its human collaborator. The satisfaction motive process maintains
 the value of \textit{satisfaction drive} throughout the collaboration. The
 satisfaction drive is the quantitative weighted accumulation of desirability
 values between -1 and +1 over time. For instance, if the desirability values of
-the agent's appraisal over three consecutive turns are \{0.75, 0, -25\}, and
+the agent's appraisal over three consecutive turns are \{0.75, 0, -0.25\}, and
 their corresponding weights are \{0.25, 0.5, 1.0\}, the satisfaction drive value
-will be (0.25)(0.75) + (0.5)(0) + (1.0)(-25) which is -0.0625. Notice that
+will be (0.25)(0.75) + (0.5)(0) + (1.0)(-0.25) which is -0.0625. Notice that
 the latest desirability values get higher weights. Intuitively, it is because
 older desirable events have less influence on overall desirability and
 consequently the satisfaction level of the collaboration. The same process
@@ -1556,13 +1561,13 @@ $\mathcal{L}$ to 2.0.
 \end{equation}
 
 Intuitively, if the human collaborator does not express any emotion, the
-satisfaction motive's value can vary between -1 and +1 (blue cruve in Figure
+satisfaction motive's value can vary between -1 and +1 (blue curve in Figure
 \ref{fig:satisfaction-motive-functions}). However, if the agent perceives
 positive emotion, there will be no negative satisfaction value since the other
-collaborator is in positive state of mind (red cruve in Figure
+collaborator is in positive state of mind (red curve in Figure
 \ref{fig:satisfaction-motive-functions}), and in contrast, if the agent
 perceives negative emotion, the satisfaction motive value only changes between
--1 and 0 (green cruve in Figure \ref{fig:satisfaction-motive-functions}) with
+-1 and 0 (green curve in Figure \ref{fig:satisfaction-motive-functions}) with
 respect to how satisfied the agent is according to the status of its own goals
 during collaboration.
 
@@ -1582,14 +1587,14 @@ collaboration. According to the literature, e.g.
 \cite{merrick:acheievement-affiliation-power}, the achievement motive is based
 on the estimation of success probability and the difficulty of achieving a goal.
 In our framweork, we compute the probability of success as the multiplication of
-\textit{controllability} and \textit{expectedness} appraisal values. Intutively,
-the more controllable and expected the events are, the probability of successful
-achievement of their related goal is higher. 
+the \textit{controllability} and \textit{expectedness} appraisal values.
+Intutively, the more controllable and expected the events are, the probability
+of successful achievement of their related goal is higher.
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/achievement_motive_functions.png}
-  \caption{Two functions of achievement motive (blue: valence = +1, red:
+  \caption{Two functions of the achievement motive (blue: valence = +1, red:
   valence = 0, green: valence = -1, orange: valence = close to zero from
   negative side). The x-axis indicates the success probability value of
   achieving a goal which is in [0, +1], and the y-axis indicates the magnitude
@@ -1599,11 +1604,11 @@ achievement of their related goal is higher.
 
 In our framework we use two sigmoid-based functions to compute the achievement
 motive's value. These functions values change based on the probability of
-success and valence of the human collaborator's emotion. We use the Equation
+success and valence of the human collaborator's emotion. We use Equation
 \ref{eqn:achievement-motive-valence-positive} when the perceived emotion of the
-human has positive or zero valence value, and we use the Equation
+human has positive or zero valence value, and we use Equation
 \ref{eqn:achievement-motive-valence-negative} when the perceived emotion
-of the human's has a negative valence value. As shown in Figure
+of the human has a negative valence value. As shown in Figure
 \ref{fig:achievement-motive-functions}, when the value of the valence changes
 between 0 and +1, the output of $\mathcal{M^{+}}_{ach}$ function changes between
 the red and the blue lines respectively. Conversely, when the value of the
@@ -1626,8 +1631,8 @@ orange lines.
 \end{equation}
 
 By intuition, as the probability of success increases the agent is more
-motivated to achieve a goal and this motive gets higher value when the human's
-emotion is positive or at least meutral. The human's negative emotions cause
+motivated to achieve a goal and this motive gets higher when the human's
+emotion is positive or at least neutral. The human's negative emotions cause
 lower values of achievement motive since taking care of and acknowledging the
 human's negative emotion should have higher priority for a collaborative agent
 than achieving a goal.
@@ -1644,8 +1649,8 @@ achievement motive's probability of success, i.e. the multiplication of
 The only differnce is that we use Equations
 \ref{eqn:achievement-motive-valence-positive} and
 \ref{eqn:achievement-motive-valence-negative} in reverse order for the external
-motive; i.e. we use the Equation \ref{eqn:achievement-motive-valence-negative}
-when the valence of human's perceived emotion is positive, and the Equation
+motive; i.e. we use Equation \ref{eqn:achievement-motive-valence-negative}
+when the valence of human's perceived emotion is positive, and Equation
 \ref{eqn:achievement-motive-valence-positive} when the valence of the human's
 perceived emotion is negative or zero.
 
@@ -1656,35 +1661,35 @@ perceived emotion is negative or zero.
   valence = 0, green: valence = +1, orange: valence = close to zero from
   negative side). The x-axis indicates the success probability value of
   achieving a proposed goal which is in [0, +1], and the y-axis indicates the
-  magnitude of acheivement motive in [-1, +1].}
+  magnitude of the acheivement motive in [-1, +1].}
   \label{fig:external-motive-functions}
 \end{figure}
 
 Intuitively, when the human proposes a new goal while expressing a negative
 emotion the agent should be more motivated to acknowledge human's proposal and
-prusue the propose goal to mitigate human's negative emotion and maintain the
+pursue the proposed goal to mitigate human's negative emotion and maintain the
 collaboration.
 
 \section{Theory of Mind}
 The Theory of Mind mechanism uses the same collaboration structure and functions
-as well as appraisal processes to form anticipated beliefs about human's mental
-and emotional states. The agent uses the collaboration structure during the
+as well as appraisal processes to form anticipated beliefs about the human's
+mental and emotional states. The agent uses the collaboration structure during the
 human's turn to compute appraisal values with respect to the human's current
 emotional state and the current goal in the shared goal structure. The outcome
-of the reverse appraisal forms beliefs about anticipated mental and emotional
-state of the human collaborator.
+of the reverse appraisal forms beliefs about the anticipated mental and
+emotional state of the human collaborator.
 
 We use the same \textit{relevance}, \textit{expectedness} and
 \textit{controllability} algorithms for the reverse appraisal as those
 algorithms we described in Section \ref{sec:appraisal}. In these three
-algorithms the Theory of Mind mechanism substitutes the required goal and its
-corresponding constraints and information with human's goal and its
+algorithms the Theory of Mind mechanism substitutes the agent's required goal
+and its corresponding constraints and information with the human's goal and its
 corresponding information which is provided to the agent within the shared plan
-structure. In other words, since our agent knows about the human goals (as part
-of the shared plan), it can apply the human goals to the same algorithms during
+structure. In other words, since our agent knows about the human's goals (as
+part of the shared plan), it can apply the human goals to the same algorithms during
 the human's turn of the collaboration. However, only for the reverse appraisal
-of \textit{desirability} we chose to simply use the valance value of the human's
-perceived emotion and interpret negative, neutral and positive valance values as
+of \textit{desirability} we chose to simply use the valence value of the human's
+perceived emotion and interpret negative, neutral and positive valence values as
 undesirable, neutral and desirable values respectively. In this way, our agent
 could directly infer whether the occurrence of the current event and its
 corresponding goal is desirable for the human. The outcome of all of these
@@ -1692,25 +1697,25 @@ processes is a vector of reverse appraisal values that could be used by other
 mechanisms in our framework.
 
 \section{Perception and Action}
-As described in Chapter \ref{ch:amct} the Perception and Action mechanisms are
+As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
 not part of our theoretical work. Therefore, we only implemented these
-mechanisms the extent to which they could help us to run and test our framework.
-The Perception mechanism only redirects the input values from the system's users
-to the framework. For instance, in our conducted user study described in Chapter
-\ref{ch:awareness}, the Perception mechanism only receives the valance of
-human's emotion from the input and provides it to the framework. On the other
-hand, the Action mechanism executes some functions based on the intentions
-formed and provided by the Coping mechanism described in this section. We group
-all these functions into three categories in our framework. First group of
-functions includes all the functions capable of executing some actions with
-respect to the domain. Second category includes all the functions involved in
-revealing the agent's utterances by writing on the screen or conveying through
-the agent's voice and text to speech systems. The last category includes all the
-function to express the agent's emotion. The emotions can be expressed through
-colors, emoticons, voice and text. For example, in the user study described i
-Chapter \ref{ch:awareness}, we expressed the agent's emotions by using
-emoticons and utterances through the text on the screen as well as the agent's
-voice.
+mechanisms to the extent to which they could help us to run and test our
+framework. The Perception mechanism only redirects the input values from the
+system's users to the framework. For instance, in our conducted user study
+described in Chapter \ref{ch:awareness}, the Perception mechanism only receives
+the valence of human's emotion from the input and provides it to the framework.
+On the other hand, the Action mechanism executes some functions based on the
+intentions formed and provided by the Coping mechanism described in this
+section. We group all of these functions into three categories in our framework.
+The first group of functions includes all of the functions capable of executing
+some actions with respect to the domain. The second category includes all of the
+functions involved in revealing the agent's utterances by writing on the screen or
+conveying through the agent's voice and text to speech systems. The last
+category includes all of the functions to express the agent's emotion. The
+emotions can be expressed through colors, emoticons, voice and text. For
+example, in the user study described in Chapter \ref{ch:awareness}, we expressed
+the agent's emotions by using emoticons and utterances through the text on the
+screen as well as the agent's voice.
 
 \section{Emotion Instances}
 We have also implemented 10 different emotion instances that can be elicited by
@@ -1723,8 +1728,8 @@ collaboration context.
 We use the outcome of the four appraisal processes discussed in section
 \ref{sec:appraisal} to determine the potential emotion instance to be elicited
 (if the agent wants to express an emotion), or to anticipate a potential emotion
-from human collaborator (if the human response is anticipated). The outcome of
-appraisal processes can be one of the values presented in Figure
+from the human collaborator (if the human response is anticipated). The outcome
+of appraisal processes can be one of the values presented in Figure
 \ref{fig:appraisal_values} with respect to the corresponding process.
 
 \begin{figure}[tbh]
@@ -1734,7 +1739,7 @@ appraisal processes can be one of the values presented in Figure
   \label{fig:appraisal_values}
 \end{figure}
 
-We also use the collaboration context as our second determinant of selecting a
+We also use the collaboration context as our second determinant to select a
 particular emotion. We define the collaboration context based on: \textit{goal
 achievement}, \textit{goal failure}, \textit{proposal of a goal},
 \textit{acceptance of the proposed goal}, and \textit{rejection of the proposed
@@ -1746,11 +1751,12 @@ context and the values of other appraisal variables.
 
 As an example, if the agent finds an event \textit{uncontrollable},
 \textit{unexpected}, \textit{undesirable} and \textit{relevant} as the result of
-human's proposal of a new goal to the agent (in agent's turn), the elicited
-emotion instance will be \textit{worry} which can be expressed by the agent to
+the human's proposal of a new goal to the agent (in the agent's turn), the
+elicited emotion instance will be \textit{worry} which can be expressed by the agent to
 indicate the agent's concern. Similarly, the agent will anticipate
 \textit{worry} for the human if the same appraisal values are computed while for
-instance the agent rejects human's proposal of the new goal (in human's turn).
+instance the agent rejects the human's proposal of the new goal (in the human's
+turn).
 
 \begin{sidewaysfigure}
   \centering
@@ -1760,7 +1766,7 @@ instance the agent rejects human's proposal of the new goal (in human's turn).
 \end{sidewaysfigure}
 
 \section{Experimental Scenario}
-We developed an experimental scenario to in which participants were asked to
+We developed an experimental scenario in which participants were asked to
 carry out a sequence of hypothetical collaborative tasks between themselves and
 an imaginary friend, Mary, in order to accomplish their shared goal. To minimize
 the background knowledge necessary for our test subjects, we used a simple
@@ -1787,7 +1793,7 @@ expectedness, and controllability.
 \begin{figure*}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/taskModel-croped.pdf}
-  \caption{Collaboration Task Model for the Evaluation.}
+  \caption{Collaboration task model for the evaluation.}
   \label{fig:taskModel}
 \end{figure*}
 
@@ -1801,8 +1807,8 @@ expectedness, and controllability.
  
 We provided textual and graphical instructions for all questionnaires; Figure
 \ref{fig:taskModel} shows the corresponding task model. The instructions,
-provided in Figure XXX, presented a sequence of hypothetical collaborative tasks
-to be carried out by the test subject and an imaginary friend, Mary, in order to
+provided in the Appendix, presented a sequence of hypothetical collaborative
+tasks to be carried out by the test subject and an imaginary friend, Mary, in order to
 accomplish their goal of preparing two sandwiches. We also provided a simple
 definition and an example of each appraisal variable. The collaboration
 structure and the instructions were the same for all questionnaires. The
@@ -1829,7 +1835,7 @@ in each group is provided in Table \ref{tbl:statistics}.
 
 \begin{table}[htbp]
 \centering
-\caption{Number of Participants}
+\caption{Number of participants}
 \begin{tabular}{|c|c|c|c|c|} \hline
 appraisal variables & \# of participants\\ \hline 
 Relevance &  29\\ \hline
@@ -1890,21 +1896,21 @@ similar to the algorithm's output.
   \label{fig:expectedness_result}
 \end{figure}
 
-Results for the expectedness questionnaire are presented in Table XXX (Refer to
-Expectedness summary table). As shown in this table, there is strong evidence
-that the results are not random; in fact, for questions 1-6 and 9-10, human
-participants showed between 67 and 100 \% agreement with our algorithms, with
-p-values of <<0.001 when compared with a random population. Questions 7 and 8
-were the only two questions that did not show a statistically significant
-p-value. It should be noted that these questions are comparing equally expected
-or equally unexpected situations, none of which our algorithms would consider
-most-expected or most-unexpected. 
+Results for the expectedness questionnaire are presented in Figure
+\ref{fig:expectedness_result} (Refer to Expectedness summary table). As shown in
+this table, there is strong evidence that the results are not random; in fact,
+for questions 1-6 and 9-10, human participants showed between 67 and 100 \%
+agreement with our algorithms, with p-values of <<0.001 when compared with a
+random population. Questions 7 and 8 were the only two questions that did not
+show a statistically significant p-value. It should be noted that these
+questions are comparing equally expected or equally unexpected situations, none
+of which our algorithms would consider most-expected or most-unexpected. 
 
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Expectedness Question.}}
+  \caption{{Example expectedness question.}}
   \label{fig:qs1}
 \end{figure}
 
@@ -1928,16 +1934,16 @@ output.
   \label{fig:controllability_result}
 \end{figure}
 
-Results for the controllability questionnaire are presented in Table XXX
-(insert controllability summary table). As shown in the table, the p-value is
-<0.01 for each of the ten questions. The two questions with the lowest human
-agreement with the algorithms both relate to autonomy of the participants with
-52\% and 55\%. 
+Results for the controllability questionnaire are presented in Figure
+\ref{fig:controllability_result} (insert controllability summary table). As
+shown in the table, the p-value is <0.01 for each of the ten questions. The two
+questions with the lowest human agreement with the algorithms both relate to
+autonomy of the participants with 52\% and 55\%. 
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample2-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Controllability Question.}}
+  \caption{{Example controllability question.}}
   \label{fig:qs2}
 \end{figure}
 
@@ -1957,20 +1963,21 @@ output in this question.
   \label{fig:desirability_result}
 \end{figure}
 
-The results of the desirability questionnaire are presented in Table XXX
-(insert desirability summary table). As shown in the results table, the p-value
-is less than 0.05 for all of the desirability questions. However, an interesting
-trend is that human participants had a level of agreement of 83\%-100\% when the
-algorithm's output selected one alternate as more desirable than another
-alternate. When the algorithm's output chose option C (i.e. rating two
-situations as equally desirable), the human participants only showed 46\%-77\%
-agreement. This may indicated that a higher level of granularity is required in
-the algorithm when evaluating options with similar levels of desirability. 
+The results of the desirability questionnaire are presented in
+\ref{fig:desirability_result} (insert desirability summary table). As shown in
+the results table, the p-value is less than 0.05 for all of the desirability
+questions. However, an interesting trend is that human participants had a level
+of agreement of 83\%-100\% when the algorithm's output selected one alternate as
+more desirable than another alternate. When the algorithm's output chose option
+C (i.e. rating two situations as equally desirable), the human participants only
+showed 46\%-77\% agreement. This may indicated that a higher level of
+granularity is required in the algorithm when evaluating options with similar
+levels of desirability.
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample3-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Desirability Question.}}
+  \caption{{Example desirability question.}}
   \label{fig:qs3}
 \end{figure}
 
@@ -2000,13 +2007,13 @@ saliency, which was not referenced or provided in the questionnaire.
 \end{figure}
 
 The complete summary of results for the relevance questionnaire is provided in
-Table XXX (Insert summary table for relevance). As shown in the table, all
-questions show 59\%-100\% agreement with our algorithms and statistically
-significant p-values except for questions 2, 18 and 19. Question 2 addresses
-belief strength. Questions 18 and 19 address motive insistence and goal
-proximity, respectively; both of these questions present situations in which
-participants must choose whether an intense emotional circumstance, or adherence
-to the collaboration plan is more relevant (refer to the questionnaire
+\ref{fig:relevance_result} (Insert summary table for relevance). As shown in the
+table, all questions show 59\%-100\% agreement with our algorithms and
+statistically significant p-values except for questions 2, 18 and 19. Question 2
+addresses belief strength. Questions 18 and 19 address motive insistence and
+goal proximity, respectively; both of these questions present situations in
+which participants must choose whether an intense emotional circumstance, or
+adherence to the collaboration plan is more relevant (refer to the questionnaire
 provided in the Appendix). Our algorithms choose that the strong emotional
 circumstance will be more relevant; however, human participants generally
 selected adherence to the collaboration plan to be more relevant.
@@ -2014,7 +2021,7 @@ selected adherence to the collaboration plan to be more relevant.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample4-croped.pdf}
-  \caption{{\fontsize{9}{9}\selectfont Example Relevance Question.}}
+  \caption{{Example relevance question.}}
   \label{fig:qs4}
 \end{figure}
 
@@ -2032,8 +2039,8 @@ that the algorithms can help us to model appraisal in a collaboration. The very
 low level of agreement on a handful of questions may indicate algorithm
 components that require further refinement before implementation. 
 
-\section{Conclusions}
-\label{sec:conclusions-crowdsourcing}
+% \section{Conclusions}
+% \label{sec:conclusions-crowdsourcing}
 
 \chapter{Improving Human-Robot Collaboration Using Emotional-Awareness}
 \label{ch:awareness}
