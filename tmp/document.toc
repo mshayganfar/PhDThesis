@@ -54,43 +54,38 @@
 \contentsline {section}{\numberline {4.7}Theory of Mind}{43}
 \contentsline {section}{\numberline {4.8}Perception and Action}{43}
 \contentsline {section}{\numberline {4.9}Emotion Instances}{44}
-\contentsline {section}{\numberline {4.10}Experimental Scenario}{45}
-\contentsline {subsection}{\numberline {4.10.1}Hypothesis}{47}
-\contentsline {subsection}{\numberline {4.10.2}Procedure}{47}
-\contentsline {subsection}{\numberline {4.10.3}Participants}{48}
-\contentsline {section}{\numberline {4.11}Results}{48}
-\contentsline {subsection}{\numberline {4.11.1}Expectedness}{49}
-\contentsline {subsection}{\numberline {4.11.2}Controllability}{50}
-\contentsline {subsection}{\numberline {4.11.3}Desirability}{52}
-\contentsline {subsection}{\numberline {4.11.4}Relevance}{53}
-\contentsline {section}{\numberline {4.12}Discussion}{55}
-\contentsline {chapter}{\numberline {5}Improving Human-Robot Collaboration Using Emotional-Awareness}{56}
-\contentsline {section}{\numberline {5.1}Introduction}{56}
-\contentsline {section}{\numberline {5.2}Implementation}{57}
-\contentsline {subsection}{\numberline {5.2.1}Framework}{57}
-\contentsline {subsection}{\numberline {5.2.2}Robot Controller}{58}
-\contentsline {section}{\numberline {5.3}Experimental Scenario}{58}
-\contentsline {subsection}{\numberline {5.3.1}The Robot}{59}
-\contentsline {subsection}{\numberline {5.3.2}Interaction Paradigms}{60}
-\contentsline {subsection}{\numberline {5.3.3}Environment and Tasks}{62}
-\contentsline {section}{\numberline {5.4}Evaluation}{62}
-\contentsline {subsection}{\numberline {5.4.1}Hypothesis}{62}
-\contentsline {subsection}{\numberline {5.4.2}Procedure}{64}
-\contentsline {subsection}{\numberline {5.4.3}Measurements}{65}
-\contentsline {subsection}{\numberline {5.4.4}Participants}{65}
-\contentsline {section}{\numberline {5.5}Results}{65}
-\contentsline {subsection}{\numberline {5.5.1}7-Point Likert Scale Survey Results}{66}
-\contentsline {subsubsection}{Likability of the Robot}{67}
-\contentsline {subsubsection}{Human Trust in the Robot}{68}
-\contentsline {subsubsection}{Perception of the Robot's Performance}{69}
-\contentsline {subsubsection}{Robot's Understanding of Human Emotions}{70}
-\contentsline {subsubsection}{Robot's Understanding of Human and Collaboration Goals}{70}
-\contentsline {subsubsection}{Human's Feeling about the Collaboration}{72}
-\contentsline {subsubsection}{Human Perception of Mutual Satisfaction with Collaborative Partner}{73}
-\contentsline {subsection}{\numberline {5.5.2}Results from the Open-Ended Questionnaire}{74}
-\contentsline {subsection}{\numberline {5.5.3}Impact of Demographics}{76}
-\contentsline {section}{\numberline {5.6}Discussion}{80}
-\contentsline {chapter}{\numberline {6}Conclusion}{82}
-\contentsline {section}{\numberline {6.1}Discussion}{82}
-\contentsline {section}{\numberline {6.2}Future Work}{82}
-\contentsline {chapter}{Appendix A}{86}
+\contentsline {chapter}{\numberline {5}Evaluation}{47}
+\contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{47}
+\contentsline {subsection}{\numberline {5.1.1}Experimental Scenario}{47}
+\contentsline {subsection}{\numberline {5.1.2}Hypothesis and Methodology}{48}
+\contentsline {subsubsection}{Hypothesis}{48}
+\contentsline {subsubsection}{Procedure}{48}
+\contentsline {subsubsection}{Participants}{49}
+\contentsline {subsection}{\numberline {5.1.3}Results}{50}
+\contentsline {subsubsection}{Expectedness}{50}
+\contentsline {subsubsection}{Controllability}{52}
+\contentsline {subsubsection}{Desirability}{52}
+\contentsline {subsubsection}{Relevance}{54}
+\contentsline {subsection}{\numberline {5.1.4}Discussion}{56}
+\contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{56}
+\contentsline {subsection}{\numberline {5.2.1}Implementation}{57}
+\contentsline {subsubsection}{Framework}{57}
+\contentsline {subsubsection}{Robot Controller}{58}
+\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{59}
+\contentsline {subsubsection}{The Robot}{60}
+\contentsline {subsubsection}{Interaction Paradigms}{60}
+\contentsline {subsubsection}{Environment and Tasks}{62}
+\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{63}
+\contentsline {subsubsection}{Hypothesis}{63}
+\contentsline {subsubsection}{Procedure}{63}
+\contentsline {subsubsection}{Measurements}{65}
+\contentsline {subsubsection}{Participants}{65}
+\contentsline {subsection}{\numberline {5.2.4}Results}{66}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{66}
+\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{74}
+\contentsline {subsubsection}{Impact of Demographics}{77}
+\contentsline {subsection}{\numberline {5.2.5}Discussion}{81}
+\contentsline {chapter}{\numberline {6}Conclusion}{83}
+\contentsline {section}{\numberline {6.1}Discussion}{83}
+\contentsline {section}{\numberline {6.2}Future Work}{83}
+\contentsline {chapter}{Appendix A}{87}

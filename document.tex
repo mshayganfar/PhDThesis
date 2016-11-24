@@ -441,11 +441,9 @@ the specific context and structure of collaboration.
 Furthermore, we believe collaboration and appraisal have reciprocal influences
 on each other. In this chapter, we also talk about the influence of appraisal on
 collaboration through the goal management process. Also, we discuss our coping
-mechanism and strategies within the collaboration context. Then, we provide our
-computational model of three different motives used in our framework. We also
-briefly discuss other mechanisms in our framework. Finally, we present a
-crowd-sourcing user-study and the results, which we conducted to validate the
-components of our appraisal processes. 
+mechanism and strategies within the collaboration context. Then, we provide
+our computational model of three different motives used in our framework.
+Finally, we briefly discuss other mechanisms in our framework.
 
 \vspace*{-5mm}
 \section{Collaboration Mechanism}
@@ -1765,7 +1763,31 @@ turn).
   \label{fig:emotion_elicitation}
 \end{sidewaysfigure}
 
-\section{Experimental Scenario}
+\chapter{Evaluation}
+\label{ch:awareness}
+
+In this chapter, we provide the explanation and results of two different user
+studies. The first user study (see Section \ref{sec:crowd-sourcing}) was
+conducted online to evaluate our appraisal algorithms. The goal of this
+study was to validate the effectiveness of the factors involved in our appraisal
+algorithms. We prepared online questionnaires and asked participants to tell us
+what their decision would be in the simple situations provided. The
+participants' answers to our questionnaires were compared with the results of
+our algorithms for the given situations. The results are provided in Section
+\ref{sec:crowd-sourcing}. The second user study (see Section
+\ref{sec:end-to-end}) was conducted in the Human-Robot Interaciton lab. The goal
+of this user study was to provide an end-to-end system evaluation using our
+overall framework. We provided several pre- and post-study questionnaires as
+well as an open-ended questionnaire to study the humans' evaluation of a robot
+collaborating using our framework. The results are provided in Section
+\ref{sec:end-to-end}.
+
+\section{Evaluating Appraisal Algorithms (Crowd Sourcing)}
+\label{sec:crowd-sourcing}
+In this section, we present a crowd-sourcing user-study and the results, which
+we conducted to validate the components of our appraisal processes.
+
+\subsection{Experimental Scenario}
 We developed an experimental scenario in which participants were asked to
 carry out a sequence of hypothetical collaborative tasks between themselves and
 an imaginary friend, Mary, in order to accomplish their shared goal. To minimize
@@ -1784,7 +1806,9 @@ activities that should be familiar to all participants.
 % 
 % \section{Evaluation}
 
-\subsection{Hypothesis}
+\subsection{Hypothesis and Methodology}
+
+\subsubsection{Hypothesis}
 We conducted this user study to test our hypothesis that humans and our
 algorithms will provide similar answers to questions related to different
 factors used to compute four appraisal variables: relevance, desirability,
@@ -1797,7 +1821,7 @@ expectedness, and controllability.
   \label{fig:taskModel}
 \end{figure*}
 
-\subsection{Procedure}
+\subsubsection{Procedure}
  We conducted a between-subject user study using an online crowdsourcing website
  -- CrowdFlower\footnote{http://www.crowdflower.com}. We had a questionnaire for
  each appraisal variable. There were 12 questions (including 2 test questions)
@@ -1824,7 +1848,7 @@ an example question from the relevance questionnaire which was designed to test
 whether participants perceive saliency as a factor in relevance. The input for
 our algorithms was the task model depicted in Figure \ref{fig:taskModel}.
 
-\subsection{Participants}
+\subsubsection{Participants}
 Each participant group originally had 40 participants. We limited the
 participant pools to those with the highest confidence level on the
 crowdsourcing website in the United States, Britain, and Australia. Test
@@ -1862,7 +1886,7 @@ Controllability & 33\\ \hline
 % \end{table}
 % 
 
-\section{Results}
+\subsection{Results}
 \label{sec:results-crowdsourcing}
 Each question in our questionnaires was designed based on different factors that
 we use in our algorithms (see Section \ref{sec:appraisal}).  For each of the
@@ -1874,7 +1898,7 @@ Additionally, we provide the p-value for each question, using a binomial
 distribution, with a probability of success of 0.33, which is the probability of
 selecting the right answer if the participant is simply guessing.
 
-\subsection{Expectedness}
+\subsubsection{Expectedness}
 \label{sec:expectedness-crowdsourcing}
 Figure \ref{fig:qs1} shows an example question from the expectedness
 questionnaire. In this example, with respect to Algorithm
@@ -1914,7 +1938,7 @@ of which our algorithms would consider most-expected or most-unexpected.
   \label{fig:qs1}
 \end{figure}
 
-\subsection{Controllability}
+\subsubsection{Controllability}
 \label{sec:controllability-crowdsourcing}
 Figure \ref{fig:qs2} shows an example question from the controllability
 questionnaire. The algorithm's output is option B, and is determined by
@@ -1947,7 +1971,7 @@ autonomy of the participants with 52\% and 55\%.
   \label{fig:qs2}
 \end{figure}
 
-\subsection{Desirability}
+\subsubsection{Desirability}
 \label{sec:desirability-crowdsourcing}
 Figure \ref{fig:qs3} shows an example question from the desirability
 questionnaire. The output based on the Algorithm \ref{alg:desirability}
@@ -1981,7 +2005,7 @@ levels of desirability.
   \label{fig:qs3}
 \end{figure}
 
-\subsection{Relevance}
+\subsubsection{Relevance}
 \label{sec:relevance-crowdsourcing}
 In the example shown in Figure \ref{fig:qs4}, with respect to Algorithm
 \ref{alg:relevance}, option A is relevant because of Mary's perceived negative
@@ -2025,7 +2049,7 @@ selected adherence to the collaboration plan to be more relevant.
   \label{fig:qs4}
 \end{figure}
 
-\section{Discussion}
+\subsection{Discussion}
 \label{sec:discussion-crowdsourcing}
 As shown in the results tables in sections \ref{sec:expectedness-crowdsourcing}
 through \ref{sec:relevance-crowdsourcing}, the human participants agreed 100\%
@@ -2042,10 +2066,10 @@ components that require further refinement before implementation.
 % \section{Conclusions}
 % \label{sec:conclusions-crowdsourcing}
 
-\chapter{Improving Human-Robot Collaboration Using Emotional-Awareness}
-\label{ch:awareness}
 
-\section{Introduction}
+% \section{Improving Human-Robot Collaboration Using Emotional-Awareness}
+\section{End-to-End System Evaluation}
+\label{sec:end-to-end}
 
 As mentioned earlier, collaborative robots need to take into account humans'
 internal states while making decisions during collaboration. Humans express
@@ -2069,7 +2093,7 @@ with an emotion-aware and an emotion-ignorant robot.
 % 
 % \subsection{Task Delegation}
 % 
-\section{Implementation}
+\subsection{Implementation}
 The implementation of this user-study included three separate parts. The first
 part incorporated the Affective Motivational Collaboration Framework consisting
 of all Mental Processes (see left-side of Figure \ref{fig:framework}) as we
@@ -2085,13 +2109,12 @@ than providing input regarding tasks' failure or success.
 \begin{figure*}[tbh]
   \centering
   \includegraphics[width=\textwidth]{figure/framework-croped.pdf}
-  \caption{\fontsize{10}{10}\selectfont Computational framework based on
-  Affective Motivational Collaboration theory (arrows indicate primary
-  influences between mechanisms and data flow).}
+  \caption{Computational framework based on Affective Motivational Collaboration
+  theory (arrows indicate primary influences between mechanisms and data flow).}
   \label{fig:framework}
 \end{figure*}
 
-\subsection{Framework}
+\subsubsection{Framework}
 \label{sec:theory}
 The framework includes all of the mechanisms depicted as mental processes in
 Figure \ref{fig:framework} along with the mental states. The mental
@@ -2105,12 +2128,11 @@ structure depicted in Figure \ref{fig:collaboration_structure}.
 \begin{figure*}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/collaborationStructure.pdf}
-  \caption{{\fontsize{10}{10}\selectfont Collaboration structure used as the
-  task model.}}
+  \caption{Collaboration structure used as the task model.}
   \label{fig:collaboration_structure}
 \end{figure*}
 
-\subsection{Robot Controller}
+\subsubsection{Robot Controller}
 The robot controller is comprised of two major components: 1) ROS-bridge and 2)
 joint controller (see Figure \ref{fig:framework}).
 ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
@@ -2119,7 +2141,7 @@ our framework (implemented in JAVA) to the robot's joint controller. The joint
 controller receives action commands and translates them into actual joint and
 actuator commands and sends them to the robot.
 
-\section{Experimental Scenario}
+\subsection{Experimental Scenario}
 
 Our scenario was based on a table top turn-taking game that we designed to
 simulate the installation of a solar panel. Participants collaborated one-on-one
@@ -2136,12 +2158,12 @@ impasse during the collaboration.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
-  \caption{\fontsize{10}{10}\selectfont The layout of the available spots for
-  the human and the robot to place their pegs during the collaboration.}
+  \caption{The layout of the available spots for the human and the robot to
+  place their pegs during the collaboration.}
   \label{fig:game_board}
 \end{figure}
 
-\subsection{The Robot}
+\subsubsection{The Robot}
 
 We conducted our experiment based on a KUKA Youbot (see Figure
 \ref{fig:environment}). The robot was stationary on top of a desk and was able
@@ -2169,12 +2191,11 @@ utterances in English.
   \includegraphics[width=.95\linewidth]{figure/human-turn-gui.png}
   \label{fig:gui-human}
 \end{subfigure}
-\caption{\fontsize{10}{10}\selectfont The Graphical User Interface (GUI) used
-during interaction.}
+\caption{The Graphical User Interface (GUI) used during interaction.}
 \label{fig:gui}
 \end{figure}
 
-\subsection{Interaction Paradigms}
+\subsubsection{Interaction Paradigms}
 \label{sec-interaction-paradigms}
 At the beginning of each collaboration the robot asked each participant to
 achieve the overall shared goal, i.e., ``installing the solar panel''. Then,
@@ -2228,7 +2249,7 @@ had the correct peg). In the event that the human expressed positive or neutral
 emotion during these three failures, the robot behaved identically in the
 emotion-ignorant and the emotion-aware cases, by asking the supervisor for help. 
 
-\subsection{Environment and Tasks}
+\subsubsection{Environment and Tasks}
 
 The environment was set up in the Human-Robot Interaction lab and included the
 robot, the collaboration board on top of a desk, and the participant standing in
@@ -2248,8 +2269,9 @@ as the associated peg. Some pegs and corresponding spots on the board had hidden
 magnets which prevented the pegs from standing upright. Any peg that fell over
 was considered a failed task.
 
-\section{Evaluation}
-\subsection{Hypothesis}
+\subsection{Hypotheses and Methodology}
+
+\subsubsection{Hypothesis}
 
 The non/social functions of emotions impact a collaboration process. Human
 collaborators prefer to collaborate with others whose behaviors are influenced
@@ -2282,11 +2304,11 @@ satisfaction with the emotion-aware robot than emotion-ignorant robot.
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{figure/environment.png}
-  \caption{\fontsize{10}{10}\selectfont Experimental setup.}
+  \caption{Experimental setup.}
   \label{fig:environment}
 \end{figure}
 
-\subsection{Procedure}
+\subsubsection{Procedure}
 \label{sec:procedure}
 Participants were first given a brief description of the purpose of the
 experiment. After the short introduction, they were asked to review and sign a
@@ -2316,7 +2338,7 @@ to answer an open-ended questionnaire which measured their perception of
 difference between two runs, their preference of collaborative robot between two
 runs, and their reasons of preference.
 
-\subsection{Measurements}
+\subsubsection{Measurements}
 \label{sec:Measurements}
 In our study two basic conditions of the robot were tested: a) the
 emotion-ignorant condition, b) the emotion-aware condition. We measured
@@ -2329,7 +2351,7 @@ agreement, and also participants' beliefs about the efficiency of collaboration
 and their feeling of robot's collaborative behaviors. Seven-point Likert scales
 were used in these questionnaire items.
 
-\subsection{Participants}
+\subsubsection{Participants}
 \label{sec:Participants}
 A total of 37 participants participated in the experiment in 74 trials.
 Participants were recruited from Worcester Polytechnic Institute's students and
@@ -2344,22 +2366,14 @@ emotion. The order of these two trials were randomly assigned to each
 participant. In general we used emotion-ignorant robot first in 16 experiments,
 and emotion-aware robot first in 17 experiments.
 
-\section{Results}
+\subsection{Results}
 
 As discussed in Section \ref{sec:Measurements}, results of the user study were
 gathered through a 31-question Likert-scale survey that was given to each
 participant after each run with the robot, and through a 5-question open-ended
 summary questionnaire at the end of the experiment.
 
-\begin{figure*}[h]
-\centering
-\includegraphics[width=0.81\textwidth]{figure/table1-croped.pdf}
-\caption{\fontsize{10pt}{10pt}\selectfont The 31 Likert scale questions
-organized according to their groups.}
-\label{fig:31questions-table}
-\end{figure*}
-
-\subsection{7-Point Likert Scale Survey Results}
+\subsubsection{7-Point Likert Scale Survey Results}
 As mentioned previously, the 7-point Likert scale survey was administered at
 the end of the emotion-ignorant run and at the end of the emotion-aware run for
 each participant. The 31 questions are generally categorized to evaluate the
@@ -2373,6 +2387,14 @@ the human's perception of the human's and robot's mutual satisfaction with each
 other as collaborative partners. The questions presented are provided in Figure
 \ref{fig:31questions-table}.
 
+\begin{figure*}
+ \centering
+ \includegraphics[width=1\textwidth]{figure/table1-croped.pdf}
+ \caption{The 31 Likert scale questions organized according to their groups.}
+ \label{fig:31questions-table}
+\end{figure*}
+\clearpage
+
 The results were analyzed using a two-tailed paired t-test to analyze the
 difference of means between the emotion ignorant and the emotion-aware
 condition. Refer to Figures \ref{fig:overall-performance} -
@@ -2380,33 +2402,30 @@ condition. Refer to Figures \ref{fig:overall-performance} -
 \ref{sec:Participants}, participants were randomly assigned to complete either
 the emotion-ignorant or the emotion-aware run first; analysis of the results
 revealed no statistically significant difference or consistent pattern based on
-which run the participant completed first.
+which run the participant completed first. \\
 
-\vspace*{-5mm}
-\begin{figure*}
+\begin{figure*}[ht]
  \centering
  \includegraphics[width=0.8\textwidth]{figure/Overall-Likability.png}
  \vspace*{-5mm}
- \caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
- Likability questions. The p-value for the difference between means is
- $\ll$0.001 for all questions.}
+ \caption{Results of the Likert scale survey for Likability questions. The
+ p-value for the difference between means is $\ll$0.001 for all questions.}
  \label{fig:overall-likability}
- \vspace*{-5mm}
 \end{figure*}
 
-\subsubsection{Likability of the Robot}
+\hspace*{-8mm} \textbf{Likability of the Robot}
 \label{sec:Likability}
-Questions 1 through 4 addressed the likability of the robot. As shown in Figure
-\ref{fig:overall-likability}, participants rated the emotion-aware robot
+\\Questions 1 through 4 addressed the likability of the robot. As shown in
+Figure \ref{fig:overall-likability}, participants rated the emotion-aware robot
 1.5-2.1 points higher than the emotion-ignorant robot. These results
 indicate that participants felt closer with and preferred working with the
 emotion-aware robot; these results support Hypothesis 1, which stated that
 humans would prefer to work with the emotion-aware robot over the
-emotion-ignorant robot.
+emotion-ignorant robot. \\
 
-\subsubsection{Human Trust in the Robot}
+\hspace*{-8mm} \textbf{Human Trust in the Robot}
 \label{sec:Trust}
-Questions 5-9 were designed to measure the degree of trust that the human
+\\ Questions 5-9 were designed to measure the degree of trust that the human
 participants felt in the robot. As shown in Figure \ref{fig:overall-trust},
 participants trusted the emotion-aware robot, on average, a minimum of 1.4
 points more than the emotion-ignorant robot, both in general and in terms of
@@ -2418,33 +2437,29 @@ emotion-aware robot to perform appropriately during collaboration an average of
 indicates an acceptable level of trust in the robot's collaborative
 abilities. These results support Hypothesis 2, that posits that human
 participants would find the emotion-aware robot to be more trustworthy than the
-emotion-ignorant robot.
+emotion-ignorant robot.\\
 
-\vspace*{-5mm}
-\begin{figure*}[tbh]
+\begin{figure*}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Trust.png}
-\vspace*{-5mm}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
-questions related to trust. The p-value for the difference between means is
-$\ll$0.001 for all questions.}
+\caption{Results of the Likert scale survey for questions related to trust. The
+p-value for the difference between means is $\ll$0.001 for all questions.}
 \label{fig:overall-trust}
-\vspace*{-5mm}
 \end{figure*}
 
-\begin{figure*}[tbh]
+\begin{figure*}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Performance.png}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
-questions related to the robot's performance. The p-value for the difference
-between the means for questions 10, 11 and 12 are 0.001, 0.063 and $\ll$0.001,
-respectively.}
+\vspace*{-5mm}
+\caption{Results of the Likert scale survey for questions related to the robot's
+performance. The p-value for the difference between the means for questions 10,
+11 and 12 are 0.001, 0.063 and $\ll$0.001, respectively.}
 \label{fig:overall-performance}
 \end{figure*}
 
-\subsubsection{Perception of the Robot's Performance} 
+\hspace*{-8mm} \textbf{Perception of the Robot's Performance} 
 \label{sec:Performance}
-Question 10 (which is reverse-scored) measures the participant's perception of
+\\Question 10 (which is reverse-scored) measures the participant's perception of
 repetitiveness in the robot during the collaboration. In both conditions,
 participants rated the robot as moderately repetitive, with the emotion-ignorant
 robot's average response being about 1.1 points higher than the emotion-aware.
@@ -2465,35 +2480,33 @@ only received an average rating of 3.3, indicating that participants felt it was
 not able to interact in such a way as to increase the human's performance; refer
 to results from Question 6. These results support Hypothesis 3, which posited
 that humans will perceive the emotion-aware robot as being more capable than the
-emotion-ignorant robot.
+emotion-ignorant robot. \\
 
-\subsubsection{Robot's Understanding of Human Emotions} 
+\hspace*{-8mm} \textbf{Robot's Understanding of Human Emotions} 
 \label{sec:Emotions}
-In Questions 13 through 17, participants evaluate the robot's understanding of
+\\In Questions 13 through 17, participants evaluate the robot's understanding of
 humans' emotions. In questions 13, 15, and 16, participants rated the
 emotion-aware robot, on average, a minimum of 1.8 points higher than the
 emotion-ignorant robot. In response to questions 14 and 17, which are
 reverse-scored, participants ranked the emotion-ignorant robot 1.2 and 2.0
 points higher, respectively, than then emotion-aware robot. The results
-of all five questions in this category support Hypothesis 4.
+of all five questions in this category support Hypothesis 4. \\
 
-\vspace*{-5mm}
 \begin{figure*}[tbh]
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Emotions.png}
 \vspace*{-5mm}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for the
-questions related to the robot's understanding of human emotions. The p-value
-for the difference between the means is $\ll$0.001 for all of the questions
-except Question 14, for which the p-value is 0.003.}
+\caption{Results of the Likert scale survey for the questions related to the
+robot's understanding of human emotions. The p-value for the difference between
+the means is $\ll$0.001 for all of the questions except Question 14, for which
+the p-value is 0.003.}
 \label{fig:overall-emotions}
-\vspace*{-5mm}
 \end{figure*}
 
-\subsubsection{Robot's Understanding of Human and Collaboration Goals}
+\hspace*{-8mm} \textbf{Robot's Understanding of Human and Collaboration Goals}
 \label{sec:Goals}
-Questions 18 and 19 were reverse-scored questions intended to determine whether
-the humans felt that the robot understood the shared collaboration goal and the
+\\Questions 18 and 19 were reverse-scored questions intended to determine
+whether the humans felt that the robot understood the shared collaboration goal and the
 human's personal goal, respectively. For both conditions of the robot, the
 average scores were lower than 3.5, indicating that the human's perceived the
 robot as having some understanding of the goals. For both questions, the
@@ -2509,32 +2522,30 @@ participants felt that the emotion-aware robot was strongly committed to the
 collaboration. The emotion-ignorant robot received an average rating of 4.4
 points, indicating only moderate commitment. These results strongly support
 Hypothesis 5, which posits that humans will feel that the emotion-aware robot
-will better understand their goals than the emotion-ignorant robot.
+will better understand their goals than the emotion-ignorant robot.\\
 
 \begin{figure*}
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Goals.png}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
-questions related to the robot's understanding of goals. The p-value for the
-difference between the means for all questions is $\ll$0.001, except Question
-19, for which the p-value is 0.006.}
+\caption{Results of the Likert scale survey for questions related to the robot's
+understanding of goals. The p-value for the difference between the means for all
+questions is $\ll$0.001, except Question 19, for which the p-value is 0.006.}
 \label{fig:overall-goals}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Collaboration.png}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
-questions related to the human's feeling about the collaboration. The p-value
-for the difference between the means is $\ll$0.001 for questions 22, 25, 26, and
-28. The p-value for Questions 23, 24 and 27 are 0.02, 0.008 and 0.001,
-respectively.}
+\caption{Results of the Likert scale survey for questions related to the human's
+feeling about the collaboration. The p-value for the difference between the
+means is $\ll$0.001 for questions 22, 25, 26, and 28. The p-value for Questions
+23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.}
 \label{fig:overall-collaboration}
 \end{figure*}
 
-\subsubsection{Human's Feeling about the Collaboration}
+\hspace*{-8mm} \textbf{Human's Feeling about the Collaboration}
 \label{sec:Collaboration}
-Questions 22 through 28 were designed to gauge how the human participants
+\\Questions 22 through 28 were designed to gauge how the human participants
 felt about the partnership within the collaboration and the outcome of the
 collaboration. For each of the 7 questions, the participants ranked the
 emotion-aware robot as better than the emotion-ignorant robot, by a minimum,
@@ -2553,12 +2564,12 @@ event of failure in both conditions; however, the higher score in the
 emotion-aware case may indicate that emotional awareness can increase a feeling
 of collaboration. These results support Hypothesis 6 that humans will feel
 a greater sense of mutual collaboration and understanding about the
-collaboration with the emotion-aware robot.
+collaboration with the emotion-aware robot.\\
 
-\subsubsection{Human Perception of Mutual Satisfaction with Collaborative
-Partner}
+\hspace*{-8mm} \textbf{Human Perception of Mutual Satisfaction with
+Collaborative Partner}
 \label{sec:MutualSatisfaction}
-Questions 29, 30 and 31 were designed to measure the human's perception
+\\ Questions 29, 30 and 31 were designed to measure the human's perception
 of the robot's satisfaction with the human, the human's satisfaction with the
 robot and the mutual understanding between the human and the robot,
 respectively. The participants provided an average response in the emotion-aware
@@ -2573,13 +2584,13 @@ robot than the emotion-ignorant robot.
 \begin{figure*}
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Satisfaction.png}
-\caption{\fontsize{10}{10}\selectfont Results of the Likert scale survey for
-questions related to satisfaction with collaborative partner. The p-value for
-the difference between means is $\ll$0.001 for all questions.}
+\caption{Results of the Likert scale survey for questions related to
+satisfaction with collaborative partner. The p-value for the difference between
+means is $\ll$0.001 for all questions.}
 \label{fig:overall-satisfaction}
 \end{figure*}
 
-\subsection{Results from the Open-Ended Questionnaire} 
+\subsubsection{Results from the Open-Ended Questionnaire} 
 \label{sec:Open-Ended}
 As described in Section \ref{sec:procedure}, each participant answered an open-ended
 questionnaire at the end of the study. Figure \ref{fig:Open-Ended-Table}
@@ -2594,14 +2605,12 @@ of 33.
 \begin{figure*}[tbh]
 \centering
 \includegraphics[width=1\textwidth]{figure/table2-croped.pdf}
-\caption{\fontsize{10pt}{10pt}\selectfont Open-ended questionnaire questions and
-results. (*Note: Because we are evaluating whether humans prefer an
-emotion-aware robot, these results are taken as negative test results when
-calculating the p-value using the binomial distribution. Only those participants
-who clearly indicated a preference for the emotion-aware robot are taken as
-positive test results.)}
+\caption{Open-ended questionnaire questions and results. (*Note: Because we are
+evaluating whether humans prefer an emotion-aware robot, these results are taken
+as negative test results when calculating the p-value using the binomial
+distribution. Only those participants who clearly indicated a preference for the
+emotion-aware robot are taken as positive test results.)}
 \label{fig:Open-Ended-Table}
-\vspace*{-5mm}
 \end{figure*}
 
 As shown in Figure \ref{fig:Open-Ended-Table}, 100\% of users unambiguously
@@ -2665,7 +2674,7 @@ the ability to ask questions. Of those who responded with the emotion-ignorant
 case, most found the ability to call the supervisor, and mechanical functions,
 such as gripping, to be most interesting.
 
-\subsection{Impact of Demographics} 
+\subsubsection{Impact of Demographics} 
 As mentioned in Section \ref{sec:Participants}, we recorded certain demographic
 information from each participant, including age and gender. We also had each
 participant complete several personality questionnaires. Although it was not the
@@ -2673,15 +2682,6 @@ primary purpose of the study, we investigated the Likert scale results to
 determine if there were any relevant trends based on the demographics and
 personalities of the participants. A close study of the results did  not reveal
 any identifiable pattern based on gender or personality.
-
-\begin{figure*}[tbh]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
-\vspace*{-5mm}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to likability.}
-\label{fig:age-likability}
-\end{figure*}
 
 Age did reveal an interesting pattern. We divided the participants into two
 groups, below 30 years of age and 30 or above. While question-by-question
@@ -2695,19 +2695,28 @@ pattern in which the score drop between the emotion-aware and the
 emotion-ignorant case was more for the younger group than for the older group;
 the seven questions that broke this pattern were 7, 9, 11, 12, 18, 19 and 22.
 
+\begin{figure*}[tbh]
+\centering
+\includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
+\caption{Impact of age on results of Likert scale questions related to
+likability.}
+\label{fig:age-likability}
+\vspace*{15mm}
+\end{figure*}
+
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Trust.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to trust.}
+\caption{Impact of age on results of Likert scale questions related to trust.}
 \label{fig:age-trust}
+\vspace*{15mm}
 \end{figure*}
 
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Performance.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to performance.}
+\caption{Impact of age on results of Likert scale questions related to
+performance.}
 \label{fig:age-performance}
 \vspace*{15mm}
 \end{figure*}
@@ -2715,8 +2724,8 @@ scale questions related to performance.}
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Emotions.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to robot's understanding of human's emotions.}
+\caption{Impact of age on results of Likert scale questions related to robot's
+understanding of human's emotions.}
 \label{fig:age-emotions}
 \vspace*{15mm}
 \end{figure*}
@@ -2724,8 +2733,8 @@ scale questions related to robot's understanding of human's emotions.}
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Goals.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to robot's understanding of goals.}
+\caption{Impact of age on results of Likert scale questions related to robot's
+understanding of goals.}
 \label{fig:age-goals}
 \vspace*{10mm}
 \end{figure*}
@@ -2733,8 +2742,8 @@ scale questions related to robot's understanding of goals.}
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Collaboration.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to human's feeling about collaboration.}
+\caption{Impact of age on results of Likert scale questions related to human's
+feeling about collaboration.}
 \label{fig:age-collaboration}
 \vspace*{15mm}
 \end{figure*}
@@ -2742,12 +2751,12 @@ scale questions related to human's feeling about collaboration.}
 \begin{figure*}[!h]
 \centering
 \includegraphics[width=0.9\textwidth]{figure/Age-Satisfaction.png}
-\caption{\fontsize{10pt}{10pt}\selectfont Impact of age on results of Likert
-scale questions related to satisfaction with collaborative partner.}
+\caption{Impact of age on results of Likert scale questions related to
+satisfaction with collaborative partner.}
 \label{fig:age-satisfaction}
 \end{figure*}
 
-\section{Discussion}
+\subsection{Discussion}
 Based on the results, all participants prefer to work with the emotion-aware
 robot. Humans find the emotion-aware robot more likable and more trustworthy, as
 indicated in the Likert-scale responses and the open-ended questionnaire
