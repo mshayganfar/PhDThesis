@@ -4,47 +4,50 @@ The top-level auxiliary file: document.aux
 The style file: abbrv.bst
 Database file #1: mshayganfar.bib
 Warning--can't use both author and editor fields in breazeal:sociable-interactive-robots
+Warning--can't use both volume and number fields in hudlicka:emotinos-reasons
+Too many commas in name 1 of "Rafael A. Calvo, Sidney D'Mello, Jonathan Gratch, Arvid Kappas" for entry paiva:emotion-modeling
+while executing---line 1090 of file abbrv.bst
 Warning--empty title in shayganfar:appraisal-short
 Warning--empty booktitle in shayganfar:appraisal-short
-You've used 91 entries,
+You've used 184 entries,
             2118 wiz_defined-function locations,
-            988 strings with 19912 characters,
-and the built_in function-call counts, 34386 in all, are:
-= -- 3385
-> -- 1516
-< -- 41
-+ -- 615
-- -- 502
-* -- 2266
-:= -- 5422
-add.period$ -- 295
-call.type$ -- 91
-change.case$ -- 500
+            1453 strings with 35554 characters,
+and the built_in function-call counts, 65544 in all, are:
+= -- 6471
+> -- 2803
+< -- 63
++ -- 1141
+- -- 913
+* -- 4306
+:= -- 10494
+add.period$ -- 593
+call.type$ -- 184
+change.case$ -- 962
 chr.to.int$ -- 0
-cite$ -- 94
-duplicate$ -- 1469
-empty$ -- 2836
-format.name$ -- 502
-if$ -- 7508
+cite$ -- 188
+duplicate$ -- 2766
+empty$ -- 5494
+format.name$ -- 913
+if$ -- 14182
 int.to.chr$ -- 0
-int.to.str$ -- 91
-missing$ -- 102
-newline$ -- 457
-num.names$ -- 194
-pop$ -- 637
+int.to.str$ -- 184
+missing$ -- 203
+newline$ -- 921
+num.names$ -- 396
+pop$ -- 1185
 preamble$ -- 1
-purify$ -- 425
+purify$ -- 809
 quote$ -- 0
-skip$ -- 1053
+skip$ -- 1918
 stack$ -- 0
-substring$ -- 2124
-swap$ -- 438
-text.length$ -- 41
+substring$ -- 4115
+swap$ -- 716
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 338
-warning$ -- 3
-while$ -- 334
-width$ -- 93
-write$ -- 1013
-(There were 3 warnings)
+type$ -- 686
+warning$ -- 4
+while$ -- 652
+width$ -- 187
+write$ -- 2031
+(There was 1 error message)
