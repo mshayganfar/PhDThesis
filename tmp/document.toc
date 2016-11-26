@@ -6,86 +6,97 @@
 \contentsline {section}{\numberline {1.2}Thesis Statement and Scope}{3}
 \contentsline {section}{\numberline {1.3}Contributions}{4}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{7}
-\contentsline {section}{\numberline {2.1}Computational Collaboration Theories}{8}
-\contentsline {subsection}{\numberline {2.1.1}Shared-Plans Theory}{8}
-\contentsline {subsection}{\numberline {2.1.2}Joint-Intentions Theory}{8}
-\contentsline {subsection}{\numberline {2.1.3}Hybrid Theories}{8}
-\contentsline {subsection}{\numberline {2.1.4}Similarities and Differences}{8}
-\contentsline {subsection}{\numberline {2.1.5}Applications of Collaboration Theories}{8}
-\contentsline {section}{\numberline {2.2}Affective Computing}{8}
-\contentsline {subsection}{\numberline {2.2.1}Affect and Emotions}{8}
-\contentsline {subsection}{\numberline {2.2.2}Functions of Emotions}{8}
-\contentsline {subsection}{\numberline {2.2.3}Motivation and Theory of Mind}{8}
-\contentsline {section}{\numberline {2.3}Computational Models of Emotions}{8}
-\contentsline {subsection}{\numberline {2.3.1}Appraisal Theory}{8}
-\contentsline {subsection}{\numberline {2.3.2}Other Computational Models}{8}
-\contentsline {subsection}{\numberline {2.3.3}Similarities and Differences}{8}
-\contentsline {subsection}{\numberline {2.3.4}Applications in Autonomous Agents and Robots}{8}
-\contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{9}
-\contentsline {section}{\numberline {3.1}Introduction}{9}
-\contentsline {subsection}{\numberline {3.1.1}Scenario}{11}
-\contentsline {subsection}{\numberline {3.1.2}Example of a Collaborative Interaction}{11}
-\contentsline {section}{\numberline {3.2}Design and Architecture}{11}
-\contentsline {subsection}{\numberline {3.2.1}Mechanisms}{11}
-\contentsline {subsection}{\numberline {3.2.2}Functions of Emotions}{11}
-\contentsline {subsection}{\numberline {3.2.3}Mental States}{11}
-\contentsline {subsection}{\numberline {3.2.4}Attributes of Mental States}{11}
-\contentsline {chapter}{\numberline {4}Computational Framework}{12}
-\contentsline {section}{\numberline {4.1}Introduction}{12}
-\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{13}
-\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{15}
-\contentsline {subsection}{\numberline {4.3.1}Relevance}{16}
-\contentsline {subsection}{\numberline {4.3.2}Desirability}{20}
-\contentsline {subsection}{\numberline {4.3.3}Expectedness}{22}
-\contentsline {subsection}{\numberline {4.3.4}Controllability}{23}
-\contentsline {section}{\numberline {4.4}Goal Management}{26}
-\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{32}
-\contentsline {subsection}{\numberline {4.5.1}Planning}{32}
-\contentsline {subsection}{\numberline {4.5.2}Active Coping}{33}
-\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{34}
-\contentsline {subsection}{\numberline {4.5.4}Acceptance}{34}
-\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{34}
-\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{35}
-\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{35}
-\contentsline {section}{\numberline {4.6}Motivation Mechanism}{36}
-\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{38}
-\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{40}
-\contentsline {subsection}{\numberline {4.6.3}External Motive}{41}
-\contentsline {section}{\numberline {4.7}Theory of Mind}{43}
-\contentsline {section}{\numberline {4.8}Perception and Action}{43}
-\contentsline {section}{\numberline {4.9}Emotion Instances}{44}
-\contentsline {chapter}{\numberline {5}Evaluation}{47}
-\contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{47}
-\contentsline {subsection}{\numberline {5.1.1}Experimental Scenario}{47}
-\contentsline {subsection}{\numberline {5.1.2}Hypothesis and Methodology}{48}
-\contentsline {subsubsection}{Hypothesis}{48}
-\contentsline {subsubsection}{Procedure}{48}
-\contentsline {subsubsection}{Participants}{49}
-\contentsline {subsection}{\numberline {5.1.3}Results}{50}
-\contentsline {subsubsection}{Expectedness}{50}
-\contentsline {subsubsection}{Controllability}{52}
-\contentsline {subsubsection}{Desirability}{52}
-\contentsline {subsubsection}{Relevance}{54}
-\contentsline {subsection}{\numberline {5.1.4}Discussion}{56}
-\contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{56}
-\contentsline {subsection}{\numberline {5.2.1}Implementation}{57}
-\contentsline {subsubsection}{Framework}{57}
-\contentsline {subsubsection}{Robot Controller}{58}
-\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{59}
-\contentsline {subsubsection}{The Robot}{60}
-\contentsline {subsubsection}{Interaction Paradigms}{60}
-\contentsline {subsubsection}{Environment and Tasks}{62}
-\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{63}
-\contentsline {subsubsection}{Hypothesis}{63}
-\contentsline {subsubsection}{Procedure}{63}
-\contentsline {subsubsection}{Measurements}{65}
-\contentsline {subsubsection}{Participants}{65}
-\contentsline {subsection}{\numberline {5.2.4}Results}{66}
-\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{66}
-\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{74}
-\contentsline {subsubsection}{Impact of Demographics}{77}
-\contentsline {subsection}{\numberline {5.2.5}Discussion}{81}
-\contentsline {chapter}{\numberline {6}Conclusion}{83}
-\contentsline {section}{\numberline {6.1}Discussion}{83}
-\contentsline {section}{\numberline {6.2}Future Work}{83}
-\contentsline {chapter}{Appendix A}{87}
+\contentsline {section}{\numberline {2.1}Computational Collaboration Theories}{7}
+\contentsline {subsection}{\numberline {2.1.1}Shared-Plans Theory}{9}
+\contentsline {subsubsection}{Recipes}{10}
+\contentsline {subsubsection}{Full Vs. Partial Shared Plan}{13}
+\contentsline {subsubsection}{Communicating Intentions}{14}
+\contentsline {subsubsection}{Intention-to and Intention-that}{15}
+\contentsline {subsection}{\numberline {2.1.2}Joint Intentions Theory}{16}
+\contentsline {subsubsection}{Individual Commitment}{17}
+\contentsline {subsubsection}{Individual Intention}{18}
+\contentsline {subsubsection}{Joint Commitment}{18}
+\contentsline {subsubsection}{Joint Intention}{19}
+\contentsline {subsubsection}{Teamwork \& Communication}{20}
+\contentsline {subsection}{\numberline {2.1.3}STEAM -- A Hybrid Collaboration Approach}{20}
+\contentsline {subsection}{\numberline {2.1.4}Other Approaches}{23}
+\contentsline {subsection}{\numberline {2.1.5}Similarities and Differences}{23}
+\contentsline {subsection}{\numberline {2.1.6}Applications of Collaboration Theories}{26}
+\contentsline {section}{\numberline {2.2}Affective Computing}{31}
+\contentsline {subsection}{\numberline {2.2.1}Affect and Emotions}{31}
+\contentsline {subsection}{\numberline {2.2.2}Functions of Emotions}{31}
+\contentsline {subsection}{\numberline {2.2.3}Motivation and Theory of Mind}{31}
+\contentsline {section}{\numberline {2.3}Computational Models of Emotions}{31}
+\contentsline {subsection}{\numberline {2.3.1}Appraisal Theory}{31}
+\contentsline {subsection}{\numberline {2.3.2}Other Computational Models}{31}
+\contentsline {subsection}{\numberline {2.3.3}Similarities and Differences}{31}
+\contentsline {subsection}{\numberline {2.3.4}Applications in Autonomous Agents and Robots}{31}
+\contentsline {section}{\numberline {2.4}Conclusion}{31}
+\contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{33}
+\contentsline {section}{\numberline {3.1}Introduction}{33}
+\contentsline {subsection}{\numberline {3.1.1}Scenario}{35}
+\contentsline {subsection}{\numberline {3.1.2}Example of a Collaborative Interaction}{35}
+\contentsline {section}{\numberline {3.2}Design and Architecture}{35}
+\contentsline {subsection}{\numberline {3.2.1}Mechanisms}{35}
+\contentsline {subsection}{\numberline {3.2.2}Functions of Emotions}{35}
+\contentsline {subsection}{\numberline {3.2.3}Mental States}{35}
+\contentsline {subsection}{\numberline {3.2.4}Attributes of Mental States}{35}
+\contentsline {chapter}{\numberline {4}Computational Framework}{36}
+\contentsline {section}{\numberline {4.1}Introduction}{36}
+\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{37}
+\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{39}
+\contentsline {subsection}{\numberline {4.3.1}Relevance}{40}
+\contentsline {subsection}{\numberline {4.3.2}Desirability}{44}
+\contentsline {subsection}{\numberline {4.3.3}Expectedness}{46}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{47}
+\contentsline {section}{\numberline {4.4}Goal Management}{50}
+\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{56}
+\contentsline {subsection}{\numberline {4.5.1}Planning}{56}
+\contentsline {subsection}{\numberline {4.5.2}Active Coping}{57}
+\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{58}
+\contentsline {subsection}{\numberline {4.5.4}Acceptance}{58}
+\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{58}
+\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{59}
+\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{59}
+\contentsline {section}{\numberline {4.6}Motivation Mechanism}{60}
+\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{62}
+\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{64}
+\contentsline {subsection}{\numberline {4.6.3}External Motive}{65}
+\contentsline {section}{\numberline {4.7}Theory of Mind}{67}
+\contentsline {section}{\numberline {4.8}Perception and Action}{67}
+\contentsline {section}{\numberline {4.9}Emotion Instances}{68}
+\contentsline {chapter}{\numberline {5}Evaluation}{71}
+\contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{71}
+\contentsline {subsection}{\numberline {5.1.1}Experimental Scenario}{71}
+\contentsline {subsection}{\numberline {5.1.2}Hypothesis and Methodology}{72}
+\contentsline {subsubsection}{Hypothesis}{72}
+\contentsline {subsubsection}{Procedure}{72}
+\contentsline {subsubsection}{Participants}{73}
+\contentsline {subsection}{\numberline {5.1.3}Results}{74}
+\contentsline {subsubsection}{Expectedness}{74}
+\contentsline {subsubsection}{Controllability}{76}
+\contentsline {subsubsection}{Desirability}{76}
+\contentsline {subsubsection}{Relevance}{78}
+\contentsline {subsection}{\numberline {5.1.4}Discussion}{80}
+\contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{80}
+\contentsline {subsection}{\numberline {5.2.1}Implementation}{81}
+\contentsline {subsubsection}{Framework}{81}
+\contentsline {subsubsection}{Robot Controller}{82}
+\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{83}
+\contentsline {subsubsection}{The Robot}{84}
+\contentsline {subsubsection}{Interaction Paradigms}{84}
+\contentsline {subsubsection}{Environment and Tasks}{86}
+\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{87}
+\contentsline {subsubsection}{Hypothesis}{87}
+\contentsline {subsubsection}{Procedure}{87}
+\contentsline {subsubsection}{Measurements}{89}
+\contentsline {subsubsection}{Participants}{89}
+\contentsline {subsection}{\numberline {5.2.4}Results}{90}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{90}
+\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{98}
+\contentsline {subsubsection}{Impact of Demographics}{101}
+\contentsline {subsection}{\numberline {5.2.5}Discussion}{105}
+\contentsline {chapter}{\numberline {6}Conclusion}{107}
+\contentsline {section}{\numberline {6.1}Discussion}{107}
+\contentsline {section}{\numberline {6.2}Future Work}{107}
+\contentsline {chapter}{Appendix A}{118}

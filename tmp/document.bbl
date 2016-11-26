@@ -1,9 +1,43 @@
 \begin{thebibliography}{10}
 
+\bibitem{andriessen:disourse-planning}
+J.~Andriessen, K.~de~Smedt, and M.~Zock.
+\newblock Discourse planning: {E}mpirical research and computer models.
+\newblock In A.~Dijkstra and K.~de~Smedt, editors, {\em Computational
+  psycholinguistics: AI and connectionist models of human language processing},
+  pages 247--278. Taylor \& Francis, 1996.
+
+\bibitem{anscombe:intention}
+G.~E.~M. Anscombe.
+\newblock {\em Intention}.
+\newblock NY: Cornell University Press, 1963.
+
+\bibitem{babaian:writers-assistant}
+T.~Babaian, B.~J. Grosz, and S.~M. Shieber.
+\newblock A writer's collaborative assistant.
+\newblock In {\em Proceedings of the International Conference on Intelligent
+  User Interfaces (IUI2000)}, pages 7--14. ACM Press, 2002.
+
 \bibitem{bratman:intentions-plans}
 M.~E. Bratman.
 \newblock {\em Intention, Plans, and Practical Reason}.
 \newblock Cambridge, Mass.: Harvard University Press, 1987.
+
+\bibitem{bratman:intention}
+M.~E. Bratman.
+\newblock What is intention?
+\newblock In {\em Intentions in Communication}, Cognitive Technologies, pages
+  15--32. The MIT Press, Cambridge, MA, June 1990.
+
+\bibitem{bratman:shared-activity}
+M.~E. Bratman.
+\newblock Shared cooperative activity.
+\newblock {\em Philosophical Review}, 101(2):327--341, 1992.
+
+\bibitem{bratman:plans-reasoning}
+M.~E. Bratman, D.~J. Israel, and M.~E. Pollack.
+\newblock Plans and resource-bounded practical reasoning.
+\newblock {\em Computational Intelligence}, 4(3):349--355, 1988.
 
 \bibitem{breazeal:humanoid-robots}
 C.~Breazeal, A.~Brooks, J.~Gray, G.~Hoffman, C.~Kidd, H.~Lee, J.~Lieberman,
@@ -16,10 +50,65 @@ C.~Breazeal, A.~Takanishi, and T.~Kobayashi.
 \newblock {\em Social Robots that Interact with People}, pages 1349--1369.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
 
+\bibitem{burghart:cognitive-architecture-robot}
+C.~Burghart, R.~Mikut, R.~Stiefelhagen, T.~Asfour, H.~Holzapfel, P.~Steinhaus,
+  and R.~Dillmann.
+\newblock A cognitive architecture for a humanoid robot: {A} first approach.
+\newblock In {\em 5th IEEE-RAS International Conference on Humanoid Robots},
+  pages 357--362, 2005.
+
+\bibitem{castaneda:thinking}
+H.-N. $Casta\tilde{n}eda$.
+\newblock {\em Thinking and Doing}.
+\newblock Dordrecht, Holland: D. Riedel, 1975.
+
+\bibitem{castelfranchi:commitments-aids}
+C.~Castelfranchi.
+\newblock Commitments: From individual intentions to groups and organizations.
+\newblock In {\em Proceedings of the first international conference on
+  multiagent systems}, pages 41--48, 1995.
+
+\bibitem{clair:action-intention-collaboraiton}
+A.~B.~S. Clair and M.~J. Matari$\acute{c}$.
+\newblock Modeling action and intention for the production of coordinating
+  communication in human-robot task collaborations.
+\newblock In {\em 21st IEEE International Symposium on Robot and Human
+  Interactive Communication: Workshop on Robot Feedback in HRI}, Paris, France,
+  2012.
+
+\bibitem{clancey:agent-assistants-collaboration}
+W.~J. Clancey.
+\newblock Roles for agent assistants in field science: Understanding personal
+  projects and collaboration.
+\newblock {\em IEEE Transactions on Systems, Man and Cybernetics, special issue
+  on Human-Robot Interaction}, 34(2):125--137, 2004.
+
+\bibitem{cohen:team-formation}
+P.~Cohen, H.~Levesque, and I.~Smith.
+\newblock On team formation.
+\newblock In {\em Contemporary Action Theory. Synthese}, pages 87--114. Kluwer
+  Academic Publishers, 1997.
+
 \bibitem{cohen:teamwork}
 P.~Cohen and H.~J. Levesque.
 \newblock {\em Teamwork}.
 \newblock SRI International, 1991.
+
+\bibitem{cohen:intention-commitment}
+P.~R. Cohen and H.~J. Levesque.
+\newblock Intention is choice with commitment.
+\newblock {\em Artificial Intelligence}, 42(2-3):213--261, 1990.
+
+\bibitem{cohen:persistence-intention-commitment}
+P.~R. Cohen and H.~J. Levesque.
+\newblock Persistence, intention, and commitment.
+\newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
+  Intentions in Communication}, pages 33--69. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{cohen:intentions}
+P.~R. Cohen, J.~Morgan, and M.~E. Pollack.
+\newblock {\em Intentions in Communication}.
+\newblock A Bradford Book, 1990.
 
 \bibitem{dancy:actR-physiology-affect}
 C.~L. Dancy.
@@ -33,6 +122,19 @@ C.~M. de~Melo, J.~Gratch, P.~Carnevale, and S.~J. Read.
 \newblock In {\em Proceedings of the 34th Annual Meeting of the Cognitive
   Science Society ({CogSci})}, 2012.
 
+\bibitem{esau:integrating-emotion-collaboration}
+N.~Esau, L.~Kleinjohann, and B.~Kleinjohann.
+\newblock Integrating emotional competence into man-machine collaboration.
+\newblock In {\em Biologically-Inspired Collaborative Computing, September 8-9,
+  Milano, Italy}, pages 187--198, 2008.
+
+\bibitem{garcia:collaboration-emotional-awareness}
+O.~Garc$\acute{i}$a, J.~Favela, G.~Licea, and R.~Machorro.
+\newblock Extending a collaborative architecture to support emotional
+  awareness.
+\newblock In {\em Emotion Based Agent Architectures (ebaa’99}, pages 46--52,
+  1999.
+
 \bibitem{goffman:self-presentation}
 E.~Goffman.
 \newblock {\em The Presentation of Self in Everyday Life}.
@@ -42,6 +144,35 @@ E.~Goffman.
 J.~Gratch and S.~C. Marsella.
 \newblock A domain-independent framework for modeling emotion.
 \newblock {\em Cognitive Systems Research}, 5(4):269--306, 2004.
+
+\bibitem{green:collaboration-literature-review}
+S.~A. Green, M.~Billinghurst, X.~Chen, and J.~G. Chase.
+\newblock Human-robot collaboration: {A} literature review and augmented
+  reality approach in design.
+\newblock {\em International Journal of Advanced Robotic Systems}, 5(1):1--18,
+  2008.
+
+\bibitem{grosz:shared-plans}
+B.~Grosz and S.~Kraus.
+\newblock The evolution of shared plans.
+\newblock In {\em Foundations and Theories of Rational Agency}, pages 227--262,
+  1998.
+
+\bibitem{grosz:collaborative-systems}
+B.~J. Grosz.
+\newblock {AAAI-94} presidential address: Collaborative systems.
+\newblock {\em {AI} Magazine}, 17(2):67--85, 1996.
+
+\bibitem{grosz:mice-menus}
+B.~J. Grosz.
+\newblock Beyond mice and menus.
+\newblock {\em Proceedings of the American Philosophical Society},
+  149(4):523--543, 2005.
+
+\bibitem{grosz:intention-dynamics-collaboration}
+B.~J. Grosz and L.~Hunsberger.
+\newblock The dynamics of intention in collaborative activity.
+\newblock {\em Cognitive Systems Research}, 7(2-3):259--272, 2007.
 
 \bibitem{grosz:planning-acting}
 B.~J. Grosz, L.~Hunsberger, and S.~Kraus.
@@ -53,16 +184,96 @@ B.~J. Grosz and S.~Kraus.
 \newblock Collaborative plans for complex group action.
 \newblock {\em Artificial Intelligence}, 86(2):269--357, 1996.
 
+\bibitem{grosz:discourse-structure}
+B.~J. Grosz and C.~L. Sidner.
+\newblock Attention, intentions, and the structure of discourse.
+\newblock {\em Computational Linguistics}, 12(3):175--204, July 1986.
+
 \bibitem{grosz:plans-discourse}
 B.~J. Grosz and C.~L. Sidner.
 \newblock Plans for discourse.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 417--444. MIT Press, Cambridge, MA, 1990.
 
+\bibitem{heeman:model-collaboration-referring}
+P.~A. Heeman.
+\newblock {\em A Computational Model of Collaboration on Referring
+  Expressions}.
+\newblock PhD thesis, University of Toronto, 1991.
+
+\bibitem{hill:synthetic-battlefield-aircraft}
+R.~W. Hill, Jr., J.~Chen, J.~Gratch, P.~Rosenbloom, and M.~Tambe.
+\newblock Intelligent agents for the synthetic battlefield: A company of rotary
+  wing aircraft.
+\newblock In {\em Innovative Applications of Artificial Inttigence (IAAI-97)},
+  pages 227--262, 1997.
+
+\bibitem{hobbs:microsociology-relationship}
+J.~R. Hobbs, A.~Sagae, and S.~Wertheim.
+\newblock Toward a commonsense theory of microsociology: Interpersonal
+  relationships.
+\newblock In {\em Formal Ontology in Information Systems - Proceedings of the
+  Seventh International Conference}, pages 249--262, 2012.
+
+\bibitem{hunsberger:auction-collaborative}
+L.~Hunsberger and B.~J. Grosz.
+\newblock A combinatorial auction for collaborative planning.
+\newblock In {\em In Proceedings of ICMAS}, 2000.
+
+\bibitem{jarvis:teams-multiagent-systems}
+B.~Jarvis, D.~Jarvis, and L.~Jain.
+\newblock Teams in multi-agent systems.
+\newblock In {\em Intelligent Information Processing III}, volume 228. Springer
+  US, 2007.
+
+\bibitem{jennings:joint-responsibility}
+N.~R. Jennings.
+\newblock {\em {Joint Intentions as a Model of Multi-Agent Cooperation in
+  Complex Dynamic Environments}}.
+\newblock PhD thesis, Department of Electronic Engineering, University of
+  London, 1992.
+
+\bibitem{jennings:on-responsible}
+N.~R. Jennings.
+\newblock On being responsible.
+\newblock In E.~Werner and Y.~Demazeau, editors, {\em Proceedings of the Third
+  European Workshop on Modelling Autonomous Agents in a Multi-Agent World},
+  pages 93--102. North-Holland, 1992.
+
+\bibitem{jennings:joint-intention-hybrid}
+N.~R. Jennings.
+\newblock Controlling cooperative problem solving in industrial multi-agent
+  systems using joint intentions.
+\newblock {\em Artificial Intelligence}, 75(2):195--240, 1995.
+
+\bibitem{jennings:joint-responsibility-dynamic}
+N.~R. Jennings and E.~H. Mamdani.
+\newblock Using joint responsibility to coordinate collaborative problem
+  solving in dynamic environments.
+\newblock In {\em 10th National Conference on Artificial Intelligence
+  (AAAI-92)}, pages 269--275, 1992.
+
 \bibitem{anderson:act-r}
 C.~L. John Robert~Anderson.
 \newblock {\em The Atomic Components of Thought}.
 \newblock Lawrence Erlbaum Associates, 1998.
+
+\bibitem{kabil:coordination-mechanisms}
+A.~Kabil, C.~D. Keukelaere, and P.~Chavaillier.
+\newblock Coordination mechanisms in human-robot collaboration.
+\newblock In {\em Proceeding of the 7th International Conference on Advances in
+  Computer-Human Interactions}, pages 389--394, 2014.
+
+\bibitem{kinny:planned-team}
+D.~Kinny, M.~Ljungberg, A.~Rao, G.~Tidhar, E.~Werner, and E.~Sonenberg.
+\newblock Planned team activity.
+\newblock In {\em Lecture notes in artificial intelligence}. Springer-Verlag,
+  1992.
+
+\bibitem{kitano:robocup}
+H.~Kitano, M.~Asada, Y.~Kuniyoshi, I.~Noda, E.~Osawai, and H.~Matsubara.
+\newblock Robocup: {A} challenge problem for {AI}.
+\newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
 
 \bibitem{laird:soar}
 J.~Laird.
@@ -77,11 +288,27 @@ N.~Lesh, C.~Rich, and C.~L. Sidner.
   User Modeling 2001}, volume 2109, pages 64--73. Springer Berlin Heidelberg,
   2001.
 
+\bibitem{levesque:acting-together}
+H.~J. Levesque, P.~R. Cohen, and J.~H.~T. Nunes.
+\newblock On acting together.
+\newblock In {\em AAAI}, pages 94--99. AAAI Press / The MIT Press, 1990.
+
 \bibitem{Litman:discourse-commonsense}
 D.~J. Litman and J.~F. Allen.
 \newblock Discourse processing and commonsense plans.
 \newblock In P.~R. Cohen, J.~Morgan, and M.~E. Pollack, editors, {\em
   Intentions in Communication}, pages 365--388. MIT Press, Cambridge, MA, 1990.
+
+\bibitem{lochbaum:collaborative-planning}
+K.~E. Lochbaum.
+\newblock A collaborative planning model of intentional structure.
+\newblock {\em Computational Linguistics}, 24(4):525--572, 1998.
+
+\bibitem{lochbaum:plan-models}
+K.~E. Lochbaum, B.~J. Grosz, and C.~L. Sidner.
+\newblock Models of plans to support communication: An initial report.
+\newblock In {\em Proceedings of the Eighth National Conference on Artificial
+  Intelligence}, pages 485--490. AAAI Press, 1990.
 
 \bibitem{parkinson:emotion-social-interaction}
 C.~Marinetti, P.~Moore, P.~Lucas, and B.~Parkinson.
@@ -94,10 +321,23 @@ R.~P. {Marinier III}, J.~E. Laird, and R.~L. Lewis.
 \newblock A computational unification of cognitive behavior and emotion.
 \newblock {\em Cognitive System Research}, 10(1):48--69, March 2009.
 
+\bibitem{marsella:robocup}
+S.~Marsella, J.~Adibi, Y.~Al-Onaizan, A.~Erdem, R.~Hill, G.~A. Kaminka, Z.~Qiu,
+  and M.~Tambe.
+\newblock Using an explicit teamwork model and learning in robocup: An extended
+  abstract.
+\newblock In {\em RoboCup-98: Robot Soccer World Cup II}, volume 1604, pages
+  237--245. Springer Berlin Heidelberg, 1999.
+
 \bibitem{marsella:ema-process-model}
 S.~C. Marsella and J.~Gratch.
 \newblock {EMA}: A process model of appraisal dynamics.
 \newblock {\em Cognitive Systems Research}, 10(1):70--90, March 2009.
+
+\bibitem{matignon:verbal-nonverbal-collaboration}
+L.~Matignon, A.~B. Karami, and A.-I. Mouaddib.
+\newblock A model for verbal and non-verbal human-robot collaboration.
+\newblock In {\em AAAI Fall Symposium Series}, pages 62--67, 2010.
 
 \bibitem{merrick:acheievement-affiliation-power}
 K.~E. Merrick and K.~Shafi.
@@ -111,10 +351,97 @@ V.~Montreuil, A.~Clodic, M.~Ransan, and R.~Alami.
 \newblock In {\em Proceedings of the {IEEE} International Conference on
   Systems, Man and Cybernetics}, pages 2618--2623, 2007.
 
+\bibitem{mutlu:coordination-robot}
+B.~Mutlu, A.~Terrell, and C.-M. Huang.
+\newblock Coordination mechanisms in human-robot collaboration.
+\newblock In {\em Proceedings of the HRI 2013 Workshop on Collaborative
+  Manipulation}, 2013.
+
+\bibitem{neale:grice-language}
+S.~Neale.
+\newblock Paul grice and the philosophy of language.
+\newblock {\em Linguistics and Philosophy}, 15(5):509--559, 1992.
+
+\bibitem{nikolaidis:collaboration-joint-action}
+S.~Nikolaidis, P.~A. Lasota, G.~F. Rossano, C.~Martinez, T.~A. Fuhlbrigge, and
+  J.~A. Shah.
+\newblock Human-robot collaboration in manufacturing: Quantitative evaluation
+  of predictable, convergent joint action.
+\newblock In {\em ISR}, pages 1--6, 2013.
+
 \bibitem{planalp:communicating-emotion}
 S.~Planalp.
 \newblock {\em Communicating Emotion: Social, Moral, and Cultural Processes}.
 \newblock Cambridge University Press, 1999.
+
+\bibitem{pollack:plan-inference}
+M.~E. Pollack.
+\newblock A model of plan inference that distinguishes between the beliefs of
+  actors and observers.
+\newblock In {\em Proceedings of the 24th Annual Meeting on Association for
+  Computational Linguistics}, pages 207--214. Association for Computational
+  Linguistics, 1986.
+
+\bibitem{pollack:plan-mental-attitudes}
+M.~E. Pollack.
+\newblock Plans as complex mental attitudes.
+\newblock In {\em Intentions in Communication}, pages 77--103. MIT Press, 1990.
+
+\bibitem{pynadath:teamwork-heterogeneous-agents}
+D.~V. Pynadath and M.~Tambe.
+\newblock An automated teamwork infrastructure for heterogeneous software
+  agents and humans.
+\newblock {\em Journal of Autonomous Agents and Multi-Agent Systems, Special
+  Issue on Infrastructure and Requirements for Building Research Grade
+  Multi-Agent Systems,}, 7(1-2):71--100, 2003.
+
+\bibitem{rauenbusch:decision-making-planning}
+T.~W. Rauenbusch and B.~J. Grosz.
+\newblock A decision making procedure for collaborative planning.
+\newblock In {\em Proceedings of the Second International Joint Conference on
+  Autonomous Agents and Multiagent Systems}, 2003.
+
+\bibitem{ravenscroft:folk}
+I.~Ravenscroft.
+\newblock {\em Folk Psychology as a Theory}.
+\newblock Stanford Encyclopedia of Philosophy, 2004.
+
+\bibitem{rich:cea}
+C.~Rich.
+\newblock Building task-based user interfaces with {ANSI/CEA}-2018.
+\newblock {\em IEEE Computer}, 42(8):20--27, July 2009.
+
+\bibitem{rich:collaboration-manager}
+C.~Rich and C.~L. Sidner.
+\newblock {COLLAGEN}: A collaboration manager for software interface agents.
+\newblock {\em User Modeling User-Adapted Interaction}, 8(3-4):315--350, 1998.
+
+\bibitem{rich:discourse}
+C.~Rich, C.~L. Sidner, and N.~Lesh.
+\newblock {COLLAGEN}: Applying collaborative discourse theory to human-computer
+  interaction.
+\newblock {\em AI Magazine}, 22(4):15--26, 2001.
+
+\bibitem{rickel:discourse-theory-dialogue}
+J.~Rickel, N.~Lesh, C.~Rich, C.~L. Sidner, and A.~Gertner.
+\newblock Collaborative discourse theory as a foundation for tutorial dialogue.
+\newblock In {\em Proceedings Sixth International Conference on Intelligent
+  Tutoring Systems}, 2002.
+
+\bibitem{scerri:prototype-distributed-teams}
+P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
+  M.~Tambe.
+\newblock A prototype infrastructure for distributed robot-agent-person teams.
+\newblock In {\em Proceedings of the Second International Joint Conference on
+  Autonomous Agents and Multiagent Systems}, AAMAS '03, pages 433--440, New
+  York, NY, USA, 2003. ACM.
+
+\bibitem{scerri:robot-agent-person}
+P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
+  M.~Tambe.
+\newblock A prototype infrastructure for distributed robot-agent-person teams.
+\newblock In {\em The Second International Joint Conference on Autonomous
+  Agents and Multiagent Systems}, 2003.
 
 \bibitem{scherer:appraisal-processes}
 K.~R. Scherer, A.~Schorr, and T.~Johnstone.
@@ -128,6 +455,18 @@ M.~Scheutz and V.~Andronache.
 \newblock {\em {IEEE} Transactions on Systems, Man, and Cybernetics, Part {B}},
   34(6):2377--2395, 2004.
 
+\bibitem{searle:collective}
+J.~R. Searle.
+\newblock Collective intentionality.
+\newblock In {\em Intentions in Communication}, pages 401--415. MIT Press,
+  1990.
+
+\bibitem{sidner:discourse-collaborative-negotiation}
+C.~Sidner.
+\newblock An artificial discourse language for collaborative negotiation.
+\newblock In {\em Proceedings of the Twelfth National Conference on Artificial
+  Intelligence}, pages 814--819. MIT Press, 1994.
+
 \bibitem{sidner:enagagement-robot}
 C.~L. Sidner and M.~Dzikovska.
 \newblock A first experiment in engagement for human-robot interaction in
@@ -135,18 +474,66 @@ C.~L. Sidner and M.~Dzikovska.
 \newblock In {\em Advances in Natural Multimodal Dialogue Systems}, volume~30
   of {\em Cognitive Technologies}, pages 55--76. Springer Netherlands, 2005.
 
+\bibitem{skubch:modelling-behavior-robots}
+H.~Skubch.
+\newblock {\em Modelling and Controlling of Behaviour for Autonomous Mobile
+  Robots}.
+\newblock Springer Science & Business Media, 2012.
+
+\bibitem{sofge:collaboration-humanoid-space}
+D.~Sofge, M.~D. Bugajska, J.~G. Trafton, D.~Perzanowski, S.~Thomas, M.~Skubic,
+  S.~Blisard, N.~Cassimatis, D.~P. Brock, W.~Adams, and A.~C. Schultz.
+\newblock Collaborating with humanoid robots in space.
+\newblock {\em International Journal of Humanoid Robotics}, 2(2):181--201,
+  2005.
+
+\bibitem{subramanian:joint-intention-dialogue}
+R.~A. Subramanian, S.~Kumar, and P.~Cohen.
+\newblock Integrating joint intention theory, belief reasoning, and
+  communicative action for generating team-oriented dialogue.
+\newblock In {\em AAAI}, pages 1501--1507. AAAI Press, 2006.
+
 \bibitem{shayganfar:appraisal-short}
 {Suppressed for Anonymity}.
 \newblock 2016.
+
+\bibitem{tambe:agent-archtecture-teamwork}
+M.~Tambe.
+\newblock Agent architecture for flexible, practical teamwork.
+\newblock In {\em Proceedings of the National Conference on Artificial
+  Intelligence}, pages 22--28, 1997.
+
+\bibitem{tambe:flexible-teamwork}
+M.~Tambe.
+\newblock Towards flexible teamwork.
+\newblock {\em Journal of Artificial Intelligence Research}, 7:83--124, 1997.
 
 \bibitem{hooft:sharing-emotions}
 S.~van Hooft.
 \newblock Scheler on sharing emotions.
 \newblock {\em Philosophy Today}, 38(1):18--28, 1994.
 
+\bibitem{wilsker:study-theories}
+B.~Wilsker.
+\newblock A study of multi-agent collaboration theories.
+\newblock In {\em ISI Research Report}, pages 396--449, 1996.
+
 \bibitem{yen:cast}
 J.~Yen, J.~Yin, T.~R. Ioerger, M.~S. Miller, D.~Xu, and R.~A. Volz.
 \newblock Cast: Collaborative agents for simulating teamwork.
 \newblock In {\em Proceedings of IJCAI’2001}, pages 1135--1142, 2001.
+
+\bibitem{yin:knowledge-based-sharedplans}
+J.~Yin, M.~S. Miller, T.~R. Ioerger, J.~Yen, and R.~A. Volz.
+\newblock A knowledge-based approach for designing intelligent team training
+  systems.
+\newblock In {\em Proceedings of the Fourth International Conference on
+  Autonomous Agents}, pages 427--434. ACM, 2000.
+
+\bibitem{zamfirescu:gdss}
+Zamfirescu and Candea.
+\newblock On integrating agents into gdss.
+\newblock In {\em Preprints of the 9th IFAC / IFORS / IMACS / IFIP/ Symposium
+  on Large Scale Systems: Theory and Applications}, 2001.
 
 \end{thebibliography}
