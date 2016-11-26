@@ -30,6 +30,11 @@ G.~E.~M. Anscombe.
 \newblock {\em Intention}.
 \newblock NY: Cornell University Press, 1963.
 
+\bibitem{aristotle:ethics}
+Aristotle.
+\newblock {\em The Nicomachean Ethics}.
+\newblock George Bell and Sons, 2009.
+
 \bibitem{armony:computational-modeling-emotion}
 Armony, Servan-Schreiber, Cohen, and Ledoux.
 \newblock Computational modeling of emotion: Explorations through the anatomy
@@ -41,11 +46,41 @@ M.~B. Arnold.
 \newblock {\em Emotion and personality}.
 \newblock Cassell & Co., 1960.
 
+\bibitem{atkinson:motives-action-society}
+J.~W. Atkinson.
+\newblock {\em Motives in fantasy, action, and society: a method of assessment
+  and study}.
+\newblock Van Nostrand, 1958.
+
 \bibitem{babaian:writers-assistant}
 T.~Babaian, B.~J. Grosz, and S.~M. Shieber.
 \newblock A writer's collaborative assistant.
 \newblock In {\em Proceedings of the International Conference on Intelligent
   User Interfaces (IUI2000)}, pages 7--14. ACM Press, 2002.
+
+\bibitem{bach:micropsi-agent-architecture}
+J.~Bach.
+\newblock {The MicroPsi Agent Architecture}.
+\newblock {\em In Proceeding of ICCM-5}, pages 15--20, 2003.
+
+\bibitem{bach:psi}
+J.~Bach.
+\newblock {\em Principles of Synthetic Intelligence PSI: An Architecture of
+  Motivated Cognition}.
+\newblock Oxford University Press, Inc., 2009.
+
+\bibitem{bach:motivaitional-system-ai}
+J.~Bach.
+\newblock A motivational system for cognitive ai.
+\newblock In J.~Schmidhuber, K.~R. Th$\acute{o}$risson, and M.~Looks, editors,
+  {\em Artificial General Intelligence}, volume 6830 of {\em Lecture Notes in
+  Computer Science}, pages 232--242. Springer Berlin Heidelberg, 2011.
+
+\bibitem{bach:next-generation-micropsi}
+J.~Bach.
+\newblock Micropsi 2: The next generation of the micropsi framework.
+\newblock In {\em Proceedings of the 5th International Conference on Artificial
+  General Intelligence}, AGI'12, pages 11--20. Springer-Verlag, 2012.
 
 \bibitem{mehrabian:pad}
 I.~Bakker, T.~van~der Voordt, P.~Vink, and J.~de~Boon.
@@ -56,6 +91,11 @@ I.~Bakker, T.~van~der Voordt, P.~Vink, and J.~de~Boon.
 L.~F. Barrett.
 \newblock Are emotions natural kinds?
 \newblock {\em Perspectives on Psychological Science}, 1(1):28--58, 2006.
+
+\bibitem{beck:motivation}
+R.~Beck.
+\newblock {\em Motivation: Theories and Principles}.
+\newblock Pearson, 2003.
 
 \bibitem{becker:wasabi}
 C.~Becker-asano.
@@ -69,6 +109,11 @@ C.~Becker-Asano.
   Architecture description and example applications.
 \newblock In {\em Proceedings of ERM4HCI workshop in conjunction with ICMI
   2013}. Springer, 2013.
+
+\bibitem{berridge:motivation-concepts-neuroscience}
+K.~C. Berridge.
+\newblock Motivation concepts in behavioral neuroscience.
+\newblock {\em Physiology \& Behavior}, 81(2):179--209, 2004.
 
 \bibitem{bratman:intentions-plans}
 M.~E. Bratman.
@@ -97,6 +142,14 @@ S.~Brave and C.~Nass.
 \newblock In J.~A. Jacko and A.~Sears, editors, {\em The Human-computer
   Interaction Handbook}, pages 81--96. L. Erlbaum Associates Inc., 2003.
 
+\bibitem{breazeal:motivation-regulating-hri}
+C.~Breazeal.
+\newblock A motivational system for regulating human-robot interaction.
+\newblock In {\em Proceedings of the Fifteenth National Conference on
+  Artificial Intelligence and Tenth Innovative Applications of Artificial
+  Intelligence Conference, {AAAI} 98, {IAAI} 98, July 26-30, 1998, Madison,
+  Wisconsin, {USA.}}, pages 54--61, 1998.
+
 \bibitem{breazeal:sociable-robot}
 C.~Breazeal.
 \newblock {\em Designing Sociable Robots}.
@@ -118,6 +171,16 @@ C.~Breazeal, A.~Brooks, J.~Gray, G.~Hoffman, C.~Kidd, H.~Lee, J.~Lieberman,
 C.~Breazeal, A.~Takanishi, and T.~Kobayashi.
 \newblock {\em Social Robots that Interact with People}, pages 1349--1369.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2008.
+
+\bibitem{bretherton:emotions-functionalist}
+I.~Bretherton, J.~Fritz, C.~Zahn-Waxler, and D.~Ridgeway.
+\newblock Learning to talk about emotions: A functionalist perspective.
+\newblock {\em Child Development}, 57(3):529--548, 1986.
+
+\bibitem{brody:motivation-goal-action}
+N.~Brody.
+\newblock {\em Human motivation: commentary on goal-directed action}.
+\newblock Academic Press New York, 1983.
 
 \bibitem{burghart:cognitive-architecture-robot}
 C.~Burghart, R.~Mikut, R.~Stiefelhagen, T.~Asfour, H.~Holzapfel, P.~Steinhaus,
@@ -149,6 +212,12 @@ C.~Castelfranchi.
 \newblock In {\em Proceedings of the first international conference on
   multiagent systems}, pages 41--48, 1995.
 
+\bibitem{dolores:socially-emotional}
+D.~Ca$\tilde{n}$amero and W.~V. de~Velde.
+\newblock Socially emotional: Using emotions to ground social interaction.
+\newblock In {\em In Working Notes of the AAAI'97 Fall Symposium on Socially
+  Intelligent Agents}, 1997.
+
 \bibitem{clair:action-intention-collaboraiton}
 A.~B.~S. Clair and M.~J. Matari$\acute{c}$.
 \newblock Modeling action and intention for the production of coordinating
@@ -168,6 +237,17 @@ W.~J. Clancey.
 G.~L. Clore and J.~R. Huntsinger.
 \newblock How emotions inform judgment and regulate thought.
 \newblock {\em Trends in Cognitive Sciences}, 11(9):393--399, 2007.
+
+\bibitem{clore:affective-guidance}
+G.~L. Clore and J.~Palmer.
+\newblock Affective guidance of intelligent agents: How emotion controls
+  cognition.
+\newblock {\em Cognitive System Research}, 10(1):21--30, 2009.
+
+\bibitem{coan:emotion-dyadic}
+J.~A. Coan and J.~J. Allen.
+\newblock {\em Handbook of Emotion Elicitation and Assessment}.
+\newblock Oxford University Press, USA, 2007.
 
 \bibitem{cohen:team-formation}
 P.~Cohen, H.~Levesque, and I.~Smith.
@@ -202,6 +282,12 @@ C.~Conati and H.~Maclare.
 \newblock In {\em 7th International Conference on Intelligent Tutoring
   Systems}, 2004.
 
+\bibitem{cowie:concepts-definitions}
+R.~Cowie, N.~Sussman, and A.~Ben-Ze'ev.
+\newblock Emotion: Concepts and definitions.
+\newblock In {\em Emotion-Oriented Systems}, Cognitive Technologies, pages
+  9--30. Springer-Verlag Berlin Heidelberg, London, New York, March 2011.
+
 \bibitem{dancy:actR-physiology-affect}
 C.~L. Dancy.
 \newblock {ACT-R}$\phi$: A cognitive architecture with physiology and affect.
@@ -218,6 +304,17 @@ C.~M. de~Melo, J.~Gratch, P.~Carnevale, and S.~J. Read.
   emotion displays on people's decision-making in social dilemma.
 \newblock In {\em Proceedings of the 34th Annual Meeting of the Cognitive
   Science Society ({CogSci})}, 2012.
+
+\bibitem{deSevin:motivational-model-agent}
+E.~de~Sevin and D.~Thalmann.
+\newblock A motivational model of action selection for virtual humans.
+\newblock In {\em Proceedings of the Computer Graphics International 2005}, CGI
+  '05, pages 213--220, Washington, DC, USA, 2005. IEEE Computer Society.
+
+\bibitem{depaulo:nonverbal-behavior}
+B.~M. DePaulo.
+\newblock Nonverbal behavior and self-presentation.
+\newblock {\em Psychological Bulletin}, 111(2):203--243, 1992.
 
 \bibitem{dreyfus:artificial-critique}
 H.~L. Dreyfus.
@@ -239,6 +336,12 @@ P.~Ekman and W.~V. Friesen.
 M.~S. El-Nasr, J.~Yen, and T.~R. Ioerger.
 \newblock Flame: Fuzzy logic adaptive model of emotions.
 \newblock {\em Autonomous Agents and Multi-Agent Systems}, 3(3):219--257, 2000.
+
+\bibitem{eligio:emotion-understanding-collaboration}
+U.~X. Eligio, S.~E. Ainsworth, and C.~K. Crook.
+\newblock Emotion understanding and performance during computer-supported
+  collaboration.
+\newblock {\em Computers in Human Behavavior}, 28(6):2046--2054, 2012.
 
 \bibitem{elliott:affective-reasoner}
 C.~D. Elliott.
@@ -262,6 +365,13 @@ S.~Folkman and J.~T. Moskowitz.
 N.~H. Frijda.
 \newblock {\em The Emotions}.
 \newblock Cambridge University Press, 1986.
+
+\bibitem{fussell:knowledge-coordination-communication}
+S.~R. Fussell and R.~M. Krauss.
+\newblock Coordination of knowledge in communication: Effects of speakers'
+  assumptions about what others know.
+\newblock {\em Journal of personality and social psychology}, 62(1):378--391,
+  1992.
 
 \bibitem{garcia:collaboration-emotional-awareness}
 O.~Garc$\acute{i}$a, J.~Favela, G.~Licea, and R.~Machorro.
@@ -287,6 +397,11 @@ A.~C. Gonzalez, M.~Malfaz, and M.~A. Salichs.
 \newblock {\em IEEE Transactions Autonomous Mental Development}, 5(2):135--151,
   2013.
 
+\bibitem{graham:motivation}
+S.~Graham and B.~Weiner.
+\newblock {\em Theories and Principles of Motivation}.
+\newblock Prentice Hall, 1996.
+
 \bibitem{gratch:emotion-intention}
 J.~Gratch.
 \newblock True emotion vs. social intentions in nonverbal communication:
@@ -311,6 +426,12 @@ S.~A. Green, M.~Billinghurst, X.~Chen, and J.~G. Chase.
   reality approach in design.
 \newblock {\em International Journal of Advanced Robotic Systems}, 5(1):1--18,
   2008.
+
+\bibitem{gross:emotion-generation-regulation}
+J.~J. Gross, G.~Sheppes, and H.~L. Urry.
+\newblock Emotion generation and emotion regulation: A distinction we should
+  make (carefully).
+\newblock {\em Cognition and Emotion}, 25(5):765--781, 2011.
 
 \bibitem{GrossbergGutowski:affect-cognition}
 S.~Grossberg and W.~E. Gutowski.
@@ -373,6 +494,11 @@ S.~Hareli and U.~Hess.
   appraisal perspective on person perception.
 \newblock {\em Cognition \& Emotion}, 24(1):128--140, 2009.
 
+\bibitem{hazan:emotion-attachment}
+C.~Hazan and P.~Shaver.
+\newblock Romantic love conceptualized as an attachment process.
+\newblock {\em Personality \& Social Psychology}, 52(3):511--524, 1987.
+
 \bibitem{heeman:model-collaboration-referring}
 P.~A. Heeman.
 \newblock {\em A Computational Model of Collaboration on Referring
@@ -390,6 +516,12 @@ F.~Hegel, T.~Spexard, B.~Wrede, G.~Horstmann, and T.~Vogt.
 U.~Hess and P.~Thibault.
 \newblock Darwin and emotion expression.
 \newblock {\em American Psychologist}, 64(2):120--128, 2009.
+
+\bibitem{hiatt:cognitive-model-tom}
+L.~M. Hiatt and J.~G. Trafton.
+\newblock A cognitive model of theory of mind.
+\newblock In {\em In Proceedings of the International Conference on Cognitive
+  Modeling}, pages 91--96, 2010.
 
 \bibitem{hill:synthetic-battlefield-aircraft}
 R.~W. Hill, Jr., J.~Chen, J.~Gratch, P.~Rosenbloom, and M.~Tambe.
@@ -478,6 +610,11 @@ A.~Kabil, C.~D. Keukelaere, and P.~Chavaillier.
 \newblock In {\em Proceeding of the 7th International Conference on Advances in
   Computer-Human Interactions}, pages 389--394, 2014.
 
+\bibitem{keltner:emotion-functions}
+D.~Keltner and J.~Haidt.
+\newblock Social functions of emotions at four levels of analysis.
+\newblock {\em Cognition and Emotion}, 13(5):505--521, 1999.
+
 \bibitem{kim:model-hri-appraisal}
 H.-R. Kim and D.-S. Kwon.
 \newblock Computational model of emotion generation for human-robot interaction
@@ -503,6 +640,13 @@ H.~Kitano, M.~Asada, Y.~Kuniyoshi, I.~Noda, E.~Osawai, and H.~Matsubara.
 \newblock Robocup: {A} challenge problem for {AI}.
 \newblock {\em {AI} Magazine}, 18(1):73--85, 1997.
 
+\bibitem{kleef:emotion-regulate-social}
+G.~A.~V. Kleef.
+\newblock How emotions regulate social life: The emotions as social information
+  {(EASI)} model.
+\newblock {\em Current Directions in Psychological Science}, 18(3):184--188,
+  2009.
+
 \bibitem{klug:emotion-based-hri}
 M.~Klug and A.~Zell.
 \newblock Emotion-based human-robot-interaction.
@@ -513,6 +657,11 @@ M.~Klug and A.~Zell.
 J.~Laird.
 \newblock {\em The Soar Cognitive Architecture}.
 \newblock MIT Press, 2012.
+
+\bibitem{laming:understanding-motivation}
+D.~Laming.
+\newblock {\em Understanding Human Motivation: What Makes People Tick}.
+\newblock Wiley, 2003.
 
 \bibitem{lazarus:emotion-adaptation}
 R.~S. Lazarus.
@@ -538,6 +687,11 @@ N.~Lesh, C.~Rich, and C.~L. Sidner.
 \newblock In M.~Bauer, P.~J. Gmytrasiewicz, and J.~Vassileva, editors, {\em
   User Modeling 2001}, volume 2109, pages 64--73. Springer Berlin Heidelberg,
   2001.
+
+\bibitem{levenson:affective-exchange}
+R.~W. Levenson and J.~M. Gottman.
+\newblock Martial interaction: Physiological linkage and affective exchnage.
+\newblock {\em Personality and Social Psychology}, 45(3):587--597, 1983.
 
 \bibitem{leventhal:emotion-cognition}
 H.~Leventhal and K.~Scherer.
@@ -585,6 +739,13 @@ K.~E. Lochbaum, B.~J. Grosz, and C.~L. Sidner.
 \newblock Models of plans to support communication: An initial report.
 \newblock In {\em Proceedings of the Eighth National Conference on Artificial
   Intelligence}, pages 485--490. AAAI Press, 1990.
+
+\bibitem{luneski:emotion-aware-interaction}
+A.~Luneski and R.~K. Moore.
+\newblock Affective computing and collaborative networks: Towards emotion-aware
+  interaction.
+\newblock In {\em Pervasive Collaborative Networks}, volume 283, pages
+  315--322. Springer US, 2008.
 
 \bibitem{mao:social-causality}
 W.~Mao and J.~Gratch.
@@ -671,6 +832,17 @@ V.~Montreuil, A.~Clodic, M.~Ransan, and R.~Alami.
 \newblock In {\em Proceedings of the {IEEE} International Conference on
   Systems, Man and Cybernetics}, pages 2618--2623, 2007.
 
+\bibitem{louis:communication-dynamic}
+L.~P. Morency.
+\newblock Computational study of human communication dynamic.
+\newblock In {\em Proceedings of the 2011 Joint ACM Workshop on Human Gesture
+  and Behavior Understanding}, pages 13--18. ACM, 2011.
+
+\bibitem{murray:personality-exploration}
+H.~A. Murray.
+\newblock {\em Explorations of Personality}.
+\newblock Oxford University Press, New York, 1938.
+
 \bibitem{mutlu:coordination-robot}
 B.~Mutlu, A.~Terrell, and C.-M. Huang.
 \newblock Coordination mechanisms in human-robot collaboration.
@@ -719,6 +891,21 @@ J.~Panskepp.
   Emotions}.
 \newblock NY:Oxford University Press, 1998.
 
+\bibitem{parkinson:emotions-social}
+B.~Parkinson.
+\newblock Emotions are social.
+\newblock {\em British Journal of Psychology}, 87(4):663--683, 1996.
+
+\bibitem{parkinson:emotion-communication}
+B.~Parkinson.
+\newblock Do facial movements express emotions or communicate motives?
+\newblock {\em Personality and Social Psychology Review}, 9(4):278--311, 2005.
+
+\bibitem{parkinson:holds-emotion}
+B.~Parkinson.
+\newblock What holds emotions together? meaning and response coordination.
+\newblock {\em Cognitive System Research}, 10(1):31--47, 2009.
+
 \bibitem{picard:affective-computing}
 R.~W. Picard.
 \newblock {\em Affective Computing}.
@@ -759,6 +946,12 @@ H.~Prendinger and M.~Ishizuka.
 \newblock The empathic companion: a character-based interface that addresses
   users' affective states.
 \newblock {\em Applied Artificial Intelligence}, 19(3-4):267--285, 2005.
+
+\bibitem{pynadath:modeling-tom-appraisal}
+D.~V. Pynadath, M.~Si, and S.~C. Marsella.
+\newblock Modeling theory of mind and cognitive appraisal with
+  decision-theoretic agents.
+\newblock In {\em Appraisal}, pages 1--30. 2011.
 
 \bibitem{pynadath:teamwork-heterogeneous-agents}
 D.~V. Pynadath and M.~Tambe.
@@ -837,10 +1030,21 @@ J.~A. Russell.
 \newblock Core affect and the psychological construction of emotion.
 \newblock {\em Psychological Review}, 110(1):145--172, 2003.
 
+\bibitem{ryan:intrinsic-extrinsic-motivations}
+R.~M. Ryan and E.~L. Deci.
+\newblock Intrinsic and extrinsic motivations: Classic definitions and new
+  directions.
+\newblock {\em Contemporary Educational Psychology}, 25(1):54--67, 2000.
+
 \bibitem{sander:systems-approach-appraisal}
 D.~Sander, D.~Grandjean, and K.~R. Scherer.
 \newblock A systems approach to appraisal mechanisms in emotion.
 \newblock {\em Neural Networks}, 18(4):317--352, 2005.
+
+\bibitem{scassellati:tom-humanoid-robot}
+B.~Scassellati.
+\newblock Theory of mind for a humanoid robot.
+\newblock {\em Autonomous Robots}, 12(1):13--24, 2002.
 
 \bibitem{scerri:prototype-distributed-teams}
 P.~Scerri, D.~Pynadath, L.~Johnson, P.~Rosenbloom, M.~Si, N.~Schurr, and
@@ -862,6 +1066,11 @@ K.~R. Scherer.
 \newblock On the nature and function of emotion: A component process approach.
 \newblock In K.~R. Scherer and P.~Ekman, editors, {\em Approaches To Emotion},
   pages 293--317. Lawrence Erlbaum, Hillsdale, NJ, 1984.
+
+\bibitem{scherer:vocal-expression}
+K.~R. Scherer.
+\newblock Vocal affect expression: A review and a model for future research.
+\newblock {\em Psychological Bulletin}, 99(2):143--165, 1986.
 
 \bibitem{scherer:sequential-appraisal-process}
 K.~R. Scherer.
@@ -911,16 +1120,38 @@ M.~Scheutz and A.~Sloman.
 \newblock In {\em Intelligent Agent Technology}, pages 200--209. World
   Scientific, 2001.
 
+\bibitem{schultheiss:implicit-motive}
+O.~Schultheiss and J.~Brunstein.
+\newblock {\em Implicit Motives}.
+\newblock Oxford University Press, 2010.
+
 \bibitem{searle:collective}
 J.~R. Searle.
 \newblock Collective intentionality.
 \newblock In {\em Intentions in Communication}, pages 401--415. MIT Press,
   1990.
 
+\bibitem{sellers:comprehensive-emotion-theory}
+M.~Sellers.
+\newblock Toward a comprehensive theory of emotion for biological and
+  artificial agents.
+\newblock {\em Biologically Inspired Cognitive Architectures}, 4:3--26, 2013.
+
 \bibitem{shayganfar:methodology}
 M.~Shayganfar, C.~Rich, and C.~L. Sidner.
 \newblock A design methodology for expressing emotion on robot faces.
 \newblock In {\em IROS}, pages 4577--4583. IEEE, 2012.
+
+\bibitem{shott:emotion-social-life}
+S.~Shott.
+\newblock Emotion and social life: A symbolic interactionist analysis.
+\newblock {\em The American Journal of Sociology}, 84(6):1317--1334, 1979.
+
+\bibitem{si:modeling-appraisal-tom}
+M.~Si, S.~C. Marsella, and D.~V. Pynadath.
+\newblock Modeling appraisal in theory of mind reasoning.
+\newblock {\em Journal of Autonomous Agents and Multi-Agent Systems},
+  20(1):14--31, 2010.
 
 \bibitem{si:modeling-appraisal-tom-journal}
 M.~Si, S.~C. Marsella, and D.~V. Pynadath.
@@ -950,6 +1181,11 @@ H.~Skubch.
 \newblock {\em Modelling and Controlling of Behaviour for Autonomous Mobile
   Robots}.
 \newblock Springer Science & Business Media, 2012.
+
+\bibitem{sloman:motivation}
+A.~Sloman.
+\newblock Motives, mechanisms, and emotions.
+\newblock {\em Cognition \& Emotion}, 1(3):217--233, 1987.
 
 \bibitem{smith:computational-facial-expression}
 C.~A. Smith and H.~S. Scott.
@@ -1004,6 +1240,17 @@ P.~Thagard.
 \newblock Why wasn't o. j. convicted: emotional coherence in legal inference.
 \newblock {\em Cognition and Emotion}, 17(3):361--383, 2003.
 
+\bibitem{thoits:socialogy-emotion}
+P.~A. Thoits.
+\newblock The sociology of emotion.
+\newblock {\em Anuual Review of Sociology}, 15:317--342, 1989.
+
+\bibitem{tiedens:social-life}
+L.~Z. Tiedens and C.~W. Leach.
+\newblock {\em The Social Life of Emotions (Studies in Emotion and Social
+  Interaction)}.
+\newblock Cambridge University Press, 2004.
+
 \bibitem{tomkins:affect}
 S.~S. Tomkins.
 \newblock {\em Affect, Imagery, Consciousness}.
@@ -1055,6 +1302,18 @@ B.~Wilsker.
 \newblock A study of multi-agent collaboration theories.
 \newblock In {\em ISI Research Report}, pages 396--449, 1996.
 
+\bibitem{wisecup:sociology-emotions}
+A.~K. Wisecup, D.~T. Robinson, and L.~Smith-Lovin.
+\newblock {\em The Sociology of Emotions}.
+\newblock SAGE Publications, Inc., 2007.
+
+\bibitem{wright:implementation-agent-architecture}
+I.~Wright and A.~Sloman.
+\newblock {\em {MINDER1:} An Implementation of a Protoemotional Agent
+  Architecture}.
+\newblock Cognitive science research papers. University of Birmingham,
+  Cognitive Science Research Centre, 1997.
+
 \bibitem{yen:cast}
 J.~Yen, J.~Yin, T.~R. Ioerger, M.~S. Miller, D.~Xu, and R.~A. Volz.
 \newblock Cast: Collaborative agents for simulating teamwork.
@@ -1066,6 +1325,11 @@ J.~Yin, M.~S. Miller, T.~R. Ioerger, J.~Yen, and R.~A. Volz.
   systems.
 \newblock In {\em Proceedings of the Fourth International Conference on
   Autonomous Agents}, pages 427--434. ACM, 2000.
+
+\bibitem{zajonc:social-facilitation}
+R.~B. Zajonc.
+\newblock Social facilitation.
+\newblock {\em Science}, 149(3681):269--274, 1965.
 
 \bibitem{zamfirescu:gdss}
 Zamfirescu and Candea.
@@ -1085,5 +1349,15 @@ T.~Zhang, D.~B. Kaber, B.~Zhu, M.~Swangnetr, P.~Mosaly, and L.~Hodge.
 \newblock Service robot feature design effects on user perceptions and
   emotional responses.
 \newblock {\em Intelligent Service Robotics}, 3(2):73--88, 2010.
+
+\bibitem{zhu:emotion-action}
+J.~Zhu and P.~Thagard.
+\newblock Emotion and action.
+\newblock {\em Journal of Philosophical Psychology}, 15(1):19--36, 2002.
+
+\bibitem{zurbriggen:linking-motives-emotions}
+E.~L. Zurbriggen and T.~S. Sturman.
+\newblock Linking motives and emotions: A test of mcclelland's hypotheses.
+\newblock {\em Personality and Social Psychology}, 28(4):521--535, 2002.
 
 \end{thebibliography}

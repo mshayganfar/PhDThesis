@@ -3,56 +3,56 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces A robotic arm collaborating with a human to achieve a shared goal using \textit {Affective Motivational Collaboration Framework}.\relax }}{5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Plans for collaborative action \cite {grosz:collaborative-systems}.\relax }}{13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematic view of the componential theory of emotion \cite {hudlicka:guidelines-emotions}.\relax }}{33}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comprehensive illustration of the CPM of emotion \cite {scherer:dynamic-architecture-emotion,scherer:appraisal-processes}.\relax }}{35}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces A simple visualization of OCC model \cite {occ:structure}.\relax }}{54}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces OCC taxonomy of emotion triggers and emotions \cite {occ:structure}.\relax }}{55}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Russell's suggested affective states based on core affect \cite {russell:core-affect}.\relax }}{56}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Three dimensional model of pleasure, arousal and dominance as tripartite view of experience \cite {mehrabian:pad}.\relax }}{57}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Basic emotions and corresponding expressions.\relax }}{58}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematic view of the componential theory of emotion \cite {hudlicka:guidelines-emotions}.\relax }}{45}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comprehensive illustration of the CPM of emotion \cite {scherer:dynamic-architecture-emotion,scherer:appraisal-processes}.\relax }}{47}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A simple visualization of OCC model \cite {occ:structure}.\relax }}{51}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces OCC taxonomy of emotion triggers and emotions \cite {occ:structure}.\relax }}{52}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Russell's suggested affective states based on core affect \cite {russell:core-affect}.\relax }}{53}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Three dimensional model of pleasure, arousal and dominance as tripartite view of experience \cite {mehrabian:pad}.\relax }}{54}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Basic emotions and corresponding expressions.\relax }}{55}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Representing basic emotions within a dimensional framework \cite {hamann:mapping-discrete-dimensional}.\relax }}{59}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces A rough projection of emotion groups of OCC on the circumplex of affect \cite {ahmadpour:occ-dimensional-comparison}.\relax }}{60}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A rough projection of emotion groups of OCC on the circumplex of affect \cite {ahmadpour:occ-dimensional-comparison}.\relax }}{62}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces {\fontsize {10}{10}\selectfont Collaboration structure (shared plan).}\relax }}{65}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Using Collaboration structure in Appraisal (mechanisms in our framework).\relax }}{68}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Using Appraisals' outcome to influence Collaboration structure (mechanisms in our framework).\relax }}{80}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Cost values indicated by tuples with (second number) and without (first number) the influence of emotions.\relax }}{81}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Conditions for selecting coping strategies\relax }}{89}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Three functions of satisfaction motive (blue: valence = 0, red: valence = positive, green: valence = negative). The x-axis indicates the satisfaction drive's delta value in [-1, +1], and the y-axis indicates the magnitude of satisfaction motive in [-1, +1].\relax }}{91}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Two functions of the achievement motive (blue: valence = +1, red: valence = 0, green: valence = -1, orange: valence = close to zero from negative side). The x-axis indicates the success probability value of achieving a goal which is in [0, +1], and the y-axis indicates the magnitude of acheivement motive in [-1, +1].\relax }}{92}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Two functions of external motive (blue: valence = -1, red: valence = 0, green: valence = +1, orange: valence = close to zero from negative side). The x-axis indicates the success probability value of achieving a proposed goal which is in [0, +1], and the y-axis indicates the magnitude of the acheivement motive in [-1, +1].\relax }}{94}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Appraisal values.\relax }}{97}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Conditions for selecting emotion instances\relax }}{98}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces {\fontsize {10}{10}\selectfont Collaboration structure (shared plan).}\relax }}{74}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Using Collaboration structure in Appraisal (mechanisms in our framework).\relax }}{77}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Using Appraisals' outcome to influence Collaboration structure (mechanisms in our framework).\relax }}{89}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Cost values indicated by tuples with (second number) and without (first number) the influence of emotions.\relax }}{90}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Conditions for selecting coping strategies\relax }}{98}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Three functions of satisfaction motive (blue: valence = 0, red: valence = positive, green: valence = negative). The x-axis indicates the satisfaction drive's delta value in [-1, +1], and the y-axis indicates the magnitude of satisfaction motive in [-1, +1].\relax }}{100}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Two functions of the achievement motive (blue: valence = +1, red: valence = 0, green: valence = -1, orange: valence = close to zero from negative side). The x-axis indicates the success probability value of achieving a goal which is in [0, +1], and the y-axis indicates the magnitude of acheivement motive in [-1, +1].\relax }}{101}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Two functions of external motive (blue: valence = -1, red: valence = 0, green: valence = +1, orange: valence = close to zero from negative side). The x-axis indicates the success probability value of achieving a proposed goal which is in [0, +1], and the y-axis indicates the magnitude of the acheivement motive in [-1, +1].\relax }}{103}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Appraisal values.\relax }}{106}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Conditions for selecting emotion instances\relax }}{107}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Collaboration task model for the evaluation.\relax }}{100}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Expectedness results.\relax }}{103}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces {Example expectedness question.}\relax }}{103}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Controllability results.\relax }}{104}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces {Example controllability question.}\relax }}{105}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Desirability results.\relax }}{105}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces {Example desirability question.}\relax }}{106}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Relevance results.\relax }}{107}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces {Example relevance question.}\relax }}{108}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Computational framework based on Affective Motivational Collaboration theory (arrows indicate primary influences between mechanisms and data flow).\relax }}{110}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Collaboration structure used as the task model.\relax }}{110}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{111}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces The Graphical User Interface (GUI) used during interaction.\relax }}{112}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Experimental setup.\relax }}{116}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces The 31 Likert scale questions organized according to their groups.\relax }}{119}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Results of the Likert scale survey for Likability questions. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{120}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Results of the Likert scale survey for questions related to trust. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{121}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Results of the Likert scale survey for questions related to the robot's performance. The p-value for the difference between the means for questions 10, 11 and 12 are 0.001, 0.063 and $\ll $0.001, respectively.\relax }}{122}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Results of the Likert scale survey for the questions related to the robot's understanding of human emotions. The p-value for the difference between the means is $\ll $0.001 for all of the questions except Question 14, for which the p-value is 0.003.\relax }}{123}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Results of the Likert scale survey for questions related to the robot's understanding of goals. The p-value for the difference between the means for all questions is $\ll $0.001, except Question 19, for which the p-value is 0.006.\relax }}{124}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Results of the Likert scale survey for questions related to the human's feeling about the collaboration. The p-value for the difference between the means is $\ll $0.001 for questions 22, 25, 26, and 28. The p-value for Questions 23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.\relax }}{125}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Results of the Likert scale survey for questions related to satisfaction with collaborative partner. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{126}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Open-ended questionnaire questions and results. (*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)\relax }}{127}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Impact of age on results of Likert scale questions related to likability.\relax }}{130}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Impact of age on results of Likert scale questions related to trust.\relax }}{130}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Impact of age on results of Likert scale questions related to performance.\relax }}{131}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of human's emotions.\relax }}{131}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{132}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{132}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{133}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Collaboration task model for the evaluation.\relax }}{109}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Expectedness results.\relax }}{112}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces {Example expectedness question.}\relax }}{112}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Controllability results.\relax }}{113}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces {Example controllability question.}\relax }}{114}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Desirability results.\relax }}{114}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces {Example desirability question.}\relax }}{115}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Relevance results.\relax }}{116}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces {Example relevance question.}\relax }}{117}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Computational framework based on Affective Motivational Collaboration theory (arrows indicate primary influences between mechanisms and data flow).\relax }}{119}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Collaboration structure used as the task model.\relax }}{119}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces The layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{120}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces The Graphical User Interface (GUI) used during interaction.\relax }}{121}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Experimental setup.\relax }}{125}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces The 31 Likert scale questions organized according to their groups.\relax }}{128}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Results of the Likert scale survey for Likability questions. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{129}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Results of the Likert scale survey for questions related to trust. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{130}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Results of the Likert scale survey for questions related to the robot's performance. The p-value for the difference between the means for questions 10, 11 and 12 are 0.001, 0.063 and $\ll $0.001, respectively.\relax }}{131}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Results of the Likert scale survey for the questions related to the robot's understanding of human emotions. The p-value for the difference between the means is $\ll $0.001 for all of the questions except Question 14, for which the p-value is 0.003.\relax }}{132}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Results of the Likert scale survey for questions related to the robot's understanding of goals. The p-value for the difference between the means for all questions is $\ll $0.001, except Question 19, for which the p-value is 0.006.\relax }}{133}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Results of the Likert scale survey for questions related to the human's feeling about the collaboration. The p-value for the difference between the means is $\ll $0.001 for questions 22, 25, 26, and 28. The p-value for Questions 23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.\relax }}{134}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Results of the Likert scale survey for questions related to satisfaction with collaborative partner. The p-value for the difference between means is $\ll $0.001 for all questions.\relax }}{135}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Open-ended questionnaire questions and results. (*Note: Because we are evaluating whether humans prefer an emotion-aware robot, these results are taken as negative test results when calculating the p-value using the binomial distribution. Only those participants who clearly indicated a preference for the emotion-aware robot are taken as positive test results.)\relax }}{136}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Impact of age on results of Likert scale questions related to likability.\relax }}{139}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Impact of age on results of Likert scale questions related to trust.\relax }}{139}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Impact of age on results of Likert scale questions related to performance.\relax }}{140}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of human's emotions.\relax }}{140}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Impact of age on results of Likert scale questions related to robot's understanding of goals.\relax }}{141}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Impact of age on results of Likert scale questions related to human's feeling about collaboration.\relax }}{141}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Impact of age on results of Likert scale questions related to satisfaction with collaborative partner.\relax }}{142}
 \addvspace {10\p@ }

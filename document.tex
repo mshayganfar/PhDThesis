@@ -314,6 +314,23 @@ contributions:
 
 \chapter{Background and Related Work}
 \label{ch:background}
+In this chapter, I discuss the social and communicative aspects of emotions from
+a psychological point of view. Understanding the social aspects of emotions is
+important in my work, since it is focused on collaboration which is a social
+phenomenon in human environments. I also present the concept of artificial
+emotions and provide some examples of the existing computational models of
+emotions. Then, I provide background about the cognitive appraisal theory of
+emotions as one of two underlying theories in my work as well as related
+concepts such as some examples of cognitive architectures and the influence of
+affect in decision-making procedures. This chapter continues with the
+description of motives and the related theories in psychology and artificial
+intelligence. The role of motives as goal-driven affective components is crucial
+in my work, since the collaboration structure is built based on the concept of a
+shared goal between collaborators. This chapter also contains the background
+about collaboration theory which is the second foundation for my work. It
+provides both theoretical and practical related works about the collaboration
+concept. Finally, a brief description and the related work in psychology and
+artificial intelligence is provided about the concept of theory of mind.
 
 \section{Computational Collaboration Theories}
 The construction of computer systems and robots that are intelligent,
@@ -512,7 +529,7 @@ group plans for each of the constituent actions in the mutually agreed recipe
 
 \begin{figure}[tbh]
   \center
-  \includegraphics[width=0.9\textwidth]{figure/plans.png}
+  \includegraphics[width=0.95\textwidth]{figure/plans.png}
   \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
   \label{fig:plans}
 \end{figure}
@@ -1181,10 +1198,460 @@ theories, although it briefly mentions other approaches, e.g. discrete (basic)
 emotions.
 
 \subsection{Affect and Emotions}
+Emotion affects not only what people do, but also the way they do it
+\cite{cowie:concepts-definitions}. Aristotle in \emph{The Nicomachean Ethics}
+reveals his idea about emotions. He says ``Anyone can become angry--that is
+easy. But to be angry with the right person, to the right degree, at the right
+time, for the right purpose, and in the right way--this is not easy
+\cite{aristotle:ethics}.''
 
-\subsection{Functions of Emotions}
+Intelligence is the process that humans use to explain the different degrees of
+adaptive success in one's behavior. It is a set of mental abilities that enables
+a human to comprehend, reason and adapt in the environment, and as a result, act
+effectively and purposefully in that environment. Emotions play a crucial role
+in humans' explanation of intelligent behaviors. Emotions significantly impact
+the procedures of action generation, execution, control, and interpretation
+\cite{zhu:emotion-action} in different environments. Emotions are conceptualized
+as ongoing processes rooted in dynamic social contexts, which can shape both
+implicit and explicit emotional responses
+\cite{parkinson:emotion-social-interaction}. An emotion is a dynamic episode
+that not only makes changes in cognitive states, but also produces a sequence of
+response patterns on body movements, posture, voice and face
+\cite{scherer:expression-appraisal}. Emotions typically occur in response to an
+event, usually a social event, real, remembered, anticipated, or imagined. They
+are associated with distinctive relational meanings
+\cite{parkinson:holds-emotion}. These relations can be with the individual's
+past experience, the individual's surrounding objects and environment, or the
+other individuals with or without mutual beliefs in a dyadic or a group setting.
+Emotions are evaluative and responsive patterns that serve the function of
+providing appraisal about whether the ongoing event is harmful, threatening or
+beneficial for the well-being of an individual \cite{zhu:emotion-action}.
+Consequently, reasoning and emotional processes have an integral and a
+supportive relationship, rather than an antagonistic and a conflicting one.
 
-\subsection{Motivation and Theory of Mind}
+A better question than what emotions are, is the question of what they can
+do, and how they impact humans' life. Studies show that the decision making of
+humans is not always logical \cite{GrossbergGutowski:affect-cognition}, and in
+fact, not only is pure logic not enough to model human intelligence, but it also
+shows failures when applied in artificial intelligence systems
+\cite{dreyfus:artificial-critique}. Emotions impact fundamental parts of
+cognition including perception, memory, attention and reasoning
+\cite{clore:judgement-regulation}. This impact is caused by the information
+emotions carry about the environment and event values. The influence of emotions
+depends on an individual's focus of attention. For instance, a positive affect
+can cause a positive attitude towards an object if the individual's focus is on
+the object, whereas the same positive affect can be interpreted as a positive
+feedback towards one's partner during the course of a collaboration. As another
+example, a positive feedback can promote certain cognitive processes, or it can
+inhibit other cognitive processes according to the conditions in the environment
+\cite{clore:affective-guidance}. In both cases, emotions play a regulatory role
+for cognitive processes \cite{gross:emotion-generation-regulation}. Some of the
+effects flow from underlying shifts in the way people perceive and think under
+the influence of emotion.
+
+\subsection{Emotion in Social Context}
+\label{section-emotion-social}
+
+In this section, I discuss the importance of studying emotions within a social
+context. This perspective is important in my research because my work is focused
+on collaboration as a particular social setting between individuals.
+Understanding the dynamics of collaboration requires one to understand
+influential underlying components. I have chosen to study emotion as a crucial
+underlying component in humans' social life which will be discussed in detail
+throughout this document.
+
+Emotions are involved in developing social context. Humans are social and most
+of the causations and constitutions of their emotions are social. Brian
+Parkinson in \cite{parkinson:emotions-social} argues that many of the causes of
+emotions are interpersonal and communicative rather than internal and reactive
+phenomena. There are different social aspects of emotions influenced by various
+factors such as social context and social relationship type. For instance, a
+dominant-submissive social relationship can cause and contain different emotions
+with different intensities compared to a reciprocal or a friendship social
+relationship type. As another example, an emotion can be interpreted in a
+certain way when an individual is situated in an environment with other people
+who are expressing a particular emotion.
+
+As mentioned earlier, the social context is an important factor influencing
+one's emotions. A dyadic interaction is one type of a setting in a social
+context. Dyadic interaction tasks allow us to study emotion in a social setting
+\cite{coan:emotion-dyadic}. Dyadic interaction tasks make it possible to examine
+how individuals experience and express emotions during social interactions and
+how emotions shape and are shaped by the reciprocal interactions between
+individuals. In addition, eliciting and monitoring emotional processes yields
+useful information about the role emotion plays in interpersonal relationships.
+Compared with other emotion-eliciting events, events in a dyadic interaction can
+better help us study an ongoing emotional relationship between two individuals
+in addition to their internal emotional and cognitive processes. Dyadic
+interaction tasks are ideal for studying a range of emotional responses because
+of the fairly unstructured conversations between the individuals. Thus, dyadic
+interaction tasks will generate a wide range of emotions in comparison with the
+controlled emotion-eliciting events.
+
+Now that we know the scope of the social setting in this research, I want to
+explain how emotions can be social. There are numerous ways that emotions can be
+social \cite{tiedens:social-life}. There is a consensus on the fact that social
+events and entities surrounding the individual play an essential role in the
+generation of emotion. There are several ways in which other people elicit
+emotional responses in us. One is that we feel the emotions of those around us.
+Also, we have emotions about actions of those people around us. Another is we
+have emotions about the things that happen to other people. Yet another is our
+concern about our relationship with others that elicits emotion in us. The
+groups to which we belong can also elicit our emotions. Moreover, we can feel
+emotion about the success and failure of our own group or of other groups. In
+addition, groups or individuals may make salient cultural concerns or societal
+expectations that can elicit our emotions.
+
+Beside the fact that social context can cause eliciting emotions in individuals,
+social context provides information about what emotion should be expressed, by
+whom, and in what situations. For instance, people are well aware of the
+inappropriateness of expressing too much emotion to acquaintances
+\cite{tiedens:social-life}. However, the social knowledge of emotion expression
+is only partially delivered in an explicit fashion. There are studies on the
+regulatory role of society and social relationships on emotions, showing that
+people's emotions become socialized in implicit and unconscious ways. From this
+perspective, social context can control and direct our attention toward certain
+types of events and away from others.
+
+Humans are emotional and social beings. Their emotions and the social context
+in which they are involved have mutual impacts on each other. But, what if
+humans can share their emotions with others just as they share their thoughts,
+resources and their environment. Sharing an emotion with others may alter the
+experience of an event. For instance, according to the nature of the
+relationship between the individuals, the expression of emotions can either
+restrain them from further interactions or improve their relationship.
+Furthermore, individuals sharing emotions might possess a shared understanding
+of their environment. Socially shared and regulated emotions also provide social
+meanings to the events happening in the environment
+\cite{wisecup:sociology-emotions}. For instance, people are likely to make
+social inferences based on the presence or absence of particular emotions in
+their social environment. Moreover, emotions can provide a basis for judgment
+depending on the individual's relationships with others. In other words,
+emotions can associate or disassociate an individual, therefore, they can change
+or maintain the individual's social relationships \cite{tiedens:social-life}.
+
+Emotions can also play the role of a motivator in a social context. There is a
+subset of social emotions delineated as role-taking emotions in
+\cite{shott:emotion-social-life}. Shott provides two categories of
+\textit{reflexive} (e.g. shame or pride) and \textit{empathic} (e.g., empathy or
+pity) role-taking emotions. The reflexive emotions can motivate the individual's
+self-control which depends on the anticipated reactions of others to the
+individual's behaviors. For instance, guilt might lead the individual to behave
+altruistically to restore a positive social stance for that individual. Empathic
+or vicarious emotions are based on an individual mentally placing himself in
+other's situation to understand how the other feels in that situation. These
+emotions motivate prosocial behaviors to maintain an individual's internal
+well-being \cite{thoits:socialogy-emotion}.
+
+\subsection{Communicating Emotions}
+\label{section-emotion-comm}
+
+I have discussed the importance of social context and its relation to human
+emotions. Humans need to communicate their emotions within the social context
+for different reasons. In \cite{goffman:self-presentation} Goffman argues that
+human behaviors around others are performative which is often intended to convey
+information to others. When human's actions are visible in the social context,
+they behave differently in the presence of the others
+\cite{zajonc:social-facilitation}. The social life of an individual is comprised
+of the individual's internal cognitive competencies and his interactions in the
+society. Lazarus says, if society is a fabric, then emotion is its color
+\cite{lazarus:emotion-adaptation}. Although emotions undeniably have personal
+aspects, they are usually experienced in a social context and acquire their
+significance in relation to this context
+\cite{parkinson:emotion-social-interaction}.
+
+There are several events that can elicit emotions in social contexts. For
+instance, during the interaction the cause of an emotion can be verbal (an
+utterance during conversation), nonverbal (someone's gesture), personal thoughts
+(interpretation of an event), or even emotions themselves (e.g., happiness for a
+partner's sense of pride). An utterance can include content and relational
+meaning. The content carries the information about the topic or the subject of
+the interaction, and the relational meaning reveals the meaning between the
+speaker and the hearer. An emotion might seem to be elicited by the content of
+the utterance, but in fact it is an individual's response to the relational
+meaning \cite{planalp:communicating-emotion}. 
+
+The interpretation of these relational meanings are handled by the appraisal of
+the events. Appraisal processes (see Section \ref{section-appraisal}) also give
+us a way of viewing emotion as social \cite{hooft:sharing-emotions}. Meaning is
+created by an individual's social relationships and experiences in the social
+world. Individuals communicate these meanings through utterances. Utterances in
+emotionally charged conversations, by their very nature, are supposed to inform
+the others about something novel. Novelty is an essential component of an event
+for appraisal. Conversations also possess the concept of consistency because the
+utterances with consistent meaning constitute the individual's underlying
+beliefs. Relevancy is another component of an event that can be assessed by
+appraisal. The degree to which the individual's personal and mutual beliefs are
+strong and related controls emotionally rich social contexts. In other words,
+the more divergent the individual's beliefs, the more effort is required to
+converge (to be understood) which leads to more emotional responses in
+individuals. From another point of view, human speech carries emotional
+information in the semantics and in the speech prosody. The semantics or the
+content of what an individual says includes obvious expression of emotion.
+However, the prosody holds more detailed emotional information by combining
+non-semantic cues in spoken language (e.g., rhythm and intonation)
+\cite{luneski:emotion-aware-interaction}.
+
+Interpretation of the events in the social context requires a baseline for the
+individual's assessment process. Goals as the pillar of collaborative
+interactions can provide this baseline for an individual. Goals are crucial in
+relational meanings of the events in a social context. The facilitation,
+interference and inhibition of goals are each correlated with certain type of
+emotions. In most conversations during collaboration goals can be categorized
+into three different groups: goals related to accomplishing a task, goals to
+reveal one's personal beliefs, and goals to regulate one's social relationships
+\cite{planalp:communicating-emotion}. For instance, for task-related goals,
+utterances related to accomplished tasks reveal joyful relational meaning;
+utterances related to impeded tasks reveal disappointing relational meanings
+which can lead to anger, and utterances related to tasks with no or little
+progress reveal the frustration of the individuals. Lastly, all these emotional
+responses in a social context will not only regulate or maintain individual's
+actions to reveal or hinder an intention, but also can control the way that
+action should be taken.
+
+A successful and effective emotional communication necessitates ongoing
+reciprocal adjustments between interactants that can happen by interpreting each
+other's behaviors \cite{parkinson:emotion-social-interaction}. It not only
+requires proper interpretation of the other's expressions, but also correct
+assessment of the extent to which others can read an individual's expressions.
+In emotional communication, individuals are constantly exchanging messages about
+their mental states, and modifying each other's emotional responses as they
+occur. Individuals perceive other's emotional states through verbal and
+nonverbal responses during the interaction by processing relevant messages.
+Communication dynamics represent the temporal relationship between these
+communicative messages. The verbal and nonverbal messages from one participant
+are better interpreted inside the correct context including the history and the
+ongoing messages from the other individuals. Interpersonal dynamics (also known
+as micro-dynamics in sociology) represent this influence of relationships
+between individuals \cite{louis:communication-dynamic}.
+
+\subsection{Social Functions of Emotions}
+\label{section-emotion-social-functions}
+
+Humans are able to communnicate their emotions in a social context. The social
+functions of emotions are the reason behind why humans try to communicate their
+emotions. In this section, I briefly discuss these social functions of emotions
+since they are directly related to my work. Ekman in
+\cite{ekman:argument-emotions} asserts that the primary function of emotions is
+to mobilize the organism to deal with important interpersonal encounters. Darwin
+in \cite{darwin:emotion-expression} argues the significance of social
+communicative functions of emotions. Emotions describe interpersonal dynamics in
+a way that they can constitute individuals' relationships
+\cite{parkinson:emotions-social, tiedens:social-life}. One aspect of expressing
+and communicating emotion in a social context is to express one's social motives
+and intentions \cite{hess:darwin-emotion}. Another aspect of communicating
+emotions is to reveal the underlying mental states of an individual
+\cite{parkinson:emotion-communication}. In other words, emotions constitute two
+different functionalities of expressing communicative signals associated with
+one's social motives and intentions as well as expressing one's internal states
+and how one feels about something. In \cite{kleef:emotion-regulate-social} Van
+Kleef has discussed the idea of inferential processes with which individuals can
+infer information about others' feelings, relational orientations and behavioral
+intentions based on their emotional expressions. He also argues that emotional
+expressions can impact social interactions by eliciting others' affective
+responses.
+
+Functional accounts vary according to the kind of system being analyzed.
+Therefore, functional approaches to the emotions should vary by level of
+analysis. Social functions of emotions can be analyzed in \textit{individual,
+dyadic, group} and \textit{cultural} levels. My focus in this research is
+on social functions in dyadic interaction (more specifically collaboration); I
+also consider these functions at the individual's level especially when
+interpreting the other collaborator's behaviors. Studies in all these levels
+share a few assumptions about social accounts of emotions. They assume a)
+individuals are social by nature and pursue solutions to survival problems in
+social relationships, b) individuals apply their emotions to coordinate their
+social interactions and relationships to address these survival problems, c)
+emotions are processes mediating the individuals' relations to their dynamic
+environment \cite{keltner:emotion-functions}. In dyadic interactions, studies
+focus on how emotions impact the interactions of individuals in meaningful
+relationships. In \cite{keltner:emotion-functions} Keltner and Haidt discuss
+that in a dyadic setting, researchers mostly focus on communication of emotion
+(e.g.\,Scherer \cite{scherer:vocal-expression}, DePaulo
+\cite{depaulo:nonverbal-behavior}), properties (e.g.\,emotion contingency,
+emotion synchrony) of dyadic emotions (e.g.\,Levenson \& Gottman
+\cite{levenson:affective-exchange}), discourse (e.g.\,Bretherton
+\cite{bretherton:emotions-functionalist}), and attachments (e.g. Hazan \& Shaver
+\cite{hazan:emotion-attachment}).
+
+\subsubsection{Examples of Social Emotions:}
+
+There are many different types of emotions, some of which are considered social,
+since they appear and provide meaning in social context. Here, I provide four
+examples of these emotions as well as their social functions to show how social
+functions of emotions impact individuals and the groups they belong to. And,
+what causes them to be expressed by an individual.\\
+
+\textbf{Guilt} -- The function of guilt is to positively direct our behavior
+toward our group. We feel guilt when we hurt someone in our group, or when we
+fail to reciprocate care or kindness. Guilt motivates us to not hurt people in
+our group and to give back to others who have given to us, and in this way we
+strengthen the survival prospects of both the group and ourselves.
+
+\noindent \textbf{Shame} -- The function of shame is twofold. On the one hand,
+it keeps us within the rules and norms of society by informing us when we have
+done something dishonorable, disgraceful, or in some way condemned by our group.
+On the other hand, it informs the other members of our group that we know that
+we have dishonored ourselves. The main difference between guilt and shame is
+that guilt is focused on a behavior, whereas shame is focused on ourselves.
+
+\noindent \textbf{Embarrassment} -- Embarrassment is related to shame, but
+includes some important differences. Embarrassment can only happen in public,
+whereas shame can happen when we are alone. We can feel embarrassment about very
+minor issues that have no moral implications, such as body odor, whereas shame
+typically concerns more grave issues with moral implications.
+
+\noindent \textbf{Pride} -- The function of pride is to reinforce when we or
+another person has done or represented something the group finds excellent. In
+this way, group values are reinforced and incentivized, which again helps the
+group to function better and motivates us to do things the group values. There
+is a negative form of pride in which our internal appraisal of our worth is
+inflated compared to the opinions of others, which is more correctly called
+hubris.
+
+\section{Affect and Motives}
+
+Motives are essential mental components in decision-making procedures and
+applying them in an affect-driven collaborative agent is part of this thesis'
+contribution. In this section, I provide related works on computational models
+of motivation and discuss the nature of motives. I also explain three of the
+important social motives which will be used in my work. Finally, I discuss that
+humans' beliefs, emotions and motives are related and influence each other. 
+
+Motives' principles and mechanisms, as the reasons behind one's intentions and
+actions, and the influences of motives on cognition have been discussed in
+philosophy, neuroscience, psychology and artificial intelligence
+\cite{bach:motivaitional-system-ai, berridge:motivation-concepts-neuroscience,
+brody:motivation-goal-action, simon:motivation-emotion-cognition,
+sloman:motivation}. There are several examples in AI providing computational
+models for different psychological theories of motivation. Bach's MicroPsi agent
+architecture describes the interaction of emotion, motivation and cognition of
+agents based on Dietrich D$\ddot{o}$rner's Psi theory
+\cite{bach:micropsi-agent-architecture, bach:psi, bach:motivaitional-system-ai,
+bach:next-generation-micropsi}. Merrick and Shafi provide a computational
+model for motivation based on Henry Murray's theory
+\cite{murray:personality-exploration} describing the three important social
+motivations of \textit{achievement, affiliation} and \textit{power}. They focus
+on the role of motivation in a goal-selection mechanism
+\cite{merrick:acheievement-affiliation-power}. There are other examples focusing
+on the impact of motives on different cognitive processes in robots and
+artificial agents \cite{breazeal:motivation-regulating-hri,
+dolores:socially-emotional, deSevin:motivational-model-agent,
+sellers:comprehensive-emotion-theory, velasquez:emotions-motivations-agents,
+wright:implementation-agent-architecture}. The motivation mechanism in my work
+is inspired by Murray's theory and Bach's approach on D$\ddot{o}$rner's theory.
+It is focused on the role of motives in cognitive processes, e.g.,
+intention formation in coping, during collaboration, which will be discussed in
+chapters \ref{chapter-theory} and \ref{computational-framework}.
+
+\subsection{Motives}
+
+A motive consists of an urge (that is, a need indicating a demand) and a goal
+that is related to this urge \cite{bach:psi}. Motives shape cognition and
+behavior \cite{schultheiss:implicit-motive}. To be motivated means to be moved
+to do something \cite{ryan:intrinsic-extrinsic-motivations}. Motives direct
+behaviors towards particular goals, which makes the agent more persistent in
+actions it takes. They also affect cognitive processes by increasing level of
+attention. Motive, as the outcome of the motivation process, initiates, directs
+and maintains goal-oriented behaviors.
+
+Motives are goal-driven and they move the agent towards the attainment of
+corresponding sets of intentions. In other words, motives as an essential part
+of affect can lead the agent to empower an intention. They are essentially
+mechanisms that in light of beliefs tend to produce, modify or select between
+actions and their reciprocal intentions. Some of the motives are transient, like
+helping the Astronaut to hold the panel, while some are long term, like reaching
+to the shared goal during collaboration which in our example is installing solar
+panels and satisfying the Astronaut's needs in the field (see Section
+\ref{example-scenario}).
+
+\subsection{Motivation Theory}
+\label{section-motivation-theory}
+
+There are several motivation theories in psychology \cite{beck:motivation,
+graham:motivation, laming:understanding-motivation}, some of which have received
+little attention as the basis for computational models. In
+\cite{murray:personality-exploration}, Murray described and studied 20 different
+human motives, of which three have received attention in psychology and
+artificial intelligence as social motives
+\cite{merrick:acheievement-affiliation-power,
+zurbriggen:linking-motives-emotions}. The following is a brief description of
+these three social motives, \textit{achievement, affiliation} and \textit{power}
+\cite{atkinson:motives-action-society,zurbriggen:linking-motives-emotions}
+which will be used in my work:
+
+\begin{itemize}
+  \item \textbf{Achievement motivation:}
+  Achievement motivation drives humans to strive for excellence by improving on
+  personal and societal standards of performance. It involves a concern for
+  excellence, for doing one's best. In artificial agents, achievement
+  motivation has potential roles in focusing agent behavior and driving the
+  acquisition of competence.
+  
+  \item \textbf{Affiliation motivation:}
+  Affiliation refers to a class of social interactions that seek contact with
+  formerly unknown or little known individuals and maintain contact with those
+  individuals in a manner that both parties experience as satisfying,
+  stimulating, and enriching. It involves a concern with developing friendly
+  connections with others through the two contrasting emotional components of
+  hope of affiliation and fear of rejection. These two components become more
+  crucial in the collaboration domain due to the importance of social emotions
+  and their impact on beliefs and intentions.
+  
+  \item \textbf{Power motivation:}
+  Power can be described as a domain specific relationship between two
+  individuals, characterized by the asymmetric distribution of social
+  competence, access to resources, or social status. It involves concern with
+  having an impact on other people or on the world at large. There are different
+  aspects of fear or avoidance of power which channel and moderate the
+  expression of power into socially acceptable behavior, working as inhibitions
+  to unseemly tendencies. Power motivation can be considered with respect to the
+  probability of success which makes it relevant to the cognitive appraisal of
+  emotions during collaboration.
+\end{itemize}
+
+In \cite{zurbriggen:linking-motives-emotions} it is shown that success of a
+power goal is associated with anger, confusion and disgust; success at an
+affiliation goal is associated with interest, happiness and feeling loved; and
+success at an achievement goal is associated with interest, surprise, happiness,
+excitement and a sense of focus. In other words, succeeding at a particular
+motive is associated with experiencing particular emotions.
+
+\section{Theory of Mind}
+\label{section-tom-bg}
+
+Theory of mind, as a crucial component in human's social interaction, plays an
+important role in my computational model. It discusses one's beliefs about
+others as intentional agents. Beside the immediate effect, an individual's
+action also depends on the beliefs about other's perception of that action as
+well as the reaction they take. In my work, we use this concept whenever the
+agent needs to anticipate the human's mental states. I will also use the concept
+of \textit{user model} as a standard collection of properties to describe
+others.
+
+The concept of theory of mind has received attention in social psychology and
+artificial intelligence. Eligio et al. explore what collaborators understand
+about each other's emotions and conclude being aware of each other's emotions
+helps collaborators to improve their performance
+\cite{eligio:emotion-understanding-collaboration}. Fussell and Kraus discuss the
+importance of perspective taking in a successful communication in a social
+setting \cite{fussell:knowledge-coordination-communication}. Scassellati
+discusses the importance of attribution of beliefs, goals and desires to others.
+He presents two psychological theories on the development of theory of mind in
+humans and their potential application in building robots with similar
+capabilities \cite{scassellati:tom-humanoid-robot}. Hiatt and Trafton present a
+cognitive model which borrows mechanisms from three different postulates of
+theory of mind and show that their model produces behaviors in accordance with
+various theories of experiences \cite{hiatt:cognitive-model-tom}. Si, Marsella
+and Pynadath discuss PsychSim, an implemented multi-agent-based simulation tool
+for modeling social interaction, which has its own beliefs about its environment
+and a recursive model of other agents \cite{pynadath:modeling-tom-appraisal}.
+They also investigate the computational modeling of appraisal in a multi-agent
+decision-theoretic framework using POMDP based agents
+\cite{si:modeling-appraisal-tom, si:modeling-appraisal-tom-journal}. Since
+applying the concept of theory of mind is crucial in social interaction and
+collaboration, I will employ a simplified mechanism inspired by the existing
+works for our agent.
 
 \section{Computational Models of Emotions}
 There are different types of computational theories of emotion. These theories
@@ -1436,14 +1903,14 @@ as shown in Figure \ref{fig:occ-model}.
 
 \begin{figure}[tbh]
   \center
-  \includegraphics[width=0.9\textwidth]{figure/occ-structure.jpg}
+  \includegraphics[width=0.978\textwidth]{figure/occ-structure.jpg}
   \caption{OCC taxonomy of emotion triggers and emotions \cite{occ:structure}.}
   \label{fig:occ-structure}
 \end{figure}
 
 Finally, the OCC model introduces some global variables of an emotion's
 intensity to distinguish all types of emotions that a person could experience when
-encountering events, agents or objects. These variables are as follows:
+encountering events, agents or objects. These variables are as follows
 
 \begin{enumerate}
 	\item Sense of reality (representing the degree to which the event, agent or
