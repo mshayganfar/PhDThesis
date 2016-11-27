@@ -314,23 +314,27 @@ contributions:
 
 \chapter{Background and Related Work}
 \label{ch:background}
-In this chapter, I discuss the social and communicative aspects of emotions from
-a psychological point of view. Understanding the social aspects of emotions is
-important in my work, since it is focused on collaboration which is a social
-phenomenon in human environments. I also present the concept of artificial
-emotions and provide some examples of the existing computational models of
-emotions. Then, I provide background about the cognitive appraisal theory of
-emotions as one of two underlying theories in my work as well as related
-concepts such as some examples of cognitive architectures and the influence of
-affect in decision-making procedures. This chapter continues with the
-description of motives and the related theories in psychology and artificial
-intelligence. The role of motives as goal-driven affective components is crucial
-in my work, since the collaboration structure is built based on the concept of a
-shared goal between collaborators. This chapter also contains the background
-about collaboration theory which is the second foundation for my work. It
-provides both theoretical and practical related works about the collaboration
-concept. Finally, a brief description and the related work in psychology and
-artificial intelligence is provided about the concept of theory of mind.
+In this chapter, we review the background about the prominent collaboration
+theories including the the SharedPlans theory \cite{grosz:plans-discourse} as
+one of the two theoretical foundations of our work. We also provide the
+similarities and differences between these theories as well as both theoretical
+and practical related work and applications of them. We continue by discussing
+the concept of affective computing and the social and communicative aspects of
+emotions from a psychological point of view. Understanding the social aspects of
+emotions is important in our work, since it is focused on collaboration which is
+a social phenomenon in human environments. We also present the concept of
+artificial emotions and provide some examples of the existing computational
+models of emotions. Then, we provide the background about the cognitive
+appraisal theory of emotions as the second theoretical foundation in our work as
+well as other computational models of emotions and the related concepts such as
+some examples of cognitive architectures and the influence of affect in
+decision-making procedures. This chapter continues with the description of
+motives and the related theories in psychology and artificial intelligence. The
+role of motives as goal-driven affective components is crucial in our work,
+since the collaboration structure is built based on the concept of a shared goal
+between collaborators. Finally, a brief description and the related work in
+psychology and artificial intelligence is provided about the concept of theory
+of mind as another concept used in a small limited-scale in our work.
 
 \section{Computational Collaboration Theories}
 The construction of computer systems and robots that are intelligent,
@@ -442,11 +446,11 @@ Grosz and Sidner in \cite{grosz:plans-discourse} present a model of plans to
 account for how agents with partial knowledge collaborate in the construction of
 a domain plan. They are interested in the type of plans that underlie discourse
 in which the agents are collaborating in order to achieve a shared goal. They
-propose that agents are building a shared plan (see Section \ref{sec:shared}) in
-which participants have a collection of beliefs and intentions about the actions
-in the plan. Agents have a library of how to do their actions, i.e. recipes (see
-Section \ref{sec:recipe}). These recipes might be partially specified as to how
-an action is executed, or contributes to a goal (see Section
+propose that agents are building a shared plan in which participants have a
+collection of beliefs and intentions about the actions in the plan. Agents have
+a library of how to do their actions, i.e. recipes (see Section
+\ref{sec:recipe}). These recipes might be partially specified as to how an
+action is executed, or contributes to a goal (see Section
 \ref{sec:full-partial-plan}). Then, each agent communicates their beliefs and
 intentions by making utterances about what actions they can contribute to the
 shared plan. This communication leads to the construction of a shared plan, and
@@ -456,12 +460,11 @@ the fact that that agent has intention to perform the action, and that each
 action in the plan contributes to the goal \cite{grosz:plans-discourse}
 \cite{lochbaum:plan-models}.
 
-Later in Section \ref{sec:shared}, we are going to see that to successfully
-complete a plan the collaborators must mutually believe that they have a common
-goal and have agreed on a sequence of actions for achieving that goal. They
-should believe that they are both capable of performing their own actions and
-intend to perform those actions while they are committed to the success of their
-plans.
+Later, we are going to see that to successfully complete a plan the
+collaborators must mutually believe that they have a common goal and have agreed
+on a sequence of actions for achieving that goal. They should believe that they
+are both capable of performing their own actions and intend to perform those
+actions while they are committed to the success of their plans.
 
 \subsubsection{Recipes}
 \label{sec:recipe}
@@ -1158,7 +1161,7 @@ to agents for the coordination between team members. Their agent architecture
 provides deliberative and conversational behaviors for collaboration, and it is
 based on both of the SharedPlans and Joint Intentions theories.
 
-\section{Affective Computing}
+\section{Emotions and Affective Computing}
 According to Picard \cite{picard:affective-computing}, the term affective
 computing encapsulates a new approach in Artificial Intelligence, to build
 computers that show human affection. Studies show that the decision making of
@@ -1482,11 +1485,11 @@ examples of these emotions as well as their social functions to show how social
 functions of emotions impact individuals and the groups they belong to. And,
 what causes them to be expressed by an individual.\\
 
-\textbf{Guilt} -- The function of guilt is to positively direct our behavior
-toward our group. We feel guilt when we hurt someone in our group, or when we
-fail to reciprocate care or kindness. Guilt motivates us to not hurt people in
-our group and to give back to others who have given to us, and in this way we
-strengthen the survival prospects of both the group and ourselves.
+\noindent \textbf{Guilt} -- The function of guilt is to positively direct our
+behavior toward our group. We feel guilt when we hurt someone in our group, or
+when we fail to reciprocate care or kindness. Guilt motivates us to not hurt
+people in our group and to give back to others who have given to us, and in this
+way we strengthen the survival prospects of both the group and ourselves.
 
 \noindent \textbf{Shame} -- The function of shame is twofold. On the one hand,
 it keeps us within the rules and norms of society by informing us when we have
@@ -1509,149 +1512,111 @@ is a negative form of pride in which our internal appraisal of our worth is
 inflated compared to the opinions of others, which is more correctly called
 hubris.
 
-\section{Affect and Motives}
+\subsection{Artificial Emotions}
+\label{sec:artificial-emotions}
+Emotions, as an integral part of rational behavior, provide adaptive values for
+an artificial creature. They can control an agent's \textit{attention} to focus
+on the most salient and relevant stimulus to solve the immediate problem. They
+can also help an agent to \textit{monitor its own performance} so that the agent
+can make alterations on goals and plans. Emotions can act as a \textit{memory
+filter} allowing a better recall of the events that are congruent with current
+cognitive and emotional states \cite{brave:emotion-hci}. \textit{Assisting the
+reasoning process} is another role of emotions; they assist the reasoning
+process by directing the cognitive information processes to the perceptual cues.
+Emotions impact the transformation of the agent's \textit{decision-making
+behavior} \cite{gmytrasiewicz:emotion-agent-decision} leading to particular type
+of actions in a certain type of environment \cite{zhu:emotion-action}. Emotions
+can \textit{govern behavior tendencies} by providing immediate emotional
+responses, e.g., avoidance of elaborate reasoning because of an unavailable time
+or an unconcerned situation. Furthermore, emotions \textit{provide support for
+social interactions} by helping the agent to understand others' behaviors as
+well as making expressions of the agent's internal states more perceivable
+during the interaction \cite{gadanho:learning-emotions}.
 
-Motives are essential mental components in decision-making procedures and
-applying them in an affect-driven collaborative agent is part of this thesis'
-contribution. In this section, I provide related works on computational models
-of motivation and discuss the nature of motives. I also explain three of the
-important social motives which will be used in my work. Finally, I discuss that
-humans' beliefs, emotions and motives are related and influence each other. 
+The importance of these values of emotions for designing social agents having
+artificial emotions is prominent. However, the question is what problems are we
+facing in designing an effective social agent? In
+\cite{freitas:artificial-emotions-ready} authors discuss some of these problems
+and provide references speculating on the nature, function and mechanisms of
+emotions. Also, the importance of emotions and the incorporation of emotions in
+intelligent systems as well as implementation of emotions in several multi-agent
+systems are presented in \cite{miranda:emotions-humans-ai}. Scheutz discusses
+the role of emotions in artificial intelligence and how we can determine the
+utility of emotions for the design of an artificial agent
+\cite{scheutz:emotion-role}. In \cite{botelho:machinery-emotions} authors
+present a definition and theory of artificial emotions viewed as a sequential
+process comprising the appraisal of the agent global state; they also show how
+emotions are generated, represented and used in the Salt and Pepper architecture
+for autonomous agents. From the behavior perspective, appropriately timed and
+clearly expressed emotions are a central requirement for believable agents
+\cite{bates:emotion-roles}.
 
-Motives' principles and mechanisms, as the reasons behind one's intentions and
-actions, and the influences of motives on cognition have been discussed in
-philosophy, neuroscience, psychology and artificial intelligence
-\cite{bach:motivaitional-system-ai, berridge:motivation-concepts-neuroscience,
-brody:motivation-goal-action, simon:motivation-emotion-cognition,
-sloman:motivation}. There are several examples in AI providing computational
-models for different psychological theories of motivation. Bach's MicroPsi agent
-architecture describes the interaction of emotion, motivation and cognition of
-agents based on Dietrich D$\ddot{o}$rner's Psi theory
-\cite{bach:micropsi-agent-architecture, bach:psi, bach:motivaitional-system-ai,
-bach:next-generation-micropsi}. Merrick and Shafi provide a computational
-model for motivation based on Henry Murray's theory
-\cite{murray:personality-exploration} describing the three important social
-motivations of \textit{achievement, affiliation} and \textit{power}. They focus
-on the role of motivation in a goal-selection mechanism
-\cite{merrick:acheievement-affiliation-power}. There are other examples focusing
-on the impact of motives on different cognitive processes in robots and
-artificial agents \cite{breazeal:motivation-regulating-hri,
-dolores:socially-emotional, deSevin:motivational-model-agent,
-sellers:comprehensive-emotion-theory, velasquez:emotions-motivations-agents,
-wright:implementation-agent-architecture}. The motivation mechanism in my work
-is inspired by Murray's theory and Bach's approach on D$\ddot{o}$rner's theory.
-It is focused on the role of motives in cognitive processes, e.g.,
-intention formation in coping, during collaboration, which will be discussed in
-chapters \ref{chapter-theory} and \ref{computational-framework}.
+There are several architectures modelling emotions for the purpose of enhancing
+the believability and effectiveness of the agents and robots. But the question
+is how do we model emotions? Hudlika in \cite{hudlicka:modeling-emotion}
+deconstructs the concept of emotion modelling into: (a) fundamental categories
+of processes for emotion generation and emotion effects, and (b) identification
+of some of the fundamental computational tasks required to implement these
+processes. These building blocks can be helpful as a guideline for the
+systematic development of new computational models, or for the assessment of
+existing computational models of emotions as discussed in
+\cite{lin:computational-models-emotion} and \cite{marsella:computational}. There
+are also logical formalizations of emotions and emotional attitudes (including
+speech acts) and corresponding mental states to provide a systematic analysis
+of computational models of emotions \cite{adam:logical-formalization,
+grant:model-intention-formation, guiraud:emotions-formalization-speech-acts}.
 
-\subsection{Motives}
+From another perspective, the necessity of employing emotions in robotics and
+more specifically social robots has been argued in
+\cite{pfeifer:robotics-emotion} and \cite{sloman:robots-emotion}. Social
+robotics and cognitive robotics have many overlapping concepts, especially when
+they focus on interaction between a robot and a human. The relationship between
+cognition and emotion receives more attention due to the mutual influences they
+have on each other
+\cite{morse:robotic-modelling-cognition,scheutz:emotional-states-behavior}
+resulting in many studies. For instance, in \cite{gadanho:learning-emotions}
+authors employ emotions in the learning procedure of a robot, and in
+\cite{broekens:affect-action-selection} and
+\cite{scheutz:emotion-action-behavior} authors discuss the importance of
+emotions in the action selection procedure of an agent or a robot, impacting on
+the behavior arbitration and self-adaptation mechanisms. Ultimately, employing
+artificial emotions will impact the context of human-robot/computer interaction
+\cite{hudlicka:affect-HRI} and how humans and robots understand each other's
+emotions in a social environment
+\cite{kirby:social-robots,canamero:emotion-robot-perspective}. In
+\cite{rumbell:comparative-emotions-functions} authors selected twelve autonomous
+agents that incorporate an emotion mechanism into the action selection procedure
+to compare. They introduced a framework based on correlations between emotion
+roles performed and aspects of emotion mechanisms used to perform those roles.
+Gratch and Marsella also present one method to evaluate a computational model of
+emotion in \cite{gratch:evaluating} which compares behavior of the model against
+human behavior.
 
-A motive consists of an urge (that is, a need indicating a demand) and a goal
-that is related to this urge \cite{bach:psi}. Motives shape cognition and
-behavior \cite{schultheiss:implicit-motive}. To be motivated means to be moved
-to do something \cite{ryan:intrinsic-extrinsic-motivations}. Motives direct
-behaviors towards particular goals, which makes the agent more persistent in
-actions it takes. They also affect cognitive processes by increasing level of
-attention. Motive, as the outcome of the motivation process, initiates, directs
-and maintains goal-oriented behaviors.
+\subsection{Cognitive Architectures}
 
-Motives are goal-driven and they move the agent towards the attainment of
-corresponding sets of intentions. In other words, motives as an essential part
-of affect can lead the agent to empower an intention. They are essentially
-mechanisms that in light of beliefs tend to produce, modify or select between
-actions and their reciprocal intentions. Some of the motives are transient, like
-helping the Astronaut to hold the panel, while some are long term, like reaching
-to the shared goal during collaboration which in our example is installing solar
-panels and satisfying the Astronaut's needs in the field (see Section
-\ref{example-scenario}).
-
-\subsection{Motivation Theory}
-\label{section-motivation-theory}
-
-There are several motivation theories in psychology \cite{beck:motivation,
-graham:motivation, laming:understanding-motivation}, some of which have received
-little attention as the basis for computational models. In
-\cite{murray:personality-exploration}, Murray described and studied 20 different
-human motives, of which three have received attention in psychology and
-artificial intelligence as social motives
-\cite{merrick:acheievement-affiliation-power,
-zurbriggen:linking-motives-emotions}. The following is a brief description of
-these three social motives, \textit{achievement, affiliation} and \textit{power}
-\cite{atkinson:motives-action-society,zurbriggen:linking-motives-emotions}
-which will be used in my work:
-
-\begin{itemize}
-  \item \textbf{Achievement motivation:}
-  Achievement motivation drives humans to strive for excellence by improving on
-  personal and societal standards of performance. It involves a concern for
-  excellence, for doing one's best. In artificial agents, achievement
-  motivation has potential roles in focusing agent behavior and driving the
-  acquisition of competence.
-  
-  \item \textbf{Affiliation motivation:}
-  Affiliation refers to a class of social interactions that seek contact with
-  formerly unknown or little known individuals and maintain contact with those
-  individuals in a manner that both parties experience as satisfying,
-  stimulating, and enriching. It involves a concern with developing friendly
-  connections with others through the two contrasting emotional components of
-  hope of affiliation and fear of rejection. These two components become more
-  crucial in the collaboration domain due to the importance of social emotions
-  and their impact on beliefs and intentions.
-  
-  \item \textbf{Power motivation:}
-  Power can be described as a domain specific relationship between two
-  individuals, characterized by the asymmetric distribution of social
-  competence, access to resources, or social status. It involves concern with
-  having an impact on other people or on the world at large. There are different
-  aspects of fear or avoidance of power which channel and moderate the
-  expression of power into socially acceptable behavior, working as inhibitions
-  to unseemly tendencies. Power motivation can be considered with respect to the
-  probability of success which makes it relevant to the cognitive appraisal of
-  emotions during collaboration.
-\end{itemize}
-
-In \cite{zurbriggen:linking-motives-emotions} it is shown that success of a
-power goal is associated with anger, confusion and disgust; success at an
-affiliation goal is associated with interest, happiness and feeling loved; and
-success at an achievement goal is associated with interest, surprise, happiness,
-excitement and a sense of focus. In other words, succeeding at a particular
-motive is associated with experiencing particular emotions.
-
-\section{Theory of Mind}
-\label{section-tom-bg}
-
-Theory of mind, as a crucial component in human's social interaction, plays an
-important role in my computational model. It discusses one's beliefs about
-others as intentional agents. Beside the immediate effect, an individual's
-action also depends on the beliefs about other's perception of that action as
-well as the reaction they take. In my work, we use this concept whenever the
-agent needs to anticipate the human's mental states. I will also use the concept
-of \textit{user model} as a standard collection of properties to describe
-others.
-
-The concept of theory of mind has received attention in social psychology and
-artificial intelligence. Eligio et al. explore what collaborators understand
-about each other's emotions and conclude being aware of each other's emotions
-helps collaborators to improve their performance
-\cite{eligio:emotion-understanding-collaboration}. Fussell and Kraus discuss the
-importance of perspective taking in a successful communication in a social
-setting \cite{fussell:knowledge-coordination-communication}. Scassellati
-discusses the importance of attribution of beliefs, goals and desires to others.
-He presents two psychological theories on the development of theory of mind in
-humans and their potential application in building robots with similar
-capabilities \cite{scassellati:tom-humanoid-robot}. Hiatt and Trafton present a
-cognitive model which borrows mechanisms from three different postulates of
-theory of mind and show that their model produces behaviors in accordance with
-various theories of experiences \cite{hiatt:cognitive-model-tom}. Si, Marsella
-and Pynadath discuss PsychSim, an implemented multi-agent-based simulation tool
-for modeling social interaction, which has its own beliefs about its environment
-and a recursive model of other agents \cite{pynadath:modeling-tom-appraisal}.
-They also investigate the computational modeling of appraisal in a multi-agent
-decision-theoretic framework using POMDP based agents
-\cite{si:modeling-appraisal-tom, si:modeling-appraisal-tom-journal}. Since
-applying the concept of theory of mind is crucial in social interaction and
-collaboration, I will employ a simplified mechanism inspired by the existing
-works for our agent.
+There are several integrated cognitive architectures trying to produce all
+aspects of behavior as a single system while remaining constant across different
+domains \cite{anderson:act-r, laird:soar}. The comparison of underlying
+philosophy and functional description of the most prominent cognitive
+architectures have been surveyed; several criteria are provided to evaluate such
+architectures
+\cite{chong:cognitive-architectures-survey,langley:cognitive-architectures,
+thorisson:cognitive-architectures-autonomy}. The necessity of integrating these
+cognitive architectures with robots has been discussed from the perspective of
+developmental psychology \cite{asada:cognitive-robotics-humanoid,
+d'mello:computational-functional-modeling,
+kelley:cognitive-robotics-psychology}. There are also many examples emphasizing
+the importance of cognitive robotics from this perspective. Some of these
+cognitive architectures are biologically inspired, e.g., \textit{eBICA}
+\cite{samsonovich:emotional-biologically-architecture}, or
+\cite{baxter:cognitive-architecture-hri} and
+\cite{ray:self-sustaining-architecture}, while some others are inspired by
+psychological theories, e.g., $\MakeUppercase{ACT-R\Phi}$
+\cite{dancy:actR-physiology-affect}, or
+\cite{mirolli:vygotskyan-cognitive-robotics} and
+\cite{dominey:shared-intention-cognition}, in which some of them also
+incorporate the concept of affect in their design
+\cite{cai:affective-model-psi}.
 
 \section{Computational Models of Emotions}
 There are different types of computational theories of emotion. These theories
@@ -2406,9 +2371,153 @@ dimensional models can influence cognitive processes. For example, HOTCO 2
 \cite{thagard:emotional-coherence} allows explanations to be biased by
 dimensional affect \cite{marsella:computational-models}.
 
+\section{Affect and Motives}
+
+Motives are essential mental components in decision-making procedures and
+applying them in an affect-driven collaborative agent is part of this thesis'
+contribution. In this section, I provide related works on computational models
+of motivation and discuss the nature of motives. I also explain three of the
+important social motives which will be used in my work. Finally, I discuss that
+humans' beliefs, emotions and motives are related and influence each other. 
+
+Motives' principles and mechanisms, as the reasons behind one's intentions and
+actions, and the influences of motives on cognition have been discussed in
+philosophy, neuroscience, psychology and artificial intelligence
+\cite{bach:motivaitional-system-ai, berridge:motivation-concepts-neuroscience,
+brody:motivation-goal-action, simon:motivation-emotion-cognition,
+sloman:motivation}. There are several examples in AI providing computational
+models for different psychological theories of motivation. Bach's MicroPsi agent
+architecture describes the interaction of emotion, motivation and cognition of
+agents based on Dietrich D$\ddot{o}$rner's Psi theory
+\cite{bach:micropsi-agent-architecture, bach:psi, bach:motivaitional-system-ai,
+bach:next-generation-micropsi}. Merrick and Shafi provide a computational
+model for motivation based on Henry Murray's theory
+\cite{murray:personality-exploration} describing the three important social
+motivations of \textit{achievement, affiliation} and \textit{power}. They focus
+on the role of motivation in a goal-selection mechanism
+\cite{merrick:acheievement-affiliation-power}. There are other examples focusing
+on the impact of motives on different cognitive processes in robots and
+artificial agents \cite{breazeal:motivation-regulating-hri,
+dolores:socially-emotional, deSevin:motivational-model-agent,
+sellers:comprehensive-emotion-theory, velasquez:emotions-motivations-agents,
+wright:implementation-agent-architecture}. The motivation mechanism in my work
+is inspired by Murray's theory and Bach's approach on D$\ddot{o}$rner's theory.
+It is focused on the role of motives in cognitive processes, e.g.,
+intention formation in coping, during collaboration, which will be discussed in
+chapters \ref{chapter-theory} and \ref{computational-framework}.
+
+\subsection{Motives}
+
+A motive consists of an urge (that is, a need indicating a demand) and a goal
+that is related to this urge \cite{bach:psi}. Motives shape cognition and
+behavior \cite{schultheiss:implicit-motive}. To be motivated means to be moved
+to do something \cite{ryan:intrinsic-extrinsic-motivations}. Motives direct
+behaviors towards particular goals, which makes the agent more persistent in
+actions it takes. They also affect cognitive processes by increasing level of
+attention. Motive, as the outcome of the motivation process, initiates, directs
+and maintains goal-oriented behaviors.
+
+Motives are goal-driven and they move the agent towards the attainment of
+corresponding sets of intentions. In other words, motives as an essential part
+of affect can lead the agent to empower an intention. They are essentially
+mechanisms that in light of beliefs tend to produce, modify or select between
+actions and their reciprocal intentions. Some of the motives are transient, like
+helping the Astronaut to hold the panel, while some are long term, like reaching
+to the shared goal during collaboration which in our example is installing solar
+panels and satisfying the Astronaut's needs in the field (see Section
+\ref{example-scenario}).
+
+\subsection{Motivation Theory}
+\label{section-motivation-theory}
+
+There are several motivation theories in psychology \cite{beck:motivation,
+graham:motivation, laming:understanding-motivation}, some of which have received
+little attention as the basis for computational models. In
+\cite{murray:personality-exploration}, Murray described and studied 20 different
+human motives, of which three have received attention in psychology and
+artificial intelligence as social motives
+\cite{merrick:acheievement-affiliation-power,
+zurbriggen:linking-motives-emotions}. The following is a brief description of
+these three social motives, \textit{achievement, affiliation} and \textit{power}
+\cite{atkinson:motives-action-society,zurbriggen:linking-motives-emotions}
+which will be used in my work:
+
+\begin{itemize}
+  \item \textbf{Achievement motivation:}
+  Achievement motivation drives humans to strive for excellence by improving on
+  personal and societal standards of performance. It involves a concern for
+  excellence, for doing one's best. In artificial agents, achievement
+  motivation has potential roles in focusing agent behavior and driving the
+  acquisition of competence.
+  
+  \item \textbf{Affiliation motivation:}
+  Affiliation refers to a class of social interactions that seek contact with
+  formerly unknown or little known individuals and maintain contact with those
+  individuals in a manner that both parties experience as satisfying,
+  stimulating, and enriching. It involves a concern with developing friendly
+  connections with others through the two contrasting emotional components of
+  hope of affiliation and fear of rejection. These two components become more
+  crucial in the collaboration domain due to the importance of social emotions
+  and their impact on beliefs and intentions.
+  
+  \item \textbf{Power motivation:}
+  Power can be described as a domain specific relationship between two
+  individuals, characterized by the asymmetric distribution of social
+  competence, access to resources, or social status. It involves concern with
+  having an impact on other people or on the world at large. There are different
+  aspects of fear or avoidance of power which channel and moderate the
+  expression of power into socially acceptable behavior, working as inhibitions
+  to unseemly tendencies. Power motivation can be considered with respect to the
+  probability of success which makes it relevant to the cognitive appraisal of
+  emotions during collaboration.
+\end{itemize}
+
+In \cite{zurbriggen:linking-motives-emotions} it is shown that success of a
+power goal is associated with anger, confusion and disgust; success at an
+affiliation goal is associated with interest, happiness and feeling loved; and
+success at an achievement goal is associated with interest, surprise, happiness,
+excitement and a sense of focus. In other words, succeeding at a particular
+motive is associated with experiencing particular emotions.
+
+\section{Theory of Mind}
+\label{section-tom-bg}
+
+Theory of mind, as a crucial component in human's social interaction, plays an
+important role in my computational model. It discusses one's beliefs about
+others as intentional agents. Beside the immediate effect, an individual's
+action also depends on the beliefs about other's perception of that action as
+well as the reaction they take. In my work, we use this concept whenever the
+agent needs to anticipate the human's mental states. I will also use the concept
+of \textit{user model} as a standard collection of properties to describe
+others.
+
+The concept of theory of mind has received attention in social psychology and
+artificial intelligence. Eligio et al. explore what collaborators understand
+about each other's emotions and conclude being aware of each other's emotions
+helps collaborators to improve their performance
+\cite{eligio:emotion-understanding-collaboration}. Fussell and Kraus discuss the
+importance of perspective taking in a successful communication in a social
+setting \cite{fussell:knowledge-coordination-communication}. Scassellati
+discusses the importance of attribution of beliefs, goals and desires to others.
+He presents two psychological theories on the development of theory of mind in
+humans and their potential application in building robots with similar
+capabilities \cite{scassellati:tom-humanoid-robot}. Hiatt and Trafton present a
+cognitive model which borrows mechanisms from three different postulates of
+theory of mind and show that their model produces behaviors in accordance with
+various theories of experiences \cite{hiatt:cognitive-model-tom}. Si, Marsella
+and Pynadath discuss PsychSim, an implemented multi-agent-based simulation tool
+for modeling social interaction, which has its own beliefs about its environment
+and a recursive model of other agents \cite{pynadath:modeling-tom-appraisal}.
+They also investigate the computational modeling of appraisal in a multi-agent
+decision-theoretic framework using POMDP based agents
+\cite{si:modeling-appraisal-tom, si:modeling-appraisal-tom-journal}. Since
+applying the concept of theory of mind is crucial in social interaction and
+collaboration, I will employ a simplified mechanism inspired by the existing
+works for our agent.
+
 \section{Conclusion}
 
-In this response, we started by defining the concept of collaboration based
+In this chapter, we started by defining the concept of collaboration based
 on Grosz and Sidner's work \cite{grosz:plans-discourse}, and listed a number of
 collaboration properties. Then, we provided the background of two prominent
 collaboration theories which helped develop a better understanding of the actual
@@ -2439,13 +2548,15 @@ Although all these theories are well-defined and properly introduce
 collaboration concepts, they mostly explain the structure of a collaboration and
 they lack the underlying domain-independent processes with which collaborative
 procedures could be defined more systematically and effectively in different
-applications.\\
+applications.
 
-
-In this response, we started by looking at the description of affective
-computing and the importance of the concept of emotion in general. Then, we
-provided our four categories of computational models of emotions which we can
-consider for the applications of affective computing.
+Later, we started by looking at the description of affective computing and the
+importance of the concept of emotion in general and in social context. We also
+discussed the importance of communicating emotions as well as emotions' social
+functions. Then, we provided some examples of agents and robots using artificial
+emotions in their decision making process. We also briefly provided a few
+examples of cognitive architectures producing different aspects of behaviors in
+robotics.
 
 There are major theories of emotions explaining the concept of emotion. We
 discussed these major theories in detail separately, providing their
