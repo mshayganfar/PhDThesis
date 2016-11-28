@@ -314,6 +314,10 @@ contributions:
 
 \chapter{Background and Related Work}
 \label{ch:background}
+
+\vspace*{-5mm}
+\section{Introduction}
+\vspace*{-3mm}
 In this chapter, we review the background about the prominent collaboration
 theories including the the SharedPlans theory \cite{grosz:plans-discourse} as
 one of the two theoretical foundations of our work. We also provide the
@@ -2732,7 +2736,8 @@ procedure requires a baseline and an assessment procedure. While the components
 of the collaboration structure, e.g., shared plan, provide the baseline,
 emotion-related processes (e.g., appraisal) provide the assessment procedure.
 
-\subsection{Scenario}
+\section{Example Scenario}
+\label{sec:example-scenario}
 We now provide the following scenario in a robotic domain to draw your attention
 to the collaborative interactions. In the scenario, there is a mission
 specialist astronaut, who has had a high success rate in accomplishing space
@@ -2747,8 +2752,6 @@ a very low failure rate. It is capable of communicating with the astronaut and
 understanding astronaut's nonverbal behavior. It has the ability to identify and
 assess its own emotions and those of the astronaut.
 
-\subsection{Example of a Collaborative Interaction}
-\label{sec:example-scenario}
 The robot and the astronaut will collaborate with each other to achieve their
 shared goal, which is to install two solar panels. They will face various
 difficulties, ranging from the task being unpleasant and challenging to
@@ -2922,12 +2925,103 @@ collaboration:\\
   12. \textbf{\textit{Robot}}: I see. But, I can help you with the measurement  
   and we can finish the task as originally planned.\\
 
-\section{Components of Architecture}
+\section{Events}
+\label{sec:events}
 
-\subsection{Mechanisms}
+The \textit{events} occurring in this collaborative environment include a)
+\textit{utterances} spoken by the collaborators, b) \textit{primitive actions}
+executed, deferred, or aborted, and c) observable \textit{emotion instances}.
+These events are the events that our affective collaborative agent perceives. We
+will discuss below the operation of individual processes in our theory based on
+these events. Each of the following six sub-sections describe how an individual
+mechanism in Figure \ref{fig:theory} handles the events.
+
+\subsection{Collaboration Mechanism and Events}
+
+The Collaboration mechanism is responsible for maintaining the internal
+structure of a collaboration, including the focus of attention, constraints on
+actions, updating the shared plan and, in general, monitoring of the
+collaboration. All of these structures require updating each time the self
+receives an external event. For instance, an utterance by the other can impact
+the self's focus of attention during the collaboration, or the effect of a
+primitive action can influence the self's view of an impasse on a task. As
+another example, the perception of the other's emotion instance can cause
+significant changes in the self's collaboration monitoring.
+
+\subsection{Appraisal Mechanism and Events}
+\label{sec:appraisal-event}
+
+The other's \textit{utterances}, the effect(s) of the collaborators'
+\textit{primitive actions}, and the other's \textit{emotion instances}
+(expressed nonverbally) are the three types of events perceived by the self
+during collaboration. The Appraisal mechanism receives the output of the
+Perception and Collaboration mechanisms as well as the requisite Mental States
+related to current event. It appraises the event, in terms of appraisal
+variables using the collaboration structure and the history of the self's
+related Mental States. The collaboration structure contains information about
+the collaboration's shared plan and the collaborators' shared goal, the temporal
+and the hierarchical constraints of the tasks, and the current focus of
+attention. Moreover, ehe self progressively generates and updates various types
+of Mental States (discussed in Section \ref{sec:mental-states-attributes})
+during collaboration. The occurrence of a new event causes a change in the
+self's Mental States. The construct of the new mental state, e.g., beliefs, are
+semantically connected to the older ones. The Appraisal mechanism uses the
+history of the Mental States to consistently evaluate a new external event.
+
+\subsection{Coping with Events}
+
+Events do not directly cause the self's Coping mechanism to operate. Instead, it
+is the formation of Mental States that cause the Coping mechanism to choose an
+appropriate cognitive response to these events. The cognitive responses (also
+known as ``coping strategies'') are considered to act upon the self's
+relationship to the world and its own Mental States. Events also trigger other
+processes, which impact the self's Mental States. The changes in Mental States
+cause the Coping mechanism to provide a consistent and appropriate cognitive
+responses to the world. For instance, suppose the self perceives an utterance
+and evaluates it in terms of the appraisal variables. The values of these
+variables and the corresponding emotion instances will cause new beliefs and
+intentions to be formed, which then cause the Coping mechanism to appropriately
+choose the self's behavior.
+
+\subsection{Motivation and Events}
+The Motivation mechanism acts to regulate the self's Mental States and
+goal-directed behaviors for internal and social purposes. The Appraisal mechanism
+evaluates the state of self, the environment, or the anticipated mental state of
+the other. In each of these cases, the outcome of the Appraisal mechanism might
+indicate the need for internal or behavioral regulation. In such cases, the
+Motivation mechanism uses the Mental States associated with the state of self,
+the environment or the other's anticipated Mental States as well as the pattern
+provided by the Appraisal process to generate motives aligned with private or
+shared goals. Thus, via the Appraisal mechanism the Motivation mechanism
+implicitly responds to the events. The attributes of the generated motives (see
+Section \ref{sec:mental-states-attributes}) will be updated every time a new
+event occurs. For instance, the Appraisal mechanism may evaluate the outcome of
+the current task as \textit{unexpected, undesirable, uncontrollable} and
+\textit{urgent} which is indicative of the failure of a task. Then, the
+Motivation mechanism provides goal-directed motives, each of which can
+influence the formation of an intention.
+
+\subsection{Theory of Mind and Events}
+Theory of Mind operates when an event occurs and the self wants to infer and
+interpret the other's mental state. Thus, Theory of Mind helps the self to
+choose the behavior best matched to the other's anticipated Mental States.
+The Theory of Mind mechanism infers the mental state of the other, which helps
+the self to update the user model of the other. The Motivation and the Appraisal
+mechanisms are also involved in this procedure. For instance, suppose the self
+infers the other's mental state through a reverse appraisal procedure. The
+Motivation mechanism includes another inverse procedure to infer the other's
+active motives, which can lead to inferring the other's goal, beliefs, motives
+and intentions.
 
 \subsection{Functions of Emotions}
 \label{sec:emotion-functions}
+
+\subsubsection{Alarm}
+\label{sub:emotion-alarm}
+
+\section{Components of Architecture}
+
+\subsection{Mechanisms}
 
 \subsection{Mental States}
 \label{sec:mental-states}

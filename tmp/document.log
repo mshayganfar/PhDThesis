@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  27 NOV 2016 20:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  27 NOV 2016 21:01
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -845,7 +845,7 @@ Chapter 2.
 [7
 
 ] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 399--403
+Underfull \hbox (badness 10000) in paragraph at lines 403--407
 
  []
 
@@ -853,11 +853,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--403
 File: figure/plans.png Graphic file (type png)
 
 <use figure/plans.png>
-Package pdftex.def Info: figure/plans.png used on input line 535.
+Package pdftex.def Info: figure/plans.png used on input line 539.
 (pdftex.def)             Requested size: 405.07161pt x 253.39766pt.
  [13 <./figure/plans.png (PNG copy)>] [14] [15] [16]
 [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 747--752
+Underfull \hbox (badness 10000) in paragraph at lines 751--756
 
  []
 
@@ -869,22 +869,22 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1112
 
  []
 
 [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1109--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1144
 
  []
 
 [29] [30] [31] [32] [33] [34] [35] [36]
 
 LaTeX Warning: Reference `section-appraisal' on page 37 undefined on input line
- 1378.
+ 1382.
 
 [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1482--1487
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1491
 
  []
 
@@ -892,7 +892,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1482--1487
 File: figure/cpm.png Graphic file (type png)
 
 <use figure/cpm.png>
-Package pdftex.def Info: figure/cpm.png used on input line 1646.
+Package pdftex.def Info: figure/cpm.png used on input line 1650.
 (pdftex.def)             Requested size: 341.11533pt x 258.69315pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -906,10 +906,10 @@ Missing character: There is no ô in font cmr12!
 File: figure/comprehensive-CPM.png Graphic file (type png)
 
 <use figure/comprehensive-CPM.png>
-Package pdftex.def Info: figure/comprehensive-CPM.png used on input line 1719.
+Package pdftex.def Info: figure/comprehensive-CPM.png used on input line 1723.
 (pdftex.def)             Requested size: 426.39255pt x 301.29166pt.
  [46 <./figure/comprehensive-CPM.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1747--1752
+Underfull \hbox (badness 10000) in paragraph at lines 1751--1756
 
  []
 
@@ -921,7 +921,7 @@ Missing character: There is no ô in font cmr12!
 File: figure/occ.png Graphic file (type png)
 
 <use figure/occ.png>
-Package pdftex.def Info: figure/occ.png used on input line 1832.
+Package pdftex.def Info: figure/occ.png used on input line 1836.
 (pdftex.def)             Requested size: 426.39255pt x 194.0148pt.
  [49]
 Missing character: There is no ‚ in font cmr12!
@@ -932,21 +932,21 @@ Missing character: There is no ô in font cmr12!
 File: figure/occ-structure.jpg Graphic file (type jpg)
 
 <use figure/occ-structure.jpg>
-Package pdftex.def Info: figure/occ-structure.jpg used on input line 1871.
+Package pdftex.def Info: figure/occ-structure.jpg used on input line 1875.
 (pdftex.def)             Requested size: 417.01054pt x 411.85297pt.
  [50 <./figure/occ.png (PNG copy)>] [51 <./figure/occ-structure.jpg>] <figure/c
 ore-affect.png, id=225, 805.0075pt x 638.385pt>
 File: figure/core-affect.png Graphic file (type png)
 
 <use figure/core-affect.png>
-Package pdftex.def Info: figure/core-affect.png used on input line 1909.
+Package pdftex.def Info: figure/core-affect.png used on input line 1913.
 (pdftex.def)             Requested size: 298.47348pt x 236.69553pt.
  [52 <./figure/core-affect.png (PNG copy)>]
 <figure/dimensional2.png, id=229, 762.85pt x 632.3625pt>
 File: figure/dimensional2.png Graphic file (type png)
 
 <use figure/dimensional2.png>
-Package pdftex.def Info: figure/dimensional2.png used on input line 1928.
+Package pdftex.def Info: figure/dimensional2.png used on input line 1932.
 (pdftex.def)             Requested size: 255.83812pt x 212.07674pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -959,10 +959,10 @@ Missing character: There is no ù in font cmr12!
 File: figure/basic-emotions.jpg Graphic file (type jpg)
 
 <use figure/basic-emotions.jpg>
-Package pdftex.def Info: figure/basic-emotions.jpg used on input line 1960.
+Package pdftex.def Info: figure/basic-emotions.jpg used on input line 1964.
 (pdftex.def)             Requested size: 383.75069pt x 342.37497pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1968--2001
+Underfull \hbox (badness 10000) in paragraph at lines 1972--2005
 
  []
 
@@ -976,10 +976,10 @@ File: figure/dimensional-discrete.png Graphic file (type png)
 
 <use figure/dimensional-discrete.png>
 Package pdftex.def Info: figure/dimensional-discrete.png used on input line 209
-0.
+4.
 (pdftex.def)             Requested size: 383.75069pt x 270.4394pt.
 
-Overfull \hbox (2.14745pt too wide) in paragraph at lines 2096--2105
+Overfull \hbox (2.14745pt too wide) in paragraph at lines 2100--2109
 [][]\OT1/cmr/m/n/12 Also, ba-sic emo-tion the-ory fails to ac-count for af-fect
  that lacks object-directedness
  []
@@ -994,30 +994,30 @@ File: figure/occ-circumplex-mapping.png Graphic file (type png)
 
 <use figure/occ-circumplex-mapping.png>
 Package pdftex.def Info: figure/occ-circumplex-mapping.png used on input line 2
-190.
+194.
 (pdftex.def)             Requested size: 383.75069pt x 291.97841pt.
  [61 <./figure/occ-circumplex-mapping.png (PNG copy)>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 2237--2247
+Underfull \hbox (badness 10000) in paragraph at lines 2241--2251
 
  []
 
 [62] [63] [64] [65]
 
 LaTeX Warning: Reference `chapter-theory' on page 66 undefined on input line 24
-07.
+11.
 
 
 LaTeX Warning: Reference `computational-framework' on page 66 undefined on inpu
-t line 2407.
+t line 2411.
 
 [66]
 
 LaTeX Warning: Reference `example-scenario' on page 67 undefined on input line 
-2428.
+2432.
 
 [67] [68] [69] [70] [71] [72]
 Chapter 3.
@@ -1026,7 +1026,7 @@ File: figure/theory-general-croped.pdf Graphic file (type pdf)
 
 <use figure/theory-general-croped.pdf>
 Package pdftex.def Info: figure/theory-general-croped.pdf used on input line 26
-05.
+09.
 (pdftex.def)             Requested size: 417.55896pt x 287.0718pt.
 
 
@@ -1035,108 +1035,108 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [73
 
 ] [74 <./figure/theory-general-croped.pdf>] [75] [76] [77]
-Underfull \hbox (badness 10000) in paragraph at lines 2752--2763
+Underfull \hbox (badness 10000) in paragraph at lines 2755--2766
 
  []
 
 [78] [79] [80]
-Underfull \hbox (badness 10000) in paragraph at lines 2856--2863
+Underfull \hbox (badness 10000) in paragraph at lines 2859--2866
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2867--2869
+Underfull \hbox (badness 10000) in paragraph at lines 2870--2872
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2870--2874
+Underfull \hbox (badness 10000) in paragraph at lines 2873--2877
 
  []
 
 [81]
-Underfull \hbox (badness 10000) in paragraph at lines 2878--2880
+Underfull \hbox (badness 10000) in paragraph at lines 2881--2883
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2881--2884
+Underfull \hbox (badness 10000) in paragraph at lines 2884--2887
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2889--2891
+Underfull \hbox (badness 10000) in paragraph at lines 2892--2894
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2906
+Underfull \hbox (badness 10000) in paragraph at lines 2895--2909
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2910--2912
+Underfull \hbox (badness 10000) in paragraph at lines 2913--2915
 
  []
 
 [82]
-Underfull \hbox (badness 10000) in paragraph at lines 2913--2917
+Underfull \hbox (badness 10000) in paragraph at lines 2916--2920
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2922--2924
+Underfull \hbox (badness 10000) in paragraph at lines 2925--2927
 
  []
 
-[83]
+[83] [84] [85] [86]
 Chapter 4.
-[84
+[87
 
 ]
-<figure/collaborationStructure-small-croped.pdf, id=349, 356.33125pt x 174.6525
+<figure/collaborationStructure-small-croped.pdf, id=358, 356.33125pt x 174.6525
 pt>
 File: figure/collaborationStructure-small-croped.pdf Graphic file (type pdf)
  <use figure/collaborationStructure-small-croped.pdf>
 Package pdftex.def Info: figure/collaborationStructure-small-croped.pdf used on
- input line 2988.
+ input line 3082.
 (pdftex.def)             Requested size: 413.60129pt x 202.73294pt.
- [85 <./figure/collaborationStructure-small-croped.pdf>] [86]
-<figure/appraisal-collaboration-croped.pdf, id=379, 200.75pt x 71.26625pt>
+ [88 <./figure/collaborationStructure-small-croped.pdf>] [89]
+<figure/appraisal-collaboration-croped.pdf, id=388, 200.75pt x 71.26625pt>
 File: figure/appraisal-collaboration-croped.pdf Graphic file (type pdf)
 
 <use figure/appraisal-collaboration-croped.pdf>
 Package pdftex.def Info: figure/appraisal-collaboration-croped.pdf used on inpu
-t line 3093.
+t line 3187.
 (pdftex.def)             Requested size: 341.11533pt x 121.114pt.
- [87] [88 <./figure/appraisal-collaboration-croped.pdf>] [89] [90]
+ [90] [91 <./figure/appraisal-collaboration-croped.pdf>] [92] [93]
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 3215.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 3309.
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 3215
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 3309
 .
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 3215.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 3309.
 
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 3215.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 3309.
 
 
-Overfull \hbox (4.75653pt too wide) in paragraph at lines 3232--3239
+Overfull \hbox (4.75653pt too wide) in paragraph at lines 3326--3333
 [][]\OT1/cmr/m/n/12 In equa-tion 4.2[], the sub-script \OT1/cmr/m/it/12 k \OT1/
 cmr/m/n/12 refers to the \OT1/cmr/m/it/12 known \OT1/cmr/m/n/12 goal-related fa
 c-tors (\OT1/cmr/m/sc/12 satisfied
  []
 
-[91]
+[94]
 ! Undefined control sequence.
 <argument> ...ize {8}{9}\selectfont BLOCKED}) \OR 
                                                   \\ \hspace *{5mm}(\textit ...
-l.3322 ...ontsize{8}{9}\selectfont INAPPLICABLE})}
+l.3416 ...ontsize{8}{9}\selectfont INAPPLICABLE})}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1147,7 +1147,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ize {8}{9}\selectfont PENDING}) \OR 
                                                   \\ \hspace *{5mm}(\textit ...
-l.3327 ...\fontsize{8}{9}\selectfont INPROGRESS})}
+l.3421 ...\fontsize{8}{9}\selectfont INPROGRESS})}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1158,7 +1158,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ize {8}{9}\selectfont BLOCKED}) \OR 
                                                   \\ \hspace *{10mm}(\textit...
-l.3338 ...ontsize{8}{9}\selectfont INAPPLICABLE})}
+l.3432 ...ontsize{8}{9}\selectfont INAPPLICABLE})}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1169,7 +1169,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ize {8}{9}\selectfont PENDING}) \OR 
                                                   \\ \hspace {1mm} \hspace *...
-l.3343 ...\fontsize{8}{9}\selectfont INPROGRESS})}
+l.3437 ...\fontsize{8}{9}\selectfont INPROGRESS})}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1177,11 +1177,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[92] [93]
+[95] [96]
 ! Undefined control sequence.
 <argument> ...(\mathit {g}_{t})}\hspace *{2mm}\OR 
                                                   $ \\ \hspace *{13mm}$\text...
-l.3407 ...ccessaryFocusShift}{(\mathit{g}_{t})})$}
+l.3501 ...ccessaryFocusShift}{(\mathit{g}_{t})})$}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1189,266 +1189,266 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[94] [95]
+[97] [98]
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 3506.
+(Font)              using `OT1/cmr/bx/n' instead on input line 3600.
 
-[96] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 3659--3668
+[99] [100]
+Underfull \hbox (badness 10000) in paragraph at lines 3753--3762
 
  []
 
-[98] <figure/goal_management_croped.pdf, id=435, 200.75pt x 85.31876pt>
+[101] <figure/goal_management_croped.pdf, id=444, 200.75pt x 85.31876pt>
 File: figure/goal_management_croped.pdf Graphic file (type pdf)
 
 <use figure/goal_management_croped.pdf>
 Package pdftex.def Info: figure/goal_management_croped.pdf used on input line 3
-713.
+807.
 (pdftex.def)             Requested size: 341.11533pt x 144.99567pt.
- [99]
-<figure/goal_management_collaboration_structure-croped.pdf, id=439, 356.33125pt
+ [102]
+<figure/goal_management_collaboration_structure-croped.pdf, id=449, 356.33125pt
  x 162.6075pt>
 File: figure/goal_management_collaboration_structure-croped.pdf Graphic file (t
 ype pdf)
  <use figure/goal_management_collaboration_structure-croped.pdf>
 Package pdftex.def Info: figure/goal_management_collaboration_structure-croped.
-pdf used on input line 3748.
+pdf used on input line 3842.
 (pdftex.def)             Requested size: 426.39255pt x 194.58711pt.
 
-[100 <./figure/goal_management_croped.pdf>] [101 <./figure/goal_management_coll
-aboration_structure-croped.pdf>] [102] [103] [104] [105] [106] [107]
-<figure/coping_algorithms_short_croped.pdf, id=494, 737.75626pt x 188.705pt>
+[103 <./figure/goal_management_croped.pdf>] [104 <./figure/goal_management_coll
+aboration_structure-croped.pdf>] [105] [106] [107] [108] [109] [110]
+<figure/coping_algorithms_short_croped.pdf, id=504, 737.75626pt x 188.705pt>
 File: figure/coping_algorithms_short_croped.pdf Graphic file (type pdf)
 
 <use figure/coping_algorithms_short_croped.pdf>
 Package pdftex.def Info: figure/coping_algorithms_short_croped.pdf used on inpu
-t line 4021.
+t line 4115.
 (pdftex.def)             Requested size: 623.69044pt x 159.52754pt.
- [108] [109 <./figure/coping_algorithms_short_croped.pdf>] [110]
-<figure/satisfaction_motive_functions.png, id=528, 853.1875pt x 526.96875pt>
+ [111] [112 <./figure/coping_algorithms_short_croped.pdf>] [113]
+<figure/satisfaction_motive_functions.png, id=537, 853.1875pt x 526.96875pt>
 File: figure/satisfaction_motive_functions.png Graphic file (type png)
 
 <use figure/satisfaction_motive_functions.png>
 Package pdftex.def Info: figure/satisfaction_motive_functions.png used on input
- line 4092.
+ line 4186.
 (pdftex.def)             Requested size: 426.39255pt x 263.3631pt.
- [111 <./figure/satisfaction_motive_functions.png>]
-<figure/achievement_motive_functions.png, id=532, 853.1875pt x 526.96875pt>
+ [114 <./figure/satisfaction_motive_functions.png>]
+<figure/achievement_motive_functions.png, id=542, 853.1875pt x 526.96875pt>
 File: figure/achievement_motive_functions.png Graphic file (type png)
 
 <use figure/achievement_motive_functions.png>
 Package pdftex.def Info: figure/achievement_motive_functions.png used on input 
-line 4112.
+line 4206.
 (pdftex.def)             Requested size: 426.39255pt x 263.3631pt.
- [112 <./figure/achievement_motive_functions.png>] [113]
-<figure/external_motive_functions.png, id=539, 853.1875pt x 526.96875pt>
+ [115 <./figure/achievement_motive_functions.png>] [116]
+<figure/external_motive_functions.png, id=549, 853.1875pt x 526.96875pt>
 File: figure/external_motive_functions.png Graphic file (type png)
 
 <use figure/external_motive_functions.png>
 Package pdftex.def Info: figure/external_motive_functions.png used on input lin
-e 4175.
+e 4269.
 (pdftex.def)             Requested size: 426.39255pt x 263.3631pt.
- [114 <./figure/external_motive_functions.png>] [115]
-<figure/apraisal_values_croped.pdf, id=547, 501.875pt x 101.37875pt>
+ [117 <./figure/external_motive_functions.png>] [118]
+<figure/apraisal_values_croped.pdf, id=556, 501.875pt x 101.37875pt>
 File: figure/apraisal_values_croped.pdf Graphic file (type pdf)
 
 <use figure/apraisal_values_croped.pdf>
 Package pdftex.def Info: figure/apraisal_values_croped.pdf used on input line 4
-253.
+347.
 (pdftex.def)             Requested size: 426.39255pt x 86.13521pt.
- [116]
-<figure/emotion_elicitation_croped.pdf, id=551, 682.55pt x 554.07pt>
+ [119]
+<figure/emotion_elicitation_croped.pdf, id=560, 682.55pt x 554.07pt>
 File: figure/emotion_elicitation_croped.pdf Graphic file (type pdf)
 
 <use figure/emotion_elicitation_croped.pdf>
 Package pdftex.def Info: figure/emotion_elicitation_croped.pdf used on input li
-ne 4279.
+ne 4373.
 (pdftex.def)             Requested size: 623.69044pt x 506.3181pt.
- [117 <./figure/apraisal_values_croped.pdf>] [118 <./figure/emotion_elicitation
+ [120 <./figure/apraisal_values_croped.pdf>] [121 <./figure/emotion_elicitation
 _croped.pdf>]
 Chapter 5.
-[119
+[122
 
-] <figure/taskModel-croped.pdf, id=600, 553.06625pt x 182.6825pt>
+] <figure/taskModel-croped.pdf, id=610, 553.06625pt x 182.6825pt>
 File: figure/taskModel-croped.pdf Graphic file (type pdf)
 
 <use figure/taskModel-croped.pdf>
-Package pdftex.def Info: figure/taskModel-croped.pdf used on input line 4337.
+Package pdftex.def Info: figure/taskModel-croped.pdf used on input line 4431.
 (pdftex.def)             Requested size: 426.39255pt x 140.84155pt.
- [120 <./figure/taskModel-croped.pdf>]
-[121] <figure/expectedness_result_croped.pdf, id=625, 501.875pt x 312.16624pt>
+ [123 <./figure/taskModel-croped.pdf>]
+[124] <figure/expectedness_result_croped.pdf, id=634, 501.875pt x 312.16624pt>
 File: figure/expectedness_result_croped.pdf Graphic file (type pdf)
 
 <use figure/expectedness_result_croped.pdf>
 Package pdftex.def Info: figure/expectedness_result_croped.pdf used on input li
-ne 4436.
+ne 4530.
 (pdftex.def)             Requested size: 426.39255pt x 265.22824pt.
- [122]
-<figure/question-sample-croped.pdf, id=629, 303.1325pt x 95.35625pt>
+ [125]
+<figure/question-sample-croped.pdf, id=638, 303.1325pt x 95.35625pt>
 File: figure/question-sample-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample-croped.pdf>
 Package pdftex.def Info: figure/question-sample-croped.pdf used on input line 4
-454.
+548.
 (pdftex.def)             Requested size: 362.43626pt x 114.01369pt.
- [123 <./figure/expectedness_result_croped.pdf> <./figure/question-sample-crope
+ [126 <./figure/expectedness_result_croped.pdf> <./figure/question-sample-crope
 d.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figure/question-sample-croped.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <figure/controllability_result_croped.pdf, id=671, 501.875pt x 228.855pt>
+>] <figure/controllability_result_croped.pdf, id=682, 501.875pt x 228.855pt>
 File: figure/controllability_result_croped.pdf Graphic file (type pdf)
 
 <use figure/controllability_result_croped.pdf>
 Package pdftex.def Info: figure/controllability_result_croped.pdf used on input
- line 4474.
+ line 4568.
 (pdftex.def)             Requested size: 426.39255pt x 194.44385pt.
 
-<figure/question-sample2-croped.pdf, id=672, 308.15125pt x 105.39375pt>
+<figure/question-sample2-croped.pdf, id=683, 308.15125pt x 105.39375pt>
 File: figure/question-sample2-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample2-croped.pdf>
 Package pdftex.def Info: figure/question-sample2-croped.pdf used on input line 
-4487.
+4581.
 (pdftex.def)             Requested size: 362.43626pt x 123.96953pt.
- [124 <./figure/controllability_result_croped.pdf>]
-<figure/desirability_result_croped.pdf, id=699, 501.875pt x 323.2075pt>
+ [127 <./figure/controllability_result_croped.pdf>]
+<figure/desirability_result_croped.pdf, id=709, 501.875pt x 323.2075pt>
 File: figure/desirability_result_croped.pdf Graphic file (type pdf)
 
 <use figure/desirability_result_croped.pdf>
 Package pdftex.def Info: figure/desirability_result_croped.pdf used on input li
-ne 4503.
+ne 4597.
 (pdftex.def)             Requested size: 426.39255pt x 274.60931pt.
- [125 <./figure/question-sample2-croped.pdf> <./figure/desirability_result_crop
+ [128 <./figure/question-sample2-croped.pdf> <./figure/desirability_result_crop
 ed.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figure/desirability_result_croped.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] <figure/question-sample3-croped.pdf, id=741, 303.1325pt x 119.44624pt>
+>] <figure/question-sample3-croped.pdf, id=751, 303.1325pt x 119.44624pt>
 File: figure/question-sample3-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample3-croped.pdf>
 Package pdftex.def Info: figure/question-sample3-croped.pdf used on input line 
-4521.
+4615.
 (pdftex.def)             Requested size: 362.43626pt x 142.81714pt.
- [126 <./figure/question-sample3-croped.pdf>] <figure/relevance_result_croped.p
-df, id=763, 501.875pt x 403.5075pt>
+ [129 <./figure/question-sample3-croped.pdf>] <figure/relevance_result_croped.p
+df, id=772, 501.875pt x 403.5075pt>
 File: figure/relevance_result_croped.pdf Graphic file (type pdf)
 
 <use figure/relevance_result_croped.pdf>
 Package pdftex.def Info: figure/relevance_result_croped.pdf used on input line 
-4546.
+4640.
 (pdftex.def)             Requested size: 426.39255pt x 342.83522pt.
 
-<figure/question-sample4-croped.pdf, id=764, 303.1325pt x 97.36375pt>
+<figure/question-sample4-croped.pdf, id=773, 303.1325pt x 97.36375pt>
 File: figure/question-sample4-croped.pdf Graphic file (type pdf)
 
 <use figure/question-sample4-croped.pdf>
 Package pdftex.def Info: figure/question-sample4-croped.pdf used on input line 
-4565.
+4659.
 (pdftex.def)             Requested size: 362.43626pt x 116.41397pt.
- [127 <./figure/relevance_result_croped.pdf>] [128 <./figure/question-sample4-c
+ [130 <./figure/relevance_result_croped.pdf>] [131 <./figure/question-sample4-c
 roped.pdf>]
 
-LaTeX Warning: Reference `ch:framework' on page 129 undefined on input line 461
-8.
+LaTeX Warning: Reference `ch:framework' on page 132 undefined on input line 471
+2.
 
-<figure/framework-croped.pdf, id=810, 525.965pt x 212.795pt>
+<figure/framework-croped.pdf, id=819, 525.965pt x 212.795pt>
 File: figure/framework-croped.pdf Graphic file (type pdf)
 
 <use figure/framework-croped.pdf>
-Package pdftex.def Info: figure/framework-croped.pdf used on input line 4629.
+Package pdftex.def Info: figure/framework-croped.pdf used on input line 4723.
 (pdftex.def)             Requested size: 426.39255pt x 172.5156pt.
 
 
-LaTeX Warning: Reference `ch:framework' on page 129 undefined on input line 464
-2.
+LaTeX Warning: Reference `ch:framework' on page 132 undefined on input line 473
+6.
 
-<figure/collaborationStructure.pdf, id=811, 727.71875pt x 258.9675pt>
+<figure/collaborationStructure.pdf, id=820, 727.71875pt x 258.9675pt>
 File: figure/collaborationStructure.pdf Graphic file (type pdf)
 
 <use figure/collaborationStructure.pdf>
 Package pdftex.def Info: figure/collaborationStructure.pdf used on input line 4
-648.
+742.
 (pdftex.def)             Requested size: 426.39255pt x 151.74232pt.
- [129] [130 <./figure/framework-croped.pdf> <./figure/collaborationStructure.pd
+ [132] [133 <./figure/framework-croped.pdf> <./figure/collaborationStructure.pd
 f
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figure/collaborationStructure.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <figure/gameBoard.pdf, id=854, 1838.87pt x 1057.9525pt>
+>] <figure/gameBoard.pdf, id=864, 1838.87pt x 1057.9525pt>
 File: figure/gameBoard.pdf Graphic file (type pdf)
 
 <use figure/gameBoard.pdf>
-Package pdftex.def Info: figure/gameBoard.pdf used on input line 4678.
+Package pdftex.def Info: figure/gameBoard.pdf used on input line 4772.
 (pdftex.def)             Requested size: 426.39255pt x 245.30954pt.
- [131 <./figure/gameBoard.pdf>]
-<figure/robot-turn-gui.png, id=870, 1225.57875pt x 996.72375pt>
+ [134 <./figure/gameBoard.pdf>]
+<figure/robot-turn-gui.png, id=880, 1225.57875pt x 996.72375pt>
 File: figure/robot-turn-gui.png Graphic file (type png)
 
 <use figure/robot-turn-gui.png>
-Package pdftex.def Info: figure/robot-turn-gui.png used on input line 4704.
+Package pdftex.def Info: figure/robot-turn-gui.png used on input line 4798.
 (pdftex.def)             Requested size: 202.5358pt x 164.71086pt.
 
-<figure/human-turn-gui.png, id=871, 1229.59375pt x 1001.7425pt>
+<figure/human-turn-gui.png, id=881, 1229.59375pt x 1001.7425pt>
 File: figure/human-turn-gui.png Graphic file (type png)
 
 <use figure/human-turn-gui.png>
-Package pdftex.def Info: figure/human-turn-gui.png used on input line 4709.
+Package pdftex.def Info: figure/human-turn-gui.png used on input line 4803.
 (pdftex.def)             Requested size: 202.5358pt x 165.00523pt.
- [132 <./figure/robot-turn-gui.png (PNG copy)> <./figure/human-turn-gui.png (PN
-G copy)>] [133] [134]
-<figure/environment.png, id=882, 361.35pt x 240.9pt>
+ [135 <./figure/robot-turn-gui.png (PNG copy)> <./figure/human-turn-gui.png (PN
+G copy)>] [136] [137]
+<figure/environment.png, id=891, 361.35pt x 240.9pt>
 File: figure/environment.png Graphic file (type png)
 
 <use figure/environment.png>
-Package pdftex.def Info: figure/environment.png used on input line 4824.
+Package pdftex.def Info: figure/environment.png used on input line 4918.
 (pdftex.def)             Requested size: 383.75069pt x 255.8343pt.
- [135] [136 <./figure/environment.png (PNG copy)>]
-[137] <figure/table1-croped.pdf, id=892, 497.86pt x 649.42625pt>
+ [138] [139 <./figure/environment.png (PNG copy)>]
+[140] <figure/table1-croped.pdf, id=902, 497.86pt x 649.42625pt>
 File: figure/table1-croped.pdf Graphic file (type pdf)
 
 <use figure/table1-croped.pdf>
-Package pdftex.def Info: figure/table1-croped.pdf used on input line 4910.
+Package pdftex.def Info: figure/table1-croped.pdf used on input line 5004.
 (pdftex.def)             Requested size: 426.39255pt x 556.21652pt.
- [138] [139 <./figure/table1-croped.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 4916--4924
+ [141] [142 <./figure/table1-croped.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 5010--5018
 
  []
 
-<figure/Overall-Likability.png, id=917, 650.43pt x 365.86688pt>
+<figure/Overall-Likability.png, id=926, 650.43pt x 365.86688pt>
 File: figure/Overall-Likability.png Graphic file (type png)
 
 <use figure/Overall-Likability.png>
-Package pdftex.def Info: figure/Overall-Likability.png used on input line 4927.
+Package pdftex.def Info: figure/Overall-Likability.png used on input line 5021.
 
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4934--4943
+Underfull \hbox (badness 10000) in paragraph at lines 5028--5037
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4944--4959
+Underfull \hbox (badness 10000) in paragraph at lines 5038--5053
 
  []
 
-[140
+[143
 
  <./figure/Overall-Likability.png (PNG copy)>]
-<figure/Overall-Trust.png, id=921, 650.43pt x 365.86688pt>
+<figure/Overall-Trust.png, id=930, 650.43pt x 365.86688pt>
 File: figure/Overall-Trust.png Graphic file (type png)
 
 <use figure/Overall-Trust.png>
-Package pdftex.def Info: figure/Overall-Trust.png used on input line 4962.
+Package pdftex.def Info: figure/Overall-Trust.png used on input line 5056.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-<figure/Overall-Performance.png, id=922, 650.43pt x 365.86688pt>
+<figure/Overall-Performance.png, id=931, 650.43pt x 365.86688pt>
 File: figure/Overall-Performance.png Graphic file (type png)
 
 <use figure/Overall-Performance.png>
-Package pdftex.def Info: figure/Overall-Performance.png used on input line 4970
+Package pdftex.def Info: figure/Overall-Performance.png used on input line 5064
 .
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
@@ -1456,155 +1456,155 @@ Package pdftex.def Info: figure/Overall-Performance.png used on input line 4970
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4978--5002
+Underfull \hbox (badness 10000) in paragraph at lines 5072--5096
 
  []
 
-[141 <./figure/Overall-Trust.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 5003--5012
+[144 <./figure/Overall-Trust.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 5097--5106
 
  []
 
-[142 <./figure/Overall-Performance.png (PNG copy)>]
-<figure/Overall-Emotions.png, id=929, 650.43pt x 365.86688pt>
+[145 <./figure/Overall-Performance.png (PNG copy)>]
+<figure/Overall-Emotions.png, id=939, 650.43pt x 365.86688pt>
 File: figure/Overall-Emotions.png Graphic file (type png)
 
 <use figure/Overall-Emotions.png>
-Package pdftex.def Info: figure/Overall-Emotions.png used on input line 5015.
+Package pdftex.def Info: figure/Overall-Emotions.png used on input line 5109.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5024--5044
+Underfull \hbox (badness 10000) in paragraph at lines 5118--5138
 
  []
 
-[143 <./figure/Overall-Emotions.png (PNG copy)>]
-<figure/Overall-Goals.png, id=933, 650.43pt x 365.86688pt>
+[146 <./figure/Overall-Emotions.png (PNG copy)>]
+<figure/Overall-Goals.png, id=943, 650.43pt x 365.86688pt>
 File: figure/Overall-Goals.png Graphic file (type png)
 
 <use figure/Overall-Goals.png>
-Package pdftex.def Info: figure/Overall-Goals.png used on input line 5047.
+Package pdftex.def Info: figure/Overall-Goals.png used on input line 5141.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-<figure/Overall-Collaboration.png, id=934, 650.43pt x 365.86688pt>
+<figure/Overall-Collaboration.png, id=944, 650.43pt x 365.86688pt>
 File: figure/Overall-Collaboration.png Graphic file (type png)
 
 <use figure/Overall-Collaboration.png>
-Package pdftex.def Info: figure/Overall-Collaboration.png used on input line 50
-56.
+Package pdftex.def Info: figure/Overall-Collaboration.png used on input line 51
+50.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 5064--5086
+Underfull \hbox (badness 10000) in paragraph at lines 5158--5180
 
  []
 
-[144 <./figure/Overall-Goals.png (PNG copy)>] [145 <./figure/Overall-Collaborat
+[147 <./figure/Overall-Goals.png (PNG copy)>] [148 <./figure/Overall-Collaborat
 ion.png (PNG copy)>]
-<figure/Overall-Satisfaction.png, id=942, 650.43pt x 365.86688pt>
+<figure/Overall-Satisfaction.png, id=951, 650.43pt x 365.86688pt>
 File: figure/Overall-Satisfaction.png Graphic file (type png)
 
 <use figure/Overall-Satisfaction.png>
-Package pdftex.def Info: figure/Overall-Satisfaction.png used on input line 510
-4.
+Package pdftex.def Info: figure/Overall-Satisfaction.png used on input line 519
+8.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
- [146 <./figure/Overall-Satisfaction.png (PNG copy)>] <figure/table2-croped.pdf
-, id=946, 678.535pt x 204.765pt>
+ [149 <./figure/Overall-Satisfaction.png (PNG copy)>] <figure/table2-croped.pdf
+, id=955, 678.535pt x 204.765pt>
 File: figure/table2-croped.pdf Graphic file (type pdf)
 
 <use figure/table2-croped.pdf>
-Package pdftex.def Info: figure/table2-croped.pdf used on input line 5125.
+Package pdftex.def Info: figure/table2-croped.pdf used on input line 5219.
 (pdftex.def)             Requested size: 426.39255pt x 128.67455pt.
- [147 <./figure/table2-croped.pdf>] [148]
-<figure/Age-Likability.png, id=980, 650.43pt x 365.86688pt>
+ [150 <./figure/table2-croped.pdf>] [151]
+<figure/Age-Likability.png, id=990, 650.43pt x 365.86688pt>
 File: figure/Age-Likability.png Graphic file (type png)
 
 <use figure/Age-Likability.png>
-Package pdftex.def Info: figure/Age-Likability.png used on input line 5218.
+Package pdftex.def Info: figure/Age-Likability.png used on input line 5312.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
-<figure/Age-Trust.png, id=981, 650.43pt x 365.86688pt>
+<figure/Age-Trust.png, id=991, 650.43pt x 365.86688pt>
 File: figure/Age-Trust.png Graphic file (type png)
 
 <use figure/Age-Trust.png>
-Package pdftex.def Info: figure/Age-Trust.png used on input line 5227.
+Package pdftex.def Info: figure/Age-Trust.png used on input line 5321.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/Age-Performance.png, id=982, 650.43pt x 365.86688pt>
+<figure/Age-Performance.png, id=992, 650.43pt x 365.86688pt>
 File: figure/Age-Performance.png Graphic file (type png)
 
 <use figure/Age-Performance.png>
-Package pdftex.def Info: figure/Age-Performance.png used on input line 5235.
+Package pdftex.def Info: figure/Age-Performance.png used on input line 5329.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/Age-Emotions.png, id=983, 650.43pt x 365.86688pt>
+<figure/Age-Emotions.png, id=993, 650.43pt x 365.86688pt>
 File: figure/Age-Emotions.png Graphic file (type png)
 
 <use figure/Age-Emotions.png>
-Package pdftex.def Info: figure/Age-Emotions.png used on input line 5244.
+Package pdftex.def Info: figure/Age-Emotions.png used on input line 5338.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/Age-Goals.png, id=984, 650.43pt x 365.86688pt>
+<figure/Age-Goals.png, id=994, 650.43pt x 365.86688pt>
 File: figure/Age-Goals.png Graphic file (type png)
 
 <use figure/Age-Goals.png>
-Package pdftex.def Info: figure/Age-Goals.png used on input line 5253.
+Package pdftex.def Info: figure/Age-Goals.png used on input line 5347.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/Age-Collaboration.png, id=985, 650.43pt x 365.86688pt>
+<figure/Age-Collaboration.png, id=995, 650.43pt x 365.86688pt>
 File: figure/Age-Collaboration.png Graphic file (type png)
 
 <use figure/Age-Collaboration.png>
-Package pdftex.def Info: figure/Age-Collaboration.png used on input line 5262.
+Package pdftex.def Info: figure/Age-Collaboration.png used on input line 5356.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figure/Age-Satisfaction.png, id=986, 650.43pt x 365.86688pt>
+<figure/Age-Satisfaction.png, id=996, 650.43pt x 365.86688pt>
 File: figure/Age-Satisfaction.png Graphic file (type png)
 
 <use figure/Age-Satisfaction.png>
-Package pdftex.def Info: figure/Age-Satisfaction.png used on input line 5271.
+Package pdftex.def Info: figure/Age-Satisfaction.png used on input line 5365.
 (pdftex.def)             Requested size: 383.75069pt x 215.86516pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[149]
+[152]
 
-LaTeX Warning: Text page 150 contains only floats.
+LaTeX Warning: Text page 153 contains only floats.
 
-[150 <./figure/Age-Likability.png (PNG copy)> <./figure/Age-Trust.png (PNG copy
+[153 <./figure/Age-Likability.png (PNG copy)> <./figure/Age-Trust.png (PNG copy
 )>]
 
-LaTeX Warning: Text page 151 contains only floats.
+LaTeX Warning: Text page 154 contains only floats.
 
-[151 <./figure/Age-Performance.png (PNG copy)> <./figure/Age-Emotions.png (PNG 
+[154 <./figure/Age-Performance.png (PNG copy)> <./figure/Age-Emotions.png (PNG 
 copy)>]
 
-LaTeX Warning: Text page 152 contains only floats.
+LaTeX Warning: Text page 155 contains only floats.
 
-[152 <./figure/Age-Goals.png (PNG copy)> <./figure/Age-Collaboration.png (PNG c
-opy)>] [153 <./figure/Age-Satisfaction.png (PNG copy)>]
-Overfull \hbox (7.73073pt too wide) in paragraph at lines 5300--5311
+[155 <./figure/Age-Goals.png (PNG copy)> <./figure/Age-Collaboration.png (PNG c
+opy)>] [156 <./figure/Age-Satisfaction.png (PNG copy)>]
+Overfull \hbox (7.73073pt too wide) in paragraph at lines 5394--5405
 [][]\OT1/cmr/m/n/12 Finally, the emotion-aware robot de-vel-oped a stronger sen
 se of part-ner-ship through
  []
 
-[154]
+[157]
 Chapter 6.
-[155
+[158
 
 ] (./document.bbl
 ! Misplaced alignment tab character &.
@@ -1617,27 +1617,27 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[156
+[159
 
-] [157]
+] [160]
 Underfull \hbox (badness 1389) in paragraph at lines 158--161
 [][]\OT1/cmr/m/n/12 M. E. Brat-man.  Shared co-op-er-a-tive ac-tiv-ity.  \OT1/c
 mr/m/it/12 Philo-soph-i-cal Re-view\OT1/cmr/m/n/12 ,
  []
 
-[158]
+[161]
 Missing character: There is no √ in font cmti12!
 Missing character: There is no Å in font cmti12!
- [159]
+ [162]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [160] [161] [162]
+ [163] [164] [165]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ô in font cmti12!
- [163] [164] [165] [166] [167] [168] [169]
-[170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180]
+ [166] [167] [168] [169] [170] [171] [172]
+[173] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183]
 ! Misplaced alignment tab character &.
 l.1382 \newblock Springer Science &
                                     Business Media, 2012.
@@ -1650,11 +1650,11 @@ might try typing `S' now just to see what is salvageable.
 
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ° in font cmr12!
-[181] [182]
+[184] [185]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ô in font cmti12!
- [183]) [184] [185
+ [186]) [187] [188
 
 ] (./document.aux)
 
@@ -1665,10 +1665,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16921 strings out of 493304
- 313292 string characters out of 6139871
- 389467 words of memory out of 5000000
- 19918 multiletter control sequences out of 15000+600000
+ 16924 strings out of 493304
+ 313344 string characters out of 6139871
+ 389504 words of memory out of 5000000
+ 19921 multiletter control sequences out of 15000+600000
  17102 words of font info for 62 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,9n,59p,1011b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1687,10 +1687,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (198 pages, 7377241 bytes).
+Output written on document.pdf (201 pages, 7382590 bytes).
 PDF statistics:
- 1163 PDF objects out of 1200 (max. 8388607)
- 741 compressed objects within 8 object streams
+ 1173 PDF objects out of 1200 (max. 8388607)
+ 748 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
