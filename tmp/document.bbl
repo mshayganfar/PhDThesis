@@ -419,10 +419,21 @@ N.~Esau, L.~Kleinjohann, and B.~Kleinjohann.
 \newblock In {\em Biologically-Inspired Collaborative Computing, September 8-9,
   Milano, Italy}, pages 187--198, 2008.
 
+\bibitem{faucher:fear-attention}
+L.~Faucher and C.~Tappolet.
+\newblock Fear and the focus of attention.
+\newblock {\em Consciousness and Emotion}, 3(2):105--144, 2002.
+
 \bibitem{folkman:coping-pitfalls-promise}
 S.~Folkman and J.~T. Moskowitz.
 \newblock Coping: Pitfalls and promise.
 \newblock {\em Annual Review of Psychology}, 55:745--774, 2004.
+
+\bibitem{fredrickson:positive-emotion-attention}
+B.~L. Fredrickson and C.~Branigan.
+\newblock Positive emotions broaden the scope of attention and thought‐action
+  repertoires.
+\newblock {\em Cognition and Emotion}, 19(3):313--332, 2005.
 
 \bibitem{frijda:emotions}
 N.~H. Frijda.
@@ -1385,6 +1396,12 @@ H.~Skubch.
 A.~Sloman.
 \newblock Motives, mechanisms, and emotions.
 \newblock {\em Cognition \& Emotion}, 1(3):217--233, 1987.
+
+\bibitem{sloman:beyond-shallow}
+A.~Sloman.
+\newblock Beyond shallow models of emotion.
+\newblock {\em Cognitive Processing: International Quarterly of Cognitive
+  Science}, 2(1):177--198, 2001.
 
 \bibitem{sloman:robots-emotion}
 A.~Sloman and M.~Croucher.
