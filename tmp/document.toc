@@ -87,66 +87,66 @@
 \contentsline {subsection}{\numberline {3.5.11}Mental States}{98}
 \contentsline {section}{\numberline {3.6}Attributes of Mental States}{100}
 \contentsline {subsection}{\numberline {3.6.1}Attributes of Beliefs}{101}
-\contentsline {subsection}{\numberline {3.6.2}Attributes of Intentions}{102}
-\contentsline {subsection}{\numberline {3.6.3}Attributes of Goals}{104}
-\contentsline {subsection}{\numberline {3.6.4}Attributes of Motives}{106}
+\contentsline {subsection}{\numberline {3.6.2}Attributes of Goals}{102}
+\contentsline {subsection}{\numberline {3.6.3}Attributes of Motives}{103}
+\contentsline {subsection}{\numberline {3.6.4}Attributes of Intentions}{105}
 \contentsline {subsection}{\numberline {3.6.5}Emotion Instances}{107}
-\contentsline {chapter}{\numberline {4}Computational Framework}{110}
-\contentsline {section}{\numberline {4.1}Introduction}{110}
-\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{111}
-\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{113}
-\contentsline {subsection}{\numberline {4.3.1}Relevance}{114}
-\contentsline {subsection}{\numberline {4.3.2}Desirability}{118}
-\contentsline {subsection}{\numberline {4.3.3}Expectedness}{120}
-\contentsline {subsection}{\numberline {4.3.4}Controllability}{121}
-\contentsline {section}{\numberline {4.4}Goal Management}{124}
-\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{130}
-\contentsline {subsection}{\numberline {4.5.1}Planning}{130}
-\contentsline {subsection}{\numberline {4.5.2}Active Coping}{131}
-\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{132}
-\contentsline {subsection}{\numberline {4.5.4}Acceptance}{132}
-\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{132}
-\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{133}
-\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{133}
-\contentsline {section}{\numberline {4.6}Motivation Mechanism}{134}
-\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{136}
-\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{138}
-\contentsline {subsection}{\numberline {4.6.3}External Motive}{139}
-\contentsline {section}{\numberline {4.7}Theory of Mind}{141}
-\contentsline {section}{\numberline {4.8}Perception and Action}{141}
-\contentsline {section}{\numberline {4.9}Emotion Instances}{142}
-\contentsline {chapter}{\numberline {5}Evaluation}{145}
-\contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{145}
-\contentsline {subsection}{\numberline {5.1.1}Experimental Scenario}{145}
-\contentsline {subsection}{\numberline {5.1.2}Hypothesis and Methodology}{146}
-\contentsline {subsubsection}{Hypothesis}{146}
-\contentsline {subsubsection}{Procedure}{146}
-\contentsline {subsubsection}{Participants}{147}
-\contentsline {subsection}{\numberline {5.1.3}Results}{148}
-\contentsline {subsubsection}{Expectedness}{148}
-\contentsline {subsubsection}{Controllability}{150}
-\contentsline {subsubsection}{Desirability}{150}
-\contentsline {subsubsection}{Relevance}{152}
-\contentsline {subsection}{\numberline {5.1.4}Discussion}{154}
-\contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{154}
-\contentsline {subsection}{\numberline {5.2.1}Implementation}{155}
-\contentsline {subsubsection}{Framework}{155}
-\contentsline {subsubsection}{Robot Controller}{156}
-\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{157}
-\contentsline {subsubsection}{The Robot}{158}
-\contentsline {subsubsection}{Interaction Paradigms}{158}
-\contentsline {subsubsection}{Environment and Tasks}{160}
-\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{161}
-\contentsline {subsubsection}{Hypothesis}{161}
-\contentsline {subsubsection}{Procedure}{161}
-\contentsline {subsubsection}{Measurements}{163}
-\contentsline {subsubsection}{Participants}{163}
-\contentsline {subsection}{\numberline {5.2.4}Results}{164}
-\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{164}
-\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{172}
-\contentsline {subsubsection}{Impact of Demographics}{175}
-\contentsline {subsection}{\numberline {5.2.5}Discussion}{179}
-\contentsline {chapter}{\numberline {6}Conclusion}{181}
-\contentsline {section}{\numberline {6.1}Discussion}{181}
-\contentsline {section}{\numberline {6.2}Future Work}{181}
-\contentsline {chapter}{Appendix A}{212}
+\contentsline {chapter}{\numberline {4}Computational Framework}{109}
+\contentsline {section}{\numberline {4.1}Introduction}{109}
+\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{110}
+\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{112}
+\contentsline {subsection}{\numberline {4.3.1}Relevance}{113}
+\contentsline {subsection}{\numberline {4.3.2}Desirability}{117}
+\contentsline {subsection}{\numberline {4.3.3}Expectedness}{119}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{120}
+\contentsline {section}{\numberline {4.4}Goal Management}{123}
+\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{129}
+\contentsline {subsection}{\numberline {4.5.1}Planning}{129}
+\contentsline {subsection}{\numberline {4.5.2}Active Coping}{130}
+\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{131}
+\contentsline {subsection}{\numberline {4.5.4}Acceptance}{131}
+\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{131}
+\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{132}
+\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{132}
+\contentsline {section}{\numberline {4.6}Motivation Mechanism}{133}
+\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{135}
+\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{137}
+\contentsline {subsection}{\numberline {4.6.3}External Motive}{138}
+\contentsline {section}{\numberline {4.7}Theory of Mind}{140}
+\contentsline {section}{\numberline {4.8}Perception and Action}{140}
+\contentsline {section}{\numberline {4.9}Emotion Instances}{141}
+\contentsline {chapter}{\numberline {5}Evaluation}{144}
+\contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{144}
+\contentsline {subsection}{\numberline {5.1.1}Experimental Scenario}{144}
+\contentsline {subsection}{\numberline {5.1.2}Hypothesis and Methodology}{145}
+\contentsline {subsubsection}{Hypothesis}{145}
+\contentsline {subsubsection}{Procedure}{145}
+\contentsline {subsubsection}{Participants}{146}
+\contentsline {subsection}{\numberline {5.1.3}Results}{147}
+\contentsline {subsubsection}{Expectedness}{147}
+\contentsline {subsubsection}{Controllability}{149}
+\contentsline {subsubsection}{Desirability}{149}
+\contentsline {subsubsection}{Relevance}{151}
+\contentsline {subsection}{\numberline {5.1.4}Discussion}{153}
+\contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{153}
+\contentsline {subsection}{\numberline {5.2.1}Implementation}{154}
+\contentsline {subsubsection}{Framework}{154}
+\contentsline {subsubsection}{Robot Controller}{155}
+\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{156}
+\contentsline {subsubsection}{The Robot}{157}
+\contentsline {subsubsection}{Interaction Paradigms}{157}
+\contentsline {subsubsection}{Environment and Tasks}{159}
+\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{160}
+\contentsline {subsubsection}{Hypothesis}{160}
+\contentsline {subsubsection}{Procedure}{160}
+\contentsline {subsubsection}{Measurements}{162}
+\contentsline {subsubsection}{Participants}{162}
+\contentsline {subsection}{\numberline {5.2.4}Results}{163}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{163}
+\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{171}
+\contentsline {subsubsection}{Impact of Demographics}{174}
+\contentsline {subsection}{\numberline {5.2.5}Discussion}{178}
+\contentsline {chapter}{\numberline {6}Conclusion}{180}
+\contentsline {section}{\numberline {6.1}Discussion}{180}
+\contentsline {section}{\numberline {6.2}Future Work}{180}
+\contentsline {chapter}{Appendix A}{211}
