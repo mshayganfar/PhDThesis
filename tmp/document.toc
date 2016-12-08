@@ -144,6 +144,6 @@
 \contentsline {subsection}{\numberline {5.2.5}Discussion}{175}
 \contentsline {chapter}{\numberline {6}Conclusion}{177}
 \contentsline {section}{\numberline {6.1}Discussion}{177}
-\contentsline {section}{\numberline {6.2}Discussion}{178}
-\contentsline {section}{\numberline {6.3}Future Work}{178}
-\contentsline {chapter}{Appendix A}{209}
+\contentsline {section}{\numberline {6.2}End Results}{179}
+\contentsline {section}{\numberline {6.3}Future Work}{179}
+\contentsline {chapter}{Appendix A}{210}
