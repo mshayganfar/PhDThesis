@@ -6081,38 +6081,40 @@ would be more like a team or partnership.''
 \label{ch:conclusion}
 
 \section{Discussion}
-This thesis work presents the Affective Motivational Collaboration Theory as the
-theoretical foundation of our AMC framework which is built on the combination
-of SharedPlans theory of collaboration \cite{grosz:plans-discourse} and
-cognitive appraisal theory of emotions \cite{marsella:ema-process-model}
-\cite{scherer:appraisal-processes}.The AMC framework is motivated by
-the lack of a theory describing the associated processes involved in a dyadic
-collaboration as well as their relationship and influences on each other. In
-particular, in this thesis we emphesize on the reciprocal influence of
-collaboration structure and the appraisal processes in collaboration. We provide
-some algorithms and methods to compute appraisal variables and their influence
-on collaboration processes, e.g. goal management, in this context. In general,
-our contribution in this thesis is synthesizing prior work on appraisal and
-collaboration to provide a theory which describes emotion-regulated goal-driven
-behaviors within a dyadic collaboration. This thesis also makes note of the
-influence of motives on coping process in collaboration. We also validate our
-individual appraisal algorithms as well as our overall framework (end-to-end
-system evaluation) by conducting an online crowd sourcing and an in-house
-user studies respectively. The first user study is to investigate whether the
-humans and our appraisal algorithms provide similar answers to the questions
-(events) with respect to the change of particular factors invloved in our
-algorithms. The second user study is to investigate a) importance of
-emotional-awareness in collaboration, and b) the overall functionality of the
-AMC framework to autonomously control interactions of a collaborative robot.
+This thesis presents Affective Motivational Collaboration Theory and our AMC
+framework. They are built on the combination of SharedPlans theory of
+collaboration \cite{grosz:plans-discourse} and the cognitive appraisal theory of
+emotions \cite{marsella:ema-process-model}
+\cite{scherer:appraisal-processes}.Our motivation to develop AMC framework
+was motivated by the lack of a theory describing the processes involved in a
+dyadic collaboration as well as their relationship and influences on each other.
+In particular, in this thesis we emphesized the reciprocal influence of the
+collaboration structure and the appraisal processes in collaboration. We
+provided algorithms and methods to compute several appraisal variables and their
+influence on collaboration processes, e.g. goal management, in this context. In
+general, our contribution in this thesis was synthesizing prior work on
+appraisal and collaboration to provide a theory which describes
+emotion-regulated goal-driven behaviors within a dyadic collaboration. A further
+contribution of this thesis is to make note of the influence of motives on
+coping process in collaboration. We also validated our individual appraisal
+algorithms as well as our overall framework (end-to-end system evaluation) by
+conducting an online crowd-sourcing user-study and an in-house user study
+respectively. The first user study investigated whether humans and our
+appraisal algorithms provide similar answers to certain questions (events) with
+respect to the change of particular factors invloved in our algorithms. The
+second user study investigated a) the importance of emotional-awareness in
+collaboration, and b) the overall functionality of the AMC framework to
+autonomously control interactions of a collaborative robot.
 
-After an introduction, we presented the theoretical background on two major
-foundations of our theory. First, we reviewed the prominent computational
+After our introduction in Chapter \ref{ch:introduction}, we presented theoretical
+background on the two major foundations of our theory in Chapter
+\ref{ch:background}. First, we reviewed the prominent computational
 collaboration theories including SharedPlans and Joint Intentions theories. We
 focused on main concepts characterizing requirements of a collaboration
 introduced by these theories. We also provided the similarities and differences
-between these theories in terms of their essential consepts as well as their
-theoretical and practical applications. These applications involved fields of
-robotic and artificial agents. Then, we continued with discussing what emotions
+between these theories in terms of their essential concepts as well as their
+theoretical and practical applications. These applications involved the fields
+of robotic and artificial agents. Then, we continued discussing what emotions
 are and more importantly how they can influence one's cognition and social life.
 We also presented the role of emotions in communicating one's internal states to
 convey information to others as the basic rationale behind different social
@@ -6123,100 +6125,111 @@ similarities, differences and applications in autonomous agents and robots.
 Finally, we introduced the concept of motives, work in related fields and a
 brief description of three social motives based on the psychological theories.
 
-Later, we introduced our Affective Motivational Collaboration Theory. We
-discussed all the mechanisms involved in our theory. All these mechanisms
-include different functions each of which are designed to process and provide
-a particular value required in overall operation of the system. Among these
-mechanisms our focus was on Collaboration, Appraisal and Coping mechanisms.
-Although other mechanisms such as Motivation play important role in influencing
-the overall behavior of the agent using our framework. We also discussed the
-events that we consider in a collaborative environment including utterance,
-primitive actions and observable behaviors. We described how each mechanism
-handles these events. We believe it is important to focus on functions of
-emotions and their influence on collaboration process. Therefore, we briefly
-described a set of emotion functions and how they are related to the
+Later, we introduced our Affective Motivational Collaboration Theory in Chapter
+\ref{ch:amct}. We discussed all the mechanisms involved in our theory. These
+mechanisms include different functions, each of which are designed to process
+and provide a particular value required in overall operation of the system. Among
+these mechanisms our focus was on Collaboration, Appraisal and Coping mechanisms.
+However, other mechanisms such as Motivation also play important roles in
+influencing the overall behavior of the agent using our framework. We also
+discussed the events that we consider in a collaborative environment including
+utterances, primitive actions and observable behaviors. We described how each
+mechanism handles these events. We believe it is important to focus on functions
+of emotions and their influence on collaboration processes. Therefore, we
+briefly described a set of emotion functions and how they are related to the
 collaboration context. Then, we continued by explaining the input, output and
 function of each mechanism involved in our architecture as well as the Mental
-States as the knowledge base required by all the mechanisms to input or output
+States as the knowledge-base required by all the mechanisms, to input or output
 data in the form of beliefs, intentions, motives, goals and emotion instances.
-All of these Mental States can be defined and distinguish by their attributes.
+All of these Mental States can be defined and distinguished by their attributes.
 We have a collection of different attributes for each mental state. The
 description of all of these attributes are provided as the final section of this
 chapter.
 
-In Chapter \ref{ch:appraisals}, we introduced the overall framwork using our AMC
-theory in more details such as the main functions implemented in Collaboration
-mechanism. As major part of this chapter, we explained our algorithms to compute
-th values associated to the appraisal variables that we have implmeneted as part
-of our framework. These algorithms are to compute the values of relevance,
-desirability, expectedness and controllability of an event occurring during the
-collaboration. All of these algorithms process the data provided by the
-collaboration structure. Reciprocally, we also provided the datails of how we
-use the outcome of the appraisals to influence the collaboration structure. We
-introduced our algorithm for the goal management process. Then, we explained the
-detail about the coping strategies, e.g. Active Coping, involved in our Coping
-Mechanism and the underlying processes associated with these coping strategies.
-This chapter continued on the details about the Motivation mechanism, the types
-of motives we have implmeneted, their description and the way we compute the
-values of these motives. We also briefly describe other mechanims in our
-frmawork. Finally, we describe the elicitation of different emotion instances
-in our framework and how they are interpreted according the different contexts
-during collaboration.
+In Chapter \ref{ch:appraisals}, we introduced our overall framework using AMC
+theory in more detail such as the main functions implemented in the
+Collaboration mechanism. As a major part of our contribution, we explained our
+algorithms to compute the values associated with the appraisal variables that we
+implemented as part of our framework. We use these algorithms to compute the
+values of relevance, desirability, expectedness and controllability of an event
+occurring during the collaboration. All of these algorithms process the data
+provided by the collaboration structure. Reciprocally, we provided the details
+of how we use the outcome of the appraisals to influence the collaboration
+structure. We also introduced our algorithm for the goal management process.
+Then, we explained details of the coping strategies, e.g. Active Coping,
+involved in our Coping Mechanism and the underlying processes associated with
+these coping strategies. We also included details about the Motivation
+mechanism, the types of motives we implemented, their descriptions and the
+way we compute the values of these motives. We also briefly described other
+mechanisms in our framework. Finally, we describe the elicitation of different
+emotion instances in our framework and how they are interpreted according the
+different contexts during collaboration. 
+
+As mentioned previously, we carried out two user-studies which validated our
+framework. The first study was designed to test whether humans and our appraisal
+algorithms perceive certain factors in our algorithms similarly. The result,
+which validated our algorithms, are presented in Chapter \ref{ch:awareness}. Our
+second study, which was designed to test the overall functionality of AMC
+framework, was also presented in Chapter \ref{ch:awareness}, and is summarized
+in the following section.
 
 \section{End Results}
-With the above contributions, we end with a final user-study as our end-to-end
+With the above contributions, we ended with a final user-study as our end-to-end
 system evaluation. Using the KUKA Youbot robot, we show how using AMC framework
 with emotional awareness can enable the robot to collaborate with the
-participants in a way that all of the participants prefer the robot with
-emotional awareness running our framework.
+participants in such a way that all of the participants prefer collaborating
+with the robot with emotional awareness running our framework.
 
-In this user-study, we assigned participants to collaborate with the
+In this user-study, we assigned participants to collaborate with an
 emotion-aware and emotion-ignorant robot in a random order. Overall, about half
 of the participants were assigned to collaborate with the emotion-aware robot
-first and then with the emotion-ignorant robot. All the participants
+first and then with the emotion-ignorant robot. All of the participants
 collaborated with the robot in both conditions. We asked participants to answer
-our questionnaire with which we investigated the preferance of the participants
+our questionnaires with which we investigated the preference of the participants
 between two robots from different point of view. In general, all of the
-participants prefered collaborating with the robot with emotional-awareness.
-Also, in almost all of the imporatnt detailed factors, e.g. likability,
+participants preferred collaborating with the robot with emotional-awareness.
+Also, in almost all of the important detailed factors, e.g. likability,
 participants significantly preferred collaborating with the emotion-aware robot.
 Interestingly, we could not find any significant influence of the order in which
 the participants' collaborated with the emotion-aware robot, i.e.
 collaborating first with the emotion-aware robot or second. Another interesting
 point about our final user-study was the participants' answers to our open-ended
-questionnaires. [WHAT CAN WE SAY HERE?]
+questionnaires. In general, participants found the emotion-aware robot to be
+intersting, effective at maintaining teamwork, adaptable and a good
+collaborative partner.
 
 \section{Future Work}
 
-This work makes way for a number of potential extentions. In particular, we
-believe that extentions to the system could be made by employing emotion
+This work makes way for a number of potential extensions. In particular, we
+believe that extensions to the system could be made by employing emotion
 functions we discussed in Chapter \ref{ch:appraisals}. By acquiring these
-emotion functions, one potential extention could be to begin exploring how
+emotion functions, one potential extension could be to begin exploring how
 different perceived or elicited emotions can influence different aspects of
 collaboration in a particular context. For instance, how the agent can interpret
-meaning of anger while the collaborators are negotiating pursuing or abondoning
-a given goal. Since the meaning of the many of the social emotions are defined
-in the field of psychology, the agent can use these meanings to improve the
-likability or other factors improving the collaboration.
+meaning of anger while the collaborators are negotiating pursuing or abandoning
+a given goal. Since the meaning of many social emotions are defined in the field
+of psychology, the agent can use these meanings to improve likability or other
+important factors in the collaboration.
 
 Secondly, while our main contribution focused mainly on enabling an agent to
 improve different aspects of collaboration, one possible area of future work
 would be to explore ways in which the agent can improve a chosen aspect of the
-collaboration, e.g. trust or performance. In particular, an intersting extention
-would be to enable the agent perceiving which aspect of the collaboration is
-suffering and needs to be improved at any given time. For example, if the human
-collaborator is loosing interest in achieving of a given goal, the agent can try
-to motivate the human collaborator with the right decision and ultimately
-behavior. This way the agent would be more adaptive duing collaboration.
+collaboration, e.g. trust or performance. In particular, an interesting
+extention would be to enable the agent to perceive which aspect of the
+collaboration is suffering and needs to be improved at any given time. For
+example, if the human collaborator is losing interest in achieving a given
+goal, the agent can try to motivate the human collaborator with the right
+decision and ultimately behavior. This way the agent would be more adaptive
+during collaboration.
 
 Finally, in addition to expanding the adaptability of the agent to the human
-collaborator's intrenal state, future extentions are also possible in the other
-mechanisms as well. For example, an intersting area to explore is the ability to
-expand and employ more elaborate computational models of motivation and theory
-of mind. These extentions could provide more information about the human
+collaborator's internal state, future extensions are also possible in the other
+mechanisms as well. For example, an interesting area to explore is the ability
+to expand and employ more elaborate computational models of motivation and theory
+of mind. These extensions could provide more information about the human
 collaborator and help the agent to act on more accurate model of the human's
 internal state. As with the above cases, the improvements in mental states and
-learning abilities are also left as potential area for further exploration.
+learning abilities are also left as potential areas for further exploration.
 
 \pagebreak
 
