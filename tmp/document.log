@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  11 DEC 2016 23:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  28 DEC 2016 17:06
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -829,11 +829,11 @@ ra-tion struc-ture (mech-
 Chapter 1.
 [1
 
-] [2] [3] [4] <figure/collaborative-robot.png, id=66, 361.35pt x 240.9pt>
+] [2] [3] [4] <figure/collaborative-robot.png, id=68, 361.35pt x 240.9pt>
 File: figure/collaborative-robot.png Graphic file (type png)
 
 <use figure/collaborative-robot.png>
-Package pdftex.def Info: figure/collaborative-robot.png used on input line 276.
+Package pdftex.def Info: figure/collaborative-robot.png used on input line 274.
 
 (pdftex.def)             Requested size: 422.7778pt x 281.85185pt.
  [5 <./figure/collaborative-robot.png (PNG copy)>] [6]
@@ -845,7 +845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 401--405
 
  []
 
-[9] [10] [11] [12] <figure/plans.png, id=94, 879.285pt x 550.055pt>
+[9] [10] [11] [12] <figure/plans.png, id=96, 879.285pt x 550.055pt>
 File: figure/plans.png Graphic file (type png)
 
 <use figure/plans.png>
@@ -879,7 +879,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1471--1476
 
  []
 
-[39] [40] [41] [42] <figure/cpm.png, id=193, 988.69376pt x 749.80125pt>
+[39] [40] [41] [42] <figure/cpm.png, id=194, 988.69376pt x 749.80125pt>
 File: figure/cpm.png Graphic file (type png)
 
 <use figure/cpm.png>
@@ -893,7 +893,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 
-<figure/comprehensive-CPM.png, id=200, 1105.12875pt x 780.9175pt>
+<figure/comprehensive-CPM.png, id=201, 1105.12875pt x 780.9175pt>
 File: figure/comprehensive-CPM.png Graphic file (type png)
 
 <use figure/comprehensive-CPM.png>
@@ -905,7 +905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1734--1739
  []
 
 [46 <./figure/comprehensive-CPM.png (PNG copy)>] [47]
-<figure/occ.png, id=210, 1339.0025pt x 609.27625pt>
+<figure/occ.png, id=211, 1339.0025pt x 609.27625pt>
 File: figure/occ.png Graphic file (type png)
  <use figure/occ.png>
 Package pdftex.def Info: figure/occ.png used on input line 1819.
@@ -916,21 +916,21 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
  [49 <./figure/occ.png (PNG copy)>]
-<figure/occ-structure.jpg, id=218, 648.4225pt x 640.3925pt>
+<figure/occ-structure.jpg, id=219, 648.4225pt x 640.3925pt>
 File: figure/occ-structure.jpg Graphic file (type jpg)
 
 <use figure/occ-structure.jpg>
 Package pdftex.def Info: figure/occ-structure.jpg used on input line 1857.
 (pdftex.def)             Requested size: 417.01054pt x 411.85297pt.
  [50 <./figure/occ-structure.jpg>]
-<figure/core-affect.png, id=222, 805.0075pt x 638.385pt>
+<figure/core-affect.png, id=223, 805.0075pt x 638.385pt>
 File: figure/core-affect.png Graphic file (type png)
 
 <use figure/core-affect.png>
 Package pdftex.def Info: figure/core-affect.png used on input line 1895.
 (pdftex.def)             Requested size: 298.47348pt x 236.69553pt.
 
-<figure/dimensional2.png, id=223, 762.85pt x 632.3625pt>
+<figure/dimensional2.png, id=224, 762.85pt x 632.3625pt>
 File: figure/dimensional2.png Graphic file (type png)
 
 <use figure/dimensional2.png>
@@ -943,7 +943,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
  [51]
-<figure/basic-emotions.jpg, id=227, 737.154pt x 657.657pt>
+<figure/basic-emotions.jpg, id=228, 737.154pt x 657.657pt>
 File: figure/basic-emotions.jpg Graphic file (type jpg)
 
 <use figure/basic-emotions.jpg>
@@ -956,7 +956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1954--1986
 
 [52 <./figure/core-affect.png (PNG copy)>] [53 <./figure/dimensional2.png (PNG 
 copy)>] [54 <./figure/basic-emotions.jpg>] [55] [56]
-<figure/dimensional-discrete.png, id=244, 931.48pt x 656.4525pt>
+<figure/dimensional-discrete.png, id=245, 931.48pt x 656.4525pt>
 File: figure/dimensional-discrete.png Graphic file (type png)
 
 <use figure/dimensional-discrete.png>
@@ -974,7 +974,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
  [59]
-<figure/occ-circumplex-mapping.png, id=254, 1179.40625pt x 897.3525pt>
+<figure/occ-circumplex-mapping.png, id=255, 1179.40625pt x 897.3525pt>
 File: figure/occ-circumplex-mapping.png Graphic file (type png)
 
 <use figure/occ-circumplex-mapping.png>
@@ -990,7 +990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2222--2232
 Chapter 3.
 [72
 
-] [73] <figure/theory-general-croped.pdf, id=300, 417.56pt x 287.0725pt>
+] [73] <figure/theory-general-croped.pdf, id=301, 417.56pt x 287.0725pt>
 File: figure/theory-general-croped.pdf Graphic file (type pdf)
 
 <use figure/theory-general-croped.pdf>
@@ -1043,7 +1043,7 @@ Chapter 4.
 [106
 
 ]
-<figure/collaborationStructure-small-croped.pdf, id=418, 356.33125pt x 174.6525
+<figure/collaborationStructure-small-croped.pdf, id=419, 356.33125pt x 174.6525
 pt>
 File: figure/collaborationStructure-small-croped.pdf Graphic file (type pdf)
  <use figure/collaborationStructure-small-croped.pdf>
@@ -1617,10 +1617,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16933 strings out of 493304
- 313609 string characters out of 6139871
- 388638 words of memory out of 5000000
- 19930 multiletter control sequences out of 15000+600000
+ 16934 strings out of 493304
+ 313624 string characters out of 6139871
+ 388650 words of memory out of 5000000
+ 19931 multiletter control sequences out of 15000+600000
  17102 words of font info for 62 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,9n,59p,1011b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1639,7 +1639,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (225 pages, 7434553 bytes).
+Output written on document.pdf (225 pages, 7435347 bytes).
 PDF statistics:
  1253 PDF objects out of 1440 (max. 8388607)
  803 compressed objects within 9 object streams

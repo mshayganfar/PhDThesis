@@ -81,7 +81,7 @@
 \large\textnormal{DOCTOR OF PHILOSOPHY}\\[0.5em]
 \large\textnormal{in}\\
 \large\textnormal{Computer Science}\\
-\large\textnormal{November 2016}\\[0.75em]
+\large\textnormal{January 2017}\\[0.75em]
 \end{center}
 
 \noindent\large\textsc{Approved}\\[0.5em]
@@ -140,13 +140,13 @@ Member}\\[0.5em] \Large\textnormal{\signature}\\
 \section{Motivation}
 
 The idea of robots or other intelligent agents living in a human environment has
-been a persistent dream from science fiction books to artificial intelligence
-and robotic laboratories. Collaborative robots are expected to become an
-integral part of humans' environment to accomplish their industrial and
-household tasks. In these environments, humans will be involved in robots'
-operations and decision-making processes. The involvement of humans influences
-the efficiency of robots' interaction and performance, and makes the robots
-sensitive to humans' cognitive abilities and behaviors.
+been a persistent aspiration from science fiction books to artificial
+intelligence and robotic laboratories. Collaborative robots are expected to
+become an integral part of human environments to accomplish their industrial
+and household tasks. In these environments, humans will be involved in
+the robots' operations and decision-making processes. The involvement of humans
+influences the efficiency of robots' interaction and performance, and makes the
+robots sensitive to human cognitive abilities and behaviors.
 
 A key aspect of the sociability of robots is their ability to collaborate with
 humans in the same environment. Collaboration is a coordinated activity in which
@@ -156,13 +156,13 @@ successful collaboration between robots and humans. To meet these challenges, it
 is crucial to understand what makes a collaboration not only successful, but
 also efficient. Existing computational models of collaboration explain some of
 the important concepts underlying collaboration; such as the presence of a
-reason for collaborators' commitment, and the necessity of communicating about
-mental states in order to maintain progress over the course of a collaboration.
-The most prominent collaboration theories are based on plans and intentions
-\cite{cohen:teamwork} \cite{grosz:plans-discourse}
-\cite{Litman:discourse-commonsense}, and are derived from Bratman's BDI
-architecture \cite{bratman:intentions-plans}. Two theories, Joint Intentions
-\cite{cohen:teamwork} and SharedPlans
+reason for the collaborators' commitment, and the necessity of communicating
+about mental states in order to maintain progress over the course of a
+collaboration. The most prominent collaboration theories are based on plans and
+intentions \cite{cohen:teamwork} \cite{grosz:plans-discourse}
+\cite{Litman:discourse-commonsense}, and are derived from Bratman's
+Belief--Desire--Intention (BDI) architecture \cite{bratman:intentions-plans}.
+Two theories, Joint Intentions \cite{cohen:teamwork} and SharedPlans
 \cite{grosz:planning-acting,grosz:collaboration,grosz:plans-discourse}, have
 been used to support teamwork and collaboration between humans and robots or
 virtual agents \cite{breazeal:humanoid-robots}
@@ -182,30 +182,29 @@ team members.
 Although existing collaboration theories explain the important elements of a
 collaboration structure, the underlying processes required to dynamically
 create, use, and maintain the elements of this structure are largely
-unexplained. For instance, a general mechanism has yet to be developed that
+unexplained. In particular, a general mechanism has yet to be developed that
 allows an agent to effectively integrate the influence of its collaborator's
 perceived or anticipated emotions into its own cognitive mechanisms to prevent
 shared task failures while maintaining collaborative behavior. Therefore, a
 process view of collaboration must include certain key elements. It should
-inherently involve social interactions since all collaborations occur between
-social agents, and it should essentially constitute a means of modifying the
-content of social interaction as the collaboration unfolds. The underlying
-processes of emotions possess these two properties, and social functions of
-emotions explain some aspects of the underlying processes in collaboration. This
-thesis makes the case for emotion-driven processes within collaboration and
+inherently involve social interactions, since all collaborations occur between
+social agents, and it should contain a means of modifying the content of social
+interaction as the collaboration unfolds. The social functions of emotions
+explain some aspects of the underlying processes in collaboration. This thesis
+makes the case for emotion-driven processes within collaboration and
 demonstrates how it furthers collaboration between humans and robots.
 
 \section{Thesis Statement and Scope}
 
 In this thesis, we develop and validate a framework based on \textit{Affective
-Motivational Collaboration Theory} which can improve the effectiveness of
-collaboration between agents/robots and humans. This thesis is established based
-on the reciprocal influence of collaboration structure and the appraisal
-processes in a dyadic collaboration. We focus only on two-participant
-collaboration; teamwork collaboration is out of our scope. Furthermore, this
-work focuses on a) the influence of emotion-regulated processes on the
-collaboration structure, and b) prediction of the observable behaviors of the
-other during a collaborative interaction.
+Motivational Collaboration} (AMC) theory which can improve the effectiveness of
+collaboration between agents/robots and humans. This thesis is based on the
+reciprocal influence of collaboration structure and the appraisal processes in a
+dyadic collaboration. We focus only on two-participant collaboration; teamwork
+collaboration is out of our scope. Furthermore, this work focuses on a) the
+influence of emotion-regulated processes on the collaboration structure, and b)
+prediction and interpretation of the observable behaviors of the other during a
+collaborative interaction.
 
 We describe the cognitive processes involved in a collaboration in the context
 of a cognitive architecture. There are several well-developed cognitive
@@ -220,27 +219,27 @@ the same time, existing collaboration theories, e.g., SharedPlans
 collaboration in terms of fundamental mental states, e.g., mutual beliefs or
 joint intentions. However, they do not describe the associated processes, their
 relationships, and influences on each other. \textit{Affective Motivational
-Collaboration Theory} deals with some of the major affect-driven processes
-having an impact on the collaboration structure. This theory is informed by
-research in psychology and artificial intelligence which is reviewed in Chapter
+Collaboration} theory deals with the major affect-driven processes having an
+impact on collaboration structure. This theory is informed by research in
+psychology and artificial intelligence which is reviewed in Chapter
 \ref{ch:background}. Our contribution, generally speaking, is to synthesize
-prior work on appraisal and collaboration, and motivation to provide a new
-theory which describes some of the prominent emotion-regulated goal-driven
-phenomena in a dyadic collaboration.
+prior work on appraisal\footnote{\color{red}{We have chosen appraisal-based
+modeling of emotions among several theories of emotions.}}, collaboration, and
+motivation to provide a new computational theory of the prominent emotion-regulated
+goal-driven phenomena in a dyadic collaboration.
 
 \section{Contributions}
 
 Throughout this work we aim to show how a robot can leverage emotion-driven
 processes using appraisal algorithms to improve collaboration with humans. As
-such, in this thesis work, we introduce a novel framework, called Affective
-Motivational Collaboration (AMC) framework, which allows a robotic agent to
-collaborate with a human while incoporating the underlying emotion-driven
-processes and the expressed emotion of the human collaborator. Such a framework
-is built based on computational models of collaboration and appraisal allowing
-for task-driven interaction with robots or other agents. The theoretical
-foundation, computational models and algorithms as well as the overall
-framework, and the end-to-end evaluation of the framework make the following
-contributions:
+such, in this thesis, we introduce a novel framework, called Affective
+Motivational Collaboration, which allows a robotic agent to collaborate with a
+human while incorporating underlying emotion-driven processes and the expressed
+emotion of the human collaborator. This framework is based on computational
+models of collaboration and appraisal allowing for task-driven interaction with
+robots or other agents. The theoretical foundation, computational models and
+algorithms, as well as the overall framework, and the end-to-end evaluation of
+the framework make the following contributions:
 
 \begin{enumerate}
   \item \textbf{Introducing \textit{Affective Motivational Collaboration Theory}:}
@@ -260,38 +259,38 @@ contributions:
   
 	(Chapter \ref{ch:appraisals}) Another contribution of our work is to create
 	computational models and algorithms to compute the value of appraisal variables
-	in a dyadic collaboration. We use the collaboration structure to compute
-	appraisal variables. Reciprocally, we use the evaluative nature of the
-	appraisal to make changes to the collaboration structure as required. We have
-	also developed a new algorithm for emotion-driven goal management in the
-	context of collaboration. Goal management is one of the important functions of
-	emotions during collaboration. Existing models and implementations of emotions
-	focus only on how emotions regulate and control internal processes and
-	sometimes behaviors. This part of our work shows how appraisal components of
-	the self and the human collaborator contributes to goal management as an
-	emotion function.
+	based on the collaboration structure in a dyadic collaboration. Reciprocally,
+	we use the evaluative nature of the appraisal to make changes to the
+	collaboration structure as required. We have also developed a new algorithm for
+	emotion-driven goal management in the context of collaboration. Goal management
+	is one of the important functions of emotions during collaboration. Existing
+	models and implementations of emotions focus only on how emotions regulate and
+	control internal processes and sometimes behaviors. This part of our work shows
+	how appraisal components of the self and the human collaborator contributes to
+	goal management as an emotion function.
   
   \begin{figure*}
     \centering
     \includegraphics[scale=1.17]{figure/collaborative-robot.png}
     \caption{A robotic arm collaborating with a human to achieve a shared goal
-    using \textit{Affective Motivational Collaboration Framework}.}
+    using \textit{Affective Motivational Collaboration} framework.}
     \label{fig:collaborative-robot}
   \end{figure*}
   
-  \item \textbf{Developing a computational framework based on \textit{Affective
-  Motivational Collaboration Theory}:}
+  \item \textbf{Implementing a computational system based on \textit{Affective
+  Motivational Collaboration} theory:}
 
-  (Chapter \ref{ch:appraisals}) In order to evaluate our computational models and
-  algorithms within an interaction with human collaborators, we have developed
-  a computational framework based on our theoretical foundations in
-  \textit{Affective Motivational Collaboration Theory}. Our computational
-  framework implements the key concepts related to \textit{Affective
-  Motivational Collaboration Theory} as well as minimal implementation of other
-  processes which are required for validation of the model but are not part of
-  this thesis' contributions. The emphasis of the model is on the underlying
-  cognitive processes of collaboration and appraisal concepts, rather than the
-  Perception and the Action mechanisms.
+  In order to evaluate our computational models and algorithms within an
+  interaction with human collaborators, we needed an overall functional system
+  to perceive, process and act in a collaborative environment. we have
+  implemented a computational system which employs our models and algorithms for
+  \textit{Affective Motivational Collaboration} theory. Our computational system
+  implements the key concepts related to \textit{Affective Motivational
+  Collaboration} theory as well as minimal implementation of other processes
+  which are required for validation of the model but are not part of this
+  thesis' contributions. The emphasis of the implementation is on the underlying
+  cognitive processes of collaboration and appraisal, however the implementation
+  also includes the Perception and the Action mechanisms.
 
   \item \textbf{Validating \textit{Affective Motivational Collaboration
   Theory:}}
@@ -299,13 +298,14 @@ contributions:
   (Chapter \ref{ch:awareness}) We have conducted two user studies a) to validate
   our appraisal algorithms before further development of our framework, and b)
   to investigate the overall functionality of our framework within an end-to-end
-  system evaluation with participants and a robot. The second user study was
-  also conducted to evaluate the benefit of using our computational framework in
-  human-robot collaboration. In the first user study, we crowd sourced our
-  questionnaires to test our hypothesis that humans and our algorithms will
-  provide similar answers to questions related to different factors within our
-  appraisal algorithms. In the second user study, we investigated the importance
-  of emotional awareness in human-robot collaboration, and the overall
+  system evaluation with participants and a robot (see Figure
+  \ref{fig:collaborative-robot}). The second user study was also conducted to
+  evaluate the benefit of using our computational framework in human-robot
+  collaboration. In the first user study, we crowd-sourced questionnaires to
+  test our hypothesis that our algorithms will provide answers similar to
+  humans' to questions related to different factors within our appraisal
+  algorithms. In the second user study, we investigated the importance of
+  emotional awareness in human-robot collaboration, and the overall
   functionality of the AMC framework with the participants in our study
   environment.
 \end{enumerate}
