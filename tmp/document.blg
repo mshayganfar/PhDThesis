@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: document.aux
 The style file: abbrv.bst
-Reallocated field_info (elt_size=4) to 11302 items from 5000.
+Reallocated field_info (elt_size=4) to 11279 items from 5000.
 Database file #1: mshayganfar.bib
 Name 2 in "Roddy Cowie and Naomi Sussman, and Aaron Ben-Ze'ev" has a comma at the end for entry cowie:concepts-definitions
 while executing---line 1049 of file abbrv.bst
@@ -15,45 +15,45 @@ while executing---line 1090 of file abbrv.bst
 Warning--empty publisher in pynadath:modeling-tom-appraisal
 Warning--empty title in shayganfar:appraisal-short
 Warning--empty booktitle in shayganfar:appraisal-short
-You've used 274 entries,
+You've used 273 entries,
             2118 wiz_defined-function locations,
-            1900 strings with 49968 characters,
-and the built_in function-call counts, 96061 in all, are:
-= -- 9576
-> -- 4005
+            1895 strings with 49860 characters,
+and the built_in function-call counts, 95764 in all, are:
+= -- 9544
+> -- 3998
 < -- 87
-+ -- 1625
-- -- 1293
-* -- 6398
-:= -- 15445
-add.period$ -- 879
-call.type$ -- 274
-change.case$ -- 1402
++ -- 1622
+- -- 1291
+* -- 6376
+:= -- 15396
+add.period$ -- 876
+call.type$ -- 273
+change.case$ -- 1398
 chr.to.int$ -- 0
-cite$ -- 279
-duplicate$ -- 3988
-empty$ -- 8036
-format.name$ -- 1293
-if$ -- 20683
+cite$ -- 278
+duplicate$ -- 3977
+empty$ -- 8009
+format.name$ -- 1291
+if$ -- 20622
 int.to.chr$ -- 0
-int.to.str$ -- 274
-missing$ -- 306
-newline$ -- 1371
-num.names$ -- 586
-pop$ -- 1620
+int.to.str$ -- 273
+missing$ -- 305
+newline$ -- 1366
+num.names$ -- 584
+pop$ -- 1618
 preamble$ -- 1
-purify$ -- 1172
+purify$ -- 1169
 quote$ -- 0
-skip$ -- 2772
+skip$ -- 2765
 stack$ -- 0
-substring$ -- 6306
-swap$ -- 981
+substring$ -- 6276
+swap$ -- 980
 text.length$ -- 87
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1020
+type$ -- 1016
 warning$ -- 5
-while$ -- 990
-width$ -- 277
-write$ -- 3030
+while$ -- 986
+width$ -- 276
+write$ -- 3019
 (There were 3 error messages)

@@ -316,101 +316,103 @@ the framework make the following contributions:
 \vspace*{-5mm}
 \section{Introduction}
 \vspace*{-3mm}
-In this chapter, we review the background of prominent collaboration theories
-including the the SharedPlans theory \cite{grosz:plans-discourse} as one of the
-two theoretical foundations of our work. We also provide the similarities and
-differences between these theories as well as both theoretical and practical
-related work and applications of them. We continue by discussing the concept of
+In this chapter, we start by reviewing the background of prominent collaboration
+theories including the the SharedPlans theory \cite{grosz:plans-discourse} as
+one of the two theoretical foundations of our work. We discuss the similarities
+and differences between these theories as well as related theoretical and
+practical work and applications. We continue by discussing the concept of
 affective computing and the social and communicative aspects of emotions from a
 psychological point of view. Understanding the social aspects of emotions is
-important in our work, since it is focused on collaboration which is a social
-phenomenon in human environments. We also present the concept of artificial
-emotions and provide some examples of the existing computational models of
-emotions. Then, we provide the background of the cognitive appraisal theory
-of emotions as the second theoretical foundation in our work as well as other
-computational models of emotions and the related concepts such as some examples
-of cognitive architectures and the influence of affect in decision-making
-procedures. This chapter continues with the description of motives and the
-related theories in psychology and artificial intelligence. The role of motives
-as goal-driven affective components is crucial in our work, since the
-collaboration structure is built based on the concept of a shared goal between
-collaborators. Finally, a brief description and the related work in psychology
-and artificial intelligence is provided about theory of mind as another concept
-used in a small limited-scale in our work.
+important in our work, since our work is focused on collaboration which is a
+social phenomenon in human environments. We also present the concept of
+artificial emotions and provide some examples of the existing computational
+models of emotions. Then, we provide the background of the cognitive appraisal
+theory of emotions as the second theoretical foundation in our work as well as
+other computational models of emotions and the related concepts such as some
+examples of cognitive architectures and the influence of affect in
+decision-making procedures. This chapter continues with a description of motives
+and related theories in psychology and artificial intelligence. The role of
+motives as goal-driven affective components is crucial in our work, since the
+collaboration structure is based on the concept of a shared goal between
+collaborators. Finally, a brief description and the related work on theory of
+mind in psychology and artificial intelligence is provided as another concept
+used in a limited scale in our work.
 
-\section{Computational Collaboration Theories}
+\section{Computational Theories of Collaboration}
 The construction of computer systems and robots that are intelligent,
 collaborative problem-solving partners is important in Artificial Intelligence
-(AI) and its applications. It has always been important for us to make computer
-systems better at helping us do whatever they are designed for. To build
+(AI) and its applications. It has always been important to make computer systems
+better at helping humans do whatever these systems are designed for. To build
 collaborative systems, we need to identify the capabilities that must be added
-to individual agents so that they can work with us or other agents. As Grosz
+to individual agents so that they can work with humans or other agents. As Grosz
 says, collaboration must be designed into systems from the start; it cannot be
-patched on \cite{grosz:collaborative-systems}.
+patched on later \cite{grosz:collaborative-systems}.
 
 Collaboration is a special type of coordinated activity in which the
 participants work jointly, together performing a task or carrying out the
 activities needed to satisfy a shared goal \cite{grosz:collaboration}.
-Collaboration involves several key properties both in structural and functional
-levels. For instance, most collaborative situations involve participants who
-have different beliefs and capabilities; most of the time collaborators only
-have partial knowledge of the process of accomplishing the collaborative
-activities; collaborative plans are more than the sum of individual plans;
-collaborators are required to maintain mutual beliefs about their shared goal
-throughout the collaboration; they need to be able to communicate with others
-effectively; they need to commit to the group activities and to their role in
-it; collaborators need to commit to the success of others; they need to
-reconcile between commitments to the existing collaboration and their other
-activities; and they need to interpret others' actions and utterances in the
-collaboration context \cite{grosz:mice-menus}. These collaboration properties
-are captured by the existing computational collaboration theories.
+Collaboration involves several key properties at both the structural and
+functional levels: most collaborative situations involve participants who have
+different beliefs and capabilities; most of the time, collaborators only have
+partial knowledge of the process of accomplishing the collaborative activities;
+collaborative plans are more than the sum of individual plans; collaborators are
+required to maintain mutual beliefs about their shared goal throughout the
+collaboration; they need to be able to communicate with others effectively; they
+need to commit to the group activities and to their role in it; collaborators
+need to commit to the success of others; they need to reconcile between
+commitments to the existing collaboration and their other activities; and they
+need to interpret others' actions and utterances in the collaboration context
+\cite{grosz:mice-menus}. These collaboration properties are captured by existing
+computational theories of collaboration.
 
-As we mentioned, to be collaborative, partners, e.g., a robot and a human, need
-to meet the specifications stipulated by collaboration theories. These theories
-argue for an essential distinction between a collaboration and a simple
-interaction or even a coordination in terms of commitments
-\cite{grosz:shared-plans, lochbaum:collaborative-planning}. This section briefly
-provides descriptions of major computational collaboration theories, their
-similarities and differences, and their application in AI and robotics. It
-primarily focuses on Joint Intention, SharedPlans and hybrid theories of
-collaboration. In this section, we do not present the theories in formal
-language, but simply describe their features in general terms.
+As mentioned above, to be collaborative, partners, e.g., a robot and a human,
+need to meet the specifications stipulated by collaboration theories. These
+theories argue for an essential distinction between a collaboration and a simple
+interaction or even a coordination \cite{grosz:shared-plans,
+lochbaum:collaborative-planning}. This section briefly provides descriptions of
+major computational collaboration theories, their similarities and differences,
+and their application in AI and robotics. It primarily focuses on Joint
+Intention, SharedPlans and hybrid theories of collaboration. In this section, we
+do not present the theories in formal language, but rather describe their
+features in general terms.
 
 The prominent collaboration theories are mostly based on plans and joint
 intentions \cite{cohen:teamwork} \cite{grosz:plans-discourse}
-\cite{Litman:discourse-commonsense}, and they were derived from the
-Belief-Design-Intention (BDI) paradigm developed by Bratman
-\cite{bratman:intentions-plans} which is fundamentally reliant on folk
-psychology \cite{ravenscroft:folk}. The two theories, Joint Intentions
-\cite{cohen:teamwork} and SharedPlans \cite{grosz:plans-discourse}, have been
-used extensively to examine and describe teamwork and collaboration.
+\cite{Litman:discourse-commonsense}, and were strongly influenced by the BDI
+paradigm introduced by Bratman \cite{bratman:intentions-plans} which is
+fundamentally reliant on folk psychology \cite{ravenscroft:folk}. The two
+theories, Joint Intentions \cite{cohen:teamwork} and SharedPlans
+\cite{grosz:plans-discourse}, have been used extensively to analyze and
+implement teamwork and collaboration.
 
-The SharedPlans theory is based on the theories of Bratman and Pollack
+The SharedPlans theory grew out of the theories of Bratman and Pollack
 \cite{bratman:plans-reasoning,pollack:plan-inference,
-pollack:plan-mental-attitudes}, who outline a mental-state view of plans in
+pollack:plan-mental-attitudes}, who outlined a mental-state view of plans in
 which having a plan is not just knowing how to do an action, but also having the
-intention to do the actions entailed. Bratman's views of intention goes back to
-the philosophical views of Anscombe \cite{anscombe:intention} and
-$Casta\tilde{n}eda$ \cite{castaneda:thinking} about intention. Also, as Grosz
+intention to do the actions. Bratman's views of intention goes back to the
+philosophical views of Anscombe \cite{anscombe:intention} and
+Casta$\tilde{n}$eda \cite{castaneda:thinking} about intention. Also, as Grosz
 and Sidner mention in \cite{grosz:plans-discourse} the natural segmentation of
-discourse reflects intentional behaviors in each segment. These intentions are
-designated as Discourse Segment Purposes (DSPs) which are the basic reasons for
-engaging in different segments of discourse. DSPs are a natural extension of
-Gricean intentions at the utterance level \cite{neale:grice-language}.
+discourse reflects intentional behaviors in each segment.
+
+% These intentions are designated as Discourse Segment Purposes (DSPs) which are
+% the basic reasons for engaging in different segments of discourse. DSPs are a
+% natural extension of Gricean intentions at the utterance level
+% \cite{neale:grice-language}.
 
 Cohen and Levesque also mention that in Joint Intentions theory their view of
 intention is primarily future-directed \cite{cohen:intention-commitment} which
 makes their view similar to Bratman's theory of intention
-\cite{bratman:intention}, contra Searle \cite{searle:collective}.\\
+\cite{bratman:intention}, and contrary to Searle \cite{searle:collective}.\\
 
-\textbf{Commitment} -- One of the most important concepts of teamwork and
-collaboration is the concept of commitment. Collaboration theories are required
-to meet the notion of commitment, otherwise the participants are just doing some
-coordinated works. Since the prominent computational collaboration theories,
-reviewed in this paper, are based on Bratman's view of intention, we briefly
-provide his view of commitment here before describing these theories. Bratman
-defines certain prerequisites for an activity to be considered shared and
-cooperative \cite{bratman:shared-activity}. He stresses the importance of:
+\textbf{Commitment} -- One of the most important concepts in teamwork and
+collaboration is commitment. Collaboration theories are required to meet the
+notion of commitment, otherwise the participants are just doing some coordinated
+activities. Since the prominent computational collaboration theories, reviewed
+in this paper, are based on Bratman's view of intention, we briefly provide his
+view of commitment here before describing these theories. Bratman defines
+certain prerequisites for an activity to be considered shared and cooperative
+\cite{bratman:shared-activity}. He stresses the importance of:
 
 \begin{enumerate}[a)]
   \item \textbf{Mutual commitment to joint activity} -- which can be achieved by
@@ -422,27 +424,29 @@ cooperative \cite{bratman:shared-activity}. He stresses the importance of:
   over tasks from teammates if necessary.
 \end{enumerate}
 
-In the following sections, we are also going to see how each collaboration
-theory addresses the notion of commitment.
+In the following sections, we will see how each collaboration theory addresses
+the notion of commitment.
 
-\subsection{Shared-Plans Theory}
+\subsection{SharedPlans Theory}
 \label{sec:sharedplans}
 
-The SharedPlans model of collaborative action, presented by Grosz and Sidner
+The SharedPlans theory of collaborative action, developed by Grosz and Sidner
 \cite{grosz:planning-acting, grosz:collaboration, grosz:plans-discourse}, aims
 to provide the theoretical foundations needed for building collaborative
-robots/agents \cite{grosz:collaborative-systems}. SharedPlans is a general
+robots or agents \cite{grosz:collaborative-systems}. SharedPlans is a general
 theory of collaborative planning that requires no notion of joint intentions
 (see Section \ref{sec:joint-intentions}), accommodates multi-level action
 decomposition hierarchies and allows the process of expanding and elaborating
-partial plans into full plans (see Section \ref{sec:full-partial-plan}).
-SharedPlans theory explains how a group of agents can incrementally form and
-execute a shared plan that then guides and coordinates their activity towards
-the accomplishment of a shared goal. SharedPlans is rooted in the observation
-that collaborative plans are not simply a collection of individual plans, but
-rather a tight interleaving of mutual beliefs and intentions of different team
-members. In \cite{grosz:collaboration} Grosz and Kraus use first-order logic to
-present the formalization of SharedPlans.
+partial plans into full plans. SharedPlans theory explains how a group of agents
+can incrementally form and execute a shared plan which then guides and
+coordinates their activity towards the accomplishment of a shared goal.
+SharedPlans is rooted in the observation that collaborative plans are not simply
+a collection of individual plans, but rather a tight interleaving of mutual
+beliefs\footnote{\color{red}In our framework we also have the notion of
+\textit{private} beliefs (vs.\,\textit{shared} beliefs) which the other
+collaborator does not know about these beliefs.} and intentions of different
+team members. In \cite{grosz:collaboration} Grosz and Kraus use first-order
+logic to formalize SharedPlans.
 
 Grosz and Sidner in \cite{grosz:plans-discourse} present a model of plans to
 account for how agents with partial knowledge collaborate in the construction of
@@ -450,23 +454,21 @@ a domain plan. They are interested in the type of plans that underlie discourse
 in which the agents are collaborating in order to achieve a shared goal. They
 propose that agents are building a shared plan in which participants have a
 collection of beliefs and intentions about the actions in the plan. Agents have
-a library of how to do their actions, i.e. recipes (see Section
-\ref{sec:recipe}). These recipes might be partially specified as to how an
-action is executed, or contributes to a goal (see Section
-\ref{sec:full-partial-plan}). Then, each agent communicates their beliefs and
-intentions by making utterances about what actions they can contribute to the
-shared plan. This communication leads to the construction of a shared plan, and
-ultimately termination of the collaboration with each agent mutually believing
-that there exists one agent who is going to execute an action in the plan, and
-the fact that that agent has intention to perform the action, and that each
-action in the plan contributes to the goal \cite{grosz:plans-discourse}
-\cite{lochbaum:plan-models}.
+a library of how to do their actions, i.e. recipes. These recipes may partially
+specify how an action is executed, or contributes to a goal. Then, each agent
+communicates its beliefs and intentions by making utterances about what actions
+they can contribute to the shared plan. This communication leads to the
+construction of a shared plan, and ultimately termination of the collaboration
+with each agent mutually believing that there exists one agent who is going to
+execute an action in the plan, and the fact that that agent has intention to
+perform the action, and that each action in the plan contributes to the goal
+\cite{grosz:plans-discourse} \cite{lochbaum:plan-models}.
 
-Later, we are going to see that to successfully complete a plan the
-collaborators must mutually believe that they have a common goal and have agreed
-on a sequence of actions for achieving that goal. They should believe that they
-are both capable of performing their own actions and intend to perform those
-actions while they are committed to the success of their plans.
+Later, we will see that to successfully complete a plan the collaborators must
+mutually believe that they have a common goal and have agreed on a sequence of
+actions for achieving that goal. They should believe that they are both capable
+of performing their own actions and intend to perform those actions while they
+are committed to the success of their plans.
 
 \subsubsection{Recipes}
 \label{sec:recipe}
@@ -511,7 +513,7 @@ plan of a single agent, Grosz and Sidner extended that to plans of two or more
 collaborative agents. The concept of the shared plan provides a framework in
 which to further evaluate and explore the roles that particular beliefs and
 intentions play in collaborative activity \cite{lochbaum:plan-models}. However,
-this formulation of shared plans (a) could only deal with activities that
+Pollack's formulation of shared plans (a) could only deal with activities that
 directly decomposed into single-agent actions, (b) did not address the
 requirement for the commitment of the agents to their joint activities, and (c)
 did not adequately deal with agents having partial recipes
@@ -534,7 +536,7 @@ group plans for each of the constituent actions in the mutually agreed recipe
 
 \begin{figure}[tbh]
   \center
-  \includegraphics[width=0.95\textwidth]{figure/plans.png}
+  \includegraphics[width=0.8\textwidth]{figure/plans.png}
   \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
   \label{fig:plans}
 \end{figure}
@@ -542,31 +544,33 @@ group plans for each of the constituent actions in the mutually agreed recipe
 As shown in Figure \ref{fig:plans} (bottom), plans for group actions include two
 essential constituents that do not have correlates in the individual plan.
 First, the agents need to have a commitment to the group activity; All the
-agents need to intend that (see Section \ref{sec:intend-to-that}) the group will
-do the action. For instance, a robot and an astronaut need to have intentions
-that they install solar panels together. Among other things, these intentions
-will keep them both working on the panels until the panels are installed.
-Second, the participants need to have some commitment to the other agents to
-succeed in their own their actions. For instance, the robot must have an
-intention that the astronaut be able to measure the quality of installation
-successfully. This intention will prevent the robot from interrupting the
-astronaut's measurement action or prevent the robot from using the astronaut's
-measurement tool \cite{grosz:collaborative-systems, grosz:plans-discourse}.
+agents need to intend that the group will do the action. {\color{red}{For
+instance, when a robot and an astronaut are collaborating to install a solar
+panel, they need to have intentions to install the solar panel together.}} Among
+other things, these intentions will keep them both working on the panels until
+the panels are installed. Second, the participants need to have some commitment
+to the other agents to succeed in their own their actions. For instance, the
+robot must have an intention that the astronaut be able to measure the quality
+of installation successfully. This intention will prevent the robot from
+interrupting the astronaut's measurement action or prevent the robot from using
+the astronaut's measurement tool \cite{grosz:collaborative-systems,
+grosz:plans-discourse}.
 
 \subsubsection{Full Vs. Partial Shared Plan}
 \label{sec:full-partial-plan}
 
-The SharedPlans formalization distinguishes complete plans and partial plans. A
-shared plan can be either a \textit{Full Shared Plan (FSP)} or a \textit{Partial
-Shared Plan (PSP)}. An \textit{FSP} is a complete plan in which agents have fully
-determined how they will perform an action. A \textit{PSP} definition provides a
-specification of the minimal mental state requirements for collaboration to
-exist and gives criteria governing the process of completing the plan. 
+The SharedPlans formalization distinguishes complete (full) plans and partial
+plans. A shared plan can be either a \textit{Full Shared Plan (FSP)} or a
+\textit{Partial Shared Plan (PSP)}. An \textit{FSP} is a complete plan in which
+agents have fully determined how they will achieve a shared goal. A \textit{PSP}
+definition provides a specification of the minimal mental state requirements for
+collaboration to exist and gives criteria governing the process of completing
+the plan.
 
 An \textit{FSP} to do $\alpha$ represents a situation where every aspect of a
 joint activity $\alpha$ is fully determined. This includes mutual belief and
-agreement in the complete recipe to do $\alpha$. A recipe is a specication of a
-set of actions \textit{$A_i$}, which constitutes the performance of $\alpha$
+agreement in the complete recipe to do $\alpha$. A recipe is a specification of
+a set of actions \textit{$A_i$}, which constitutes the performance of $\alpha$
 when executed under specified constraints. \textit{FSP(\textbf{P}, $\Theta,
 \alpha, T_p, T_\alpha, \textbf{R}_\alpha$)} denotes a group $\Theta$'s plan
 \textit{\textbf{P}} at time \textit{$T_p$} to do action $\alpha$ at time
@@ -3323,10 +3327,10 @@ perspectives on categorization of beliefs. In one perspective, we categorize
 beliefs based on whether they are shared between the collaborators. The
 SharedPlans \cite{grosz:plans-discourse} theory is the foundation of this
 categorization, in which, for any given proposition the agent may have: a)
-private beliefs (the agent believes the human does not know these), b) the inferred
-beliefs of the human (the agent believes the human collaborator has these
-beliefs), and c) mutual beliefs (the agent believes both the self and the human
-have these same beliefs and both of them believe that). From another
+private beliefs (the agent believes the human does not know these), b) the
+inferred beliefs of the human (the agent believes the human collaborator has
+these beliefs), and c) mutual beliefs (the agent believes both the self and the
+human have these same beliefs and both of them believe that). From another
 perspective, we categorize beliefs based on who or what they are about. In this
 categorization, beliefs can be about the self, the other, or they can be about
 the environment. Beliefs about the environment can be about internal events,

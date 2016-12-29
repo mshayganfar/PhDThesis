@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {1.3}Contributions}{4}
 \contentsline {chapter}{\numberline {2}Background and Related Work}{7}
 \contentsline {section}{\numberline {2.1}Introduction}{7}
-\contentsline {section}{\numberline {2.2}Computational Collaboration Theories}{8}
-\contentsline {subsection}{\numberline {2.2.1}Shared-Plans Theory}{10}
+\contentsline {section}{\numberline {2.2}Computational Theories of Collaboration}{8}
+\contentsline {subsection}{\numberline {2.2.1}SharedPlans Theory}{10}
 \contentsline {subsubsection}{Recipes}{11}
 \contentsline {subsubsection}{Full Vs. Partial Shared Plan}{14}
 \contentsline {subsubsection}{Communicating Intentions}{15}
