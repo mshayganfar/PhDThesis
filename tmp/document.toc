@@ -36,12 +36,12 @@
 \contentsline {subsubsection}{Component Process Model}{43}
 \contentsline {subsubsection}{Appraisal Process}{44}
 \contentsline {subsubsection}{Coping Process}{46}
-\contentsline {subsubsection}{OCC, a Structural Appraisal Theory of Emotion}{47}
-\contentsline {subsection}{\numberline {2.4.2}Other Computational Models}{49}
+\contentsline {subsubsection}{OCC, a Structural Appraisal Model of Emotion}{47}
+\contentsline {subsection}{\numberline {2.4.2}Other (Non-Appraisal) Computational Models}{49}
 \contentsline {subsubsection}{Constructivist (Dimensional) Emotion Theories}{49}
-\contentsline {subsubsection}{Basic (Discrete) Emotion Theories}{51}
+\contentsline {subsubsection}{Basic (Discrete) Emotion Theories}{52}
 \contentsline {subsubsection}{Rational Approaches}{53}
-\contentsline {subsubsection}{Communicative Approaches}{53}
+\contentsline {subsubsection}{Communicative Approaches}{54}
 \contentsline {subsection}{\numberline {2.4.3}Similarities and Differences}{54}
 \contentsline {subsubsection}{Dimensional Vs. Discrete (Basic) Emotion Theories}{54}
 \contentsline {subsubsection}{Appraisal Vs. Dimensional Emotions Theories}{57}

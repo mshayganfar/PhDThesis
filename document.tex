@@ -1531,7 +1531,7 @@ well as making expressions of the agent's internal states more perceivable
 during the interaction \cite{gadanho:learning-emotions}.
 
 The importance of these values of emotions for designing social agents having
-artificial emotions is prominent. However, the question is what problems are we
+artificial emotions is apparent. However, the question is what problems are we
 facing in designing an effective social agent? In
 \cite{freitas:artificial-emotions-ready} authors discuss some of these problems
 and provide references speculating on the nature, function and mechanisms of
@@ -1540,7 +1540,7 @@ intelligent systems as well as implementation of emotions in several multi-agent
 systems are presented in \cite{miranda:emotions-humans-ai}. Scheutz discusses
 the role of emotions in artificial intelligence and how we can determine the
 utility of emotions for the design of an artificial agent
-\cite{scheutz:emotion-role}. In \cite{botelho:machinery-emotions} authors
+\cite{scheutz:emotion-role}. In \cite{botelho:machinery-emotions} the authors
 present a definition and theory of artificial emotions viewed as a sequential
 process comprising the appraisal of the agent's global state; they also show how
 emotions are generated, represented and used in the Salt and Pepper architecture
@@ -1571,7 +1571,7 @@ they focus on interaction between a robot and a human. The relationship between
 cognition and emotion receives more attention due to the mutual influences they
 have on each other
 \cite{morse:robotic-modelling-cognition,scheutz:emotional-states-behavior}. For
-instance, in \cite{gadanho:learning-emotions} authors employ emotions in the
+instance, in \cite{gadanho:learning-emotions} the authors employ emotions in the
 learning procedure of a robot, and in \cite{broekens:affect-action-selection} and
 \cite{scheutz:emotion-action-behavior} authors discuss the importance of
 emotions in the action selection procedure of an agent or a robot, impacting
@@ -1580,61 +1580,63 @@ artificial emotions will impact the context of human-robot/computer interaction
 \cite{hudlicka:affect-HRI} and how humans and robots understand each other's
 emotions in a social environment
 \cite{kirby:social-robots,canamero:emotion-robot-perspective}. In
-\cite{rumbell:comparative-emotions-functions} authors selected twelve autonomous
-agents that incorporate an emotion mechanism into the action selection procedure
-to compare. They introduced a framework based on correlations between emotion
-roles performed and aspects of emotion mechanisms used to perform those roles.
-Gratch and Marsella also present one method to evaluate a computational model of
-emotion in \cite{gratch:evaluating} which compares behavior of the model against
-human behavior.
+\cite{rumbell:comparative-emotions-functions} the authors selected twelve
+autonomous agents that incorporate an emotion mechanism into the action
+selection procedure to compare. They introduced a framework based on
+correlations between emotion roles performed and aspects of emotion mechanisms
+used to perform those roles. Gratch and Marsella also present a method to
+evaluate a computational model of emotion in \cite{gratch:evaluating} which
+compares behavior of the model against human behavior.
 
 \subsection{Cognitive Architectures}
 
-There are several integrated cognitive architectures trying to produce all
-aspects of behavior as a single system while remaining constant across different
-domains \cite{anderson:act-r, laird:soar}. The comparison of underlying
-philosophy and functional description of the most prominent cognitive
-architectures have been surveyed; several criteria are provided to evaluate such
-architectures
+There are several integrated cognitive architectures that try to produce all
+aspects of behavior as a single system in different domains
+\cite{anderson:act-r, laird:soar}. {\color{red}A survey on the comparison of
+underlying philosophy and functional description of the most prominent cognitive
+architectures introduces several criteria to evaluate such architectures}
 \cite{chong:cognitive-architectures-survey,langley:cognitive-architectures,
 thorisson:cognitive-architectures-autonomy}. The necessity of integrating these
-cognitive architectures with robots has been discussed from the perspective of
+cognitive architectures into robots has been discussed from the perspective of
 developmental psychology \cite{asada:cognitive-robotics-humanoid,
 d'mello:computational-functional-modeling,
 kelley:cognitive-robotics-psychology}. There are also many examples emphasizing
-the importance of cognitive robotics from this perspective. Some of these
-cognitive architectures are biologically inspired, e.g., \textit{eBICA}
+the importance of cognitive robotics from this perspective, while some of them
+also incorporate the concept of affect in their design
+\cite{cai:affective-model-psi}. Some of these cognitive architectures are
+biologically inspired, e.g., \textit{eBICA}
 \cite{samsonovich:emotional-biologically-architecture}, or
 \cite{baxter:cognitive-architecture-hri} and
 \cite{ray:self-sustaining-architecture}, while some others are inspired by
 psychological theories, e.g., $\MakeUppercase{ACT-R\Phi}$
 \cite{dancy:actR-physiology-affect}, or
 \cite{mirolli:vygotskyan-cognitive-robotics} and
-\cite{dominey:shared-intention-cognition}, while some of them also incorporate
-the concept of affect in their design \cite{cai:affective-model-psi}.
+\cite{dominey:shared-intention-cognition}.
 
 \section{Computational Models of Emotions}
-There are different types of computational theories of emotion. These theories
-differ in the type of relationships between their components and whether a
-particular component plays a crucial role in an individual emotion. For
-instance, the basic component of an emotion can be the behavioral tendencies,
-the cognitive elements, or the somatic processes. Emotion theories can also
-differ based on their representationial distinction.
+There are different types of computational theories of emotion such as
+appraisal and dimensional theories. These theories differ in the type of
+relationships between their components and whether a particular component plays
+the crucial role in an individual emotion. For instance, the basic component of
+an emotion can be the behavioral tendencies, the cognitive elements, or the
+somatic processes. Emotion theories can also differ based on their
+representationial distinctions.
 
 \subsection{Appraisal Theory}
 \label{sec:appraisal-theory}
 
 Appraisal theories of emotion were first formulated by Arnold
 \cite{arnold:emotion-personality} and Lazarus \cite{lazarus:emotion-adaptation}
-and then were actively developed in the early 80s by Ellsworth and Scherer and
+and then were actively developed in the early 1980s by Ellsworth and Scherer and
 their students \cite{roseman:appraisal-theory}
 \cite{sander:systems-approach-appraisal} \cite{scherer:nature-function-emotion}
-\cite{scherer:emotions-emergent} \cite{scherer:appraisal-processes}. The
-emotional experience is the experience of a particular situation
+\cite{scherer:emotions-emergent} \cite{scherer:appraisal-processes}. In
+general, the emotional experience is the experience of a particular situation
 \cite{frijda:emotions}. Appraisal theory describes the cognitive process by
 which an individual evaluates the situation in the environment with respect to
 the individual's well-being and triggers emotions to control internal changes
-and external actions.
+and external actions. In this section, we are going to review sequential and
+structural approaches incorporating the appraisal concept.
 
 \begin{figure}[tbh]
   \center
@@ -1653,13 +1655,13 @@ The ``components" referred to in this approach are the components of the
 cognitive appraisal process. These are referred to as \textit{appraisal
 variables}, and include \textit{novelty, valence, goal relevance, goal
 congruence}, and \textit{coping abilities}
-(further on, in this section, some of the appraisal variables used in
-computational models are introduced)
+(later in this section some of the appraisal variables used in computational
+models are introduced)
 \cite{scherer:nature-function-emotion,scherer:appraisal-processes}. A stimulus,
 whether real or imagined, is analyzed in terms of its meaning and consequences
 for the agent, to determine the affective reaction. The analysis involves
 assigning specific values to the appraisal variables. Once the appraisal
-variable values are determined by the organism’s evaluative processes, the
+variable values are determined by the organism's evaluative processes, the
 resulting vector is mapped onto a particular emotion, within the n-dimensional
 space defined by the n appraisal variables. The semantic primitives for
 representing emotions within this model are thus these individual appraisal
@@ -1670,22 +1672,22 @@ during appraisal (Relevance, Implications, etc.).
 \subsubsection{Component Process Model}
 \label{sec:cpm}
 
-The Component Process Model (CPM) is Scherer's influential and major theory of
+The Component Process Model (CPM) is Scherer's influential appraisal theory of
 emotions
 \cite{scherer:sequential-appraisal-process,scherer:appraisal-processes}. This
 theory focuses on the dynamic unfolding of emotions. The CPM suggests that an
 event and its consequences are appraised with a set of criteria on multiple
 levels of processing (the appraisal component). The result of the appraisal will
 generally have a motivational effect, often changing or modifying the
-motivational state before the occurrence of the event. Based on the appraisal
-results and the motivational changes, some effects will occur in the autonomic
-and somatic nervous system. The CPM considers emotions as the synchronisation of
-many different cognitive and physiological components. Emotions are identified
-with the overall process whereby low level cognitive appraisals, in particular
-the processing of relevance, trigger bodily reactions, behaviours and subjective
-feelings. The model suggests that there are four major appraisal objectives
-required to adaptively react to a salient event
-\cite{scherer:dynamic-architecture-emotion}:
+motivational state (see Section \ref{sec:affect-motives}) before the occurrence
+of the event. Based on the appraisal results and the motivational changes, some
+effects will occur in the autonomic and somatic nervous system. The CPM
+considers emotions as the synchronisation of many different cognitive and
+physiological components. Emotions are identified with the overall process
+whereby low level cognitive appraisals, in particular the processing of
+relevance, trigger bodily reactions, behaviours and subjective feelings. The
+model suggests that there are four major appraisal objectives required to
+adaptively react to a salient event \cite{scherer:dynamic-architecture-emotion}:
 
 \begin{enumerate}[a)]
   \item \textbf{Relevance:} How relevant is this event for the agent? Does it
@@ -1720,30 +1722,30 @@ cognitive functions are illustrated by the arrows in the upper part of Figure
 \subsubsection{Appraisal Process}
 \label{sec:appraisal-process}
 
-According to this theory, appraisals are separable antecedents of emotion, that
-is, the individual first evaluates the environment and then feels an appropriate
-emotion \cite{scherer:appraisal-processes}. The appraisal procedure begins with
-the evaluation of the environment according to the internalized goals and is
-based on systematic assessment of several elements
+According to appraisal theory, appraisals are separable antecedents of emotion,
+that is, the individual first evaluates the environment and then feels an
+appropriate emotion \cite{scherer:appraisal-processes}. The appraisal procedure
+begins with the evaluation of the environment according to the internalized
+goals and is based on systematic assessment of several elements
 \cite{scherer:sequential-appraisal-process}. The outcome of this process
 triggers the appropriate emotions. In many versions of appraisal theory,
 appraisals also trigger cognitive responses often called \textit{coping
 strategies}. In fact, the coping mechanism manages the individual's action with
 respect to the individual's emotional state and the existing internal and/or
-external demands \cite{folkman:coping-pitfalls-promise}. The large majority of
-computational models of emotions are based on this theory. An individual can
-also use knowledge about the emotional reactions of others to make inferences
-about them. According to the appraisal patterns, different emotions can be
-experienced and expressed. Since expression of emotions reflects one's
-intentions through the appraisal process, the \textit{reverse appraisal}
-mechanism helps one to infer others' mental states based on their expressions.
+external demands \cite{folkman:coping-pitfalls-promise}. The majority of
+computational models of emotions take this approach. An individual can also use
+knowledge about the emotional reactions of others to make inferences about them.
+According to the appraisal patterns, different emotions can be experienced and
+expressed. Since expression of emotions reflects one's intentions through the
+appraisal process, the \textit{reverse appraisal} mechanism helps one to infer
+others' mental states based on their expressions.
 \cite{gratch:reverse-appraisal, hareli:emotional-reaction-perception}.
 
-Appraisal process is typically viewed as the cause of emotion and the cognitive
-and behavioral changes associated with emotion. For instance, a particular
-pattern of the appraisal variables (i.e., individual judgements) will elicit a
-certain emotion or emotional expressions. These appraisal variables include
-\cite{marsella:ema-process-model}:\\
+The appraisal process is typically viewed as the cause of emotion and the
+cognitive and behavioral changes associated with emotion. For instance, a
+particular pattern of the appraisal variables (i.e., individual judgements) will
+elicit a certain emotion or emotional expressions. Some of the (computational)
+appraisal variables include \cite{marsella:ema-process-model}:
 
 \begin{itemize}
   \item \textbf{Relevance:} A relevant event has non-zero utility for an agent.
@@ -1775,17 +1777,17 @@ certain emotion or emotional expressions. These appraisal variables include
 \subsubsection{Coping Process}
 \label{sec:coping-process}
 
-Another key process involved in appraisal is the coping process. This process
-determines whether and how the agent shoud respond with respect to the outcome
-of appraising the events. There are several coping strategies that computational
-models like EMA \cite{gratch:domain-independent} use as control signals. These
-control signals enable or suppress the cognitive processes that operate on the
-causal interpretation of the appraisal patterns. The coping process controls the
-congruency of the actions according to these patterns. As it is shown below, in
-\cite{gratch:domain-independent} coping strategies are organized into two
+Another key process involved in appraisal is coping. This process determines
+whether and how the agent should respond with respect to the outcome of
+appraising the events. There are several coping strategies that computational
+models such as EMA \cite{gratch:domain-independent} use as control signals.
+These control signals enable or suppress the cognitive processes that operate on
+the causal interpretation of the appraisal patterns. The coping process controls
+the congruency of the actions according to these patterns. As it is shown below,
+in \cite{gratch:domain-independent} coping strategies are organized into two
 categories: \textit{problem-focused} and \textit{emotion-focused}.
 Problem-focused coping strategies can be applied when the agent must do
-something with respect to the problem, whereas Emotion-focused coping works by
+something with respect to the problem, whereas emotion-focused coping works by
 changing one's interpretation of circumstances. The following is a short list of
 a broad range of coping strategies \cite{gratch:domain-independent}:
 
@@ -1809,18 +1811,18 @@ a broad range of coping strategies \cite{gratch:domain-independent}:
 	\end{itemize}
 \end{description}
 
-\subsubsection{OCC, a Structural Appraisal Theory of Emotion}
+\subsubsection{OCC, a Structural Appraisal Model of Emotion}
 
 OCC (Ortony, Clore and Collins) model, similar to Lazarus'
 \cite{lazarus:cognitive-theory-emotion} and Scherer's
 \cite{scherer:nature-function-emotion} cognitive views, considers emotions to
 arise from affective or valenced reactions subsequent to the appraisal of a
 stimulus as being beneficial or harmful to one's concern \cite{occ:structure}.
-The model categorizes emotions based on their underlying appraisal patterns.
+OCC model categorizes emotions based on their underlying appraisal patterns.
 These patterns are fundamental criteria a person employs for evaluating a
 situation. They involve the person's focus of attention, her concern, and
 her appraisal preceding an affective reaction. Figure \ref{fig:occ-model} shows
-main building blocks of OCC model.
+the main building blocks of OCC model.
 
 \begin{figure}[tbh]
   \center
@@ -1830,31 +1832,33 @@ main building blocks of OCC model.
 \end{figure}
 
 As shown in Figure \ref{fig:occ-model}, a person could alternatively have three
-types of focuses. These types of focuses are consequence of events, actions of
-agents, and aspects of objects. The person evaluates the significance of causes
-behind these three types of focuses based on her personal concern. As a
-result, an affective reaction will be elicited resulting in an emotion. Various
+types of focus. These types of focus are the consequence of events, actions of
+agents, and aspects of objects. A person evaluates the significance of the
+causes behind these three types of focus based on her personal concerns. As a
+result, an affective reaction will be elicited, resulting in an emotion. Various
 combinations of the elements depicted in Figure \ref{fig:occ-model} create
-specific patterns demonstrating six main groups of emotions in which all emotion
-types in a group share the same cognitive pattern. Emotion groups are
-\textit{fortune-of-others, prospect-based, well-being, attribution,
-well-being/attribution- compound}, and \textit{attraction}. The OCC model
-introduces 22 emotion types. These emotions are introduced each as
-representative of a family of similar emotions with various intensities (since
-relying on a list of discrete emotions that is understood by everyone equally is
-impossible due to people's language barriers and various interpretations of the
-actual words). For instance, happiness can be referred to by other emotion terms
-such as joy, cheerfulness, gladness, delighted while they all share the same
-eliciting conditions. Thus the emotion types used in the model (e.g., relief,
-love, pride, and shame) are meant to represent an emotional experience rather
-than a lexical taxonomy.
+specific patterns resulting in six main groups of emotions in which all emotion
+types in a group share the same cognitive pattern (see Figure
+\ref{fig:occ-structure}). Emotion groups are \textit{fortune-of-others,
+prospect-based, well-being, attribution, well-being/attribution- compound}, and
+\textit{attraction}. The OCC model introduces 22 emotion types. Each of these
+emotions is introduced as a representative of a family of similar emotions
+with various intensities (since relying on a list of discrete emotions that is
+understood by everyone equally is impossible due to people's language barriers
+and various interpretations of the actual words)\footnote{In stark contrast to
+basic emotion theories discussed in Section \ref{sec:discrete-emotions}.}. For
+instance,  while they all share the same eliciting conditions, happiness can be
+referred to by many other emotion terms such as joy, cheerfulness, gladness and
+delighted. Thus the emotion types used in the model (e.g., relief, love, pride,
+and shame) are meant to represent an emotional experience rather than a lexical
+taxonomy.
 
 For instance, as shown in Figure \ref{fig:occ-model}, the appraisal criterion
 for consequences of event’s is their \textit{desirability} for achieving one's
 goals. This generates the affective reaction of being \textit{pleased} in
 positive cases, or \textit{displeased} in negative ones. Figure
 \ref{fig:occ-structure} shows the resulting emotion groups in OCC model such as
-\textit{fortune-of-others} (e.g., gloating, pity), \textit{prospect- based}
+\textit{fortune-of-others} (e.g., gloating, pity), \textit{prospect-based}
 (e.g., satisfaction, relief), and \textit{well-being} (e.g., joy, distress)
 \cite{occ:structure}. The appraisal of the praiseworthiness of the actions of an
 agent against one's personal standards, as well as the appealing aspects of
@@ -1884,17 +1888,17 @@ encountering events, agents or objects. These variables are as follows
 	\item Arousal (representing how arousing an event, agent or object is).
 \end{enumerate}
 
-\subsection{Other Computational Models}
+\subsection{Other (Non-Appraisal) Computational Models}
 
 \subsubsection{Constructivist (Dimensional) Emotion Theories}
 \label{sec:dimensional-emotions}
 
-The components and dimensions of emotions were the subject of much speculation
-since the 19th century. Dimensional models of emotion attempt to conceptualize
-human emotions by defining where they lie in two or three dimensions.
-Dimensional theories of emotion argue that emotion should be conceptualized, as
-points in a continuous (typically two or three) dimensional space rather than
-looking at them as discrete entities \cite{carver:affect-behavior}
+The components and dimensions of emotions have been the subject of much
+speculation since the 19th century. Dimensional models of emotion attempt to
+conceptualize human emotions by defining where they lie in two or three
+dimensions. Dimensional theories of emotion argue that emotions should be
+conceptualized as points in a continuous dimensional space, rather than looking
+at them as discrete entities \cite{carver:affect-behavior}
 \cite{mehrabian-russell:pad} \cite{russell:core-affect}
 \cite{watson:consensual-structure-mood}.
 
@@ -1909,13 +1913,18 @@ looking at them as discrete entities \cite{carver:affect-behavior}
 Two dimensions that are commonly proposed to describe emotions are valence and
 physiological arousal \cite{arnold:emotion-personality}
 \cite{lazarus:cognitive-theory-emotion} \cite{russell:circumplex-affect}. Models
-based on dimensional theories contrast theories of basic emotion, which propose
-that different emotions arise from separate neural systems
-\cite{posner:circumplex-affect}. Many dimensional theories argue that discrete
-emotion categories (e.g., sadness, fear and anger) have no ``reality'' in that
-there are no specific brain regions or functions that correspond to specific
-emotions \cite{barrett:emotions-natural}. Dimensional theories do not emphasize
-the term emotion.
+based on dimensional theories introduce the emotion concept as a non-relational
+construct summarizing a unique overall state of the individual. The models based
+on dimensional theories contrast theories of basic emotion (see Section
+\ref{sec:discrete-emotions}), which propose that different emotions arise from
+separate neural systems \cite{posner:circumplex-affect}. Also, models based on
+dimensional theories contrast appraisal theories, which propose that appraisals
+are the relational constructs characterizing the relationship between one's
+mental state and a specific stimulus. Many dimensional theories argue that
+discrete emotion categories (e.g., sadness, fear and anger) have no ``reality''
+in that there are no specific brain regions or functions that correspond to
+specific emotions \cite{barrett:emotions-natural}. Therefore, dimensional
+theories do not emphasize the term emotion.
 
 \begin{figure}[tbh]
   \center
@@ -1930,10 +1939,10 @@ One of the most prominent two-dimensional models is Russell's circumplex model
 all related to each other systematically through what is called core affect
 \cite{russell:circumplex-affect,russell:core-affect} (see Figure
 \ref{fig:core-affect}) and emotions are best described as a change in core
-affect which, in turn, is describable as a point in a space between two bipolar
-dimensions. One dimension is \textit{valence} or how good or bad objects and
-events are for a being ranging from pleasant to unpleasant. The other dimension
-is \textit{arousal}, ranging from calm to excited. Russell put a number of
+affect which, in turn, is describable as a point in a space of two dimensions.
+One dimension is \textit{valence} or how good or bad objects and events are for
+a being (ranging from pleasant to unpleasant). The other dimension is
+\textit{arousal}, ranging from calm to excited. Russell put a number of
 affective states around a circular space between those two dimensions (see
 Figure \ref{fig:core-affect}) which is also known as \textit{circumplex},
 representing the variety of core affects
@@ -1962,35 +1971,36 @@ three dimensions.
 Basic emotion theories are inspired by Tomkins' \cite{tomkins:affect}
 rediscovery of Darwin's work
 \cite{darwin:emotion-expression,hess:darwin-emotion} which were later developed
-by Ekman \cite{ekman:argument-emotions} and Izard \cite{izard:human-emotions}.
-These theories emphasize a small set of discrete and fundamental emotions.
-The underlying assumption of this approach is that these emotions are mediated
-by associated neural circuitry, with a hardwired component
-\cite{ekman:argument-emotions}. Different emotions are then characterized by
-stable patterns of triggers, behavioral expression, and associated distinct
-subjective experiences. The emotions addressed by these theories are typically
-called the \textit{basic} emotions. Emotions including happiness, sadness, fear,
-anger, surprise, and disgust are often considered to comprise the most
-prototypical basic emotions \cite{ekman:argument-emotions}. The theory of basic
-emotions holds that there is a set of emotions shared by all humans that evolved
-to deal with ancestral life challenges \cite{ekman:argument-emotions}. For
-instance, disgust evolved to address the challenge of avoiding noxious stimuli,
-and fear evolved to address the challenge of avoiding dangers. Because of the
-emphasis on discrete categories of states, this approach is also termed the
-\textit{categorical} approach \cite{panskepp:affective-neuroscience}. Much of
-the supporting evidence offered for the theory comes from experiments that show
-how certain facial expressions are universally associated with specific basic
-emotions, regardless of the observer's cultural background. This universality
-has a production side and a recognition side. On the production side, a
-particular emotional state is said to elicit a facial expression comprised of a
-fixed set of facial muscles. On the recognition side, observers are able to
-infer the emotional state of the person who expresses an emotion, due to the
-direct correspondence between emotional states and the facial expressions they
-cause. Computational models inspired by the basic emotions or discrete approach
-often focus on low-level perceptual-motor tasks and encode a two-process view of
-emotion that argues for a fast, automatic, undifferentiated emotional response
-and a slower, more differentiated response that relies on higher level reasoning
-processes (e.g., \cite{armony:computational-modeling-emotion}). \\
+further by Ekman \cite{ekman:argument-emotions} and Izard
+\cite{izard:human-emotions}. These theories emphasize a small set of discrete
+and fundamental emotions. The underlying assumption of this approach is that
+these emotions are mediated by associated neural circuitry, with a hardwired
+component \cite{ekman:argument-emotions}. Different emotions are then
+characterized by stable patterns of triggers, behavioral expression, and
+associated distinct subjective experiences. The emotions addressed by these
+theories are typically called the \textit{basic} emotions. Emotions including
+happiness, sadness, fear, anger, surprise, and disgust are often considered to
+comprise the most prototypical basic emotions \cite{ekman:argument-emotions}.
+The theory of basic emotions holds that there is a set of emotions shared by all
+humans that evolved to deal with ancestral life challenges
+\cite{ekman:argument-emotions}. For instance, disgust evolved to address the
+challenge of avoiding noxious stimuli, and fear evolved to address the challenge
+of avoiding dangers. Because of the emphasis on discrete categories of states,
+this approach is also termed the \textit{categorical} approach
+\cite{panskepp:affective-neuroscience}. Much of the supporting evidence offered
+for the theory comes from experiments that show how certain facial expressions
+are universally associated with specific basic emotions, regardless of the
+observer's cultural background. This universality has a production side and a
+recognition side. On the production side, a particular emotional state is said
+to elicit a facial expression comprised of a specific set of facial muscles. On
+the recognition side, observers are able to infer the emotional state of the
+person who expresses an emotion, due to the direct correspondence between
+emotional states and the facial expressions they cause. Computational models
+inspired by the basic emotions or discrete approach often focus on low-level
+perceptual-motor tasks and encode a two-process view of emotion that argues for
+a fast, automatic, undifferentiated emotional response and a slower, more
+differentiated response that relies on higher level reasoning processes (e.g.,
+\cite{armony:computational-modeling-emotion}). \\
 
 % \subsection{Other Approaches}
 
@@ -2003,7 +2013,7 @@ Rational approaches start from the question of what adaptive functions emotions
 serve and then attempt to incorporate these functions into a model of
 intelligence. Emotion, within this approach, is simply another set of processes
 and constraints that have adaptive value. Models of this sort are most naturally
-directed towards the goal of improving theories of machine intelligence
+directed towards the goal of improving theories of artificial intelligence
 \cite{anderson:newell-cognition} \cite{scheutz:affect-agent}
 \cite{simon:motivation-emotion-cognition}.
 
@@ -2016,25 +2026,24 @@ coordination), and second, as a mechanism for requesting/demanding changes in
 the behavior of others. Communicative theories emphasize the
 social-communicative function of expressions \cite{gratch:emotion-intention}.
 Computational models inspired by communicative theories focus on machinery that
-decides when an emotional expression can have a desirable effect on a human
+decides when an emotional expression can have a desired effect on a human
 counterpart.
 
 \subsection{Similarities and Differences}
 \label{sec:comparison}
 
 Different theoretical perspectives should not be viewed as competing for a
-single truth. They should be seen as distinct perspectives, each arising from a
-particular research area (e.g., biological vs. social psychology), focusing on
-different sets of affective phenomena, considering distinct levels of resolution
-and fundamental components (e.g., emotions vs. appraisal variables as the
-distinct primitives). These different perspectives also provide different
-degrees of support for the distinct processes of emotion, e.g., the componential
-theories provide extensive details about cognitive appraisals
-\cite{hudlicka:guidelines-emotions}. Therefore, this section provides a pairwise
-comparison between these fundamental theories. Note that a distinct pairwise
-comparison will not be provided for appraisal vs.\,discrete (basic) emotion
-theories as important points are adequately covered in the comparisons presented
-below.
+single truth. Instead, they should be seen as perspectives arising from
+particular research areas (e.g., biological vs. social psychology), focusing on
+different sets of affective phenomena, considering different levels of
+resolution and fundamental components (e.g., emotions vs. appraisal variables).
+These different perspectives provide different degrees of support for the
+various processes of emotion, e.g., the componential theories provide extensive
+details about cognitive appraisals \cite{hudlicka:guidelines-emotions}.
+Therefore, this section provides a pairwise comparison between these fundamental
+theories. Note that a separate pairwise comparison will not be provided for
+appraisal vs.\,discrete (basic) emotion theories as the important points are
+adequately covered in the comparisons presented below.
 
 \subsubsection{Dimensional Vs. Discrete (Basic) Emotion Theories}
 
@@ -2365,7 +2374,7 @@ dimensional models can influence cognitive processes. For example, HOTCO 2
 dimensional affect \cite{marsella:computational-models}.
 
 \section{Affect and Motives}
-
+\label{sec:affect-motives}
 Motives are essential mental components in decision-making procedures and
 applying them in an affect-driven collaborative agent is part of this thesis'
 contribution. In this section, we provide related works on computational models
