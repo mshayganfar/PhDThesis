@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  30 DEC 2016 19:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  30 DEC 2016 23:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1544,7 +1544,7 @@ se of part-ner-ship through
 Chapter 6.
 [175
 
-] [176] [177] [178] [179] (./document.bbl
+] [176] [177] [178] (./document.bbl
 ! Misplaced alignment tab character &.
 l.52 \newblock Cassell &
                          Co., 1960.
@@ -1555,30 +1555,30 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[180
+[179
 
-] [181]
+] [180]
 Underfull \hbox (badness 1389) in paragraph at lines 158--161
 [][]\OT1/cmr/m/n/12 M. E. Brat-man.  Shared co-op-er-a-tive ac-tiv-ity.  \OT1/c
 mr/m/it/12 Philo-soph-i-cal Re-view\OT1/cmr/m/n/12 ,
  []
 
-[182]
+[181]
 Missing character: There is no Ã in font cmti12!
 Missing character: There is no  in font cmti12!
- [183]
+ [182]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [184] [185] [186] [187]
+ [183] [184] [185] [186]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [188] [189] [190] [191] [192] [193]
-[194] [195] [196] [197] [198] [199] [200] [201] [202] [203] [204]
+ [187] [188] [189] [190] [191] [192]
+[193] [194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
 ! Misplaced alignment tab character &.
 l.1401 \newblock Springer Science &
                                     Business Media, 2012.
@@ -1591,11 +1591,11 @@ might try typing `S' now just to see what is salvageable.
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
-[205] [206] [207]
+[204] [205] [206]
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [208]) [209] [210
+ [207]) [208] [209
 
 ] (./document.aux)
 
@@ -1629,10 +1629,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (224 pages, 7445293 bytes).
+Output written on document.pdf (223 pages, 7443662 bytes).
 PDF statistics:
- 1254 PDF objects out of 1440 (max. 8388607)
- 804 compressed objects within 9 object streams
+ 1251 PDF objects out of 1440 (max. 8388607)
+ 802 compressed objects within 9 object streams
  0 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
