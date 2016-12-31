@@ -109,13 +109,53 @@ Member}\\[0.5em] \Large\textnormal{\signature}\\
 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
-
+Traditional methods for Learning from Demonstration require users to train the
+robot through the entire process, or to provide feedback throughout a given task.
+These previous methods have proved to be successful in a selection of robotic do-
+mains; however, many are limited by the ability of the user to effectively demonstrate
+the task. In many cases, noisy demonstrations or a failure to understand the under-
+lying model prevent these methods from working with a wider range of non-expert
+users. My insight is that in many mobile pick-and-place domains, teaching is done
+at a too fine grained level. In many such tasks, users are solely concerned with the
+end goal. This implies that the complexity and time associated with training and
+teaching robots through the entirety of the task is unnecessary. The robotic agent
+needs to know (1) a probable search location to retrieve the task’s objects and (2)
+how to arrange the items to complete the task. This thesis work develops new tech-
+niques for obtaining such data from high-level spatial and temporal observations
+and demonstrations which can later be applied in new, unseen environments.
+This thesis makes the following contributions: (1) This work is built on a crowd
+robotics platform and, as such, we contribute the development of efficient data
+streaming techniques to further these capabilities. By doing so, users can more
+easily interact with robots on a number of platforms. (2) The presentation of new
+algorithms that can learn pick-and-place tasks from a large corpus of goal templates.
+My work contributes algorithms that produce a metric which ranks the appropriate
+frame of reference for each item based solely on spatial demonstrations. (3) An
+algorithm which can enhance the above templates with ordering constraints using
+coarse and noisy temporal information. Such a method eliminates the need for a
+user to explicitly specify such constraints and searches for an optimal ordering and
+placement of items. (4) A novel algorithm which is able to learn probable search
+locations of objects based solely on sparsely made temporal observations. For this,
+we introduce persistence models of objects customized to a user’s environment.
 
 \pagebreak
 
 \chapter*{Acknowledgments}
 \addcontentsline{toc}{chapter}{Acknowledgments}
-
+First and foremost I would like to thank all of my professors, mentors, and
+advisors throughout my higher-education. I thank Prof.\,Charles Rich for his
+guidance, teaching, and academic freedom as I explored my area of research and
+ultimately his support for this dissertation work. Prof.\,Rich continuously
+encouraged me through the highs and the lows and exposed me to new opportunities
+which ultimately shaped me as a person and a research. In addition, I would like
+to thank Prof.\,Candace L. Sidner for not only serving as a committee member,
+but guiding me into the world of research. Furthermore, I thank Prof.\,Stacy
+Marsella (Northeastern University) and Prof.\,John E. Laird (University of
+Michigan) for their feedback as committee members whose advice and discussions
+are always much appreciated. Finally, I would like to thank my family and
+my wife Rudy for their continued encouragement and support throughout this
+amazing process. My ability to complete this work would also not have been
+possible without the support of grants which help to fund me and my work
+including National Science Foundation award number IIS-1012083.
 
 \pagebreak
 
