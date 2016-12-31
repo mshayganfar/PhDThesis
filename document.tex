@@ -2578,25 +2578,32 @@ functions in this proposed work.
 
 \chapter{Affective Motivational Collaboration Theory}
 \label{ch:amct}
+\vspace*{-5mm}
 Current computational theories used for human-robot collaboration specify the
 structure of collaborative activities, but are weak on the underlying processes
 that generate and maintain these structures. We argue that emotions are crucial
 to these underlying processes and we have developed a new computational theory,
-called \textit{Affective Motivational Collaboration Theory}, that combines
+called \textit{Affective Motivational Collaboration} theory, that combines
 emotion-based processes, such as appraisal and coping, with collaboration
-processes, such as planning, in a single unified framework. This work is
-implemented as part of a larger effort to build robots capable of generating and
-recognizing emotions in order to be better collaborators. We have investigated
-the mutual influences of affective and collaborative processes in a cognitive
-theory to support interaction between humans and robots or virtual agents. We
-build primarily on the \textit{cognitive appraisal} theory of emotions and the
-\textit{SharedPlans} theory of collaboration to investigate the structure,
-fundamental processes and functions of emotions in a collaboration. We have
-developed new algorithms for appraisal processes as part of a new overall
-computational model. We have evaluated our implemented appraisal algorithms by
-conducting an online user study.
+processes, such as planning, in a single unified framework. {\color{red}In
+this chapter, we provide a general argument about our AMC theory, major
+functions of emotions that can be applied in collaboration context, as well as
+the components in our architecture and how each component (mechanism) deals with
+the events in a collaborative environment. We also provide the definition of
+elements of mental state and their attributes. Later in Chapter
+\ref{ch:appraisals}, we use all these information in the new algorithms we have
+developed, e.g., appraisal processes, as part of a new overall computational
+model.}
 
-Although existing collaboration theories explain the important elements of a
+This work is implemented to build robots capable of generating and recognizing
+emotions in order to be better collaborators. We have investigated the mutual
+influences of affective and collaborative processes in a cognitive theory to
+support interaction between humans and robots or virtual agents. We build
+primarily on the \textit{cognitive appraisal} theory of emotions and the
+\textit{SharedPlans} theory of collaboration to investigate the structure,
+fundamental processes and functions of emotions in a collaboration.
+
+Although existing collaboration theories specify the important elements of a
 collaboration structure, the underlying processes required to dynamically
 create, use, and maintain the elements of this structure are largely
 unexplained. For instance, a general mechanism has yet to be developed that
@@ -2605,10 +2612,10 @@ perceived or anticipated emotions into its own cognitive mechanisms to prevent
 shared task failures while maintaining collaborative behavior. Therefore, a
 process view of collaboration must include certain key elements. It should
 inherently involve social interactions since all collaborations occur between
-social agents, and it should essentially constitute a means of modifying the
-content of social interaction as the collaboration unfolds. The underlying
-processes of emotions possess these two properties, and social functions of
-emotions explain some aspects of the underlying processes in collaboration.
+social agents, and it should contain a means of modifying the content of the
+social interaction as the collaboration unfolds. The underlying processes of
+emotions possess these two properties, and social functions of emotions explain
+some aspects of the underlying processes in collaboration.
 
 There is also a communicative aspect of emotions. For instance, emotions are
 often intended to convey information to others \cite{goffman:self-presentation}.
@@ -2629,17 +2636,17 @@ procedure requires a baseline and an assessment procedure. While the components
 of the collaboration structure, e.g., shared plan, provide the baseline,
 emotion-related processes (e.g., appraisal) provide the assessment procedure.
 
-\textit{Affective Motivational Collaboration Theory} is about the interpretation
+\textit{Affective Motivational Collaboration} theory is about the interpretation
 and prediction of the observable behaviors in a dyadic collaborative
 interaction. The theory focuses on the processes regulated by emotional states.
 These observable behaviors represent the outcome of processes related to the
 interpretation of the self's relationship to the collaborative environment.
-These processes are triggered by the events occurring in the collaboration
-environment. Therefore, \textit{Affective Motivational Collaboration Theory}
-explains how emotions regulate the underlying processes in the occurrence of
-events during collaboration.
+The processes are triggered by the events occurring in the collaborative
+environment. Thus, \textit{Affective Motivational Collaboration} theory explains
+how emotions regulate the underlying processes when the events occur during
+collaboration.
 
-Emotion-regulated processes operate based on the self's mental states including
+Emotion-regulated processes operate based on the self's mental states including,
 the anticipated mental states of the other. These mental states include beliefs,
 intentions, goals, motives and emotion instances. Each of these mental states
 possesses multiple attributes impacting the underlying processes of
@@ -2653,60 +2660,69 @@ agent. The nature of these attributes will be discussed in Section
   \caption{Primary influence of mechanisms in \textit{Affective Motivational
   Collaboration Theory}.}
   \label{fig:theory}
-  \vspace*{-7mm}
+  \vspace*{-2mm}
 \end{figure}
 
 There are several theories discussed in Chapter \ref{ch:background}, which
 describe the underlying structure of a collaboration based on mental states of
 the collaborators. The collaboration structure of \textit{Affective Motivational
 Collaboration Theory} is based on the SharedPlans theory
-\cite{grosz:shared-plans}. \textit{Affective Motivational Collaboration Theory}
+\cite{grosz:shared-plans}. \textit{Affective Motivational Collaboration} theory
 focuses on the processes that generate, maintain and update this structure
 based on mental states. The collaboration structure is important because social
 agents/robots ultimately need to co-exist with humans, and therefore need to
 consider humans' mental states as well as their own internal states and
 operational goals.
 
-The \textit{Appraisal \& Coping} mechanism (see Figure \ref{fig:theory}) consists
-of the two processes of Appraisal and Coping. The Appraisal mechanism is
-responsible for evaluating changes in the self's Mental States, the anticipated
-Mental States of the other, and the state of the collaboration environment.
-Consequently, the Appraisal mechanism is connected to a) the Theory of Mind
-mechanism, to serve as an evaluator whenever the self applies the Appraisal
-mechanism to the mental states attributed to the human collaborator, b) the
-Collaboration mechanism, to interpret the progress and changes in the
-collaboration plan and associated Mental States, and to make changes to the
-shared plan if required, c) the Motivation mechanism, to generate and assess the
-self's new goal-driven motives whenever a new motive or intention is required,
-e.g., following the failure of a task, and d) the Perception mechanism, to
-interpret the external events from the collaboration environment. The Coping
-mechanism provides the self with different coping strategies associated with
-changes in the self's mental states with respect to the state of the
-collaboration. In other words, the Coping mechanism produces cognitive responses
-by forming new intentions based on the appraisal patterns.
+\section{Overview of Mechanisms}
 
-The \textit{Motivation} mechanism (Figure \ref{fig:theory}) provides motives to
-influence the coping process in terms of the collaborative agent's or the human
-collaborator's needs. The Motivation mechanism uses the Appraisal mechanism to
-compute attributes (see Section \ref{sec:mental-states-attributes}) of the
-competing motives. Also, the Motivation mechanism can serve the Theory of Mind
-mechanism by helping the self to infer the motive behind the other's current
-action. Moreover, the Motivation mechanism applies the beliefs associated with
-the Appraisal mechanism to generate and compare a new set of motives related to
-the status of the collaboration. The outcome of the Motivation mechanism is
-involved in forming a new intention to cope with the current event. As a result,
-the self can take an action based on the new intention to sustain the
-collaboration progress.
+{\color{red}In this section, we introduce all mechanisms and the connections
+between them in our architecture. The \textit{perception} and the
+\textit{Action} mechanisms are only the source (to produce sensory information)
+and the sink (to show proper behavior) of data in our architecture. These two
+mechanisms function based on the same events introduced in Section
+\ref{sec:events}.}
 
-The \textit{Theory of Mind} mechanism (Figure \ref{fig:theory}) is the mechanism of
-inferring a model of the other's anticipated Mental States. The self will
-progressively update this model during the collaboration. The refinement of this
-model helps the self to anticipate the other's mental state more accurately,
-which ultimately impacts the quality of the collaboration and the achievement of
-the shared goal. Furthermore, the self can make inferences about the motive (or
-intention) behind the other's actions using the Motivation mechanism. This
-inference helps the self to update its own beliefs about the other's mental
-state. In the reverse appraisal process, the self also applies the Appraisal
+The \textit{Appraisal \& Coping} mechanism consists of the two processes of
+Appraisal and Coping. The Appraisal mechanism is responsible for evaluating
+changes in the self's Mental States, the anticipated Mental States of the other,
+and the state of the collaboration environment. Consequently, the Appraisal
+mechanism is connected to a) the Theory of Mind mechanism, to serve as an
+evaluator whenever the self applies the Appraisal mechanism to the mental states
+attributed to the human collaborator, b) the Collaboration mechanism, to
+interpret the progress and changes in the collaboration plan and associated
+Mental States, and to make changes to the shared plan if required, c) the
+Motivation mechanism, to generate and assess the self's new goal-driven motives
+whenever a new motive or intention is required, e.g., following the failure of a
+task, and d) the Perception mechanism, to interpret the external events from the
+collaboration environment. The Coping mechanism provides the self with different
+coping strategies associated with changes in the self's mental states with
+respect to the state of the collaboration. In other words, the Coping mechanism
+produces cognitive responses by forming new intentions based on the appraisal
+patterns.
+
+The \textit{Motivation} mechanism provides motives to influence the coping
+process in terms of the collaborative agent's or the human collaborator's needs.
+The Motivation mechanism uses the Appraisal mechanism to compute attributes (see
+Section \ref{sec:mental-states-attributes}) of competing motives. Also, the
+Motivation mechanism can serve the Theory of Mind mechanism by helping the self
+to infer the motive behind the other's current action. Moreover, the Motivation
+mechanism applies the beliefs associated with the Appraisal mechanism to
+generate and compare a new set of motives related to the status of the
+collaboration. The outcome of the Motivation mechanism is involved in forming a
+new intention to cope with the current event. As a result, the self can take an
+action based on the new intention to sustain the collaboration progress.
+
+The \textit{Theory of Mind} mechanism is responsible for inferring a model of
+the other's anticipated Mental States. The self will progressively update this
+model during the collaboration. The refinement of this model helps the self to
+anticipate the other's mental state more accurately, which ultimately impacts
+the quality of the collaboration and the achievement of the shared goal.
+Furthermore, the self can make inferences about the motive (or intention) behind
+the other's actions using the Motivation mechanism. This inference helps the
+self to update its own beliefs about the other's mental state. In the reverse
+appraisal process (see Sections \ref{sec:appraisal-process} and
+\ref{sec:theory-of-mind-implementation}), the self also applies the Appraisal
 mechanism together with updated beliefs about the other's Mental States to make
 inferences about the other's current mental state based on the other's emotional
 expression. Finally, the Collaboration mechanism provides the collaboration
@@ -2714,8 +2730,8 @@ structure, including status of the shared plan with respect to the shared goal
 and the mutual beliefs to the Theory of Mind mechanism. Consequently, any change
 to the self's model of the other will update the self's mental state.
 
-The Collaboration mechanism maintains constraints on actions. These constraints
-include constraints on task states and on the ordering of tasks. The
+The \textit{Collaboration} mechanism maintains constraints on actions. These
+constraints include constraints on task states and on the ordering of tasks. The
 Collaboration mechanism also provides processes to update and monitor the shared
 plan. These processes depend on the Appraisal mechanism to evaluate the current
 Mental States with respect to the current status of the collaboration. The self
@@ -2728,17 +2744,16 @@ appropriate to the current state of the collaboration.
 
 \section{Example Scenario}
 \label{sec:example-scenario}
-We now provide the following scenario in a robotic domain to draw your attention
-to the collaborative interactions. In the scenario, there is a mission
-specialist astronaut, who has had a high success rate in accomplishing space
-missions. She is capable of operating the manipulator system and supporting
-equipment. She works as a commander in the field during the operation. She is
-focused, organized, mentally stable, curious and patient. She is trained to
-collaborate with special-purpose field operation robots.
+We now provide the following scenario in a robotic domain to illustrate a
+collaborative interaction. In the scenario, there is an astronaut, who has had a
+high success rate in accomplishing space missions. She is capable of operating
+the manipulator system and supporting equipment. She works as a commander in the
+field during the operation. She is trained to collaborate with general-purpose
+field operation robots.
 
 There is also a robot which is assigned to the mission to provide services to
 the astronaut. It has been tested in extreme environmental conditions and has
-a very low failure rate. It is capable of communicating with the astronaut and
+a low failure rate. It is capable of communicating with the astronaut and
 understanding the astronaut's nonverbal behavior. It has the ability to identify
 and assess its own emotions and those of the astronaut.
 
@@ -2748,11 +2763,11 @@ difficulties, ranging from the task being unpleasant and challenging to
 conflicts of their private and/or shared goals occurring because of a blocked or
 a protracted sub-task. The robot and the astronaut will go through a series of
 assessment processes to figure out a) how did the current blocking happen? b)
-why is the current task is blocked? and c) what is the next action they are
-going to take? The robot uses its cognitive abilities and its communication
-skills to overcome these problems and to motivate the astronaut to propose
-alternative tasks. The following is part of an interaction between the astronaut
-and the robot during their collaboration on installing solar panels.
+why is the current task blocked? and c) what is the next action they are going
+to take? The robot uses its cognitive and affective abilities and its
+communication skills to overcome these problems and to motivate the astronaut to
+propose alternative tasks. The following is part of an interaction between the
+astronaut and the robot during their collaboration on installing solar panels.
 
 \begin{enumerate}
   \item \textit{\textbf{Astronaut}}: Please hold the panel on this structure. 
@@ -2762,32 +2777,32 @@ and the robot during their collaboration on installing solar panels.
   [\textit{Both the Robot and the Astronaut continue their collaboration to
   achieve their shared goal.}]
 
-  \item \textit{\textbf{Astronaut}}: At this point you should be careful how you hold the
-  panel. Turn the right side 45 degrees towards me.
+  \item \textit{\textbf{Astronaut}}: At this point you should be careful how you
+  hold the panel. Turn the right side 45 degrees towards me.
 
   \item \textit{\textbf{Robot}}: Is this what you want?
 
   \item \textit{\textbf{Astronaut}}: Yes, do not move it.
 
-  [\textit{Astronaut finishes fixing the panel onto the structure and checks the
-  connectors to make sure they are working.}]
+  [\textit{Astronaut finishes attaching the panel onto the structure and checks
+  the connectors to make sure they are working.}]
 
-  \item \textit{\textbf{Astronaut}}: The connectors on this panel have problems and we
-  might not be able to finish this task.
+  \item \textit{\textbf{Astronaut}}: The connectors on this panel have problems
+  and we might not be able to finish this task.
 
-  \item \textit{\textbf{Robot}}: Don't worry! I can replace the connectors in 4 minutes.
-  We definitely can finish this task after that.
+  \item \textit{\textbf{Robot}}: Don't worry! I can replace the connectors in
+  about 4 minutes. We definitely can finish this task after that.
 
   \item \textit{\textbf{Astronaut}}: Okay, go ahead and fix the connectors.
 
   [\textit{Robot fixes the issue with the connectors and passes them to the
   Astronaut. Astronaut connects the wires to the connectors.}]
 
-  \item \textit{\textbf{Astronaut}}: I need you to begin welding this panel and also
-  prepare the measurement tool for me.
+  \item \textit{\textbf{Astronaut}}: I need you to begin welding this panel and
+  also prepare the measurement tool for me.
 
-  \item \textit{\textbf{Robot}}: Do you want me to prepare the measurement tool first?
-  Then, I can begin welding afterwards.
+  \item \textit{\textbf{Robot}}: Do you want me to prepare the measurement tool
+  first? Then, I can begin welding afterwards.
 
   \item \textit{\textbf{Astronaut}}: Yes, that's fine!
 
@@ -2800,22 +2815,22 @@ and the robot during their collaboration on installing solar panels.
   installation with this measurement problem is so frustrating. I think we
   should stop now!
 
-  \item \textit{\textbf{Robot}}: I see. But, I can help you with the measurement and we
-  can finish the task as originally planned.
+  \item \textit{\textbf{Robot}}: I see. But, I can help you with the measurement
+  and we can finish the task as originally planned.
 
   \item \textit{\textbf{Astronaut}}: That would be great!
 
   [\textit{Robot helps the Astronaut to finish the measurement task with its
   own measurement tool.}]
   
-  [\textit{Then, the Robot goes back to its own internal goal, which is to fetch
-  the second panel to finish the overall task.}]
+  [\textit{Then, the Robot goes back to its own goal, which is to fetch the
+  second panel to finish the overall task.}]
 
 \end{enumerate}
 
 \section{General Argument}
 
-\textit{Affective Motivational Collaboration Theory} focuses on
+\textit{Affective Motivational Collaboration} theory focuses on
 emotion-regulated processes involved in collaboration and builds on two
 well-established theories in this context. The first is Grosz and Sidner's
 SharedPlans collaboration theory, which is based on the concepts of mutual
@@ -2838,21 +2853,20 @@ processes of collaborative activities. The study of these cognitive processes
 helps explain why and how humans collaborate with each other. For instance,
 SharedPlans theory can describe our scenario in Section
 \ref{sec:example-scenario} in terms of fundamental Mental States, such as mutual
-beliefs, intentions, and shared plans. However, it does not describe the
+beliefs, intentions, and shared plans. However, it does not explain the
 underlying processes leading to these Mental States. \textit{Affective
-Motivational Collaboration Theory} extends the SharedPlans theory by describing
+Motivational Collaboration} theory extends the SharedPlans theory by describing
 these processes. Furthermore, emotions, due to their evaluative and regulatory
 nature, provide fundamental functions (see Section \ref{sec:emotion-functions})
 each of which plays an essential role in maintaining a collaboration's structure
 and status. In other words, these functions explain the dynamics of a
 collaboration structure.
 
-\textit{Affective Motivational Collaboration Theory} specifies the processes
+\textit{Affective Motivational Collaboration} theory specifies the processes
 involved in the progress of a collaboration and how they impact the
 collaboration's underlying structure. For example in the exchange below, the
-Robot in order to respond appropriately to the Astronaut's requests, needs to
-maintain its relationship with the new situation in the environment. Different
-emotion functions such as adaptation, goal management and attentional focus are
+Robot needs to respond appropriately to the Astronaut's new request, to maintain
+progress during collaboration. The emotion function, i.e., goal management, is
 involved in such situations:\\
 
   8. \textbf{\textit{Astronaut}}: I need you to begin welding this panel and also
@@ -2861,7 +2875,7 @@ involved in such situations:\\
   9. \textbf{\textit{Robot}}: Do you want me to prepare the measurement tool
   first? Then, I can begin welding afterwards.\\
 
-What is the nature of the processes involved in a collaboration? For example in
+What is the nature of the processes involved in a collaboration? For example, in
 the exchange below, the Robot changes its focus of attention to something
 important to the Astronaut because of its perception of the Astronaut's negative
 emotion:\\
@@ -2874,7 +2888,7 @@ emotion:\\
 
 And, how do these processes impact the social characteristics of a
 collaboration? For instance, in the exchange below, emotions and the Appraisal
-mechanism can influence self's awareness during collaboration:\\
+mechanism can influence the self's awareness during collaboration:\\
 
   11. \textbf{\textit{Astronaut}}: Oh no! Finishing the quality check of our
   installation with this measurement problem is so frustrating. I think we
@@ -2883,7 +2897,7 @@ mechanism can influence self's awareness during collaboration:\\
   12. \textbf{\textit{Robot}}: I see. But, I can help you with the measurement
   and we can finish the task as originally planned.\\
 
-Finally, \textit{Affective Motivational Collaboration Theory} incorporates
+Finally, \textit{Affective Motivational Collaboration} theory incorporates
 motivation as an emotion-regulated and goal-driven mechanism, by which the self
 can form a new intention based on its own beliefs about self and the other, as
 well as the result of an Appraisal mechanism. In general, a new motive can
@@ -2902,11 +2916,12 @@ intention to solve the problem:\\
   we might not be able to finish this task.
 
   6. \textbf{\textit{Robot}}: Don't worry! I can replace the connectors in 4
-  minutes. We definitely can finish this task after that.
+  minutes. We definitely can finish this task after that.\\
   
-As another example, the Astronaut faces a problem in his own task and informs
-the Robot of his decision. The Robot forms a new intention to help the Astronaut
-to overcome his problem and ultimately, make progress in their collaboration:\\
+In the same example that we saw earlier, the Astronaut faces a problem in his
+own task and informs the Robot of his decision. The Robot forms a new intention
+to help the Astronaut to overcome his problem and ultimately, make progress in
+their collaboration:\\
  
   11. \textbf{\textit{Astronaut}}: Oh no! Finishing the quality check of our
   installation with this measurement problem is so frustrating. I think we
@@ -2918,13 +2933,13 @@ to overcome his problem and ultimately, make progress in their collaboration:\\
 \section{Events}
 \label{sec:events}
 
-The \textit{events} occurring in this collaborative environment include a)
+The \textit{events} occurring in a collaborative environment include a)
 \textit{utterances} spoken by the collaborators, b) \textit{primitive actions}
 executed, deferred, or aborted, and c) observable \textit{emotion instances}.
 These events are the events that our affective collaborative agent perceives. We
 will discuss below the operation of individual processes in our theory based on
-these events. Each of the following six sub-sections describe how an individual
-mechanism in Figure \ref{fig:theory} handles the events.
+these events. Each of the following five sub-sections describe how an individual
+mechanism in Figure \ref{fig:theory} handles these events.
 
 \subsection{Collaboration Mechanism and Events}
 
@@ -2938,7 +2953,7 @@ can influence the self's view of an impasse on a task. As another example, the
 perception of the other's emotion instance can cause significant changes in the
 self's collaboration monitoring.
 
-\subsection{Appraisal Mechanism and Events}
+\subsection{Appraising Events}
 \label{sec:appraisal-event}
 
 The other's \textit{utterances}, the effect(s) of the collaborators'
@@ -2981,7 +2996,7 @@ the other. In each of these cases, the outcome of the Appraisal mechanism might
 indicate the need for internal or behavioral regulation. In such cases, the
 Motivation mechanism uses the Mental States associated with the state of self,
 the environment or the other's anticipated Mental States as well as the pattern
-provided by the Appraisal process to generate motives aligned with private or
+provided by the Appraisal mechanism to generate motives aligned with private or
 shared goals. Thus, via the Appraisal mechanism the Motivation mechanism
 implicitly responds to the events. The attributes of the generated motives (see
 Section \ref{sec:mental-states-attributes}) will be updated every time a new
@@ -2998,12 +3013,13 @@ choose the behavior best matched to the other's anticipated Mental States.
 The Theory of Mind mechanism infers the mental state of the other, which helps
 the self to update the user model of the other. The Motivation and the Appraisal
 mechanisms are also involved in this procedure. For instance, the self can infer
-the other's mental state through a reverse appraisal procedure. The Motivation
-mechanism includes another inverse procedure to infer the other's active
-motives, which can lead to inferring the other's goal, beliefs, motives and
-intentions.
+the other's mental state through a reverse appraisal procedure (see Sections
+\ref{sec:appraisal-process} and \ref{sec:theory-of-mind-implementation}). The
+Motivation mechanism includes another inverse procedure to infer the other's
+active motives, which can lead to inferring the other's goal, beliefs, motives
+and intentions.
 
-\subsection{Functions of Emotions}
+\section{Functions of Emotions}
 \label{sec:emotion-functions}
 
 We have talked about the crucial role of emotions in communicating Mental
@@ -3019,22 +3035,22 @@ briefly describe how ten different emotion functions are related to the
 collaboration context. There are other emotion functions, such as learning and
 memory control, which are outside of the scope of this thesis. We have used some
 of the concepts behind these emotion functions such as goal management in our
-framework (see Chapter \ref{ch:appraisals}).
+computational framework (see Chapter \ref{ch:appraisals}).
 
-\subsubsection{Action Selection} Action selection is the function in which
+\subsection{Action Selection} Action selection is the function in which
 emotion instances influence choosing the most appropriate action out of a
 repertoire of possible actions at a point in time. This function influences the
 Coping mechanism and results in consistency of the self's actions based on
 anticipated emotional responses of the other and the satisfaction of the shared
 goal.
 
-\subsubsection{Adaptation} Adaptation is the raison d'\^{e}tre of emotions. It
+\subsection{Adaptation} Adaptation is the raison d'\^{e}tre of emotions. It
 helps the self to properly respond to changing challenges in a dyadic social
 context by adjusting its behavior. Adaptation is a specialized problem-solving
 technique implicating the necessity of the self's emotional states for short and
 long term behavior changes during collaboration.
 
-\subsubsection{Social Regulation} Social regulation by emotions is the process
+\subsection{Social Regulation} Social regulation by emotions is the process
 which enables the self to communicate internal Mental States through the
 expression of emotions in a social context. It can assist the self to regulate
 various social interactions required in the course of a collaboration, such as
@@ -3042,7 +3058,7 @@ conflict resolution and negotiation. Emotional expressions influence the other's
 behavior by triggering the other's inferential processes and emotional reactions
 \cite{kleef:emotion-regulate-social}.
 
-\subsubsection{Sensory Integration} Sensory integration can guide the self
+\subsection{Sensory Integration} Sensory integration can guide the self
 through the course of a collaboration by sustaining rich-sensory tasks to
 demonstrate more effective collaborative behaviors. It benefits the self by
 anticipating a certain type of inferential process to the other's mental and
@@ -3050,17 +3066,17 @@ emotional states. For instance, perceiving fear in the other can lead to an
 increased focus of attention on the ongoing task, or discerning anger can raise
 the probability of avoiding current events (generated by the self) by the other.
 
-\subsubsection{Alarm} \label{sub:emotion-alarm} The alarm mechanism is a
-purely reactive and pattern-driven process \cite{sloman:beyond-shallow}. It
-accounts for persuading the self that an undesired or unsatisfactory condition
-happened in the past, and since then, has persisted in the self's mental
-states. The alarm mechanism also provides the self with a rapid reaction to the
-external or the internal events. The self will be able to interrupt deliberative
-processes and show quick behavioral reactions. For instance, the self can
-consider corrective actions when a high probability of anticipated failure
-occurs during the collaboration.
+\subsection{Alarm} \label{sub:emotion-alarm} The alarm function is a purely
+reactive and pattern-driven process \cite{sloman:beyond-shallow}. It accounts
+for persuading the self that an undesired or unsatisfactory condition happened
+in the past, and since then, has persisted in the self's mental states. The
+alarm function also provides the self with a rapid reaction to the external or
+the internal events. The self will be able to interrupt deliberative processes
+and show quick behavioral reactions. For instance, the self can consider
+corrective actions when a high probability of anticipated failure occurs during
+the collaboration.
 
-\subsubsection{Motivation} Motivation is a goal-driven emotion function
+\subsection{Motivation} Motivation is a goal-driven emotion function
 associated with the self's behaviors. There is a motive behind every intentional action
 created by the Motivation mechanism. This motive is computed based on underlying
 beliefs relying on the evaluative role of emotions. Therefore, the motive behind
@@ -3069,39 +3085,38 @@ behavior. It also reveals the belief foundation of a behavior. Consequently, the
 self can apply this function of emotions to a) cope with certain types of
 problems, and b) infer the other's mental state based on each action.
 
-\subsubsection{Goal Management} The goal management function identifies the
+\subsection{Goal Management} The goal management function identifies the
 existence or the need for a high priority goal for the self. These goals
 include both private goals and shared goals. Emotions provide an evaluation
 mechanism for the self to choose or reprioritize goals at each point in time.
 This function of emotions can impact the self's behavior with respect to the
 dynamics of interaction during the course of a collaboration.
 
-\subsubsection{Attentional Focus} Emotion instances and the patterns generated
-by the Appraisal mechanism are directly linked to the attention mechanism of the
-self. Both positive and negative results of a cognitive evaluation of events
-can change, maintain, or intensify the self's focus of attention. For instance,
+\subsection{Focus of Attention} Emotion instances and the patterns generated
+by the Appraisal mechanism are directly linked to the focus of attention of the
+self. Both positive and negative results of a cognitive evaluation of events can
+change, maintain, or intensify the self's focus of attention. For instance,
 negative emotions, e.g., fear or anger, can influence the self's focus of
 attention by orienting the self towards the events
 \cite{faucher:fear-attention}. Positive emotions, e.g., happiness, can broaden
 or expand the self's focus of attention from details of the events to their
 general features \cite{fredrickson:positive-emotion-attention}.
 
-\subsubsection{Strategic Processing} The occurrence of new events can lead the
+\subsection{Strategic Processing} The occurrence of new events can lead the
 self to rapid and/or strategic responses. The Coping mechanism contains various
 strategies associated with different components of the Mental States, e.g.,
 belief or intention-related strategies. The content of the self's Mental States
-changes as time passes, which creates internal events causing the Coping
-mechanism to choose an appropriate action. The Appraisal mechanism allows the
-self to demonstrate a rapid response or strategically prioritize the current
-internal events generated based on the changes in the Mental States. For
-instance, is a mild, reactive facial expression an adequate response to the
-other's current utterance or does the self need to show a stronger behavior? Is
-it the new belief about the current state of the collaboration, or is it the new
-intention pursuing the self's private goal that the self needs to cope with?
-Thus, appraisal patterns and emotion instances impact the self's strategic
-processing.
+changes as time passes, which causes the Coping mechanism to choose an
+appropriate action. The Appraisal mechanism allows the self to demonstrate a
+rapid response or strategically prioritize the current internal events generated
+based on the changes in the Mental States. For instance, is a mild, reactive
+facial expression an adequate response to the other's current utterance or does
+the self need to show a stronger behavior? Is it the new belief about the
+current state of the collaboration, or is it the new intention pursuing the
+self's private goal that the self needs to cope with? Thus, appraisal patterns
+and emotion instances impact the self's strategic processing.
 
-\subsubsection{Self Model} Emotions can be a representation of how the self
+\subsection{Self Model} Emotions can be a representation of how the self
 interprets the collaboration environment. The self can generate or update
 beliefs about its self-model when faced with unambiguous events and apply the
 same self-model when confronted with events possessing more ambiguity and
@@ -3113,11 +3128,12 @@ predict the self's responses during collaboration.
 \section{Components of the Architecture}
 \label{sec:architecture-components}
 
-The \textit{Affective Motivational Collaboration Model} consists of seven
+The \textit{Affective Motivational Collaboration} model consists of seven
 mechanisms (see Figure \ref{fig:theory}) most of which directly store and fetch
 the data in the Mental States. The Mental States will keep all the required data
 about the self (agent), other (human) and the environment (including events). In
-this section we explain each of the mechanisms and the Mental States.
+this section we explain each of the mechanisms and the Mental States in more
+detail.
 
 \subsection{Collaboration}
 
@@ -3131,11 +3147,12 @@ this section we explain each of the mechanisms and the Mental States.
   
   \item \textbf{Output:} The output of \textit{Collaboration} includes all the
   data that is modified or created during execution of a plan in the form of
-  Mental States. These Mental States will be used by the internal processes in
-  the Theory of Mind mechanism. Additionally, the Appraisal mechanism will use
-  these Mental States to evaluate the events during collaboration. These Mental
-  States also will be used by other processes, e.g. goal management, for the
-  purpose of maintaining the collaboration.
+  elements of Mental States. These Mental States will be used by the internal
+  processes in the Theory of Mind mechanism. Additionally, the Appraisal
+  mechanism will use these elements of Mental States to evaluate the events
+  during collaboration. These elements of Mental States also will be used by
+  other processes, e.g. goal management, for the purpose of maintaining the
+  collaboration.
   
   \item \textbf{Function:} The \textit{Collaboration} mechanism will construct a
   hierarchy of tasks and also manage and maintain the constraints and other
@@ -3168,39 +3185,39 @@ this section we explain each of the mechanisms and the Mental States.
   \item \textbf{Input:} The most significant part of \textit{Appraisal's} input
   data is based on the activity of the Collaboration mechanism. This data
   includes all the required Mental States associated with the Collaboration
-  mechanism. For instance, the beliefs and their Strengths will be used by
+  mechanism. For instance, the beliefs and their strengths will be used by
   algorithms inside of \textit{Appraisal} to compute the value of the appraisal
   variables. \textit{Appraisal} also receives data from the Theory of Mind
   mechanism. This data helps the agent use \textit{Appraisal} for inferring
   the human's intentions and motives based on a reverse appraisal procedure.
   The input data from the Perception mechanism is generally needed to support
-  the evaluation of the events. The \textit{Appraisal} mechanism also uses the
-  information about the motives in the underlying processes.
+  the evaluation of the events. \textit{Appraisal} also uses the information
+  about the motives in the underlying processes.
    
   \item \textbf{Output:} The output of \textit{Appraisal} can directly and
   indirectly impact other mechanisms. The Motivation mechanism uses this data to
   generate and maintain motives based on the current appraisal of the
   environment.
   
-  \item \textbf{Function:} \textit{Appraisal} is a subjective evaluation
-  mechanism based on individual processes each of which computes the value of
-  the appraisal variables used in our computational model. The Collaboration
-  mechanism needs the evaluative assistance of the \textit{Appraisal} mechanism
-  for various reasons. The course of a collaboration is based on a full or a
-  partial plan which needs to be updated as time passes and collaborators
-  achieve, fail at or abandon a goal assigned to them. The failure to achieve a
-  goal should not destroy the entire collaboration. Appraising the environment
-  and the current events helps the agent to update the collaboration plan and
-  avoid further critical failures during collaboration.  \textit{Appraisal}
-  also helps the agent to have a better understanding of the human's behavior by
-  making inferences based on appraisal variables. Furthermore, in order to
-  collaborate successfully, a collaborator cannot simply use the plan and reach
-  to the shared goal; there should be an adaptation mechanism not only for
-  updating the plan but also the underlying Mental States. For instance, there
-  are beliefs about the appraisal of the self and the other that augment the
-  model of what collaborators have done, and what and how they are planning to
-  achieve the current shared goal based on their emotional states. This process
-  will be discussed in more detail under the Motivation mechanism (see Section
+  \item \textbf{Function:} \textit{Appraisal} is a subjective evaluation process
+  based on individual processes each of which computes the value of the
+  appraisal variables used in our computational model. The Collaboration
+  mechanism needs the evaluative assistance of \textit{Appraisal} for various
+  reasons. The course of a collaboration is based on a full or a partial plan
+  which needs to be updated as time passes and collaborators achieve, fail at or
+  abandon a goal assigned to them. The failure to achieve a goal should not
+  destroy the entire collaboration. Appraising the environment and the current
+  events helps the agent to update the collaboration plan and avoid further
+  critical failures during collaboration.  \textit{Appraisal} also helps the
+  agent to have a better understanding of the human's behavior by making
+  inferences based on appraisal variables. Furthermore, in order to collaborate
+  successfully, a collaborator cannot simply use the plan and reach to the
+  shared goal; there should be an adaptation process not only for updating the
+  plan but also the underlying Mental States. For instance, there are beliefs
+  about the appraisal of the self and the other that augment the model of what
+  collaborators have done, and what and how they are planning to achieve the
+  current shared goal based on their emotional states. This process will be
+  discussed in more detail under the Motivation mechanism (see Section
   \ref{section-motivation-mechanism}). Additionally, the beliefs formed based on
   the appraisals can impact other mechanisms such as the Theory of Mind,
   Motivation and Coping, essentially including the whole computational model.
@@ -3210,7 +3227,7 @@ this section we explain each of the mechanisms and the Mental States.
 
 \begin{itemize}
   \item \textbf{Input:} The \textit{Coping} mechanism operates based on the data
-  stored in different aspects of the Mental States. This data includes changes
+  stored in different aspects of the Mental State. This data includes changes
   in the agent's beliefs as well as the agent's intentions (whether they are
   created or altered during the collaboration), and the private or shared goals.
   
@@ -3265,12 +3282,12 @@ this section we explain each of the mechanisms and the Mental States.
 \end{itemize}
 
 \subsection{Theory of Mind}
-
+\label{sec:}
 \begin{itemize}
   \item \textbf{Input:} \textit{Theory of Mind} receives its input from the
-  Mental States as well as the Collaboration and Perception mechanisms. This
-  mechanism uses the current Mental States to infer the human's Mental States
-  (which are simpler than the Mental States associated with self). The
+  Mental State as well as the Collaboration and Perception mechanisms. This
+  mechanism uses the current Mental State to infer the other's Mental State
+  (which is simpler than the Mental State associated with self). The
   Collaboration mechanism provides the structure of the collaboration plan,
   including the constraints which can be used in the internal inference
   processes of \textit{Theory of Mind}, such as reverse appraisal. The
@@ -3278,14 +3295,14 @@ this section we explain each of the mechanisms and the Mental States.
   from the sensory system.
   
   \item \textbf{Output:} The output of \textit{Theory of Mind} will be stored in
-  the Mental States. The Motivation mechanism can use this output to generate
+  the Mental State. The Motivation mechanism can use this output to generate
   new motives according to the current state of the collaboration.
   
   \item \textbf{Function:} The agent uses the \textit{Theory of Mind} mechanism
   to infer and attribute beliefs, intentions, motives and goals to its
-  collaborator. The agent can also infer the Mental States of the human based on
-  the reverse appraisals of the human's behavior. Another internal process of
-  the \textit{Theory of Mind} is inferring the human's motives on the basis of
+  collaborator. The agent can also infer the Mental State of the other based on
+  the reverse appraisal of the other's behavior. Another internal process of
+  the \textit{Theory of Mind} is to infer the other's motives on the basis of
   his behavior.
 \end{itemize}
 
@@ -3294,7 +3311,7 @@ this section we explain each of the mechanisms and the Mental States.
 We consider the \textit{Perception} mechanism only as a source of data to our
 computational model (see Figure \ref{fig:theory}). Thus, our computational
 model starts with high-level semantic representation of events (including
-utterances), i.e., Natural Language Processing is out of the scope of this work.
+utterances), i.e., natural language processing is out of the scope of this work.
 
 \begin{itemize}
   \item \textbf{Output:} We will support the human side of the dialogues using
@@ -3325,12 +3342,12 @@ computational model (see Figure \ref{fig:theory}).
   processes of the collaboration procedure.
 \end{itemize}
 
-\subsection{Mental States}
+\subsection{Mental State and Emotion Instances}
 \label{sec:mental-states}
 The Mental States shown in Figure \ref{fig:theory} comprise the knowledge
 base required for all the mechanisms in the overall model.
 
-\textit{Beliefs} are a crucial part of the Mental States. We have two different
+\textit{Beliefs} are a crucial part of the Mental State. We have two different
 perspectives on categorization of beliefs. In one perspective, we categorize
 beliefs based on whether they are shared between the collaborators. The
 SharedPlans \cite{grosz:plans-discourse} theory is the foundation of this
@@ -3341,24 +3358,23 @@ these beliefs), and c) mutual beliefs (the agent believes both the self and the
 human have these same beliefs and both of them believe that). From another
 perspective, we categorize beliefs based on who or what they are about. In this
 categorization, beliefs can be about the self, the other, or they can be about
-the environment. Beliefs about the environment can be about internal events,
-such as outcomes of a new appraisal or a new motivate, or external events such
-as the human's offer, question or request, and general beliefs about the
-environment in which the agent is situated. Beliefs can be created and updated
-by different processes. They also affect how these processes function as time
-passes.
+the environment. {\color{red}Beliefs about the environment can be about the
+outcomes of a new appraisal, or even the human's offer, question or request, and
+general beliefs about the environment in which the agent is situated.} Beliefs
+can be created and updated by different processes. They also influence how these
+processes function as time passes.
 
 \textit{Intentions} are mental constructs directed at future actions. They play
 an essential role in: a) taking actions according to the collaboration plan, b)
-coordination of actions with human collaborator, c) formation of beliefs about
-self and anticipated beliefs about the other, and d) behavior selection in the
-Coping mechanism. First, taking actions means that the agent will intend to take
-an action for primitive tasks that have gained the focus of attention, possess
-active motives, and have satisfied preconditions for which required temporal
-predecessors have been successfully achieved. Second, intentions are involved
-in action coordinations in which the human's behavior guides the agent to infer
-an anticipated behavior of the human. Third, intentions play a role in belief
-formation mainly as a result of the permanence and commitment inherent to
+coordination of actions with the human collaborator, c) formation of beliefs
+about self and anticipated beliefs about the other, and d) behavior selection in
+the Coping mechanism. First, taking actions means that the agent will intend to
+take an action for primitive tasks that have gained the focus of attention,
+possess active motives, have satisfied preconditions, and for which required
+temporal predecessors have been successfully achieved. Second, intentions are
+involved in action coordinations in which the human's behavior guides the agent
+to infer an anticipated behavior of the human. Third, intentions play a role in
+belief formation mainly as a result of the permanence and commitment inherent to
 intentions in subsequent processes, e.g., appraisal of the human's reaction to
 the current action and self regulation. And lastly, intentions are involved in
 selecting intention-related strategies, e.g., planning, seeking instrumental
@@ -3369,7 +3385,7 @@ strategies in the Coping mechanism. Intentions possess a set of attributes, e.g.
 intention and behavior. The issue of consistency between the intentions (in
 collaboration) and the behaviors (as a result of the Coping mechanism in the
 appraisal cycle) is important because neither of these two mechanisms alone
-provides a solution for this concern.
+provides a solution for consistency.
 
 \textit{Motives} are mental constructs which can initiate, direct and maintain
 goal-directed behaviors. They are created by the emotion-regulated Motivation
@@ -3382,7 +3398,7 @@ possess a set of attributes, e.g., \textit{Insistence} or \textit{Failure
 Disruptiveness} (see Section \ref{section-motive-attributes}). These attributes
 are involved in the comparison of newly generated motives based on the current
 state of the collaboration. Ultimately, the agent forms or updates a belief
-about the winning motive in the Mental States.
+about the winning motive in the Mental State.
 
 \textit{Goals} help the agent to create and update its collaboration plan
 according to the current private and shared goal content and structure, i.e.,
@@ -3404,15 +3420,13 @@ appraisal, reverse appraisal, motive generation and intention formation
 processes. For instance, overly easy goals do not motivate; neither are people
 motivated to attempt what they believe are impossible goals.
 
-\textit{Emotions} in Mental States are emotion instances that are elicited by
-the Appraisal mechanism (see Section \ref{section-emotion-instances} for list of
-emotion types used in this model). The agent also keeps beliefs about these
-emotion instances in the Mental States. The Belief Formation mechanism creates
-or updates these beliefs about emotions. These emotion instances include the
-agent's own emotions as well as the anticipated emotions of the other which are
-created with the help of the processes in the Theory of Mind mechanism.
+\textit{Emotions instances}  that are elicited by the Appraisal mechanism (see
+Section \ref{section-emotion-instances} for list of emotion types used in this
+model). These emotion instances include the agent's own emotions as well as
+the anticipated emotions of the other which are created with the help of the
+processes in the Theory of Mind mechanism.
 
-\section{Attributes of Mental States}
+\section{Attributes of Mental State Elements}
 \label{sec:mental-states-attributes}
 
 Mental states are conscious states of the mind providing the content for
@@ -3426,12 +3440,12 @@ mechanism. We provide more details about these attributes in this section.
 
 \subsection{Attributes of Beliefs}
 
-The attributes of a belief are involved within different processes in
-\textit{Affective Motivational Collaboration Theory}. They impact the evaluation
-of an event by the Appraisal mechanism, generation of new motives, updates on
-the collaboration plan, activation of coping strategies and ultimately the self's
-behavior. The following six attributes of beliefs are most related to
-\textit{Affective Motivational Collaboration Theory}.
+The attributes of a belief are involved different processes in \textit{Affective
+Motivational Collaboration} theory. They impact the evaluation of an event by
+the Appraisal mechanism, generation of new motives, updates on the collaboration
+plan, activation of coping strategies and ultimately the self's behavior. The
+following six attributes of beliefs are most related to \textit{Affective
+Motivational Collaboration} theory.
 
 \begin{itemize}
   \item \textbf{\textit{Strength:}} Belief strength is about how strong the self
@@ -3503,7 +3517,7 @@ attributes in this section.
   
   \item \textbf{\textit{Specificity:}} Goals incorporating specific performance
   standards are more likely to enhance the self's self-evaluation than general
-  goals. Specific goals raise the self-evaluation performance because they
+  goals. Specific goals raise the self-evaluation performance, because they
   provide a more accurate baseline for the mechanisms, e.g., Appraisal or
   Collaboration (see Section \ref{sec:goal-management} in Chapter
   \ref{ch:appraisals}), or any arbitration process that the self needs for
@@ -3545,7 +3559,7 @@ attributes as most related to the collaboration context.
   \item \textbf{\textit{Importance:}} The importance of a motive is determined
   by the corresponding beliefs about the effects of achieving or not achieving
   the associated goal (see Section \ref{sec:relevance} in Chapter
-  \ref{ch:appraisals}). It is a function of belief attributes (e.g. saliency)
+  \ref{ch:appraisals}). It is a function of belief attributes (e.g., saliency)
   and the current goal. For instance, if a motive is supported by a belief about
   the current goal with relatively high attribute values, that motive will
   become important for the self.
@@ -3553,7 +3567,7 @@ attributes as most related to the collaboration context.
   \item \textbf{\textit{Urgency:}} The urgency of a motive defines how much time
   the self has to acknowledge and address that motive before it is too late.
   The urgency of a motive is a function of beliefs about the other's mental
-  and emotional states (see Section \ref{sec:relevance} in Chapter
+  and emotional state (see Section \ref{sec:relevance} in Chapter
   \ref{ch:appraisals}). For instance, the self responds to an urgent motive due
   to the existence of an important anticipated outcome for the other, and
   limited time to accomplish the corresponding tasks, even if those tasks are
@@ -3566,7 +3580,7 @@ attributes as most related to the collaboration context.
   \emph{desirability} when evaluating an event. Beliefs about successive
   subgoals and the other's anticipated Mental States influence the insistence
   attribute of a motive. Insistent motives have higher priority and are able to
-  interrupt self's ongoing tasks.
+  interrupt the self's ongoing tasks.
   
   \item \textbf{\textit{Intensity:}} The intensity of a motive determines how
   actively and vigorously that motive can help the self to pursue the goal if
@@ -3659,11 +3673,11 @@ Motivational Collaboration Theory}.
 \subsection{Emotion Instances}
 \label{section-emotion-instances}
 
-Each emotion has its own functionality in either an intrapersonal or
-interpersonal level. These emotions not only regulate the self's internal
-processes, but also assist the self to anticipate the other's Mental States. In
-this section, we provide the description of some of the emotions that can be
-elicited during collaboration, and are involved in our scenario (see Section
+Each emotion has its own functionality at either the intrapersonal or
+interpersonal level. Emotions not only regulate the self's internal processes,
+but also assist the self to anticipate the other's Mental State. In this
+section, we provide the description of some of the emotions that can be elicited
+during collaboration, and are involved in our scenario (see Section
 \ref{sec:example-scenario}). In this theory, to avoid the controversial issue of
 whether virtual agents or robots can feel emotions, we are going to use the
 convention of having emotions by the agent or the robot. The agent can also
@@ -4966,6 +4980,7 @@ pursue the proposed goal to mitigate human's negative emotion and maintain the
 collaboration.
 
 \section{Theory of Mind}
+\label{sec:theory-of-mind-implementation}
 The Theory of Mind mechanism uses the same collaboration structure and functions
 as well as appraisal processes to form anticipated beliefs about the human's
 mental and emotional states. The agent uses the collaboration structure during the

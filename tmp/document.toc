@@ -52,40 +52,41 @@
 \contentsline {section}{\numberline {2.6}Theory of Mind}{67}
 \contentsline {section}{\numberline {2.7}Conclusion}{68}
 \contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{70}
-\contentsline {section}{\numberline {3.1}Example Scenario}{75}
-\contentsline {section}{\numberline {3.2}General Argument}{77}
-\contentsline {section}{\numberline {3.3}Events}{80}
-\contentsline {subsection}{\numberline {3.3.1}Collaboration Mechanism and Events}{80}
-\contentsline {subsection}{\numberline {3.3.2}Appraisal Mechanism and Events}{80}
-\contentsline {subsection}{\numberline {3.3.3}Coping with Events}{81}
-\contentsline {subsection}{\numberline {3.3.4}Motivation and Events}{81}
-\contentsline {subsection}{\numberline {3.3.5}Theory of Mind and Events}{82}
-\contentsline {subsection}{\numberline {3.3.6}Functions of Emotions}{82}
-\contentsline {subsubsection}{Action Selection}{83}
-\contentsline {subsubsection}{Adaptation}{83}
-\contentsline {subsubsection}{Social Regulation}{83}
-\contentsline {subsubsection}{Sensory Integration}{84}
-\contentsline {subsubsection}{Alarm}{84}
-\contentsline {subsubsection}{Motivation}{84}
-\contentsline {subsubsection}{Goal Management}{85}
-\contentsline {subsubsection}{Attentional Focus}{85}
-\contentsline {subsubsection}{Strategic Processing}{85}
-\contentsline {subsubsection}{Self Model}{86}
-\contentsline {section}{\numberline {3.4}Components of the Architecture}{86}
-\contentsline {subsection}{\numberline {3.4.1}Collaboration}{86}
-\contentsline {subsection}{\numberline {3.4.2}Appraisal}{88}
-\contentsline {subsection}{\numberline {3.4.3}Coping}{89}
-\contentsline {subsection}{\numberline {3.4.4}Motivation}{90}
-\contentsline {subsection}{\numberline {3.4.5}Theory of Mind}{91}
-\contentsline {subsection}{\numberline {3.4.6}Perception}{91}
-\contentsline {subsection}{\numberline {3.4.7}Action}{92}
-\contentsline {subsection}{\numberline {3.4.8}Mental States}{92}
-\contentsline {section}{\numberline {3.5}Attributes of Mental States}{95}
-\contentsline {subsection}{\numberline {3.5.1}Attributes of Beliefs}{95}
-\contentsline {subsection}{\numberline {3.5.2}Attributes of Goals}{97}
-\contentsline {subsection}{\numberline {3.5.3}Attributes of Motives}{98}
-\contentsline {subsection}{\numberline {3.5.4}Attributes of Intentions}{100}
-\contentsline {subsection}{\numberline {3.5.5}Emotion Instances}{102}
+\contentsline {section}{\numberline {3.1}Overview of Mechanisms}{73}
+\contentsline {section}{\numberline {3.2}Example Scenario}{75}
+\contentsline {section}{\numberline {3.3}General Argument}{77}
+\contentsline {section}{\numberline {3.4}Events}{80}
+\contentsline {subsection}{\numberline {3.4.1}Collaboration Mechanism and Events}{80}
+\contentsline {subsection}{\numberline {3.4.2}Appraising Events}{81}
+\contentsline {subsection}{\numberline {3.4.3}Coping with Events}{81}
+\contentsline {subsection}{\numberline {3.4.4}Motivation and Events}{82}
+\contentsline {subsection}{\numberline {3.4.5}Theory of Mind and Events}{82}
+\contentsline {section}{\numberline {3.5}Functions of Emotions}{83}
+\contentsline {subsection}{\numberline {3.5.1}Action Selection}{83}
+\contentsline {subsection}{\numberline {3.5.2}Adaptation}{84}
+\contentsline {subsection}{\numberline {3.5.3}Social Regulation}{84}
+\contentsline {subsection}{\numberline {3.5.4}Sensory Integration}{84}
+\contentsline {subsection}{\numberline {3.5.5}Alarm}{84}
+\contentsline {subsection}{\numberline {3.5.6}Motivation}{85}
+\contentsline {subsection}{\numberline {3.5.7}Goal Management}{85}
+\contentsline {subsection}{\numberline {3.5.8}Focus of Attention}{85}
+\contentsline {subsection}{\numberline {3.5.9}Strategic Processing}{86}
+\contentsline {subsection}{\numberline {3.5.10}Self Model}{86}
+\contentsline {section}{\numberline {3.6}Components of the Architecture}{86}
+\contentsline {subsection}{\numberline {3.6.1}Collaboration}{87}
+\contentsline {subsection}{\numberline {3.6.2}Appraisal}{88}
+\contentsline {subsection}{\numberline {3.6.3}Coping}{89}
+\contentsline {subsection}{\numberline {3.6.4}Motivation}{90}
+\contentsline {subsection}{\numberline {3.6.5}Theory of Mind}{91}
+\contentsline {subsection}{\numberline {3.6.6}Perception}{91}
+\contentsline {subsection}{\numberline {3.6.7}Action}{92}
+\contentsline {subsection}{\numberline {3.6.8}Mental State and Emotion Instances}{92}
+\contentsline {section}{\numberline {3.7}Attributes of Mental State Elements}{95}
+\contentsline {subsection}{\numberline {3.7.1}Attributes of Beliefs}{95}
+\contentsline {subsection}{\numberline {3.7.2}Attributes of Goals}{97}
+\contentsline {subsection}{\numberline {3.7.3}Attributes of Motives}{98}
+\contentsline {subsection}{\numberline {3.7.4}Attributes of Intentions}{100}
+\contentsline {subsection}{\numberline {3.7.5}Emotion Instances}{102}
 \contentsline {chapter}{\numberline {4}Computational Framework}{104}
 \contentsline {section}{\numberline {4.1}Introduction}{104}
 \contentsline {section}{\numberline {4.2}Collaboration Mechanism}{105}
