@@ -92,24 +92,25 @@
 \contentsline {section}{\numberline {4.2}Collaboration Mechanism}{105}
 \contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{107}
 \contentsline {subsection}{\numberline {4.3.1}Relevance}{108}
+\contentsline {subsubsection}{Utility of an Event}{109}
 \contentsline {subsection}{\numberline {4.3.2}Desirability}{112}
 \contentsline {subsection}{\numberline {4.3.3}Expectedness}{114}
-\contentsline {subsection}{\numberline {4.3.4}Controllability}{115}
-\contentsline {section}{\numberline {4.4}Goal Management}{118}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{116}
+\contentsline {section}{\numberline {4.4}Goal Management}{119}
 \contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{124}
-\contentsline {subsection}{\numberline {4.5.1}Planning}{124}
+\contentsline {subsection}{\numberline {4.5.1}Planning}{125}
 \contentsline {subsection}{\numberline {4.5.2}Active Coping}{125}
 \contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{126}
-\contentsline {subsection}{\numberline {4.5.4}Acceptance}{126}
-\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{126}
+\contentsline {subsection}{\numberline {4.5.4}Acceptance}{127}
+\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{127}
 \contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{127}
-\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{127}
-\contentsline {section}{\numberline {4.6}Motivation Mechanism}{128}
-\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{130}
-\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{132}
-\contentsline {subsection}{\numberline {4.6.3}External Motive}{133}
-\contentsline {section}{\numberline {4.7}Theory of Mind}{135}
-\contentsline {section}{\numberline {4.8}Perception and Action}{135}
+\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{128}
+\contentsline {section}{\numberline {4.6}Motivation Mechanism}{129}
+\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{129}
+\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{131}
+\contentsline {subsection}{\numberline {4.6.3}External Motive}{134}
+\contentsline {section}{\numberline {4.7}Theory of Mind}{134}
+\contentsline {section}{\numberline {4.8}Perception and Action}{136}
 \contentsline {section}{\numberline {4.9}Emotion Instances}{136}
 \contentsline {chapter}{\numberline {5}Evaluation}{139}
 \contentsline {section}{\numberline {5.1}Evaluating Appraisal Algorithms (Crowd Sourcing)}{139}

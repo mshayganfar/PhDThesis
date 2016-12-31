@@ -59,6 +59,11 @@
 \newcommand{\thesistitle}{Affective Motivational Collaboration Theory}
 \newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
 
+\newcommand\myeq{\stackrel{\mathclap{\normalfont\mbox{def}}}{=}}
+
+\algnewcommand\AND{\textbf{{\fontsize{10}{10}\selectfont AND}}}
+\algnewcommand\OR{\textbf{{\fontsize{10}{10}\selectfont or}}}
+
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
 
@@ -146,7 +151,7 @@ throughout my higher-education. I thank Prof.\,Charles Rich for his guidance,
 teaching, and academic freedom as I explored my area of research and ultimately
 his support for this dissertation work. Prof.\,Rich continuously provided
 insightful discussions and suggestions about the research which ultimately
-shaped me as a person and a research. It has been an honor to be his Ph.D.
+shaped me as a person and a researcher. It has been an honor to be his Ph.D.
 student. I appreciate all his contributions of time, ideas, corrections and
 funding to make my Ph.D. experience productive and stimulating. In addition, I
 would like to thank Prof.\,Candace L.\,Sidner for not only serving as a
@@ -3777,6 +3782,14 @@ about any other proposition.
 \vspace*{-2mm}
 \section{Introduction}
 \vspace*{-3mm}
+{\color{red}Our computational framework includes all the mechanisms discussed in
+Chapter \ref{ch:amct}. The emphasis of our implmentation is on Appraisal, Coping,
+Collaborartion, and Motivation mechanisms. In this chapter, we provide concrete
+algorithms for the theoretical concepts discussed in Chapter \ref{ch:amct}.
+These algorithms have been implemented as part of the AMC framework. We also
+evaluated these algorithms and the overall system in an end-to-end system
+evaluation user study (see Chapter \ref{ch:awareness}).} 
+
 There are several appraisal models (e.g., EMA \cite{marsella:ema-process-model})
 contributing in different applications such as social sciences, virtual agents,
 and robotics. However, none of these models have focused on the appraisal
@@ -3788,9 +3801,9 @@ relevance of an event, we have found new cognitive components involved in
 determining utility because of the influence of the collaboration. These
 components, such as the recurrence of a belief by the human collaborator or the
 influence of the human collaborator's perceived emotion on the robot's decisions
-emphasize the fact that collaboration requires different procedures in appraisal
-processes. One of our contributions is to ground general appraisal concepts in
-the specific context and structure of collaboration.
+emphasize the fact that collaboration requires additional procedures in
+appraisal processes. One of our contributions is to ground general appraisal
+concepts in the specific context and structure of collaboration.
 
 Furthermore, we believe collaboration and appraisal have reciprocal influences
 on each other. In this chapter, we also talk about the influence of appraisal on
@@ -3799,34 +3812,33 @@ mechanism and strategies within the collaboration context. Then, we provide
 our computational model of three different motives used in our framework.
 Finally, we briefly discuss other mechanisms in our framework.
 
-\vspace*{-5mm}
 \section{Collaboration Mechanism}
-\vspace*{-4mm}
-The Collaboration and Appraisal mechanisms have reciprocal influences on each
-other. In this section, we focus on information about the collaboration
-structure which will be incorporated in appraisal processes in Section
-\ref{sec:appraisal}. We describe some of the methods in our Collaboration
-mechanism which are used to retrieve information about the collaboration
-structure.
-
-The Collaboration mechanism constructs a hierarchy of goals associated with
-tasks in the form of a hierarchical task network (see Figure \ref{fig:cs}), and
-also manages and maintains the constraints and other required details of the
-collaboration including the inputs and outputs of individual tasks, the
-\textit{preconditions} (specifying whether it is appropriate to perform a task),
-and the \textit{postconditions} (specifying whether a just-completed task was
-successful). Collaboration also keeps track of the focus of attention, which
-determines the salient objects, properties and relations at each point, and
-shifts the focus of attention during the interaction.
+The Collaboration and Appraisal mechanisms (see Figure \ref{fig:theory}) have
+reciprocal influences on each other. In this section, we focus on information
+about the collaboration structure which will be incorporated in appraisal
+processes in Section \ref{sec:appraisal}. We describe some of the methods in our
+Collaboration mechanism which are used to retrieve information about the
+collaboration structure.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.97\textwidth]{figure/collaborationStructure-small-croped.pdf}
-  \caption{{\fontsize{10}{10}\selectfont Collaboration structure (shared
-  plan).}}
+  \caption{Example of collaboration structure.}
   \label{fig:cs}
-  \vspace*{-5mm}
+  \vspace*{-3mm}
 \end{figure}
+
+The Collaboration mechanism constructs a hierarchy of goals associated with
+tasks in the form of a hierarchical task network (see Figure \ref{fig:cs}), and
+also manages the constraints and other required details of the collaboration
+including the inputs and outputs of individual tasks, the \textit{preconditions}
+(specifying whether it is appropriate to perform a task), and the
+\textit{postconditions} (specifying whether a just-completed task was
+successful). Collaboration also keeps track of the focus of attention, which
+determines the salient objects, properties and relations at each point, and
+shifts the focus of attention during the interaction. For example in Figure
+\ref{fig:cs}, ``Check Connector'' is the current (focused) goal\footnote{The
+focused goal is the goal that the robot currently pursues.}.
 
 Here, we describe the methods which retrieve information about the collaboration
 structure, and are used in our algorithms to compute the values of appraisal
@@ -3835,75 +3847,71 @@ variables. In these methods, $\varepsilon_t$ is the event corresponding to time
 
 \begin{itemize}
   \setlength\itemsep{1mm}
-  \item \textit{recognizeGoal($\varepsilon_t$)} returns the unique goal to which
-  the given event (action, utterance, or emotional expression) directly
-  contributes; it is only one goal since the robot can only do one primitive
-  action at a time in our collaboration model, i.e, in the goal tree, a given
-  primitive action can only directly contribute to one parent goal. The method
-  returns \textit{ambiguous} if it does not recognize a goal in the
-  plan\footnote{Ambiguity introduces some extra complexities which are beyond
-  scope of this thesis.}.
+  \item \textit{getPrimitiveGoal($\varepsilon_t$)} returns the unique primitive
+  goal to which the given event (action, utterance, or emotional expression)
+  \textit{directly} contributes; it is only one goal since the robot can only do
+  one primitive action at a time in our collaboration model, i.e, in the goal
+  tree, a given primitive action can only directly contribute to one parent
+  goal. The method returns \textsc{ambiguous} if it does not find a goal in
+  the plan\footnote{Ambiguity introduces some extra complexities which are
+  beyond scope of this thesis.}.
   
   \item \textit{getGoalStatus($g_t$)} returns whether $g_t$'s status is
-  \textsc{achieved, failed, blocked, inapplicable, pending,} or \textsc{in
-  progress}. In our example, ``Check Connector'' is the current (focused) goal
-  and it is \textsc{pending}, and the ``Prepare Panels'' and ``Install Solar
-  Panels'' are \textsc{in progress}. The focused goal is the goal that the robot
-  currently pursues.
+  \textsc{achieved, failed, blocked, inapplicable, pending,} or
+  \textsc{inprogress}.
   
   \item \textit{getTopLevelGoal($g_t$)} returns $g_t$'s top level goal.
 
   \item \textit{precondStatus($g_t$)} returns the status of the precondition for
-  the given goal whether it is \textsc{satisfied, unsatisfied} or
-  \textsc{unknown}. For instance, the precondition for fixing a panel is whether
-  the panel is appropriately located on its frame.
+  the given goal; whether it is \textsc{satisfied, unsatisfied} or
+  \textsc{unknown}. For instance, the precondition for attaching a panel is
+  whether the panel is appropriately located on its frame.
   
-  \item \textit{isLive($g_t$)} returns \textit{true} if all the predecessors of
-  $g_t$ are \textsc{achieved} and all the preconditions are \textsc{satisfied},
-  i.e., \textsc{pending} or \textsc{in progress} goals; otherwise returns
-  \textit{false}.
+  \item \textit{isLive($g_t$)} returns \textit{true} iff all the predecessors of
+  $g_t$ are \textsc{achieved} and all the preconditions are {\textsc{satisfied}
+  &\myeq \textsc{pending} \bigvee \textsc{inprogress}}
   
-  \item \textit{isFocusShift($g_t$)} returns \textit{true} if the given
-  goal is not the previous focus (top of the stack); otherwise returns
-  \textit{false}.
+  \item \textit{isFocusShift($g_t$)} returns \textit{true} iff the given
+  goal was not the previous focus (at time t-1).
   
-  \item \textit{isNecessaryFocusShift($g_t$)} returns \textit{true} if the
-  status of the previous focus was \textsc{achieved}; otherwise returns
-  \textit{false} \cite{rich:focused-unfocused-users}.
+  \item \textit{isNecessaryFocusShift($g_t$)} returns \textit{true} iff the
+  status of the previous focus was \textsc{achieved}
+  \cite{rich:focused-unfocused-users}.
   
-  \item \textit{isPath($g_1$, $g_2$)} returns \textit{true} if there is a path
-  between $g_1$ and $g_2$ in a plan tree structure; otherwise returns
-  \textit{false}.
+  \item \textit{isPath($g_1$, $g_2$)} returns \textit{true} iff there is a path
+  between $g_1$ and $g_2$ in a plan tree structure.
   
 %   \item \textit{doesContribute($g_t$)} returns whether the given goal
 %   contributes to another goal in the higher level of the plan hierarchy. For
 %   instance, an abstract (nonprimitive) goal of ``Bring Panels'' contributes to
 %   the higher level goal of ``Install Solar Panels''.
   
-  \item \textit{getContributingGoals($g_t$)} returns $g_t$'s children.
+  \item \textit{getContributingGoals($g_t$)} returns $g_t$'s children in plan
+  tree.
   
-  \item \textit{getPredecessors($g_t$)} returns $g_t$'s predecessors.
+  \item \textit{getPredecessors($g_t$)} returns $g_t$'s predecessors in plan
+  tree.
   
   \item \textit{getInputs($g_t$)} returns all required inputs for $g_t$. For
-  example, the goal ``Fix Panels'' requires inputs such as \textit{welding tool}
+  example, the goal ``Attach Panels'' requires the inputs \textit{welding tool}
   and \textit{panel}.
   
-  \item \textit{isAvailable($g_t$)} returns whether the given input is
-  available. For instance, whether the \textit{welding tool} is available for the
-  goal ``Fix Panels''.
+  \item \textit{isInputAvailable($g_t$)} returns whether the given input is
+  available. For instance, whether the \textit{welding tool} is available for
+  the goal ``Attach Panels''.
   
 %   \item \textit{isAchieved($g_t$)} returns whether the given goal is achieved,
 %   i.e., whether all the postconditions of the given goal are \textsc{satisfied}.
   
-  \item \textit{isFocused($g_t$)} returns whether the focus is on $g_t$.
+  \item \textit{isFocused($g_t$)} returns whether $g_t$ is the current focus.
   
   \item \textit{getResponsible($g_t$)} returns responsible agent(s) for $g_t$.
-  In a dyadic collaboration, both of the agents (jointly) can be partly
-  responsible for a nonprimitive goal, while each (self or other) is responsible
-  for one or more primitive goals. For instance, both the Robot and the
-  Astronaut are responsible for the nonprimitive goal of ``Install Solar
-  Panels'', whereas it is only the Robot who is responsible for the
-  primitive goal of ``Prepare Measurement Tool''.
+  In a dyadic collaboration, both of the agents jointly can be responsible for
+  a nonprimitive goal, while only one agent (self or other) is responsible for
+  each primitive goal. For instance, both the Robot and the Astronaut are
+  responsible for the nonprimitive goal of ``Install Solar Panels'', whereas it
+  is only the Robot who is responsible for the primitive goal of ``Prepare
+  Measurement Tool''.
 \end{itemize}
 
 \section{Appraisal Mechanism and Underlying Processes}
@@ -3918,11 +3926,11 @@ ability) of events within a collaborative interaction. There are other appraisal
 variables introduced in psychological \cite{scherer:appraisal-processes} and
 computational literature \cite{gratch:domain-independent}. We believe most of
 these variables can be straightforwardly added to our appraisal mechanism
-whenever they are required. All of the algorithms in this section use mental
-states of the robot (discussed in Section \ref{sec:mental-states}) which are
-formed based on the collaboration structure (Figure
+whenever they are required. All of the algorithms in this section use the mental
+state of the robot (discussed in Section \ref{sec:mental-states}) which is
+formed based on the collaboration structure (see Figure
 \ref{fig:appraisal-collaboration}). These algorithms use the corresponding
-recognized goal of the most recent event at each turn.
+primitive goal to the most recent event at each turn.
 
 \begin{figure}[tbh]
   \centering
@@ -3934,7 +3942,7 @@ recognized goal of the most recent event at each turn.
 
 \subsection{Relevance}
 \label{sec:relevance}
-Relevance is an important appraisal variable since the other appraisal variables
+Relevance is a key appraisal variable since the other appraisal variables
 are meaningful only for relevant events. Relevance as an appraisal variable
 measures the significance of an event for the self. An event can be evaluated to
 be relevant if it has a non-zero utility \cite{marsella:ema-process-model}.
@@ -3958,13 +3966,17 @@ positively impact the status of the shared goal, without dedicating all its
 resources to every event.
 
 After perceiving an event, the belief about that event represents the event in
-the robot's mental state. \textit{recognizeGoal} returns the goal to which the
-current event contributes, unless it is \textit{ambiguous}; $g_{t}$ represents
-the shared goal at time (turn) $t$ within the shared plan. We compute the
-utility ($-1 \leq \mathcal{U} \leq 1$) of the event using the values of the
-attributes associated with the existing beliefs, and the attributes of the
-motive associated with the recognized goal (see details below). We use three
-belief attributes (see Section \ref{sec:mental-states}) to compute the
+the robot's mental state. \textit{getPrimitiveGoal} returns the goal to which
+the current event contributes, unless it is \textsc{ambiguous}; $g_{t}$
+represents the shared goal at time (turn) $t$ within the shared plan. 
+
+\vspace*{-4mm}
+\subsubsection{Utility of an Event}
+We compute the utility ($-1 \leq \mathcal{U} \leq 1$) of the event using the
+values of the attributes associated with the existing beliefs, and the
+attributes of the motive associated with the recognized goal (see details
+below). We use three belief attributes (i.e., \textit{Strength, Saliency,} and 
+\textit{Persistence} -- see Section \ref{sec:mental-states}) to compute the
 belief-related part of the utility:
 
 \begin{algorithm}
@@ -3973,9 +3985,9 @@ belief-related part of the utility:
 	\begin{algorithmic}[1]
 		\Function{IsEventRelevant}{Event $\varepsilon_t$}
  			\Statex
-			\State $\mathit{g}_{t} \gets \textit{recognizeGoal}{(\varepsilon_t)}$
+			\State $\mathit{g}_{t} \gets \textit{getPrimitiveGoal}{(\varepsilon_t)}$
  			\Statex
-			\State $\mathcal{U} \gets \Call{getEventUtility}{\mathit{g}_{t}}$ 
+			\State $\mathcal{U} \gets \Call{getEventUtility}{\mathit{g}_{t}}$
 			\State $\tau_{t} \gets \Call{getEmotionalThreshold}{\mathit{g}_{t}}$
  			\Statex
 			\If {$(\tau_{t} \leq |\mathcal{U}|)$}  
@@ -3986,6 +3998,32 @@ belief-related part of the utility:
 		\EndFunction
 	\end{algorithmic}
 \end{algorithm}
+
+We provide the utility function ($\mathcal{U}$) in Equation \ref{eqn:utility}.
+This function uses: saliency (\textit{S}) and persistence (\textit{P}) of the
+belief related to the recognized goal, the recognized goal's status
+($\upsilon$), and the aggregation of belief and motive attributes ($\Psi$)
+according to Equation \ref{eqn:utility}.
+
+\begin{equation}
+    \mathcal{U}(g_t)= 
+    \begin{dcases}
+       \upsilon\!P\cdot S^{\Psi} & \Psi \textgreater 0 \\
+       0               			 & \Psi = 0
+    \end{dcases}
+    \label{eqn:utility}
+\end{equation}
+
+Intuitively, we use $\upsilon$ to generate positive and negative utility values.
+The $\upsilon$'s value becomes +1 if the status of the corresponding goal is
+\textsc{achieved}, \textsc{pending}, or \textsc{in progress}, and $\upsilon$'s
+value becomes -1 if the status of the corresponding goal is \textsc{failed,
+blocked}, or \textsc{inapplicable}. The \textit{P} influences the value of
+utility only as a coefficient since recurrent beliefs are not formed frequently
+during collaboration. The $\Psi$ value indicates the magnitude of the influence
+of beliefs and motives using their attributes. Hence, the $\Psi$ value impacts
+the saliency value of beliefs exponentially, helping to differentiate between
+beliefs.
 
 \begin{itemize}
   \setlength\itemsep{1mm}
@@ -4000,6 +4038,33 @@ belief-related part of the utility:
   to the strong beliefs related to the goal); whereas not knowing the status of
   the goal-related factors (e.g., whether the Astronaut could find the tool to
   fix a panel) causes one to form weaker beliefs about the goal.
+\end{itemize}
+In equation \ref{eqn:exponent}, the subscript \textit{k} refers to the
+\textit{known} goal-related factors (\textsc{satisfied} or
+\textsc{unsatisfied}); whereas the subscript \textit{all} includes both
+\textit{known} and \textit{unknown} goal-related factors. In this equation, both
+urgency ($\gamma$) and importance ($\eta$) attributes of motives can impact the
+outcome of the goal-related belief attributes' ratio, and ultimately the $\Psi$
+value.
+
+\begin{equation}
+    \Psi = \frac{\alpha_{_k} + \beta_{_k} + \lambda_{_k} +
+    \mu_{_k}}{\alpha_{_{all}} + \beta_{_{all}} + \lambda_{_{all}} +
+    \mu_{_{all}}} + \eta + \gamma
+    \label{eqn:exponent}
+\end{equation}
+
+\begin{center} 
+    $\eta, \gamma \in \mathbb{N}, \qquad\qquad \eta, \gamma \geq 0$\\
+    $\alpha_{_k}, \beta_{_k}, \lambda_{_k}, \mu_{_k} \in \mathbb{N},
+    \qquad\qquad \alpha_{_k}, \beta_{_k}, \lambda_{_k}, \mu_{_k} \geq 0$\\
+    $\alpha_{_{all}}, \lambda_{_{all}}, \mu_{_{all}} \in \mathbb{N},
+    \qquad\qquad \alpha_{_{all}}, \lambda_{_{all}}, \mu_{_{all}} \geq 0$\\
+    $\beta_{_{all}} \in \mathbb{N}, \qquad\qquad \beta_{_{all}} \geq 1$
+\end{center}
+
+\begin{itemize}
+  \setlength\itemsep{1mm}
   \item \textit{Saliency (S)}: Beliefs related to the focused goal are more
   salient than beliefs related to any other goal in the plan; according to
   Figure \ref{fig:cs}, if one of the collaborators is preparing a solar panel,
@@ -4040,61 +4105,12 @@ belief-related part of the utility:
   the shared plan.
 \end{itemize}
 
-We provide the utility function ($\mathcal{U}$) in Equation \ref{eqn:utility}.
-This function uses: saliency (\textit{S}) and persistence (\textit{P}) of the
-belief related to the recognized goal, the recognized goal's status
-($\upsilon$), and the aggregation of belief and motive attributes ($\Psi$)
-according to Equation \ref{eqn:utility}.
-
-\begin{equation}
-    \mathcal{U}(\varepsilon_t)= 
-    \begin{dcases}
-       \upsilon\!P\cdot S^{\Psi} & \Psi \textgreater 0 \\
-       0               			 & \Psi = 0
-    \end{dcases}
-    \label{eqn:utility}
-\end{equation}
-
-Intuitively, we use $\upsilon$ to generate positive and negative utility values.
-The $\upsilon$'s value becomes +1 if the status of the corresponding goal is
-\textsc{achieved}, \textsc{pending}, or \textsc{in progress}, and $\upsilon$'s
-value becomes -1 if the status of the corresponding goal is \textsc{failed,
-blocked}, or \textsc{inapplicable}. The \textit{P} influences the value of
-utility only as a coefficient since recurrent beliefs are not formed frequently
-during collaboration. The $\Psi$ value indicates the magnitude of the influence
-of beliefs and motives using their attributes. Hence, the $\Psi$ value impacts
-the saliency value of beliefs exponentially, helping to differentiate between
-beliefs.
-
-In equation \ref{eqn:exponent}, the subscript \textit{k} refers to the
-\textit{known} goal-related factors (\textsc{satisfied} or
-\textsc{unsatisfied}); whereas the subscript \textit{all} includes both
-\textit{known} and \textit{unknown} goal-related factors. In this equation, both
-urgency ($\gamma$) and importance ($\eta$) attributes of motives can impact the
-outcome of the goal-related belief attributes' ratio, and ultimately the $\Psi$
-value.
-
-\begin{equation}
-    \Psi = \frac{\alpha_{_k} + \beta_{_k} + \lambda_{_k} +
-    \mu_{_k}}{\alpha_{_{all}} + \beta_{_{all}} + \lambda_{_{all}} +
-    \mu_{_{all}}} + \eta + \gamma
-    \label{eqn:exponent}
-\end{equation}
-
-\begin{center} 
-    $\eta, \gamma \in \mathbb{N}, \qquad\qquad \eta, \gamma \geq 0$\\
-    $\alpha_{_k}, \beta_{_k}, \lambda_{_k}, \mu_{_k} \in \mathbb{N},
-    \qquad\qquad \alpha_{_k}, \beta_{_k}, \lambda_{_k}, \mu_{_k} \geq 0$\\
-    $\alpha_{_{all}}, \lambda_{_{all}}, \mu_{_{all}} \in \mathbb{N},
-    \qquad\qquad \alpha_{_{all}}, \lambda_{_{all}}, \mu_{_{all}} \geq 0$\\
-    $\beta_{_{all}} \in \mathbb{N}, \qquad\qquad \beta_{_{all}} \geq 1$
-\end{center}
-
 The significance of an event in a collaborative environment is based on the
 utility of the event and the human's perceived emotion. The human's perceived
 emotion influences the relevance of the event in the form of a threshold value
-$\tau_{t}$. In Equation \ref{eqn:threshold}, we use the valence of the perceived
-emotion ($\mathcal{V}_{e_h}$) to compute $\tau_{t}$.
+$\tau_{t}$ in Algorithm \ref{alg:relevance}. In Equation \ref{eqn:threshold}, we
+use the valence of the perceived emotion ($\mathcal{V}_{e_h}$) to compute
+$\tau_{t}$.
 
 \begin{equation}
     \tau_{t}= 
@@ -4144,7 +4160,7 @@ collaboration's point of view.
 	\begin{algorithmic}[1]
 		\Function{IsEventDesirable}{Event $\varepsilon_t$}
 			\Statex
-			\State $\mathit{g}_{t} \gets \textit{recognizeGoal}{(\varepsilon_t)}$
+			\State $\mathit{g}_{t} \gets \textit{getPrimitiveGoal}{(\varepsilon_t)}$
 			\State $\mathit{g}_{top} \gets \textit{getTopLevelGoal}{(\mathit{g}_{t})}$
 			\Statex
 			\If {(\textit{getGoalStatus($g_{top}$)} =
@@ -4155,12 +4171,12 @@ collaboration's point of view.
 			\State \Return {{\fontsize{8}{9}\selectfont MOST-UNDESIRABLE}}
 			\ElsIf {(\textit{getGoalStatus($g_{top}$)} =
 			{\fontsize{8}{9}\selectfont BLOCKED}) \OR\\
-			\hspace*{5mm}(\textit{getGoalStatus($g_{top}$)} =
+			\hspace*{19.5mm}(\textit{getGoalStatus($g_{top}$)} =
 			{\fontsize{8}{9}\selectfont INAPPLICABLE})}
 			\State \Return {{\fontsize{8}{9}\selectfont UNDESIRABLE}} 
 			\ElsIf {(\textit{getGoalStatus($g_{top}$)} =
 			{\fontsize{8}{9}\selectfont PENDING}) \OR\\
-			\hspace*{5mm}(\textit{getGoalStatus($g_{top}$)} =
+			\hspace*{19.5mm}(\textit{getGoalStatus($g_{top}$)} =
 			{\fontsize{8}{9}\selectfont INPROGRESS})}
 				\Statex
 				\If {(\textit{getGoalStatus($g_{t}$)} =
@@ -4171,12 +4187,12 @@ collaboration's point of view.
 				\State \Return {{\fontsize{8}{9}\selectfont MOST-UNDESIRABLE}}
 				\ElsIf {(\textit{getGoalStatus($g_{t}$)} = {\fontsize{8}{9}\selectfont
 				BLOCKED}) \OR \\
-				\hspace*{10mm}(\textit{getGoalStatus($g_{t}$)} =
+				\hspace*{25.5mm}(\textit{getGoalStatus($g_{t}$)} =
 				{\fontsize{8}{9}\selectfont INAPPLICABLE})} 
 				\State \Return {{\fontsize{8}{9}\selectfont UNDESIRABLE}}
 				\ElsIf {(\textit{getGoalStatus($g_{t}$)} =
 				{\fontsize{8}{9}\selectfont PENDING}) \OR \\ \hspace{1mm} 
-				\hspace*{8mm}(\textit{getGoalStatus($g_{t}$)} =
+				\hspace*{23.5mm}(\textit{getGoalStatus($g_{t}$)} =
 				{\fontsize{8}{9}\selectfont INPROGRESS})} 
 				\State \Return {{\fontsize{8}{9}\selectfont NEUTRAL}}
 				\EndIf
@@ -4185,7 +4201,7 @@ collaboration's point of view.
 	\end{algorithmic}
 \end{algorithm}
 
-Algorithm \ref{alg:desirability} provides a process in which the desirability of
+Algorithm \ref{alg:desirability} defines a process in which the desirability of
 an event is computed with regard to the status of the shared goal; i.e., it
 operates based on whether and how the event changes the status of the current
 shared goal. It distinguishes between the top level goal and the current goal
@@ -4198,7 +4214,7 @@ goal (e.g., measuring the quality of the installed panel).
 % ($\varepsilon_t$) which is not recognized in the robot's plan; therefore it is
 % \textsc{undesirable} for a collaborative robot. 
 
-A top level goal' status must be \textsc{achieved} (i.e., \textsc{satisfied}
+A top level goal's status must be \textsc{achieved} (i.e., \textsc{satisfied}
 postcondition) to consider the event \textsc{most-desirable}. When the goal's
 status is \textsc{failed} (i.e., \textsc{unsatisfied} postcondition) or
 \textsc{blocked}, the associated event has the \textsc{most-undesirable} or
@@ -4221,14 +4237,14 @@ events as \textsc{neutral}.
 
 \subsection{Expectedness}
 Expectedness is the extent to which the truth value of a state could have been
-predicted from causal interpretation of an event. In the collaboration context
-the expectedness of an event evaluates the congruency of the event with respect
-to the existing knowledge about the shared goal. Thus, expectedness underlies a
-collaborative robot's attention. The collaboration mechanism uses expectedness
-to maintain the robot's attention and subsequently its mental state with respect
-to the shared goal. Reciprocally, the appraisal mechanism uses the underlying
-information of the collaboration structure to evaluate the expectedness of an
-event \cite{shayganfar:appraisal-short}.
+predicted from a causal interpretation of an event. In the collaboration
+context, the expectedness of an event evaluates the congruency of the event with
+respect to the existing knowledge about the shared goal. Thus, expectedness
+underlies a collaborative robot's attention. The collaboration mechanism uses
+expectedness to maintain the robot's attention and subsequently its mental state
+with respect to the shared goal. Reciprocally, the appraisal mechanism uses the
+underlying information of the collaboration structure to evaluate the
+expectedness of an event \cite{shayganfar:appraisal-short}.
 
 \begin{algorithm}
 	\caption{(Expectedness)}
@@ -4236,12 +4252,12 @@ event \cite{shayganfar:appraisal-short}.
 	\begin{algorithmic}[1]
 		\Function{IsEventExpected}{Event $\varepsilon_t$}
 			\Statex
-			\State $\mathit{g}_{t} \gets \textit{recognizeGoal}{(\varepsilon_t)}$
+			\State $\mathit{g}_{t} \gets \textit{getPrimitiveGoal}{(\varepsilon_t)}$
 			\State $\mathit{g}_{top} \gets \textit{getTopLevelGoal}{(\mathit{g}_{t})}$
 			\Statex
 			\If {$(\textit{isLive}{(\mathit{g}_{t})})$}
-				\If {$(\neg \textit{isFocusShift}{(\mathit{g}_{t})}\hspace*{2mm}\OR$ \\
-				\hspace*{13mm}$\textit{isNeccessaryFocusShift}{(\mathit{g}_{t})})$}
+				\If {$(\neg \textit{isFocusShift}{(\mathit{g}_{t})}\hspace*{2mm}\OR$ 
+				$\textit{isNeccessaryFocusShift}{(\mathit{g}_{t})})$}
 				\State \Return {\fontsize{7}{8}\selectfont MOST-EXPECTED}
 				\Else
 					\State \Return {\fontsize{7}{8}\selectfont EXPECTED}
@@ -4257,9 +4273,9 @@ event \cite{shayganfar:appraisal-short}.
 	\end{algorithmic}
 \end{algorithm}
 
-In Algorithm \ref{alg:expectedness} we provide the process of computing the
+In Algorithm \ref{alg:expectedness} we define the process of computing the
 expectedness based on the shared plan and status of the shared goal. The key
-point in this algorithm is the status of the current shared goal
+point in this algorithm is the status of the current shared primitive goal
 ($\mathit{g}_{t}$), which is associated with the event $\varepsilon_t$ and its
 relationship with the top level goal ($\mathit{g}_{_{top}}$).
 
@@ -4291,7 +4307,7 @@ change a particular state as a consequence of an event.
 	\label{alg:controllability}
 	\begin{algorithmic}[1]
 		\Function{IsEventControllable}{Event $\varepsilon_t$}
- 			\State $\mathit{g}_{t} \gets \textit{recognizeGoal}{(\varepsilon_t)}$
+ 			\State $\mathit{g}_{t} \gets \textit{getPrimitiveGoal}{(\varepsilon_t)}$
   			\Statex
 			\State $\mathcal{M} \gets \Call{GetAgencyRatio}{\mathit{g}_{t}}$ 
 			\State $\mathcal{R} \gets \Call{GetAutonomyRatio}{\mathit{g}_{t}}$
@@ -4322,13 +4338,13 @@ Controllability is important for the overall architecture. For instance, the
 robot can choose to ask or negotiate about a collaborative task which is not
 controllable, or form a new motive to establish an alternative goal for the
 current uncontrollable event. In general, other mechanisms in the architecture
-use the controllability output in their decision making processes; meanwhile
+use the controllability output in their decision-making processes; while
 controllability uses information from the collaboration structure, e.g.,
 predecessors of a goal.
 
 An important determinant of one's emotional response is the sense of control
 over occurring events. This sense of subjective control is based on one's
-reasoning about self's power. For instance, the robustness of one's plan for
+reasoning about the self's power. For instance, the robustness of one's plan for
 executing actions can increase one's sense of power and subsequently the sense
 of control. In the collaboration context, we have translated the sense of control
 into a combination of four different factors including a) \textit{agency} and b)
@@ -4427,8 +4443,9 @@ regard to the goal $\mathit{g}_{t}$. This value $(0.0 \leq \mathcal{R} \leq
 which the robot is responsible over the total number of contributing goals, if
 the goal associated with the current event is a nonprimitive goal. However, if
 the associated goal of the current event corresponds to a primitive goal the
-value of $\mathcal{M}$ would be 0.0 or 1.0. In general, higher autonomy leads to
-a more positive value of controllability.
+value of $\mathcal{R}$ would be 0.0 (if the human is responsible) or 1.0 (if the
+robot is responsible). In general, higher autonomy leads to a more positive
+value of controllability.
 
 % \renewcommand\thealgorithm{4\alph{algorithm}}
 % \setcounter{algorithm}{2}
@@ -4460,12 +4477,12 @@ $\Call{\textbf{GetSuccPredecessorsRatio}}{}$: The structure of a shared plan
 contains the order of the required \textit{predecessors} of a goal. Predecessors
 of a goal, $g_t$, are goals that the collaborators should achieve before trying
 to achieve goal $g_t$. We use the ratio of successfully achieved predecessors of
-the recognized goal over the total number of predecessors of the same goal. If
-all of the predecessors of the given goal are achieved, then $\mathcal{P}=1.0$
-which is the maximum value for $\mathcal{P}$. On the contrary, failure of all of
-the predecessors will lead to $\mathcal{P}=0.0$. Therefore, a higher
-$\mathcal{P}$ value positively impacts the value of controllability for the
-current event.
+the associated primitive goal over the total number of predecessors of the same
+goal. If all of the predecessors of the given goal are achieved, then
+$\mathcal{P}=1.0$ which is the maximum value for $\mathcal{P}$. On the contrary,
+failure of all of the predecessors will lead to $\mathcal{P}=0.0$. Therefore, a
+higher $\mathcal{P}$ value positively impacts the value of controllability for
+the current event.
 
 % \renewcommand\thealgorithm{4\alph{algorithm}}
 % \setcounter{algorithm}{3}
@@ -4498,14 +4515,14 @@ the required elements that the collaborators use to achieve the specified goal
 of the task. These inputs are also part of the structure of a shared plan. We
 compute the ratio of the available required inputs over the total required
 inputs of the goal associated with the current event. This value (denoted as
-$\mathcal{I}$ in Algorithm \ref{alg:controllability}) will be bound between 0.0
+$\mathcal{I}$ in Algorithm \ref{alg:controllability}) will be set between 0.0
 and 1.0. Similar to the other factors in the controllability process, the closer
 the value of $\mathcal{I}$ gets to 1.0, the more positive impact it has on the
 overall controllability value of the event.\\
 
 In summary, the output of these four appraisal processes serves as critical
 input for the other mechanisms of the Affective Motivational Collaboration
-Framework, shown in Chapter \ref{ch:amct}. By providing adequate interpretation
+framework, shown in Chapter \ref{ch:amct}. By providing adequate interpretation
 of events in the collaborative environment, the appraisal mechanism enables the
 robot to carry out proper collaborative behaviors.
 
@@ -4518,7 +4535,8 @@ process. In this section, we provide a cost function that we use to choose the
 goal in the shared plan with the lowest cost value out of a set of alternative
 goals. This cost function is a) based on the goal attributes, b) with respect to
 the reverse appraisal of the perceived emotion, and c) the appraisal of the
-collaborative environment.
+collaborative environment. Adding goal management process to Collaboration
+mechanism is one of our contributions.
 
 Goals represent an important part of the context during collaboration. However,
 not all goals are appropriate to pursue at the moment, depending on conditions.
