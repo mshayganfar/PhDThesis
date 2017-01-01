@@ -126,24 +126,24 @@
 \contentsline {subsubsection}{Relevance}{147}
 \contentsline {subsection}{\numberline {5.1.4}Discussion}{149}
 \contentsline {section}{\numberline {5.2}End-to-End System Evaluation}{149}
-\contentsline {subsection}{\numberline {5.2.1}Implementation}{150}
-\contentsline {subsubsection}{Framework}{150}
+\contentsline {subsection}{\numberline {5.2.1}Experimental Setup}{150}
+\contentsline {subsubsection}{Framework}{151}
 \contentsline {subsubsection}{Robot Controller}{151}
-\contentsline {subsection}{\numberline {5.2.2}Experimental Scenario}{152}
-\contentsline {subsubsection}{The Robot}{153}
+\contentsline {subsection}{\numberline {5.2.2}Experimental Design}{152}
+\contentsline {subsubsection}{The Robot}{152}
 \contentsline {subsubsection}{Interaction Paradigms}{153}
 \contentsline {subsubsection}{Environment and Tasks}{155}
-\contentsline {subsection}{\numberline {5.2.3}Hypotheses and Methodology}{156}
-\contentsline {subsubsection}{Hypothesis}{156}
-\contentsline {subsubsection}{Procedure}{156}
+\contentsline {subsection}{\numberline {5.2.3}Hypotheses}{156}
+\contentsline {subsection}{\numberline {5.2.4}Procedure}{157}
 \contentsline {subsubsection}{Measurements}{158}
 \contentsline {subsubsection}{Participants}{158}
-\contentsline {subsection}{\numberline {5.2.4}Results}{159}
+\contentsline {subsection}{\numberline {5.2.5}Results}{158}
 \contentsline {subsubsection}{7-Point Likert Scale Survey Results}{159}
 \contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{167}
 \contentsline {subsubsection}{Impact of Demographics}{170}
-\contentsline {subsection}{\numberline {5.2.5}Discussion}{174}
+\contentsline {subsection}{\numberline {5.2.6}Discussion}{174}
 \contentsline {chapter}{\numberline {6}Conclusion}{176}
 \contentsline {section}{\numberline {6.1}Discussion}{176}
 \contentsline {section}{\numberline {6.2}Future Work}{178}
 \contentsline {chapter}{Appendix A}{210}
+\contentsline {chapter}{Appendix B}{211}
