@@ -3806,13 +3806,15 @@ appraisal processes. One of our contributions is to ground general appraisal
 concepts in the specific context and structure of collaboration.
 
 Furthermore, we believe collaboration and appraisal have reciprocal influences
-on each other. In this chapter, we also talk about the influence of appraisal on
-collaboration through the goal management process. Also, we discuss our coping
-mechanism and strategies within the collaboration context. Then, we provide
-our computational model of three different motives used in our framework.
-Finally, we briefly discuss other mechanisms in our framework.
+on each other (see Figure \ref{fig:appraisal-on-collaboration}). In this
+chapter, we also talk about the influence of appraisal on collaboration through
+the goal management process. Also, we discuss our coping mechanism and
+strategies within the collaboration context. Then, we provide our computational
+model of three different motives used in our framework. Finally, we briefly
+discuss other mechanisms in our framework.
 
 \section{Collaboration Mechanism}
+\label{sec:collaboration-mechanism}
 The Collaboration and Appraisal mechanisms (see Figure \ref{fig:theory}) have
 reciprocal influences on each other. In this section, we focus on information
 about the collaboration structure which will be incorporated in appraisal
@@ -3825,7 +3827,7 @@ collaboration structure.
   \includegraphics[width=0.97\textwidth]{figure/collaborationStructure-small-croped.pdf}
   \caption{Example of collaboration structure.}
   \label{fig:cs}
-  \vspace*{-3mm}
+  \vspace*{-2mm}
 \end{figure}
 
 The Collaboration mechanism constructs a hierarchy of goals associated with
@@ -4538,30 +4540,30 @@ the reverse appraisal of the perceived emotion, and c) the appraisal of the
 collaborative environment. Adding goal management process to Collaboration
 mechanism is one of our contributions.
 
-Goals represent an important part of the context during collaboration. However,
-not all goals are appropriate to pursue at the moment, depending on conditions.
-In fact, it can be destructive for a collaboration to pursue a good goal in a
-poor context. Therefore, a collaborative robot must be able to manage shared
-goals during collaboration. The goal management process has a critical
-influence on a collaborative robot's behavior by maintaining or shifting the
-focus of attention to an appropriate goal based on the collaboration status.
+Goals represent a key part of the context during collaboration. However, not all
+goals are appropriate to pursue at the moment, depending on conditions. In fact,
+it can be destructive for a collaboration to pursue a plausible goal in a poor
+context. Therefore, a collaborative robot must be able to manage shared goals
+during collaboration. The goal management process has a critical influence on a
+collaborative robot's behavior by maintaining or shifting the focus of attention
+to an appropriate goal based on the collaboration status.
 
-Changes in a collaboration environment alter the balance of alternative goals.
-These changes can reflect the collaborators' internal changes and the influence
-of their actions. In a collaboration environment, emotions represent the outcome
-of underlying mental processes of the collaborators. Emotions have many
-different functions \cite{scheutz:architectural-action-selection} including
-goal management. Goal-oriented emotions such as anger, frustration and
-worry regulate the mental processes influenced by one's internal goals. In our
-example in this section, a robot and an astronaut are collaborating to install
-solar panels. When one of the astronaut's goals is blocked, the robot must
-manage the shared goals in order to prevent failure of the collaboration. By
-using reverse appraisal \cite{gratch:reverse-appraisal} of the astronaut's
-emotion and its own appraisal of individual goals, the robot is able to
-successfully shift the focus of attention from the blocked goal (eliciting worry
-in the astronaut) to an appropriate one to maintain the collaboration. A similar
-example is provided our conducted user study, which is explained in Chapter
-\ref{ch:awareness}.
+Changes in a collaboration environment alter the relative importance of
+alternative goals. These changes can reflect the collaborators' internal changes
+and the influence of their actions. In a collaboration environment, emotions
+represent the outcome of underlying mental processes of the collaborators.
+Emotions have many different functions
+\cite{scheutz:architectural-action-selection} including goal management.
+Goal-oriented emotions such as anger, frustration and worry regulate the mental
+processes influenced by one's internal goals. In our ongoing example, a robot
+and an astronaut are collaborating to install solar panels. When one of the
+astronaut's goals is blocked, the robot must manage the shared goals in order to
+prevent failure of the collaboration. By using reverse appraisal
+\cite{gratch:reverse-appraisal} of the astronaut's emotion and its own appraisal
+of individual goals, the robot is able to successfully shift the focus of
+attention from the blocked goal (eliciting worry in the astronaut) to an
+appropriate one to maintain the collaboration. A similar example is provided in
+Chapter \ref{ch:awareness}.
 
 \begin{figure}[t]
   \centering
@@ -4582,21 +4584,21 @@ As we mentioned earlier, we use four appraisal variables including: relevance,
 desirability, expectedness and controllability. The outcome of each appraisal
 process is a specific value for the corresponding appraisal variable. The vector
 containing these appraisal variables can be mapped to a particular emotion
-instance at each point in time when required. Moreover, the functions of
-emotions, such as goal management, in a social setting and the meaning of the
-collaborator's perceived emotion in collaboration context are also important.
+instance at each point in time when required (see Algorithms in Section
+\ref{sec:appraisal}). Moreover, the functions of emotions, such as goal
+management, in a social setting and the meaning of the collaborator's perceived
+emotion in collaboration context are also important.
 
 A collaboration structure provides a hierarchy and constraints of the shared
-goals in the form of a shared plan (Figure \ref{fig:taskModel}) which contains
-both the robot and the human collaborator's goals. The robot pursues the goals
-for which the robot is responsible in the shared plan. However, there can be
-several live goals available for the robot to pursue at each point in time
-during collaboration. A goal is live if all of its predecessors are achieved and
-all of its preconditions are satisfied. Therefore, a collaborative robot
-requires a mechanism to choose between a set of live goals. We believe appraisal
-processes are crucial to choose between the available live goals, since the
-appraisals are the immediate outcome of the robot's assessment of the
-collaboration environment.
+goals in the form of a shared plan which contains both the robot and the human
+collaborator's goals. The robot pursues the goals for which the robot is
+responsible in the shared plan. However, there can be several live goals
+available for the robot to pursue at each point in time during collaboration. A
+goal is live if all of its predecessors are achieved and all of its
+preconditions are satisfied. Therefore, a collaborative robot requires a
+mechanism to choose between a set of live goals. We believe appraisal processes
+are crucial to choose between the available live goals, since the appraisals are
+the immediate outcome of the robot's assessment of the collaboration environment.
 
 \begin{figure}[tbh]
   \centering
@@ -4607,22 +4609,23 @@ collaboration environment.
 \end{figure}
 
 For instance, Figure \ref{fig:task-model-astronaut} shows a non-primitive
-``Prepare Panels'' goal decomposed into three primitive goals. Therefore, if
-``Prepare Panels'' is live, its primitive goals can be pursued by the
-responsible agent. In our example, the astronaut is responsible for the ``Check
-Connector'' goal; the robot is responsible for the remaining two primitive
-goals. According to the collaboration mechanism in our overall framework,
-``Check Connector'' is in focus, with the astronaut pursuing this goal.
-Suddenly, however the astronaut tells the robot that she can not find the
+``Prepare Panels'' goal decomposed into three unordered primitive goals.
+Therefore, if ``Prepare Panels'' is live, its primitive goals can be pursued by
+the responsible agent. In our example, the astronaut is responsible for the
+``Check Connector'' goal; the robot is responsible for the remaining two
+primitive goals. According to the collaboration mechanism in our overall
+framework, ``Check Connector'' is in focus, with the astronaut pursuing this
+goal. Suddenly, however the astronaut tells the robot that she can not find the
 connector and she is \textit{worried} about failure of this goal. The robot's
 response to this situation will be explored below as we discuss details of our
 cost function.
 
-Equation \ref{eqn:cost} shows the function to calculate the cost of each
-live goal. The base in the equation calculates the cost of pursuing any given
-goal. The three functions used to calculate the cost are:
-\textit{proximity} $P(g)$, \textit{difficulty} $D(g)$, and \textit{specificity}
-$S(g)$ (see equations \ref{eqn:proximity} to \ref{eqn:specificity}).
+Equation \ref{eqn:cost} shows the function to calculate the cost of each live
+goal. Goal management algorithm chooses the minimum cost goal. The base in the
+equation calculates the cost of pursuing any given goal. The three functions
+used to calculate the cost are: \textit{proximity} $P(g)$, \textit{difficulty}
+$D(g)$, and \textit{specificity} $S(g)$ (see equations \ref{eqn:proximity} to
+\ref{eqn:specificity}).
 
 \begin{equation}
 {\fontsize{6}{9}\selectfont Cost(g) =
@@ -4703,12 +4706,13 @@ S(g) = \frac{depth(g)}{degree(g)+1}
 \label{eqn:specificity}
 \end{equation}
 
-The tuples below the goals in Fig. \ref{fig:task-model-astronaut} indicate the
-cost value of each goal. The first number in each tuple is the normalized cost
-value without the influence of the affective part of the cost function, i.e.,
-the exponent is equal to 1 in Equation \ref{eqn:cost}. The second number of each
-tuple indicates the normalized value of the cost including the influence of
-affective appraisal and the astronaut's perceived emotion.
+The tuples below the three leftmost primitive goals in Fig.
+\ref{fig:task-model-astronaut} indicate cost values of each goal: the first
+number in each tuple is the normalized cost value without the influence of the
+affective part of the cost function, i.e., the exponent is equal to 1 in
+Equation \ref{eqn:cost}; the second number of each tuple indicates the
+normalized value of the cost including the influence of affective appraisal and
+the astronaut's perceived emotion.
 
 Based on our cost function, the cost of completing the primitive goal ``Check
 Connector'' is 0.82 (see Figure \ref{fig:task-model-astronaut}). As shown, when
@@ -4718,29 +4722,52 @@ the other two primitive live goals under the same parent. Therefore, instead of
 insisting on pursuing the same blocked goal which has caused the astronaut's
 negative emotion, the robot can mitigate the astronaut's emotions by adapting to
 her worry. The robot shifts the focus of attention to ``Check Impedance'' to
-maintain progress and prevent failure of the collaboration.
-
-We use our proposed cost function in our goal management algorithm to integrate
-affective appraisal into the collaboration mechanism in our framework. A similar
-situation is used in our conducted user study (see Chapter \ref{ch:awareness})
-to evaluate the human's perception of the robot's behavior as a result of the
-goal management process.
+maintain progress and prevent failure of the collaboration. We use our proposed
+cost function in our goal management algorithm to integrate affective appraisal
+into the collaboration mechanism in our framework.
 
 \section{Coping Mechanism and Strategies}
 \label{sec:coping-mechanism}
-We have implemented the Coping mechanism to determine how the agent would 
-respond to events using our framework. Our Coping mechanism includes a set of
-coping strategies that can be triggered based on different conditions (see
-Figure \ref{fig:coping_strategies}). All of these coping strategies are known
-in the literature. Some of our coping strategies, i.e., \textit{planning},
+We have developed an algorithm for the Coping mechanism to determine how the
+agent would respond to events using our framework. Our Coping mechanism includes
+a set of coping strategies that can be triggered based on different conditions
+(see Figure \ref{fig:coping_strategies}). All of these coping strategies are
+known in the literature, however, none of these strategies are applied in
+collaboration context. Some of our coping strategies, i.e., \textit{planning},
 \textit{active coping} and \textit{seeking social support for instrumental
 reasons}, are categorized as problem-focused and others, i.e.,
 \textit{acceptance}, \textit{mental disengagement}, and \textit{shifting
 responsibility}, are categorized as emotion-focused strategies as described in
-\cite{gratch:domain-independent}. We selected these six coping strategies since
-they let our agent demonstrate distinct behaviors with respect to the output of
-the appraisal mechanism and the agent's mental state in our framework. The
-behaviors and underlying processes associated with these coping strategies are described as follows.
+\cite{gratch:domain-independent}. {\color{red}Coping operates based on the
+antecedents of the appraisals and includes strategies that the agent chooses to make changes,
+directly or indirectly, that would have desired impact on the appraisal. In
+our computational framework, the output of Coping is one or multiple
+intentions.} We implemented these six coping strategies because they let our
+agent demonstrate distinct behaviors with respect to the output of the appraisal
+mechanism and the agent's mental state in our framework.
+
+{\color{red}As shown in Table \ref{fig:coping_strategies}, there are three
+conditions involved in our algorithm to select a specific coping strategy. First condition
+is the conjunction of the robot and the human's valence of emotions. The valence
+value can be \textit{negative, neutral} or \textit{positive}. For instance, if
+the valence value of the robot's emotion (e.g., happy) is positive, and the
+valence value of the human's emotion is neutral, then only planning and seeking
+social support for instrumental reasons have the chance to be selected based on
+our algorithm. The second condition is the influence of motives on selecting a
+specific coping strategy. This condition is the conjunction of robot's
+satisfaction motive value with the disjunction of robot's achievement motive and
+the external motive values. For instance, if the robot's achievement motive's
+value is relatively low, the seeking social support for instrumental reasons
+coping strategy will be selected instead of the planning coping strategy. While
+the robot's motives representing the robot's ``need'' to select a particular
+coping strategy, the ability of the robot to pursue a goal also plays a key role
+in selection of these strategies. Thus, the third condtion is the influence of
+the controllability value of an event on selecting a particular coping strategy.
+For instance, if pursuing a given goal is uncontrollable for the robot, planning
+does not have a chance to be selected; whereas acceptance and mental
+disengagement have the chance to be selected as the current coping strategy. The
+behaviors and underlying processes associated with these coping strategies are
+described as follows.}
 
 \subsection{Planning}
 The \textit{planning} coping strategy works based on the shared plan and the
@@ -4758,7 +4785,15 @@ strategy is activated the Coping mechanism provides the selected intention to
 the Action mechanism. The Action mechanism executes an action based on the given
 intention to achieve the corresponding goal in the shared plan.
 
+\begin{sidewaysfigure}
+  \centering
+  \includegraphics[width=1\textwidth]{figure/coping_algorithms_short_croped.pdf}
+  \caption{Conditions for selecting candidate coping strategies}
+  \label{fig:coping_strategies}
+\end{sidewaysfigure}
+
 \subsection{Active Coping}
+\label{sec:active-coping}
 The \textit{active} coping strategy can provide one or all of the following
 three different intentions with respect to whether this coping strategy is
 activated and the required conditions are provided. Firstly, this coping
@@ -4792,15 +4827,16 @@ The \textit{seeking social support for instrumental reasons} strategy forms new
 intentions for the agent whenever the agent needs the human's help and needs to
 ask questions from the human collaborator to make progress in collaboration. The
 questions that our agent can ask are the reciprocal of those questions that the
-human can ask and the human can respond as we mentioned above. Therefore, our
-agent can ask a) what input is required to achieve a goal, b) how to do a task
-to achieve a goal, c) the human to achieve a goal, d) who is responsible to
-achieve a given goal. Reciprocally, again, the agent expects the human
-collaborator to accept or reject the agent's proposals. In our framework,
-whenever this strategy is activated the agent considers human's perceived
-emotion. For instance, if the human is worried about the outcome of a task
-failure, the agent does not form an intention to ask questions about any of the
-above cases and consequently prevents asking for more help.
+human can ask and the human can respond as we mentioned in Section
+\ref{sec:active-coping}. Therefore, our agent can ask a) what input is required
+to achieve a goal, b) how to do a task to achieve a goal, c) the human to
+achieve a goal, d) who is responsible to achieve a given goal. Reciprocally,
+again, the agent expects the human collaborator to accept or reject the agent's
+proposals. In our framework, whenever this strategy is activated the agent
+considers human's perceived emotion. For instance, if the human is worried about
+the outcome of a task failure, the agent does not form an intention to ask
+questions about any of the above cases and consequently prevents asking for more
+help.
 
 \subsection{Acceptance}
 The \textit{acceptance} coping strategy forms an intention to drop the
@@ -4812,71 +4848,65 @@ current goal.
 
 \subsection{Mental Disengagement}
 The \textit{mental disengagement} coping strategy forms new intention to lower
-the negative emotional charge associated with a goal in the event of a failure
-or an impasse. We use our goal management algorithm (see section
-\ref{sec:goal-management}) as the underlying process used as the result of
-selecting this strategy to dissociate the collaboration process and subsequently
+the negative emotional intensity associated with a goal in the event of a
+failure or an impasse. We use our goal management algorithm (see section
+\ref{sec:goal-management}) as the result of selecting this strategy to
+dissociate from the current goal in the collaboration process and subsequently
 disengage the collaborator from a negative event (e.g., failure to achieve a
 goal). This disengagement helps the agent to lower the utility of an
 unsuccessful goal achievement attempt and focus on other achievable goals with
 respect to their costs to facilitate progress of collaboration. In our
 framework, this coping strategy forms an intention to run the goal management
-process. As the result of mental disengagement activation, the mechanism also
-forms another intention to inform the human about the outcome of the goal
+process. As the result of mental disengagement activation, the Coping mechanism
+also forms another intention to inform the human about the outcome of the goal
 management process, i.e., whether the agent proposes switching to pursue another
 goal with lower cost, or if there is not much the agent can do since there is no
 other goal with a lower cost to pursue. The process and example of choosing
-another goal with a lower cost are shown in section \ref{sec:goal-management}.
+another goal with a lower cost are shown in Section \ref{sec:goal-management}.
 
 \subsection{Shifting Responsibility}
-The \textit{shifting responsibility} strategy forms new intention to shift the
+The \textit{shifting responsibility} strategy forms a new intention to shift the
 blame from the agent to another entity. In our framework, we use this strategy
 to mitigate the influence of negative events causing negative emotions in the
 agent or the human collaborator. For instance, if this strategy becomes
 activated as a result of a failure, a new intention will be formed to blame the
-third person who provided the input (if the task needed a tool as an input) or
-the other collaborator. It can also form an intention to give the credit to the
-human collaborator to mitigate human's negative emotions.
+other collaborator, or the third person who provided the input (if the task
+needed a tool as an input). It can also form an intention to give the credit to
+the human collaborator to mitigate human's negative emotions.
 
 \subsection{Activation of Coping Strategies}
 
-In our Coping mechanism, there are three components involved as the activation
-criteria for each coping strategy. The first criterion is the conjunction of
-emotion valences of the self and the other collaborator (see Emotion Valence
-column in Figure \ref{fig:coping_strategies}). For instance, if the valence of
-the human collaborator's emotion is \textit{negative} \textbf{and} the valence
-of the agent's emotion is also \textit{negative}, the active coping, the
-acceptance, and the mental disengagement coping strategies are the coping
-strategy candidates that have potential to become activated if the other
-activation criteria also exist for any of them. For example, if the human
-collaborator is frustrated and the agent's elicited emotion is guilt, the three
-above mentioned coping strategies become potential candidates to be selected as
-the agent's active coping strategy. The second criterion is the need for the
-agent to cope with an event. The values of our three different motives (i.e.,
-\textit{satisfaction}, \textit{achievement}, and \textit{external}) are involved
-in the decision of whether there is a need for a particular coping strategy to
-become activated. We use conjunction of satisfaction motive's value with the
-disjunction of achievement and external motives. For instance, if we have highly
-negative values for all three motives for the potential candidates of coping
-strategies based on the example we mentioned above, the acceptance coping
-strategy will be selected as the strategy with the highest need for the agent.
-For example, this kind of condition can occur when the agent fails doing its own
-task and pursuing the current goal (negative satisfaction motive), and can not
-find another goal to overcome the impasse (negative achievement motive). The
-details about how the motive values are computed is presented in Section
-\ref{sec:motivation_mechanism}. Finally, the ability to cope with an event is
-the third criterion that impacts the decision of whether the selected coping
-strategy can be activated. The controllability of an event represents whether
-the agent is able to control the situation occurring with the given event. In
-our example, if the agent finds the event uncontrollable, the acceptance coping
-strategy becomes activated (see Figure \ref{fig:coping_strategies}).
-
-\begin{sidewaysfigure}
-  \centering
-  \includegraphics[width=1\textwidth]{figure/coping_algorithms_short_croped.pdf}
-  \caption{Conditions for selecting coping strategies}
-  \label{fig:coping_strategies}
-\end{sidewaysfigure}
+In our Coping mechanism, there are three activation criteria for each coping
+strategy. The first criterion is the conjunction of emotion valences of the self
+and the other collaborator (see Emotion Valence column in Figure
+\ref{fig:coping_strategies}). For instance, if the valence of the human
+collaborator's emotion is \textit{negative} \textbf{and} the valence of the
+agent's emotion is also \textit{negative}, the active coping ($2^{nd}$ row), the
+acceptance ($4^{th}$ row), and the mental disengagement ($5^{th}$ row) coping
+strategies are the coping strategy candidates that have potential to become
+activated if the other activation criteria also exist for any of them. For
+example, if the human collaborator is frustrated and the agent's elicited
+emotion is guilt, the three above mentioned coping strategies become potential
+candidates to be selected as the agent's active coping strategy. The second
+criterion is the need for the agent to cope with an event. The values of our
+three different motives (i.e., \textit{satisfaction}, \textit{achievement}, and
+\textit{external}) are involved in the decision of whether there is a need for a
+particular coping strategy to become activated. We use conjunction of
+satisfaction motive's value with the disjunction of achievement and external
+motives. For instance, if we have highly negative values for all three motives
+for the potential candidates of coping strategies based on the example we
+mentioned above, the acceptance coping strategy will be selected as the strategy
+with the highest need for the agent. For example, this kind of condition can
+occur when the agent fails doing its own task and pursuing the current goal
+(negative satisfaction motive), and can not find another goal to overcome the
+impasse (negative achievement motive). The details about how the motive values
+are computed is presented in Section \ref{sec:motivation_mechanism}. Finally,
+the ability to cope with an event is the third criterion that impacts the
+decision of whether the selected coping strategy can be activated. The
+controllability of an event represents whether the agent is able to control the
+situation occurring with the given event. In our example, if the agent finds the
+event uncontrollable, the acceptance coping strategy becomes activated (see
+Figure \ref{fig:coping_strategies}).
 
 \section{Motivation Mechanism}
 \label{sec:motivation_mechanism}
@@ -4885,11 +4915,11 @@ goal-driven emotion-regulated constructs indicating an urge related to their
 goal. There are several motives in psychological and computational literatures
 as we reviewed in Chapter \ref{ch:background}. However, none of these
 computational models have particularly focused on the application of motives in
-the collaboration context. In our framework, we have implemented three
-computational models of motives for \textit{satisfaction}, \textit{achievement},
-and \textit{external} motives. We use the values of these three motives in other
-mechanisms including the Coping mechanism as we described in Section
-\ref{sec:coping-mechanism} and show in Figure \ref{fig:coping_strategies}.
+the collaboration context. In our framework, we have developed computational
+models for \textit{satisfaction}, \textit{achievement}, and \textit{external}
+motives. We use the values of these three motives in other mechanisms including
+the Coping mechanism as we described in Section \ref{sec:coping-mechanism} and
+show in Figure \ref{fig:coping_strategies}.
 
 \subsection{Satisfaction Motive}
 The satisfaction motive indicates the satisfaction level with the collaboration
@@ -4907,19 +4937,18 @@ computes the satisfaction drive values for the agent and the human collaborator.
 Only the sources of desirability values are different, i.e., appraisal for the
 agent and reverse appraisal for the human collaborator. Then, the satisfaction
 motive process computes the difference between the current and the previous
-satisfaction drives, called delta of satisfaction drive value, $\delta_{sat}$.
-As shown in equation \ref{eqn:satisfaction_motive}, we use the $\delta_{sat}$
-value in all three functions to compute the overall satisfaction motive's value
-$\mathcal{M}_{sat}$. We also use three different functions with respect to the
-valence value of the the human collaborator's perceived emotion. Our
-satisfaction motive's model has three user defined parameters $\mathcal{S}_{sat}
-\in [0, 1.5]$, i.e. strength of motive, $\mathcal{B}^\mathcal{L}$ where
-$\mathcal{B}$ is the base parameter of the function in $(1,\infty)$ and
-$\mathcal{L}$ is the exponential parameter of the same function in $(0,
-\infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
-\textit{unsatisfiability} value. In our framework, we set the
-$\mathcal{S}_{sat}$ value to 1.5, the $\mathcal{B}$ to 3.0, and the
-$\mathcal{L}$ to 2.0.
+(t-1) satisfaction drives, called the delta of satisfaction drive value,
+$\delta_{sat}$. As shown in equation \ref{eqn:satisfaction_motive}, we use the
+$\delta_{sat}$ value in all three functions to compute the overall satisfaction
+motive's value $\mathcal{M}_{sat}$. We also use three different functions with
+respect to the valence value of the the human collaborator's perceived emotion.
+Our satisfaction motive's model has three domain dependent parameters
+$\mathcal{S}_{sat} \in [0, 1.5]$, i.e. strength of motive,
+$\mathcal{B}^\mathcal{L}$ where $\mathcal{B}$ is the base parameter of the
+function in $(1,\infty)$ and $\mathcal{L}$ is the exponential parameter of the
+same function in $(0, \infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
+\textit{unsatisfiability} value. Currently we set $\mathcal{S}_{sat}$ value to
+1.5, $\mathcal{B}$ to 3.0, and $\mathcal{L}$ to 2.0.
 
 \begin{equation}
     \mathcal{M}_{sat}(\varepsilon_t)= 
@@ -4945,10 +4974,11 @@ during collaboration.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/satisfaction_motive_functions.png}
-  \caption{Three functions of satisfaction motive (blue: valence = 0, red:
-  valence = positive, green: valence = negative). The x-axis indicates the
-  satisfaction drive's delta value in [-1, +1], and the y-axis indicates the
-  magnitude of satisfaction motive in [-1, +1].}
+  \caption{Three functions of satisfaction motive for different values of
+  valence (blue: valence = 0, red: valence = positive, green: valence =
+  negative). The x-axis indicates the satisfaction drive's delta value in [-1,
+  +1], and the y-axis indicates the magnitude of satisfaction motive in [-1,
+  +1].}
   \label{fig:satisfaction-motive-functions}
 \end{figure}
 
@@ -4957,19 +4987,19 @@ The achievement motive drives the agent's need to achieve a goal during the
 collaboration. According to the literature, e.g.
 \cite{merrick:acheievement-affiliation-power}, the achievement motive is based
 on the estimation of success probability and the difficulty of achieving a goal.
-In our framework, we compute the probability of success as the multiplication of
-the \textit{controllability} and \textit{expectedness} appraisal values.
+In our framework, we compute the probability of success as the product of the
+\textit{controllability} and \textit{expectedness} appraisal values.
 Intuitively, the more controllable and expected the events are, the probability
 of successful achievement of their related goal is higher.
 
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/achievement_motive_functions.png}
-  \caption{Two functions of the achievement motive (blue: valence = +1, red:
-  valence = 0, green: valence = -1, orange: valence = close to zero from
-  negative side). The x-axis indicates the success probability value of
-  achieving a goal which is in [0, +1], and the y-axis indicates the magnitude
-  of achievement motive in [-1, +1].}
+  \caption{Two functions of the achievement motive for different values of
+  valence (blue: valence = +1, red: valence = 0, green: valence = -1, orange:
+  valence = close to zero from negative side). The x-axis indicates the success
+  probability value of achieving a goal which is in [0, +1], and the y-axis
+  indicates the magnitude of achievement motive in [-1, +1].}
   \label{fig:achievement-motive-functions}
 \end{figure}
 
@@ -5014,13 +5044,13 @@ human collaborator during the collaboration. In our framework, the external
 motive is also based on the estimation of success probability and the difficulty
 of achieving a goal, but this goal is proposed by the human collaborator. The
 probability of success for the external motive is computed the same way as the
-achievement motive's probability of success, i.e. the multiplication of
+achievement motive's probability of success, i.e. the product of
 \textit{controllability} and \textit{expectedness} appraisal values.
 
-The only differnce is that we use Equations
+The only difference from the achievement motive is that we use Equations
 \ref{eqn:achievement-motive-valence-positive} and
 \ref{eqn:achievement-motive-valence-negative} in reverse order for the external
-motive; i.e. we use Equation \ref{eqn:achievement-motive-valence-negative}
+motive; i.e., we use Equation \ref{eqn:achievement-motive-valence-negative}
 when the valence of human's perceived emotion is positive, and Equation
 \ref{eqn:achievement-motive-valence-positive} when the valence of the human's
 perceived emotion is negative or zero.
@@ -5028,11 +5058,11 @@ perceived emotion is negative or zero.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/external_motive_functions.png}
-  \caption{Two functions of external motive (blue: valence = -1, red:
-  valence = 0, green: valence = +1, orange: valence = close to zero from
-  negative side). The x-axis indicates the success probability value of
-  achieving a proposed goal which is in [0, +1], and the y-axis indicates the
-  magnitude of the achievement motive in [-1, +1].}
+  \caption{Two functions of external motive for different values of valence
+  (blue: valence = -1, red: valence = 0, green: valence = +1, orange: valence =
+  close to zero from negative side). The x-axis indicates the success
+  probability value of achieving a proposed goal which is in [0, +1], and the
+  y-axis indicates the magnitude of the achievement motive in [-1, +1].}
   \label{fig:external-motive-functions}
 \end{figure}
 
@@ -5043,13 +5073,14 @@ collaboration.
 
 \section{Theory of Mind}
 \label{sec:theory-of-mind-implementation}
-The Theory of Mind mechanism uses the same collaboration structure and functions
-as well as appraisal processes to form anticipated beliefs about the human's
-mental and emotional states. The agent uses the collaboration structure during the
-human's turn to compute appraisal values with respect to the human's current
-emotional state and the current goal in the shared goal structure. The outcome
-of the reverse appraisal forms beliefs about the anticipated mental and
-emotional state of the human collaborator.
+The Theory of Mind mechanism uses the collaboration structure and functions
+described in Section \ref{sec:collaboration-mechanism} as well as appraisal
+processes to form anticipated beliefs about the human's mental and emotional
+states. The agent uses the collaboration structure during the human's turn to
+compute appraisal values with respect to the human's current emotional state and
+the current goal in the shared goal structure. The outcome of the reverse
+appraisal forms beliefs about the anticipated mental and emotional state of the
+human collaborator.
 
 We use the same \textit{relevance}, \textit{expectedness} and
 \textit{controllability} algorithms for the reverse appraisal as those
@@ -5073,9 +5104,9 @@ As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
 not part of our theoretical work. Therefore, we only implemented these
 mechanisms to the extent to which they could help us to run and test our
 framework. The Perception mechanism only redirects the input values from the
-system's users to the framework. For instance, in our conducted user study
-described in Chapter \ref{ch:awareness}, the Perception mechanism only receives
-the valence of human's emotion from the input and provides it to the framework.
+system's users to the framework. For instance, in our user study described in
+Section \ref{sec:end-to-end}, the Perception mechanism only receives the valence
+of human's emotion from the input and provides it to the framework.
 On the other hand, the Action mechanism executes some functions based on the
 intentions formed and provided by the Coping mechanism described in this
 section. We group all of these functions into three categories in our framework.
@@ -5089,8 +5120,8 @@ example, in the user study described in Chapter \ref{ch:awareness}, we expressed
 the agent's emotions by using emoticons and utterances through the text on the
 screen as well as the agent's voice.
 
-\section{Emotion Instances}
-We have also implemented 10 different emotion instances that can be elicited by
+\section{Elicitation of Emotion Instances}
+We have modeled 10 different emotion instances that can be elicited by
 the agent or anticipated from the human during collaboration in our framework
 (see Figure \ref{fig:emotion_elicitation}). These emotion instances have
 meanings in social context and more specifically in collaboration. There are two
@@ -5107,7 +5138,7 @@ of appraisal processes can be one of the values presented in Figure
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/apraisal_values_croped.pdf}
-  \caption{Appraisal values.}
+  \caption{Appraisal values for selecting emotion instances.}
   \label{fig:appraisal_values}
 \end{figure}
 
