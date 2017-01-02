@@ -5253,6 +5253,8 @@ open-ended questionnaire to study the humans' evaluation of a robot
 collaborating using our framework. The results are provided in Section
 \ref{sec:end-to-end}.
 
+\section{Implementation}
+
 \section{Evaluating Appraisal Algorithms (Crowd Sourcing)}
 \label{sec:crowd-sourcing}
 In this section, we present a crowd-sourced user study and the results, which
@@ -5260,7 +5262,7 @@ we conducted to validate the components of our appraisal processes.
 
 \subsection{Experimental Scenario}
 We developed an experimental scenario in which participants were asked to
-carry out a sequence of hypothetical collaborative tasks between themselves and
+envision a sequence of hypothetical collaborative tasks between themselves and
 an imaginary friend, Mary, in order to accomplish their shared goal. To minimize
 the background knowledge necessary for our test subjects, we used a simple
 domestic example of preparing a peanut butter and jelly sandwich, and a hard
@@ -5387,21 +5389,24 @@ expectedness of this event is similar to the output of the expectedness
 algorithm. For this question, the human decision was 97\% similar to the
 algorithm's output.
 
-\begin{figure}[tbh]
+\vspace*{3mm}
+\begin{table}[tbh]
   \centering
-  \includegraphics[width=1\textwidth]{figure/expectedness_result_croped.pdf}
-  \caption{Expectedness results.}
+  \caption{Expectedness results {\color{red}(Equally Expected column indicates
+  for which questions our algorithm provides option C as the response)}.}
   \label{fig:expectedness_result}
-\end{figure}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/expectedness_result_croped.pdf}
+\end{table}
 
-Results for the expectedness questionnaire are presented in Figure
-\ref{fig:expectedness_result}. As shown in this table, the results are not
-random; in fact, for questions 1-6 and 9-10, human participants showed between
-67 and 100 \% agreement with our algorithms, with p-values of $\ll$0.001 when
-compared with a random population. Questions 7 and 8 were the only two questions
-that did not show a statistically significant p-value. It should be noted that
-these questions are comparing equally expected or equally unexpected situations,
-none of which our algorithms would consider most-expected or most-unexpected.
+Results for the expectedness questionnaire are presented in Table
+\ref{fig:expectedness_result}. As shown in this table, the results are
+statistically significant; in fact, for questions 1-6 and 9-10, human
+participants showed between 67 and 100 \% agreement with our algorithms, with
+p-values of $\ll$0.001. Questions 7 and 8 were the only two questions that did
+not show a statistically significant p-value. It should be noted that these
+questions are comparing equally expected or equally unexpected situations, none
+of which our algorithms would consider most-expected or most-unexpected.
 
 
 \begin{figure}[tbh]
@@ -5424,18 +5429,21 @@ butter on one slice of bread and strawberry jam on another slice of bread. In
 this question, the humans decision was 90\% in agreement with the algorithm's
 output.
 
-\begin{figure}[tbh]
+\vspace*{3mm}
+\begin{table}[tbh]
   \centering
-  \includegraphics[width=1\textwidth]{figure/controllability_result_croped.pdf}
-  \caption{Controllability results.}
+  \caption{Controllability results {\color{red}(Equally Controllable column
+  indicates for which questions our algorithm provides option C as the response)}.}
   \label{fig:controllability_result}
-\end{figure}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/controllability_result_croped.pdf}
+\end{table}
 
-Results for the controllability questionnaire are presented in Figure
+Results for the controllability questionnaire are presented in Table
 \ref{fig:controllability_result}. As shown in the table, the p-value is $<$0.01
 for each of the ten questions. The two questions with the lowest human agreement
-with the algorithms both relate to autonomy of the participants with 52\% and
-55\%.
+with the algorithms both relate to autonomy (Questions \#2 and \#8) of the
+participants with 52\% and 55\%.
 
 \begin{figure}[tbh]
   \centering
@@ -5453,14 +5461,16 @@ has been achieved successfully. Therefore, in this example, both options A and B
 are desirable. The humans' decision was 77\% in agreement with the algorithm's
 output in this question.
 
-\begin{figure}[tbh]
+\begin{table}[tbh]
   \centering
-  \includegraphics[width=1\textwidth]{figure/desirability_result_croped.pdf}
-  \caption{Desirability results.}
+  \caption{Desirability results {\color{red}(Equally Desirable column indicates
+  for which questions our algorithm provides option C as the response)}.}
   \label{fig:desirability_result}
-\end{figure}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/desirability_result_croped.pdf}
+\end{table}
 
-The results of the desirability questionnaire are presented in Figure
+The results of the desirability questionnaire are presented in Table
 \ref{fig:desirability_result}. As shown in the results table, the p-value is
 less than 0.05 for all of the desirability questions. However, an interesting
 trend is that human participants had a level of agreement of 83\%-100\% when the
@@ -5495,24 +5505,28 @@ is noteworthy that in both the absence and the presence of emotions the
 participants chose the more salient option with respect to our definition of
 saliency, which was not referenced or provided in the questionnaire.
 
-\begin{figure}[tbh]
+\begin{table}[tbh]
   \centering
-  \includegraphics[width=1\textwidth]{figure/relevance_result_croped.pdf}
-  \caption{Relevance results.}
+  \caption{Relevance results {\color{red}(Equally Relevant column indicates
+  for which questions our algorithm provides option C as the response)}.}
   \label{fig:relevance_result}
-\end{figure}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/relevance_result_croped.pdf}
+\end{table}
 
 The complete summary of results for the relevance questionnaire is provided in
-Figure \ref{fig:relevance_result}. As shown in the table, all questions show
+Table \ref{fig:relevance_result}. As shown in the table, all questions show
 59\%-100\% agreement with our algorithms and statistically significant p-values
 except for questions 2, 18 and 19. Question 2 addresses belief strength.
+{\color{red} This question presents a situation in which participants must
+choose whether a self related goal, or collaborator's goal is more relevant.}
 Questions 18 and 19 address motive insistence and goal proximity, respectively;
 both of these questions present situations in which participants must choose
 whether an intense emotional circumstance, or adherence to the collaboration
-plan is more relevant (refer to the questionnaire provided in the Appendix A).
-Our algorithms choose that the strong emotional circumstance will be more
-relevant; however, human participants generally selected adherence to the
-collaboration plan to be more relevant.
+plan is more relevant (the questionnaire is provided in the Appendix A). Our
+algorithms choose that the strong emotional circumstance will be more relevant;
+however, human participants generally selected adherence to the collaboration
+plan to be more relevant.
 
 \begin{figure}[tbh]
   \centering
@@ -5526,13 +5540,12 @@ collaboration plan to be more relevant.
 As shown in the preceding results tables, the human participants agreed 100\%
 on some questions, while on some other questions there was a much lower level of
 agreement. Our results indicate that people largely performed as our hypothesis
-predicted. The \textit{p}-values obtained based on a binomial distribution show
-the probability of human participants' answers being generated from a random
-set. The very small \textit{p}-values indicate that the data set is not random;
-in fact, the high percentage of similarity confirms our hypothesis and shows
-that the algorithms can help us to model appraisal in a collaboration. The very
-low level of agreement on a handful of questions may indicate algorithm
-components that require further refinement before implementation. 
+predicted. The very small \textit{p}-values indicate that the data set is not
+random; in fact, the high percentage of similarity confirms our hypothesis and
+shows that the algorithms can help us to model appraisal in a collaboration. The
+very low level of agreement on a handful of questions may indicate algorithm
+components that require further refinement before implementation. {\color{red}We
+made changes to our algorithms in light of this study.}
 
 % \section{Conclusions}
 % \label{sec:conclusions-crowdsourcing}
@@ -5584,6 +5597,35 @@ robot's decision other than providing input regarding tasks' failure or success.
   \label{fig:framework}
 \end{figure*}
 
+\subsubsection{Environment and Tasks}
+
+The environment was set up in a laboratory and included the robot, the
+collaboration board on top of a desk, and the participant standing in front of
+the robot on the other side of the board (see Figure \ref{fig:environment}). One
+of the experimenters monitored the interactions using a live stream of a camera
+in a different room. The experimenter provided only the required perception,
+i.e., decision on success or failure of the tasks for the robot, through the
+entire time of the collaboration (see Section \ref{sec-interaction-paradigms}).
+{\color{red}We also had a supervisor, whose purpose was to provide help to the
+collaborators when requested after a task failure.}
+
+The tasks were defined based on the collaboration structure shown in Figure
+\ref{fig:collaboration_structure} and were executed in a turn-taking fashion by
+either of the collaborators\footnote{{\color{red}Figure
+\ref{fig:collaboration_structure} was not given to the participants.}}. For each
+task either the robot or the participant was responsible for picking up one of
+the corresponding pegs from their own inventory and placing it on the right spot
+which was colored and tagged the same as the associated peg. Some pegs and
+corresponding spots on the board had hidden magnets which prevented the pegs
+from standing upright. Any peg that fell over was considered a failed task.
+
+\begin{figure*}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/collaborationStructure.pdf}
+  \caption{Collaboration structure used as the task model.}
+  \label{fig:collaboration_structure}
+\end{figure*}
+
 \subsubsection{Framework}
 \label{sec:theory}
 The framework includes all of the mechanisms depicted as mental processes in
@@ -5594,43 +5636,6 @@ processes and mental states are described in Chapters \ref{ch:amct} and
 \ref{ch:appraisals}. In this user-study, the Collaboration mechanism uses a
 hierarchy of goals associated with tasks in the hierarchical task network
 structure depicted in Figure \ref{fig:collaboration_structure}.
-
-\begin{figure*}[tbh]
-  \centering
-  \includegraphics[width=1\textwidth]{figure/collaborationStructure.pdf}
-  \caption{Collaboration structure used as the task model.}
-  \label{fig:collaboration_structure}
-\end{figure*}
-
-\subsubsection{Robot Controller}
-The robot controller is comprised of two major components: 1) ROS-bridge and 2)
-joint controller (see Figure \ref{fig:framework}).
-ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
-functionality for non-ROS programs which enables us to send action commands from
-our framework (implemented in JAVA) to the robot's joint controller. The joint
-controller receives action commands and translates them into actual joint and
-actuator commands and sends them to the robot (see Figure \ref{fig:environment}).
-
-\subsection{Experimental Design}
-
-Our scenario was based on a table top turn-taking game that we designed to
-simulate the installation of a solar panel. Participants collaborated one-on-one
-with our robot to complete all the given tasks required to install the solar
-panel. Each primitive task consisted of picking up and placing pegs on
-predefined spots on the board (see Figure \ref{fig:game_board}). Each
-pick-and-place was associated with the robot's or the participant's task. The
-robot and the participants had their own unique primitive tasks that they had to
-accomplish in their own turns. The final goal of installing a solar panel
-required the robot and the participants to accomplish their own individual
-tasks. Failure of any task could create an impasse during the collaboration.
-
-\begin{figure}[tbh]
-  \centering
-  \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
-  \caption{The layout of the available spots for the human and the robot to
-  place their pegs during the collaboration.}
-  \label{fig:game_board}
-\end{figure}
 
 \subsubsection{The Robot}
 
@@ -5647,6 +5652,39 @@ let the participants express (report) their positive, negative or neutral
 emotion for each turn. The robot used the MaryTTS\footnote{http://mary.dfki.de/}
 text-to-speech platform to provide corresponding speech for its utterances in
 English.
+
+\subsubsection{Robot Controller}
+The robot controller is comprised of two major components: 1) ROS-bridge and 2)
+joint controller (see Figure \ref{fig:framework}).
+ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
+functionality for non-ROS programs which enables us to send action commands from
+our framework (implemented in JAVA) to the robot's joint controller. The joint
+controller receives action commands and translates them into actual joint and
+actuator commands and sends them to the robot (see Figure \ref{fig:environment}).
+
+\subsection{Experimental Design}
+
+Our scenario was based on a table top turn-taking game that we designed to
+simulate the installation of a solar panel. Participants collaborated one-on-one
+with our robot to complete all the given tasks required to install the solar
+panel. Each participant worked with the robot in two conditions, in a within
+subject study. Each primitive task consisted of picking up and placing pegs on
+predefined spots on the board (see Figure \ref{fig:game_board}). Each
+pick-and-place was associated with the robot's or the participant's task. The
+robot and the participants had their own unique primitive tasks that they had to
+accomplish in their own turns. The final goal of installing a solar panel
+required the robot and the participants to accomplish their own individual
+tasks. Failure of any task could create an impasse during the collaboration.
+
+\begin{figure}[tbh]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
+  \caption{The layout of the available spots for the human and the robot to
+  place their pegs during the collaboration.}
+  \label{fig:game_board}
+\end{figure}
+
+
 
 \begin{figure}
 \centering
@@ -5679,16 +5717,16 @@ passed the turn to the human to execute the next task with respect to the
 human's goal. In case of the human's turn, the robot waited for the human to do
 a task, then the wizard let the robot know whether the human's goal was achieved
 or not. Afterwards the robot made a decision about which goal to pursue and
-informed the human accordingly. The same procedure was applied to both
+informed the human accordingly. There were two conditions of the robot: 1)
+emotion-aware and 2) emotion ignorant. The same procedure was applied to both
 conditions.
 
 The robot interacted via a) speech, b) the corresponding utterance on the
 screen, c) negative, positive and neutral expression of emotion through an
-emoticon on the screen. There were two conditions of the robot: 1)
-emotion-aware and 2) emotion ignorant. The robot used only neutral expression in
-the case of emotion-ignorance. The interaction was controlled autonomously by the
-framework we discussed in Section \ref{sec:theory} in both the emotion-ignorant
-and the emotion-aware cases. The reasoning about which task should be done and
+emoticon on the screen. The robot used only neutral expression in the case of
+emotion-ignorance. The interaction was controlled autonomously by the framework
+we discussed in Section \ref{sec:theory} in both the emotion-ignorant and the
+emotion-aware cases. The reasoning about which task should be done and
 controlling the robot was entirely autonomous. Only the perception of the task
 failure or achievement by the robot or by the participant was done by a wizard
 monitoring the collaboration outside of the test area. The interaction was
@@ -5702,22 +5740,25 @@ cases if in the latter the participant reported (expressed) a positive or a
 neutral emotion.
 
 Three different behaviors could be generated only in the emotion-aware
-condition. These three behaviors were 1) mitigating the human's negative emotion
-and postponing its own task to help the human, 2) goal-management to switch to
-another goal which had lower cost with respect to the human's negative emotion,
-and 3) task delegation to the human to overcome the impasse. In each run, the
-human had two predetermined task failures, and the robot had one. If the human
-expressed negative emotion after the first human task failure, the robot
-responded by mitigating the human's negative emotion by saying  ``It was not
-your fault. I can help you with this task" and helping the human by providing a
-peg to fulfill the human's task. If the human expressed negative emotion after
-the second human task failure, the robot informed the human that they could
-proceed with another task to save time while simultaneously requesting a new peg
-(i.e., help) from the supervisor. If the human expressed negative emotion as a
-result of the robot's task failure, the robot requested help from the human (who
-had the correct peg). In the event that the human expressed positive or neutral
-emotion during these three failures, the robot behaved identically in the
-emotion-ignorant and the emotion-aware cases, by asking the supervisor for help. 
+condition as a result of the Coping mechanism (planning, active coping, seeking
+social support for instrumental reasons, and mental disengagement coping
+strategies were involved to generate these three behaviors). These three
+behaviors were 1) mitigating the human's negative emotion and postponing its own
+task to help the human, 2) goal-management to switch to another goal which had
+lower cost with respect to the human's negative emotion, and 3) task delegation
+to the human to overcome the impasse. In each run, the human had two
+predetermined task failures, and the robot had one. If the human expressed
+negative emotion after the first human task failure, the robot responded by
+mitigating the human's negative emotion by saying  ``It was not your fault. I
+can help you with this task" and helping the human by providing a peg to fulfill
+the human's task. If the human expressed negative emotion after the second human
+task failure, the robot informed the human that they could proceed with another
+task to save time while simultaneously requesting a new peg (i.e., help) from
+the supervisor. If the human expressed negative emotion as a result of the
+robot's task failure, the robot requested help from the human (who had the
+correct peg). In the event that the human expressed positive or neutral emotion
+during these three failures, the robot behaved identically in the
+emotion-ignorant and the emotion-aware cases, by asking the supervisor for help.
 
 \begin{figure}
   \centering
@@ -5726,32 +5767,13 @@ emotion-ignorant and the emotion-aware cases, by asking the supervisor for help.
   \label{fig:environment}
 \end{figure}
 
-\subsubsection{Environment and Tasks}
-
-The environment was set up in a laboratory and included the robot, the
-collaboration board on top of a desk, and the participant standing in front of
-the robot on the other side of the board (see Figure \ref{fig:environment}). One
-of the experimenters monitored the interactions using a live stream of a camera
-in a different room. The experimenter provided only the required perception,
-i.e., decision on success or failure of the tasks for the robot, through the
-entire time of the collaboration (see Section \ref{sec-interaction-paradigms}).
-
-The tasks were defined based on the collaboration structure shown in Figure
-\ref{fig:collaboration_structure} and were executed in a turn-taking fashion by
-either of the collaborators. For each task either the robot or the participant
-was responsible for picking up one of the corresponding pegs from their own
-inventory and placing it on the right spot which was colored and tagged the same
-as the associated peg. Some pegs and corresponding spots on the board had hidden
-magnets which prevented the pegs from standing upright. Any peg that fell over
-was considered a failed task.
-
 \subsection{Hypotheses}
-
+\label{sec:hypotheses}
 The non/social functions of emotions impact a collaboration process. Human
 collaborators prefer to collaborate with others whose behaviors are influenced
 by these functions of emotions depending on the context. We developed seven
-hypotheses regarding the positive influence of emotion-awareness and the
-usefulness of emotion function during collaboration:
+specific hypotheses regarding the positive influence of emotion-awareness and
+the usefulness of emotion function during collaboration:
 
 \textit{\textbf{Hypothesis 1.}} Participants will feel closer to the emotion-aware
 robot rather than the emotion-ignorant robot.
@@ -5786,13 +5808,13 @@ to asked to answer pre-experiment questionnaires. Afterwards, the experimenter
 went through all the details of the instructions with the participants
 standing in front of the collaboration board and the robot. The experimenter
 confirmed participants' correct understanding of the tasks and informed them
-of the types of task failures that might occur during the collaboration.
-Participants were told that researchers were developing a collaborative robot
-and would like their help in evaluating their design. Participants were provided
-with identical instructions and randomly assigned to complete either the
-emotion-aware or the emotion ignorant condition first. They were told that,
-after their collaboration with the robot, they would be asked to answer a
-questionnaire on their experience. After completing the first round of
+of the types of task failures (i.e., fallen peg) that might occur during the
+collaboration. Participants were told that researchers were developing a
+collaborative robot and would like their help in evaluating their design.
+Participants were provided with identical instructions and randomly assigned to
+complete either the emotion-aware or the emotion ignorant condition first. They
+were told that, after their collaboration with the robot, they would be asked to
+answer a questionnaire on their experience. After completing the first round of
 collaboration, participants answered a post-experiment questionnaire that
 measured their perceptions of the robot, the task, and the collaboration
 procedure. After answering the first post-experiment questionnaire, participants
@@ -5843,33 +5865,33 @@ summary questionnaire at the end of the experiment.
 \subsubsection{7-Point Likert Scale Survey Results}
 As mentioned previously, the 7-point Likert scale survey was administered at
 the end of the emotion-ignorant run and at the end of the emotion-aware run for
-each participant. The 31 questions are generally categorized to evaluate the
+each participant. The 31 questions are generally categorized in accordance
+with the seven hypotheses listed in Section \ref{sec:hypotheses} to evaluate the
 humans' perceptions of the following seven categories, with 3-7 questions per
-group: (1) the likability of the robot (2) the level of trust the human feels
-in the robot (3) the human's perception of the robot's performance (4) the
-human's perception of the robot's understanding of human's emotions (5) the
-human's perception of the robot's understanding of human's and collaboration's
-goals and objectives (6) the human's feeling about the collaboration and (7)
-the human's perception of the human's and robot's mutual satisfaction with each
-other as collaborative partners. The questions presented are provided in Figure
+group: (1) the likability of the robot (2) the level of trust the human feels in
+the robot (3) the human's perception of the robot's performance (4) the human's
+perception of the robot's understanding of human's emotions (5) the human's
+perception of the robot's understanding of human's and collaboration's goals and
+objectives (6) the human's feeling about the collaboration and (7) the human's
+perception of the human's and robot's mutual satisfaction with each other as
+collaborative partners. The questions presented are provided in Table
 \ref{fig:31questions-table}.
 
-\begin{figure*}
+\begin{table}
  \centering
- \includegraphics[width=1\textwidth]{figure/table1-croped.pdf}
- \caption{The 31 Likert scale questions organized according to their groups.}
+ \caption{The 31 Likert scale questions organized according to their
+ categories (hypotheses).}
  \label{fig:31questions-table}
-\end{figure*}
+ \includegraphics[width=1\textwidth]{figure/table1-croped.pdf}
+\end{table}
 \clearpage
 
 The results were analyzed using a two-tailed paired t-test to analyze the
 difference of means between the emotion ignorant and the emotion-aware
 condition. Refer to Figures \ref{fig:overall-performance} -
-\ref{fig:overall-satisfaction} for the results. As mentioned in Section
-\ref{sec:Participants}, participants were randomly assigned to complete either
-the emotion-ignorant or the emotion-aware run first; analysis of the results
-revealed no statistically significant difference or consistent pattern based on
-which condition the participant completed first. \\
+\ref{fig:overall-satisfaction} for the results. Analysis of the results revealed
+no statistically significant difference or consistent pattern based on which
+condition the participant completed first.
 
 \begin{figure*}[ht]
  \centering
@@ -6083,7 +6105,7 @@ emotion-aware robot are taken as positive test results.)}
 As shown in Figure \ref{fig:Open-Ended-Table}, 100\% of users unambiguously
 preferred the run with the emotion-aware robot. In general, this preference
 stemmed from a feeling of closeness and partnership, as seen in these responses:
-``the robot had emotions and responded to my emotions. Also, what it said about
+``the robot had emotions and responded to my emotions. Also, ``what it said about
 my failing was cute and aimed to make me feel better.'' Another example is ``I
 liked feeling needed and accounted for; I felt closer to the robot.'' Finally,
 ``I saw the changes in its feeling, which motivated me to care more about my
@@ -6141,13 +6163,10 @@ case, most found the ability to call the supervisor, and mechanical functions,
 such as gripping, to be most interesting.
 
 \subsubsection{Impact of Demographics} 
-As mentioned in Section \ref{sec:Participants}, we recorded certain demographic
-information from each participant, including age and gender. We also had each
-participant complete several personality questionnaires. Although it was not the
-primary purpose of the study, we investigated the Likert scale results to
-determine if there were any relevant trends based on the demographics and
-personalities of the participants. A close study of the results did  not reveal
-any identifiable pattern based on gender or personality.
+As mentioned in Section \ref{sec:Participants}, we recorded the age and gender
+of each participant. Although it was not the primary purpose of the study, we
+investigated the Likert scale results to determine if there were any relevant
+trends based on the demographics of the participants.
 
 Age did reveal an interesting pattern. We divided the participants into two
 groups, below 30 years of age and 30 or above. While question-by-question

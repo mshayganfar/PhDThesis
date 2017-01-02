@@ -8,4 +8,9 @@
 \contentsline {table}{\numberline {4.3}{\ignorespaces Conditions for selecting emotion instances.\relax }}{141}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Number of participants\relax }}{145}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Expectedness results {\color {red}(Equally Expected column indicates for which questions our algorithm provides option C as the response)}.\relax }}{146}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Controllability results {\color {red}(Equally Controllable column indicates for which questions our algorithm provides option C as the response)}.\relax }}{147}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Desirability results {\color {red}(Equally Desirable column indicates for which questions our algorithm provides option C as the response)}.\relax }}{149}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Relevance results {\color {red}(Equally Relevant column indicates for which questions our algorithm provides option C as the response)}.\relax }}{151}
+\contentsline {table}{\numberline {5.6}{\ignorespaces The 31 Likert scale questions organized according to their categories (hypotheses).\relax }}{163}
 \addvspace {10\p@ }
