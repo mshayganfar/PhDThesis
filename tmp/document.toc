@@ -52,95 +52,94 @@
 \contentsline {section}{\numberline {2.6}Theory of Mind}{67}
 \contentsline {section}{\numberline {2.7}Conclusion}{68}
 \contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{70}
-\contentsline {section}{\numberline {3.1}Overview of Mechanisms}{73}
+\contentsline {section}{\numberline {3.1}Overview of Mechanisms}{72}
 \contentsline {section}{\numberline {3.2}Example Scenario}{75}
-\contentsline {section}{\numberline {3.3}General Argument}{77}
-\contentsline {section}{\numberline {3.4}Events}{80}
-\contentsline {subsection}{\numberline {3.4.1}Collaboration Mechanism and Events}{80}
+\contentsline {section}{\numberline {3.3}General Argument}{78}
+\contentsline {section}{\numberline {3.4}Events}{81}
+\contentsline {subsection}{\numberline {3.4.1}Collaboration Mechanism and Events}{81}
 \contentsline {subsection}{\numberline {3.4.2}Appraising Events}{81}
-\contentsline {subsection}{\numberline {3.4.3}Coping with Events}{81}
+\contentsline {subsection}{\numberline {3.4.3}Coping with Events}{82}
 \contentsline {subsection}{\numberline {3.4.4}Motivation and Events}{82}
-\contentsline {subsection}{\numberline {3.4.5}Theory of Mind and Events}{82}
+\contentsline {subsection}{\numberline {3.4.5}Theory of Mind and Events}{83}
 \contentsline {section}{\numberline {3.5}Functions of Emotions}{83}
-\contentsline {subsection}{\numberline {3.5.1}Action Selection}{83}
+\contentsline {subsection}{\numberline {3.5.1}Action Selection}{84}
 \contentsline {subsection}{\numberline {3.5.2}Adaptation}{84}
 \contentsline {subsection}{\numberline {3.5.3}Social Regulation}{84}
-\contentsline {subsection}{\numberline {3.5.4}Sensory Integration}{84}
-\contentsline {subsection}{\numberline {3.5.5}Alarm}{84}
+\contentsline {subsection}{\numberline {3.5.4}Sensory Integration}{85}
+\contentsline {subsection}{\numberline {3.5.5}Alarm}{85}
 \contentsline {subsection}{\numberline {3.5.6}Motivation}{85}
-\contentsline {subsection}{\numberline {3.5.7}Goal Management}{85}
-\contentsline {subsection}{\numberline {3.5.8}Focus of Attention}{85}
+\contentsline {subsection}{\numberline {3.5.7}Goal Management}{86}
+\contentsline {subsection}{\numberline {3.5.8}Focus of Attention}{86}
 \contentsline {subsection}{\numberline {3.5.9}Strategic Processing}{86}
-\contentsline {subsection}{\numberline {3.5.10}Self Model}{86}
-\contentsline {section}{\numberline {3.6}Components of the Architecture}{86}
+\contentsline {subsection}{\numberline {3.5.10}Self Model}{87}
+\contentsline {section}{\numberline {3.6}Components of the Architecture}{87}
 \contentsline {subsection}{\numberline {3.6.1}Collaboration}{87}
-\contentsline {subsection}{\numberline {3.6.2}Appraisal}{88}
-\contentsline {subsection}{\numberline {3.6.3}Coping}{89}
-\contentsline {subsection}{\numberline {3.6.4}Motivation}{90}
-\contentsline {subsection}{\numberline {3.6.5}Theory of Mind}{91}
-\contentsline {subsection}{\numberline {3.6.6}Perception}{91}
-\contentsline {subsection}{\numberline {3.6.7}Action}{92}
-\contentsline {subsection}{\numberline {3.6.8}Mental State and Emotion Instances}{92}
-\contentsline {section}{\numberline {3.7}Attributes of Mental State Elements}{95}
-\contentsline {subsection}{\numberline {3.7.1}Attributes of Beliefs}{95}
-\contentsline {subsection}{\numberline {3.7.2}Attributes of Goals}{97}
-\contentsline {subsection}{\numberline {3.7.3}Attributes of Motives}{98}
+\contentsline {subsection}{\numberline {3.6.2}Appraisal}{89}
+\contentsline {subsection}{\numberline {3.6.3}Coping}{90}
+\contentsline {subsection}{\numberline {3.6.4}Motivation}{91}
+\contentsline {subsection}{\numberline {3.6.5}Theory of Mind}{92}
+\contentsline {subsection}{\numberline {3.6.6}Perception}{92}
+\contentsline {subsection}{\numberline {3.6.7}Action}{93}
+\contentsline {subsection}{\numberline {3.6.8}Mental State and Emotion Instances}{93}
+\contentsline {section}{\numberline {3.7}Attributes of Mental State Elements}{96}
+\contentsline {subsection}{\numberline {3.7.1}Attributes of Beliefs}{96}
+\contentsline {subsection}{\numberline {3.7.2}Attributes of Goals}{98}
+\contentsline {subsection}{\numberline {3.7.3}Attributes of Motives}{99}
 \contentsline {subsection}{\numberline {3.7.4}Attributes of Intentions}{100}
 \contentsline {subsection}{\numberline {3.7.5}Emotion Instances}{102}
-\contentsline {chapter}{\numberline {4}Computational Framework}{104}
-\contentsline {section}{\numberline {4.1}Introduction}{104}
-\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{105}
-\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{107}
-\contentsline {subsection}{\numberline {4.3.1}Relevance}{108}
-\contentsline {subsubsection}{Utility of an Event}{109}
-\contentsline {subsection}{\numberline {4.3.2}Desirability}{112}
-\contentsline {subsection}{\numberline {4.3.3}Expectedness}{114}
-\contentsline {subsection}{\numberline {4.3.4}Controllability}{116}
-\contentsline {section}{\numberline {4.4}Goal Management}{119}
-\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{124}
-\contentsline {subsection}{\numberline {4.5.1}Planning}{125}
-\contentsline {subsection}{\numberline {4.5.2}Active Coping}{126}
-\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{128}
-\contentsline {subsection}{\numberline {4.5.4}Acceptance}{128}
-\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{129}
-\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{129}
-\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{130}
-\contentsline {section}{\numberline {4.6}Motivation Mechanism}{131}
-\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{132}
-\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{134}
-\contentsline {subsection}{\numberline {4.6.3}External Motive}{135}
-\contentsline {section}{\numberline {4.7}Theory of Mind}{137}
-\contentsline {subsubsection}{Reverse Appraisal}{137}
-\contentsline {section}{\numberline {4.8}Perception and Action}{138}
-\contentsline {section}{\numberline {4.9}Elicitation of Emotion Instances}{138}
+\contentsline {chapter}{\numberline {4}Computational Framework}{105}
+\contentsline {section}{\numberline {4.1}Introduction}{105}
+\contentsline {section}{\numberline {4.2}Collaboration Mechanism}{106}
+\contentsline {section}{\numberline {4.3}Appraisal Mechanism and Underlying Processes}{108}
+\contentsline {subsection}{\numberline {4.3.1}Relevance}{109}
+\contentsline {subsubsection}{Utility of an Event}{110}
+\contentsline {subsection}{\numberline {4.3.2}Desirability}{113}
+\contentsline {subsection}{\numberline {4.3.3}Expectedness}{115}
+\contentsline {subsection}{\numberline {4.3.4}Controllability}{117}
+\contentsline {section}{\numberline {4.4}Goal Management}{120}
+\contentsline {section}{\numberline {4.5}Coping Mechanism and Strategies}{125}
+\contentsline {subsection}{\numberline {4.5.1}Planning}{126}
+\contentsline {subsection}{\numberline {4.5.2}Active Coping}{127}
+\contentsline {subsection}{\numberline {4.5.3}Seeking Social Support for Instrumental Reasons}{129}
+\contentsline {subsection}{\numberline {4.5.4}Acceptance}{129}
+\contentsline {subsection}{\numberline {4.5.5}Mental Disengagement}{130}
+\contentsline {subsection}{\numberline {4.5.6}Shifting Responsibility}{130}
+\contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{131}
+\contentsline {section}{\numberline {4.6}Motivation Mechanism}{132}
+\contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{133}
+\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{135}
+\contentsline {subsection}{\numberline {4.6.3}External Motive}{136}
+\contentsline {section}{\numberline {4.7}Theory of Mind}{138}
+\contentsline {subsubsection}{Reverse Appraisal}{138}
+\contentsline {section}{\numberline {4.8}Elicitation of Emotion Instances}{139}
 \contentsline {chapter}{\numberline {5}Evaluation}{142}
 \contentsline {section}{\numberline {5.1}Implementation}{142}
-\contentsline {section}{\numberline {5.2}Evaluating Appraisal Algorithms (Crowd Sourcing)}{142}
+\contentsline {section}{\numberline {5.2}Evaluating Appraisal Algorithms (Crowd Sourcing)}{143}
 \contentsline {subsection}{\numberline {5.2.1}Experimental Scenario}{143}
-\contentsline {subsection}{\numberline {5.2.2}Hypothesis and Methodology}{143}
-\contentsline {subsubsection}{Hypothesis}{143}
+\contentsline {subsection}{\numberline {5.2.2}Hypothesis and Methodology}{144}
+\contentsline {subsubsection}{Hypothesis}{144}
 \contentsline {subsubsection}{Procedure}{144}
 \contentsline {subsubsection}{Participants}{145}
-\contentsline {subsection}{\numberline {5.2.3}Results}{145}
-\contentsline {subsubsection}{Expectedness}{145}
+\contentsline {subsection}{\numberline {5.2.3}Results}{146}
+\contentsline {subsubsection}{Expectedness}{146}
 \contentsline {subsubsection}{Controllability}{147}
-\contentsline {subsubsection}{Desirability}{148}
-\contentsline {subsubsection}{Relevance}{149}
-\contentsline {subsection}{\numberline {5.2.4}Discussion}{150}
-\contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{151}
-\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{152}
-\contentsline {subsubsection}{Environment and Tasks}{153}
-\contentsline {subsubsection}{Framework}{154}
-\contentsline {subsubsection}{The Robot}{154}
+\contentsline {subsubsection}{Desirability}{149}
+\contentsline {subsubsection}{Relevance}{150}
+\contentsline {subsection}{\numberline {5.2.4}Discussion}{152}
+\contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{152}
+\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{153}
+\contentsline {subsubsection}{Environment and Tasks}{154}
+\contentsline {subsubsection}{Framework}{155}
+\contentsline {subsubsection}{The Robot}{155}
 \contentsline {subsubsection}{Robot Controller}{155}
-\contentsline {subsection}{\numberline {5.3.2}Experimental Design}{155}
-\contentsline {subsubsection}{Interaction Paradigms}{155}
+\contentsline {subsection}{\numberline {5.3.2}Experimental Design}{156}
+\contentsline {subsubsection}{Interaction Paradigms}{157}
 \contentsline {subsection}{\numberline {5.3.3}Hypotheses}{159}
-\contentsline {subsection}{\numberline {5.3.4}Procedure}{159}
-\contentsline {subsubsection}{Measurements}{160}
+\contentsline {subsection}{\numberline {5.3.4}Procedure}{160}
+\contentsline {subsubsection}{Measurements}{161}
 \contentsline {subsubsection}{Participants}{161}
-\contentsline {subsection}{\numberline {5.3.5}Results}{161}
-\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{161}
+\contentsline {subsection}{\numberline {5.3.5}Results}{162}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{162}
 \contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{170}
 \contentsline {subsubsection}{Impact of Demographics}{173}
 \contentsline {subsection}{\numberline {5.3.6}Discussion}{173}

@@ -2631,21 +2631,24 @@ functions in this proposed work.
 \chapter{Affective Motivational Collaboration Theory}
 \label{ch:amct}
 \vspace*{-5mm}
-Current computational theories used for human-robot collaboration specify the
-structure of collaborative activities, but are weak on the underlying processes
-that generate and maintain these structures. We argue that emotions are crucial
-to these underlying processes and we have developed a new computational theory,
-called \textit{Affective Motivational Collaboration} theory, that combines
+Current computational collaboration theories specify the structure of
+collaborative activities, but are weak on the underlying processes that generate
+and maintain these structures. {\color{red}In addition, current computational
+models of emotion (specifically appraisal models) provide antecedents (e.g.,
+beliefs and goals) of appraisal processes and clearly distinguish between
+different appraisals, but do not describe the differences of appraisal in a
+collaboration context.} We argue that emotions are crucial to these underlying
+processes and we have developed a new computational theory, called
+\textit{Affective Motivational Collaboration} theory, that combines
 emotion-based processes, such as appraisal and coping, with collaboration
-processes, such as planning, in a single unified framework. {\color{red}In
-this chapter, we provide a general argument about our AMC theory, major
-functions of emotions that can be applied in collaboration context, as well as
-the components in our architecture and how each component (mechanism) deals with
-the events in a collaborative environment. We also provide the definition of
-elements of mental state and their attributes. Later in Chapter
-\ref{ch:appraisals}, we use all these information in the new algorithms we have
-developed, e.g., appraisal processes, as part of a new overall computational
-model.}
+processes, such as planning, in a single unified framework. {\color{red}In this
+chapter, we provide a general argument about our AMC theory, major functions of
+emotions that can be applied in collaboration context, as well as the components
+in our architecture and how each component (mechanism) deals with the events in
+a collaborative environment. We also provide the definition of elements of
+mental state and their attributes. Later in Chapter \ref{ch:appraisals}, we use
+all these information in the new algorithms we have developed, e.g., appraisal
+processes, as part of a new overall computational model.}
 
 This work is implemented to build robots capable of generating and recognizing
 emotions in order to be better collaborators. We have investigated the mutual
@@ -2735,23 +2738,31 @@ and the sink (to show proper behavior) of data in our architecture. These two
 mechanisms function based on the same events introduced in Section
 \ref{sec:events}.}
 
-The \textit{Appraisal \& Coping} mechanism consists of the two processes of
-Appraisal and Coping. The Appraisal mechanism is responsible for evaluating
-changes in the self's Mental States, the anticipated Mental States of the other,
-and the state of the collaboration environment. Consequently, the Appraisal
-mechanism is connected to a) the Theory of Mind mechanism, to serve as an
-evaluator whenever the self applies the Appraisal mechanism to the mental states
-attributed to the human collaborator, b) the Collaboration mechanism, to
-interpret the progress and changes in the collaboration plan and associated
-Mental States, and to make changes to the shared plan if required, c) the
-Motivation mechanism, to generate and assess the self's new goal-driven motives
-whenever a new motive or intention is required, e.g., following the failure of a
-task, and d) the Perception mechanism, to interpret the external events from the
-collaboration environment. The Coping mechanism provides the self with different
-coping strategies associated with changes in the self's mental states with
-respect to the state of the collaboration. In other words, the Coping mechanism
-produces cognitive responses by forming new intentions based on the appraisal
-patterns.
+{\color{red}The \textit{Appraisal} and \textit{Coping} mechanisms are two major
+mechanisms in our computational framework that are tightly coupled. The
+Appraisal mechanism is responsible for evaluating changes in the self's Mental
+States, the anticipated Mental States of the other, and the state of the
+collaboration environment. Consequently, the Appraisal mechanism is connected to
+a) the Theory of Mind mechanism, to serve as an evaluator whenever the self
+applies the Appraisal mechanism to the mental states attributed to the human
+collaborator, b) the Collaboration mechanism, to interpret the progress and
+changes in the collaboration plan and associated Mental States, and to make
+changes to the shared plan if required, c) the Motivation mechanism, to generate
+and assess the self's new goal-driven motives whenever a new motive or intention
+is required, e.g., following the failure of a task, and d) the Perception
+mechanism, to interpret the external events from the collaboration environment.
+In general, our appraisal algorithms are developed based on the data available
+in a collaboration structure. This feature makes our algorithms unique and
+different than other computational appraisal models. The details about our
+algorithms are provided in Section \ref{sec:appraisal}. The Coping mechanism
+provides the self with different coping strategies associated with changes in
+the self's mental states with respect to the state of the collaboration. In
+other words, the Coping mechanism produces cognitive responses by forming new
+intentions based on the appraisal patterns. The Coping mechanism is also
+inspired by other work; however, it is developed to enable an agent to cope with
+the events in a collaborative environment which also distinguishes our work from
+other computational models of coping. Details about our coping mechanism can be
+found in Section \ref{sec:coping-mechanism}.}
 
 The \textit{Motivation} mechanism provides motives to influence the coping
 process in terms of the collaborative agent's or the human collaborator's needs.
@@ -2893,7 +2904,13 @@ gratch:evaluating, marsella:ema-process-model, marsella:computational} which
 explains how emotions arise from an individual's interpretation of its
 relationship with the environment, and specifies the dimensions of appraisal and
 the appraisal patterns characteristic of different emotions
-\cite{scherer:appraisal-processes}.
+\cite{scherer:appraisal-processes}; {\color{red}although our algorithms are
+inspired by their work, our focus is to employ other concepts that are
+involved in appraisal of an event due to the collaboration context. For
+instance, as discussed in Section \ref{sec:relevance}, we believe not only the
+relevance of an event is influenced by the utility of the event, but it is also
+influenced by the perceived emotion of the other collaborator. The details of
+these differences are described in Section \ref{sec:appraisal}.}
 
 Existing collaboration theories (including SharedPlans) consider the nature of a
 collaboration to be more than a set of individual acts. These theories argue for
@@ -2908,11 +2925,15 @@ SharedPlans theory can describe our scenario in Section
 beliefs, intentions, and shared plans. However, it does not explain the
 underlying processes leading to these Mental States. \textit{Affective
 Motivational Collaboration} theory extends the SharedPlans theory by describing
-these processes. Furthermore, emotions, due to their evaluative and regulatory
-nature, provide fundamental functions (see Section \ref{sec:emotion-functions})
-each of which plays an essential role in maintaining a collaboration's structure
-and status. In other words, these functions explain the dynamics of a
-collaboration structure.
+these processes. {\color{red}As another example, all of the prominent
+computational models of appraisal are able to clearly define the antecedents of
+appraisals, and how each appraisal process can evaluate a particular aspect of
+an event. However, no appraisal model provides the required factors for each
+appraisal process in the context of collaboration.} Furthermore, emotions, due
+to their evaluative and regulatory nature, provide fundamental functions (see
+Section \ref{sec:emotion-functions}) each of which plays an essential role in
+maintaining a collaboration's structure and status. In other words, these
+functions explain the dynamics of a collaboration structure.
 
 \textit{Affective Motivational Collaboration} theory specifies the processes
 involved in the progress of a collaboration and how they impact the
@@ -3010,14 +3031,14 @@ self's collaboration monitoring.
 
 The other's \textit{utterances}, the effect(s) of the collaborators'
 \textit{primitive actions}, and the other's \textit{emotion instances}
-(expressed nonverbally) are the three types of events perceived by the self
-during collaboration. The Appraisal mechanism receives the output of the
-Perception and Collaboration mechanisms as well as the requisite Mental States
-related to the current event. It appraises the event, in terms of appraisal
-variables using the collaboration structure and the history of the self's
-related Mental States. The collaboration structure contains information about
-the collaboration's shared plan and the collaborators' shared goal, the temporal
-and the hierarchical constraints of the tasks, and the current focus of
+(expressed verbally or nonverbally) are the three types of events perceived by
+the self during collaboration. The Appraisal mechanism receives the output of
+the Perception and Collaboration mechanisms as well as the requisite Mental
+States related to the current event. It appraises the event, in terms of
+appraisal variables using the collaboration structure and the history of the
+self's related Mental State. The collaboration structure contains information
+about the collaboration's shared plan and the collaborators' shared goal, the
+temporal and the hierarchical constraints of the tasks, and the current focus of
 attention. Moreover, the self progressively generates and updates various types
 of Mental States (discussed in Section \ref{sec:mental-states-attributes})
 during collaboration. The occurrence of a new event causes a change in the
@@ -3041,7 +3062,7 @@ intentions to be formed, which then cause the Coping mechanism to appropriately
 choose the self's behavior.
 
 \subsection{Motivation and Events}
-The Motivation mechanism acts to regulate the self's Mental States and
+The Motivation mechanism acts to regulate the self's Mental State and
 goal-directed behaviors for internal and social purposes. The Appraisal mechanism
 evaluates the state of self, the environment, or the anticipated mental state of
 the other. In each of these cases, the outcome of the Appraisal mechanism might
@@ -4738,7 +4759,7 @@ into the collaboration mechanism in our framework.
 We have developed an algorithm for the Coping mechanism to determine how the
 agent would respond to events using our framework. Our Coping mechanism includes
 a set of coping strategies that can be triggered based on different conditions
-(see Figure \ref{fig:coping_strategies}). All of these coping strategies are
+(see Table \ref{fig:coping_strategies}). All of these coping strategies are
 known in the literature, however, none of these strategies are applied in
 collaboration context. Some of our coping strategies, i.e., \textit{planning},
 \textit{active coping} and \textit{seeking social support for instrumental
@@ -4848,7 +4869,7 @@ help.
 \subsection{Acceptance}
 The \textit{acceptance} coping strategy forms an intention to drop the
 intention of pursuing a goal. In our framework, if this strategy becomes
-activated, the intention to pursue the current goal will be dropped; see Figure
+activated, the intention to pursue the current goal will be dropped; see Table
 \ref{fig:coping_strategies}. {\color{red}For instance, if the human has failed
 to achieve a goal due to the lack of a required input, and the agent is not able to pursue
 another goal and the agent is not able to provide the required input, this
@@ -4888,7 +4909,7 @@ the human collaborator to mitigate human's negative emotions.
 
 In our Coping mechanism, there are three activation criteria for each coping
 strategy. The first criterion is the conjunction of emotion valences of the self
-and the other collaborator (see Emotion Valence column in Figure
+and the other collaborator (see Emotion Valence column in Table
 \ref{fig:coping_strategies}). For instance, if the valence of the human
 collaborator's emotion is \textit{negative} \textbf{and} the valence of the
 agent's emotion is also \textit{negative}, the active coping ($2^{nd}$ row), the
@@ -4916,7 +4937,7 @@ decision of whether the selected coping strategy can be activated. The
 controllability of an event represents whether the agent is able to control the
 situation occurring with the given event. In our example, if the agent finds the
 event uncontrollable, the acceptance coping strategy becomes activated (see
-Figure \ref{fig:coping_strategies}).
+Table \ref{fig:coping_strategies}).
 
 \section{Motivation Mechanism}
 \label{sec:motivation_mechanism}
@@ -5135,27 +5156,6 @@ desirable for the human. The outcome of all of these processes is a vector of
 reverse appraisal values that could be used by other mechanisms in our
 framework.}
 
-\section{Perception and Action}
-As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
-not part of our theoretical work. Therefore, we only implemented these
-mechanisms to the extent to which they could help us to run and test our
-framework. The Perception mechanism only redirects the input values from the
-system's users to the framework. For instance, in our user study described in
-Section \ref{sec:end-to-end}, the Perception mechanism only receives the valence
-of human's emotion from the input and provides it to the framework.
-On the other hand, the Action mechanism executes some functions based on the
-intentions formed and provided by the Coping mechanism described in this
-section. We group all of these functions into three categories in our framework.
-The first group of functions includes all of the functions capable of executing
-some actions with respect to the domain. The second category includes all of the
-functions involved in revealing the agent's utterances by writing on the screen or
-conveying through the agent's voice and text to speech systems. The last
-category includes all of the functions to express the agent's emotion. The
-emotions can be expressed through colors, emoticons, voice and text. For
-example, in the user study described in Chapter \ref{ch:awareness}, we expressed
-the agent's emotions by using emoticons and utterances through the text on the
-screen as well as the agent's voice.
-
 \section{Elicitation of Emotion Instances}
 We have modeled 10 different emotion instances that can be elicited by the agent
 or anticipated from the human during collaboration in our framework (see Table
@@ -5254,6 +5254,25 @@ collaborating using our framework. The results are provided in Section
 \ref{sec:end-to-end}.
 
 \section{Implementation}
+As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
+not part of our theoretical work. Therefore, we only implemented these
+mechanisms to the extent to which they could help us to run and test our
+framework. The Perception mechanism only redirects the input values from the
+system's users to the framework. For instance, in our user study described in
+Section \ref{sec:end-to-end}, the Perception mechanism only receives the valence
+of human's emotion from the input and provides it to the framework.
+On the other hand, the Action mechanism executes some functions based on the
+intentions formed and provided by the Coping mechanism described in this
+section. We group all of these functions into three categories in our framework.
+The first group of functions includes all of the functions capable of executing
+some actions with respect to the domain. The second category includes all of the
+functions involved in revealing the agent's utterances by writing on the screen or
+conveying through the agent's voice and text to speech systems. The last
+category includes all of the functions to express the agent's emotion. The
+emotions can be expressed through colors, emoticons, voice and text. For
+example, in the user study described in Chapter \ref{ch:awareness}, we expressed
+the agent's emotions by using emoticons and utterances through the text on the
+screen as well as the agent's voice.
 
 \section{Evaluating Appraisal Algorithms (Crowd Sourcing)}
 \label{sec:crowd-sourcing}
@@ -6082,7 +6101,7 @@ means is $\ll$0.001 for all questions.}
 \subsubsection{Results from the Open-Ended Questionnaire} 
 \label{sec:Open-Ended}
 As described in Section \ref{sec:procedure}, each participant answered an
-open-ended questionnaire at the end of the study. Figure
+open-ended questionnaire at the end of the study. Table
 \ref{fig:Open-Ended-Table} summarizes the questionnaire and which condition
 users preferred for certain conditions (i.e. emotion-ignorant or emotion-aware).
 Note that some users chose not to state a preference regarding which condition
@@ -6091,18 +6110,19 @@ in whether users preferred the emotion-aware case, we considered the ambiguous
 responses to be failures in the binomial analysis. The binomial analysis is
 based on a population size of 33. 
 
-\begin{figure*}[tbh]
-\centering
-\includegraphics[width=1\textwidth]{figure/table2-croped.pdf}
-\caption{Open-ended questionnaire questions and results. (*Note: Because we are
-evaluating whether humans prefer an emotion-aware robot, these results are taken
-as negative test results when calculating the p-value using the binomial
-distribution. Only those participants who clearly indicated a preference for the
-emotion-aware robot are taken as positive test results.)}
-\label{fig:Open-Ended-Table}
-\end{figure*}
+\begin{table}[tbh]
+  \centering
+  \caption{Open-ended questionnaire questions and results. (*Note: Because we
+  are evaluating whether humans prefer an emotion-aware robot, these results are
+  taken as negative test results when calculating the p-value using the binomial
+  distribution. Only those participants who clearly indicated a preference for
+  the emotion-aware robot are taken as positive test results.)}
+  \label{fig:Open-Ended-Table}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/table2-croped.pdf}
+\end{table}
 
-As shown in Figure \ref{fig:Open-Ended-Table}, 100\% of users unambiguously
+As shown in Table \ref{fig:Open-Ended-Table}, 100\% of users unambiguously
 preferred the run with the emotion-aware robot. In general, this preference
 stemmed from a feeling of closeness and partnership, as seen in these responses:
 ``the robot had emotions and responded to my emotions. Also, ``what it said about
