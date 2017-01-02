@@ -57,23 +57,23 @@
 \contentsline {section}{\numberline {3.3}General Argument}{78}
 \contentsline {section}{\numberline {3.4}Events}{81}
 \contentsline {subsection}{\numberline {3.4.1}Collaboration Mechanism and Events}{81}
-\contentsline {subsection}{\numberline {3.4.2}Appraising Events}{81}
+\contentsline {subsection}{\numberline {3.4.2}Appraising Events}{82}
 \contentsline {subsection}{\numberline {3.4.3}Coping with Events}{82}
-\contentsline {subsection}{\numberline {3.4.4}Motivation and Events}{82}
+\contentsline {subsection}{\numberline {3.4.4}Motivation and Events}{83}
 \contentsline {subsection}{\numberline {3.4.5}Theory of Mind and Events}{83}
-\contentsline {section}{\numberline {3.5}Functions of Emotions}{83}
+\contentsline {section}{\numberline {3.5}Functions of Emotions}{84}
 \contentsline {subsection}{\numberline {3.5.1}Action Selection}{84}
 \contentsline {subsection}{\numberline {3.5.2}Adaptation}{84}
-\contentsline {subsection}{\numberline {3.5.3}Social Regulation}{84}
+\contentsline {subsection}{\numberline {3.5.3}Social Regulation}{85}
 \contentsline {subsection}{\numberline {3.5.4}Sensory Integration}{85}
 \contentsline {subsection}{\numberline {3.5.5}Alarm}{85}
-\contentsline {subsection}{\numberline {3.5.6}Motivation}{85}
+\contentsline {subsection}{\numberline {3.5.6}Motivation}{86}
 \contentsline {subsection}{\numberline {3.5.7}Goal Management}{86}
 \contentsline {subsection}{\numberline {3.5.8}Focus of Attention}{86}
-\contentsline {subsection}{\numberline {3.5.9}Strategic Processing}{86}
+\contentsline {subsection}{\numberline {3.5.9}Strategic Processing}{87}
 \contentsline {subsection}{\numberline {3.5.10}Self Model}{87}
 \contentsline {section}{\numberline {3.6}Components of the Architecture}{87}
-\contentsline {subsection}{\numberline {3.6.1}Collaboration}{87}
+\contentsline {subsection}{\numberline {3.6.1}Collaboration}{88}
 \contentsline {subsection}{\numberline {3.6.2}Appraisal}{89}
 \contentsline {subsection}{\numberline {3.6.3}Coping}{90}
 \contentsline {subsection}{\numberline {3.6.4}Motivation}{91}
@@ -83,7 +83,7 @@
 \contentsline {subsection}{\numberline {3.6.8}Mental State and Emotion Instances}{93}
 \contentsline {section}{\numberline {3.7}Attributes of Mental State Elements}{96}
 \contentsline {subsection}{\numberline {3.7.1}Attributes of Beliefs}{96}
-\contentsline {subsection}{\numberline {3.7.2}Attributes of Goals}{98}
+\contentsline {subsection}{\numberline {3.7.2}Attributes of Goals}{97}
 \contentsline {subsection}{\numberline {3.7.3}Attributes of Motives}{99}
 \contentsline {subsection}{\numberline {3.7.4}Attributes of Intentions}{100}
 \contentsline {subsection}{\numberline {3.7.5}Emotion Instances}{102}

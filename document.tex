@@ -2940,7 +2940,9 @@ involved in the progress of a collaboration and how they impact the
 collaboration's underlying structure. For example in the exchange below, the
 Robot needs to respond appropriately to the Astronaut's new request, to maintain
 progress during collaboration. The emotion function, i.e., goal management, is
-involved in such situations:\\
+involved in such situations. {\color{red}Our computational model starts with
+high-level semantic representation of events (including utterances), i.e.,
+natural language processing is out of the scope of this work:}\\
 
   8. \textbf{\textit{Astronaut}}: I need you to begin welding this panel and also
   prepare the measurement tool for me.
@@ -3077,7 +3079,9 @@ event occurs. For instance, the Appraisal mechanism may evaluate the outcome of
 the current task as \textit{unexpected, undesirable, uncontrollable} and
 \textit{urgent} which is indicative of the failure of a task. Then, the
 Motivation mechanism provides goal-directed motives, each of which can
-influence the formation of an intention.
+influence the formation of an intention. {\color{red}The Motivation mechanism
+is important because it can distinguish between what the self needs to do and
+what the self can do.}
 
 \subsection{Theory of Mind and Events}
 Theory of Mind operates when an event occurs and the self wants to infer and
@@ -3106,9 +3110,12 @@ current social context. Ultimately, the elicited emotion's functions impact the
 self's Mental States and consequently behaviors. In the rest of this section, we
 briefly describe how ten different emotion functions are related to the
 collaboration context. There are other emotion functions, such as learning and
-memory control, which are outside of the scope of this thesis. We have used some
-of the concepts behind these emotion functions such as goal management in our
-computational framework (see Chapter \ref{ch:appraisals}).
+memory control, which are outside of the scope of this thesis. {\color{red}We
+have implemented some of these emotion functions such as social regulation,
+motivation, focus of attention, and goal management in our computational
+framework (see Chapter \ref{ch:appraisals}). Other functions are described here
+with their relationship to the collaboration context, but they are beyond the
+implementation of this thesis.}
 
 \subsection{Action Selection} Action selection is the function in which
 emotion instances influence choosing the most appropriate action out of a
@@ -3387,12 +3394,12 @@ model starts with high-level semantic representation of events (including
 utterances), i.e., natural language processing is out of the scope of this work.
 
 \begin{itemize}
-  \item \textbf{Output:} We will support the human side of the dialogues using
-  predefined utterances for verbal communication with the agent. These
-  utterances will be a part of the output data of the \textit{Perception}
-  mechanism. The output of the \textit{Perception} mechanism will be given to the
-  Collaboration, Theory of Mind and Appraisal mechanisms. We will provide a
-  unified perception representation across all of these mechanisms.
+  \item \textbf{Output:} Predefined utterances will be used for verbal
+  communication with the agent. These utterances will be a part of the output
+  data of the \textit{Perception} mechanism. The output of the
+  \textit{Perception} mechanism will be given to the Collaboration, Theory of
+  Mind and Appraisal mechanisms. We will provide a unified perception
+  representation across all of these mechanisms.
   
   \item \textbf{Function:} The \textit{Perception} mechanism is responsible for
   producing the sensory information used by other processes in our model.
@@ -3417,8 +3424,10 @@ computational model (see Figure \ref{fig:theory}).
 
 \subsection{Mental State and Emotion Instances}
 \label{sec:mental-states}
-The Mental States shown in Figure \ref{fig:theory} comprise the knowledge
-base required for all the mechanisms in the overall model.
+The Mental State shown in Figure \ref{fig:theory} comprise the knowledge
+base required for all the mechanisms in the overall model. {\color{red}This
+Mental State includes: beliefs, intentions, motives, goals, and emotion
+instances for both self and the other.}
 
 \textit{Beliefs} are a crucial part of the Mental State. We have two different
 perspectives on categorization of beliefs. In one perspective, we categorize
@@ -3479,19 +3488,21 @@ the \textit{Specificity, Proximity} and \textit{Difficulty} of the goal. Goals
 direct the formation of intentions to take appropriate corresponding actions
 during collaboration. Goals also drive the Motivation mechanism to generate
 required motive(s) in uncertain or ambiguous situations, e.g., to minimize the
-risk of impasse or to reprioritize goals. The \textit{Specificity} of goals has
-two functions for the agent. First, it defines the performance standard for
-evaluating the progress and quality of the collaboration. Second, it serves the
-agent to infer the winner of competing motives. The \textit{Proximity} of goals
-distinguishes goals according to how ``far'' they are from the ongoing task.
-Proximal (or short-term) goals are achievable more quickly, and result in higher
-motivation and better self-regulation than more temporally distant (or
-long-term) goals. Goals can influence the \textit{Strength} of beliefs, which is
-an important attribute for regulating the elicitation of social emotions. The
-\textit{Difficulty} of goals impacts collaborative events and decisions in the
-appraisal, reverse appraisal, motive generation and intention formation
-processes. For instance, overly easy goals do not motivate; neither are people
-motivated to attempt what they believe are impossible goals.
+risk of impasse or to reprioritize goals. 
+
+% The \textit{Specificity} of goals has
+% two functions for the agent. First, it defines the performance standard for
+% evaluating the progress and quality of the collaboration. Second, it serves the
+% agent to infer the winner of competing motives. The \textit{Proximity} of goals
+% distinguishes goals according to how ``far'' they are from the ongoing task.
+% Proximal (or short-term) goals are achievable more quickly, and result in higher
+% motivation and better self-regulation than more temporally distant (or
+% long-term) goals. Goals can influence the \textit{Strength} of beliefs, which is
+% an important attribute for regulating the elicitation of social emotions. The
+% \textit{Difficulty} of goals impacts collaborative events and decisions in the
+% appraisal, reverse appraisal, motive generation and intention formation
+% processes. For instance, overly easy goals do not motivate; neither are people
+% motivated to attempt what they believe are impossible goals.
 
 \textit{Emotions instances}  that are elicited by the Appraisal mechanism (see
 Section \ref{section-emotion-instances} for list of emotion types used in this
