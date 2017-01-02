@@ -5117,7 +5117,7 @@ the human's turn of the collaboration. The agent uses the collaboration
 structure during the human's turn to compute appraisal values with respect to
 the human's current emotional state and the current goal in the shared goal
 structure. The outcome of the reverse appraisal forms beliefs about the
-anticipated mental and emotional state of the human collaborator.}
+anticipated mental and emotional state of the human collaborator.
 
 \subsubsection{Reverse Appraisal}
 We use the same \textit{relevance}, \textit{expectedness} and
@@ -5133,7 +5133,7 @@ and desirable values respectively. In this way, our agent could directly infer
 whether the occurrence of the current event and its corresponding goal is
 desirable for the human. The outcome of all of these processes is a vector of
 reverse appraisal values that could be used by other mechanisms in our
-framework.
+framework.}
 
 \section{Perception and Action}
 As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
@@ -5157,52 +5157,82 @@ the agent's emotions by using emoticons and utterances through the text on the
 screen as well as the agent's voice.
 
 \section{Elicitation of Emotion Instances}
-We have modeled 10 different emotion instances that can be elicited by
-the agent or anticipated from the human during collaboration in our framework
-(see Figure \ref{fig:emotion_elicitation}). These emotion instances have
-meanings in social context and more specifically in collaboration. There are two
-components involved in selecting a particular emotion: appraisal variables and
-collaboration context.
+We have modeled 10 different emotion instances that can be elicited by the agent
+or anticipated from the human during collaboration in our framework (see Table
+\ref{fig:emotion_elicitation}). {\color{red}We chose these 10 emotions because
+we believe they are good examples of social emotions that can occur during a
+collaboration.} These emotion instances have meanings in social context and more
+specifically in collaboration. There are two components involved in selecting a
+particular emotion: appraisal variables and collaboration context.
 
 We use the outcome of the four appraisal processes discussed in section
 \ref{sec:appraisal} to determine the potential emotion instance to be elicited
 (if the agent wants to express an emotion), or to anticipate a potential emotion
 from the human collaborator (if the human response is anticipated). The outcome
-of appraisal processes can be one of the values presented in Figure
+of appraisal processes can be one of the values presented in Table
 \ref{fig:appraisal_values} with respect to the corresponding process.
+{\color{red}For instance, relevance can only obtain either of two values,
+i.e., \textsc{relevant} or \textsc{irrelevant}., or the controllability can
+obtain one of the three values in Table \ref{fig:appraisal_values}; i.e.,
+\textsc{high\_controllable, low\_controllable} or \textsc{uncontrollable}.}
 
-\begin{figure}[tbh]
+\vspace*{5mm}
+\begin{table}[tbh]
   \centering
-  \includegraphics[width=1\textwidth]{figure/apraisal_values_croped.pdf}
-  \caption{Appraisal values for selecting emotion instances.}
+  \caption{Appraisal values for relevance, desirability, expectedness and
+  controllability.}
   \label{fig:appraisal_values}
-\end{figure}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/apraisal_values_croped.pdf}
+\end{table}
 
 We also use the collaboration context as our second determinant to select a
 particular emotion. We define the collaboration context based on: \textit{goal
-achievement}, \textit{goal failure}, \textit{proposal of a goal},
-\textit{acceptance of the proposed goal}, and \textit{rejection of the proposed
-goal}. All of these situations can occur by either of the collaborators, i.e.,
-agent or human (see Figure \ref{fig:emotion_elicitation}). There is only one
-exception and it is when the desirability value is neutral the associated
-emotion to the event is always neutral without considering the collaboration
-context and the values of other appraisal variables.
+achievement} (\textsc{human\_achieved} and \textsc{agent\_achieved}),
+\textit{goal failure} (\textsc{human\_failed} and \textsc{agent\_failed}),
+\textit{proposal of a goal} (\textsc{human\_proposed} and
+\textsc{agent\_proposed}), \textit{acceptance of the proposed goal}
+(\textsc{human\_accepted} and \textsc{agent\_accepted}), and \textit{rejection
+of the proposed goal} (\textsc{human\_rejected} and \textsc{agent\_rejected}).
+All of these situations can occur by either of the collaborators, i.e., agent or
+human (see Table \ref{fig:emotion_elicitation}). There is only one exception
+and it is when the desirability value is neutral the associated emotion to the
+event is always neutral without considering the collaboration context and the
+values of other appraisal variables (see first row in Table
+\ref{fig:emotion_elicitation})\footnote{{\color{red}Empty cell in Table
+\ref{fig:emotion_elicitation} indicate that the value of the cell does not
+influence the selection of the emotion in the corresponding row.}}.
+{\color{red}In summary, the outcome of four appraisal processes and the inferred
+context of a collaboration can lead the agent to elicit its own emotion or
+anticipate the human collaborator's emotion.}
 
-As an example, if the agent finds an event \textit{uncontrollable},
-\textit{unexpected}, \textit{undesirable} and \textit{relevant} as the result of
-the human's proposal of a new goal to the agent (in the agent's turn), the
-elicited emotion instance will be \textit{worry} which can be expressed by the agent to
-indicate the agent's concern. Similarly, the agent will anticipate
-\textit{worry} for the human if the same appraisal values are computed while for
-instance the agent rejects the human's proposal of the new goal (in the human's
-turn).
+{\color{red} In the following interaction based on our example scenario in
+Section \ref{sec:example-scenario}:\\
 
-\begin{sidewaysfigure}
+  5. \textbf{\textit{Astronaut}}: The connectors on this panel have problems and
+  we might not be able to finish this task.
+
+  6. \textbf{\textit{Robot}}: Don't worry! I can replace the connectors in 4
+  minutes. We definitely can finish this task after that.\\
+
+The agent finds the Astronaut's goal \textsc{uncontrollable},
+\textsc{unexpected}, \textsc{undesirable} and \textsc{relevant} (see all
+possible values of appraisal variables in Table \ref{fig:appraisal_values}).
+Also, the agent finds the current context of collaboration as
+\textsc{human\_proposed}; therefore, the agent infers that Astronaut's
+perceived negative emotion instance can be \textit{worry}. Thus, since the agent
+have access to working connectors (required inputs to the Astronaut's task),
+first, the agent acknowledges the Astronaut's negative emotion, then informs
+the Astronaut with proper solution to mitigate the Astronaut's negative
+emotion.}
+
+
+\begin{sidewaystable}
   \centering
-  \includegraphics[width=1\textwidth]{figure/emotion_elicitation_croped.pdf}
-  \caption{Conditions for selecting emotion instances}
+  \caption{Conditions for selecting emotion instances.}
   \label{fig:emotion_elicitation}
-\end{sidewaysfigure}
+  \includegraphics[width=1\textwidth]{figure/emotion_elicitation_croped.pdf}
+\end{sidewaystable}
 
 \chapter{Evaluation}
 \label{ch:awareness}
