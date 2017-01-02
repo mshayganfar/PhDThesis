@@ -11,17 +11,17 @@
 \contentsline {subsection}{\numberline {2.2.1}SharedPlans Theory}{10}
 \contentsline {subsubsection}{Recipes}{11}
 \contentsline {subsubsection}{Full Vs. Partial Shared Plan}{14}
-\contentsline {subsubsection}{Communicating Intentions}{15}
+\contentsline {subsubsection}{Communicating Intentions}{14}
 \contentsline {subsubsection}{Intention-to and Intention-that}{15}
 \contentsline {subsection}{\numberline {2.2.2}Joint Intentions Theory}{16}
 \contentsline {subsubsection}{Individual Commitment}{17}
 \contentsline {subsubsection}{Individual Intention}{18}
-\contentsline {subsubsection}{Joint Commitment and Joint Intention}{19}
+\contentsline {subsubsection}{Joint Commitment and Joint Intention}{18}
 \contentsline {subsubsection}{Teamwork \& Communication}{19}
 \contentsline {subsection}{\numberline {2.2.3}STEAM -- A Hybrid Approach}{20}
 \contentsline {subsection}{\numberline {2.2.4}Other Approaches}{22}
 \contentsline {subsection}{\numberline {2.2.5}Similarities and Differences}{23}
-\contentsline {subsection}{\numberline {2.2.6}Applications of Collaboration Theories}{25}
+\contentsline {subsection}{\numberline {2.2.6}Applications of Collaboration Theories}{24}
 \contentsline {section}{\numberline {2.3}Emotions and Affective Computing}{29}
 \contentsline {subsection}{\numberline {2.3.1}Affect and Emotions}{30}
 \contentsline {subsection}{\numberline {2.3.2}Emotion in Social Context}{31}
@@ -32,16 +32,16 @@
 \contentsline {subsection}{\numberline {2.3.6}Cognitive Architectures}{40}
 \contentsline {section}{\numberline {2.4}Computational Models of Emotions}{41}
 \contentsline {subsection}{\numberline {2.4.1}Appraisal Theory}{41}
-\contentsline {subsubsection}{Componential Approach}{42}
-\contentsline {subsubsection}{Component Process Model}{43}
-\contentsline {subsubsection}{Appraisal Process}{44}
-\contentsline {subsubsection}{Coping Process}{46}
-\contentsline {subsubsection}{OCC, a Structural Appraisal Model of Emotion}{47}
-\contentsline {subsection}{\numberline {2.4.2}Other (Non-Appraisal) Computational Models}{49}
-\contentsline {subsubsection}{Constructivist (Dimensional) Emotion Theories}{49}
-\contentsline {subsubsection}{Basic (Discrete) Emotion Theories}{52}
+\contentsline {subsubsection}{Componential Approach}{41}
+\contentsline {subsubsection}{Component Process Model}{42}
+\contentsline {subsubsection}{Appraisal Process}{43}
+\contentsline {subsubsection}{Coping Process}{45}
+\contentsline {subsubsection}{OCC, a Structural Appraisal Model of Emotion}{46}
+\contentsline {subsection}{\numberline {2.4.2}Other (Non-Appraisal) Computational Models}{48}
+\contentsline {subsubsection}{Constructivist (Dimensional) Emotion Theories}{48}
+\contentsline {subsubsection}{Basic (Discrete) Emotion Theories}{51}
 \contentsline {subsubsection}{Rational Approaches}{53}
-\contentsline {subsubsection}{Communicative Approaches}{54}
+\contentsline {subsubsection}{Communicative Approaches}{53}
 \contentsline {subsection}{\numberline {2.4.3}Similarities and Differences}{54}
 \contentsline {subsubsection}{Dimensional Vs. Discrete (Basic) Emotion Theories}{54}
 \contentsline {subsubsection}{Appraisal Vs. Dimensional Emotions Theories}{57}
@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {2.5.1}Motives}{65}
 \contentsline {subsection}{\numberline {2.5.2}Motivation Theory}{65}
 \contentsline {section}{\numberline {2.6}Theory of Mind}{67}
-\contentsline {section}{\numberline {2.7}Conclusion}{68}
+\contentsline {section}{\numberline {2.7}Summary}{68}
 \contentsline {chapter}{\numberline {3}Affective Motivational Collaboration Theory}{70}
 \contentsline {section}{\numberline {3.1}Overview of Mechanisms}{72}
 \contentsline {section}{\numberline {3.2}Example Scenario}{75}

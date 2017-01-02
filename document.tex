@@ -366,22 +366,21 @@ the framework make the following contributions:
 \section{Introduction}
 \vspace*{-3mm}
 In this chapter, we start by reviewing the background of prominent collaboration
-theories including the the SharedPlans theory \cite{grosz:plans-discourse} as
-one of the two theoretical foundations of our work. We discuss the similarities
-and differences between these theories (see Section
-\ref{sec:collaboration-theories-comparison}) as well as related theoretical and
-practical work and applications. We continue by discussing the concept of
-affective computing and the social and communicative aspects of emotions from a
-psychological point of view. Understanding the social aspects of emotions is
-important in our work, since our work is focused on collaboration which is a
-social phenomenon in human environments. We also present the concept of
-artificial emotions and provide some examples of the existing computational
+theories including the the SharedPlans theory \cite{grosz:plans-discourse}. We
+discuss the similarities and differences between these collaboration theories
+(see Section \ref{sec:collaboration-theories-comparison}) as well as related
+theoretical and practical work and applications. We continue by discussing the
+concept of affective computing and the social and communicative aspects of
+emotions from a psychological point of view. Understanding the social aspects of
+emotions is important in our work, since our work is focused on collaboration
+which is a social phenomenon in human environments. We also present the concept
+of artificial emotions and provide some examples of the existing computational
 models of emotions. Then, we provide the background of the cognitive appraisal
 theory of emotions as the second theoretical foundation in our work as well as
 other computational models of emotions and the related concepts such as some
 examples of cognitive architectures and the influence of affect in
 decision-making procedures. This chapter continues with a description of motives
-and related theories in psychology and artificial intelligence. The role of
+and related theories in psychology and Artificial Intelligence (AI). The role of
 motives as goal-driven affective components is crucial in our work, since the
 collaboration structure is based on the concept of a shared goal between
 collaborators. Finally, a brief description and the related work on theory of
@@ -390,8 +389,8 @@ used in a limited scale in our work.
 
 \section{Computational Theories of Collaboration}
 The construction of computer systems and robots that are intelligent,
-collaborative problem-solving partners is important in Artificial Intelligence
-(AI) and its applications. It has always been important to make computer systems
+collaborative problem-solving partners is important in artificial intelligence
+and its applications. It has always been important to make computer systems
 better at helping humans do whatever these systems are designed for. To build
 collaborative systems, we need to identify the capabilities that must be added
 to individual agents so that they can work with humans or other agents. As Grosz
@@ -456,7 +455,7 @@ makes their view similar to Bratman's theory of intention
 \cite{bratman:intention}, and contrary to Searle \cite{searle:collective}.\\
 
 \textbf{Commitment} -- One of the most important concepts in teamwork and
-collaboration is commitment. Collaboration theories are required to meet the
+collaboration is commitment. Collaboration theories are required to address the
 notion of commitment, otherwise the participants are just doing some coordinated
 activities. Since the prominent computational collaboration theories, reviewed
 in this paper, are based on Bratman's view of intention, we briefly provide his
@@ -489,14 +488,17 @@ theory of collaborative planning that requires no notion of joint intentions
 decomposition hierarchies and allows the process of expanding and elaborating
 partial plans into full plans. SharedPlans theory explains how a group of agents
 can incrementally form and execute a shared plan which then guides and
-coordinates their activity towards the accomplishment of a shared goal.
-SharedPlans is rooted in the observation that collaborative plans are not simply
-a collection of individual plans, but rather a tight interleaving of mutual
-beliefs\footnote{\color{red}In our framework we also have the notion of
-\textit{private} beliefs (vs.\,\textit{shared} beliefs) which the other
-collaborator does not know about these beliefs.} and intentions of different
-team members. In \cite{grosz:collaboration} Grosz and Kraus use first-order
-logic to formalize SharedPlans.
+coordinates their activity towards the accomplishment of a shared
+goal\footnote{\color{red}In our framework we also have the notion of
+\textit{private} goals (vs.\,\textit{shared} goals) which are the goals that
+each collaborator might pursue privately; i.e., the other collaborator does not
+know about these goals.}. SharedPlans is rooted in the observation that
+collaborative plans are not simply a collection of individual plans, but rather
+a tight interleaving of mutual beliefs\footnote{\color{red}In our framework we
+also have the notion of \textit{private} beliefs (vs.\,\textit{shared} beliefs)
+which the other collaborator does not know about these beliefs.} and intentions
+of different team members. In \cite{grosz:collaboration} Grosz and Kraus use
+first-order logic to formalize SharedPlans.
 
 Grosz and Sidner in \cite{grosz:plans-discourse} present a model of plans to
 account for how agents with partial knowledge collaborate in the construction of
@@ -544,7 +546,7 @@ each recipe consisted of only a single action-type relation
 be modified over time.
 
 Grosz and Sidner propose that collaboration must have the following three
-elements, which also indicates the importance of the shared plan:
+elements:
 
 \begin{enumerate}
   \item the participants must have commitment to the shared activity;
@@ -611,46 +613,48 @@ grosz:plans-discourse}.
 
 The SharedPlans formalization distinguishes complete (full) plans and partial
 plans. A shared plan can be either a \textit{Full Shared Plan (FSP)} or a
-\textit{Partial Shared Plan (PSP)}. An \textit{FSP} is a complete plan in which
+\textit{Partial Shared Plan (PSP)}. A \textit{FSP} is a complete plan in which
 agents have fully determined how they will achieve a shared goal. A \textit{PSP}
 definition provides a specification of the minimal mental state requirements for
 collaboration to exist and gives criteria governing the process of completing
 the plan.
 
-An \textit{FSP} to do $\alpha$ represents a situation where every aspect of a
+A \textit{FSP} to do $\alpha$ represents a situation where every aspect of a
 joint activity $\alpha$ is fully determined. This includes mutual belief and
 agreement in the complete recipe to do $\alpha$. A recipe is a specification of
 a set of actions \textit{$A_i$}, which constitutes the performance of $\alpha$
 when executed under specified constraints. \textit{FSP(\textbf{P}, $\Theta,
 \alpha, T_p, T_\alpha, \textbf{R}_\alpha$)} denotes a group $\Theta$'s plan
 \textit{\textbf{P}} at time \textit{$T_p$} to do action $\alpha$ at time
-\textit{$T_\alpha$} using recipe \textit{$\textbf{R}_\alpha$}. In short,
-\textit{FSP} holds if and only if the following conditions are satisfied:
+\textit{$T_\alpha$} using recipe \textit{$\textbf{R}_\alpha$}. 
 
-\begin{enumerate}
-  \item All members of group $\Theta$ mutually believe that they intend to do
-  $\alpha$.
-  \item All members of group $\Theta$ mutually believe that
-  \textit{$\textbf{R}_\alpha$} is the recipe for $\alpha$.
-  \item For each step \textit{$A_i$} in recipe \textit{$\textbf{R}_\alpha$}:
-  \begin{itemize}
-    \item A subgroup $\Theta_j$ has an \textit{FSP} for \textit{$A_i$}, using
-    recipe \textit{${\textbf{R}_A}_i$}.
-    \item Other members of group $\Theta$ believe that there exists a recipe
-    such that subgroup $\Theta_j$ can bring about \textit{$A_i$} and have an FSP
-    for \textit{$A_i$}.
-    \item Other members of group $\Theta$ intend that subgroup $\Theta_j$ can
-    bring about \textit{$A_i$} using some recipe.
-  \end{itemize}
-\end{enumerate}
+% In short, \textit{FSP} holds if and only if the following conditions are
+% satisfied:
+% 
+% \begin{enumerate}
+%   \item All members of group $\Theta$ mutually believe that they intend to do
+%   $\alpha$.
+%   \item All members of group $\Theta$ mutually believe that
+%   \textit{$\textbf{R}_\alpha$} is the recipe for $\alpha$.
+%   \item For each step \textit{$A_i$} in recipe \textit{$\textbf{R}_\alpha$}:
+%   \begin{itemize}
+%     \item A subgroup $\Theta_j$ has an \textit{FSP} for \textit{$A_i$}, using
+%     recipe \textit{${\textbf{R}_A}_i$}.
+%     \item Other members of group $\Theta$ believe that there exists a recipe
+%     such that subgroup $\Theta_j$ can bring about \textit{$A_i$} and have an FSP
+%     for \textit{$A_i$}.
+%     \item Other members of group $\Theta$ intend that subgroup $\Theta_j$ can
+%     bring about \textit{$A_i$} using some recipe.
+%   \end{itemize}
+% \end{enumerate}
 
-Most times a team and its members do not possess an \textit{FSP} to achieve
-their shared goal. SharedPlans uses the concept of \textit{PSP} as a snapshot of
-the team's mental states in different situations, which further leads to
-communication and planning to fulfill the conditions of an \textit{FSP}. The
-idea behind \textit{PSP} is enabling the agents to modify the shared plan over
-the course of planning without impairing the achievement of the shared goals.
-Notice that for the same reason recipes also can be partial
+Most times a team and its members do not possess a \textit{FSP} to achieve
+their shared goal until it is done. SharedPlans uses the concept of \textit{PSP}
+as a snapshot of the team's mental states in different situations, which further
+leads to communication and planning to fulfill the conditions of a \textit{FSP}.
+The idea behind \textit{PSP} is enabling the agents to modify the shared plan
+over the course of planning without impairing the achievement of the shared
+goals. Notice that for the same reason recipes also can be partial
 \cite{grosz:collaboration, grosz:plans-discourse}.
 
 \subsubsection{Communicating Intentions}
@@ -725,7 +729,7 @@ member. A joint intention is viewed not only as a persistent commitment of the
 team to a shared goal, but also implies a commitment on the part of all its
 members to a mutual belief about the state of the goal. In other words, Joint
 Intentions theory describes how a team of agents can jointly act together by
-sharing mental states about their actions while an intention is viewed as a
+sharing mental states about their actions where an intention is viewed as a
 commitment to perform an action.
 
 In \cite{cohen:teamwork} Cohen and Levesque establish that a joint intention
@@ -1069,7 +1073,9 @@ There is significant practical research focusing on different aspects of
 collaboration based on different collaboration theories, i.e., SharedPlans,
 Joint Intentions, and hybrid theories of collaboration. In this section, we
 provide some examples of implemented homogeneous and heterogeneous agent/robot
-and human collaborations.
+and human collaborations. {\color{red}Some of these works also integrate the
+concept of emotions, but neither of them focuses on using affect-driven
+process to maintain collaboration structure.}
 
 Some work focuses on the concepts of robot assistants
 \cite{clancey:agent-assistants-collaboration}, or teamwork and its challenges at
@@ -1143,7 +1149,7 @@ Support Systems is proposed and discussed. The decisional model that authors
 outline in this paper is based on the SharedPlans theory. Rauenbusch and Grosz
 in \cite{rauenbusch:decision-making-planning} formally define a search problem
 with search operators that correspond to the team planning decisions. They
-provide an algorithm for making the three types of interrelated decisions by
+provide an algorithm for making three types of interrelated decisions by
 recasting the problem as a search problem. Their model respects the constraints
 on mental states specified by the SharedPlans theory of collaboration. Babaian
 et.\,al.\,in \cite{babaian:writers-assistant} describe Writer's Aid, a system
@@ -1160,15 +1166,12 @@ cognitive robot that acts in the presence of or in collaboration with a human
 partner. They describe a Human Aware Task Planner (HATP) which is designed to
 provide socially acceptable plans to achieve collaborative tasks. They use
 notions of plans based on SharedPlans theory. In \cite{sidner:enagagement-robot}
-Sidner and Dzikovska argue that robots, in order to participate in conversations
-with humans, need to make use of the conventions of conversation and the means
-to be connected to their human counterparts. They conducted an initial research
-on engagement in human-human interaction and applications to stationary robots
-performing hosting activities, such as tutoring and sales. They believe hosting
-activities are collaborative because neither party completely determines the
-goals to be undertaken nor the means of reaching the goal. To build a robot
-host, they rely on an agent built using COLLAGEN which is a tool based on the
-SharedPlans theory.\\
+Sidner and Dzikovska conducted an initial research on engagement in human-human
+interaction and applications to stationary robots performing hosting activities,
+such as tutoring and sales. They believe hosting activities are collaborative
+because neither party completely determines the goals to be undertaken nor the
+means of reaching the goal. To build a robot host, they rely on an agent built
+using COLLAGEN which is a tool based on the SharedPlans theory.\\
 
 \textbf{Applications of Joint Intentions Theory} -- In \cite{kinny:planned-team}
 authors introduce a language for representing joint plans for teams of agents.
@@ -1263,7 +1266,9 @@ discuss the dimensional theory, and we briefly cover other approaches, e.g.
 discrete (basic) emotions.}
 
 \subsection{Affect and Emotions}
-Emotion influences not only what people do, but also the way they do it
+{\color{red} Affect is the representation of agent's emotional state in
+some form which could be the current instance of the agent's emotion.} Emotion
+influences not only what people do, but also the way they do it
 \cite{cowie:concepts-definitions}. Aristotle in \emph{The Nicomachean Ethics}
 reveals his idea about emotions. He says ``Anyone can become angry--that is
 easy. But to be angry with the right person, to the right degree, at the right
@@ -1462,19 +1467,19 @@ actions to reveal or hinder an intention, but also can control the way that
 action should be taken.
 
 A successful and effective emotional communication necessitates ongoing
-reciprocal adjustments between interactants that can happen by interpreting each
-other's behaviors \cite{parkinson:emotion-social-interaction}. It not only
-requires proper interpretation of the other's expressions, but also correct
-assessment of the extent to which others can read an individual's expressions.
-In emotional communication, individuals are constantly exchanging messages about
-their mental states, and modifying each other's emotional responses as they
-occur. Individuals perceive others' emotional states by processing verbal and
-nonverbal messages during the interaction. Communication dynamics represent the
-temporal relationship between these communicative messages. The verbal and
-nonverbal messages from one participant are interpreted inside the context
-including the history and the ongoing messages from the other individuals.
-Interpersonal dynamics (also known as micro-dynamics in sociology) represent
-this influence of relationships between individuals
+reciprocal adjustments between interacting individuals that can happen by
+interpreting each other's behaviors \cite{parkinson:emotion-social-interaction}.
+It not only requires proper interpretation of the other's expressions, but also
+correct assessment of the extent to which others can read an individual's
+expressions. In emotional communication, individuals are constantly exchanging
+messages about their mental states, and modifying each other's emotional
+responses as they occur. Individuals perceive others' emotional states by
+processing verbal and nonverbal messages during the interaction. Communication
+dynamics represent the temporal relationship between these communicative
+messages. The verbal and nonverbal messages from one participant are interpreted
+inside the context including the history and the ongoing messages from the other
+individuals. Interpersonal dynamics (also known as micro-dynamics in sociology)
+represent this influence of relationships between individuals
 \cite{louis:communication-dynamic}.
 
 \subsection{Social Functions of Emotions}
@@ -1501,27 +1506,27 @@ feelings, relational orientations and behavioral intentions based on their
 emotional expressions. He also argues that emotional expressions can impact
 social interactions by eliciting others' affective responses.
 
-Functional accounts vary according to the kind of system being analyzed.
-Thus, functional approaches to the emotions vary by level of analysis. Social
-functions of emotions can be analyzed in \textit{individual, dyadic, group} and
-\textit{cultural} levels. The focus of this research is on social functions in
-dyadic interaction (more specifically collaboration); these functions are also
-considered at the individual's level especially when interpreting the other
-collaborator's behaviors. Studies in all these levels share a few assumptions:
-a) individuals are social by nature and pursue solutions to survival problems in
-social relationships, b) individuals apply their emotions to coordinate their
-social interactions and relationships to address these survival problems, c)
-emotions are processes mediating the individuals' relations to their dynamic
-environment \cite{keltner:emotion-functions}. In dyadic interactions, studies
-focus on how emotions impact the interactions of individuals in meaningful
-relationships. In \cite{keltner:emotion-functions} Keltner and Haidt discuss
-that in a dyadic setting, researchers mostly focus on communication of emotion
-(e.g.\,Scherer \cite{scherer:vocal-expression}, DePaulo
-\cite{depaulo:nonverbal-behavior}), properties (e.g.\,emotion contingency,
-emotion synchrony) of dyadic emotions (e.g.\,Levenson \& Gottman
-\cite{levenson:affective-exchange}), discourse (e.g.\,Bretherton
-\cite{bretherton:emotions-functionalist}), and attachments (e.g. Hazan \& Shaver
-\cite{hazan:emotion-attachment}).
+Functional accounts of emotions vary according to the kind of system being
+analyzed. Thus, functional approaches to the emotions vary by level of analysis.
+Social functions of emotions can be analyzed in \textit{individual, dyadic,
+group} and \textit{cultural} levels. The focus of this research is on social
+functions in dyadic interaction (more specifically collaboration); these
+functions are also considered at the individual's level especially when
+interpreting the other collaborator's behaviors. Studies in all these levels
+share a few assumptions: a) individuals are social by nature and pursue
+solutions to survival problems in social relationships, b) individuals apply
+their emotions to coordinate their social interactions and relationships to
+address these survival problems, c) emotions are processes mediating the
+individuals' relations to their dynamic environment
+\cite{keltner:emotion-functions}. In dyadic interactions, studies focus on how
+emotions impact the interactions of individuals in meaningful relationships. In
+\cite{keltner:emotion-functions} Keltner and Haidt discuss that in a dyadic
+setting, researchers mostly focus on communication of emotion (e.g.\,Scherer
+\cite{scherer:vocal-expression}, DePaulo \cite{depaulo:nonverbal-behavior}),
+properties (e.g.\,emotion contingency, emotion synchrony) of dyadic emotions
+(e.g.\,Levenson \& Gottman \cite{levenson:affective-exchange}), discourse
+(e.g.\,Bretherton \cite{bretherton:emotions-functionalist}), and attachments
+(e.g. Hazan \& Shaver \cite{hazan:emotion-attachment}).
 
 \subsubsection{Examples of Social Emotions:}
 
@@ -1783,11 +1788,11 @@ strategies}. In fact, the coping mechanism manages the individual's action with
 respect to the individual's emotional state and the existing internal and/or
 external demands \cite{folkman:coping-pitfalls-promise}. The majority of
 computational models of emotions take this approach. An individual can also use
-knowledge about the emotional reactions of others to make inferences about them.
-According to the appraisal patterns, different emotions can be experienced and
-expressed. Since expression of emotions reflects one's intentions through the
-appraisal process, the \textit{reverse appraisal} mechanism helps one to infer
-others' mental states based on their expressions.
+knowledge about the emotional reactions of others to make inferences about the
+others. According to the appraisal patterns, different emotions can be
+experienced and expressed. Since expression of emotions reflects one's
+intentions through the appraisal process, the \textit{reverse appraisal}
+mechanism helps one to infer others' mental states based on their expressions.
 \cite{gratch:reverse-appraisal, hareli:emotional-reaction-perception}.
 
 The appraisal process is typically viewed as the cause of emotion and the
@@ -2564,7 +2569,7 @@ applying the concept of theory of mind is crucial in social interaction and
 collaboration, this thesis includes a simple ToM mechanism inspired by this
 previous work.
 
-\section{Conclusion}
+\section{Summary}
 
 In this chapter, we started by defining the concept of collaboration based
 on Grosz and Sidner's work \cite{grosz:plans-discourse}, and listed a number of
