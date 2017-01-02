@@ -2483,8 +2483,11 @@ of which have received attention as the basis for computational models. In
 human motives, of which three have received attention in psychology and
 artificial intelligence as social motives
 \cite{merrick:acheievement-affiliation-power,
-zurbriggen:linking-motives-emotions}. The following is a brief description of
-these three social motives, \textit{achievement, affiliation} and \textit{power}
+zurbriggen:linking-motives-emotions}. {\color{red}Our work on motives has been
+inspired by some of these work in the literature. However, we have developed our
+own motive types and their computational models (see Section
+\ref{sec:motivation_mechanism}).} The following is a brief description of these
+three social motives, \textit{achievement, affiliation} and \textit{power}
 \cite{atkinson:motives-action-society,zurbriggen:linking-motives-emotions}
 which will be used in this thesis:
 
@@ -3784,11 +3787,13 @@ about any other proposition.
 \vspace*{-3mm}
 {\color{red}Our computational framework includes all the mechanisms discussed in
 Chapter \ref{ch:amct}. The emphasis of our implmentation is on Appraisal, Coping,
-Collaborartion, and Motivation mechanisms. In this chapter, we provide concrete
-algorithms for the theoretical concepts discussed in Chapter \ref{ch:amct}.
-These algorithms have been implemented as part of the AMC framework. We also
-evaluated these algorithms and the overall system in an end-to-end system
-evaluation user study (see Chapter \ref{ch:awareness}).} 
+Collaborartion, and Motivation mechanisms, and in general the reciprocal
+influence of Appraisal and Collaboration mechanisms (see Section
+\ref{sec:goal-management}). In this chapter, we provide concrete algorithms for
+the theoretical concepts discussed in Chapter \ref{ch:amct}. These algorithms
+have been implemented as part of the AMC framework. We also evaluated these
+algorithms and the overall system in an end-to-end system evaluation user study
+(see Chapter \ref{ch:awareness}).}
 
 There are several appraisal models (e.g., EMA \cite{marsella:ema-process-model})
 contributing in different applications such as social sciences, virtual agents,
@@ -3844,8 +3849,10 @@ focused goal is the goal that the robot currently pursues.}.
 
 Here, we describe the methods which retrieve information about the collaboration
 structure, and are used in our algorithms to compute the values of appraisal
-variables. In these methods, $\varepsilon_t$ is the event corresponding to time
-\textit{t}, and $g_t$ is a given goal at time \textit{t}.
+variables. Some of these methods use the \textit{focus stack} which includes a
+stack of goals and the top goal on the focus stack represents the current
+pursuing goal. In these methods, $\varepsilon_t$ is the event corresponding to
+time \textit{t}, and $g_t$ is a given goal at time \textit{t}.
 
 \begin{itemize}
   \setlength\itemsep{1mm}
@@ -4594,7 +4601,7 @@ goals in the form of a shared plan which contains both the robot and the human
 collaborator's goals. The robot pursues the goals for which the robot is
 responsible in the shared plan. However, there can be several live goals
 available for the robot to pursue at each point in time during collaboration. A
-goal is live if all of its predecessors are achieved and all of its
+goal is live \textit{iff} all of its predecessors are achieved and all of its
 preconditions are satisfied. Therefore, a collaborative robot requires a
 mechanism to choose between a set of live goals. We believe appraisal processes
 are crucial to choose between the available live goals, since the appraisals are
@@ -4785,12 +4792,12 @@ strategy is activated the Coping mechanism provides the selected intention to
 the Action mechanism. The Action mechanism executes an action based on the given
 intention to achieve the corresponding goal in the shared plan.
 
-\begin{sidewaysfigure}
+\begin{sidewaystable}
   \centering
-  \includegraphics[width=1\textwidth]{figure/coping_algorithms_short_croped.pdf}
   \caption{Conditions for selecting candidate coping strategies}
   \label{fig:coping_strategies}
-\end{sidewaysfigure}
+  \includegraphics[width=1\textwidth]{figure/coping_algorithms_short_croped.pdf}
+\end{sidewaystable}
 
 \subsection{Active Coping}
 \label{sec:active-coping}
@@ -4842,7 +4849,10 @@ help.
 The \textit{acceptance} coping strategy forms an intention to drop the
 intention of pursuing a goal. In our framework, if this strategy becomes
 activated, the intention to pursue the current goal will be dropped; see Figure
-\ref{fig:coping_strategies}. The acceptance strategy also forms an intention to
+\ref{fig:coping_strategies}. {\color{red}For instance, if the human has failed
+to achieve a goal due to the lack of a required input, and the agent is not able to pursue
+another goal and the agent is not able to provide the required input, this
+strategy becomes activated.} The acceptance strategy also forms an intention to
 inform the human collaborator about the agent's decision on not pursuing the
 current goal.
 
@@ -4915,11 +4925,30 @@ goal-driven emotion-regulated constructs indicating an urge related to their
 goal. There are several motives in psychological and computational literatures
 as we reviewed in Chapter \ref{ch:background}. However, none of these
 computational models have particularly focused on the application of motives in
-the collaboration context. In our framework, we have developed computational
-models for \textit{satisfaction}, \textit{achievement}, and \textit{external}
-motives. We use the values of these three motives in other mechanisms including
-the Coping mechanism as we described in Section \ref{sec:coping-mechanism} and
-show in Figure \ref{fig:coping_strategies}.
+the collaboration context. {\color{red}We believe motives have a key role to
+fill the gap between the Appraisal and Coping mechanisms in a collaborative
+environment. In fact motives can improve the intention formation process with
+respect to the urge of pursuing a goal by considering the emotional states of
+the collaborators. As shown in Table \ref{fig:coping_strategies}, it is not
+enough to choose a particular coping strategy only by knowing how controllable
+is pursuing the given goal. For instance, motive values can help the agent to
+choose between \textit{Acceptance} and \textit{Mental Disengagement} when
+pursuing a goal is not controllable.}
+
+{\color{red}As mentioned in Chapter \ref{ch:background}, we provided three types
+of prominent motives in the literatue; i.e., \textit{achievement, affiliation} and
+\textit{power}. However, due to the fact that not all of these motives fit to
+the dyadic collaboration context, we developed our own computational models of
+motives in our framework, including: \textit{satisfaction},
+\textit{achievement}, and \textit{external} motives. Our approach in general is
+inspired by the Merrick and Shafi's work in
+\cite{merrick:acheievement-affiliation-power} modeling motives using curves
+generated by sigmoid functions. In our work, curves are influenced by the
+valence of human collaborator's perceived emotion. This section provides more
+details about how different curves model different motives in our computational
+framework.} We use the values of these three motives in other mechanisms
+including the Coping mechanism as we described in Section
+\ref{sec:coping-mechanism} and show in Table \ref{fig:coping_strategies}.
 
 \subsection{Satisfaction Motive}
 The satisfaction motive indicates the satisfaction level with the collaboration
@@ -4960,6 +4989,9 @@ same function in $(0, \infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
     \label{eqn:satisfaction_motive}
 \end{equation}
 
+{\color{red}The curves, shown in Figure \ref{fig:satisfaction-motive-functions},
+suitably represent the change in magnitude of satisfaction motive based on
+different valence values of human collaborators emotion.}
 Intuitively, if the human collaborator does not express any emotion, the
 satisfaction motive's value can vary between -1 and +1 (blue curve in Figure
 \ref{fig:satisfaction-motive-functions}). However, if the agent perceives
@@ -5069,35 +5101,39 @@ perceived emotion is negative or zero.
 Intuitively, when the human proposes a new goal while expressing a negative
 emotion the agent should be more motivated to acknowledge human's proposal and
 pursue the proposed goal to mitigate human's negative emotion and maintain the
-collaboration.
+collaboration. {\color{red}For example, when the human collaborator is worried
+about the failure of attaching a solar panel due to a malfunction of a tool,
+and proposes the robot to attach the panel, the high value of the external
+motive causes the robot to accept the human's proposal.}
 
 \section{Theory of Mind}
 \label{sec:theory-of-mind-implementation}
-The Theory of Mind mechanism uses the collaboration structure and functions
-described in Section \ref{sec:collaboration-mechanism} as well as appraisal
+{\color{red}The Theory of Mind mechanism uses the collaboration structure and
+functions described in Section \ref{sec:collaboration-mechanism} as well as appraisal
 processes to form anticipated beliefs about the human's mental and emotional
-states. The agent uses the collaboration structure during the human's turn to
-compute appraisal values with respect to the human's current emotional state and
-the current goal in the shared goal structure. The outcome of the reverse
-appraisal forms beliefs about the anticipated mental and emotional state of the
-human collaborator.
+states. In other words, since our agent knows about the human's goals (as part
+of the shared plan), it can apply the human goals to the same algorithms during
+the human's turn of the collaboration. The agent uses the collaboration
+structure during the human's turn to compute appraisal values with respect to
+the human's current emotional state and the current goal in the shared goal
+structure. The outcome of the reverse appraisal forms beliefs about the
+anticipated mental and emotional state of the human collaborator.}
 
+\subsubsection{Reverse Appraisal}
 We use the same \textit{relevance}, \textit{expectedness} and
 \textit{controllability} algorithms for the reverse appraisal as those
 algorithms we described in Section \ref{sec:appraisal}. In these three
 algorithms the Theory of Mind mechanism substitutes the agent's required goal
 and its corresponding constraints and information with the human's goal and its
 corresponding information which is provided to the agent within the shared plan
-structure. In other words, since our agent knows about the human's goals (as
-part of the shared plan), it can apply the human goals to the same algorithms during
-the human's turn of the collaboration. However, only for the reverse appraisal
-of \textit{desirability} we chose to simply use the valence value of the human's
-perceived emotion and interpret negative, neutral and positive valence values as
-undesirable, neutral and desirable values respectively. In this way, our agent
-could directly infer whether the occurrence of the current event and its
-corresponding goal is desirable for the human. The outcome of all of these
-processes is a vector of reverse appraisal values that could be used by other
-mechanisms in our framework.
+structure.  However, only for the reverse appraisal of \textit{desirability} we
+chose to simply use the valence value of the human's perceived emotion and
+interpret negative, neutral and positive valence values as undesirable, neutral
+and desirable values respectively. In this way, our agent could directly infer
+whether the occurrence of the current event and its corresponding goal is
+desirable for the human. The outcome of all of these processes is a vector of
+reverse appraisal values that could be used by other mechanisms in our
+framework.
 
 \section{Perception and Action}
 As described in Chapter \ref{ch:amct}, the Perception and Action mechanisms are
