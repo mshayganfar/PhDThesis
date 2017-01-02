@@ -3515,12 +3515,16 @@ processes in the Theory of Mind mechanism.
 
 Mental states are conscious states of the mind providing the content for
 cognitive processes. As we discussed \textit{Affective Motivational
-Collaboration Theory} operates with the following Mental States: beliefs,
-intentions, motives, goals and emotion instances. These Mental States possess
-attributes, each of which provides a discriminating and unique interpretation of
-the related cognitive entities. These Mental States' attributes are used in
-different cognitive processes such as the Appraisal mechanism and the Motivation
+Collaboration} theory operates with the following Mental State: beliefs,
+intentions, motives, goals and emotion instances. This Mental State possesses
+attributes, each of which provides a unique interpretation of the related
+cognitive entities. These Mental State's attributes are used in different
+cognitive processes such as the Appraisal mechanism and the Motivation
 mechanism. We provide more details about these attributes in this section.
+Attributes that are implemented in our computational framework in Chapter
+\ref{ch:appraisals} are marked with an asterisk throughout this section.
+{\color{red}All of the attribute values have a scale, e.g., [0, 1], in our
+computational framework.}
 
 \subsection{Attributes of Beliefs}
 
@@ -3528,31 +3532,31 @@ The attributes of a belief are involved different processes in \textit{Affective
 Motivational Collaboration} theory. They impact the evaluation of an event by
 the Appraisal mechanism, generation of new motives, updates on the collaboration
 plan, activation of coping strategies and ultimately the self's behavior. The
-following six attributes of beliefs are most related to \textit{Affective
+following six attributes of beliefs are related to \textit{Affective
 Motivational Collaboration} theory.
 
 \begin{itemize}
-  \item \textbf{\textit{Strength:}} Belief strength is about how strong the self
-  holds salient beliefs about an object, an entity, or an anticipated behavior.
-  It can be measured through scales, for instance, how probable or likely that
-  belief is, or just whether it is true or false. The strength of a belief can
-  impact the self's appraisal processes, e.g. relevance (see Relevance algorithm
-  in Chapter \ref{ch:appraisals}). A belief may be strong, but not necessarily
-  accurate, and vice versa.
+  \item \textbf{\textit{Strength*:}} Belief strength is about how rigorously
+  the self holds salient beliefs about an object, an entity, or an anticipated
+  behavior. It can be measured through scales, for instance, how probable or
+  likely that belief is, or just whether it is true or false. The strength of a
+  belief can impact the self's appraisal processes, e.g. relevance (see
+  Relevance algorithm in Chapter \ref{ch:appraisals}). A belief may be strong,
+  but not necessarily accurate, and vice versa.
   
-  \item \textbf{\textit{Saliency:}} The saliency of a belief is a cognitive
+  \item \textbf{\textit{Saliency*:}} The saliency of a belief is a cognitive
   attribute that pertains to how easily the self becomes aware of a belief.
   This property of a belief has a prominent influence on the self's attention
   during collaboration. It directs the self's focus of attention to the most
   pertinent spatio-temporal salient event (see Relevance algorithm in Chapter
   \ref{ch:appraisals}).
   
-  \item \textbf{\textit{Persistence:}} It is argued that beliefs form and change
-  due to cognitive and social considerations \cite{carley:belief-persistence}.
-  Persistent beliefs are very resistant to these changes. However, even
-  persistent beliefs can change. Persistence of goal-related belief(s)
-  influences the appraisal of the relevancy of an event (see Relevance
-  algorithm in Chapter \ref{ch:appraisals}).
+  \item \textbf{\textit{Persistence*:}} It is argued that beliefs form and
+  change due to cognitive and social considerations
+  \cite{carley:belief-persistence}. Persistent beliefs are very resistant to
+  these changes. However, even persistent beliefs can change. Persistence of
+  goal-related belief(s) influences the appraisal of the relevancy of an event
+  (see Relevance algorithm in Chapter \ref{ch:appraisals}).
   
   \item \textbf{\textit{Recency:}} The recency of a belief refers to how
   temporally close a particular belief is to the current state of collaboration.
@@ -3564,7 +3568,7 @@ Motivational Collaboration} theory.
   adopting an appropriate Coping mechanism.
   
   \item \textbf{\textit{Accuracy:}} Accuracy of a belief is the relation between
-  that belief and the truth which that belief is about. The accuracy of a belief
+  that belief and the fact which that belief is about. The accuracy of a belief
   can be measured by looking at how closely that belief can relate to the truth.
   The accuracy of a belief as a gradational property can be used in evaluative
   processes of the self, i.e., Appraisal. It can also impact the self's other
@@ -3586,11 +3590,11 @@ Collaboration Theory}, especially the processes involved in Motivation and
 Appraisal mechanisms. The attributes of a goal are important because the
 Motivation and the Appraisal mechanisms in this theory are goal-driven and
 attribution of the goals according to the self's standards provides coherency of
-the processes and their outcomes. We discuss the three most relevant goal
-attributes in this section.
+the processes and their outcomes. We discuss three relevant goal attributes used
+in our computational framework in this section.
 
 \begin{itemize}
-  \item \textbf{\textit{Proximity:}} Goals can be distinguished by how far they
+  \item \textbf{\textit{Proximity*:}} Goals can be distinguished by how far they
   project into the future during the collaboration. Proximal (short-term) goals
   result in more related motives and subsequently better self and
   social-regulation than temporally distant goals. Proximal goals can impact
@@ -3599,7 +3603,7 @@ attributes in this section.
   self can determine and maintain the collaboration progress towards the shared
   goal more accurately while operating based on proximal goals.
   
-  \item \textbf{\textit{Specificity:}} Goals incorporating specific performance
+  \item \textbf{\textit{Specificity*:}} Goals incorporating specific performance
   standards are more likely to enhance the self's self-evaluation than general
   goals. Specific goals raise the self-evaluation performance, because they
   provide a more accurate baseline for the mechanisms, e.g., Appraisal or
@@ -3612,7 +3616,7 @@ attributes in this section.
   them with a material C is a more specific goal than a general goal of
   installing an object on another one.
   
-  \item \textbf{\textit{Difficulty:}} Goals that are moderately difficult have
+  \item \textbf{\textit{Difficulty*:}} Goals that are moderately difficult have
   the most impact on the self and social regulation processes of the self.
   Conversely, overly easy or impossible goals usually do not motivate an
   individual to achieve the goal. Difficult goals increase the probability of a
@@ -3630,17 +3634,17 @@ attributes in this section.
 
 According to Sloman, motives can be compared on various dimensions
 \cite{sloman:motivation}. This comparison is based on motive attributes. In
-\textit{Affective Motivational Collaboration Theory} motives are formed based on
-the self's existing Mental States under the influence of the Appraisal
-mechanism. The existence of different Mental States, and the results of self
-appraisal as well as the reverse appraisal of the other can cause a variety of
-motives to be formed. The Motivation mechanism needs a set of attributes to
-compare newly generated motives and choose the one which is most related to the
-current state of the collaboration. We have chosen the following five motive
-attributes as most related to the collaboration context.
+\textit{Affective Motivational Collaboration} theory motives are formed based
+on the self's existing Mental States under the influence of the Appraisal
+mechanism. Different Mental States, and the results of self appraisal as well as
+the reverse appraisal of the other can cause a variety of motives to be formed.
+The Motivation mechanism needs a set of attributes to compare newly generated
+motives and choose the one which is most related to the current state of the
+collaboration. We have chosen the following five motive attributes as most
+related to the collaboration context.
 
 \begin{itemize}
-  \item \textbf{\textit{Importance:}} The importance of a motive is determined
+  \item \textbf{\textit{Importance*:}} The importance of a motive is determined
   by the corresponding beliefs about the effects of achieving or not achieving
   the associated goal (see Section \ref{sec:relevance} in Chapter
   \ref{ch:appraisals}). It is a function of belief attributes (e.g., saliency)
@@ -3648,10 +3652,10 @@ attributes as most related to the collaboration context.
   the current goal with relatively high attribute values, that motive will
   become important for the self.
   
-  \item \textbf{\textit{Urgency:}} The urgency of a motive defines how much time
-  the self has to acknowledge and address that motive before it is too late.
-  The urgency of a motive is a function of beliefs about the other's mental
-  and emotional state (see Section \ref{sec:relevance} in Chapter
+  \item \textbf{\textit{Urgency*:}} The urgency of a motive defines how much
+  time the self has to acknowledge and address that motive before it is too
+  late. The urgency of a motive is a function of beliefs about the other's
+  mental and emotional state (see Section \ref{sec:relevance} in Chapter
   \ref{ch:appraisals}). For instance, the self responds to an urgent motive due
   to the existence of an important anticipated outcome for the other, and
   limited time to accomplish the corresponding tasks, even if those tasks are
@@ -3675,10 +3679,10 @@ attributes as most related to the collaboration context.
   ultimately the collaboration.
   
   \item \textbf{\textit{Failure Disruptiveness:}} The failure disruptiveness
-  attribute of a motive determines how disruptive failure is to achieving the
-  corresponding goal. In other words, it gives the self a measure of the
-  pleasantness of achieving a related goal. This attribute directs the self's
-  behavior toward positive and negative outcomes during collaboration.
+  attribute of a motive determines how significant an interruption failure is to
+  achieving the corresponding goal. In other words, it gives the self a measure
+  of the pleasantness of achieving a related goal. This attribute directs the
+  self's behavior toward positive and negative outcomes during collaboration.
 \end{itemize}
 
 \subsection{Attributes of Intentions}
@@ -3760,13 +3764,14 @@ Motivational Collaboration Theory}.
 Each emotion has its own functionality at either the intrapersonal or
 interpersonal level. Emotions not only regulate the self's internal processes,
 but also assist the self to anticipate the other's Mental State. In this
-section, we provide the description of some of the emotions that can be elicited
+section, we provide the description of the emotions that can be elicited
 during collaboration, and are involved in our scenario (see Section
-\ref{sec:example-scenario}). In this theory, to avoid the controversial issue of
-whether virtual agents or robots can feel emotions, we are going to use the
-convention of having emotions by the agent or the robot. The agent can also
-possess beliefs about an emotion instance which is similar to having beliefs
-about any other proposition.
+\ref{sec:example-scenario}). {\color{red}Some of these emotions are modeled in
+Chapter \ref{ch:appraisals} (see Table \ref{fig:emotion_elicitation}).} In this
+theory, to avoid the controversial issue of whether virtual agents or robots can
+feel emotions, we are going to use the convention of having emotions by the
+agent or the robot. The agent can also possess beliefs about an emotion instance
+which is similar to having beliefs about any other proposition.
 
 \begin{itemize}
   \item \textbf{\textit{Joy:}} Joy is the state of an individual's well-being
@@ -3808,8 +3813,44 @@ about any other proposition.
   individual's concern can be about a real or an imagined issue. Worry implies a
   fear of a future failure about which one should make a decision or take an
   action at present.
-  
 \end{itemize}
+
+\section{Summary}
+\label{sec:theory-summary}
+{\color{red}
+The purpose of \textit{Affective Motivational Collaboration} theory is to
+explain how to integrate affect-driven processes into collaboration context.
+\textit{Affective Motivational Collaboration} theory reveals the reciprocal
+influence of collaboration structure and the appraisal processes. In other
+words, the appraisal processes can evaluate a collaboration environment based on
+the information in collaboration structure. Reciprocally, the outcome of
+appraisals can be used by other processes to maintain progress during
+collaboration. We believe functions of emotions can be used as these processes
+to maintain the collaboration structure. Therefore, the required compoutational
+framework should include at least Collaboration and Appraisal mechanisms to
+implement this concept. However, a collaborative agent also needs to be able
+anticipate and interpret human collaborator's internal states, e.g., beliefs,
+emotions. The Theory of Mind mechanism's role in our architecture is to fulfill
+this concept. Furthermore, a collaborative agent should not only act based on a)
+emotional state, and b) capability of doing an action at a particular time. We
+believe the Motivation mechanism is required to reflect the collaborators' need
+into the formation of the agent's intentions. Motives are crucial mental
+constructs since they are emotion-regulated (hence, they are influenced by
+emotions' antecedents, e.g., beliefs), and they are goal-oriented (hence, they
+can impact the congruency of intentions and actions). Finally, the Coping
+mechanism works conjointly with Motivation and Appraisal mechanisms to form
+appropriate intentions with respect to the collaboration status. All of these
+mechanisms operate based on a knowledge base which includes different elements
+of mental state as we discussed in this chapter. However, all the processes
+involved in different mechanisms can process or update certain aspect of an
+element. Thus, the \textit{Affective Motivational Collaboration} theory includes
+definition of the attributes for all of these elements. In this chapter, we also
+discussed how different mechanisms can handle events during the collaboration.
+We believe, verbal and nonverbal behaviors are loaded with the information that
+can impact collaborators' decisions when they occur. Thus, we consider both
+types of behaviors to be interpreted by our architecture as events during the
+collabortion. In Chapter \ref{ch:appraisals}, we use these theoretical concepts
+to discuss the implementation of our computational framework.} 
 
 \chapter{Computational Framework}
 \label{ch:appraisals}
