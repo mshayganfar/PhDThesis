@@ -44,3 +44,6 @@
 \addvspace {10\p@ }
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Peanut butter sandwich instruction}}}{213}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiled egg sandwich instruction}}}{213}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\color {green}Successful Task}}}{231}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\color {green}Successful Task}}}{231}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\color {red}Failed Task}}}{231}
