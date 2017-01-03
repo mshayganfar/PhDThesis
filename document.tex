@@ -114,33 +114,57 @@ Member}\\[0.5em] \Large\textnormal{\signature}\\
 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
-Traditional methods for Learning from Demonstration require users to train the
-robot through the entire process, or to provide feedback throughout a given task.
-These previous methods have proved to be successful in a selection of robotic do-
-mains; however, many are limited by the ability of the user to effectively demonstrate
-the task. In many cases, noisy demonstrations or a failure to understand the under-
-lying model prevent these methods from working with a wider range of non-expert
-users. My insight is that in many mobile pick-and-place domains, teaching is done
-at a too fine grained level. In many such tasks, users are solely concerned with the
-end goal. This implies that the complexity and time associated with training and
-teaching robots through the entirety of the task is unnecessary. The robotic agent
-needs to know (1) a probable search location to retrieve the task’s objects and (2)
-how to arrange the items to complete the task. This thesis work develops new tech-
-niques for obtaining such data from high-level spatial and temporal observations
-and demonstrations which can later be applied in new, unseen environments.
-This thesis makes the following contributions: (1) This work is built on a crowd
-robotics platform and, as such, we contribute the development of efficient data
-streaming techniques to further these capabilities. By doing so, users can more
-easily interact with robots on a number of platforms. (2) The presentation of new
-algorithms that can learn pick-and-place tasks from a large corpus of goal templates.
-My work contributes algorithms that produce a metric which ranks the appropriate
-frame of reference for each item based solely on spatial demonstrations. (3) An
-algorithm which can enhance the above templates with ordering constraints using
-coarse and noisy temporal information. Such a method eliminates the need for a
-user to explicitly specify such constraints and searches for an optimal ordering and
-placement of items. (4) A novel algorithm which is able to learn probable search
-locations of objects based solely on sparsely made temporal observations. For this,
-we introduce persistence models of objects customized to a user’s environment.
+{\color{red}
+A key aspect of the sociability of robots is their ability to collaborate with
+humans in the same environment. There are many challenges in achieving a
+successful collaboration between robots and humans. Existing computational
+models of collaboration explain some of the important concepts underlying
+collaboration; such as the presence of a rea- son for the collaborators’
+commitment, and the necessity of communicating about mental states in order to
+maintain progress over the course of a collaboration. The most prominent
+collaboration theories explain only the structure of a collaboration. Although
+existing collaboration theories explain the important elements of a
+collaboration structure, the underlying processes required to dynamically
+create, use, and maintain the elements of this structure are largely
+unexplained. Our insight is that in many collaborative situations acknowledging
+ot ignoring collaborator's emotions can maintain or impede smoother progress of
+the collaboration. For many of such situations, prominent collaboration theories
+do not explain what processes and how can maintain the collaboration structure
+and subsequently the collaboration progress. This implies that collaborative
+agents need to employ a series of processes that (1) can use the information in
+collaboration structure to evaluate different aspects of the collaboration
+status, and (2) can influence the collaboration structure when required. This
+thesis work develops a new affect-driven computational framework to achieve such
+objectives which can empower collaborative agents to be better collaborators.
+This thesis makes the following contributions: (1) This work is built on the
+combination of SharedPlans theory of collaboration and cognitive appraisal
+theory of emotions, as such, we contribute by introducing Affective
+Motivational Collaboration theory which contains theoretical concepts
+incorporating key notions of both theories in a dyadic collaboration context.
+Applying cognitive appraisal theory in the collaboration context is novel. Other
+models of the appraisal theory have not paid attention to the dynamics of the
+collaboration. (2) The development of new computational models and algorithms
+for Affective Motivational Collaboration framework. Our work contributes
+computational models and algorithms that compute the value of appraisal
+variables based on the collaboration structure in a dyadic collaboration.
+Reciprocally, we use the evaluative nature of the appraisal to make changes to
+the collaboration structure as required. We have also developed a new
+algorithm for emotion-driven goal management in the context of collaboration.
+This part of our work shows how appraisal components of the self and the human
+collaborator contribute to goal management as an emotion function. (3)
+Implemention of a computational system based on Affective Motivational
+Collaboration theory. In order to evaluate our computational models and
+algorithms within an interaction with human collaborators, we needed an overall
+functional system to perceive, process and act in a collaborative environment.
+we have implemented a computational system which employs our models and
+algorithms. The emphasis of the implementation is on the underlying cognitive
+processes of collaboration and appraisal, however the implementation also
+includes the Perception and the Action mechanisms. (4) Validation of Affective
+Motivational Collaboration theory. We have conducted two user studies a) to
+validate our appraisal algorithms before further development of our framework,
+and b) to investigate the overall functionality of our framework within an
+end-to-end system evaluation with participants and a robot.
+}
 
 \pagebreak
 
