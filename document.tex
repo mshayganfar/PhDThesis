@@ -1809,11 +1809,11 @@ appraisal variables include \cite{marsella:ema-process-model}:
   \item \textbf{Perspective:} The point of view in which an event will be
   judged, e.g. self or other.
   
-  \item \textbf{Desirability:} A desirable event advances a state of the utility
-  for an agent whose perspective is being taken, or if it is an
-  undesirable event, inhibits that.
+  \item \textbf{Desirability:} A desirable event advances the utility for an
+  agent whose perspective is being taken, or if it is an undesirable event,
+  inhibits that.
   
-  \item \textbf{Likelihood:} A measure of likelihood of the outcome.
+  \item \textbf{Likelihood:} A measure of how likely is the outcome.
   
   \item \textbf{Expectedness:} The extent to which the truth value of a state
   could have been predicted from causal interpretation.
@@ -1838,19 +1838,19 @@ models such as EMA \cite{gratch:domain-independent} use as control signals.
 These control signals enable or suppress the cognitive processes that operate on
 the causal interpretation of the appraisal patterns. The coping process controls
 the congruency of the actions according to these patterns. As it is shown below,
-in \cite{gratch:domain-independent} coping strategies are organized into two
-categories: \textit{problem-focused} and \textit{emotion-focused}.
-Problem-focused coping strategies can be applied when the agent must do
-something with respect to the problem, whereas emotion-focused coping works by
-changing one's interpretation of circumstances. The following is a short list of
-a broad range of coping strategies \cite{gratch:domain-independent}:
+coping strategies are organized into two categories: \textit{problem-focused}
+and \textit{emotion-focused}. Problem-focused coping strategies can be applied
+when the agent must do something with respect to the problem, whereas
+emotion-focused coping works by changing one's interpretation of circumstances.
+The following is a short list of a broad range of coping strategies
+\cite{gratch:domain-independent}:
 
 \begin{description}
   \item[Problem-focused coping] \hfill
 	\begin{itemize}
-	  \item \textbf{Active coping:} Taking active steps to remove or circumvent the
+	  \item \textbf{Active coping:} Taking steps to remove or circumvent the
 	  stressor,
-	  \item \textbf{Planning:} Coming up w/ action strategies,
+	  \item \textbf{Planning:} Coming up with action strategies,
 	  \item \textbf{Seeking social support for instrumental reasons:} Seeking
 	  advice, assistance, or information.
 	\end{itemize}
@@ -1933,13 +1933,13 @@ encountering events, agents or objects. These variables are as follows
 	\item Sense of reality (representing the degree to which the event, agent or
 	object in focus appear real to the person),
 
-	\item Proximity variable (representing the psychological proximity of an event,
+	\item Proximity variable (representing the psychological closeness of an event,
 	agent or object),
 
 	\item Unexpectedness (representing how surprising an event is for one, either
 	positive or negative),
 
-	\item Arousal (representing how arousing an event, agent or object is).
+	\item Arousal (representing how stimulating an event, agent or object is).
 \end{enumerate}
 
 \subsection{Other (Non-Appraisal) Computational Models}
@@ -2375,12 +2375,11 @@ personality or temperament \cite{gebhard:alma}
 also been used in robotics. For instance, researchers in
 \cite{lim:mei-motherese-ei} apply PAD's three-dimensional space to rate the
 pleasure, arousal and dominance of their Multimodal Emotional Intelligence robot
-(MEI) in each interaction with human subjects. Their goal is to introduce the
-first steps in MEI which can understand and express emotions in voice, gesture
-and gait. In \cite{zhang:service-robot-dimensional} researchers want to
-understand the effect of different interface features for a service robot. They
-use valence and arousal dimensions in their questionnaires to assess the
-perceived anthropomorphism of their service robot by subjects. In
+(MEI) in each interaction with human subjects by understanding and expressing
+emotions in voice, gesture and gait. In \cite{zhang:service-robot-dimensional}
+researchers want to understand the effect of different interface features for a
+service robot. They use valence and arousal dimensions in their questionnaires
+to assess the perceived anthropomorphism of their service robot by subjects. In
 \cite{klug:emotion-based-hri} researchers introduce the implementation of a
 dynamic personality for a robot based on a dimensional emotion model. They use
 WASABI's architecture \cite{becker:wasabi,becker:wasabi-description} as their
@@ -2452,10 +2451,14 @@ artificial agents \cite{breazeal:motivation-regulating-hri,
 dolores:socially-emotional, deSevin:motivational-model-agent,
 sellers:comprehensive-emotion-theory, velasquez:emotions-motivations-agents,
 wright:implementation-agent-architecture}. The motivation mechanism in our work
-is inspired by Murray's theory and Bach's approach on D$\ddot{o}$rner's theory.
-It is focused on the role of motives in cognitive processes, e.g.,
+is also inspired by Murray's theory and Bach's approach on D$\ddot{o}$rner's
+theory. It is focused on the role of motives in cognitive processes, e.g.,
 intention formation in coping, during collaboration, which will be discussed in
-Chapters \ref{ch:amct} and \ref{ch:appraisals}.
+Chapters \ref{ch:amct} and \ref{ch:appraisals}. {\color{red}Motives play an
+important role in maintaining the congruency of intentions due to the fact that
+they are regulated by emotions (which are the outcome of one's internal
+states, e.g., beliefs), and oriented by goals (which are the desired outcome one
+wants to achieve).}
 
 \subsection{Motives}
 
@@ -2526,7 +2529,7 @@ which will be used in this thesis:
   emotions during collaboration.
 \end{itemize}
 
-In \cite{zurbriggen:linking-motives-emotions} it is shown that success of a
+In \cite{zurbriggen:linking-motives-emotions} it is shown that failure of a
 power goal is associated with anger, confusion and disgust; success at an
 affiliation goal is associated with interest, happiness and feeling loved; and
 success at an achievement goal is associated with interest, surprise, happiness,
@@ -2595,7 +2598,7 @@ communicative aspects of a collaboration theory. We also understand the value of
 Joint Intentions theory due to its clarity and closeness to the foundations of
 collaboration concepts. These specifications of the Joint Intentions theory can
 make it applicable in multi-agent system designs and human-robot collaboration.
-We also consider hybrid approaches valuable, such as STEAM, if they clearly
+We also consider hybrid approaches valuable, such as STEAM, because they clearly
 understand drawbacks with existing theories and successfully achieve better
 collaborative agents by infusing different concepts from different theories.
 Although all these theories are well-defined and properly introduce
@@ -2618,8 +2621,17 @@ these theories, we were able to discuss the similarities and differences between
 these major theories. Finally, we provided applications of these theories in
 robotics and AI.
 
-We have developed our work based on computational models of emotions, it is
-good to follow well-established (in comparison with others) theoretical
+{\color{red}In general, we believe the key components provided by prominent
+computational collaboration theories could help us in better understanding of
+collaboration concepts and ultimately developing our computational models to
+be compatible with the collaboration structure. However, we believe these
+theories need to be expanded by a better understanding of a) the underlying
+processes leading to these strcuture, and b) the involvement of cognitive
+constructs that could be involved in these processes. Furthermore, we believe
+theories explaining the affect-driven processes could successfully model
+nebulous concepts in psychology to some degree.}
+We have developed our work based on computational models of emotions, because it
+is good to follow well-established (in comparison with others) theoretical
 foundations. These theories can be a guideline for our computational models, and
 they can explain more details of the structure or the processes involved in
 affective situations. However, we do not necessarily think that the
