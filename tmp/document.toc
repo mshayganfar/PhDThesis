@@ -125,8 +125,8 @@
 \contentsline {subsection}{\numberline {5.2.3}Results}{147}
 \contentsline {subsubsection}{Expectedness}{147}
 \contentsline {subsubsection}{Controllability}{148}
-\contentsline {subsubsection}{Desirability}{150}
-\contentsline {subsubsection}{Relevance}{151}
+\contentsline {subsubsection}{Desirability}{149}
+\contentsline {subsubsection}{Relevance}{150}
 \contentsline {subsection}{\numberline {5.2.4}Discussion}{153}
 \contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{153}
 \contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{154}
@@ -144,21 +144,21 @@
 \contentsline {subsubsection}{7-Point Likert Scale Survey Results}{163}
 \contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{171}
 \contentsline {subsubsection}{Impact of Demographics}{174}
-\contentsline {subsection}{\numberline {5.3.6}Discussion}{176}
-\contentsline {chapter}{\numberline {6}Conclusion}{178}
-\contentsline {section}{\numberline {6.1}Discussion}{178}
-\contentsline {section}{\numberline {6.2}Future Work}{180}
-\contentsline {chapter}{Appendix A}{212}
-\contentsline {subsubsection}{Instructions:}{212}
-\contentsline {subsubsection}{First Sandwich:}{212}
-\contentsline {subsubsection}{Second Sandwich:}{213}
-\contentsline {subsubsection}{Relevance Questionnaire:}{213}
-\contentsline {subsubsection}{Desirability Questionnaire:}{219}
-\contentsline {subsubsection}{Expectedness Questionnaire:}{223}
-\contentsline {subsubsection}{Controllability Questionnaire:}{226}
-\contentsline {chapter}{Appendix B}{230}
-\contentsline {subsubsection}{Instructions:}{230}
-\contentsline {subsubsection}{Success and Failure of Achieving a Task:}{231}
-\contentsline {subsubsection}{Order of Doing Tasks:}{232}
-\contentsline {subsubsection}{Your Objectives:}{232}
-\contentsline {subsubsection}{Playing Rules:}{233}
+\contentsline {subsection}{\numberline {5.3.6}Discussion}{177}
+\contentsline {chapter}{\numberline {6}Conclusion}{179}
+\contentsline {section}{\numberline {6.1}Discussion}{179}
+\contentsline {section}{\numberline {6.2}Future Work}{181}
+\contentsline {chapter}{Appendix A}{213}
+\contentsline {subsubsection}{Instructions \& Questionnaires for Crowd-Sourcing Study:}{213}
+\contentsline {subsubsection}{First Sandwich:}{213}
+\contentsline {subsubsection}{Second Sandwich:}{214}
+\contentsline {subsubsection}{Relevance Questionnaire:}{215}
+\contentsline {subsubsection}{Desirability Questionnaire:}{221}
+\contentsline {subsubsection}{Expectedness Questionnaire:}{225}
+\contentsline {subsubsection}{Controllability Questionnaire:}{228}
+\contentsline {chapter}{Appendix B}{232}
+\contentsline {subsubsection}{Instructions:}{232}
+\contentsline {subsubsection}{Success and Failure of Achieving a Task:}{233}
+\contentsline {subsubsection}{Order of Doing Tasks:}{234}
+\contentsline {subsubsection}{Your Objectives:}{234}
+\contentsline {subsubsection}{Playing Rules:}{235}
