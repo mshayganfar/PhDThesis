@@ -5985,31 +5985,35 @@ perception of the robot's understanding of human's emotions (5) the human's
 perception of the robot's understanding of human's and collaboration's goals and
 objectives (6) the human's feeling about the collaboration and (7) the human's
 perception of the human's and robot's mutual satisfaction with each other as
-collaborative partners. The questions presented are provided in Table
-\ref{fig:31questions-table}.
+collaborative partners. 
 
 \begin{table}
  \centering
  \caption{The 31 Likert scale questions organized according to their
  categories (hypotheses).}
  \label{fig:31questions-table}
- \includegraphics[width=1\textwidth]{figure/table1-croped.pdf}
+ \includegraphics[width=1\textwidth]{figure/31questions-table-croped.pdf}
 \end{table}
 \clearpage
 
-The results were analyzed using a two-tailed paired t-test to analyze the
-difference of means between the emotion ignorant and the emotion-aware
-condition. Refer to Figures \ref{fig:overall-performance} -
-\ref{fig:overall-satisfaction} for the results. Analysis of the results revealed
-no statistically significant difference or consistent pattern based on which
-condition the participant completed first.
+The results distributions were often skewed, due to the natural limits imposed
+by the Likert scale. Because the study was a within-subject study, and due to
+the skewness of the data, the results were analyzed using the Wilcoxon Signed
+Rank Test, with the normal approximation for large samples. For all questions,
+the Wilcoxon Signed Rank Test indicated that participants' rating of the
+emotion-aware condition was statistically significantly higher than the
+emotion-ignorant condition (except in reverse-scored questions, when it was
+lower). The questions and their p-values are provided in Table
+\ref{fig:31questions-table}. Analysis of the results revealed no statistically
+significant difference or consistent pattern based on which condition the
+participant completed first. In the following presentation of results, bar
+charts with sample means are presented for the purpose of illustration.
 
 \begin{figure*}[ht]
  \centering
  \includegraphics[width=0.8\textwidth]{figure/Overall-Likability.png}
  \vspace*{-5mm}
- \caption{Results of the Likert scale survey for Likability questions. The
- p-value for the difference between means is $\ll$0.001 for all questions.}
+ \caption{Results of the Likert scale survey for Likability questions.}
  \label{fig:overall-likability}
 \end{figure*}
 
@@ -6042,8 +6046,7 @@ emotion-ignorant robot.\\
 \begin{figure*}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Trust.png}
-\caption{Results of the Likert scale survey for questions related to trust. The
-p-value for the difference between means is $\ll$0.001 for all questions.}
+\caption{Results of the Likert scale survey for questions related to trust.}
 \label{fig:overall-trust}
 \end{figure*}
 
@@ -6052,8 +6055,7 @@ p-value for the difference between means is $\ll$0.001 for all questions.}
 \includegraphics[width=0.8\textwidth]{figure/Overall-Performance.png}
 \vspace*{-5mm}
 \caption{Results of the Likert scale survey for questions related to the robot's
-performance. The p-value for the difference between the means for questions 10,
-11 and 12 are 0.001, 0.063 and $\ll$0.001, respectively.}
+performance.}
 \label{fig:overall-performance}
 \end{figure*}
 
@@ -6066,15 +6068,14 @@ robot's average response being about 1.1 points higher than the emotion-aware.
 This result correlates with several of the open-ended responses which described
 the emotion-aware robot's behaviors as ``cute'' and ``interesting'', refer to
 Section \ref{sec:Open-Ended}. Question 11, which asks about the efficiency of
-the robot's decisions is the only question of the 31 questions that did not have
-a statistically significant difference between the emotion-aware and the
-emotion-ignorant case. This correlates with the result of the open-ended
-question asking which condition of the robot exhibited behaviors that could
-prevent human error (refer to \ref{sec:Open-Ended}); in response to this
-question, several respondents stated that it may be quicker or simpler to call
-the supervisor in the event of a task failure, rather than changing the order of
-the tasks. According to the results from Question 12, the participants felt that
-the emotion-aware robot's decisions during collaboration improved their own
+the robot's decisions is the question with the highest p-value of the 31
+questions. This correlates with the result of the open-ended question asking
+which condition of the robot exhibited behaviors that could prevent human error
+(refer to \ref{sec:Open-Ended}); in response to this question, several
+respondents stated that it may be quicker or simpler to call the supervisor in
+the event of a task failure, rather than changing the order of the tasks.
+According to the results from Question 12, the participants felt that the
+emotion-aware robot's decisions during collaboration improved their own
 performance, with an average rating of 5.4, while the emotion-ignorant robot
 only received an average rating of 3.3, indicating that participants felt it was
 not able to interact in such a way as to increase the human's performance; refer
@@ -6097,9 +6098,7 @@ of all five questions in this category support Hypothesis 4. \\
 \includegraphics[width=0.8\textwidth]{figure/Overall-Emotions.png}
 \vspace*{-5mm}
 \caption{Results of the Likert scale survey for the questions related to the
-robot's understanding of human emotions. The p-value for the difference between
-the means is $\ll$0.001 for all of the questions except Question 14, for which
-the p-value is 0.003.}
+robot's understanding of human emotions.}
 \label{fig:overall-emotions}
 \end{figure*}
 
@@ -6128,8 +6127,7 @@ will better understand their goals than the emotion-ignorant robot.\\
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Goals.png}
 \caption{Results of the Likert scale survey for questions related to the robot's
-understanding of goals. The p-value for the difference between the means for all
-questions is $\ll$0.001, except Question 19, for which the p-value is 0.006.}
+understanding of goals.}
 \label{fig:overall-goals}
 \end{figure*}
 
@@ -6137,9 +6135,7 @@ questions is $\ll$0.001, except Question 19, for which the p-value is 0.006.}
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Collaboration.png}
 \caption{Results of the Likert scale survey for questions related to the human's
-feeling about the collaboration. The p-value for the difference between the
-means is $\ll$0.001 for questions 22, 25, 26, and 28. The p-value for Questions
-23, 24 and 27 are 0.02, 0.008 and 0.001, respectively.}
+feeling about the collaboration.}
 \label{fig:overall-collaboration}
 \end{figure*}
 
@@ -6185,8 +6181,7 @@ robot than the emotion-ignorant robot.
 \centering
 \includegraphics[width=0.8\textwidth]{figure/Overall-Satisfaction.png}
 \caption{Results of the Likert scale survey for questions related to
-satisfaction with collaborative partner. The p-value for the difference between
-means is $\ll$0.001 for all questions.}
+satisfaction with collaborative partner.}
 \label{fig:overall-satisfaction}
 \end{figure*}
 
@@ -6274,84 +6269,154 @@ the ability to ask questions. Of those who responded with the emotion-ignorant
 case, most found the ability to call the supervisor, and mechanical functions,
 such as gripping, to be most interesting.
 
+\begin{figure*}
+\centering
+\includegraphics[width=1\textwidth]{figure/age-gender-distribution.png}
+\caption{Age and gender distribution of the user study participants.}
+\label{fig:age-gender-distribution}
+\end{figure*}
+
 \subsubsection{Impact of Demographics} 
 As mentioned in Section \ref{sec:Participants}, we recorded the age and gender
-of each participant. Although it was not the primary purpose of the study, we
-investigated the Likert scale results to determine if there were any relevant
-trends based on the demographics of the participants.
+of each participant; the distribution is provided in Figure
+\ref{fig:age-gender-distribution}. The distribution presented in this figure are
+the results presented in this thesis; however, four participants were removed
+from the results, due to the participant breaking study rules. Two of the
+removed participants were women over 40 years old and two were men over 50 years
+old. Although it was not the primary purpose of the study, we investigated the
+Likert scale results to determine if there were any relevant trends based on the
+demographics of the participants.
 
-Age did reveal an interesting pattern. We divided the participants into two
-groups, below 30 years of age and 30 or above. While question-by-question
-comparisons revealed only a few statistically significant differences based on
-age, a general pattern emerged. For all but four of the 31 questions presented,
-the younger age group reported higher scores than the older age group (or lower,
-in the case of reverse-scored questions)for the emotion-aware robot. In the
-emotion-ignorant case, the younger group tends to score the robot nearer to
-the same value as the older age group for all but seven questions, leading to a
-pattern in which the score drop between the emotion-aware and the
-emotion-ignorant case was more for the younger group than for the older group;
-the seven questions that broke this pattern were 7, 9, 11, 12, 18, 19 and 22.
+To investigate the impact of demographics, we carried out Multiple Linear
+Regression analysis for each question, under each condition of the robot (i.e.
+emotion-aware and emotion-ignorant). For each question, the dependent variable
+was the participant rating; each question was analyzed with four combinations of
+dependent variables: (1) age only, (2) gender only, (3) age and gender, and (4)
+age, gender and age*gender (effect modification). The results for the
+emotion-aware case are presented in Table
+\ref{fig:demographics-results-emotion-awareness} and the results for the
+emotion-ignorant case are presented in Table
+\ref{fig:demographics-results-emotion-ignorance}. The tables contain all models
+that were statistically significant, except those that revealed a decrease in
+the R$^2$ when the number of parameters increased. Questions that are excluded
+from the table did no have any statistically significant models based on age and
+gender.
 
-\begin{figure*}[tbh]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
-\caption{Impact of age on results of Likert scale questions related to
-likability.}
-\label{fig:age-likability}
-\vspace*{15mm}
-\end{figure*}
+\begin{table}[t]
+  \centering
+  \caption{Multiple linear regression analysis results for the emotion-aware
+  condition.}
+  \label{fig:demographics-results-emotion-awareness}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/demographics-results-emotion-awareness-croped.pdf}
+\end{table}
 
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Trust.png}
-\caption{Impact of age on results of Likert scale questions related to trust.}
-\label{fig:age-trust}
-\vspace*{15mm}
-\end{figure*}
+As shown in Table \ref{fig:demographics-results-emotion-awareness} and Table
+\ref{fig:demographics-results-emotion-ignorance}, for many questions, age and
+gender only provided statistically significant regression models when effect
+modification was included; while this may actually indicate effect modification,
+we suspect that this may also be related to the demographic distribution. As
+mentioned previously, the only two male participants over the age of 50 were
+removed from the data pool due to breaking the rules with the robot. The
+resulting demographic distribution contains eight participants over 40 years
+old, only one of whom is a male.
 
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Performance.png}
-\caption{Impact of age on results of Likert scale questions related to
-performance.}
-\label{fig:age-performance}
-\vspace*{15mm}
-\end{figure*}
+When effect modification is either not included or does not improve the
+explanatory power of the model(s), two consistent patterns emerge across the
+questions that are impacted by age and/or gender: (1) as age increases,
+participants' ratings of the robot tends to decrease, in both the emotion-aware
+and the emotion-ignorant condition and (2) female participants' ratings tend to
+be higher than male participants' ratings in both the emotion-aware and the
+emotion-ignorant condition.
 
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Emotions.png}
-\caption{Impact of age on results of Likert scale questions related to robot's
-understanding of human's emotions.}
-\label{fig:age-emotions}
-\vspace*{15mm}
-\end{figure*}
+Finally, while it is clear that age and gender impact the participants' ratings
+of the robot, the explanatory power of the regression models remains low; the
+highest R$^2$ value was 0.376, which occurred for Question 3, when effect
+modification was included. Age and gender of the participant impact the
+participants' ratings of the robot, but on their own, do not explain most of the
+variation observed in the Likert scale surveys.
 
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Goals.png}
-\caption{Impact of age on results of Likert scale questions related to robot's
-understanding of goals.}
-\label{fig:age-goals}
-\vspace*{10mm}
-\end{figure*}
+\begin{table}[t]
+  \centering
+  \caption{Multiple linear regression analysis results for the emotion-ignorant
+  condition.}
+  \label{fig:demographics-results-emotion-ignorance}
+  \vspace*{-3mm}
+  \includegraphics[width=1\textwidth]{figure/demographics-results-emotion-ignorance-croped.pdf}
+\end{table}
 
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Collaboration.png}
-\caption{Impact of age on results of Likert scale questions related to human's
-feeling about collaboration.}
-\label{fig:age-collaboration}
-\vspace*{15mm}
-\end{figure*}
-
-\begin{figure*}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{figure/Age-Satisfaction.png}
-\caption{Impact of age on results of Likert scale questions related to
-satisfaction with collaborative partner.}
-\label{fig:age-satisfaction}
-\end{figure*}
+% Age did reveal an interesting pattern. We divided the participants into two
+% groups, below 30 years of age and 30 or above. While question-by-question
+% comparisons revealed only a few statistically significant differences based on
+% age, a general pattern emerged. For all but four of the 31 questions presented,
+% the younger age group reported higher scores than the older age group (or lower,
+% in the case of reverse-scored questions)for the emotion-aware robot. In the
+% emotion-ignorant case, the younger group tends to score the robot nearer to
+% the same value as the older age group for all but seven questions, leading to a
+% pattern in which the score drop between the emotion-aware and the
+% emotion-ignorant case was more for the younger group than for the older group;
+% the seven questions that broke this pattern were 7, 9, 11, 12, 18, 19 and 22.
+% 
+% \begin{figure*}[tbh]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Likability.png}
+% \caption{Impact of age on results of Likert scale questions related to
+% likability.}
+% \label{fig:age-likability}
+% \vspace*{15mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Trust.png}
+% \caption{Impact of age on results of Likert scale questions related to trust.}
+% \label{fig:age-trust}
+% \vspace*{15mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Performance.png}
+% \caption{Impact of age on results of Likert scale questions related to
+% performance.}
+% \label{fig:age-performance}
+% \vspace*{15mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Emotions.png}
+% \caption{Impact of age on results of Likert scale questions related to robot's
+% understanding of human's emotions.}
+% \label{fig:age-emotions}
+% \vspace*{15mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Goals.png}
+% \caption{Impact of age on results of Likert scale questions related to robot's
+% understanding of goals.}
+% \label{fig:age-goals}
+% \vspace*{10mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Collaboration.png}
+% \caption{Impact of age on results of Likert scale questions related to human's
+% feeling about collaboration.}
+% \label{fig:age-collaboration}
+% \vspace*{15mm}
+% \end{figure*}
+% 
+% \begin{figure*}[!h]
+% \centering
+% \includegraphics[width=0.9\textwidth]{figure/Age-Satisfaction.png}
+% \caption{Impact of age on results of Likert scale questions related to
+% satisfaction with collaborative partner.}
+% \label{fig:age-satisfaction}
+% \end{figure*}
 
 \subsection{Discussion}
 Based on the results, all participants prefer to work with the emotion-aware
