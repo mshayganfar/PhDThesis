@@ -5098,6 +5098,16 @@ same function in $(0, \infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
 \textit{unsatisfiability} value. Currently we set $\mathcal{S}_{sat}$ value to
 1.5, $\mathcal{B}$ to 3.0, and $\mathcal{L}$ to 2.0.
 
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/satisfaction_motive_functions.png}
+  \caption{Three functions of satisfaction motive for different values of
+  valence. The x-axis indicates the satisfaction drive's delta value in [-1,
+  +1], and the y-axis indicates the magnitude of satisfaction motive in [-1,
+  +1].}
+  \label{fig:satisfaction-motive-functions}
+\end{figure}
+
 \begin{equation}
     \mathcal{M}_{sat}(\varepsilon_t)= 
     \begin{dcases}
@@ -5122,17 +5132,6 @@ perceives negative emotion, the satisfaction motive value only changes between
 respect to how satisfied the agent is according to the status of its own goals
 during collaboration.
 
-\begin{figure}[tbh]
-  \centering
-  \includegraphics[width=1\textwidth]{figure/satisfaction_motive_functions.png}
-  \caption{Three functions of satisfaction motive for different values of
-  valence (blue: valence = 0, red: valence = positive, green: valence =
-  negative). The x-axis indicates the satisfaction drive's delta value in [-1,
-  +1], and the y-axis indicates the magnitude of satisfaction motive in [-1,
-  +1].}
-  \label{fig:satisfaction-motive-functions}
-\end{figure}
-
 \subsection{Achievement Motive}
 The achievement motive drives the agent's need to achieve a goal during the
 collaboration. According to the literature, e.g.
@@ -5143,14 +5142,13 @@ In our framework, we compute the probability of success as the product of the
 Intuitively, the more controllable and expected the events are, the probability
 of successful achievement of their related goal is higher.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/achievement_motive_functions.png}
   \caption{Two functions of the achievement motive for different values of
-  valence (blue: valence = +1, red: valence = 0, green: valence = -1, orange:
-  valence = close to zero from negative side). The x-axis indicates the success
-  probability value of achieving a goal which is in [0, +1], and the y-axis
-  indicates the magnitude of achievement motive in [-1, +1].}
+  valence. The x-axis indicates the success probability value of achieving a
+  goal which is in [0, +1], and the y-axis indicates the magnitude of
+  achievement motive in [-1, +1].}
   \label{fig:achievement-motive-functions}
 \end{figure}
 
@@ -5209,11 +5207,10 @@ perceived emotion is negative or zero.
 \begin{figure}[tbh]
   \centering
   \includegraphics[width=1\textwidth]{figure/external_motive_functions.png}
-  \caption{Two functions of external motive for different values of valence
-  (blue: valence = -1, red: valence = 0, green: valence = +1, orange: valence =
-  close to zero from negative side). The x-axis indicates the success
-  probability value of achieving a proposed goal which is in [0, +1], and the
-  y-axis indicates the magnitude of the achievement motive in [-1, +1].}
+  \caption{Two functions of external motive for different values of valence. The
+  x-axis indicates the success probability value of achieving a proposed goal
+  which is in [0, +1], and the y-axis indicates the magnitude of the achievement
+  motive in [-1, +1].}
   \label{fig:external-motive-functions}
 \end{figure}
 
@@ -5546,8 +5543,7 @@ butter on one slice of bread and strawberry jam on another slice of bread. In
 this question, the humans decision was 90\% in agreement with the algorithm's
 output.
 
-\vspace*{3mm}
-\begin{table}[tbh]
+\begin{table}[t]
   \centering
   \caption{Controllability results {\color{red}(Equally Controllable column
   indicates for which questions our algorithm provides option C as the response)}.}
@@ -5578,7 +5574,7 @@ has been achieved successfully. Therefore, in this example, both options A and B
 are desirable. The humans' decision was 77\% in agreement with the algorithm's
 output in this question.
 
-\begin{table}[tbh]
+\begin{table}[t]
   \centering
   \caption{Desirability results {\color{red}(Equally Desirable column indicates
   for which questions our algorithm provides option C as the response)}.}
@@ -5628,7 +5624,7 @@ saliency, which was not referenced or provided in the questionnaire.
   for which questions our algorithm provides option C as the response)}.}
   \label{fig:relevance_result}
   \vspace*{-3mm}
-  \includegraphics[width=1\textwidth]{figure/relevance_result_croped.pdf}
+  \includegraphics[width=0.93\textwidth]{figure/relevance_result_croped.pdf}
 \end{table}
 
 The complete summary of results for the relevance questionnaire is provided in
@@ -5707,7 +5703,7 @@ either the robot or the participant was achieved successfully. The wizard was
 completely invisible to the participants, and the wizard had no impact on the
 robot's decision other than providing input regarding tasks' failure or success.
 
-\begin{figure*}[tbh]
+\begin{figure*}[t]
   \centering
   \includegraphics[width=\textwidth]{figure/framework-croped.pdf}
   \caption{Experimental setup for end-to-end system evaluation.}
@@ -5736,9 +5732,9 @@ which was colored and tagged the same as the associated peg. Some pegs and
 corresponding spots on the board had hidden magnets which prevented the pegs
 from standing upright. Any peg that fell over was considered a failed task.
 
-\begin{figure*}[tbh]
+\begin{figure*}[t]
   \centering
-  \includegraphics[width=1\textwidth]{figure/collaborationStructure.pdf}
+  \includegraphics[width=1\textwidth]{figure/collaborationStructure-croped.pdf}
   \caption{Collaboration structure used as the task model.}
   \label{fig:collaboration_structure}
 \end{figure*}
@@ -5779,6 +5775,14 @@ our framework (implemented in JAVA) to the robot's joint controller. The joint
 controller receives action commands and translates them into actual joint and
 actuator commands and sends them to the robot (see Figure \ref{fig:environment}).
 
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
+  \caption{The layout of the available spots for the human and the robot to
+  place their pegs during the collaboration.}
+  \label{fig:game_board}
+\end{figure}
+
 \subsection{Experimental Design}
 
 Our scenario was based on a table top turn-taking game that we designed to
@@ -5792,16 +5796,6 @@ robot and the participants had their own unique primitive tasks that they had to
 accomplish in their own turns. The final goal of installing a solar panel
 required the robot and the participants to accomplish their own individual
 tasks. Failure of any task could create an impasse during the collaboration.
-
-\begin{figure}[tbh]
-  \centering
-  \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
-  \caption{The layout of the available spots for the human and the robot to
-  place their pegs during the collaboration.}
-  \label{fig:game_board}
-\end{figure}
-
-
 
 \begin{figure}
 \centering

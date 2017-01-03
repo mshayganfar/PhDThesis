@@ -109,44 +109,44 @@
 \contentsline {subsection}{\numberline {4.5.7}Activation of Coping Strategies}{132}
 \contentsline {section}{\numberline {4.6}Motivation Mechanism}{133}
 \contentsline {subsection}{\numberline {4.6.1}Satisfaction Motive}{134}
-\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{135}
-\contentsline {subsection}{\numberline {4.6.3}External Motive}{138}
-\contentsline {section}{\numberline {4.7}Theory of Mind}{138}
+\contentsline {subsection}{\numberline {4.6.2}Achievement Motive}{136}
+\contentsline {subsection}{\numberline {4.6.3}External Motive}{137}
+\contentsline {section}{\numberline {4.7}Theory of Mind}{139}
 \contentsline {subsubsection}{Reverse Appraisal}{139}
 \contentsline {section}{\numberline {4.8}Elicitation of Emotion Instances}{140}
-\contentsline {chapter}{\numberline {5}Evaluation}{144}
-\contentsline {section}{\numberline {5.1}Implementation}{144}
-\contentsline {section}{\numberline {5.2}Evaluating Appraisal Algorithms (Crowd Sourcing)}{145}
-\contentsline {subsection}{\numberline {5.2.1}Experimental Scenario}{145}
-\contentsline {subsection}{\numberline {5.2.2}Hypothesis and Methodology}{146}
-\contentsline {subsubsection}{Hypothesis}{146}
-\contentsline {subsubsection}{Procedure}{146}
-\contentsline {subsubsection}{Participants}{147}
-\contentsline {subsection}{\numberline {5.2.3}Results}{148}
-\contentsline {subsubsection}{Expectedness}{148}
-\contentsline {subsubsection}{Controllability}{149}
-\contentsline {subsubsection}{Desirability}{151}
-\contentsline {subsubsection}{Relevance}{152}
-\contentsline {subsection}{\numberline {5.2.4}Discussion}{154}
-\contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{154}
-\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{155}
-\contentsline {subsubsection}{Environment and Tasks}{156}
-\contentsline {subsubsection}{Framework}{157}
-\contentsline {subsubsection}{The Robot}{157}
-\contentsline {subsubsection}{Robot Controller}{157}
-\contentsline {subsection}{\numberline {5.3.2}Experimental Design}{158}
-\contentsline {subsubsection}{Interaction Paradigms}{159}
-\contentsline {subsection}{\numberline {5.3.3}Hypotheses}{161}
-\contentsline {subsection}{\numberline {5.3.4}Procedure}{162}
-\contentsline {subsubsection}{Measurements}{163}
-\contentsline {subsubsection}{Participants}{163}
-\contentsline {subsection}{\numberline {5.3.5}Results}{164}
-\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{164}
-\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{172}
-\contentsline {subsubsection}{Impact of Demographics}{175}
-\contentsline {subsection}{\numberline {5.3.6}Discussion}{175}
-\contentsline {chapter}{\numberline {6}Conclusion}{181}
-\contentsline {section}{\numberline {6.1}Discussion}{181}
-\contentsline {section}{\numberline {6.2}Future Work}{183}
-\contentsline {chapter}{Appendix A}{215}
-\contentsline {chapter}{Appendix B}{216}
+\contentsline {chapter}{\numberline {5}Evaluation}{143}
+\contentsline {section}{\numberline {5.1}Implementation}{143}
+\contentsline {section}{\numberline {5.2}Evaluating Appraisal Algorithms (Crowd Sourcing)}{144}
+\contentsline {subsection}{\numberline {5.2.1}Experimental Scenario}{144}
+\contentsline {subsection}{\numberline {5.2.2}Hypothesis and Methodology}{145}
+\contentsline {subsubsection}{Hypothesis}{145}
+\contentsline {subsubsection}{Procedure}{145}
+\contentsline {subsubsection}{Participants}{146}
+\contentsline {subsection}{\numberline {5.2.3}Results}{147}
+\contentsline {subsubsection}{Expectedness}{147}
+\contentsline {subsubsection}{Controllability}{148}
+\contentsline {subsubsection}{Desirability}{150}
+\contentsline {subsubsection}{Relevance}{151}
+\contentsline {subsection}{\numberline {5.2.4}Discussion}{153}
+\contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{153}
+\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{154}
+\contentsline {subsubsection}{Environment and Tasks}{155}
+\contentsline {subsubsection}{Framework}{156}
+\contentsline {subsubsection}{The Robot}{156}
+\contentsline {subsubsection}{Robot Controller}{156}
+\contentsline {subsection}{\numberline {5.3.2}Experimental Design}{157}
+\contentsline {subsubsection}{Interaction Paradigms}{158}
+\contentsline {subsection}{\numberline {5.3.3}Hypotheses}{160}
+\contentsline {subsection}{\numberline {5.3.4}Procedure}{161}
+\contentsline {subsubsection}{Measurements}{162}
+\contentsline {subsubsection}{Participants}{162}
+\contentsline {subsection}{\numberline {5.3.5}Results}{163}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{163}
+\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{171}
+\contentsline {subsubsection}{Impact of Demographics}{174}
+\contentsline {subsection}{\numberline {5.3.6}Discussion}{174}
+\contentsline {chapter}{\numberline {6}Conclusion}{180}
+\contentsline {section}{\numberline {6.1}Discussion}{180}
+\contentsline {section}{\numberline {6.2}Future Work}{182}
+\contentsline {chapter}{Appendix A}{214}
+\contentsline {chapter}{Appendix B}{215}
