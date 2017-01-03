@@ -611,10 +611,12 @@ to perform them, the participants in a group activity need to have individual or
 group plans for each of the constituent actions in the mutually agreed recipe
 \cite{grosz:collaborative-systems, grosz:plans-discourse}.
 
+\vspace*{-3mm}
 \begin{figure}[tbh]
   \center
   \includegraphics[width=0.8\textwidth]{figure/plans.png}
   \caption{Plans for collaborative action \cite{grosz:collaborative-systems}.}
+  \vspace*{-5mm}
   \label{fig:plans}
 \end{figure}
 
@@ -709,8 +711,10 @@ content required for processing utterances during the discourse
 \cite{grosz:plans-discourse}. 
 %Using discourse plans can help to encode the knowledge about conversation.
 
+\vspace*{-5mm}
 \subsubsection{Intention-to and Intention-that}
 \label{sec:intend-to-that}
+\vspace*{-3mm}
 
 In Grosz and Sidner's SharedPlans theory \cite{grosz:plans-discourse}, two
 intentional attitudes are employed: \textit{intending to} (do an action) and
@@ -3633,6 +3637,7 @@ attribution of the goals according to the self's standards provides coherency of
 the processes and their outcomes. We discuss three relevant goal attributes used
 in our computational framework in this section.
 
+\vspace*{-3mm}
 \begin{itemize}
   \item \textbf{\textit{Proximity*:}} Goals can be distinguished by how far they
   project into the future during the collaboration. Proximal (short-term) goals
@@ -4276,7 +4281,7 @@ collaboration's point of view.
 % Reciprocally, the appraisal mechanism and in this case the desirability process
 % use the collaboration structure to obtain their required information.
 
-\begin{algorithm}[tbh]
+\begin{algorithm}[t]
 	\caption{Desirability Appraisal Process}
 	\label{alg:desirability}
 	\begin{algorithmic}[1]
@@ -4368,7 +4373,7 @@ with respect to the shared goal. Reciprocally, the appraisal mechanism uses the
 underlying information of the collaboration structure to evaluate the
 expectedness of an event \cite{shayganfar:appraisal-short}.
 
-\begin{algorithm}
+\begin{algorithm}[t]
 	\caption{Expectedness Appraisal Process}
 	\label{alg:expectedness}
 	\begin{algorithmic}[1]
@@ -4424,7 +4429,7 @@ outcome can be altered by actions under either of the collaborators' control. In
 other words, controllability is a measure of a robot's ability to maintain or
 change a particular state as a consequence of an event.
 
-\begin{algorithm}
+\begin{algorithm}[t]
 	\caption{Controllability Appraisal Process}
 	\label{alg:controllability}
 	\begin{algorithmic}[1]
@@ -4720,7 +4725,7 @@ mechanism to choose between a set of live goals. We believe appraisal processes
 are crucial to choose between the available live goals, since the appraisals are
 the immediate outcome of the robot's assessment of the collaboration environment.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/goal_management_collaboration_structure-croped.pdf}
   \caption{Cost values indicated by tuples with (second number) and without
@@ -5198,7 +5203,7 @@ when the valence of human's perceived emotion is positive, and Equation
 \ref{eqn:achievement-motive-valence-positive} when the valence of the human's
 perceived emotion is negative or zero.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/external_motive_functions.png}
   \caption{Two functions of external motive for different values of valence. The
@@ -5265,8 +5270,7 @@ i.e., \textsc{relevant} or \textsc{irrelevant}., or the controllability can
 obtain one of the three values in Table \ref{fig:appraisal_values}; i.e.,
 \textsc{high\_controllable, low\_controllable} or \textsc{uncontrollable}.
 
-\vspace*{5mm}
-\begin{table}[tbh]
+\begin{table}[t]
   \centering
   \caption{Appraisal values for relevance, desirability, expectedness and
   controllability.}
@@ -5395,7 +5399,7 @@ algorithms will provide similar answers to questions related to different
 factors used to compute four appraisal variables: relevance, desirability,
 expectedness, and controllability.
 
-\begin{figure*}[tbh]
+\begin{figure*}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/taskModel-croped.pdf}
   \caption{Collaboration task model for the evaluation.}
@@ -5441,7 +5445,7 @@ participants providing wrong answers to our sanity questions, and participants w
 answering times less than 2 minutes. The final number of accepted participants
 in each group is provided in Table \ref{tbl:statistics}.
 
-\begin{table}[htbp]
+\begin{table}[t]
 \centering
 \caption{Number of participants}
 \begin{tabular}{|c|c|c|c|c|} \hline
@@ -5517,7 +5521,7 @@ questions are comparing equally expected or equally unexpected situations, none
 of which our algorithms would consider most-expected or most-unexpected.
 
 
-\begin{figure}[tbh]
+\begin{figure}[b]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample-croped.pdf}
   \caption{{Example expectedness question.}}
@@ -5587,7 +5591,7 @@ situations as equally desirable), the human participants only showed 46\%-77\%
 agreement. This may indicate that a higher level of granularity is required in
 the algorithm when evaluating options with similar levels of desirability.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample3-croped.pdf}
   \caption{{Example desirability question.}}
@@ -5635,7 +5639,7 @@ algorithms choose that the strong emotional circumstance will be more relevant;
 however, human participants generally selected adherence to the collaboration
 plan to be more relevant.
 
-\begin{figure}[tbh]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.85\textwidth]{figure/question-sample4-croped.pdf}
   \caption{{Example relevance question.}}

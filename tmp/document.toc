@@ -16,12 +16,12 @@
 \contentsline {subsubsection}{Intention-to and Intention-that}{15}
 \contentsline {subsection}{\numberline {2.2.2}Joint Intentions Theory}{16}
 \contentsline {subsubsection}{Individual Commitment}{17}
-\contentsline {subsubsection}{Individual Intention}{18}
+\contentsline {subsubsection}{Individual Intention}{17}
 \contentsline {subsubsection}{Joint Commitment and Joint Intention}{18}
 \contentsline {subsubsection}{Teamwork \& Communication}{19}
 \contentsline {subsection}{\numberline {2.2.3}STEAM -- A Hybrid Approach}{20}
 \contentsline {subsection}{\numberline {2.2.4}Other Approaches}{22}
-\contentsline {subsection}{\numberline {2.2.5}Similarities and Differences}{23}
+\contentsline {subsection}{\numberline {2.2.5}Similarities and Differences}{22}
 \contentsline {subsection}{\numberline {2.2.6}Applications of Collaboration Theories}{24}
 \contentsline {section}{\numberline {2.3}Emotions and Affective Computing}{29}
 \contentsline {subsection}{\numberline {2.3.1}Affect and Emotions}{30}
@@ -125,8 +125,8 @@
 \contentsline {subsection}{\numberline {5.2.3}Results}{147}
 \contentsline {subsubsection}{Expectedness}{147}
 \contentsline {subsubsection}{Controllability}{148}
-\contentsline {subsubsection}{Desirability}{149}
-\contentsline {subsubsection}{Relevance}{150}
+\contentsline {subsubsection}{Desirability}{150}
+\contentsline {subsubsection}{Relevance}{151}
 \contentsline {subsection}{\numberline {5.2.4}Discussion}{153}
 \contentsline {section}{\numberline {5.3}End-to-End System Evaluation}{153}
 \contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{154}
