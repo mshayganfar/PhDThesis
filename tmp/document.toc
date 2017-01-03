@@ -161,3 +161,4 @@
 \contentsline {subsubsection}{Success and Failure of Achieving a Task:}{231}
 \contentsline {subsubsection}{Order of Doing Tasks:}{232}
 \contentsline {subsubsection}{Your Objectives:}{232}
+\contentsline {subsubsection}{Playing Rules:}{233}
