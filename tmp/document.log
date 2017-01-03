@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  2 JAN 2017 23:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  3 JAN 2017 00:18
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1545,9 +1545,358 @@ Missing character: There is no ¡ in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
- [210]) [211] [212
+ [210]) [211]
 
-] [213
+! LaTeX Error: No counter 'subfigure@save' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6639     \subfloat
+                    [Peanut butter
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<figure/Recipe1.pdf, id=1265, 614.295pt x 794.97pt>
+File: figure/Recipe1.pdf Graphic file (type pdf)
+ <use figure/Recipe1.pdf>
+Package pdftex.def Info: figure/Recipe1.pdf used on input line 6640.
+(pdftex.def)             Requested size: 184.9429pt x 239.34195pt.
+
+
+! LaTeX Error: No counter 'subfigure@save' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6642     \subfloat
+                    [Boiled egg
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<figure/Recipe2.pdf, id=1266, 614.295pt x 794.97pt>
+File: figure/Recipe2.pdf Graphic file (type pdf)
+ <use figure/Recipe2.pdf>
+Package pdftex.def Info: figure/Recipe2.pdf used on input line 6643.
+(pdftex.def)             Requested size: 184.9429pt x 239.34195pt.
+
+[212
+
+] <figure/relevance-definition.png, id=1270, 678.535pt x 200.75pt>
+File: figure/relevance-definition.png Graphic file (type png)
+
+<use figure/relevance-definition.png>
+Package pdftex.def Info: figure/relevance-definition.png used on input line 669
+7.
+(pdftex.def)             Requested size: 426.39255pt x 126.15152pt.
+ [213 <./figure/Recipe1.pdf> <./figure/Recipe2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figure/Recipe2.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>] <figure/desirability-definition.png, id=1364, 557.83406pt x 161.10187pt>
+File: figure/desirability-definition.png Graphic file (type png)
+
+<use figure/desirability-definition.png>
+Package pdftex.def Info: figure/desirability-definition.png used on input line 
+6717.
+(pdftex.def)             Requested size: 426.39255pt x 123.1442pt.
+
+<figure/expectedness-definition.png, id=1365, 557.83406pt x 142.28156pt>
+File: figure/expectedness-definition.png Graphic file (type png)
+
+<use figure/expectedness-definition.png>
+Package pdftex.def Info: figure/expectedness-definition.png used on input line 
+6736.
+(pdftex.def)             Requested size: 426.39255pt x 108.75818pt.
+ [214 <./figure/relevance-definition.png> <./figure/desirability-definition.png
+> <./figure/expectedness-definition.png>] <figure/controllability-definition.pn
+g, id=1372, 557.83406pt x 161.10187pt>
+File: figure/controllability-definition.png Graphic file (type png)
+
+<use figure/controllability-definition.png>
+Package pdftex.def Info: figure/controllability-definition.png used on input li
+ne 6756.
+(pdftex.def)             Requested size: 426.39255pt x 123.1442pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6762--6763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6770--6771
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6779--6780
+
+ []
+
+[215 <./figure/controllability-definition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 6788--6789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6797--6798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6806--6807
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6815--6816
+
+ []
+
+[216]
+Underfull \hbox (badness 10000) in paragraph at lines 6824--6825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6833--6834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6842--6843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6851--6852
+
+ []
+
+[217]
+Underfull \hbox (badness 10000) in paragraph at lines 6860--6861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6869--6870
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6878--6879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6887--6888
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6896--6897
+
+ []
+
+[218]
+Underfull \hbox (badness 10000) in paragraph at lines 6905--6906
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6914--6915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6923--6924
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6932--6933
+
+ []
+
+[219]
+Underfull \hbox (badness 10000) in paragraph at lines 6935--6936
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6944--6945
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6953--6954
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6962--6963
+
+ []
+
+[220]
+Underfull \hbox (badness 10000) in paragraph at lines 6971--6972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6980--6981
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6989--6990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6998--6999
+
+ []
+
+[221]
+Underfull \hbox (badness 10000) in paragraph at lines 7007--7008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7016--7017
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7025--7026
+
+ []
+
+[222]
+Underfull \hbox (badness 10000) in paragraph at lines 7035--7036
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7044--7045
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7047--7048
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7055--7056
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7064--7065
+
+ []
+
+[223]
+Underfull \hbox (badness 10000) in paragraph at lines 7073--7074
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7082--7083
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7091--7092
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7100--7101
+
+ []
+
+[224]
+Underfull \hbox (badness 10000) in paragraph at lines 7109--7110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7118--7119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7127--7128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7136--7137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7139--7140
+
+ []
+
+[225]
+Underfull \hbox (badness 10000) in paragraph at lines 7147--7148
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7156--7157
+
+ []
+
+[226]
+Underfull \hbox (badness 10000) in paragraph at lines 7165--7166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7174--7175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7183--7184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7192--7193
+
+ []
+
+[227]
+Underfull \hbox (badness 10000) in paragraph at lines 7201--7202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7210--7211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7219--7220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7228--7229
+
+ []
+
+[228] [229] [230
 
 ] (./document.aux)
 
@@ -1555,13 +1904,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16934 strings out of 493304
- 313948 string characters out of 6139871
- 388900 words of memory out of 5000000
- 19931 multiletter control sequences out of 15000+600000
+ 16965 strings out of 493304
+ 314896 string characters out of 6139871
+ 388898 words of memory out of 5000000
+ 19956 multiletter control sequences out of 15000+600000
  17410 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,9n,59p,1011b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,10n,59p,1011b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -1579,10 +1928,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (229 pages, 7334339 bytes).
+Output written on document.pdf (246 pages, 9450316 bytes).
 PDF statistics:
- 1339 PDF objects out of 1440 (max. 8388607)
- 860 compressed objects within 9 object streams
+ 1492 PDF objects out of 1728 (max. 8388607)
+ 926 compressed objects within 10 object streams
  0 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
