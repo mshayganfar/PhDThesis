@@ -224,15 +224,15 @@ some of the important concepts underlying collaboration; they focus on tasks,
 their constraints and their requirements such as the presence of a reason for
 the collaborators' commitment, and the necessity of communicating about mental
 state in order to maintain progress over the course of a collaboration. However,
-a key aspect of the collaborative robots is being able to show behaviors which
-can make them more likable, trustworthy, and satisfactory. We believe that these
+a key aspect of collaborative robots is being able to show behaviors which can
+make them more likable, trustworthy, and satisfactory. We believe that these
 aspects of collaborative behaviors can influence the performance of a
 collaboration. Therefore, collaborative robots need to take into account human
-collaborator's internal state, and do not only focus on executing different
-actions with respect to their plan to maintain the collaboration process.
+collaborator's internal state, and not only focus on executing different actions
+with respect to their plan to maintain the collaboration process.
 
 Accoring to \cite{grosz:plans-discourse} collaboration is a coordinated activity
-in which the participants work jointly to satisfy a shared goal. We believe
+in which the participants work jointly to satisfy a shared goal. We believe that
 beside the status of the shared plan, mutual mental state, or other task-driven
 details of the collaboration, human's decisions are also influenced by
 affect-driven functions. In fact, humans perceive, assess, and interpret their
@@ -270,35 +270,35 @@ demonstrates how it furthers collaboration between humans and robots.
 
 In this thesis, we develop and validate a framework called \textit{Affective
 Motivational Collaboration} (AMC) which can improve the effectiveness of
-collaboration between agents/robots and humans. This thesis is based on the
-reciprocal influence of the collaboration structure and the appraisal processes
-in a dyadic collaboration. We focus only on two-participant collaboration; teamwork
-collaboration is out of our scope. Furthermore, this work focuses on a) the
-influence of emotion-regulated processes on the collaboration structure, and b)
-prediction and interpretation of the observable behaviors of the other during a
-collaborative interaction.
+collaboration between agents/robots and humans based on a structure maintained
+by collaboration manager called \textit{Disco}\footnote{Disco is the latest
+incarnation of COLLAGEN \cite{rich:collaboration-manager,rich:discourse} which
+incorporates certain algorithms for discourse generation and interpretation, and
+is able to maintain a segmented interaction history, which facilitates the
+collaborative discourse between a human and a robot.}. This thesis focuses on
+the reciprocal influence of the collaboration structure and the appraisal
+processes in a dyadic collaboration. We address only two-participant
+collaboration; teamwork collaboration is out of our scope. Furthermore, this
+work focuses on a) the influence of affect-regulated processes on the
+collaboration structure, and b) prediction and interpretation of the observable
+behaviors of the other during a collaborative interaction.
 
 We describe the cognitive processes involved in a collaboration in the context
-of a cognitive architecture. There are several well-developed cognitive
-architectures, e.g., Soar \cite{laird:soar} and ACT-R \cite{anderson:act-r},
-each with different approaches to defining the basic cognitive and perceptual
-operations. There have also been efforts to integrate affect into these
-architectures \cite{dancy:actR-physiology-affect, marinier:behavior-emotion}. In
-general, however, these cognitive architectures do not focus on processes to
-specifically produce emotion-regulated goal-driven collaborative behaviors. At
-the same time, existing collaboration theories, e.g., SharedPlans
-\cite{grosz:plans-discourse} theory, focus on describing the structure of a
-collaboration in terms of fundamental mental state, e.g., mutual beliefs or
-joint intentions. However, they do not describe the associated processes, their
-relationships, and influences on each other. \textit{Affective Motivational
+of a computational framework. This framework theoretically relies on the
+collaboration structure described by SharedPlans theory, and its implementation
+is built on top of the collaboration manager, Disco, which provides and
+mainitains all the details of the collaboration structure. The existing
+implementation of SharedPlans theory does not focus on the processes involved to
+mainatain a collaboration structure. \textit{Affective Motivational
 Collaboration} theory deals with the major affect-driven processes having an
-impact on the collaboration structure. This theory is informed by research in
-psychology and artificial intelligence which is reviewed in Chapter
-\ref{ch:background}. Our contribution, generally speaking, is to synthesize
-prior work on appraisal\footnote{We have chosen appraisal-based modeling of
-emotions among several theories of emotions.}, collaboration, and motivation to
-provide a new computational theory of the prominent emotion-regulated
-goal-driven phenomena in a dyadic collaboration.
+impact on the collaboration structure and ultimately a collaborative robot's
+behavior. This theory is informed by research in psychology and artificial
+intelligence which is reviewed in Chapter \ref{ch:background}. Our contribution,
+generally speaking, is to synthesize prior work on appraisal\footnote{We have
+chosen appraisal-based modeling of emotions among several theories of
+emotions.}, SharedPlans theory's description of collaboration, and motivation to
+provide a new computational theory of an affect-regulated goal-driven dyadic
+collaboration.
 
 \section{Contributions}
 
