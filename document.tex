@@ -5789,7 +5789,9 @@ a task, then the wizard let the robot know whether the human's goal was achieved
 or not. Afterwards the robot made a decision about which goal to pursue and
 informed the human accordingly. There were two conditions of the robot: 1)
 emotion-aware and 2) emotion ignorant. The same procedure was applied to both
-conditions.
+conditions. {\color{red}In the next section (i.e., Algorithmic Trace) we provide
+the algorithmic trace to show how goal management algorithm works in both
+affect-aware and affect-ignorant conditions.}
 
 The robot interacted via a) speech, b) the corresponding utterance on the
 screen, c) negative, positive and neutral expression of emotion through an
@@ -5836,6 +5838,75 @@ emotion-ignorant and the emotion-aware cases, by asking the supervisor for help.
   \caption{Experimental setup.}
   \label{fig:environment}
 \end{figure}
+
+\subsubsection{Algorithmic Trace}
+In this section we provide an algorithmic trace for one of the three behavioral
+changes in our user study when the robot, besides acknowledging human's
+perceived negative affective state, activates a coping strategy called
+\textit{mental disengagement}. As shown in Table \ref{fig:coping_strategies},
+the mental disengagement strategy can be activated when the robot and the human
+feel neutral or negative, all three values of motives (see Section
+\ref{sec:motivation_mechanism}) have obtained low or medium negative values, and
+the robot evaluates the controllability of the corresponding goal of the event
+as uncontrollable one. As the result of activation of the mental disengagement
+strategy, our framework applies the goal management algorithm to lower the
+effect of the stressor which is the failure of a goal in the plan.
+
+The following algorithmic trace shows how different mechanisms (see Chapter
+\ref{ch:appraisals}) in our framework are involved to generate proper behavior
+in response to the perceived goal-failure of the human in the affect-aware
+condition:
+
+\begin{enumerate}
+  \setlength\itemsep{-3mm}
+  \item As a result of perceiving failure to achieve a goal by the human
+  collaborator (i.e., ``Take Out Cable'' -- See Figure
+  \ref{fig:collaboration_structure}), AMC framework uses the \textbf{Appraisal
+  mechanism} to appraise this event. To be able to appraise the event, the
+  Appriasal mechanism needs the current information of the collaboration
+  structure.
+  \item Thus, the \textbf{Collaboration mechanism} provides the information
+  required to appraise the current event. This information includes the status
+  of the preconditions, postconditions, hierarchical and temporal constraints,
+  inputs, outputs, status of the predecessors and contributing goals in the
+  shared plan. All of this information appears as an element of Mental
+  State, i.e., belief.
+  \item Then, the \textbf{Theory of Mind mechanism} provides the anticipated
+  beliefs about the human collaborator's mental state based on reverse appraisal
+  of the human's perceived affective state, i.e., negative (valence).
+  \item As a result, the \textbf{Appraisal mechanism}'s outcome will be
+  \textit{relevant, undesirable, unexpected} and \textit{controllable}.
+  \item The \textbf{Motivation mechanism} uses the collaboration structure
+  (Collaboration mechanism), anticipated beliefs of the human collaborator
+  (Theory of Mind mechanism) and the outcome of the appraisal (Appraisal
+  mechanism) to compute the intensity of three motives (see Section
+  \ref{sec:motivation_mechanism}), i.e., low or medium negative values for
+  satisfaction, achievement, and external motives.
+  \item The \textbf{Coping mechanism} receives the values of the three motives
+  and activates two coping strategies, i.e., Active Coping and Mental Disengagement,
+  with respect to the conditions shown in Table \ref{fig:coping_strategies}. As
+  a result of the activation of these strategies, first, active coping strategy
+  forms a new intention to acknowledge human's negative affective state, and
+  then, mental disengagement strategy uses the goal management algorithm to
+  lower the effect of current stressor (goal failure) and overcome an impasse.
+  The goal management algorithm uses the current collaboration structure and the
+  human's perceived affective state to form a new intention to swtich to another
+  goal which has the lowest cost (see Section \ref{sec:goal-management}), i.e.,
+  ``Place Panel''.
+  \item At the end, the \textbf{Action mechanism} receives two new intentions of
+  acknowledging human's negative affective state and pursuing achievement of a
+  new goal (i.e., Place Panel). As a result, the robot will say: ``Don't
+  worry! To manage the time let's switch to another task. We can come back and
+  finish this later.''
+\end{enumerate}
+
+In affect-ignorant condition, AMC framework bypasses the \textbf{Appraisal,
+Theory of Mind, Motivation}, and \textbf{Coping mechanisms}. AMC framework forms
+a new intention based on the goal that the SharedPlans' collaborator manager,
+i.e., Disco, provides. In this condition the agent's decision is not influenced
+by the human's perceived negative affective state, even if the human reports a
+negative affective state. As a result, the robot asks the supervisor to come and
+provide help to overcome an impasse in response to the human's goal failure.
 
 \subsection{Hypotheses}
 \label{sec:hypotheses}

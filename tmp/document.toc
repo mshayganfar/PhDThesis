@@ -136,29 +136,30 @@
 \contentsline {subsubsection}{Robot Controller}{156}
 \contentsline {subsection}{\numberline {5.3.2}Experimental Design}{157}
 \contentsline {subsubsection}{Interaction Paradigms}{158}
-\contentsline {subsection}{\numberline {5.3.3}Hypotheses}{160}
-\contentsline {subsection}{\numberline {5.3.4}Procedure}{161}
-\contentsline {subsubsection}{Measurements}{162}
-\contentsline {subsubsection}{Participants}{162}
-\contentsline {subsection}{\numberline {5.3.5}Results}{163}
-\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{163}
-\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{171}
-\contentsline {subsubsection}{Impact of Demographics}{174}
-\contentsline {subsection}{\numberline {5.3.6}Discussion}{177}
-\contentsline {chapter}{\numberline {6}Conclusion}{179}
-\contentsline {section}{\numberline {6.1}Discussion}{179}
-\contentsline {section}{\numberline {6.2}Future Work}{181}
-\contentsline {chapter}{Appendix A}{213}
-\contentsline {subsubsection}{Instructions \& Questionnaires for Crowd-Sourcing Study:}{213}
-\contentsline {subsubsection}{First Sandwich:}{213}
-\contentsline {subsubsection}{Second Sandwich:}{214}
-\contentsline {subsubsection}{Relevance Questionnaire:}{215}
-\contentsline {subsubsection}{Desirability Questionnaire:}{221}
-\contentsline {subsubsection}{Expectedness Questionnaire:}{225}
-\contentsline {subsubsection}{Controllability Questionnaire:}{228}
-\contentsline {chapter}{Appendix B}{232}
-\contentsline {subsubsection}{Instructions:}{232}
-\contentsline {subsubsection}{Success and Failure of Achieving a Task:}{233}
-\contentsline {subsubsection}{Order of Doing Tasks:}{234}
-\contentsline {subsubsection}{Your Objectives:}{234}
-\contentsline {subsubsection}{Playing Rules:}{235}
+\contentsline {subsubsection}{Algorithmic Trace}{160}
+\contentsline {subsection}{\numberline {5.3.3}Hypotheses}{162}
+\contentsline {subsection}{\numberline {5.3.4}Procedure}{163}
+\contentsline {subsubsection}{Measurements}{164}
+\contentsline {subsubsection}{Participants}{164}
+\contentsline {subsection}{\numberline {5.3.5}Results}{165}
+\contentsline {subsubsection}{7-Point Likert Scale Survey Results}{165}
+\contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{173}
+\contentsline {subsubsection}{Impact of Demographics}{176}
+\contentsline {subsection}{\numberline {5.3.6}Discussion}{179}
+\contentsline {chapter}{\numberline {6}Conclusion}{181}
+\contentsline {section}{\numberline {6.1}Discussion}{181}
+\contentsline {section}{\numberline {6.2}Future Work}{183}
+\contentsline {chapter}{Appendix A}{215}
+\contentsline {subsubsection}{Instructions \& Questionnaires for Crowd-Sourcing Study:}{215}
+\contentsline {subsubsection}{First Sandwich:}{215}
+\contentsline {subsubsection}{Second Sandwich:}{216}
+\contentsline {subsubsection}{Relevance Questionnaire:}{217}
+\contentsline {subsubsection}{Desirability Questionnaire:}{223}
+\contentsline {subsubsection}{Expectedness Questionnaire:}{227}
+\contentsline {subsubsection}{Controllability Questionnaire:}{230}
+\contentsline {chapter}{Appendix B}{234}
+\contentsline {subsubsection}{Instructions:}{234}
+\contentsline {subsubsection}{Success and Failure of Achieving a Task:}{235}
+\contentsline {subsubsection}{Order of Doing Tasks:}{236}
+\contentsline {subsubsection}{Your Objectives:}{236}
+\contentsline {subsubsection}{Playing Rules:}{237}
