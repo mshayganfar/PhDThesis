@@ -198,7 +198,7 @@ a key aspect of collaborative robots missing from those theories is being able
 to show behaviors that make them more likable, trustworthy, and understanding of
 human's feelings and goals. These aspects of collaborative behaviors can greatly
 influence the performance of a collaboration. Therefore, collaborative robots
-need to take into account human collaborator's internal state, and not only
+need to take into account human collaborator's affective state, and not only
 focus on executing different actions with respect to their plan to maintain the
 collaboration process.
 
@@ -243,8 +243,7 @@ how they further collaboration between humans and robots.
 
 In this thesis, we develop and evaluate a framework called \textit{Affective
 Motivational Collaboration} (AMC) which can improve the effectiveness of
-collaboration between agents/robots and humans based on a structure maintained
-by collaboration manager called \textit{Disco}. We address only two-participant
+collaboration between agents/robots and humans. We address only two-participant
 collaboration; larger team collaboration is out of our scope. This thesis
 focuses on the reciprocal influence of the collaboration structure and the
 appraisal processes in a dyadic collaboration, spesifically: a) the influence of
@@ -269,90 +268,81 @@ new computational theory of affect-regulated dyadic collaboration.
 \section{Contributions}
 
 Throughout this work we aim to show how a robot can leverage affect-driven
-processes using appraisal algorithms to improve collaboration with humans. As
-such, in this thesis, first we introduce our foundational theoretical concepts
-under the title Affective Motivational Collaboration theory, and then we
-introduce a novel framework, called Affective Motivational Collaboration
-framework, which allows a robotic agent to collaborate with a human while
-incorporating underlying affect-driven processes and the affective expression of
-the human collaborator. This framework is based on computational models of
-collaboration and appraisal allowing for task-driven interaction with robots or
-other agents. The theoretical foundation, computational models and algorithms,
-as well as the overall framework, and the end-to-end evaluation of the framework
-make the following contributions:
+processes, specifically appraisal algorithms, to improve collaboration with
+humans. As such, we first introduce our foundational theoretical concepts under
+the title Affective Motivational Collaboration theory, and then we introduce a
+novel computational framework, based on this theory, which allows an agent to
+collaborate with a human incorporating underlying affect-driven processes and
+the affective expression of the human. The following summarize our
+contributions:
 
 \begin{enumerate}
-  \item \textbf{Introducing \textit{Affective Motivational Collaboration}
-  theory:}
+  \item \textbf{\textit{Affective Motivational Collaboration (AMC)} theory:}
     
-  	(Chapter \ref{ch:amct}) As mentioned earlier, since the theoretical
-  	foundation of AMC framework is built on the combination of SharedPlans
-  	theory of collaboration \cite{grosz:plans-discourse} and cognitive appraisal
+  	(Chapter \ref{ch:amct}) The theoretical foundations of AMC framework are
+  	SharedPlans theory of collaboration
+  	\cite{grosz:collaboration,grosz:plans-discourse} and the cognitive appraisal
   	theory of emotions \cite{marsella:ema-process-model}
-  	\cite{scherer:appraisal-processes}, one of the contributions of our work is
-  	to introduce theoretical concepts incorporating key notions of both theories
-  	in a dyadic collaboration context. Applying cognitive appraisal theory in the
-  	collaboration context described by the SharedPlans theory is novel. Another
-  	theoretical concept involved in AMC theory is incorporation of different
-  	functions of emotions to generate particular collaborative behaviors. These
-  	functions of emotions are \textit{Goal Management, Motivation, Social
-  	Regulation}, and \textit{Attentional Focus}.
+  	\cite{scherer:appraisal-processes}. Applying cognitive appraisal theory in
+  	the collaboration context described by the SharedPlans theory is novel. AMC
+  	theory accounts for several key functions of affect in collaboration:
+  	\textit{goal management, motivation, social regulation}, and
+  	\textit{attentional focus}.
 	
-  \item \textbf{Developing new computational models and algorithms for
-  \textit{Affective Motivational Collaboration} framework:}
+  \item \textbf{New appraisal algorithms based on collaboration structure:}
   
-	(Chapter \ref{ch:appraisals}) Another contribution of our work is to create
-	computational models and algorithms to compute the value of appraisal variables
-	based on the collaboration structure in a dyadic collaboration. We use Disco as
-	our collaboration manager to receive and maintain the collaboration structure.
-	Reciprocally, we use the evaluative nature of the appraisal to make changes to
-	the collaboration structure as required. We have also developed a new algorithm
-	for affect-driven goal management in the context of collaboration. Goal
-	management is one of the important functions of emotions during collaboration.
-	Existing models and implementations of appraisal focus only on how the outcome
-	of appraisal regulate and control internal processes and sometimes behaviors.
-	This part of our work shows how the outcome of appraisal of the self and the
-	human collaborator contribute to goal management as an emotion function.
+	(Chapter \ref{ch:appraisals}) We use SharedPlans description of the
+	collaboration structure in four appraisal algorithms. i.e., \textit{relevance,
+	desirability, expectedness} and \textit{controllability}, to compute the value
+	of appraisal variables in a dyadic collaboration. These algorithms are inspired
+	by \cite{marsella:ema-process-model}, and as a novel approach these algorithms
+	are designed based on different elements of mental state and human
+	collaborator's affective state.
+	
+  \item \textbf{New algorithms to influence collaboration structure:}
+   
+  (Chapter \ref{ch:appraisals}) We use the evaluative nature of the appraisal to
+  make reciprocal changes to the collaboration structure as required. We have
+  developed new algorithms for different functions of emotions such as
+  affect-driven goal management in the context of collaboration.
   
-  \begin{figure*}
-    \centering
-    \includegraphics[scale=1.17]{figure/collaborative-robot.png}
-    \caption{A robotic arm collaborating with a human to achieve a shared goal
-    using \textit{Affective Motivational Collaboration} framework.}
-    \label{fig:collaborative-robot}
-  \end{figure*}
-  
-  \item \textbf{Implementing a computational system based on \textit{Affective
-  Motivational Collaboration} framework:}
+  \item \textbf{Implemention of a computational system based on
+  \textit{Affective Motivational Collaboration} theory:}
 
-  In order to evaluate our computational models and algorithms within an
-  interaction with human collaborators, we needed an overall functional system
-  to perceive, process and act in a collaborative environment. We have
-  implemented a computational system which employs our models and algorithms in
-  \textit{Affective Motivational Collaboration} framework. Our computational
+  We implemented a computational system which employs our models and algorithms
+  in \textit{Affective Motivational Collaboration} framework. Our computational
   system implements the key concepts related to \textit{Affective Motivational
   Collaboration} theory as well as minimal implementation of other processes
   which are required for validation of the model but are not part of this
-  thesis' contributions. The emphasis of the implementation is on the underlying
-  cognitive processes of collaboration and appraisal, however the implementation
-  also includes the Perception and the Action mechanisms.
-
-  \item \textbf{Validating \textit{Affective Motivational Collaboration}
+  thesis' contributions. We use Disco as our collaboration manager to receive
+  and maintain the collaboration structure. The emphasis of the implementation
+  is on the underlying cognitive processes of collaboration and appraisal,
+  however the implementation also includes the Perception and the Action
+  mechanisms.
+  
+  \begin{figure*}
+    \centering
+    \includegraphics[scale=1.15]{figure/collaborative-robot.png}
+    \caption{A robotic arm collaborating with a human (in our end-to-end system
+    evaluation) to achieve a shared goal using \textit{Affective Motivational
+    Collaboration} framework.}
+    \label{fig:collaborative-robot}
+  \end{figure*}
+  
+  \item \textbf{Evaluation of \textit{Affective Motivational Collaboration}
   theory:}
 
-  (Chapter \ref{ch:awareness}) We have conducted two user studies a) to validate
+  (Chapter \ref{ch:awareness}) We conducted two user studies to a) evaluate
   our appraisal algorithms before further development of our framework, and b)
-  to investigate the overall functionality of our framework within an end-to-end
+  investigate the overall functionality of our framework within an end-to-end
   system evaluation with participants and a robot (see Figure
-  \ref{fig:collaborative-robot}). The second user study was also conducted to
-  evaluate the benefit of using our computational framework in human-robot
-  collaboration. In the first user study, we crowd-sourced questionnaires to
-  test our hypothesis that our algorithms will resonate with humans' decisions
-  by providing answers similar to humans' responses to questions related to
-  different factors within our appraisal algorithms. In the second user study,
-  we investigated the importance of affect-awareness in human-robot
-  collaboration, and the overall functionality of the AMC framework with the
-  participants in our study environment.
+  \ref{fig:collaborative-robot}). In the first user study, we crowd-sourced
+  questionnaires to test our hypothesis that our algorithms will resonate with
+  humans' decisions by providing answers similar to humans' responses to
+  questions related to different factors within our appraisal algorithms. In the
+  second user study, we investigated the importance of affect-awareness in
+  human-robot collaboration, and the overall functionality of the AMC framework
+  with the participants in our study environment.
 \end{enumerate}
 
 \chapter{Background and Related Work}
