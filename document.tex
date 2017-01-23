@@ -237,10 +237,6 @@ how they further collaboration between humans and robots.
 
 \section{Thesis Statement and Scope}
 
-% \footnote{Disco is able to
-% maintain a segmented interaction history, which facilitates the collaborative
-% discourse between a human and a robot.}
-
 In this thesis, we develop and evaluate a framework called \textit{Affective
 Motivational Collaboration} (AMC) which can improve the effectiveness of
 collaboration between agents/robots and humans. We address only two-participant
@@ -352,15 +348,16 @@ contributions:
 \section{Introduction}
 \vspace*{-3mm}
 In this chapter, we start by reviewing the background of prominent collaboration
-theories including SharedPlans theory \cite{grosz:plans-discourse}. We
-discuss the similarities and differences between these collaboration theories
-(see Section \ref{sec:collaboration-theories-comparison}) as well as related
-theoretical and practical work and applications. We continue by discussing the
-concept of affective computing and the social and communicative aspects of
-emotions from a psychological point of view. Understanding the social aspects of
-emotions is important in our work, since our work is focused on collaboration
-which is a social phenomenon in human environments. We also present the concept
-of artificial emotions and provide some examples of the existing computational
+theories including SharedPlans theory
+\cite{grosz:collaboration,grosz:plans-discourse}. We discuss the similarities
+and differences between these collaboration theories (see Section
+\ref{sec:collaboration-theories-comparison}) as well as related theoretical and
+practical work and applications. We continue by discussing the concept of
+affective computing and the social and communicative aspects of emotions from a
+psychological point of view. Understanding the social aspects of emotions is
+important in our work, since our work is focused on collaboration which is a
+social phenomenon in human environments. We also present the concept of
+artificial emotions and provide some examples of the existing computational
 models of emotions. Then, we provide the background of the cognitive appraisal
 theory of emotions as the second theoretical foundation in our work as well as
 other computational models of emotions and the related concepts such as some
@@ -417,8 +414,8 @@ intentions \cite{cohen:teamwork} \cite{grosz:plans-discourse}
 paradigm introduced by Bratman \cite{bratman:intentions-plans} which is
 fundamentally reliant on folk psychology \cite{ravenscroft:folk}. The two
 theories, Joint Intentions \cite{cohen:teamwork} and SharedPlans
-\cite{grosz:plans-discourse}, have been used extensively to analyze and
-implement teamwork and collaboration.
+\cite{grosz:collaboration,grosz:plans-discourse}, have been used extensively to
+analyze and implement teamwork and collaboration.
 
 The SharedPlans theory grew out of the theories of Bratman and Pollack
 \cite{bratman:plans-reasoning,pollack:plan-inference,
@@ -1250,13 +1247,14 @@ This section provides descriptions of the major computational emotion theories,
 their comparison, and their applications in AI and robotics. It includes the
 existing influential computational emotion theories as well as the underlying
 psychological theories; we mainly focus on appraisal theory since it
-emphasizes and explains the connection between emotion and cognition, although we also
-discuss dimensional theory, and we briefly cover other approaches, e.g.
+emphasizes and explains the connection between affective state and cognition,
+although we also discuss dimensional theory, and we briefly cover other
+approaches, e.g.
 discrete (basic) emotions.
 
 \subsection{Affect and Emotions}
 Affect is the representation of an agent's emotional state in some form, which
-can be the current instance of the agent's emotion. Emotion influences not only
+can be the current instance of the agent's affective state. Emotion influences not only
 what people do, but also the way they do it \cite{cowie:concepts-definitions}.
 Aristotle in \emph{The Nicomachean Ethics} reveals his idea about emotions. He
 says ``Anyone can become angry--that is easy. But to be angry with the right
@@ -2642,10 +2640,10 @@ and maintain these structures. In addition, current computational
 models of emotion (specifically appraisal models) provide antecedents (e.g.,
 beliefs and goals) of appraisal processes and clearly distinguish between
 different appraisals, but do not describe the differences of appraisal in a
-collaboration context. We argue that emotions are crucial to these underlying
-processes and we have developed a new computational theory, called
+collaboration context. We argue that affective states are crucial to these
+underlying processes and we have developed a new computational theory, called
 \textit{Affective Motivational Collaboration} theory, that combines
-emotion-based processes, such as appraisal and coping, with collaboration
+affect-based processes, such as appraisal and coping, with collaboration
 processes, such as planning, in a single unified framework. In this
 chapter, we provide a general argument about our AMC theory, major functions of
 emotions that can be applied in a collaboration context, as well as the
@@ -2680,11 +2678,11 @@ some aspects of the underlying processes in collaboration.
 There is also a communicative aspect of emotions. For instance, emotions are
 often intended to convey information to others \cite{goffman:self-presentation}.
 Emotions are also involved in verbal behaviors. For instance, an utterance can
-include both content and relational meaning. An emotion might appear to be
+include both content and relational meaning. An affect might appear to be
 elicited by the content of the utterance, but in fact be an individual's
 response to the relational meaning \cite{planalp:communicating-emotion}. The
 interpretation of these relational meanings are handled by the appraisal of
-events. Appraisal processes give us a way to view emotion as social
+events. Appraisal processes give us a way to view affect as social
 \cite{hooft:sharing-emotions}. Meaning is created by an individual's social
 experiences in the social world, and individuals communicate these meanings
 through utterances. Consequently, the meaning of these utterances and the
@@ -2694,7 +2692,7 @@ adjustments between interactants that can happen based on interpretation of each
 other's behaviors \cite{parkinson:emotion-social-interaction}. This adjustment
 procedure requires a baseline and an assessment procedure. While the components
 of the collaboration structure, e.g., shared plan, provide the baseline,
-emotion-related processes (e.g., appraisal) provide the assessment procedure.
+affect-related processes (e.g., appraisal) provide the assessment procedure.
 
 \textit{Affective Motivational Collaboration} theory is about the interpretation
 and prediction of the observable behaviors in a dyadic collaborative
@@ -2899,7 +2897,7 @@ astronaut and the robot during their collaboration on installing solar panels.
 \section{General Argument}
 
 \textit{Affective Motivational Collaboration} theory focuses on
-emotion-regulated processes involved in collaboration and builds on two
+affect-regulated processes involved in collaboration and builds on two
 well-established theories in this context. The first is Grosz and Sidner's
 SharedPlans collaboration theory, which is based on the concepts of mutual
 belief and shared plans \cite{grosz:shared-plans, grosz:plans-discourse}.
@@ -2914,8 +2912,8 @@ inspired by their work, our focus is to employ other concepts that are
 involved in appraisal of an event due to the collaboration context. For
 instance, as discussed in Section \ref{sec:relevance}, we believe not only is
 the relevance of an event is influenced by the utility of the event, but it is also
-influenced by the perceived emotion of the other collaborator. The details of
-these differences are described in Section \ref{sec:appraisal}.
+influenced by the perceived affective state of the other collaborator. The
+details of these differences are described in Section \ref{sec:appraisal}.
 
 Existing collaboration theories (including SharedPlans) consider the nature of a
 collaboration to be more than a set of individual acts. These theories argue for
@@ -2959,7 +2957,7 @@ natural language processing is out of the scope of this work:\\
 What is the nature of the processes involved in a collaboration? For example, in
 the exchange below, the Robot changes its focus of attention to something
 important to the Astronaut because of its perception of the Astronaut's negative
-emotion:\\
+affective state:\\
 
   5. \textbf{\textit{Astronaut}}: The connectors on this panel have problems and
   we might not be able to finish this task.
@@ -2979,7 +2977,7 @@ mechanism can influence the self's awareness during collaboration:\\
   and we can finish the task as originally planned.\\
 
 Finally, \textit{Affective Motivational Collaboration} theory incorporates
-motivation as an emotion-regulated and goal-driven mechanism, by which the self
+motivation as an affect-regulated and goal-driven mechanism, by which the self
 can form a new intention based on its own beliefs about self and the other, as
 well as the result of an Appraisal mechanism. In general, a new motive can
 be involved in formation of a new intention and the self can take a new action
@@ -3016,7 +3014,7 @@ their collaboration:\\
 
 The \textit{events} occurring in a collaborative environment include a)
 \textit{utterances} spoken by the collaborators, b) \textit{primitive actions}
-executed, deferred, or aborted, and c) observable \textit{emotion instances}.
+executed, deferred, or aborted, and c) observable \textit{affective states}.
 These events are the events that our affective collaborative agent perceives. We
 will discuss below the operation of individual processes in our theory based on
 these events. Each of the following five sub-sections describe how an individual
@@ -3031,14 +3029,14 @@ All of these structures require updating each time the self perceives an event.
 For instance, an utterance by the other can impact the self's focus of attention
 during the collaboration, or the effect of a primitive action can influence the
 self's view of an impasse on a task. As another example, the perception of the
-other's emotion instance can cause significant changes in the self's
+other's affective state can cause significant changes in the self's
 collaboration monitoring.
 
 \subsection{Appraising Events}
 \label{sec:appraisal-event}
 
 The other's \textit{utterances}, the effect(s) of the collaborators'
-\textit{primitive actions}, and the other's \textit{emotion instances}
+\textit{primitive actions}, and the other's \textit{affective states}
 (expressed verbally or nonverbally) are the three types of events perceived by
 the self during collaboration. The Appraisal mechanism receives the output of
 the Perception and Collaboration mechanisms as well as the requisite Mental
@@ -3066,7 +3064,7 @@ processes, which impact the self's Mental State. The changes in Mental State
 cause the Coping mechanism to provide consistent and appropriate cognitive
 responses to the world. For instance, suppose the self perceives an utterance
 and evaluates it in terms of the appraisal variables. The values of these
-variables and the corresponding emotion instances will cause new beliefs and
+variables and the corresponding affective states will cause new beliefs and
 intentions to be formed, which then cause the Coping mechanism to appropriately
 choose the self's behavior.
 
@@ -3109,21 +3107,21 @@ States, motivating actions, and evaluating and interpreting internal states and
 the environment. Emotions, generally speaking, provide a set of intra- and
 interpersonal functions which regulate internal processes and the self's
 relationship to the other during the collaboration. Emotions have meanings in a
-social context which can be interpreted by an observer. The self uses these
-emotion meanings to trigger appropriate emotion functions with respect to the
-current social context. Ultimately, the elicited emotion's functions impact the
-self's Mental State and consequently behaviors. In the rest of this section, we
-briefly describe how ten different emotion functions are related to the
-collaboration context. There are other emotion functions, such as learning and
-memory control, which are outside of the scope of this thesis. We
+social context which can be interpreted by an observer. The self uses the
+meanings of affective states to trigger appropriate emotion functions with
+respect to the current social context. Ultimately, the elicited affective state's
+functions impact the self's Mental State and consequently behaviors. In the rest
+of this section, we briefly describe how ten different emotion functions are
+related to the collaboration context. There are other emotion functions, such as
+learning and memory control, which are outside of the scope of this thesis. We
 have implemented some of the emotion functions in this section such as social
-regulation, motivation, focus of attention, and goal management in our computational
-framework (see Chapter \ref{ch:appraisals}). Other functions are described here
-with their relationship to the collaboration context, but they are beyond the
-implementation of this thesis.}
+regulation, motivation, focus of attention, and goal management in our
+computational framework (see Chapter \ref{ch:appraisals}). Other functions are
+described here with their relationship to the collaboration context, but they
+are beyond the implementation of this thesis.
 
 \subsection{Action Selection} Action selection is the function in which
-emotion instances influence choosing the most appropriate action out of a
+affective states influence choosing the most appropriate action out of a
 repertoire of possible actions at a point in time. This function influences the
 Coping mechanism and results in consistency of the self's actions based on
 anticipated emotional responses of the other and the satisfaction of the shared
@@ -3198,7 +3196,7 @@ facial expression an adequate response to the other's current utterance or does
 the self need to show a stronger behavior? Is it the new belief about the
 current state of the collaboration, or is it the new intention pursuing the
 self's private goal that the self needs to cope with? Thus, appraisal patterns
-and emotion instances impact the self's strategic processing.
+and affective states impact the self's strategic processing.
 
 \subsection{Self Model} Emotions can be a representation of how the self
 interprets the collaboration environment. The self can generate or update
@@ -3475,7 +3473,7 @@ appraisal cycle) is important because neither of these two mechanisms alone
 provides a solution for consistency.
 
 \textit{Motives} are mental constructs which can initiate, direct and maintain
-goal-directed behaviors. They are created by the emotion-regulated Motivation
+goal-directed behaviors. They are created by the affect-regulated Motivation
 mechanism. Motives can cause the formation of a new intention for the agent
 according to: a) its own emotional states (how the agent feels about something),
 b) its own private goal (how an action helps the agent to make progress), c) the
@@ -3750,7 +3748,7 @@ Motivational Collaboration Theory}.
   
   \item \textbf{\textit{Affective-Deliberative Consistency:}} The self's
   intentions possess an affective and a deliberative component. The affective
-  component refers to the emotion instance and in general the affective
+  component refers to the affective state and in general the affective
   evaluation of the self's intention towards its own behavior. However, the
   deliberate component refers to the self's actual intention which is formed
   either based on the existing shared plan or under the influence of a new
@@ -3840,7 +3838,7 @@ this concept. Furthermore, a collaborative agent should not only act based on a)
 emotional state, and b) capability of doing an action at a particular time. We
 believe the Motivation mechanism is required to reflect the collaborators' need
 into the formation of the agent's intentions. Motives are crucial mental
-constructs since they are emotion-regulated (hence, they are influenced by
+constructs since they are affect-regulated (hence, they are influenced by
 emotions' antecedents, e.g., beliefs), and they are goal-oriented (hence, they
 can impact the congruency of intentions and actions). Finally, the Coping
 mechanism works conjointly with Motivation and Appraisal mechanisms to form
@@ -3883,7 +3881,7 @@ instance, although the appraisal models mostly use utility to compute the
 relevance of an event, we have found new cognitive components involved in
 determining utility because of the influence of the collaboration. These
 components, such as the recurrence of a belief by the human collaborator or the
-influence of the human collaborator's perceived emotion on the robot's decisions
+influence of the human collaborator's perceived affective state on the robot's decisions
 emphasize the fact that collaboration requires additional procedures in
 appraisal processes. One of our contributions is to ground general appraisal
 concepts in the specific context and structure of collaboration.
@@ -4045,7 +4043,7 @@ determined based on the utility of the event as presented in
 \cite{gratch:domain-independent,marsella:ema-process-model}. Our algorithm for
 computing the relevance of an event during collaboration involves other factors
 that other appraisal models do not consider. For instance, the human's
-perceived emotion, recurrence of a belief, or occurrence of a belief about an
+perceived affective state, recurrence of a belief, or occurrence of a belief about an
 unrelated goal by the human play important roles by influencing the utility
 of an event during collaboration. As a result, evaluating the relevance of
 events can cause a collaborative robot to respond effectively which can
@@ -4121,7 +4119,7 @@ beliefs.
   status of a goal and its predecessors and contributing goals forms weaker
   beliefs. For instance, if one knows all predecessors of a pursued goal (e.g.,
   ``Check Panels'') are \textsc{satisfied} (i.e., ``Fix Panels'' and ``Prepare
-  Panels''), failure of the pursued goal will elicit one's negative emotion (due
+  Panels''), failure of the pursued goal will elicit one's negative affective state (due
   to the strong beliefs related to the goal); whereas not knowing the status of
   the goal-related factors (e.g., whether the Astronaut could find the tool to
   fix a panel) causes one to form weaker beliefs about the goal.
@@ -4179,7 +4177,7 @@ value.
   of a motive: a) whether the goal directing the given motive is the predecessor of
   another goal for which the other collaborator is responsible, and b) whether
   achieving the goal directing the given motive can mitigate the other
-  collaborator's negative valenced emotion. For instance, if the Robot has a
+  collaborator's negative valenced affective state. For instance, if the Robot has a
   private goal to fetch another panel while the Astronaut is waiting for the
   Robot to connect the adaptor, connecting the adaptor will be more urgent than
   Robot's private goal.
@@ -4193,10 +4191,10 @@ value.
 \end{itemize}
 
 The significance of an event in a collaborative environment is based on the
-utility of the event and the human's perceived emotion. The human's perceived
-emotion influences the relevance of the event in the form of a threshold value
+utility of the event and the human's perceived affective state. The human's perceived
+affective state influences the relevance of the event in the form of a threshold value
 $\tau_{t}$ in Algorithm \ref{alg:relevance}. In Equation \ref{eqn:threshold}, we
-use the valence of the perceived emotion ($\mathcal{V}_{e_h}$) to compute
+use the valence of the perceived affective state ($\mathcal{V}_{e_h}$) to compute
 $\tau_{t}$.
 
 \begin{equation}
@@ -4214,11 +4212,11 @@ $\tau_{t}$.
     \leq 1$
 \end{center}
 
-Hence, perceiving human's positive emotion (e.g., happiness) reduces the
+Hence, perceiving human's positive affective state (e.g., happiness) reduces the
 threshold value which makes the robot find an event \textsc{relevant} with even
 a slightly positive utility. Similarly, an event can be considered
 \textsc{irrelevant} even though the utility has a relatively positive value,
-because of perceiving the human's negative emotion.
+because of perceiving the human's negative affective state.
 
 \subsection{Desirability}
 Desirability characterizes the value of an event to the robot in terms of
@@ -4447,12 +4445,12 @@ The value of all these weights are set to \textit{1.0} for the purpose of
 simplicity (\textbf{$\Call{getWeights}{}$}). These weights can be adjusted after
 further investigating the influence of these factors, and implementing other
 mechanisms in the overall architecture. We believe that the human's perceived
-emotion also impacts the controllability of an event
+affective state also impacts the controllability of an event
 (\textbf{$\Call{getEmotionValence}{}$}). The ($-1.0 \leq \mathcal{V}_{e_h} \leq
-1.0$) is the valence value of the human's perceived emotion. Positive emotions,
+1.0$) is the valence value of the human's perceived affective state. Positive emotions,
 e.g., happiness, possess positive values, and negative emotions, e.g., anger,
 have negative values. The magnitude of this value can change with respect to the
-intensity of the perceived emotion. Thus, a positive controllability value
+intensity of the perceived affective state. Thus, a positive controllability value
 indicates that an event is \textsc{controllable}; otherwise
 \textsc{uncontrollable}.
 
@@ -4622,7 +4620,7 @@ during collaboration. Emotion has a crucial influence on this goal management
 process. In this section, we provide a cost function that we use to choose the
 goal in the shared plan with the lowest cost value out of a set of alternative
 goals. This cost function is a) based on the goal attributes, b) with respect to
-the reverse appraisal of the perceived emotion, and c) the appraisal of the
+the reverse appraisal of the perceived affective state, and c) the appraisal of the
 collaborative environment. Adding goal management process to Collaboration
 mechanism is one of our contributions.
 
@@ -4645,7 +4643,7 @@ processes influenced by one's internal goals. In our ongoing example, a robot
 and an astronaut are collaborating to install solar panels. When one of the
 astronaut's goals is blocked, the robot must manage the shared goals in order to
 prevent failure of the collaboration. By using reverse appraisal
-\cite{gratch:reverse-appraisal} of the astronaut's emotion and its own appraisal
+\cite{gratch:reverse-appraisal} of the astronaut's affective state and its own appraisal
 of individual goals, the robot is able to successfully shift the focus of
 attention from the blocked goal (eliciting worry in the astronaut) to an
 appropriate one to maintain the collaboration. A similar example is provided in
@@ -4669,11 +4667,11 @@ structure (see Figure \ref{fig:appraisal-on-collaboration}).
 As we mentioned earlier, we use four appraisal variables including: relevance,
 desirability, expectedness and controllability. The outcome of each appraisal
 process is a specific value for the corresponding appraisal variable. The vector
-containing these appraisal variables can be mapped to a particular emotion
-instance at each point in time when required (see Algorithms in Section
+containing these appraisal variables can be mapped to a particular affective state
+at each point in time when required (see Algorithms in Section
 \ref{sec:appraisal}). Moreover, the functions of emotions, such as goal
 management, in a social setting and the meaning of the collaborator's perceived
-emotion in collaboration context are also important.
+affective state in collaboration context are also important.
 
 A collaboration structure provides a hierarchy and constraints of the shared
 goals in the form of a shared plan which contains both the robot and the human
@@ -4732,7 +4730,7 @@ The exponent part of our cost function (Equation \ref{eqn:power}) captures a)
 the influence of the human's perceived emotional instance, and b) the influence
 of self appraisal of the given goal. $R_h\in[0,1]$ and $D_h\in[-1,1]$ are the
 relevance and desirability values respectively, which are based on the
-\textit{reverse} appraisal of the human's perceived emotion. For instance, if
+\textit{reverse} appraisal of the human's perceived affective state. For instance, if
 the astronaut is \textit{worried}, $D_h$ is negative, e.g., -0.8 (depending on
 how undesirable the event is according to reverse appraisal), and $R_h$ will be
 1 for the active goal and its value descends to 0 for other live goals depending
@@ -4798,15 +4796,15 @@ number in each tuple is the normalized cost value without the influence of the
 affective part of the cost function, i.e., the exponent is equal to 1 in
 Equation \ref{eqn:cost}; the second number of each tuple indicates the
 normalized value of the cost including the influence of affective appraisal and
-the astronaut's perceived emotion.
+the astronaut's perceived affective state.
 
 Based on our cost function, the cost of completing the primitive goal ``Check
 Connector'' is 0.82 (see Figure \ref{fig:task-model-astronaut}). As shown, when
-affect is not considered the cost is 0.26; the negative emotion of the astronaut
+affect is not considered the cost is 0.26; the negative affective state of the astronaut
 (worry) significantly increases the cost of the current goal, and also impacts
 the other two primitive live goals under the same parent. Therefore, instead of
 insisting on pursuing the same blocked goal which has caused the astronaut's
-negative emotion, the robot can mitigate the astronaut's emotions by adapting to
+negative affective state, the robot can mitigate the astronaut's emotions by adapting to
 her worry. The robot shifts the focus of attention to ``Check Impedance'' to
 maintain progress and prevent failure of the collaboration. We use our proposed
 cost function in our goal management algorithm to integrate affective appraisal
@@ -4884,8 +4882,8 @@ The \textit{active} coping strategy can provide one or all of the following
 three different intentions with respect to whether this coping strategy is
 activated and the required conditions are provided. Firstly, this coping
 strategy can provide an intention to \textit{acknowledge} the human's emotions.
-For instance, if the human expresses an emotion with negative valence, the agent
-can acknowledge human's negative emotion accordingly. Secondly, the active
+For instance, if the human expresses an affective state with negative valence, the agent
+can acknowledge human's negative affective state accordingly. Secondly, the active
 coping strategy can provide an intention to \textit{respond} to the human if
 the human asks a question. Currently, in our framework, the agent can respond to
 the human if the human asks the agent: a) what input is required to achieve a
@@ -4897,7 +4895,7 @@ agent), or reject the human's proposal (if it is not controllable for the
 agent). Thirdly, the active coping strategy can form an intention to
 \textit{delegate} a task to the human collaborator. The intention for task
 delegation can be formed if the agent fails to achieve its own goal, and the
-human's perceived emotion is not negative. As mentioned earlier, any or all of
+human's perceived affective state is not negative. As mentioned earlier, any or all of
 these intentions can be formed if active coping is selected. The agent acts
 accordingly by passing these intentions to the Action mechanism. For instance,
 if the human is frustrated about a failure that occurred when using a tool to
@@ -4906,7 +4904,7 @@ tool, the active coping strategy forms a new intention to acknowledge the
 human's frustration and responds to the human by providing the right tool
 (input) to use and fulfill the task. In this example, there will be no new
 intention to delegate a new goal to the human since the agent perceives the
-human's negative emotion.
+human's negative affective state.
 
 \subsection{Seeking Social Support for Instrumental Reasons}
 The \textit{seeking social support for instrumental reasons} strategy forms new
@@ -4919,7 +4917,7 @@ to achieve a goal, b) how to do a task to achieve a goal, c) the human to
 achieve a goal, d) who is responsible to achieve a given goal. Reciprocally,
 again, the agent expects the human collaborator to accept or reject the agent's
 proposals. In our framework, whenever this strategy is activated the agent
-considers human's perceived emotion. For instance, if the human is worried about
+considers human's perceived affective state. For instance, if the human is worried about
 the outcome of a task failure, the agent does not form an intention to ask
 questions about any of the above cases and consequently prevents asking for more
 help.
@@ -4969,8 +4967,8 @@ In our Coping mechanism, there are three activation criteria for each coping
 strategy. The first criterion is the conjunction of emotion valences of the self
 and the other collaborator (see Emotion Valence column in Table
 \ref{fig:coping_strategies}). For instance, if the valence of the human
-collaborator's emotion is \textit{negative} \textbf{and} the valence of the
-agent's emotion is also \textit{negative}, the active coping ($2^{nd}$ row), the
+collaborator's affective state is \textit{negative} \textbf{and} the valence of the
+agent's affective state is also \textit{negative}, the active coping ($2^{nd}$ row), the
 acceptance ($4^{th}$ row), and the mental disengagement ($5^{th}$ row) coping
 strategies are the coping strategy candidates that have potential to become
 activated if the other activation criteria also exist for any of them. For
@@ -5000,7 +4998,7 @@ Table \ref{fig:coping_strategies}).
 \section{Motivation Mechanism}
 \label{sec:motivation_mechanism}
 As we discussed in Chapters \ref{ch:background} and \ref{ch:amct}, motives are
-goal-driven emotion-regulated constructs indicating an urge related to their
+goal-driven affect-regulated constructs indicating an urge related to their
 goal. There are several motives in psychological and computational literatures
 as we reviewed in Chapter \ref{ch:background}. However, none of these
 computational models have particularly focused on the application of motives in
@@ -5023,7 +5021,7 @@ motives in our framework, including: \textit{satisfaction},
 inspired by Merrick and Shafi's work in
 \cite{merrick:acheievement-affiliation-power} modeling motives using curves
 generated by sigmoid functions. In our work, curves are influenced by the
-valence of the human collaborator's perceived emotion. This section provides
+valence of the human collaborator's perceived affective state. This section provides
 more details about how different curves model different motives in our computational
 framework. We use the values of these three motives in other mechanisms
 including the Coping mechanism as we described in Section
@@ -5049,7 +5047,7 @@ motive process computes the difference between the current and the previous
 $\delta_{sat}$. As shown in equation \ref{eqn:satisfaction_motive}, we use the
 $\delta_{sat}$ value in all three functions to compute the overall satisfaction
 motive's value $\mathcal{M}_{sat}$. We also use three different functions with
-respect to the valence value of the the human collaborator's perceived emotion.
+respect to the valence value of the the human collaborator's perceived affective state.
 Our satisfaction motive's model has three domain dependent parameters
 $\mathcal{S}_{sat} \in [0, 1.5]$, i.e. strength of motive,
 $\mathcal{B}^\mathcal{L}$ where $\mathcal{B}$ is the base parameter of the
@@ -5080,14 +5078,14 @@ same function in $(0, \infty)$; together $\mathcal{B}$ and $\mathcal{L}$ define
 
 The curves, shown in Figure \ref{fig:satisfaction-motive-functions},
 suitably represent the change in magnitude of satisfaction motive based on
-different valence values of the human collaborators emotion.
-Intuitively, if the human collaborator does not express any emotion, the
+different valence values of the human collaborators affective state.
+Intuitively, if the human collaborator does not express any affective state, the
 satisfaction motive's value can vary between -1 and +1 (blue curve in Figure
 \ref{fig:satisfaction-motive-functions}). However, if the agent perceives
-positive emotion, there will be no negative satisfaction value since the other
+positive affective state, there will be no negative satisfaction value since the other
 collaborator is in positive state of mind (red curve in Figure
 \ref{fig:satisfaction-motive-functions}), and in contrast, if the agent
-perceives negative emotion, the satisfaction motive value only changes between
+perceives negative affective state, the satisfaction motive value only changes between
 -1 and 0 (green curve in Figure \ref{fig:satisfaction-motive-functions}) with
 respect to how satisfied the agent is according to the status of its own goals
 during collaboration.
@@ -5114,10 +5112,10 @@ of successful achievement of their related goal is higher.
 
 In our framework we use two sigmoid-based functions to compute the achievement
 motive's value. These functions values change based on the probability of
-success and valence of the human collaborator's emotion. We use Equation
-\ref{eqn:achievement-motive-valence-positive} when the perceived emotion of the
+success and valence of the human collaborator's affective state. We use Equation
+\ref{eqn:achievement-motive-valence-positive} when the perceived affective state of the
 human has positive or zero valence value, and we use Equation
-\ref{eqn:achievement-motive-valence-negative} when the perceived emotion
+\ref{eqn:achievement-motive-valence-negative} when the perceived affective state
 of the human has a negative valence value. As shown in Figure
 \ref{fig:achievement-motive-functions}, when the value of the valence changes
 between 0 and +1, the output of $\mathcal{M^{+}}_{ach}$ function changes between
@@ -5142,9 +5140,9 @@ orange lines.
 
 By intuition, as the probability of success increases the agent is more
 motivated to achieve a goal and this motive gets higher when the human's
-emotion is positive or at least neutral. The human's negative emotions cause
+affective state is positive or at least neutral. The human's negative emotions cause
 lower values of achievement motive since taking care of and acknowledging the
-human's negative emotion should have higher priority for a collaborative agent
+human's negative affective state should have higher priority for a collaborative agent
 than achieving a goal.
 
 \subsection{External Motive}
@@ -5160,9 +5158,9 @@ The only difference from the achievement motive is that we use Equations
 \ref{eqn:achievement-motive-valence-positive} and
 \ref{eqn:achievement-motive-valence-negative} in reverse order for the external
 motive; i.e., we use Equation \ref{eqn:achievement-motive-valence-negative}
-when the valence of human's perceived emotion is positive, and Equation
+when the valence of human's perceived affective state is positive, and Equation
 \ref{eqn:achievement-motive-valence-positive} when the valence of the human's
-perceived emotion is negative or zero.
+perceived affective state is negative or zero.
 
 \begin{figure}[t]
   \centering
@@ -5175,8 +5173,8 @@ perceived emotion is negative or zero.
 \end{figure}
 
 Intuitively, when the human proposes a new goal while expressing a negative
-emotion the agent should be more motivated to acknowledge human's proposal and
-pursue the proposed goal to mitigate human's negative emotion and maintain the
+affective state the agent should be more motivated to acknowledge human's proposal and
+pursue the proposed goal to mitigate human's negative affective state and maintain the
 collaboration. For example, when the human collaborator is worried
 about the failure of attaching a solar panel due to a malfunctioning tool,
 and proposes that the robot attach the panel, the high value of the external
@@ -5203,7 +5201,7 @@ algorithms the Theory of Mind mechanism substitutes the agent's required goal
 and its corresponding constraints and information with the human's goal and its
 corresponding information which is provided to the agent within the shared plan
 structure.  However, only for the reverse appraisal of \textit{desirability} we
-chose to simply use the valence value of the human's perceived emotion and
+chose to simply use the valence value of the human's perceived affective state and
 interpret negative, neutral and positive valence values as undesirable, neutral
 and desirable values respectively. In this way, our agent could directly infer
 whether the occurrence of the current event and its corresponding goal is
@@ -5314,7 +5312,7 @@ mechanisms to the extent to which they could help us to run and test our
 framework. The Perception mechanism only redirects the input values from the
 system's users to the framework. For instance, in our user study described in
 Section \ref{sec:end-to-end}, the Perception mechanism only receives the valence
-of human's emotion from the input and provides it to the framework.
+of human's affective state from the input and provides it to the framework.
 On the other hand, the Action mechanism executes some functions based on the
 intentions formed and provided by the Coping mechanism described in this
 section. We group all of these functions into three categories in our framework.
@@ -5322,7 +5320,7 @@ The first group of functions includes all of the functions capable of executing
 some actions with respect to the domain. The second category includes all of the
 functions involved in revealing the agent's utterances by writing on the screen or
 conveying through the agent's voice and text to speech systems. The last
-category includes all of the functions to express the agent's emotion. The
+category includes all of the functions to express the agent's affective state. The
 emotions can be expressed through colors, emoticons, voice and text. For
 example, in the user study described in Chapter \ref{ch:awareness}, we expressed
 the agent's emotions by using emoticons and utterances through the text on the
@@ -5563,16 +5561,16 @@ the algorithm when evaluating options with similar levels of desirability.
 \label{sec:relevance-crowdsourcing}
 In the example shown in Figure \ref{fig:qs4}, with respect to Algorithm
 \ref{alg:relevance}, option A is relevant because of Mary's perceived negative
-emotion (see Equation \ref{eqn:utility}). Although option B is relevant (since
+affective state (see Equation \ref{eqn:utility}). Although option B is relevant (since
 it achieves the next goal in the shared plan), 83\% of participants consider it as
 less relevant than option A; we believe this is due to the effect of Mary's
-perceived negative emotion which also generates a higher utility value in our
+perceived negative affective state which also generates a higher utility value in our
 relevance algorithm. Another question also tested belief saliency. However, the
 options provided only related to the shared plan (i.e., no human emotions in the
 options). In this case 87\% of participants chose the option that accomplished the
 next goal in the shared plan. Interestingly, when confronted with a negative
-emotion from their collaborator, human participants deviated from the shared plan
-and found their collaborator's emotion more relevant than the original plan. It
+affective state from their collaborator, human participants deviated from the shared plan
+and found their collaborator's affective state more relevant than the original plan. It
 is noteworthy that in both the absence and the presence of emotions the
 participants chose the more salient option with respect to our definition of
 saliency, which was not referenced or provided in the questionnaire.
@@ -5639,7 +5637,7 @@ responses and behaviors. Our aim in this experiment was to study the importance
 of emotional awareness and the underlying affect-driven processes in human-robot
 collaboration. We examined how emotional-awareness impacts different aspects of
 humans' preferences by comparing the results from our participants collaborating
-with an emotion-aware versus an emotion-ignorant robot.
+with an affect-aware versus an affect-ignorant robot.
 
 % \section{Collaborative Behaviors and Emotional-Awareness}
 % 
@@ -5705,9 +5703,15 @@ Figure \ref{fig:framework} along with the Mental State. The mental
 states shown in Figure \ref{fig:framework} comprise the knowledge base required
 for all of the mechanisms in the overall model. The details about these mental
 processes and Mental State are described in Chapters \ref{ch:amct} and
-\ref{ch:appraisals}. In this user-study, the Collaboration mechanism uses a
-hierarchy of goals associated with tasks in the hierarchical task network
-structure depicted in Figure \ref{fig:collaboration_structure}.
+\ref{ch:appraisals}. We use Disco as the basis of the Collaboration mechanism.
+Disco is the open-source successor to COLLAGEN
+\cite{rich:collaboration-manager,rich:discourse} which incorporates algorithms
+based on SharedPlans theory for discourse generation and interpretation. Disco
+is able to maintain a segmented interaction history, which facilitates the
+collaborative discourse between a human and a robot. In this user-study, the
+Collaboration mechanism uses a hierarchy of goals associated with tasks in the
+hierarchical task network structure depicted in Figure
+\ref{fig:collaboration_structure}.
 
 \subsubsection{The Robot}
 
@@ -5718,12 +5722,13 @@ was operated based on Robot Operating System (ROS -- indigo) and was receiving
 commands through the ROS-bridge from our Affective Motivational Collaboration
 framework (see Figure \ref{fig:framework}). We provided a simple GUI using a
 touch-screen monitor (see Figure \ref{fig:gui}) to a) express the robot's
-positive, negative or neutral emotion through an emoticon, b) display the
+positive, negative or neutral affective state through an emoticon, b) display the
 robot's utterances, c) control turn-taking process of the collaboration, and d)
 let the participants express (report) their positive, negative or neutral
-emotion for each turn. The robot used the MaryTTS\footnote{http://mary.dfki.de/}
-text-to-speech platform to provide corresponding speech for its utterances in
-English.
+affective state for each turn. The GUI was identical in both affect-aware and
+affect-ignorant conditions (see Section \ref{sec:experimental-design}). The
+robot used the MaryTTS\footnote{http://mary.dfki.de/} text-to-speech platform to
+provide corresponding speech for its utterances in English.
 
 \subsubsection{Robot Controller}
 The robot controller is comprised of two major components: 1) ROS-bridge and 2)
@@ -5743,7 +5748,7 @@ actuator commands and sends them to the robot (see Figure \ref{fig:environment})
 \end{figure}
 
 \subsection{Experimental Design}
-
+\label{sec:experimental-design}
 Our scenario was based on a table top turn-taking game that we designed to
 simulate the installation of a solar panel. Participants collaborated one-on-one
 with our robot to complete all the given tasks required to install the solar
@@ -5788,49 +5793,49 @@ human's goal. In case of the human's turn, the robot waited for the human to do
 a task, then the wizard let the robot know whether the human's goal was achieved
 or not. Afterwards the robot made a decision about which goal to pursue and
 informed the human accordingly. There were two conditions of the robot: 1)
-emotion-aware and 2) emotion ignorant. The same procedure was applied to both
-conditions. {\color{red}In the next section (i.e., Algorithmic Trace) we provide
-the algorithmic trace to show how goal management algorithm works in both
-affect-aware and affect-ignorant conditions.}
+affect-aware and 2) affect-ignorant. The same procedure was applied to both
+conditions. In the next section (i.e., Algorithmic Trace) we provide the
+algorithmic trace to show how goal management algorithm works in both
+affect-aware and affect-ignorant conditions.
 
 The robot interacted via a) speech, b) the corresponding utterance on the
-screen, c) negative, positive and neutral expression of emotion through an
+screen, c) negative, positive and neutral expression of affective state through an
 emoticon on the screen. The robot used only neutral expression in the case of
-emotion-ignorance. The interaction was controlled autonomously by the framework
-we discussed in Section \ref{sec:theory} in both the emotion-ignorant and the
-emotion-aware cases. The reasoning about which task should be done and
+affect-ignorance. The interaction was controlled autonomously by the framework
+we discussed in Section \ref{sec:theory} in both the affect-ignorant and the
+affect-aware cases. The reasoning about which task should be done and
 controlling the robot was entirely autonomous. Only the perception of the task
 failure or achievement by the robot or by the participant was done by a wizard
 monitoring the collaboration outside of the test area. The interaction was
 structured based on the same collaboration structure (see Figure
 \ref{fig:collaboration_structure}) for both conditions. The robot used the same
-utterances in both conditions. In the emotion-aware condition the robot used a
-different behavior in comparison with the emotion-ignorant condition only if the
-participant was expressing a negative emotion in the event of a failure; i.e.,
-the robot's utterances were identical in emotion-ignorant and emotion-aware
+utterances in both conditions. In the affect-aware condition the robot used a
+different behavior in comparison with the affect-ignorant condition only if the
+participant was expressing a negative affective state in the event of a failure; i.e.,
+the robot's utterances were identical in affect-ignorant and affect-aware
 cases if in the latter the participant reported (expressed) a positive or a
-neutral emotion.
+neutral affective state.
 
-Three different behaviors could be generated only in the emotion-aware
+Three different behaviors could be generated only in the affect-aware
 condition as a result of the Coping mechanism (planning, active coping, seeking
 social support for instrumental reasons, and mental disengagement coping
 strategies were involved to generate these three behaviors). These three
-behaviors were 1) mitigating the human's negative emotion and postponing its own
+behaviors were 1) mitigating the human's negative affective state and postponing its own
 task to help the human, 2) goal-management to switch to another goal which had
-lower cost with respect to the human's negative emotion, and 3) task delegation
+lower cost with respect to the human's negative affective state, and 3) task delegation
 to the human to overcome the impasse. In each run, the human had two
 predetermined task failures, and the robot had one. If the human expressed
-negative emotion after the first human task failure, the robot responded by
-mitigating the human's negative emotion by saying  ``It was not your fault. I
+negative affective state after the first human task failure, the robot responded by
+mitigating the human's negative affective state by saying  ``It was not your fault. I
 can help you with this task" and helping the human by providing a peg to fulfill
-the human's task. If the human expressed negative emotion after the second human
+the human's task. If the human expressed negative affective state after the second human
 task failure, the robot informed the human that they could proceed with another
 task to save time while simultaneously requesting a new peg (i.e., help) from
-the supervisor. If the human expressed negative emotion as a result of the
+the supervisor. If the human expressed negative affective state as a result of the
 robot's task failure, the robot requested help from the human (who had the
-correct peg). In the event that the human expressed positive or neutral emotion
+correct peg). In the event that the human expressed positive or neutral affective state
 during these three failures, the robot behaved identically in the
-emotion-ignorant and the emotion-aware cases, by asking the supervisor for help.
+affect-ignorant and the affect-aware cases, by asking the supervisor for help.
 
 \begin{figure}
   \centering
@@ -5913,30 +5918,30 @@ provide help to overcome an impasse in response to the human's goal failure.
 The non/social functions of emotions impact a collaboration process. Human
 collaborators prefer to collaborate with others whose behaviors are influenced
 by these functions of emotions depending on the context. We developed seven
-specific hypotheses regarding the positive influence of emotion-awareness and
+specific hypotheses regarding the positive influence of affect-awareness and
 the usefulness of emotion function during collaboration:
 
-\textit{\textbf{Hypothesis 1.}} Participants will feel closer to the emotion-aware
-robot rather than the emotion-ignorant robot.
+\textit{\textbf{Hypothesis 1.}} Participants will feel closer to the affect-aware
+robot rather than the affect-ignorant robot.
 
-\textit{\textbf{Hypothesis 2.}} Participants will find the emotion-aware robot to be
-more trustworthy than the emotion-ignorant robot.
+\textit{\textbf{Hypothesis 2.}} Participants will find the affect-aware robot to be
+more trustworthy than the affect-ignorant robot.
 
-\textit{\textbf{Hypothesis 3.}} Participants will find the emotion-aware robot to
-have better performance in collaboration than the emotion-ignorant robot.
+\textit{\textbf{Hypothesis 3.}} Participants will find the affect-aware robot to
+have better performance in collaboration than the affect-ignorant robot.
 
-\textit{\textbf{Hypothesis 4.}} Participants will find the emotion-aware robot to be
-more understanding of their feelings than the emotion-ignorant robot.
+\textit{\textbf{Hypothesis 4.}} Participants will find the affect-aware robot to be
+more understanding of their feelings than the affect-ignorant robot.
 
-\textit{\textbf{Hypothesis 5.}} Participants will find the emotion-aware robot to be
-more understanding of their goals than the emotion-ignorant robot.
+\textit{\textbf{Hypothesis 5.}} Participants will find the affect-aware robot to be
+more understanding of their goals than the affect-ignorant robot.
 
 \textit{\textbf{Hypothesis 6.}} Participants will feel more satisfied about the
-collaboration when working with the emotion-aware robot rather than
-emotion-ignorant robot.
+collaboration when working with the affect-aware robot rather than
+affect-ignorant robot.
 
 \textit{\textbf{Hypothesis 7.}} Participants will perceive higher level of mutual
-satisfaction with the emotion-aware robot than emotion-ignorant robot.
+satisfaction with the affect-aware robot than affect-ignorant robot.
 
 \subsection{Procedure}
 \label{sec:procedure}
@@ -5952,7 +5957,7 @@ of the types of task failures (i.e., fallen peg) that might occur during the
 collaboration. Participants were told that researchers were developing a
 collaborative robot and would like their help in evaluating their design.
 Participants were provided with identical instructions and randomly assigned to
-complete either the emotion-aware or the emotion ignorant condition first. They
+complete either the affect-aware or the affect ignorant condition first. They
 were told that, after their collaboration with the robot, they would be asked to
 answer a questionnaire on their experience. After completing the first round of
 collaboration, participants answered a post-experiment questionnaire that
@@ -5971,7 +5976,7 @@ runs, and their reasons of preference; the questions are provided in
 \subsubsection{Measurements}
 \label{sec:Measurements}
 In our study two basic conditions of the robot were tested: a) the
-emotion-ignorant condition, b) the emotion-aware condition. We measured
+affect-ignorant condition, b) the affect-aware condition. We measured
 participants' recall of the collaborative behaviors presented by the robot using
 an open-ended post-experiment questionnaire. We also specifically asked the
 participants what behavior of the robot they liked during their collaboration.
@@ -5991,10 +5996,10 @@ before our screening of 4 participants based on our sanity check questions. Afte
 this screening, the ages of the participants varied between 19 and 54 with an
 average of 30.8 years old. Of the 33 participants, 21 were female and 12
 were male. Each participant participated in 2 trials. In one trial the robot was
-aware of human's emotion and in the second trial the robot was ignoring human's
-emotion. The order of these two trials were randomly assigned to each
-participant. Overall, we used emotion-ignorant robot first in 16 experiments,
-and emotion-aware robot first in 17 experiments.
+aware of human's affective state and in the second trial the robot was ignoring human's
+affective state. The order of these two trials were randomly assigned to each
+participant. Overall, we used affect-ignorant robot first in 16 experiments,
+and affect-aware robot first in 17 experiments.
 
 \subsection{Results}
 
@@ -6005,7 +6010,7 @@ summary questionnaire at the end of the experiment.
 
 \subsubsection{7-Point Likert Scale Survey Results}
 As mentioned previously, the 7-point Likert scale survey was administered at
-the end of the emotion-ignorant run and at the end of the emotion-aware run for
+the end of the affect-ignorant run and at the end of the affect-aware run for
 each participant. The 31 questions are generally categorized in accordance
 with the seven hypotheses listed in Section \ref{sec:hypotheses} to evaluate the
 humans' perceptions of the following seven categories, with 3-7 questions per
@@ -6031,8 +6036,8 @@ by the Likert scale. Because the study was a within-subject study, and due to
 the skewness of the data, the results were analyzed using the Wilcoxon Signed
 Rank Test, with the normal approximation for large samples. For all questions,
 the Wilcoxon Signed Rank Test indicated that participants' rating of the
-emotion-aware condition was statistically significantly higher than the
-emotion-ignorant condition (except in reverse-scored questions, when it was
+affect-aware condition was statistically significantly higher than the
+affect-ignorant condition (except in reverse-scored questions, when it was
 statistically significantly lower). The questions and their p-values are
 provided in Table \ref{fig:31questions-table}. Analysis of the results revealed no statistically
 significant difference or consistent pattern based on which condition the
@@ -6050,28 +6055,28 @@ charts with sample means are presented for the purpose of illustration.
 \hspace*{-8mm} \textbf{Likability of the Robot}
 \label{sec:Likability}
 \\Questions 1 through 4 addressed the likability of the robot. As shown in
-Figure \ref{fig:overall-likability}, participants rated the emotion-aware robot
-1.5-2.1 points higher than the emotion-ignorant robot. These results
+Figure \ref{fig:overall-likability}, participants rated the affect-aware robot
+1.5-2.1 points higher than the affect-ignorant robot. These results
 indicate that participants felt closer with and preferred working with the
-emotion-aware robot; these results support Hypothesis 1, which stated that
-humans would prefer to work with the emotion-aware robot over the
-emotion-ignorant robot. \\
+affect-aware robot; these results support Hypothesis 1, which stated that
+humans would prefer to work with the affect-aware robot over the
+affect-ignorant robot. \\
 
 \hspace*{-8mm} \textbf{Human Trust in the Robot}
 \label{sec:Trust}
 \\ Questions 5-9 were designed to measure the degree of trust that the human
 participants felt in the robot. As shown in Figure \ref{fig:overall-trust},
-participants trusted the emotion-aware robot, on average, a minimum of 1.4
-points more than the emotion-ignorant robot, both in general and in terms of
+participants trusted the affect-aware robot, on average, a minimum of 1.4
+points more than the affect-ignorant robot, both in general and in terms of
 collaboration performance. In Question 5, participants rated a
-general statement of trust 1.5 points higher in the emotion-aware
+general statement of trust 1.5 points higher in the affect-aware
 case. Additionally, in Question 7, participants rated their trust in the
-emotion-aware robot to perform appropriately during collaboration an average of
+affect-aware robot to perform appropriately during collaboration an average of
 5.9 on a 7-point Likert scale, where 7.0 would indicate maximum trust; this
 indicates an acceptable level of trust in the robot's collaborative
 abilities. These results support Hypothesis 2, that posits that human
-participants would find the emotion-aware robot to be more trustworthy than the
-emotion-ignorant robot.\\
+participants would find the affect-aware robot to be more trustworthy than the
+affect-ignorant robot.\\
 
 \begin{figure*}[h]
 \centering
@@ -6093,10 +6098,10 @@ performance.}
 \label{sec:Performance}
 \\Question 10 (which is reverse-scored) measures the participant's perception of
 repetitiveness in the robot during the collaboration. In both conditions,
-participants rated the robot as moderately repetitive, with the emotion-ignorant
-robot's average response being about 1.1 points higher than the emotion-aware.
+participants rated the robot as moderately repetitive, with the affect-ignorant
+robot's average response being about 1.1 points higher than the affect-aware.
 This result correlates with several of the open-ended responses which described
-the emotion-aware robot's behaviors as ``cute'' and ``interesting'', refer to
+the affect-aware robot's behaviors as ``cute'' and ``interesting'', refer to
 Section \ref{sec:Open-Ended}. Question 11, which asks about the efficiency of
 the robot's decisions is the question with the highest p-value of the 31
 questions. This correlates with the result of the open-ended question asking
@@ -6105,22 +6110,22 @@ which condition of the robot exhibited behaviors that could prevent human error
 respondents stated that it may be quicker or simpler to call the supervisor in
 the event of a task failure, rather than changing the order of the tasks.
 According to the results from Question 12, the participants felt that the
-emotion-aware robot's decisions during collaboration improved their own
-performance, with an average rating of 5.4, while the emotion-ignorant robot
+affect-aware robot's decisions during collaboration improved their own
+performance, with an average rating of 5.4, while the affect-ignorant robot
 only received an average rating of 3.3, indicating that participants felt it was
 not able to interact in such a way as to increase the human's performance; refer
 to results from Question 6. These results support Hypothesis 3, which posited
-that humans will perceive the emotion-aware robot as being more capable than the
-emotion-ignorant robot. \\
+that humans will perceive the affect-aware robot as being more capable than the
+affect-ignorant robot. \\
 
 \hspace*{-8mm} \textbf{Robot's Understanding of Human Emotions} 
 \label{sec:Emotions}
 \\In Questions 13 through 17, participants evaluate the robot's understanding of
 humans' emotions. In questions 13, 15, and 16, participants rated the
-emotion-aware robot, on average, a minimum of 1.8 points higher than the
-emotion-ignorant robot. In response to questions 14 and 17, which are
-reverse-scored, participants ranked the emotion-ignorant robot 1.2 and 2.0
-points higher, respectively, than then emotion-aware robot. The results
+affect-aware robot, on average, a minimum of 1.8 points higher than the
+affect-ignorant robot. In response to questions 14 and 17, which are
+reverse-scored, participants ranked the affect-ignorant robot 1.2 and 2.0
+points higher, respectively, than then affect-aware robot. The results
 of all five questions in this category support Hypothesis 4. \\
 
 \begin{figure*}[tbh]
@@ -6139,19 +6144,19 @@ whether the humans felt that the robot understood the shared collaboration goal 
 human's personal goal, respectively. For both conditions of the robot, the
 average scores were lower than 3.5, indicating that the human's perceived the
 robot as having some understanding of the goals. For both questions, the
-emotion-ignorant robot's average score was significantly higher than the
-emotion-aware robot's score. Similarly, Question 20 was a measure of whether the
+affect-ignorant robot's average score was significantly higher than the
+affect-aware robot's score. Similarly, Question 20 was a measure of whether the
 human perceived that the robot correctly perceived the human's goal.
-On average, participants provided an average rating for the emotion-aware robot
-that was 1.5 points higher than that for the emotion-ignorant robot. Question 21
+On average, participants provided an average rating for the affect-aware robot
+that was 1.5 points higher than that for the affect-ignorant robot. Question 21
 measured the human perception of the robot's commitment to the collaboration;
-for this measure, the average participant score assigned to the emotion-aware
+for this measure, the average participant score assigned to the affect-aware
 robot was 6.2 points out of a maximum of 7 points, indicating that the
-participants felt that the emotion-aware robot was strongly committed to the
-collaboration. The emotion-ignorant robot received an average rating of 4.4
+participants felt that the affect-aware robot was strongly committed to the
+collaboration. The affect-ignorant robot received an average rating of 4.4
 points, indicating only moderate commitment. These results strongly support
-Hypothesis 5, which posits that humans will feel that the emotion-aware robot
-will better understand their goals than the emotion-ignorant robot.\\
+Hypothesis 5, which posits that humans will feel that the affect-aware robot
+will better understand their goals than the affect-ignorant robot.\\
 
 \begin{figure*}
 \centering
@@ -6174,23 +6179,23 @@ feeling about the collaboration.}
 \\Questions 22 through 28 were designed to gauge how the human participants
 felt about the partnership within the collaboration and the outcome of the
 collaboration. For each of the 7 questions, the participants ranked the
-emotion-aware robot as better than the emotion-ignorant robot, by a minimum,
+affect-aware robot as better than the affect-ignorant robot, by a minimum,
 on average, of 0.8 points. Questions 24, 27 and 28 addressed whether the robot
 and the participant were working toward mutually agreed-upon goals and on the
-outcome of the collaboration; in the emotion-aware condition, participants rated
-the robot a minimum of 6.1 points, on average, while rating the emotion-ignorant
+outcome of the collaboration; in the affect-aware condition, participants rated
+the robot a minimum of 6.1 points, on average, while rating the affect-ignorant
 robot 1-1.6 points lower, indicating that the participants felt a very strong
-sense of collaboration with the emotion-aware robot, and only a moderate sense
-of collaboration with the emotion-ignorant robot. Questions 25 and 26 address
+sense of collaboration with the affect-aware robot, and only a moderate sense
+of collaboration with the affect-ignorant robot. Questions 25 and 26 address
 whether the robot and the participant set the collaboration goals together;
 these two questions have lower scores than Questions 24, 27 and 28, for both the
-emotion-aware and the emotion-ignorant case. The lower overall scores are
+affect-aware and the affect-ignorant case. The lower overall scores are
 likely due to the fact that the robot decides the task order or action in the
 event of failure in both conditions; however, the higher score in the
-emotion-aware case may indicate that emotional awareness can increase a feeling
+affect-aware case may indicate that emotional awareness can increase a feeling
 of collaboration. These results support Hypothesis 6 that humans will feel
 a greater sense of mutual collaboration and understanding about the
-collaboration with the emotion-aware robot.\\
+collaboration with the affect-aware robot.\\
 
 \hspace*{-8mm} \textbf{Human Perception of Mutual Satisfaction with
 Collaborative Partner}
@@ -6198,14 +6203,14 @@ Collaborative Partner}
 \\ Questions 29, 30 and 31 were designed to measure the human's perception
 of the robot's satisfaction with the human, the human's satisfaction with the
 robot and the mutual understanding between the human and the robot,
-respectively. The participants provided an average response in the emotion-aware
+respectively. The participants provided an average response in the affect-aware
 condition of 5.8, 5.9 and 5.7 to Questions 29, 30 and 31, respectively,
 indicating a high level of mutual satisfaction; all three answers were
-about 1.4-1.9 points lower, on average, in the emotion-ignorant condition. These
+about 1.4-1.9 points lower, on average, in the affect-ignorant condition. These
 results indicate a higher level of satisfaction working with the robot in the
-emotion-aware condition, and strongly support Hypothesis 7, which posited that
-humans will feel a greater sense of mutual satisfaction with the emotion-aware
-robot than the emotion-ignorant robot.
+affect-aware condition, and strongly support Hypothesis 7, which posited that
+humans will feel a greater sense of mutual satisfaction with the affect-aware
+robot than the affect-ignorant robot.
 
 \begin{figure*}
 \centering
@@ -6220,17 +6225,17 @@ satisfaction with collaborative partner.}
 As described in Section \ref{sec:procedure}, each participant answered an
 open-ended questionnaire at the end of the study. Table
 \ref{fig:Open-Ended-Table} summarizes the questionnaire and which condition
-users preferred for certain conditions (i.e. emotion-ignorant or emotion-aware).
+users preferred for certain conditions (i.e. affect-ignorant or affect-aware).
 Note that some users chose not to state a preference regarding which condition
 they preferred for certain conditions; because we were specifically interested
-in whether users preferred the emotion-aware case, we considered the ambiguous
+in whether users preferred the affect-aware case, we considered the ambiguous
 responses to be failures in the binomial analysis. The binomial analysis is
 based on a population size of 33.
 
 \begin{table}[t]
   \centering
   \caption{Open-ended questionnaire questions and results. (*Note: Because we
-  are evaluating whether humans prefer an emotion-aware robot, these results are
+  are evaluating whether humans prefer an affect-aware robot, these results are
   taken as negative test results when calculating the p-value using the binomial
   distribution. Only those participants who clearly indicated a preference for
   the emotion-aware robot are taken as positive test results.)}
@@ -6240,7 +6245,7 @@ based on a population size of 33.
 \end{table}
 
 As shown in Table \ref{fig:Open-Ended-Table}, 100\% of users unambiguously
-preferred the run with the emotion-aware robot. In general, this preference
+preferred the run with the affect-aware robot. In general, this preference
 stemmed from a feeling of closeness and partnership, as seen in these responses:
 ``the robot had emotions and responded to my emotions. Also, ``what it said about
 my failing was cute and aimed to make me feel better.'' Another example is ``I
@@ -6250,8 +6255,8 @@ act...I also liked that he asked me to correct its failure, although it could
 ask the supervisor.''  
 
 When asked in which of the two runs the robot exhibited behavior that could be
-useful in a more complex task, 90.9\% chose the emotion-aware robot. In general,
-respondents thought that the emotion-aware robot was better at problem solving,
+useful in a more complex task, 90.9\% chose the affect-aware robot. In general,
+respondents thought that the affect-aware robot was better at problem solving,
 more adaptable, and more capable of handling the social complexities that occur
 in collaboration, as shown in responses such as ``The robot explained
 motives...which is important to keep a team communicating and on the same
@@ -6259,19 +6264,19 @@ pace.'' Also, ``When we failed he initially switched to a new task and then came
 back to the originally failed task. It kept me from getting irritated and
 negative.'' Finally, ``The more complex, the more necessary it is to understand
 how humans think and operate...an empathetic robot can adapt, encourage and
-help.'' It is worth noting that one respondent preferred the emotion-ignorant
+help.'' It is worth noting that one respondent preferred the affect-ignorant
 case, saying ``In a more complex task it might be better for the robot to take
 control and simply tell me what to do; trying to be understanding and
 collaborative wouldn't be as important as doing the task correctly.''
 
 The only question that did not provide statistically significant support in
-favor of the emotion-aware robot related to which case the robot exhibited
+favor of the affect-aware robot related to which case the robot exhibited
 behavior that could prevent human error. About 36.4\% of respondents thought
-that the emotion-ignorant robot was more likely to prevent human error; however, all
+that the affect-ignorant robot was more likely to prevent human error; however, all
 but one of these cited calling the supervisor as the main method of preventing
 human error, in spite of the fact that the instructions indicated that the
 robot's need to call the supervisor counted against the collaboration. Of the
-54.5\% who thought that the emotion-aware robot was better at preventing human
+54.5\% who thought that the affect-aware robot was better at preventing human
 error, most cited the robot's ability to console the human as the main behavior
 that could prevent human error. Respondents indicated that this enabled them to
 move on and feel better about the collaboration, as with this response: ``The
@@ -6282,20 +6287,20 @@ Making my mind move away from frustration could definitely prevent more
 errors.''
 
 When asked in which of the runs the robot exhibited behavior that could improve
-the efficiency of the collaboration, 78.8\% responded with the emotion-aware
+the efficiency of the collaboration, 78.8\% responded with the affect-aware
 case; of these, the vast majority stated that this was because of the robot's
 ability to change the order of tasks in the event of a failure, and to ask the
 human for help.
 
 Finally, when asked in which run the most interesting behavior occurred,
-72.7\% chose the emotion-aware condition. Of these respondents, 12
+72.7\% chose the affect-aware condition. Of these respondents, 12
 individuals stated that the robot's attempt to console the human by saying ``It
-was not your fault'' in response to the human's negative emotion that occurred
+was not your fault'' in response to the human's negative affective state that occurred
 as a consequence of the human's failed task was the most interesting behavior,
 and a majority mentioned that it actually made them feel more positive. Six
-participants referred to the robot's ability to understand and express emotion.
+participants referred to the robot's ability to understand and express affective state.
 Several participants referred to the robot's ability to communicate, including
-the ability to ask questions. Of those who responded with the emotion-ignorant
+the ability to ask questions. Of those who responded with the affect-ignorant
 case, most found the ability to call the supervisor, and mechanical functions,
 such as gripping, to be most interesting.
 
@@ -6319,13 +6324,13 @@ demographics of the participants.
 
 To investigate the impact of demographics, we carried out Multiple Linear
 Regression analysis for each question, under each condition of the robot (i.e.
-emotion-aware and emotion-ignorant). For each question, the dependent variable
+affect-aware and affect-ignorant). For each question, the dependent variable
 was the participant rating; each question was analyzed with four combinations of
 dependent variables: (1) age only, (2) gender only, (3) age and gender, and (4)
 age, gender and age*gender (effect modification). The results for the
-emotion-aware case are presented in Table
+affect-aware case are presented in Table
 \ref{fig:demographics-results-emotion-awareness} and the results for the
-emotion-ignorant case are presented in Table
+affect-ignorant case are presented in Table
 \ref{fig:demographics-results-emotion-ignorance}. The tables contain all models
 that were statistically significant, except those that revealed a decrease in
 the R$^2$ when the number of parameters increased; parameters not included in a
@@ -6334,7 +6339,7 @@ from the table did not have any statistically significant models based on age an
 
 \begin{table}[t]
   \centering
-  \caption{Multiple linear regression analysis results for the emotion-aware
+  \caption{Multiple linear regression analysis results for the affect-aware
   condition.}
   \label{fig:demographics-results-emotion-awareness}
   \vspace*{-3mm}
@@ -6354,10 +6359,10 @@ old, only one of whom is a male.
 When effect modification is either not included or does not improve the
 explanatory power of the model(s), two consistent patterns emerge across the
 questions that are impacted by age and/or gender: (1) as age increases,
-participants' ratings of the robot tends to decrease, in both the emotion-aware
-and the emotion-ignorant condition and (2) female participants' ratings tend to
-be higher than male participants' ratings in both the emotion-aware and the
-emotion-ignorant condition.
+participants' ratings of the robot tends to decrease, in both the affect-aware
+and the affect-ignorant condition and (2) female participants' ratings tend to
+be higher than male participants' ratings in both the affect-aware and the
+affect-ignorant condition.
 
 Finally, while it is clear that age and gender impact the participants' ratings
 of the robot, the explanatory power of the regression models remains low; the
@@ -6368,7 +6373,7 @@ variation observed in the Likert scale surveys.
 
 \begin{table}[t]
   \centering
-  \caption{Multiple linear regression analysis results for the emotion-ignorant
+  \caption{Multiple linear regression analysis results for the affect-ignorant
   condition.}
   \label{fig:demographics-results-emotion-ignorance}
   \vspace*{-3mm}
@@ -6449,35 +6454,35 @@ variation observed in the Likert scale surveys.
 % \end{figure*}
 
 \subsection{Discussion}
-Based on the results, all participants prefer to work with the emotion-aware
-robot. Humans find the emotion-aware robot more likable and more trustworthy, as
+Based on the results, all participants prefer to work with the affect-aware
+robot. Humans find the affect-aware robot more likable and more trustworthy, as
 indicated in the Likert-scale responses and the open-ended questionnaire
 responses. Based on the responses, the emotional interaction with the robot can
 help create a sense of closeness and enjoyment that makes humans want to
 continue working with the robot.
 
-The results also indicate that the emotion aware robot can better maintain a
+The results also indicate that the affect-aware robot can better maintain a
 collaborative relationship. Both Likert-scale responses and Open-Ended
 Questionnaire responses indicate this. Humans felt a stronger sense of the
 robot's commitment to the collaboration, and greater understanding of their
 goals and emotions from the robot. Several open-ended responses also indicated
 that the robot was able to successfully motivate people and maintain their
 commitment to the collaboration, especially when tasks failed. Additionally, as
-shown in Section \ref{sec:Performance}, humans rated the emotion-aware case much
-higher than the emotion-ignorant case when asked which robot's decisions
+shown in Section \ref{sec:Performance}, humans rated the affect-aware case much
+higher than the affect-ignorant case when asked which robot's decisions
 improved their performance, in essence acknowledging that their collaborator's
 (i.e., the robot's) decisions had a significant impact on their performance. As
 some of the open-ended responses indicated, successfully managing emotions
 within the collaboration can help keep the collaboration on track, and prevent
 distractions due to guilt and other negative emotions.
 
-Finally, the emotion-aware robot developed a stronger sense of  partnership
+Finally, the affect-aware robot developed a stronger sense of  partnership
 through greater communication. The participants felt better understood by the
-emotion-aware robot, and felt that the goals were more mutually agreed-upon,
+affect-aware robot, and felt that the goals were more mutually agreed-upon,
 refer to Section \ref{sec:Collaboration}. As evidenced in the following
-response, the emotion-aware robot was successfully able to create a sense of
+response, the affect-aware robot was successfully able to create a sense of
 partnership through its more open communication style: ``Communication is very
-important. In the first run (i.e. emotion-aware) the robot states what tasks he
+important. In the first run (i.e. affect-aware) the robot states what tasks he
 is working on, it is clear and straight-forward. Also during the first run the
 robot cares about the human(me)'s feelings and cheers me up when I failed at the
 tasks, I think that could also improve efficiency of collaboration, because it
@@ -6498,7 +6503,7 @@ thesis we emphasized the reciprocal influence of the collaboration structure and
 the appraisal processes in collaboration. We provided algorithms to compute
 appraisal variables and their influence on collaboration processes, e.g., goal
 management. In general, our contribution in this thesis was to provide a theory
-which describes emotion-regulated goal-driven behaviors within a dyadic
+which describes affect-regulated goal-driven behaviors within a dyadic
 collaboration. A further contribution of this thesis is to account for the
 influence of motives on the coping processes in collaboration. We validated our
 individual appraisal algorithms as well as our overall computational framework
