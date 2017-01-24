@@ -140,7 +140,7 @@
 \contentsline {subsection}{\numberline {5.3.4}Procedure}{165}
 \contentsline {subsubsection}{Measurements}{166}
 \contentsline {subsubsection}{Participants}{166}
-\contentsline {subsection}{\numberline {5.3.5}Results}{167}
+\contentsline {subsection}{\numberline {5.3.5}Results}{166}
 \contentsline {subsubsection}{7-Point Likert Scale Survey Results}{167}
 \contentsline {subsubsection}{Results from the Open-Ended Questionnaire}{175}
 \contentsline {subsubsection}{Impact of Demographics}{178}

@@ -5673,12 +5673,12 @@ completely invisible to the participants, and had no impact on the robot's
 behavior other than providing input regarding tasks' failure or success. The
 last element was the supervisor. The supervisor in affect-aware condition was
 providing the right peg to the robot or the human (see \textbf{Environment and
-Tasks} in this section) in case of a task failure and only when the human
+Tasks} in this section) in case of a task failure, only when the human
 reported a neutral or positive affective state. The robot did not ask the
 supervisor to come and help if the human reported a negative affective state
 (see \textbf{Interaction Paradigm} in Section \ref{sec:experimental-design}). In
 the affect-ignorant condition the robot always asked the supervisor to help and
-provide a right peg irrespective of the human's reported affective state.
+provide a correct peg irrespective of the human's reported affective state.
 
 \begin{figure}
   \centering
@@ -5721,7 +5721,7 @@ from standing upright. Any peg that fell over was considered a failed task
 We conducted our experiment with a KUKA Youbot (see Figure
 \ref{fig:environment}). The robot was stationary on top of a desk and was able
 to pick up and place available pegs corresponding to the robot's task. The robot
-was operated based on Robot Operating System (ROS distribution indigo) and was
+was operated based on Robot Operating System (ROS distribution: indigo) and was
 receiving commands through the ROS-bridge from our Affective Motivational
 Collaboration framework (see Figure \ref{fig:framework}). We provided a simple
 GUI using a touch-screen monitor (see Figure \ref{fig:gui}) to a) express the
@@ -5781,20 +5781,18 @@ tasks. Failure of any task would create an impasse during the collaboration.
 \label{fig:gui}
 \end{figure}
 
-The robot used only neutral expression in the case of affect-ignorance.
-
 \subsubsection{Interaction Paradigm}
 \label{sec-interaction-paradigms}
-At the beginning of each collaboration the robot asked each participant to
-achieve the overall shared goal, i.e., ``installing the solar panel''. Then,
-before working towards a new subgoal, the robot informed the participant about
-its immediate parent nonprimitive goal (e.g. Prepare Panel -- see Figure
-\ref{fig:collaboration_structure}) which the primitives were going to be
-working towards. After achieving a new primitive goal, the robot either informed
-the human that it would pursue the next goal, or it informed and passed the turn
-to the human to execute the next task with respect to the human's goal. In case
-of the human's turn, the robot waited for the human to achieve a primitive goal,
-then the wizard let the robot know whether the human's goal was achieved or not.
+At the beginning of each collaboration the robot asked the participant to
+achieve the overall shared goal, i.e., ``installing the solar panel''. Then the
+robot informed the participant about the immediate parent non-primitive goal
+(e.g. Prepare Panel -- see Figure \ref{fig:collaboration_structure}) that the
+primitives are contributing to, before working towards a new sub goal. After
+achieving a new primitive goal, the robot either informed the human that it
+would pursue the next goal, or it informed and passed the turn to the human to
+execute the next task with respect to the human's goal. In case of the human's
+turn, the robot waited for the human to achieve a primitive goal, then the
+wizard let the robot know whether the human's goal was achieved or not.
 Afterwards the robot made a decision about which goal to pursue and informed the
 human accordingly.
 
@@ -5802,9 +5800,10 @@ The robot interacted via a) speech, b) the corresponding utterance on the
 screen, c) negative, positive and neutral expression of affective state through
 an emoticon on the screen. There were two conditions of the robot: 1)
 affect-aware and 2) affect-ignorant. The same interaction paradigm was used in
-both conditions. In the affect-aware condition we considered the impact of
-human's affective state on appraisal outcome and reciprocally on the processes
-influencing the collaboration structure, e.g., goal management. In the
+both conditions. In each condition, the human had two predetermined task
+failures, and the robot had one. In the affect-aware condition we considered the
+impact of human's affective state on appraisal outcome and reciprocally on the
+processes influencing the collaboration structure, e.g., goal management. In the
 affect-ignorant condition we bypassed all of the mechanisms in the AMC framework
 except the Collaboration mechanism which was required to generate collaborative
 behaviors based on the shared plan.
@@ -5818,58 +5817,53 @@ mechanism. Using the collaboration manager as a result of the activation of the
 planning strategy in affect-aware condition caused the robot to generate exact
 same behavior as the affect-ignorant condition; since in the latter condition
 the mechanisms of the whole framework are bypassed and reduced to only
-Collaboration mechnism which generates behaviors based on Disco.
-
-The affect-aware and affect-ignorant conditions only differ in case when human
-reports negative affect in response to failure of a task. In this situation, the
-affect-ignorant condition still used Disco to generate collaborative behaviors.
-However, in the affect-aware all the mechanisms got involved to activate proper
-coping strategy in response to human's perceived negative affective state.
-
-The same procedure was used by the robot if there was a decision to switch to
-another subgoal due to the failure of a task in achieving the current goal.
-
-In this condition the collaborative robot operates normally with respect to the
-shared plan without considering any influence of human's affective state.
-
-The interaction was controlled autonomously by the
-framework we discussed in Section \ref{sec:theory} in both the affect-aware and
-the affect-ignorant cases. The reasoning about which task should be done and
-controlling the robot was entirely autonomous. The interaction was structured
+Collaboration mechnism which generates behaviors based on Disco. The reasoning
+about which task should be done and controlling the robot was entirely
+autonomous under the above situation for both conditions. Therefore,
+in both the affect-ignorant and the affect-aware conditions, the robot
+responded by asking the supervisor for help. The interaction was structured
 based on the same collaboration structure (see Figure
-\ref{fig:collaboration_structure}) for both conditions. The robot used the same
-utterances in both conditions. In the affect-aware condition the robot generated
-a different behavior in comparison with the affect-ignorant condition only if
-the participant was expressing a negative affective state in the event of a
-failure; i.e., the robot's utterances were identical in affect-ignorant and
-affect-aware cases if in the latter the participant reported a positive or a
-neutral affective state.
+\ref{fig:collaboration_structure}) for both conditions. Also, the robot's
+utterances were identical in affect-ignorant and affect-aware cases if in the
+latter the participant reported a positive or a neutral affective state.
 
-Three different behaviors could be generated only in the affect-aware
-condition as a result of the Coping mechanism (planning, active coping, seeking
-social support for instrumental reasons, and mental disengagement coping
-strategies were involved to generate these three behaviors). These three
-behaviors were 1) mitigating the human's negative affective state and postponing
-its own task to help the human, 2) goal-management to switch to another goal
-which had lower cost with respect to the human's negative affective state, and
-3) task delegation to the human to overcome the impasse. In each run, the human
-had two predetermined task failures, and the robot had one. If the human
-expressed negative affective state after the first human task failure, the robot
-responded by mitigating the human's negative affective state by saying  ``It was
-not your fault. I can help you with this task" and helping the human by
-providing a peg to fulfill the human's task. If the human expressed negative
-affective state after the second human task failure, the robot informed the
-human that they could proceed with another task to save time while
-simultaneously requesting a new peg (i.e., help) from the supervisor. If the
-human expressed negative affective state as a result of the robot's task
-failure, the robot requested help from the human (who had the correct peg). In
-the event that the human expressed positive or neutral affective state during
-these three failures, the robot behaved identically in the affect-ignorant and
-the affect-aware cases, by asking the supervisor for help.
+The affect-aware and affect-ignorant conditions only differed in case of a
+robot's task failure or when human reported negative affect in response to
+failure of a task. In this situation, the affect-ignorant condition still used
+Disco to generate collaborative behaviors, and the robot used only the neutral
+expression using the emoticon. However, in the affect-aware all the mechanisms
+were involved to activate proper coping strategy in response to robot's task
+failure or human's perceived negative affective state. All other coping
+mechainsms (see Section \ref{sec:coping-mechanism}) are designed to generate
+proper behavior in case of failure of a task, including proper positive,
+negative or neutral expression using the emoticon. We had three behavioral
+changes that could only happen in affect-aware condition and only when the human
+reported a negative affective state or when the robot failed. Thus, planning,
+active coping, seeking social support for instrumental reasons, and mental
+disengagement coping strategies were involved to generate these three behaviors.
+These three robot behaviors were:
 
-In the next section (Algorithmic Trace) we provide the algorithmic trace to show
-how goal management algorithm works in both affect-aware and affect-ignorant
-conditions.
+\begin{enumerate}
+  \setlength\itemsep{-3mm}
+  \item Mitigating the human's negative affective state and postponing its own
+  task to help the human. If the human expressed negative affective state after
+  the first human task failure, the robot responded by mitigating the human's
+  negative affective state by saying ``It was not your fault. I can help you
+  with this task" and helping the human by providing a peg to fulfill the
+  human's task.
+  \item Goal-management to switch to another goal which had lower cost with
+  respect to the human's perceived negative affective state. If the human
+  expressed negative affective state after the second human task failure, the
+  robot informed the human that they could proceed with another task to save
+  time while simultaneously requesting a new peg (i.e., help) from the
+  supervisor.
+  \item Task delegation to the human to overcome the impasse. If the robot faced
+  a task failure (robot's negative affective state), the robot requested help
+  from the human (who had the correct peg).
+\end{enumerate}
+
+In the following section we provide the algorithmic trace to show how goal
+management algorithm works in both affect-aware and affect-ignorant conditions.
 
 \subsubsection{Algorithmic Trace}
 In this section we provide an algorithmic trace to clarify the difference
