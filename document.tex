@@ -5324,7 +5324,14 @@ category includes all of the functions to express the agent's affective state. T
 emotions can be expressed through colors, emoticons, voice and text. For
 example, in the user study described in Chapter \ref{ch:awareness}, we expressed
 the agent's emotions by using emoticons and utterances through the text on the
-screen as well as the agent's voice.
+screen as well as the agent's voice. 
+
+We use Disco as the basis of the Collaboration mechanism. Disco is the
+open-source successor to COLLAGEN
+\cite{rich:collaboration-manager,rich:discourse} which incorporates algorithms
+based on SharedPlans theory for discourse generation and interpretation. Disco
+is able to maintain a segmented interaction history, which facilitates the
+collaborative discourse between a human and a robot.
 
 \section{Evaluating Appraisal Algorithms (Crowd Sourcing)}
 \label{sec:crowd-sourcing}
@@ -5377,23 +5384,24 @@ We provided textual and graphical instructions for all questionnaires; Figure
 \ref{fig:taskModel} shows the corresponding task
 model\footnote{Figure \ref{fig:taskModel} was not given to the
 participants.}. The instructions, provided in the Appendix A, presented a
-sequence of hypothetical collaborative tasks to be carried out by the test subject and an imaginary friend, Mary, in
-order to accomplish their goal of preparing two sandwiches. We also provided a
-simple definition and an example of each appraisal variable. The collaboration
-structure and the instructions were the same for all questionnaires. The
-questions introduced specific situations related to the shared plan, which
-included blocked tasks and failure or achievement of a shared goal. Each
-question provided three answers which were counterbalanced in the questionnaire.
-We provided an option like C in all questions (see Figure \ref{fig:qs1}),
-because we did not want to force participants to choose between two options when
-they did not have a good reason. We derived two questions for
-different factors invoved in each algorithm (see Section \ref{sec:appraisal}).
-For instance, we prepared two questions about the influence of the strength of a
-belief as a key factor involved in relevance algorithm. The questions were
-randomly placed in the questionnaire. Figure \ref{fig:qs1} shows an example
-question from the relevance questionnaire which was designed to test whether
-participants perceive saliency as a factor in relevance. The input for our
-algorithms was the task model depicted in Figure \ref{fig:taskModel}.
+sequence of hypothetical collaborative tasks to be carried out by the test
+subject and an imaginary friend, Mary, in order to accomplish their goal of
+preparing two sandwiches. We also provided a simple definition and an example of
+each appraisal variable. The collaboration structure and the instructions were
+the same for all questionnaires. The questions introduced specific situations
+related to the shared plan, which included blocked tasks and failure or
+achievement of a shared goal. Each question provided three answers which were
+counterbalanced in the questionnaire. We provided an option like C in all
+questions (see Figure \ref{fig:qs1}), because we did not want to force
+participants to choose between two options when they did not have a good reason.
+We derived two questions for different factors invoved in each algorithm (see
+Section \ref{sec:appraisal}). For instance, we prepared two questions about the
+influence of the strength of a belief as a key factor involved in relevance
+algorithm. The questions were randomly placed in the questionnaire. Figure
+\ref{fig:qs1} shows an example question from the relevance questionnaire which
+was designed to test whether participants perceive saliency as a factor in
+relevance. The input for our algorithms was the task model depicted in Figure
+\ref{fig:taskModel}.
 
 \subsubsection{Participants}
 Each participant group originally had 40 participants. We limited the
@@ -5627,38 +5635,17 @@ made limited changes to our algorithms in light of this study.
 
 As mentioned earlier, collaborative robots need to take into account humans'
 internal states while making decisions during collaboration. Humans express
-emotions to reveal their internal states in social contexts including
+affect to reveal their internal states in social contexts including
 collaboration \cite{breazeal:sociable-interactive-robots}. Due to the existence
-of such expressions, robots' emotional-awareness can improve the quality of
+of such expressions, robots' affect-awareness can improve the quality of
 collaboration in terms of humans' perception of performance and preferences.
 Hence, collaborative robots need to include affect-driven mechanisms in their
 decision-making processes to be able to interpret and generate appropriate
 responses and behaviors. Our aim in this experiment was to study the importance
-of emotional awareness and the underlying affect-driven processes in human-robot
-collaboration. We examined how emotional-awareness impacts different aspects of
+of affect awareness and the underlying affect-driven processes in human-robot
+collaboration. We examined how affect-awareness impacts different aspects of
 humans' preferences by comparing the results from our participants collaborating
 with an affect-aware versus an affect-ignorant robot.
-
-% \section{Collaborative Behaviors and Emotional-Awareness}
-% 
-% \subsection{Goal Postponement}
-% 
-% \subsection{Goal Management}
-% 
-% \subsection{Task Delegation}
-% 
-\subsection{Experimental Setup}
-The setup of this user study included three separate parts. The first
-part incorporated the Affective Motivational Collaboration framework consisting
-of all Mental Processes (see left-side of Figure \ref{fig:framework}) as we
-described in Chapters \ref{ch:amct} and \ref{ch:appraisals}. The second part was
-implemented to receive action commands from the framework and forward them to
-the robot to control joints and actuators (see right-side of Figure
-\ref{fig:framework}). A wizard was the third part of this setting. The wizard
-did nothing but inform the robot/framework whether the current task performed by
-either the robot or the participant was achieved successfully. The wizard was
-completely invisible to the participants, and the wizard had no impact on the
-robot's decision other than providing input regarding tasks' failure or success.
 
 \begin{figure*}[t]
   \centering
@@ -5667,27 +5654,60 @@ robot's decision other than providing input regarding tasks' failure or success.
   \label{fig:framework}
 \end{figure*}
 
+\subsection{Experimental Setup}
+The setup of this user study included the four main elements shown in Figure
+\ref{fig:framework}. The first element is the implementation of the Affective
+Motivational Collaboration framework (see left-side of Figure
+\ref{fig:framework}) as described in Chapter \ref{ch:appraisals}. In this
+user-study, the Collaboration mechanism in our framework uses a hierarchy of
+goals associated with tasks in the hierarchical task network structure. This
+goal-hierarchy provides three levels of goals, including: top-level goals,
+main subgoals, and primitive goals (see Figure
+\ref{fig:collaboration_structure}). The second element was implemented to
+receive action commands from the framework and forward them to the robot to
+control joints and actuators (see Robot Controller in Figure
+\ref{fig:framework}). A wizard was the third element of this setting. The wizard
+did nothing except inform the robot/framework whether the current task performed
+by either the robot or the participant was achieved successfully. The wizard was
+completely invisible to the participants, and had no impact on the robot's
+behavior other than providing input regarding tasks' failure or success. The
+last element was the supervisor. The supervisor in affect-aware condition was
+providing the right peg to the robot or the human (see \textbf{Environment and
+Tasks} in this section) in case of a task failure and only when the human
+reported a neutral or positive affective state. The robot did not ask the
+supervisor to come and help if the human reported a negative affective state
+(see \textbf{Interaction Paradigm} in Section \ref{sec:experimental-design}). In
+the affect-ignorant condition the robot always asked the supervisor to help and
+provide a right peg irrespective of the human's reported affective state.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{figure/environment.png}
+  \caption{Experimental setup.}
+  \label{fig:environment}
+\end{figure}
+
 \subsubsection{Environment and Tasks}
 
 The environment was set up in a laboratory and included the robot, the
 collaboration board on top of a desk, and the participant standing in front of
-the robot on the other side of the board (see Figure \ref{fig:environment}). One
-of the experimenters monitored the interactions using a live stream of a camera
-in a different room. The experimenter provided only the required perception,
-i.e., decision on success or failure of the tasks for the robot, through the
-entire time of the collaboration (see Section \ref{sec-interaction-paradigms}).
-We also had a supervisor, whose purpose was to provide help to the
-collaborators when requested after a task failure.
+the robot on the other side of the board (see Figure \ref{fig:environment}). The
+wizard in Figure \ref{fig:framework} monitored the interactions using a live
+stream of a camera in a different room. The wizard provided only the required
+perception, i.e., decision on success or failure of the tasks for the robot,
+through the entire time of the collaboration.
 
 The tasks were defined based on the collaboration structure shown in Figure
 \ref{fig:collaboration_structure} and were executed in a turn-taking fashion by
-either of the collaborators\footnote{Figure
-\ref{fig:collaboration_structure} was not given to the participants.}. For each
-task either the robot or the participant was responsible for picking up one of
-the corresponding pegs from their own inventory and placing it on the right spot
-which was colored and tagged the same as the associated peg. Some pegs and
+each of the collaborators\footnote{Figure
+\ref{fig:collaboration_structure} was not given to the participants.}. The
+collaborators used the task board displayed in Figure \ref{fig:game_board}. For
+each task either the robot or the participant was responsible for picking up one
+of the corresponding pegs from their own inventory and placing it on the right
+spot which was colored and tagged the same as the associated peg. Some pegs and
 corresponding spots on the board had hidden magnets which prevented the pegs
-from standing upright. Any peg that fell over was considered a failed task.
+from standing upright. Any peg that fell over was considered a failed task
+(see Appendix B).
 
 \begin{figure*}[t]
   \centering
@@ -5696,54 +5716,38 @@ from standing upright. Any peg that fell over was considered a failed task.
   \label{fig:collaboration_structure}
 \end{figure*}
 
-\subsubsection{Framework}
-\label{sec:theory}
-The framework includes all of the mechanisms depicted as mental processes in
-Figure \ref{fig:framework} along with the Mental State. The mental
-states shown in Figure \ref{fig:framework} comprise the knowledge base required
-for all of the mechanisms in the overall model. The details about these mental
-processes and Mental State are described in Chapters \ref{ch:amct} and
-\ref{ch:appraisals}. We use Disco as the basis of the Collaboration mechanism.
-Disco is the open-source successor to COLLAGEN
-\cite{rich:collaboration-manager,rich:discourse} which incorporates algorithms
-based on SharedPlans theory for discourse generation and interpretation. Disco
-is able to maintain a segmented interaction history, which facilitates the
-collaborative discourse between a human and a robot. In this user-study, the
-Collaboration mechanism uses a hierarchy of goals associated with tasks in the
-hierarchical task network structure depicted in Figure
-\ref{fig:collaboration_structure}.
-
 \subsubsection{The Robot}
 
 We conducted our experiment with a KUKA Youbot (see Figure
 \ref{fig:environment}). The robot was stationary on top of a desk and was able
 to pick up and place available pegs corresponding to the robot's task. The robot
-was operated based on Robot Operating System (ROS -- indigo) and was receiving
-commands through the ROS-bridge from our Affective Motivational Collaboration
-framework (see Figure \ref{fig:framework}). We provided a simple GUI using a
-touch-screen monitor (see Figure \ref{fig:gui}) to a) express the robot's
-positive, negative or neutral affective state through an emoticon, b) display the
-robot's utterances, c) control turn-taking process of the collaboration, and d)
-let the participants express (report) their positive, negative or neutral
-affective state for each turn. The GUI was identical in both affect-aware and
-affect-ignorant conditions (see Section \ref{sec:experimental-design}). The
-robot used the MaryTTS\footnote{http://mary.dfki.de/} text-to-speech platform to
-provide corresponding speech for its utterances in English.
+was operated based on Robot Operating System (ROS distribution indigo) and was
+receiving commands through the ROS-bridge from our Affective Motivational
+Collaboration framework (see Figure \ref{fig:framework}). We provided a simple
+GUI using a touch-screen monitor (see Figure \ref{fig:gui}) to a) express the
+robot's positive, negative or neutral affective state through an emoticon, b)
+display the robot's utterances, c) control turn-taking process of the
+collaboration, and d) let the participants report their positive, negative or
+neutral affective state for each turn. The GUI was identical in both
+affect-aware and affect-ignorant conditions (see Section
+\ref{sec:experimental-design}). The robot used the
+MaryTTS\footnote{http://mary.dfki.de/} text-to-speech platform to provide
+corresponding speech for its utterances in English.
 
 \subsubsection{Robot Controller}
 The robot controller is comprised of two major components: 1) ROS-bridge and 2)
 joint controller (see Figure \ref{fig:framework}).
 ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
-functionality for non-ROS programs which enables us to send action commands from
-our framework (implemented in JAVA) to the robot's joint controller. The joint
+functionality for non-ROS programs, which enables us to send action commands
+from our framework (implemented in JAVA) to the robot's joint controller. The joint
 controller receives action commands and translates them into actual joint and
-actuator commands and sends them to the robot (see Figure \ref{fig:environment}).
+actuator commands and sends them to the robot.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=1\textwidth]{figure/gameBoard.pdf}
-  \caption{The layout of the available spots for the human and the robot to
-  place their pegs during the collaboration.}
+  \caption{The tabletop layout of the available spots for the human and the
+  robot to place their pegs during the collaboration.}
   \label{fig:game_board}
 \end{figure}
 
@@ -5752,14 +5756,14 @@ actuator commands and sends them to the robot (see Figure \ref{fig:environment})
 Our scenario was based on a table top turn-taking game that we designed to
 simulate the installation of a solar panel. Participants collaborated one-on-one
 with our robot to complete all the given tasks required to install the solar
-panel. Each participant worked with the robot in two conditions, in a within
-subject study. Each primitive task consisted of picking up and placing pegs on
-predefined spots on the board (see Figure \ref{fig:game_board}). Each
+panel. Each participant worked with the robot in two conditions, in a
+within-subject study. Each primitive task consisted of picking up and placing
+pegs on predefined spots on the board (see Figure \ref{fig:game_board}). Each
 pick-and-place was associated with the robot's or the participant's task. The
 robot and the participants had their own unique primitive tasks that they had to
 accomplish in their own turns. The final goal of installing a solar panel
-required the robot and the participants to accomplish their own individual
-tasks. Failure of any task could create an impasse during the collaboration.
+required the robot and participants to accomplish all of their own individual
+tasks. Failure of any task would create an impasse during the collaboration.
 
 \begin{figure}
 \centering
@@ -5777,85 +5781,81 @@ tasks. Failure of any task could create an impasse during the collaboration.
 \label{fig:gui}
 \end{figure}
 
-\subsubsection{Interaction Paradigms}
+The robot used only neutral expression in the case of affect-ignorance.
+
+\subsubsection{Interaction Paradigm}
 \label{sec-interaction-paradigms}
 At the beginning of each collaboration the robot asked each participant to
 achieve the overall shared goal, i.e., ``installing the solar panel''. Then,
-before working towards a new goal, the robot informed the participant about the
-higher level nonprimitive goal (e.g. Prepare Panel -- see Figure
-\ref{fig:collaboration_structure}) of which the primitives were going to be
+before working towards a new subgoal, the robot informed the participant about
+its immediate parent nonprimitive goal (e.g. Prepare Panel -- see Figure
+\ref{fig:collaboration_structure}) which the primitives were going to be
 working towards. The same procedure was used by the robot if there was a
-decision to switch to another nonprimitive due to the failure of a task in
+decision to switch to another subgoal due to the failure of a task in
 achieving the current goal. After achieving a new primitive goal, the robot
 either informed the human that it would pursue the next goal, or it informed and
 passed the turn to the human to execute the next task with respect to the
-human's goal. In case of the human's turn, the robot waited for the human to do
-a task, then the wizard let the robot know whether the human's goal was achieved
-or not. Afterwards the robot made a decision about which goal to pursue and
-informed the human accordingly. There were two conditions of the robot: 1)
-affect-aware and 2) affect-ignorant. The same procedure was applied to both
-conditions. In the next section (i.e., Algorithmic Trace) we provide the
+human's goal. In case of the human's turn, the robot waited for the human to
+achieve a primitive goal, then the wizard let the robot know whether the human's
+goal was achieved or not. Afterwards the robot made a decision about which goal
+to pursue and informed the human accordingly. There were two conditions of the
+robot: 1) affect-aware and 2) affect-ignorant. The same interaction paradigm was
+used in both conditions. In the next section (Algorithmic Trace) we provide the
 algorithmic trace to show how goal management algorithm works in both
 affect-aware and affect-ignorant conditions.
 
 The robot interacted via a) speech, b) the corresponding utterance on the
 screen, c) negative, positive and neutral expression of affective state through an
-emoticon on the screen. The robot used only neutral expression in the case of
-affect-ignorance. The interaction was controlled autonomously by the framework
-we discussed in Section \ref{sec:theory} in both the affect-ignorant and the
-affect-aware cases. The reasoning about which task should be done and
-controlling the robot was entirely autonomous. Only the perception of the task
-failure or achievement by the robot or by the participant was done by a wizard
-monitoring the collaboration outside of the test area. The interaction was
-structured based on the same collaboration structure (see Figure
+emoticon on the screen. The interaction was controlled autonomously by the
+framework we discussed in Section \ref{sec:theory} in both the affect-ignorant
+and the affect-aware cases. The reasoning about which task should be done and
+controlling the robot was entirely autonomous. The interaction was structured
+based on the same collaboration structure (see Figure
 \ref{fig:collaboration_structure}) for both conditions. The robot used the same
-utterances in both conditions. In the affect-aware condition the robot used a
-different behavior in comparison with the affect-ignorant condition only if the
-participant was expressing a negative affective state in the event of a failure; i.e.,
-the robot's utterances were identical in affect-ignorant and affect-aware
-cases if in the latter the participant reported (expressed) a positive or a
-neutral affective state.
+utterances in both conditions. In the affect-aware condition the robot generated
+a different behavior in comparison with the affect-ignorant condition only if the
+participant was expressing a negative affective state in the event of a failure;
+i.e., the robot's utterances were identical in affect-ignorant and affect-aware
+cases if in the latter the participant reported a positive or a neutral
+affective state.
 
 Three different behaviors could be generated only in the affect-aware
 condition as a result of the Coping mechanism (planning, active coping, seeking
 social support for instrumental reasons, and mental disengagement coping
 strategies were involved to generate these three behaviors). These three
-behaviors were 1) mitigating the human's negative affective state and postponing its own
-task to help the human, 2) goal-management to switch to another goal which had
-lower cost with respect to the human's negative affective state, and 3) task delegation
-to the human to overcome the impasse. In each run, the human had two
-predetermined task failures, and the robot had one. If the human expressed
-negative affective state after the first human task failure, the robot responded by
-mitigating the human's negative affective state by saying  ``It was not your fault. I
-can help you with this task" and helping the human by providing a peg to fulfill
-the human's task. If the human expressed negative affective state after the second human
-task failure, the robot informed the human that they could proceed with another
-task to save time while simultaneously requesting a new peg (i.e., help) from
-the supervisor. If the human expressed negative affective state as a result of the
-robot's task failure, the robot requested help from the human (who had the
-correct peg). In the event that the human expressed positive or neutral affective state
-during these three failures, the robot behaved identically in the
-affect-ignorant and the affect-aware cases, by asking the supervisor for help.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.9\textwidth]{figure/environment.png}
-  \caption{Experimental setup.}
-  \label{fig:environment}
-\end{figure}
+behaviors were 1) mitigating the human's negative affective state and postponing
+its own task to help the human, 2) goal-management to switch to another goal
+which had lower cost with respect to the human's negative affective state, and
+3) task delegation to the human to overcome the impasse. In each run, the human
+had two predetermined task failures, and the robot had one. If the human
+expressed negative affective state after the first human task failure, the robot
+responded by mitigating the human's negative affective state by saying  ``It was
+not your fault. I can help you with this task" and helping the human by
+providing a peg to fulfill the human's task. If the human expressed negative
+affective state after the second human task failure, the robot informed the
+human that they could proceed with another task to save time while
+simultaneously requesting a new peg (i.e., help) from the supervisor. If the
+human expressed negative affective state as a result of the robot's task
+failure, the robot requested help from the human (who had the correct peg). In
+the event that the human expressed positive or neutral affective state during
+these three failures, the robot behaved identically in the affect-ignorant and
+the affect-aware cases, by asking the supervisor for help.
 
 \subsubsection{Algorithmic Trace}
-In this section we provide an algorithmic trace for one of the three behavioral
-changes in our user study when the robot, besides acknowledging human's
-perceived negative affective state, activates a coping strategy called
-\textit{mental disengagement}. As shown in Table \ref{fig:coping_strategies},
-the mental disengagement strategy can be activated when the robot and the human
-feel neutral or negative, all three values of motives (see Section
-\ref{sec:motivation_mechanism}) have obtained low or medium negative values, and
-the robot evaluates the controllability of the corresponding goal of the event
-as uncontrollable one. As the result of activation of the mental disengagement
-strategy, our framework applies the goal management algorithm to lower the
-effect of the stressor which is the failure of a goal in the plan.
+In this section we provide an algorithmic trace to clarify the difference
+between two conditions. This algorithmic trace is based on one of the three
+behavioral changes in our user study when the robot, besides acknowledging
+human's perceived negative affective state, activates a coping strategy called
+\textit{mental disengagement}. This situation occurred when the human
+collaborator failed to ``take out cable'', which was the second failure in our
+study. As shown in Table \ref{fig:coping_strategies}, the mental disengagement
+strategy can be activated when the robot and the human feel neutral or negative,
+all three values of motives (see Section \ref{sec:motivation_mechanism}) have
+obtained low or medium negative values, and the robot evaluates the
+controllability of the corresponding goal of the event as uncontrollable one. As
+the result of activation of the mental disengagement strategy, our framework
+applies the goal management algorithm to lower the effect of the stressor which
+is the failure of a goal in the plan.
 
 The following algorithmic trace shows how different mechanisms (see Chapter
 \ref{ch:appraisals}) in our framework are involved to generate proper behavior
@@ -5874,11 +5874,11 @@ condition:
   required to appraise the current event. This information includes the status
   of the preconditions, postconditions, hierarchical and temporal constraints,
   inputs, outputs, status of the predecessors and contributing goals in the
-  shared plan. All of this information appears as an element of Mental
-  State, i.e., belief.
+  shared plan. All of this information appears as elements of Mental
+  State, i.e., beliefs.
   \item Then, the \textbf{Theory of Mind mechanism} provides the anticipated
   beliefs about the human collaborator's mental state based on reverse appraisal
-  of the human's perceived affective state, i.e., negative (valence).
+  of the human's perceived affective state, i.e., negative affect.
   \item As a result, the \textbf{Appraisal mechanism}'s outcome will be
   \textit{relevant, undesirable, unexpected} and \textit{controllable}.
   \item The \textbf{Motivation mechanism} uses the collaboration structure
@@ -5888,16 +5888,16 @@ condition:
   \ref{sec:motivation_mechanism}), i.e., low or medium negative values for
   satisfaction, achievement, and external motives.
   \item The \textbf{Coping mechanism} receives the values of the three motives
-  and activates two coping strategies, i.e., Active Coping and Mental Disengagement,
+  and activates two coping strategies, Active Coping and Mental Disengagement,
   with respect to the conditions shown in Table \ref{fig:coping_strategies}. As
-  a result of the activation of these strategies, first, active coping strategy
-  forms a new intention to acknowledge human's negative affective state, and
-  then, mental disengagement strategy uses the goal management algorithm to
-  lower the effect of current stressor (goal failure) and overcome an impasse.
-  The goal management algorithm uses the current collaboration structure and the
-  human's perceived affective state to form a new intention to swtich to another
-  goal which has the lowest cost (see Section \ref{sec:goal-management}), i.e.,
-  ``Place Panel''.
+  a result of the activation of these strategies, first, the active coping
+  strategy forms a new intention to acknowledge human's negative affective
+  state, and then, mental disengagement strategy uses the goal management
+  algorithm to lower the effect of current stressor (goal failure) and overcome
+  an impasse. The goal management algorithm uses the current collaboration
+  structure and the human's perceived affective state to form a new intention to
+  swtich to another goal which has the lowest cost (see Section
+  \ref{sec:goal-management}), i.e., ``Place Panel''.
   \item At the end, the \textbf{Action mechanism} receives two new intentions of
   acknowledging human's negative affective state and pursuing achievement of a
   new goal (i.e., Place Panel). As a result, the robot will say: ``Don't
@@ -5906,12 +5906,13 @@ condition:
 \end{enumerate}
 
 In affect-ignorant condition, AMC framework bypasses the \textbf{Appraisal,
-Theory of Mind, Motivation}, and \textbf{Coping mechanisms}. AMC framework forms
-a new intention based on the goal that the SharedPlans' collaborator manager,
-i.e., Disco, provides. In this condition the agent's decision is not influenced
-by the human's perceived negative affective state, even if the human reports a
-negative affective state. As a result, the robot asks the supervisor to come and
-provide help to overcome an impasse in response to the human's goal failure.
+Theory of Mind, Motivation}, and \textbf{Coping mechanisms}. The AMC framework
+forms a new intention based on the goal that the SharedPlans' collaborator
+manager, i.e., Disco, provides. In this condition the agent's decision is not
+influenced by the human's perceived negative affective state, even if the human
+reports a negative affective state. As a result, the robot asks the supervisor
+to come and provide help to overcome an impasse in response to the human's goal
+failure.
 
 \subsection{Hypotheses}
 \label{sec:hypotheses}
@@ -5963,15 +5964,15 @@ answer a questionnaire on their experience. After completing the first round of
 collaboration, participants answered a post-experiment questionnaire that
 measured their perceptions of the robot, the task, and the collaboration
 procedure; the questions are provided in Table \ref{fig:31questions-table}.
-After answering the first post-experiment questionnaire, participants were told that they were going to collaborate with the robot one more time and
-the robot might not necessarily have the same collaborative behavior. After
-completing the second round of collaboration, participants were asked to answer
-the second post-experiment questionnaire which consisted of the same questions
-as the first post-experiment questionnaire. Finally, participants were asked
-to answer an open-ended questionnaire which measured their perception of
-difference between two runs, their preference of collaborative robot between two
-runs, and their reasons of preference; the questions are provided in
-\ref{fig:Open-Ended-Table}.
+After answering the first post-experiment questionnaire, participants were told
+that they were going to collaborate with the robot one more time and the robot
+might not necessarily have the same collaborative behavior. After completing the
+second round of collaboration, participants were asked to answer the second
+post-experiment questionnaire which consisted of the same questions as the first
+post-experiment questionnaire. Finally, participants were asked to answer an
+open-ended questionnaire which measured their perception of difference between
+two runs, their preference of collaborative robot between two runs, and their
+reasons of preference; the questions are provided in \ref{fig:Open-Ended-Table}.
 
 \subsubsection{Measurements}
 \label{sec:Measurements}
@@ -6140,10 +6141,10 @@ robot's understanding of human emotions.}
 \hspace*{-8mm} \textbf{Robot's Understanding of Human and Collaboration Goals}
 \label{sec:Goals}
 \\Questions 18 and 19 were reverse-scored questions intended to determine
-whether the humans felt that the robot understood the shared collaboration goal and the
-human's personal goal, respectively. For both conditions of the robot, the
-average scores were lower than 3.5, indicating that the human's perceived the
-robot as having some understanding of the goals. For both questions, the
+whether the humans felt that the robot understood the shared collaboration goal
+and the human's personal goal, respectively. For both conditions of the robot,
+the average scores were lower than 3.5, indicating that the human's perceived
+the robot as having some understanding of the goals. For both questions, the
 affect-ignorant robot's average score was significantly higher than the
 affect-aware robot's score. Similarly, Question 20 was a measure of whether the
 human perceived that the robot correctly perceived the human's goal.
