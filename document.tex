@@ -5790,34 +5790,60 @@ achieve the overall shared goal, i.e., ``installing the solar panel''. Then,
 before working towards a new subgoal, the robot informed the participant about
 its immediate parent nonprimitive goal (e.g. Prepare Panel -- see Figure
 \ref{fig:collaboration_structure}) which the primitives were going to be
-working towards. The same procedure was used by the robot if there was a
-decision to switch to another subgoal due to the failure of a task in
-achieving the current goal. After achieving a new primitive goal, the robot
-either informed the human that it would pursue the next goal, or it informed and
-passed the turn to the human to execute the next task with respect to the
-human's goal. In case of the human's turn, the robot waited for the human to
-achieve a primitive goal, then the wizard let the robot know whether the human's
-goal was achieved or not. Afterwards the robot made a decision about which goal
-to pursue and informed the human accordingly. There were two conditions of the
-robot: 1) affect-aware and 2) affect-ignorant. The same interaction paradigm was
-used in both conditions. In the next section (Algorithmic Trace) we provide the
-algorithmic trace to show how goal management algorithm works in both
-affect-aware and affect-ignorant conditions.
+working towards. After achieving a new primitive goal, the robot either informed
+the human that it would pursue the next goal, or it informed and passed the turn
+to the human to execute the next task with respect to the human's goal. In case
+of the human's turn, the robot waited for the human to achieve a primitive goal,
+then the wizard let the robot know whether the human's goal was achieved or not.
+Afterwards the robot made a decision about which goal to pursue and informed the
+human accordingly.
 
 The robot interacted via a) speech, b) the corresponding utterance on the
-screen, c) negative, positive and neutral expression of affective state through an
-emoticon on the screen. The interaction was controlled autonomously by the
-framework we discussed in Section \ref{sec:theory} in both the affect-ignorant
-and the affect-aware cases. The reasoning about which task should be done and
+screen, c) negative, positive and neutral expression of affective state through
+an emoticon on the screen. There were two conditions of the robot: 1)
+affect-aware and 2) affect-ignorant. The same interaction paradigm was used in
+both conditions. In the affect-aware condition we considered the impact of
+human's affective state on appraisal outcome and reciprocally on the processes
+influencing the collaboration structure, e.g., goal management. In the
+affect-ignorant condition we bypassed all of the mechanisms in the AMC framework
+except the Collaboration mechanism which was required to generate collaborative
+behaviors based on the shared plan.
+
+The robot's behaviors were the same for both affect-aware and the
+affect-ignorant conditions when the human collaborator reported neutral or
+positive affective state. In these situations, for the affect-aware conditon the
+only coping strategy that could become activated was \textit{Planning} strategy
+which was using Disco as the collaboration manager in our Collaboration
+mechanism. Using the collaboration manager as a result of the activation of the
+planning strategy in affect-aware condition caused the robot to generate exact
+same behavior as the affect-ignorant condition; since in the latter condition
+the mechanisms of the whole framework are bypassed and reduced to only
+Collaboration mechnism which generates behaviors based on Disco.
+
+The affect-aware and affect-ignorant conditions only differ in case when human
+reports negative affect in response to failure of a task. In this situation, the
+affect-ignorant condition still used Disco to generate collaborative behaviors.
+However, in the affect-aware all the mechanisms got involved to activate proper
+coping strategy in response to human's perceived negative affective state.
+
+The same procedure was used by the robot if there was a decision to switch to
+another subgoal due to the failure of a task in achieving the current goal.
+
+In this condition the collaborative robot operates normally with respect to the
+shared plan without considering any influence of human's affective state.
+
+The interaction was controlled autonomously by the
+framework we discussed in Section \ref{sec:theory} in both the affect-aware and
+the affect-ignorant cases. The reasoning about which task should be done and
 controlling the robot was entirely autonomous. The interaction was structured
 based on the same collaboration structure (see Figure
 \ref{fig:collaboration_structure}) for both conditions. The robot used the same
 utterances in both conditions. In the affect-aware condition the robot generated
-a different behavior in comparison with the affect-ignorant condition only if the
-participant was expressing a negative affective state in the event of a failure;
-i.e., the robot's utterances were identical in affect-ignorant and affect-aware
-cases if in the latter the participant reported a positive or a neutral
-affective state.
+a different behavior in comparison with the affect-ignorant condition only if
+the participant was expressing a negative affective state in the event of a
+failure; i.e., the robot's utterances were identical in affect-ignorant and
+affect-aware cases if in the latter the participant reported a positive or a
+neutral affective state.
 
 Three different behaviors could be generated only in the affect-aware
 condition as a result of the Coping mechanism (planning, active coping, seeking
@@ -5840,6 +5866,10 @@ failure, the robot requested help from the human (who had the correct peg). In
 the event that the human expressed positive or neutral affective state during
 these three failures, the robot behaved identically in the affect-ignorant and
 the affect-aware cases, by asking the supervisor for help.
+
+In the next section (Algorithmic Trace) we provide the algorithmic trace to show
+how goal management algorithm works in both affect-aware and affect-ignorant
+conditions.
 
 \subsubsection{Algorithmic Trace}
 In this section we provide an algorithmic trace to clarify the difference
