@@ -9,43 +9,42 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces OCC taxonomy of emotion triggers and emotions \cite {occ:structure}.\relax }}{49}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Russell's suggested affective states based on core affect \cite {russell:core-affect}.\relax }}{50}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Three dimensional model of pleasure, arousal and dominance as tripartite view of experience \cite {mehrabian:pad}.\relax }}{51}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Basic emotions and corresponding expressions.\relax }}{52}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Representing basic emotions within a dimensional framework \cite {hamann:mapping-discrete-dimensional}.\relax }}{56}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces A rough projection of emotion groups of OCC on the circumplex of affect \cite {ahmadpour:occ-dimensional-comparison}.\relax }}{59}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Representing basic emotions within a dimensional framework \cite {hamann:mapping-discrete-dimensional}.\relax }}{55}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces A rough projection of emotion groups of OCC on the circumplex of affect \cite {ahmadpour:occ-dimensional-comparison}.\relax }}{58}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary influence of mechanisms in \textit {Affective Motivational Collaboration Theory}.\relax }}{74}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Primary influence of mechanisms in \textit {Affective Motivational Collaboration Theory}.\relax }}{73}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of collaboration structure.\relax }}{108}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Using Collaboration structure in Appraisal (mechanisms in our framework).\relax }}{111}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Using Appraisals' outcome to influence Collaboration structure (mechanisms in our framework).\relax }}{123}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Cost values indicated by tuples with (second number) and without (first number) the influence of emotions.\relax }}{124}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Three functions of satisfaction motive for different values of valence. The x-axis indicates the satisfaction drive's delta value in [-1, +1], and the y-axis indicates the magnitude of satisfaction motive in [-1, +1].\relax }}{135}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Two functions of the achievement motive for different values of valence. The x-axis indicates the success probability value of achieving a goal which is in [0, +1], and the y-axis indicates the magnitude of achievement motive in [-1, +1].\relax }}{137}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Two functions of external motive for different values of valence. The x-axis indicates the success probability value of achieving a proposed goal which is in [0, +1], and the y-axis indicates the magnitude of the achievement motive in [-1, +1].\relax }}{139}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of collaboration structure.\relax }}{107}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Using Collaboration structure in Appraisal (mechanisms in our framework).\relax }}{110}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Using Appraisals' outcome to influence Collaboration structure (mechanisms in our framework).\relax }}{122}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Cost values indicated by tuples with (second number) and without (first number) the influence of emotions.\relax }}{123}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Three functions of satisfaction motive for different values of valence. The x-axis indicates the satisfaction drive's delta value in [-1, +1], and the y-axis indicates the magnitude of satisfaction motive in [-1, +1].\relax }}{134}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Two functions of the achievement motive for different values of valence. The x-axis indicates the success probability value of achieving a goal which is in [0, +1], and the y-axis indicates the magnitude of achievement motive in [-1, +1].\relax }}{136}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Two functions of external motive for different values of valence. The x-axis indicates the success probability value of achieving a proposed goal which is in [0, +1], and the y-axis indicates the magnitude of the achievement motive in [-1, +1].\relax }}{138}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Collaboration task model for the evaluation.\relax }}{146}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces {Example expectedness question.}\relax }}{149}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces {Example controllability question.}\relax }}{150}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces {Example desirability question.}\relax }}{152}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces {Example relevance question.}\relax }}{154}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Experimental setup for end-to-end system evaluation.\relax }}{155}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Experimental setup.\relax }}{156}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Collaboration structure used as the task model.\relax }}{157}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The tabletop layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{159}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The Graphical User Interface (GUI) used during interaction.\relax }}{160}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Results of the Likert scale survey for Likability questions.\relax }}{169}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Results of the Likert scale survey for questions related to trust.\relax }}{170}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Results of the Likert scale survey for questions related to the robot's performance.\relax }}{171}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Results of the Likert scale survey for the questions related to the robot's understanding of human emotions.\relax }}{172}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Results of the Likert scale survey for questions related to the robot's understanding of goals.\relax }}{173}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Results of the Likert scale survey for questions related to the human's feeling about the collaboration.\relax }}{174}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Results of the Likert scale survey for questions related to satisfaction with collaborative partner.\relax }}{175}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Age and gender distribution of the user study participants.\relax }}{178}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Collaboration task model for the evaluation.\relax }}{145}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces {Example expectedness question.}\relax }}{148}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces {Example controllability question.}\relax }}{149}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces {Example desirability question.}\relax }}{151}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces {Example relevance question.}\relax }}{153}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Experimental setup for end-to-end system evaluation.\relax }}{154}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Experimental setup.\relax }}{155}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Collaboration structure used as the task model.\relax }}{156}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The tabletop layout of the available spots for the human and the robot to place their pegs during the collaboration.\relax }}{158}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The Graphical User Interface (GUI) used during interaction.\relax }}{159}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Results of the Likert scale survey for Likability questions.\relax }}{168}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Results of the Likert scale survey for questions related to trust.\relax }}{169}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Results of the Likert scale survey for questions related to the robot's performance.\relax }}{170}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Results of the Likert scale survey for the questions related to the robot's understanding of human emotions.\relax }}{171}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Results of the Likert scale survey for questions related to the robot's understanding of goals.\relax }}{172}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Results of the Likert scale survey for questions related to the human's feeling about the collaboration.\relax }}{173}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Results of the Likert scale survey for questions related to satisfaction with collaborative partner.\relax }}{174}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Age and gender distribution of the user study participants.\relax }}{177}
 \addvspace {10\p@ }
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Peanut butter sandwich instruction}}}{217}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiled egg sandwich instruction}}}{217}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\color {green}Successful Task}}}{236}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\color {green}Successful Task}}}{236}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\color {red}Failed Task}}}{236}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Human turn}}}{238}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Robot turn}}}{238}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Peanut butter sandwich instruction}}}{216}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiled egg sandwich instruction}}}{216}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\color {green}Successful Task}}}{235}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\color {green}Successful Task}}}{235}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\color {red}Failed Task}}}{235}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Human turn}}}{237}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Robot turn}}}{237}
