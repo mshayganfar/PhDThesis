@@ -5725,12 +5725,12 @@ was operated based on Robot Operating System (ROS distribution: indigo) and was
 receiving commands through the ROS-bridge from our Affective Motivational
 Collaboration framework (see Figure \ref{fig:framework}). We provided a simple
 GUI using a touch-screen monitor (see Figure \ref{fig:gui}) to a) express the
-robot's positive, negative or neutral affective state through an emoticon, b)
-display the robot's utterances, c) control turn-taking process of the
-collaboration, and d) let the participants report their positive, negative or
-neutral affective state for each turn. The GUI was identical in both
-affect-aware and affect-ignorant conditions (see Section
-\ref{sec:experimental-design}). The robot used the
+robot's positive, negative or neutral affective state through an emoticon and
+the word POSITIVE, NEGATIVE, or NEUTRAL, b) display the robot's utterances, c)
+control turn-taking process of the collaboration, and d) let the participants
+report their positive, negative or neutral affective state for each turn. The
+GUI was identical in both affect-aware and affect-ignorant conditions (see
+Section \ref{sec:experimental-design}). The robot used the
 MaryTTS\footnote{http://mary.dfki.de/} text-to-speech platform to provide
 corresponding speech for its utterances in English.
 
@@ -5739,9 +5739,9 @@ The robot controller is comprised of two major components: 1) ROS-bridge and 2)
 joint controller (see Figure \ref{fig:framework}).
 ROS-bridge\footnote{http://wiki.ros.org/rosbridge\_suite} provides an API to ROS
 functionality for non-ROS programs, which enables us to send action commands
-from our framework (implemented in JAVA) to the robot's joint controller. The joint
-controller receives action commands and translates them into actual joint and
-actuator commands and sends them to the robot.
+from our framework (implemented in JAVA) to the robot's joint controller. The
+joint controller receives action commands and translates them into actual joint
+and actuator commands and sends them to the robot.
 
 \begin{figure}[t]
   \centering
@@ -5794,31 +5794,32 @@ execute the next task with respect to the human's goal. In case of the human's
 turn, the robot waited for the human to achieve a primitive goal, then the
 wizard let the robot know whether the human's goal was achieved or not.
 Afterwards the robot made a decision about which goal to pursue and informed the
-human accordingly.
+human accordingly. The robot interacted via a) speech, b) the corresponding
+utterance on the screen, c) negative, positive and neutral expression of
+affective state through an emoticon on the screen. 
 
-The robot interacted via a) speech, b) the corresponding utterance on the
-screen, c) negative, positive and neutral expression of affective state through
-an emoticon on the screen. There were two conditions of the robot: 1)
-affect-aware and 2) affect-ignorant. The same interaction paradigm was used in
-both conditions. In each condition, the human had two predetermined task
-failures, and the robot had one. In the affect-aware condition we considered the
-impact of human's affective state on appraisal outcome and reciprocally on the
-processes influencing the collaboration structure, e.g., goal management. In the
-affect-ignorant condition we bypassed all of the mechanisms in the AMC framework
-except the Collaboration mechanism which was required to generate collaborative
-behaviors based on the shared plan.
+\subsubsection{Two Conditions}
+There were two conditions of the robot: 1) affect-aware and 2) affect-ignorant.
+The same interaction paradigm was used in both conditions. In each condition,
+the human had two predetermined task failures, and the robot had one. In the
+affect-aware condition we considered the impact of human's affective state on
+appraisal outcome and reciprocally on the processes influencing the
+collaboration structure, e.g., goal management. In the affect-ignorant condition
+we bypassed all of the mechanisms in the AMC framework except the Collaboration
+mechanism which was required to generate collaborative behaviors based on the
+shared plan.
 
 The robot's behaviors were the same for both affect-aware and the
 affect-ignorant conditions when the human collaborator reported neutral or
-positive affective state. In these situations, for the affect-aware conditon the
-only coping strategy that could become activated was \textit{Planning} strategy
-which was using Disco as the collaboration manager in our Collaboration
-mechanism. Using the collaboration manager as a result of the activation of the
-planning strategy in affect-aware condition caused the robot to generate exact
-same behavior as the affect-ignorant condition; since in the latter condition
-the mechanisms of the whole framework are bypassed and reduced to only
-Collaboration mechnism which generates behaviors based on Disco. The reasoning
-about which task should be done and controlling the robot was entirely
+positive affective state. In these situations, for the affect-aware condition
+the \textit{Planning} strategy was the only coping strategy that could be
+activated; the planning strategy used Disco as the collaboration manager in
+our Collaboration mechanism. Using the collaboration manager as a result of the
+activation of the planning strategy in affect-aware condition caused the robot
+to generate exact same behavior as the affect-ignorant condition; since in the
+latter condition the mechanisms of the whole framework are bypassed and reduced
+to only Collaboration mechnism which generates behaviors based on Disco. The
+reasoning about which task should be done and controlling the robot was entirely
 autonomous under the above situation for both conditions. Therefore,
 in both the affect-ignorant and the affect-aware conditions, the robot
 responded by asking the supervisor for help. The interaction was structured
@@ -5829,19 +5830,19 @@ latter the participant reported a positive or a neutral affective state.
 
 The affect-aware and affect-ignorant conditions only differed in case of a
 robot's task failure or when human reported negative affect in response to
-failure of a task. In this situation, the affect-ignorant condition still used
-Disco to generate collaborative behaviors, and the robot used only the neutral
-expression using the emoticon. However, in the affect-aware all the mechanisms
-were involved to activate proper coping strategy in response to robot's task
-failure or human's perceived negative affective state. All other coping
-mechainsms (see Section \ref{sec:coping-mechanism}) are designed to generate
-proper behavior in case of failure of a task, including proper positive,
-negative or neutral expression using the emoticon. We had three behavioral
-changes that could only happen in affect-aware condition and only when the human
-reported a negative affective state or when the robot failed. Thus, planning,
-active coping, seeking social support for instrumental reasons, and mental
-disengagement coping strategies were involved to generate these three behaviors.
-These three robot behaviors were:
+failure of a task; the affect-ignorant condition still used Disco to generate
+collaborative behaviors, and the robot used only the neutral expression using
+the emoticon and text, i.e., NEUTRAL. However, in the affect-aware condition all
+the mechanisms were involved to activate proper coping strategy in response to
+robot's task failure or human's perceived negative affective state. All other
+coping mechanisms (see Section \ref{sec:coping-mechanism}) are designed to
+generate appropriate behavior in case of failure of a task, including
+positive, negative or neutral expression using the emoticon. We had three
+behavioral changes that could only happen in affect-aware condition and only
+when the human reported a negative affective state or when the robot failed.
+The planning, active coping, seeking social support for instrumental reasons,
+and mental disengagement coping strategies were involved to generate these three
+behaviors. These three robot behaviors were:
 
 \begin{enumerate}
   \setlength\itemsep{-3mm}
@@ -5851,7 +5852,7 @@ These three robot behaviors were:
   negative affective state by saying ``It was not your fault. I can help you
   with this task" and helping the human by providing a peg to fulfill the
   human's task.
-  \item Goal-management to switch to another goal which had lower cost with
+  \item Goal management to switch to another goal which had lower cost with
   respect to the human's perceived negative affective state. If the human
   expressed negative affective state after the second human task failure, the
   robot informed the human that they could proceed with another task to save

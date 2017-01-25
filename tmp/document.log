@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  24 JAN 2017 00:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.21)  24 JAN 2017 20:42
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1371,25 +1371,25 @@ File: figure/31questions-table-croped.pdf Graphic file (type pdf)
 
 <use figure/31questions-table-croped.pdf>
 Package pdftex.def Info: figure/31questions-table-croped.pdf used on input line
- 6055.
+ 6056.
 (pdftex.def)             Requested size: 426.39255pt x 570.8716pt.
  [167] [168 <./figure/31questions-table-croped.pdf>]
 <figure/Overall-Likability.png, id=1033, 650.43pt x 365.86688pt>
 File: figure/Overall-Likability.png Graphic file (type png)
 
 <use figure/Overall-Likability.png>
-Package pdftex.def Info: figure/Overall-Likability.png used on input line 6074.
+Package pdftex.def Info: figure/Overall-Likability.png used on input line 6075.
 
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6080--6089
+Underfull \hbox (badness 10000) in paragraph at lines 6081--6090
 
  []
 
 [169
 
  <./figure/Overall-Likability.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 6090--6105
+Underfull \hbox (badness 10000) in paragraph at lines 6091--6106
 
  []
 
@@ -1397,14 +1397,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 6090--6105
 File: figure/Overall-Trust.png Graphic file (type png)
 
 <use figure/Overall-Trust.png>
-Package pdftex.def Info: figure/Overall-Trust.png used on input line 6108.
+Package pdftex.def Info: figure/Overall-Trust.png used on input line 6109.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
 <figure/Overall-Performance.png, id=1038, 650.43pt x 365.86688pt>
 File: figure/Overall-Performance.png Graphic file (type png)
 
 <use figure/Overall-Performance.png>
-Package pdftex.def Info: figure/Overall-Performance.png used on input line 6115
+Package pdftex.def Info: figure/Overall-Performance.png used on input line 6116
 .
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
@@ -1412,12 +1412,12 @@ Package pdftex.def Info: figure/Overall-Performance.png used on input line 6115
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6122--6145
+Underfull \hbox (badness 10000) in paragraph at lines 6123--6146
 
  []
 
 [170 <./figure/Overall-Trust.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 6146--6155
+Underfull \hbox (badness 10000) in paragraph at lines 6147--6156
 
  []
 
@@ -1426,10 +1426,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 6146--6155
 File: figure/Overall-Emotions.png Graphic file (type png)
 
 <use figure/Overall-Emotions.png>
-Package pdftex.def Info: figure/Overall-Emotions.png used on input line 6158.
+Package pdftex.def Info: figure/Overall-Emotions.png used on input line 6159.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6165--6185
+Underfull \hbox (badness 10000) in paragraph at lines 6166--6186
 
  []
 
@@ -1438,7 +1438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6165--6185
 File: figure/Overall-Goals.png Graphic file (type png)
 
 <use figure/Overall-Goals.png>
-Package pdftex.def Info: figure/Overall-Goals.png used on input line 6188.
+Package pdftex.def Info: figure/Overall-Goals.png used on input line 6189.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
 <figure/Overall-Collaboration.png, id=1051, 650.43pt x 365.86688pt>
@@ -1446,10 +1446,10 @@ File: figure/Overall-Collaboration.png Graphic file (type png)
 
 <use figure/Overall-Collaboration.png>
 Package pdftex.def Info: figure/Overall-Collaboration.png used on input line 61
-96.
+97.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6224
+Underfull \hbox (badness 10000) in paragraph at lines 6203--6225
 
  []
 
@@ -1460,14 +1460,14 @@ File: figure/Overall-Satisfaction.png Graphic file (type png)
 
 <use figure/Overall-Satisfaction.png>
 Package pdftex.def Info: figure/Overall-Satisfaction.png used on input line 624
-2.
+3.
 (pdftex.def)             Requested size: 341.11533pt x 191.882pt.
 
 <figure/table2-croped.pdf, id=1059, 678.535pt x 204.765pt>
 File: figure/table2-croped.pdf Graphic file (type pdf)
 
 <use figure/table2-croped.pdf>
-Package pdftex.def Info: figure/table2-croped.pdf used on input line 6269.
+Package pdftex.def Info: figure/table2-croped.pdf used on input line 6270.
 (pdftex.def)             Requested size: 426.39255pt x 128.67455pt.
  [175 <./figure/Overall-Satisfaction.png (PNG copy)>] [176 <./figure/table2-cro
 ped.pdf>]
@@ -1476,7 +1476,7 @@ File: figure/age-gender-distribution.png Graphic file (type png)
 
 <use figure/age-gender-distribution.png>
 Package pdftex.def Info: figure/age-gender-distribution.png used on input line 
-6334.
+6335.
 (pdftex.def)             Requested size: 426.39255pt x 239.63031pt.
  [177] [178 <./figure/age-gender-distribution.png (PNG copy)>]
 <figure/demographics-results-emotion-awareness-croped.pdf, id=1101, 544.0325pt 
@@ -1485,7 +1485,7 @@ File: figure/demographics-results-emotion-awareness-croped.pdf Graphic file (ty
 pe pdf)
  <use figure/demographics-results-emotion-awareness-croped.pdf>
 Package pdftex.def Info: figure/demographics-results-emotion-awareness-croped.p
-df used on input line 6371.
+df used on input line 6372.
 (pdftex.def)             Requested size: 426.39255pt x 325.70851pt.
 
 [179 <./figure/demographics-results-emotion-awareness-croped.pdf>]
@@ -1495,7 +1495,7 @@ File: figure/demographics-results-emotion-ignorance-croped.pdf Graphic file (ty
 pe pdf)
  <use figure/demographics-results-emotion-ignorance-croped.pdf>
 Package pdftex.def Info: figure/demographics-results-emotion-ignorance-croped.p
-df used on input line 6405.
+df used on input line 6406.
 (pdftex.def)             Requested size: 426.39255pt x 110.9297pt.
 
 [180 <./figure/demographics-results-emotion-ignorance-croped.pdf>] [181]
@@ -1561,7 +1561,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6698     \subfloat
+l.6699     \subfloat
                     [Peanut butter
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1570,7 +1570,7 @@ or  <return>  to continue without it.
 <figure/Recipe1.pdf, id=1275, 614.295pt x 794.97pt>
 File: figure/Recipe1.pdf Graphic file (type pdf)
  <use figure/Recipe1.pdf>
-Package pdftex.def Info: figure/Recipe1.pdf used on input line 6699.
+Package pdftex.def Info: figure/Recipe1.pdf used on input line 6700.
 (pdftex.def)             Requested size: 184.9429pt x 239.34195pt.
 
 
@@ -1580,7 +1580,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6701     \subfloat
+l.6702     \subfloat
                     [Boiled egg
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1589,13 +1589,13 @@ or  <return>  to continue without it.
 <figure/Recipe2.pdf, id=1276, 614.295pt x 794.97pt>
 File: figure/Recipe2.pdf Graphic file (type pdf)
  <use figure/Recipe2.pdf>
-Package pdftex.def Info: figure/Recipe2.pdf used on input line 6702.
+Package pdftex.def Info: figure/Recipe2.pdf used on input line 6703.
 (pdftex.def)             Requested size: 184.9429pt x 239.34195pt.
 
 [216
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 6727--6733
+Underfull \hbox (badness 10000) in paragraph at lines 6728--6734
 
  []
 
@@ -1608,105 +1608,105 @@ File: figure/relevance-definition.png Graphic file (type png)
 
 <use figure/relevance-definition.png>
 Package pdftex.def Info: figure/relevance-definition.png used on input line 676
-1.
+2.
 (pdftex.def)             Requested size: 426.39255pt x 126.15152pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6766--6767
+Underfull \hbox (badness 10000) in paragraph at lines 6767--6768
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6774--6775
+Underfull \hbox (badness 10000) in paragraph at lines 6775--6776
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6783--6784
+Underfull \hbox (badness 10000) in paragraph at lines 6784--6785
 
  []
 
 [218 <./figure/relevance-definition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 6792--6793
+Underfull \hbox (badness 10000) in paragraph at lines 6793--6794
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6801--6802
+Underfull \hbox (badness 10000) in paragraph at lines 6802--6803
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6810--6811
+Underfull \hbox (badness 10000) in paragraph at lines 6811--6812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6819--6820
+Underfull \hbox (badness 10000) in paragraph at lines 6820--6821
 
  []
 
 [219]
-Underfull \hbox (badness 10000) in paragraph at lines 6828--6829
+Underfull \hbox (badness 10000) in paragraph at lines 6829--6830
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6837--6838
+Underfull \hbox (badness 10000) in paragraph at lines 6838--6839
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6846--6847
+Underfull \hbox (badness 10000) in paragraph at lines 6847--6848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6855--6856
+Underfull \hbox (badness 10000) in paragraph at lines 6856--6857
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6864--6865
+Underfull \hbox (badness 10000) in paragraph at lines 6865--6866
 
  []
 
 [220]
-Underfull \hbox (badness 10000) in paragraph at lines 6873--6874
+Underfull \hbox (badness 10000) in paragraph at lines 6874--6875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6882--6883
+Underfull \hbox (badness 10000) in paragraph at lines 6883--6884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6891--6892
+Underfull \hbox (badness 10000) in paragraph at lines 6892--6893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6900--6901
+Underfull \hbox (badness 10000) in paragraph at lines 6901--6902
 
  []
 
 [221]
-Underfull \hbox (badness 10000) in paragraph at lines 6909--6910
+Underfull \hbox (badness 10000) in paragraph at lines 6910--6911
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6918--6919
+Underfull \hbox (badness 10000) in paragraph at lines 6919--6920
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6927--6928
+Underfull \hbox (badness 10000) in paragraph at lines 6928--6929
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6936--6937
+Underfull \hbox (badness 10000) in paragraph at lines 6937--6938
 
  []
 
@@ -1716,70 +1716,70 @@ File: figure/desirability-definition.png Graphic file (type png)
 
 <use figure/desirability-definition.png>
 Package pdftex.def Info: figure/desirability-definition.png used on input line 
-6955.
+6956.
 (pdftex.def)             Requested size: 426.39255pt x 123.1442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6960--6961
+Underfull \hbox (badness 10000) in paragraph at lines 6961--6962
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6969--6970
+Underfull \hbox (badness 10000) in paragraph at lines 6970--6971
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6978--6979
+Underfull \hbox (badness 10000) in paragraph at lines 6979--6980
 
  []
 
 [224 <./figure/desirability-definition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 6987--6988
+Underfull \hbox (badness 10000) in paragraph at lines 6988--6989
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6996--6997
+Underfull \hbox (badness 10000) in paragraph at lines 6997--6998
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7005--7006
+Underfull \hbox (badness 10000) in paragraph at lines 7006--7007
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7014--7015
+Underfull \hbox (badness 10000) in paragraph at lines 7015--7016
 
  []
 
 [225]
-Underfull \hbox (badness 10000) in paragraph at lines 7023--7024
+Underfull \hbox (badness 10000) in paragraph at lines 7024--7025
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7032--7033
+Underfull \hbox (badness 10000) in paragraph at lines 7033--7034
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7041--7042
+Underfull \hbox (badness 10000) in paragraph at lines 7042--7043
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7050--7051
+Underfull \hbox (badness 10000) in paragraph at lines 7051--7052
 
  []
 
 [226]
-Underfull \hbox (badness 10000) in paragraph at lines 7060--7061
+Underfull \hbox (badness 10000) in paragraph at lines 7061--7062
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7069--7070
+Underfull \hbox (badness 10000) in paragraph at lines 7070--7071
 
  []
 
@@ -1788,60 +1788,60 @@ File: figure/expectedness-definition.png Graphic file (type png)
 
 <use figure/expectedness-definition.png>
 Package pdftex.def Info: figure/expectedness-definition.png used on input line 
-7087.
+7088.
 (pdftex.def)             Requested size: 426.39255pt x 108.75818pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7092--7093
+Underfull \hbox (badness 10000) in paragraph at lines 7093--7094
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7100--7101
+Underfull \hbox (badness 10000) in paragraph at lines 7101--7102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7109--7110
+Underfull \hbox (badness 10000) in paragraph at lines 7110--7111
 
  []
 
 [228 <./figure/expectedness-definition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7118--7119
+Underfull \hbox (badness 10000) in paragraph at lines 7119--7120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7127--7128
+Underfull \hbox (badness 10000) in paragraph at lines 7128--7129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7136--7137
+Underfull \hbox (badness 10000) in paragraph at lines 7137--7138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7145--7146
+Underfull \hbox (badness 10000) in paragraph at lines 7146--7147
 
  []
 
 [229]
-Underfull \hbox (badness 10000) in paragraph at lines 7154--7155
+Underfull \hbox (badness 10000) in paragraph at lines 7155--7156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7163--7164
+Underfull \hbox (badness 10000) in paragraph at lines 7164--7165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7172--7173
+Underfull \hbox (badness 10000) in paragraph at lines 7173--7174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7181--7182
+Underfull \hbox (badness 10000) in paragraph at lines 7182--7183
 
  []
 
@@ -1851,60 +1851,60 @@ File: figure/controllability-definition.png Graphic file (type png)
 
 <use figure/controllability-definition.png>
 Package pdftex.def Info: figure/controllability-definition.png used on input li
-ne 7200.
+ne 7201.
 (pdftex.def)             Requested size: 426.39255pt x 123.1442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7205--7206
+Underfull \hbox (badness 10000) in paragraph at lines 7206--7207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7213--7214
+Underfull \hbox (badness 10000) in paragraph at lines 7214--7215
 
  []
 
 [231 <./figure/controllability-definition.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 7222--7223
+Underfull \hbox (badness 10000) in paragraph at lines 7223--7224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7231--7232
+Underfull \hbox (badness 10000) in paragraph at lines 7232--7233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7240--7241
+Underfull \hbox (badness 10000) in paragraph at lines 7241--7242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7249--7250
+Underfull \hbox (badness 10000) in paragraph at lines 7250--7251
 
  []
 
 [232]
-Underfull \hbox (badness 10000) in paragraph at lines 7258--7259
+Underfull \hbox (badness 10000) in paragraph at lines 7259--7260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7267--7268
+Underfull \hbox (badness 10000) in paragraph at lines 7268--7269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7276--7277
+Underfull \hbox (badness 10000) in paragraph at lines 7277--7278
 
  []
 
 [233]
-Underfull \hbox (badness 10000) in paragraph at lines 7285--7286
+Underfull \hbox (badness 10000) in paragraph at lines 7286--7287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7294--7295
+Underfull \hbox (badness 10000) in paragraph at lines 7295--7296
 
  []
 
@@ -1919,7 +1919,7 @@ Missing character: There is no ù in font cmr12!
 File: figure/TaskExecution.png Graphic file (type png)
 
 <use figure/TaskExecution.png>
-Package pdftex.def Info: figure/TaskExecution.png used on input line 7325.
+Package pdftex.def Info: figure/TaskExecution.png used on input line 7326.
 (pdftex.def)             Requested size: 319.7944pt x 247.11964pt.
  [235
 
@@ -1931,7 +1931,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7341     \subfloat
+l.7342     \subfloat
                     [{\color{green}Successful
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1941,7 +1941,7 @@ or  <return>  to continue without it.
 File: figure/instruction2-1.png Graphic file (type png)
 
 <use figure/instruction2-1.png>
-Package pdftex.def Info: figure/instruction2-1.png used on input line 7342.
+Package pdftex.def Info: figure/instruction2-1.png used on input line 7343.
 (pdftex.def)             Requested size: 85.35826pt x 150.50221pt.
 
 
@@ -1951,7 +1951,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7344     \subfloat
+l.7345     \subfloat
                     [{\color{green}Successful
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1961,7 +1961,7 @@ or  <return>  to continue without it.
 File: figure/instruction2-2.png Graphic file (type png)
 
 <use figure/instruction2-2.png>
-Package pdftex.def Info: figure/instruction2-2.png used on input line 7345.
+Package pdftex.def Info: figure/instruction2-2.png used on input line 7346.
 (pdftex.def)             Requested size: 91.04872pt x 148.30125pt.
 
 
@@ -1971,7 +1971,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7347     \subfloat
+l.7348     \subfloat
                     [{\color{red}Failed
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1981,7 +1981,7 @@ or  <return>  to continue without it.
 File: figure/instruction2-3.png Graphic file (type png)
 
 <use figure/instruction2-3.png>
-Package pdftex.def Info: figure/instruction2-3.png used on input line 7348.
+Package pdftex.def Info: figure/instruction2-3.png used on input line 7349.
 (pdftex.def)             Requested size: 105.2751pt x 143.83498pt.
  [236 <./figure/TaskExecution.png> <./figure/instruction2-1.png> <./figure/inst
 ruction2-2.png> <./figure/instruction2-3.png>]
@@ -2000,7 +2000,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7380     \subfloat
+l.7381     \subfloat
                     [Human
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2011,7 +2011,7 @@ File: figure/human-turn-gui-instruction.png Graphic file (type png)
 
 <use figure/human-turn-gui-instruction.png>
 Package pdftex.def Info: figure/human-turn-gui-instruction.png used on input li
-ne 7382.
+ne 7383.
 (pdftex.def)             Requested size: 190.63338pt x 155.29904pt.
 
 
@@ -2021,7 +2021,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7384     \subfloat
+l.7385     \subfloat
                     [Robot
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2032,14 +2032,14 @@ File: figure/robot-turn-gui-instruction.png Graphic file (type png)
 
 <use figure/robot-turn-gui-instruction.png>
 Package pdftex.def Info: figure/robot-turn-gui-instruction.png used on input li
-ne 7386.
+ne 7387.
 (pdftex.def)             Requested size: 190.63338pt x 155.02289pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
 File: figure/TaskExecution.png Graphic file (type png)
  <use figure/TaskExecution.png>
-Package pdftex.def Info: figure/TaskExecution.png used on input line 7412.
+Package pdftex.def Info: figure/TaskExecution.png used on input line 7413.
 (pdftex.def)             Requested size: 213.19627pt x 164.73706pt.
 
 [238 <./figure/human-turn-gui-instruction.png (PNG copy)> <./figure/robot-turn-
@@ -2047,7 +2047,7 @@ gui-instruction.png (PNG copy)>]
 <figure/stepB.png, id=1458, 675.52374pt x 538.01pt>
 File: figure/stepB.png Graphic file (type png)
  <use figure/stepB.png>
-Package pdftex.def Info: figure/stepB.png used on input line 7423.
+Package pdftex.def Info: figure/stepB.png used on input line 7424.
 (pdftex.def)             Requested size: 277.15254pt x 220.73329pt.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -2059,7 +2059,7 @@ Missing character: There is no ù in font cmr12!
 <figure/stepC.png, id=1459, 676.5275pt x 538.01pt>
 File: figure/stepC.png Graphic file (type png)
  <use figure/stepC.png>
-Package pdftex.def Info: figure/stepC.png used on input line 7433.
+Package pdftex.def Info: figure/stepC.png used on input line 7434.
 (pdftex.def)             Requested size: 277.15254pt x 220.41313pt.
 
 [239 <./figure/stepB.png> <./figure/stepC.png>]
@@ -2080,7 +2080,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  17007 strings out of 493304
  316076 string characters out of 6139871
- 389045 words of memory out of 5000000
+ 389047 words of memory out of 5000000
  19990 multiletter control sequences out of 15000+600000
  17410 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2102,7 +2102,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (255 pages, 9856345 bytes).
+Output written on document.pdf (255 pages, 9856407 bytes).
 PDF statistics:
  1536 PDF objects out of 1728 (max. 8388607)
  947 compressed objects within 10 object streams
